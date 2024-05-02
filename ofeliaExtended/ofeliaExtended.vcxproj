@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64EC">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64EC</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64EC">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64EC</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Platform)'=='x64' or '$(Platform)'=='ARM64'">
+    <LatestTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '10.0'))</LatestTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' == ''">$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+    <TargetPlatformVersion>$(WindowsTargetPlatformVersion)</TargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='ARM64EC'">
+    <LatestTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '11.0'))</LatestTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' == ''">$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+    <TargetPlatformVersion>$(WindowsTargetPlatformVersion)</TargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ofeliaExtended</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64' or '$(Configuration)|$(Platform)'=='Debug|ARM64' or '$(Configuration)|$(Platform)'=='Debug|ARM64EC'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64' or '$(Configuration)|$(Platform)'=='Release|ARM64' or '$(Configuration)|$(Platform)'=='Release|ARM64EC'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64' or '$(Configuration)|$(Platform)'=='Release|ARM64' or '$(Configuration)|$(Platform)'=='Release|ARM64EC'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64' or '$(Configuration)|$(Platform)'=='Debug|ARM64' or '$(Configuration)|$(Platform)'=='Debug|ARM64EC'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64' or '$(Configuration)|$(Platform)'=='Debug|ARM64' or '$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64' or '$(Configuration)|$(Platform)'=='Release|ARM64' or '$(Configuration)|$(Platform)'=='Release|ARM64EC'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64' or '$(Configuration)|$(Platform)'=='Debug|ARM64' or '$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>TARGET_EXTERNAL ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAssimpModelLoader\libs;..\..\..\addons\ofxAssimpModelLoader\libs\assimp;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\port;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\port\AndroidJNI;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64\Debug;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64\Release;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64EC;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64EC\Debug;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64EC\Release;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\Debug;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\Release;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\license;..\..\..\addons\ofxAssimpModelLoader\src;..\..\..\addons\ofxOfeliaExtended\libs;..\..\..\addons\ofxOfeliaExtended\libs\libpd;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\docs;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\extras;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\desktop;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\ios;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\linuxarm;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\cpp;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\libpd_wrapper;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\libpd_wrapper\util;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\bob~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\bonk~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\choice;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\fiddle~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\loop~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\lrshift~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\pd~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\pique;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\sigmund~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\stdout;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\bin;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics;..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src;..\..\..\addons\ofxOfeliaExtended\src;..\..\..\addons\ofxOpenCv\libs;..\..\..\addons\ofxOpenCv\libs\opencv;..\..\..\addons\ofxOpenCv\libs\opencv\bin;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64\Release;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64EC;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64EC\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64EC\Release;..\..\..\addons\ofxOpenCv\libs\opencv\bin\x64;..\..\..\addons\ofxOpenCv\libs\opencv\bin\x64\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\bin\x64\Release;..\..\..\addons\ofxOpenCv\libs\opencv\etc;..\..\..\addons\ofxOpenCv\libs\opencv\etc\etc;..\..\..\addons\ofxOpenCv\libs\opencv\etc\etc\haarcascades;..\..\..\addons\ofxOpenCv\libs\opencv\etc\etc\lbpcascades;..\..\..\addons\ofxOpenCv\libs\opencv\etc\etc\licenses;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\cuda;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\hal;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\opencl;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\parallel;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\parallel\backend;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\utils;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\dnn;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\dnn\utils;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d\hal;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\flann;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs\legacy;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc\hal;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\ml;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\photo;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\photo\legacy;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\video;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\video\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\video\legacy;..\..\..\addons\ofxOpenCv\libs\opencv\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64\Release;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64EC;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64EC\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64EC\Release;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release;..\..\..\addons\ofxOpenCv\libs\opencv\license;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxVectorGraphics\libs;..\..\..\addons\ofxVectorGraphics\src</AdditionalIncludeDirectories>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>-DGLM_ENABLE_EXPERIMENTAL %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libassimpD.lib;libpd.lib;stable-diffusion.lib;ittnotifyd.lib;libopenjp2d.lib;libprotobufd.lib;opencv_calib3d490d.lib;opencv_core490d.lib;opencv_dnn490d.lib;opencv_features2d490d.lib;opencv_flann490d.lib;opencv_imgcodecs490d.lib;opencv_imgproc490d.lib;opencv_ml490d.lib;opencv_objdetect490d.lib;opencv_photo490d.lib;opencv_stitching490d.lib;opencv_video490d.lib;zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\Debug;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libassimpD.lib;libpd.lib;stable-diffusion.lib;ittnotifyd.lib;libopenjp2d.lib;libprotobufd.lib;opencv_calib3d490d.lib;opencv_core490d.lib;opencv_dnn490d.lib;opencv_features2d490d.lib;opencv_flann490d.lib;opencv_imgcodecs490d.lib;opencv_imgproc490d.lib;opencv_ml490d.lib;opencv_objdetect490d.lib;opencv_photo490d.lib;opencv_stitching490d.lib;opencv_video490d.lib;zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64\Debug;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64\Debug</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libassimpD.lib;libpd.lib;stable-diffusion.lib;ittnotifyd.lib;libopenjp2d.lib;libprotobufd.lib;opencv_calib3d490d.lib;opencv_core490d.lib;opencv_dnn490d.lib;opencv_features2d490d.lib;opencv_flann490d.lib;opencv_imgcodecs490d.lib;opencv_imgproc490d.lib;opencv_ml490d.lib;opencv_objdetect490d.lib;opencv_photo490d.lib;opencv_stitching490d.lib;opencv_video490d.lib;zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64EC\Debug;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64EC\Debug</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64' or '$(Configuration)|$(Platform)'=='Release|ARM64' or '$(Configuration)|$(Platform)'=='Release|ARM64EC'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAssimpModelLoader\libs;..\..\..\addons\ofxAssimpModelLoader\libs\assimp;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\port;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\port\AndroidJNI;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64\Debug;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64\Release;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64EC;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64EC\Debug;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64EC\Release;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\Debug;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\Release;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\license;..\..\..\addons\ofxAssimpModelLoader\src;..\..\..\addons\ofxOfeliaExtended\libs;..\..\..\addons\ofxOfeliaExtended\libs\libpd;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\docs;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\extras;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\desktop;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\ios;..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\linuxarm;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\cpp;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\libpd_wrapper;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\libpd_wrapper\util;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\bob~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\bonk~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\choice;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\fiddle~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\loop~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\lrshift~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\pd~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\pique;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\sigmund~;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\extra\stdout;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\libs\libpd\pure-data\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxPd\src;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\bin;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics;..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src;..\..\..\addons\ofxOfeliaExtended\src;..\..\..\addons\ofxOpenCv\libs;..\..\..\addons\ofxOpenCv\libs\opencv;..\..\..\addons\ofxOpenCv\libs\opencv\bin;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64\Release;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64EC;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64EC\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\bin\ARM64EC\Release;..\..\..\addons\ofxOpenCv\libs\opencv\bin\x64;..\..\..\addons\ofxOpenCv\libs\opencv\bin\x64\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\bin\x64\Release;..\..\..\addons\ofxOpenCv\libs\opencv\etc;..\..\..\addons\ofxOpenCv\libs\opencv\etc\etc;..\..\..\addons\ofxOpenCv\libs\opencv\etc\etc\haarcascades;..\..\..\addons\ofxOpenCv\libs\opencv\etc\etc\lbpcascades;..\..\..\addons\ofxOpenCv\libs\opencv\etc\etc\licenses;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\cuda;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\hal;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\opencl;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\parallel;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\parallel\backend;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core\utils;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\dnn;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\dnn\utils;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d\hal;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\flann;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs\legacy;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc\hal;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\ml;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\photo;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\photo\legacy;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\video;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\video\detail;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\video\legacy;..\..\..\addons\ofxOpenCv\libs\opencv\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64\Release;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64EC;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64EC\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64EC\Release;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release;..\..\..\addons\ofxOpenCv\libs\opencv\license;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxVectorGraphics\libs;..\..\..\addons\ofxVectorGraphics\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libassimp.lib;libpd.lib;stable-diffusion.lib;ittnotify.lib;libopenjp2.lib;libprotobuf.lib;opencv_calib3d490.lib;opencv_core490.lib;opencv_dnn490.lib;opencv_features2d490.lib;opencv_flann490.lib;opencv_imgcodecs490.lib;opencv_imgproc490.lib;opencv_ml490.lib;opencv_objdetect490.lib;opencv_photo490.lib;opencv_stitching490.lib;opencv_video490.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\Release;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libassimp.lib;libpd.lib;stable-diffusion.lib;ittnotify.lib;libopenjp2.lib;libprotobuf.lib;opencv_calib3d490.lib;opencv_core490.lib;opencv_dnn490.lib;opencv_features2d490.lib;opencv_flann490.lib;opencv_imgcodecs490.lib;opencv_imgproc490.lib;opencv_ml490.lib;opencv_objdetect490.lib;opencv_photo490.lib;opencv_stitching490.lib;opencv_video490.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64\Release;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64\Release</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'">
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libassimp.lib;libpd.lib;stable-diffusion.lib;ittnotify.lib;libopenjp2.lib;libprotobuf.lib;opencv_calib3d490.lib;opencv_core490.lib;opencv_dnn490.lib;opencv_features2d490.lib;opencv_flann490.lib;opencv_imgcodecs490.lib;opencv_imgproc490.lib;opencv_ml490.lib;opencv_objdetect490.lib;opencv_photo490.lib;opencv_stitching490.lib;opencv_video490.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\ARM64EC\Release;..\..\..\addons\ofxOfeliaExtended\libs\libpd\libs\vs\lib;..\..\..\addons\ofxOfeliaExtended\libs\ofxStableDiffusion\libs\vs\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\ARM64EC\Release</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='x64'">
+    <PostBuildEvent>
+      <Command>
+            xcopy /Y /E "$(ProjectDir)dll\x64\*.dll" "$(TargetDir)"
+        </Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/export:ofelia_setup %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='ARM64'">
+    <PostBuildEvent>
+      <Command>
+            xcopy /Y /E "$(ProjectDir)dll\ARM64\*.dll" "$(TargetDir)"
+        </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='ARM64EC'">
+    <PostBuildEvent>
+      <Command>
+            xcopy /Y /E "$(ProjectDir)dll\ARM64EC\*.dll" "$(TargetDir)"
+        </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfelia.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaClient.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaCreator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaData.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaDefine.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaEvents.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaExists.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaFunction.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaGet.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaGL.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaImGuiBindings.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaIO.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaLog.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaLua.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaOfxBindings.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaOfxImGuiBindings.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaPdBindings.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSet.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSetup.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSignal.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaTextBuf.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw_context_support.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\extras\imgui_stdlib.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_demo.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_draw.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_tables.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\BaseEngine.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\DefaultTheme.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineGLFW.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineOpenFrameworks.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineOpenGLES.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineVk.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\Gui.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ImHelpers.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ofxImGuiLoggerChannel.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lapi.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lauxlib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lbaselib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lbitlib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lcode.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lcorolib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lctype.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldblib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldebug.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldo.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldump.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lfunc.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lgc.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\linit.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\liolib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\llex.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lmathlib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lmem.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\loadlib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lobject.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lopcodes.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\loslib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lparser.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstate.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstring.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstrlib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltable.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltablib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltm.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lundump.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lutf8lib.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lvm.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lzio.c" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\desktop\ofBindings.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\glmBindings.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\ofxLua.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\ofxLuaFileWriter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxTexture3d.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxVolumetrics.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxVectorGraphics\src\ofxVectorGraphics.cpp" />
+    <ClCompile Include="..\..\ofxVectorGraphics\libs\CreEPS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.h" />
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpUtils.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfelia.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaClient.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaCreator.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaData.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaDefine.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaEvents.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaExists.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaFunction.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaGet.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaGL.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaIO.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaLog.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaLua.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaPdBindings.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSet.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSetup.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSignal.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaTextBuf.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw_context_support.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl2.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\extras\imgui_stdlib.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_internal.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imstb_rectpack.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imstb_textedit.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imstb_truetype.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\BaseEngine.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\BaseTheme.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\DefaultTheme.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineGLFW.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineOpenFrameworks.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineOpenGLES.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineVk.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\gles1CompatibilityHacks.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\glfwCompatibilityHacks.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\Gui.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\imconfig.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ImHelpers.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\LinkedList.hpp" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ofxImGui.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ofxImGuiConstants.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ofxImGuiLoggerChannel.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lapi.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lauxlib.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lcode.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lctype.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldebug.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldo.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lfunc.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lgc.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ljumptab.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\llex.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\llimits.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lmem.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lobject.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lopcodes.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lopnames.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lparser.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lprefix.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstate.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstring.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltable.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltm.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lua.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lua.hpp" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\luaconf.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lualib.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lundump.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lvm.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lzio.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\ofBindings.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\ofxLua.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\ofxLuaFileWriter.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxImageSequencePlayer.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxTexture3d.h" />
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxVolumetrics.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvBlob.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvConstants.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxOpenCv.h" />
+    <ClInclude Include="..\..\..\addons\ofxVectorGraphics\src\ofxVectorGraphics.h" />
+    <ClInclude Include="..\..\ofxVectorGraphics\libs\CreEPS.hpp" />
+    <ClInclude Include="..\..\ofxVectorGraphics\libs\CreEPS_Types.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="icon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.cpp">
+      <Filter>addons\ofxAssimpModelLoader\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.cpp">
+      <Filter>addons\ofxAssimpModelLoader\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.cpp">
+      <Filter>addons\ofxAssimpModelLoader\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.cpp">
+      <Filter>addons\ofxAssimpModelLoader\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfelia.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaClient.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaCreator.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaData.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaDefine.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaEvents.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaExists.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaFunction.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaGet.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaGL.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaImGuiBindings.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaIO.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaLog.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaLua.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaOfxBindings.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaOfxImGuiBindings.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaPdBindings.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSet.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSetup.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSignal.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaTextBuf.cpp">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw_context_support.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl2.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\extras\imgui_stdlib.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\extras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_demo.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_draw.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_tables.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_widgets.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\BaseEngine.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\DefaultTheme.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineGLFW.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineOpenFrameworks.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineOpenGLES.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineVk.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\Gui.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ImHelpers.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ofxImGuiLoggerChannel.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lapi.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lauxlib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lbaselib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lbitlib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lcode.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lcorolib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lctype.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldblib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldebug.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldo.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldump.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lfunc.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lgc.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\linit.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\liolib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\llex.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lmathlib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lmem.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\loadlib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lobject.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lopcodes.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\loslib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lparser.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstate.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstring.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstrlib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltable.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltablib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltm.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lundump.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lutf8lib.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lvm.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lzio.c">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\desktop\ofBindings.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\desktop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\glmBindings.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\src\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\ofxLua.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\ofxLuaFileWriter.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxTexture3d.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxVolumetrics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxVolumetrics.cpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxVolumetrics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.cpp">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.cpp">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.cpp">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.cpp">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.cpp">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.cpp">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.cpp">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxVectorGraphics\src\ofxVectorGraphics.cpp">
+      <Filter>addons\ofxVectorGraphics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxVectorGraphics\libs\CreEPS.cpp">
+      <Filter>addons\ofxVectorGraphics\libs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="addons">
+      <UniqueIdentifier>{17FF8CD0--4AE-7-4C-05-8-51B-03122855C9C9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxAssimpModelLoader">
+      <UniqueIdentifier>{7484BD1A--61E-3-44-22-8-B46-1431F25E33DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxAssimpModelLoader\src">
+      <UniqueIdentifier>{001B55EB--2C3-E-44-12-A-530-24D17285F102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended">
+      <UniqueIdentifier>{B3569FE0--E4D-4-4E-F7-8-E39-A9AE06380A07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\src">
+      <UniqueIdentifier>{FFF05881--F54-9-45-6B-B-E3B-C572AABC1A56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs">
+      <UniqueIdentifier>{8D130C1F--B36-F-4A-C7-9-8B7-7599AEF8C20A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxImGui">
+      <UniqueIdentifier>{4A43E3BC--EBE-2-4A-9D-B-3D5-89912092761B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxImGui\libs">
+      <UniqueIdentifier>{E69B4E1B--D51-A-43-97-8-CA8-00186765986B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui">
+      <UniqueIdentifier>{10156395--7C8-1-44-79-A-444-CA56569F07BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends">
+      <UniqueIdentifier>{1EA7915F--57F-4-42-47-8-8E1-936E83FA3737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\extras">
+      <UniqueIdentifier>{C133B34E--90A-1-4C-56-B-0C3-049BE54E1C36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src">
+      <UniqueIdentifier>{E576D962--E08-B-4A-78-8-68F-15BF0AF57E33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxImGui\src">
+      <UniqueIdentifier>{80904320--1B1-E-4C-E6-9-84E-BBEA8BE92CDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxLua">
+      <UniqueIdentifier>{687C9FDF--C6C-C-4F-75-B-984-DA10C8BC8415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxLua\libs">
+      <UniqueIdentifier>{D1904FEF--A01-0-40-1D-B-A07-F362D6B4512E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxLua\libs\lua">
+      <UniqueIdentifier>{00880904--212-C-45-D6-A-05C-3B2D060558D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxLua\src">
+      <UniqueIdentifier>{D97ED05C--C8C-0-4B-00-9-C85-DA055F5D92DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxLua\src\bindings">
+      <UniqueIdentifier>{C0D7A2EF--804-E-40-35-9-383-ACADFE085064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\desktop">
+      <UniqueIdentifier>{A003EC68--B3A-0-43-54-A-948-B3B56616EB0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxVolumetrics">
+      <UniqueIdentifier>{84E14D0C--317-0-4A-B3-9-4D0-506DEA038071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOfeliaExtended\libs\ofxVolumetrics\src">
+      <UniqueIdentifier>{6F0AAC8A--680-3-4A-DB-9-4AF-6744E4B68885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOpenCv">
+      <UniqueIdentifier>{AA09B71B--32B-3-47-DD-A-BB6-220E4B515910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOpenCv\src">
+      <UniqueIdentifier>{29AA0503--FF6-9-46-41-9-089-6D78CC6E7017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxVectorGraphics">
+      <UniqueIdentifier>{37254216--9AF-B-43-51-8-708-4CCAB8606F64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxVectorGraphics\src">
+      <UniqueIdentifier>{CA122D67--47D-B-4B-CD-8-203-C2DCD517876D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxVectorGraphics\libs">
+      <UniqueIdentifier>{3fe51ecb-6ac3-4dd8-8508-547e6cf844b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.h">
+      <Filter>addons\ofxAssimpModelLoader\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.h">
+      <Filter>addons\ofxAssimpModelLoader\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.h">
+      <Filter>addons\ofxAssimpModelLoader\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.h">
+      <Filter>addons\ofxAssimpModelLoader\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpUtils.h">
+      <Filter>addons\ofxAssimpModelLoader\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfelia.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaClient.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaCreator.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaData.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaDefine.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaEvents.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaExists.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaFunction.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaGet.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaGL.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaIO.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaLog.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaLua.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaPdBindings.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSet.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSetup.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaSignal.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\src\ofxOfeliaTextBuf.h">
+      <Filter>addons\ofxOfeliaExtended\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw_context_support.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl2.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl3.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl3_loader.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\extras\imgui_stdlib.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\extras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imgui_internal.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imstb_rectpack.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imstb_textedit.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src\imstb_truetype.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\BaseEngine.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\BaseTheme.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\DefaultTheme.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineGLFW.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineOpenFrameworks.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineOpenGLES.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\EngineVk.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\gles1CompatibilityHacks.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\glfwCompatibilityHacks.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\Gui.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\imconfig.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ImHelpers.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\LinkedList.hpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ofxImGui.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ofxImGuiConstants.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxImGui\src\ofxImGuiLoggerChannel.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lapi.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lauxlib.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lcode.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lctype.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldebug.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ldo.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lfunc.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lgc.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ljumptab.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\llex.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\llimits.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lmem.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lobject.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lopcodes.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lopnames.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lparser.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lprefix.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstate.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lstring.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltable.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\ltm.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lua.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lua.hpp">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\luaconf.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lualib.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lundump.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lvm.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\libs\lua\lzio.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\libs\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\bindings\ofBindings.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\src\bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\ofxLua.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxLua\src\ofxLuaFileWriter.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxLua\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxImageSequencePlayer.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxVolumetrics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxTexture3d.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxVolumetrics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOfeliaExtended\libs\ofxVolumetrics\src\ofxVolumetrics.h">
+      <Filter>addons\ofxOfeliaExtended\libs\ofxVolumetrics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvBlob.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvConstants.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxOpenCv.h">
+      <Filter>addons\ofxOpenCv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorGraphics\src\ofxVectorGraphics.h">
+      <Filter>addons\ofxVectorGraphics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxVectorGraphics\libs\CreEPS.hpp">
+      <Filter>addons\ofxVectorGraphics\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxVectorGraphics\libs\CreEPS_Types.hpp">
+      <Filter>addons\ofxVectorGraphics\libs</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
