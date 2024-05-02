@@ -1,0 +1,4 @@
+ofxAssimpModelLoader
+ofxOfeliaExtended
+ofxOpenCv
+ofxVectorGraphics
