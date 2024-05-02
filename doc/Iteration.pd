@@ -1,0 +1,25 @@
+#N canvas 723 23 716 450 10;
+#X declare -path ofelia/abs;
+#X obj 39 36 loadbang;
+#X obj 39 78 ofWindow;
+#X obj 39 133 ofSetup;
+#X obj 39 248 ofDraw;
+#X msg 39 57 setPosition 2 0 \, setSize 1440 900 \, title Iteration
+\, create;
+#X text 92 134 A setup callback.;
+#X text 86 248 A draw callback.;
+#X text 98 78 The window creator.;
+#X obj 545 21 declare -path ofelia/abs;
+#X obj 39 173 ofelia f \; ofSetBackgroundColor(55) \; gridSize = 80
+\;;
+#X obj 39 268 ofelia f \; local width \, height = ofGetWidth() \, ofGetHeight()
+\; for x = gridSize \, width - gridSize \, gridSize do \; for y = gridSize
+\, height - gridSize \, gridSize do \; ofSetColor(255) \; ofDrawCircle(x
+\, y \, 3) \; ofSetColor(255 \, 255 \, 255 \, 100) \; ofDrawLine(x
+\, y \, width / 2 \, height / 2) \; end \; end \;;
+#X msg 39 153 bang;
+#X connect 0 0 4 0;
+#X connect 2 0 11 0;
+#X connect 3 0 10 0;
+#X connect 4 0 1 0;
+#X connect 11 0 9 0;

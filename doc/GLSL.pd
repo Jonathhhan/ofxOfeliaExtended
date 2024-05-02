@@ -1,0 +1,27 @@
+#N canvas 723 23 716 450 10;
+#X declare -path ofelia/abs;
+#X obj 39 133 ofSetup;
+#X obj 39 278 ofDraw;
+#X obj 39 36 loadbang;
+#X obj 39 78 ofWindow;
+#X text 98 78 The window creator.;
+#X msg 39 57 setPosition 2 0 \, setSize 1440 900 \, title GLSL \, create
+;
+#X obj 545 22 declare -path ofelia/abs;
+#X obj 39 193 ofelia f \; ofBackground(0) \; shader = ofShader() \;
+shader:load(a) \;;
+#X obj 39 173 pdcontrol;
+#X msg 39 153 dir 0 GLSL;
+#X obj 39 298 ofelia f \; shader:beginShader() \; ofSetColor(255) \;
+shader:setUniform1f("time" \, ofGetElapsedTimef()) \; shader:setUniform2f("resolution"
+\, ofGetWindowSize()) \; shader:setUniform2f("mouse" \, ofGetMouseX()
+\, ofGetMouseY()) \; ofDrawRectangle(20 \, 20 \, ofGetWidth()-40 \,
+ofGetHeight()-40) \; shader:endShader() \;;
+#X text 92 133 A setup callback.;
+#X text 86 278 A draw callback.;
+#X connect 0 0 9 0;
+#X connect 1 0 10 0;
+#X connect 2 0 5 0;
+#X connect 5 0 3 0;
+#X connect 8 0 7 0;
+#X connect 9 0 8 0;
