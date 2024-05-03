@@ -1,4 +1,5 @@
-ofxAssimpModelLoader
 ofxOfeliaExtended
+ofxAssimpModelLoader
 ofxOpenCv
+ofxSvg
 ofxVectorGraphics
