@@ -9,9 +9,9 @@
 	#include "../../ofxVectorGraphics/src/ofxVectorGraphics.h"
 	#include "../../ofxOpenCv/src/ofxOpenCv.h"
 	#include "../../ofxAssimpModelLoader/src/ofxAssimpModelLoader.h"
-	#include "../../ofxVolumetrics/src/ofxVolumetrics.h"
-	#include "../../ofxStableDiffusion/libs/stable-diffusion/include/stable-diffusion.h"
-	#include "../../ofxImGui/src/Gui.h"
+	#include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
+	#include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
+	#include "../libs/ofxImGui/src/Gui.h"
 	using namespace ofxImGui;
 	using namespace ns_creeps;
 %}
@@ -56,7 +56,7 @@
 %include "../../ofxOpenCv/src/ofxCvShortImage.h"
 %include "../../ofxAssimpModelLoader/src/ofxAssimpModelLoader.h"
 %include "../../ofxAssimpModelLoader/src/ofxAssimpAnimation.h"
-%include "../../ofxVolumetrics/src/ofxVolumetrics.h"
-%include "../../ofxVolumetrics/src/ofxImageSequencePlayer.h"
-%include "../../ofxStableDiffusion/libs/stable-diffusion/include/stable-diffusion.h"
-%include "../../ofxImGui/src/Gui.h"
+%include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
+%include "../libs/ofxVolumetrics/src/ofxImageSequencePlayer.h"
+%include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
+%include "../libs/ofxImGui/src/Gui.h"
