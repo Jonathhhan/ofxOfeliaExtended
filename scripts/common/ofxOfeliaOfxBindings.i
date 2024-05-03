@@ -9,6 +9,7 @@
 	#include "../../ofxVectorGraphics/src/ofxVectorGraphics.h"
 	#include "../../ofxOpenCv/src/ofxOpenCv.h"
 	#include "../../ofxAssimpModelLoader/src/ofxAssimpModelLoader.h"
+	#include "../libs/srtparser.h"
 	#include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 	#include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
 	#include "../libs/ofxImGui/src/Gui.h"
@@ -28,6 +29,13 @@
 
 // ofxVectorGraphics
 %ignore operator |;
+%include exception.i
+
+// srtparser
+%typemap(throws) std::out_of_range {
+  // custom exception handler
+}
+%template(SubVector) std::vector<SubtitleItem*>;
 
 
 // ----- Renaming -----
@@ -56,6 +64,7 @@
 %include "../../ofxOpenCv/src/ofxCvShortImage.h"
 %include "../../ofxAssimpModelLoader/src/ofxAssimpModelLoader.h"
 %include "../../ofxAssimpModelLoader/src/ofxAssimpAnimation.h"
+%include "../libs/srtparser.h"
 %include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 %include "../libs/ofxVolumetrics/src/ofxImageSequencePlayer.h"
 %include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
