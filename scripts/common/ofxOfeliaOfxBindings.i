@@ -49,7 +49,7 @@
 %include "../../ofxOpenCv/src/ofxCvBlob.h"
 %include "../../ofxOpenCv/src/ofxCvHaarFinder.h"
 %include "../../ofxOpenCv/src/ofxCvContourFinder.h"
-%import "../../ofxOpenCv/src/ofxCvImage.h"
+%include "../../ofxOpenCv/src/ofxCvImage.h"
 %include "../../ofxOpenCv/src/ofxCvColorImage.h"
 %include "../../ofxOpenCv/src/ofxCvFloatImage.h"
 %include "../../ofxOpenCv/src/ofxCvGrayscaleImage.h"
