@@ -9,6 +9,7 @@
 	#include "../../ofxVectorGraphics/src/ofxVectorGraphics.h"
 	#include "../../ofxOpenCv/src/ofxOpenCv.h"
 	#include "../../ofxAssimpModelLoader/src/ofxAssimpModelLoader.h"
+	#include "../../ofxSvg/src/ofxSvg.h"
 	#include "../libs/srtparser.h"
 	#include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 	#include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
@@ -37,6 +38,9 @@
 }
 %template(SubVector) std::vector<SubtitleItem*>;
 
+// ofxSvg
+%template(GlmVector) std::vector<glm::vec3>;
+
 
 // ----- Renaming -----
 
@@ -64,6 +68,7 @@
 %include "../../ofxOpenCv/src/ofxCvShortImage.h"
 %include "../../ofxAssimpModelLoader/src/ofxAssimpModelLoader.h"
 %include "../../ofxAssimpModelLoader/src/ofxAssimpAnimation.h"
+%include "../../ofxSvg/src/ofxSvg.h"
 %include "../libs/srtparser.h"
 %include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 %include "../libs/ofxVolumetrics/src/ofxImageSequencePlayer.h"
