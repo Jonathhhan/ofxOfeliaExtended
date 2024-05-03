@@ -1,0 +1,10 @@
+#N canvas -1518 734 543 306 10;
+#X obj 16 15 cnv 15 500 270 empty empty empty 20 12 0 14 #f8fc00 #404040 0;
+#X obj 41 25 cnv 15 450 250 empty empty srtparser 40 50 0 30 #00f8fc #f8fc00 0;
+#X msg 81 143 upload 1;
+#X text 77 195 adapted from tim scaffidi https://github.com/timscaffidi/ofxVolumetrics/tree/master/ofxVolumetricsExample jonathan frank 2021;
+#X obj 81 120 loadbang;
+#X obj 81 166 ofelia d -k \$0-srtparser;
+#A __set if type(window) ~= "userdata" then \; window = ofWindow() \; end \; \; local a = ofelia \; local canvas = ofCanvas(this) \; local clock = ofClock(this \, "setup") \; local subVector = ofxSubVector() \; local subParserFactory = ofxSubtitleParserFactory("Alphaville.ENG.srt") \; local parser = subParserFactory:getParser() \; subVector = parser:getSubtitles() \; \; function a.new() \; ofWindow.addListener("setup" \, this) \; ofWindow.addListener("update" \, this) \; ofWindow.addListener("draw" \, this) \; ofWindow.addListener("exit" \, this) \; window:setPosition(30 \, 100) \; window:setSize(400 \, 100) \; if ofWindow.exists then \; clock:delay(0) \; else \; window:create() \; end \; end \; \; function a.free() \; window:destroy() \; ofWindow.removeListener("setup" \, this) \; ofWindow.removeListener("update" \, this) \; ofWindow.removeListener("draw" \, this) \; ofWindow.removeListener("exit" \, this) \; end \; \; function a.setup() \; ofSetWindowTitle("srtparser") \; ofBackground(150 \, 230 \, 255 \, 255) \; ofSetColor(0) \; end \; \; function a.update() \; end \; \; function a.draw() \; for i = 0 \, subVector:size() -1 \, 1 do \; if (subVector[i]:getStartTime() <= (ofGetElapsedTimeMillis() + 35000) and subVector[i]:getEndTime() >= (ofGetElapsedTimeMillis() + 35000)) then \; ofDrawBitmapString(subVector[i]:getDialogue() \, 50 \, 40) \; end \; end \; end \; \; function a.exit() \; end \;;
+#X connect 2 0 5 0;
+#X connect 4 0 2 0;
