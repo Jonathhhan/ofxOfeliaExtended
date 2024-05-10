@@ -35,7 +35,7 @@
 
 // srtparser
 %typemap(throws) std::out_of_range {
-  // custom exception handler 
+  // custom exception handler
 }
 %template(SubVector) std::vector<SubtitleItem*>;
 
