@@ -7,11 +7,14 @@ local clock = ofClock(this, "setup")
 local stableDiffusion = ofxStableDiffusion()
 local modelName
 local imgVec
+local sampleMethod
+local sampleMethodEnum
 local texture = ofTexture()
 local pixels = ofPixels()
 local gui = ofxImGui()
 local boolArrayValue = ImGuiNew_BoolArray(1)
 local intArrayValue = ImGuiNew_IntArray(1)
+local charArray = ImGuiNew_CharPArray(8)
 local prompt = "a skater in the woods, van gogh"
 local negativePrompt = ""
 local generate = false
@@ -46,6 +49,12 @@ ofSetDataPathRoot("")
 texture:allocate(512, 512, GL_RGB)
 ImGuiBoolArray_setitem(boolArrayValue, 0, true)
 ImGuiIntArray_setitem(intArrayValue, 0, 5)
+local charTable = {"EULER_A", "EULER", "HEUN", "DPM2", "DPMPP2S_A", "DPMPP2M", "DPMPP2Mv2", "LCM"}
+for i = 1, #charTable, 1 do
+ImGuiCharPArray_setitem(charArray, i -1, charTable[i])
+end
+sampleMethod = ImGuiCharPArray_getitem(charArray, 0)
+sampleMethodEnum = 0
 gui:setup()
 modelName = "sd_turbo.safetensors"
 print(stableDiffusion:getSystemInfo())
@@ -60,7 +69,7 @@ texture:loadData(imgVec.data, 512, 512, GL_RGB)
 stableDiffusion:setDiffused(false)
 end
 if generate == true then
-stableDiffusion:txt2img(prompt, negativePrompt, 0, 1, 512, 512, 0, 5, -1, 1, sd_image_t, 1, 1, false, "")
+stableDiffusion:txt2img(prompt, negativePrompt, 0, 1, 512, 512, sampleMethodEnum, 5, -1, 1, sd_image_t, 1, 1, false, "")
 generate = false
 end
 end
@@ -99,6 +108,18 @@ if (ImGuiRadioButton("Checked", true)) == true then
 print("Button pressed!")
 end
 ImGuiDummy(ImGuiImVec2(0, 10))
+if (ImGuiBeginCombo("Sample Method", sampleMethod, ImGuiComboFlags_NoArrowButton)) == true then
+for i = 0, 7, 1 do
+local isSelected = ImGuiNew_BoolArray(1)
+ImGuiBoolArray_setitem(isSelected, 0, sampleMethod == ImGuiCharPArray_getitem(charArray, i))
+if (ImGuiSelectable(ImGuiCharPArray_getitem(charArray, i), isSelected)) == true then
+sampleMethod = ImGuiCharPArray_getitem(charArray, i)
+sampleMethodEnum = i
+end
+end
+ImGuiEndCombo()
+end
+ImGuiDummy(ImGuiImVec2(0, 10))
 if (ImGuiButton("Load Model")) == true then
 local result = ofSystemLoadDialog("Load Model", false, "")
 if (result.bSuccess) then
@@ -130,4 +151,5 @@ function a.exit()
 stableDiffusion:freeSdCtx()
 ImGuiDelete_BoolArray(boolArrayValue)
 ImGuiDelete_IntArray(intArrayValue)
+ImGuiDelete_CharPArray(charArray)
 end
