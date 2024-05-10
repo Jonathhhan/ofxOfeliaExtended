@@ -131,4 +131,3 @@ stableDiffusion:freeSdCtx()
 ImGuiDelete_BoolArray(boolArrayValue)
 ImGuiDelete_IntArray(intArrayValue)
 end
-
