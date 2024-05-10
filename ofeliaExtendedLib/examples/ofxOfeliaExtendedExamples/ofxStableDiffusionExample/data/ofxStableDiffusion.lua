@@ -10,7 +10,6 @@ local imgVec
 local sampleMethod
 local sampleMethodEnum
 local texture = ofTexture()
-local pixels = ofPixels()
 local gui = ofxImGui()
 local boolArrayValue = ImGuiNew_BoolArray(1)
 local intArrayValue = ImGuiNew_IntArray(1)
@@ -68,7 +67,7 @@ print("Width:", imgVec.width, "Height:", imgVec.height, "Channel:", imgVec.chann
 texture:loadData(imgVec.data, 512, 512, GL_RGB)
 stableDiffusion:setDiffused(false)
 end
-if generate == true then
+if generate then
 stableDiffusion:txt2img(prompt, negativePrompt, 0, 1, 512, 512, sampleMethodEnum, 5, -1, 1, sd_image_t, 1, 1, false, "")
 generate = false
 end
@@ -96,11 +95,11 @@ ImGuiDummy(ImGuiImVec2(0, 10))
 ImGuiPushItemWidth(420)
 ImGuiText("The checkbox below is checked.")
 ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiSliderInt("Test", intArrayValue, 1, 16)) == true then
+if (ImGuiSliderInt("Test", intArrayValue, 1, 16)) then
 send:sendFloat(ImGuiIntArray_getitem(intArrayValue, 0))
 end
 ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiCheckbox("Checkbox", boolArrayValue)) == true then
+if (ImGuiCheckbox("Checkbox", boolArrayValue)) then
 print("Toggle:", ImGuiBoolArray_getitem(boolArrayValue, 0))
 end
 ImGuiDummy(ImGuiImVec2(0, 10))
@@ -108,11 +107,11 @@ if (ImGuiRadioButton("Checked", true)) == true then
 print("Button pressed!")
 end
 ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiBeginCombo("Sample Method", sampleMethod, ImGuiComboFlags_NoArrowButton)) == true then
+if (ImGuiBeginCombo("Sample Method", sampleMethod, ImGuiComboFlags_NoArrowButton)) then
 for i = 0, 7, 1 do
 local isSelected = ImGuiNew_BoolArray(1)
 ImGuiBoolArray_setitem(isSelected, 0, sampleMethod == ImGuiCharPArray_getitem(charArray, i))
-if (ImGuiSelectable(ImGuiCharPArray_getitem(charArray, i), isSelected)) == true then
+if (ImGuiSelectable(ImGuiCharPArray_getitem(charArray, i), isSelected)) then
 sampleMethod = ImGuiCharPArray_getitem(charArray, i)
 sampleMethodEnum = i
 end
@@ -120,7 +119,7 @@ end
 ImGuiEndCombo()
 end
 ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiButton("Load Model")) == true then
+if (ImGuiButton("Load Model")) then
 local result = ofSystemLoadDialog("Load Model", false, "")
 if (result.bSuccess) then
 local modelPath = result:getPath()
@@ -134,7 +133,7 @@ end
 ImGuiSameLine(0, 5)
 ImGuiText(modelName)
 ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiButton("Generate")) == true then
+if (ImGuiButton("Generate")) then
 generate = true
 print("Prompt:", prompt)
 end
