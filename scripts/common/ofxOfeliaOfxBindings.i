@@ -4,6 +4,8 @@
 
 %import "../../ofxLua/swig/openFrameworks.i"
 %import "../../../libs/openFrameworks/gl/ofGLBaseTypes.h"
+%import "../../../libs/openFrameworks/utils/ofThread.h"
+%import "../../../libs/openFrameworks/utils/ofThreadChannel.h"
 
 %{
 	#include "../../ofxVectorGraphics/src/ofxVectorGraphics.h"
@@ -12,7 +14,7 @@
 	#include "../../ofxSvg/src/ofxSvg.h"
 	#include "../libs/srtparser.h"
 	#include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
-	#include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
+	#include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
 	#include "../libs/ofxImGui/src/Gui.h"
 	using namespace ofxImGui;
 	using namespace ns_creeps;
@@ -30,11 +32,10 @@
 
 // ofxVectorGraphics
 %ignore operator |;
-%include exception.i
 
 // srtparser
 %typemap(throws) std::out_of_range {
-  // custom exception handler
+  // custom exception handler 
 }
 %template(SubVector) std::vector<SubtitleItem*>;
 
@@ -72,5 +73,7 @@
 %include "../libs/srtparser.h"
 %include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 %include "../libs/ofxVolumetrics/src/ofxImageSequencePlayer.h"
+%include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
 %include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
+%import "../libs/ofxStableDiffusion/src/stableDiffusionThread.h"
 %include "../libs/ofxImGui/src/Gui.h"
