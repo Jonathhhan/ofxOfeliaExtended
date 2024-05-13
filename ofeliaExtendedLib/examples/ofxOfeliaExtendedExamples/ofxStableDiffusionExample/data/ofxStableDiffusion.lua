@@ -5,12 +5,14 @@ end
 local a = ofelia
 local clock = ofClock(this, "setup")
 local stableDiffusion = ofxStableDiffusion()
+local settings = ofGLFWWindowSettings()
+settings.visible = false
 local modelName
 local imgVec
 local sampleMethod
 local sampleMethodEnum
 local texture = ofTexture()
-local gui = ofxImGui()
+local gui = ImGuiGui()
 local boolArrayValue = ImGuiNew_BoolArray(1)
 local intArrayValue = ImGuiNew_IntArray(1)
 local charArray = ImGuiNew_CharPArray(8)
@@ -29,7 +31,7 @@ window:setSize(632, 900)
 if ofWindow.exists then
 clock:delay(0)
 else
-window:create()
+window:createGLFW(settings)
 end
 end
 
@@ -54,7 +56,8 @@ ImGuiCharPArray_setitem(charArray, i -1, charTable[i])
 end
 sampleMethod = ImGuiCharPArray_getitem(charArray, 0)
 sampleMethodEnum = 0
-gui:setup()
+print(ImGuiConfigFlags_ViewportsEnable)
+gui:setup(ofxBaseTheme, true, ImGuiConfigFlags_ViewportsEnable)
 modelName = "sd_turbo.safetensors"
 print(stableDiffusion:getSystemInfo())
 stableDiffusion:newSdCtx("sd_turbo.safetensors", "", "", "", "", "", "", true, false, false, 8, 1, 0, 0, false, false, false)
@@ -147,6 +150,7 @@ gui:endGui()
 end
 
 function a.exit()
+gui:exit();
 stableDiffusion:freeSdCtx()
 ImGuiDelete_BoolArray(boolArrayValue)
 ImGuiDelete_IntArray(intArrayValue)
