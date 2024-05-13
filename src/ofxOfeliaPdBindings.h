@@ -82,17 +82,40 @@ public:
     {
         return sizeSet;
     }
-    void create()
+    void createGLFW(ofGLFWWindowSettings settings)
     {
         if (owner || exists) return;
 #if defined(TARGET_EXTERNAL)
-#if defined(TARGET_OPENGLES)
-        ofGLESWindowSettings settings;
-        settings.setGLESVersion(glesVersion);
-#else
-        ofGLWindowSettings settings;
         settings.setGLVersion(glVersionMajor, glVersionMinor);
+        settings.title = title->s_name;
+        settings.windowMode = static_cast<ofWindowMode>(windowMode);
+        if (positionSet) settings.setPosition(position);
+        if (sizeSet) settings.setSize(width, height);
+        ofCreateWindow(settings);
+#elif defined(TARGET_STANDALONE)
+        ofSetWindowTitle(title->s_name);
+        ofSetWindowPosition(position.x, position.y);
+        ofSetWindowShape(width, height);
 #endif
+        mainLoop = ofGetMainLoop().get();
+        mainLoop->setEscapeQuitsLoop(false);
+        windowPtr = ofGetWindowPtr();
+        ofResetElapsedTimeCounter();
+        ofSetFrameRate(60);
+        ofDisableArbTex();
+        owner = true;
+        exists = true;
+#if defined(TARGET_EXTERNAL)
+        addWindowListeners();
+        windowPtr->events().notifySetup();
+        clock_delay(clock, 0.0);
+#endif
+    }
+    void createGLES(ofGLESWindowSettings settings)
+    {
+        if (owner || exists) return;
+#if defined(TARGET_EXTERNAL)
+        settings.setGLESVersion(glesVersion);
         settings.title = title->s_name;
         settings.windowMode = static_cast<ofWindowMode>(windowMode);
         if (positionSet) settings.setPosition(position);
