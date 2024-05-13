@@ -6,7 +6,9 @@
 
 
 %{
-	#include "../../ofxImGui/libs/imgui/src/imgui.h"
+    #include "../libs/ofxImGui/src/Gui.h"
+	#include "../libs/ofxImGui/libs/imgui/src/imgui.h"
+    using namespace ofxImGui;
     using namespace ImGui;
 %}
 
@@ -31,6 +33,10 @@
 //------
 // Custom changes
 //------
+
+%ignore operator bool;
+%rename(beginGui) begin();
+%rename(endGui) end();
 
 %ignore operator ofFloatColor;
 %ignore operator ofVec2f;
@@ -202,4 +208,5 @@
 
 // ----- Bindings------
 
-%include "../../ofxImGui/libs/imgui/src/imgui.h"
+%include "../libs/ofxImGui/src/Gui.h"
+%include "../libs/ofxImGui/libs/imgui/src/imgui.h"

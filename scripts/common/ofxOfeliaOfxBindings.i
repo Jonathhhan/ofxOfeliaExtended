@@ -15,17 +15,10 @@
 	#include "../libs/srtparser.h"
 	#include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 	#include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
-	#include "../libs/ofxImGui/src/Gui.h"
-	using namespace ofxImGui;
+    #include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
 	using namespace ns_creeps;
 %}
 
-
-// ofxImGui
-%ignore operator bool;
-%rename(beginGui) begin;
-%rename(endGui) end;
-%rename(ImGui) Gui;
 
 // ofxOpenCv
 %ignore operator &=;
@@ -35,7 +28,7 @@
 
 // srtparser
 %typemap(throws) std::out_of_range {
-  // custom exception handler
+  // custom exception handler 
 }
 %template(SubVector) std::vector<SubtitleItem*>;
 
@@ -76,4 +69,3 @@
 %include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
 %include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
 %import "../libs/ofxStableDiffusion/src/stableDiffusionThread.h"
-%include "../libs/ofxImGui/src/Gui.h"
