@@ -15,7 +15,7 @@
 	#include "../libs/srtparser.h"
 	#include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 	#include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
-    #include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
+	#include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
 	using namespace ns_creeps;
 %}
 
