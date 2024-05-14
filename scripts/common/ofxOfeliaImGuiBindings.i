@@ -6,10 +6,10 @@
 
 
 %{
-    #include "../libs/ofxImGui/src/Gui.h"
+	#include "../libs/ofxImGui/src/Gui.h"
 	#include "../libs/ofxImGui/libs/imgui/src/imgui.h"
-    using namespace ofxImGui;
-    using namespace ImGui;
+	using namespace ofxImGui;
+	using namespace ImGui;
 %}
 
 
