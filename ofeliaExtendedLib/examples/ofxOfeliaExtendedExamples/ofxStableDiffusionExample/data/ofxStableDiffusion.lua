@@ -6,7 +6,6 @@ local a = ofelia
 local clock = ofClock(this, "setup")
 local stableDiffusion = ofxStableDiffusion()
 local settings = ofGLFWWindowSettings()
-settings.visible = false
 local modelName
 local imgVec
 local sampleMethod
@@ -26,11 +25,16 @@ ofWindow.addListener("setup", this)
 ofWindow.addListener("update", this)
 ofWindow.addListener("draw", this)
 ofWindow.addListener("exit", this)
-window:setPosition(200, 100)
-window:setSize(632, 900)
 if ofWindow.exists then
 clock:delay(0)
 else
+settings:setGLVersion(4, 0)
+settings.monitor = 0
+settings:setSize(1, 1)
+settings:setPosition(ofVec2f(0, 0):vec2())
+settings.multiMonitorFullScreen = false
+settings.windowMode = OF_WINDOW
+settings.visible = false
 window:createGLFW(settings)
 end
 end
@@ -56,7 +60,6 @@ ImGuiCharPArray_setitem(charArray, i -1, charTable[i])
 end
 sampleMethod = ImGuiCharPArray_getitem(charArray, 0)
 sampleMethodEnum = 0
-print(ImGuiConfigFlags_ViewportsEnable)
 gui:setup(ofxBaseTheme, true, ImGuiConfigFlags_ViewportsEnable)
 modelName = "sd_turbo.safetensors"
 print(stableDiffusion:getSystemInfo())
