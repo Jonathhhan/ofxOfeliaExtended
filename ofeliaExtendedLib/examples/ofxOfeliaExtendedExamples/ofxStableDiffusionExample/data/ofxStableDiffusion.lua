@@ -36,6 +36,7 @@ settings.multiMonitorFullScreen = false
 settings.windowMode = OF_WINDOW
 settings.visible = false
 window:createGLFW(settings)
+
 end
 end
 
@@ -60,6 +61,7 @@ ImGuiCharPArray_setitem(charArray, i -1, charTable[i])
 end
 sampleMethod = ImGuiCharPArray_getitem(charArray, 0)
 sampleMethodEnum = 0
+print(ImGuiConfigFlags_ViewportsEnable)
 gui:setup(ofxBaseTheme, true, ImGuiConfigFlags_ViewportsEnable)
 modelName = "sd_turbo.safetensors"
 print(stableDiffusion:getSystemInfo())
@@ -88,8 +90,8 @@ ImGuiPushStyleVar(ImGuiStyleVar_WindowPadding, ImGuiImVec2(10, 0))
 ImGuiPushStyleVar(ImGuiStyleVar_IndentSpacing, 10)
 ImGuiPushStyleVar(ImGuiStyleVar_ItemSpacing, ImGuiImVec2(0, 0))
 ImGuiPushStyleVar(ImGuiStyleVar_ItemInnerSpacing, ImGuiImVec2(5, 0))
-ImGuiSetNextWindowPos(ImGuiImVec2(50, 50), ImGuiCond_Once)
-ImGuiBegin_3("ofxStableDiffusion", boolArrayValue, ImGuiWindowFlags_NoResize)
+ImGuiSetNextWindowPos(ImGuiImVec2(200, 100), ImGuiCond_Once)
+ImGuiBegin_3("ofxStableDiffusion##" .. $0, boolArrayValue, ImGuiWindowFlags_NoResize)
 ImGuiDummy(ImGuiImVec2(0, 10))
 ImGuiImage(texture:getTextureData().textureID, ImGuiImVec2(512, 512))
 ImGuiDummy(ImGuiImVec2(0, 10))
