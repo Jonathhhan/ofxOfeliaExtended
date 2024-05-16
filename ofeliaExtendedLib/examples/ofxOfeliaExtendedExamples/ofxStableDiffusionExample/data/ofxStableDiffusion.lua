@@ -34,7 +34,6 @@ settings.multiMonitorFullScreen = false
 settings.windowMode = OF_WINDOW
 settings.visible = false
 window:createGLFW(settings)
-
 end
 end
 
