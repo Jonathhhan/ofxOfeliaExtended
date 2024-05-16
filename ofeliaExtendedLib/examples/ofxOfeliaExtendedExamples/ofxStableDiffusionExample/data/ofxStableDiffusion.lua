@@ -1,6 +1,4 @@
-if type(window) ~= "userdata" then
-window = ofWindow()
-end
+local window = ofWindow()
 
 local a = ofelia
 local clock = ofClock(this, "setup")
