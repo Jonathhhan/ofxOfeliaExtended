@@ -15,7 +15,7 @@
 	#include "../libs/srtparser.h"
 	#include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 	#include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
-	#include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
+	#include "../libs/ofxStableDiffusion/libs/stable-diffusion/include/stable-diffusion.h"
 	using namespace ns_creeps;
 %}
 
@@ -67,5 +67,5 @@
 %include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 %include "../libs/ofxVolumetrics/src/ofxImageSequencePlayer.h"
 %include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
-%include "../libs/ofxStableDiffusion/include/stable-diffusion.h"
-%import "../libs/ofxStableDiffusion/src/stableDiffusionThread.h"
+%include "../libs/ofxStableDiffusion/libs/stable-diffusion/include/stable-diffusion.h"
+%import "../libs/ofxStableDiffusion/src/ofxStableDiffusionThread.h"
