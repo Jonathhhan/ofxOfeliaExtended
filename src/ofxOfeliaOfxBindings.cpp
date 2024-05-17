@@ -2735,123 +2735,125 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 /* -------- TYPES TABLE (BEGIN) -------- */
 
 #define SWIGTYPE_p_Base swig_types[0]
-#define SWIGTYPE_p_BaseTheme swig_types[1]
-#define SWIGTYPE_p_ColorType swig_types[2]
-#define SWIGTYPE_p_CreEPS_BOOL swig_types[3]
-#define SWIGTYPE_p_CreEPS_CHAR swig_types[4]
-#define SWIGTYPE_p_CreEPS_FLOAT swig_types[5]
-#define SWIGTYPE_p_CreEPS_INT swig_types[6]
-#define SWIGTYPE_p_FILE swig_types[7]
-#define SWIGTYPE_p_ImFont swig_types[8]
-#define SWIGTYPE_p_ImFontConfig swig_types[9]
-#define SWIGTYPE_p_ImGuiConfigFlags swig_types[10]
-#define SWIGTYPE_p_ImGuiContext swig_types[11]
-#define SWIGTYPE_p_ImWchar swig_types[12]
-#define SWIGTYPE_p_IplImage swig_types[13]
-#define SWIGTYPE_p_Node swig_types[14]
-#define SWIGTYPE_p_NormalType swig_types[15]
-#define SWIGTYPE_p_SortMode swig_types[16]
-#define SWIGTYPE_p_TexCoordType swig_types[17]
-#define SWIGTYPE_p_VertexType swig_types[18]
-#define SWIGTYPE_p__XDisplay swig_types[19]
-#define SWIGTYPE_p_a_2__CreEPS_FLOAT swig_types[20]
-#define SWIGTYPE_p_aiAnimation swig_types[21]
-#define SWIGTYPE_p_aiScene swig_types[22]
-#define SWIGTYPE_p_cv__Mat swig_types[23]
-#define SWIGTYPE_p_difference_type swig_types[24]
-#define SWIGTYPE_p_f_enum_sd_log_level_t_p_q_const__char_p_void__void swig_types[25]
-#define SWIGTYPE_p_f_int_int_float_p_void__void swig_types[26]
-#define SWIGTYPE_p_f_q_const__p_q_const__CreEPS_CHAR_v_______void swig_types[27]
-#define SWIGTYPE_p_float swig_types[28]
-#define SWIGTYPE_p_glm__mat4 swig_types[29]
-#define SWIGTYPE_p_glm__vec2 swig_types[30]
-#define SWIGTYPE_p_glm__vec3 swig_types[31]
-#define SWIGTYPE_p_int swig_types[32]
-#define SWIGTYPE_p_long_long swig_types[33]
-#define SWIGTYPE_p_ns_creeps__CAt swig_types[34]
-#define SWIGTYPE_p_ns_creeps__CAtBackgroundColor swig_types[35]
-#define SWIGTYPE_p_ns_creeps__CAtCheckerboardFilling swig_types[36]
-#define SWIGTYPE_p_ns_creeps__CAtColor swig_types[37]
-#define SWIGTYPE_p_ns_creeps__CAtFont swig_types[38]
-#define SWIGTYPE_p_ns_creeps__CAtGrayScale swig_types[39]
-#define SWIGTYPE_p_ns_creeps__CAtHexDotFilling swig_types[40]
-#define SWIGTYPE_p_ns_creeps__CAtLineCap swig_types[41]
-#define SWIGTYPE_p_ns_creeps__CAtLineDash swig_types[42]
-#define SWIGTYPE_p_ns_creeps__CAtLineJoin swig_types[43]
-#define SWIGTYPE_p_ns_creeps__CAtLineThickness swig_types[44]
-#define SWIGTYPE_p_ns_creeps__CAtStripeFilling swig_types[45]
-#define SWIGTYPE_p_ns_creeps__CAtTextAlignment swig_types[46]
-#define SWIGTYPE_p_ns_creeps__CAtTransparentBackground swig_types[47]
-#define SWIGTYPE_p_ns_creeps__CreEPS swig_types[48]
-#define SWIGTYPE_p_ofAbstractImage swig_types[49]
-#define SWIGTYPE_p_ofBaseDraws swig_types[50]
-#define SWIGTYPE_p_ofBaseImage_T_unsigned_char_t swig_types[51]
-#define SWIGTYPE_p_ofBaseVideoDraws swig_types[52]
-#define SWIGTYPE_p_ofBuffer swig_types[53]
-#define SWIGTYPE_p_ofColor_T_float_t swig_types[54]
-#define SWIGTYPE_p_ofColor_T_unsigned_char_t swig_types[55]
-#define SWIGTYPE_p_ofColor_T_unsigned_short_t swig_types[56]
-#define SWIGTYPE_p_ofEventArgs swig_types[57]
-#define SWIGTYPE_p_ofFbo swig_types[58]
+#define SWIGTYPE_p_ColorType swig_types[1]
+#define SWIGTYPE_p_CreEPS_BOOL swig_types[2]
+#define SWIGTYPE_p_CreEPS_CHAR swig_types[3]
+#define SWIGTYPE_p_CreEPS_FLOAT swig_types[4]
+#define SWIGTYPE_p_CreEPS_INT swig_types[5]
+#define SWIGTYPE_p_FILE swig_types[6]
+#define SWIGTYPE_p_IplImage swig_types[7]
+#define SWIGTYPE_p_Node swig_types[8]
+#define SWIGTYPE_p_NormalType swig_types[9]
+#define SWIGTYPE_p_SortMode swig_types[10]
+#define SWIGTYPE_p_SubRipParser swig_types[11]
+#define SWIGTYPE_p_SubtitleItem swig_types[12]
+#define SWIGTYPE_p_SubtitleParser swig_types[13]
+#define SWIGTYPE_p_SubtitleParserFactory swig_types[14]
+#define SWIGTYPE_p_SubtitleWord swig_types[15]
+#define SWIGTYPE_p_TexCoordType swig_types[16]
+#define SWIGTYPE_p_VertexType swig_types[17]
+#define SWIGTYPE_p__XDisplay swig_types[18]
+#define SWIGTYPE_p_a_2__CreEPS_FLOAT swig_types[19]
+#define SWIGTYPE_p_aiAnimation swig_types[20]
+#define SWIGTYPE_p_aiScene swig_types[21]
+#define SWIGTYPE_p_cv__Mat swig_types[22]
+#define SWIGTYPE_p_difference_type swig_types[23]
+#define SWIGTYPE_p_f_enum_sd_log_level_t_p_q_const__char_p_void__void swig_types[24]
+#define SWIGTYPE_p_f_int_int_float_p_void__void swig_types[25]
+#define SWIGTYPE_p_f_q_const__p_q_const__CreEPS_CHAR_v_______void swig_types[26]
+#define SWIGTYPE_p_float swig_types[27]
+#define SWIGTYPE_p_glm__mat4 swig_types[28]
+#define SWIGTYPE_p_glm__vec2 swig_types[29]
+#define SWIGTYPE_p_glm__vec3 swig_types[30]
+#define SWIGTYPE_p_int swig_types[31]
+#define SWIGTYPE_p_long_long swig_types[32]
+#define SWIGTYPE_p_ns_creeps__CAt swig_types[33]
+#define SWIGTYPE_p_ns_creeps__CAtBackgroundColor swig_types[34]
+#define SWIGTYPE_p_ns_creeps__CAtCheckerboardFilling swig_types[35]
+#define SWIGTYPE_p_ns_creeps__CAtColor swig_types[36]
+#define SWIGTYPE_p_ns_creeps__CAtFont swig_types[37]
+#define SWIGTYPE_p_ns_creeps__CAtGrayScale swig_types[38]
+#define SWIGTYPE_p_ns_creeps__CAtHexDotFilling swig_types[39]
+#define SWIGTYPE_p_ns_creeps__CAtLineCap swig_types[40]
+#define SWIGTYPE_p_ns_creeps__CAtLineDash swig_types[41]
+#define SWIGTYPE_p_ns_creeps__CAtLineJoin swig_types[42]
+#define SWIGTYPE_p_ns_creeps__CAtLineThickness swig_types[43]
+#define SWIGTYPE_p_ns_creeps__CAtStripeFilling swig_types[44]
+#define SWIGTYPE_p_ns_creeps__CAtTextAlignment swig_types[45]
+#define SWIGTYPE_p_ns_creeps__CAtTransparentBackground swig_types[46]
+#define SWIGTYPE_p_ns_creeps__CreEPS swig_types[47]
+#define SWIGTYPE_p_ofAbstractImage swig_types[48]
+#define SWIGTYPE_p_ofBaseDraws swig_types[49]
+#define SWIGTYPE_p_ofBaseImage_T_unsigned_char_t swig_types[50]
+#define SWIGTYPE_p_ofBaseVideoDraws swig_types[51]
+#define SWIGTYPE_p_ofBuffer swig_types[52]
+#define SWIGTYPE_p_ofColor_T_float_t swig_types[53]
+#define SWIGTYPE_p_ofColor_T_unsigned_char_t swig_types[54]
+#define SWIGTYPE_p_ofColor_T_unsigned_short_t swig_types[55]
+#define SWIGTYPE_p_ofFbo swig_types[56]
+#define SWIGTYPE_p_ofGLFWWindowSettings swig_types[57]
+#define SWIGTYPE_p_ofGLWindowSettings swig_types[58]
 #define SWIGTYPE_p_ofImage_T_float_t swig_types[59]
 #define SWIGTYPE_p_ofImage_T_unsigned_char_t swig_types[60]
 #define SWIGTYPE_p_ofImage_T_unsigned_short_t swig_types[61]
-#define SWIGTYPE_p_ofKeyEventArgs swig_types[62]
-#define SWIGTYPE_p_ofMaterial swig_types[63]
-#define SWIGTYPE_p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[64]
-#define SWIGTYPE_p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[65]
-#define SWIGTYPE_p_ofMessage swig_types[66]
-#define SWIGTYPE_p_ofMouseEventArgs swig_types[67]
-#define SWIGTYPE_p_ofPixels_T_float_t swig_types[68]
-#define SWIGTYPE_p_ofPixels_T_unsigned_char_t swig_types[69]
-#define SWIGTYPE_p_ofPixels_T_unsigned_short_t swig_types[70]
-#define SWIGTYPE_p_ofPolyline_T_ofDefaultVertexType_t swig_types[71]
-#define SWIGTYPE_p_ofRectangle swig_types[72]
-#define SWIGTYPE_p_ofResizeEventArgs swig_types[73]
-#define SWIGTYPE_p_ofTexture swig_types[74]
-#define SWIGTYPE_p_ofTouchEventArgs swig_types[75]
-#define SWIGTYPE_p_ofVboMesh swig_types[76]
-#define SWIGTYPE_p_ofVec3f swig_types[77]
-#define SWIGTYPE_p_ofVideoGrabber swig_types[78]
-#define SWIGTYPE_p_ofVideoPlayer swig_types[79]
-#define SWIGTYPE_p_ofWindowPosEventArgs swig_types[80]
-#define SWIGTYPE_p_ofxAssimpAnimation swig_types[81]
-#define SWIGTYPE_p_ofxAssimpMeshHelper swig_types[82]
-#define SWIGTYPE_p_ofxAssimpModelLoader swig_types[83]
-#define SWIGTYPE_p_ofxCvBlob swig_types[84]
-#define SWIGTYPE_p_ofxCvColorImage swig_types[85]
-#define SWIGTYPE_p_ofxCvContourFinder swig_types[86]
-#define SWIGTYPE_p_ofxCvFloatImage swig_types[87]
-#define SWIGTYPE_p_ofxCvGrayscaleImage swig_types[88]
-#define SWIGTYPE_p_ofxCvHaarFinder swig_types[89]
-#define SWIGTYPE_p_ofxCvImage swig_types[90]
-#define SWIGTYPE_p_ofxCvShortImage swig_types[91]
-#define SWIGTYPE_p_ofxImGuiContext swig_types[92]
-#define SWIGTYPE_p_ofxImGui__Gui swig_types[93]
-#define SWIGTYPE_p_ofxImageSequencePlayer swig_types[94]
-#define SWIGTYPE_p_ofxTextureData3d swig_types[95]
-#define SWIGTYPE_p_ofxVectorGraphics swig_types[96]
-#define SWIGTYPE_p_ofxVolumetrics swig_types[97]
-#define SWIGTYPE_p_sd_ctx_t swig_types[98]
-#define SWIGTYPE_p_sd_image_t swig_types[99]
-#define SWIGTYPE_p_short swig_types[100]
-#define SWIGTYPE_p_signed_char swig_types[101]
-#define SWIGTYPE_p_size_type swig_types[102]
-#define SWIGTYPE_p_std__shared_ptrT_aiScene_const_t swig_types[103]
-#define SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t swig_types[104]
+#define SWIGTYPE_p_ofMaterial swig_types[62]
+#define SWIGTYPE_p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[63]
+#define SWIGTYPE_p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[64]
+#define SWIGTYPE_p_ofMouseEventArgs swig_types[65]
+#define SWIGTYPE_p_ofPath swig_types[66]
+#define SWIGTYPE_p_ofPixels_T_float_t swig_types[67]
+#define SWIGTYPE_p_ofPixels_T_unsigned_char_t swig_types[68]
+#define SWIGTYPE_p_ofPixels_T_unsigned_short_t swig_types[69]
+#define SWIGTYPE_p_ofPolyline_T_ofDefaultVertexType_t swig_types[70]
+#define SWIGTYPE_p_ofRectangle swig_types[71]
+#define SWIGTYPE_p_ofTexture swig_types[72]
+#define SWIGTYPE_p_ofTouchEventArgs swig_types[73]
+#define SWIGTYPE_p_ofVboMesh swig_types[74]
+#define SWIGTYPE_p_ofVec3f swig_types[75]
+#define SWIGTYPE_p_ofVideoGrabber swig_types[76]
+#define SWIGTYPE_p_ofVideoPlayer swig_types[77]
+#define SWIGTYPE_p_ofWindowPosEventArgs swig_types[78]
+#define SWIGTYPE_p_ofxAssimpAnimation swig_types[79]
+#define SWIGTYPE_p_ofxAssimpMeshHelper swig_types[80]
+#define SWIGTYPE_p_ofxAssimpModelLoader swig_types[81]
+#define SWIGTYPE_p_ofxCvBlob swig_types[82]
+#define SWIGTYPE_p_ofxCvColorImage swig_types[83]
+#define SWIGTYPE_p_ofxCvContourFinder swig_types[84]
+#define SWIGTYPE_p_ofxCvFloatImage swig_types[85]
+#define SWIGTYPE_p_ofxCvGrayscaleImage swig_types[86]
+#define SWIGTYPE_p_ofxCvHaarFinder swig_types[87]
+#define SWIGTYPE_p_ofxCvImage swig_types[88]
+#define SWIGTYPE_p_ofxCvShortImage swig_types[89]
+#define SWIGTYPE_p_ofxImageSequencePlayer swig_types[90]
+#define SWIGTYPE_p_ofxStableDiffusion swig_types[91]
+#define SWIGTYPE_p_ofxSvg swig_types[92]
+#define SWIGTYPE_p_ofxTextureData3d swig_types[93]
+#define SWIGTYPE_p_ofxVectorGraphics swig_types[94]
+#define SWIGTYPE_p_ofxVolumetrics swig_types[95]
+#define SWIGTYPE_p_sd_ctx_t swig_types[96]
+#define SWIGTYPE_p_sd_image_t swig_types[97]
+#define SWIGTYPE_p_short swig_types[98]
+#define SWIGTYPE_p_signed_char swig_types[99]
+#define SWIGTYPE_p_size_type swig_types[100]
+#define SWIGTYPE_p_stableDiffusionThread swig_types[101]
+#define SWIGTYPE_p_std__shared_ptrT_aiScene_const_t swig_types[102]
+#define SWIGTYPE_p_std__string swig_types[103]
+#define SWIGTYPE_p_std__vectorT_SubtitleItem_p_t swig_types[104]
 #define SWIGTYPE_p_std__vectorT_glm__vec3_t swig_types[105]
-#define SWIGTYPE_p_std__vectorT_ofxCvBlob_t swig_types[106]
-#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[107]
-#define SWIGTYPE_p_string swig_types[108]
-#define SWIGTYPE_p_unsigned_char swig_types[109]
-#define SWIGTYPE_p_unsigned_int swig_types[110]
-#define SWIGTYPE_p_unsigned_long swig_types[111]
-#define SWIGTYPE_p_unsigned_long_long swig_types[112]
-#define SWIGTYPE_p_unsigned_short swig_types[113]
-#define SWIGTYPE_p_upscaler_ctx_t swig_types[114]
-#define SWIGTYPE_p_value_type swig_types[115]
-static swig_type_info *swig_types[117];
-static swig_module_info swig_module = {swig_types, 116, 0, 0, 0, 0};
+#define SWIGTYPE_p_std__vectorT_long_t swig_types[106]
+#define SWIGTYPE_p_std__vectorT_ofPath_t swig_types[107]
+#define SWIGTYPE_p_std__vectorT_ofxCvBlob_t swig_types[108]
+#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[109]
+#define SWIGTYPE_p_string swig_types[110]
+#define SWIGTYPE_p_unsigned_char swig_types[111]
+#define SWIGTYPE_p_unsigned_int swig_types[112]
+#define SWIGTYPE_p_unsigned_long swig_types[113]
+#define SWIGTYPE_p_unsigned_long_long swig_types[114]
+#define SWIGTYPE_p_unsigned_short swig_types[115]
+#define SWIGTYPE_p_upscaler_ctx_t swig_types[116]
+#define SWIGTYPE_p_value_type swig_types[117]
+static swig_type_info *swig_types[119];
+static swig_module_info swig_module = {swig_types, 118, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2919,12 +2921,33 @@ typedef struct{} LANGUAGE_OBJ;
 	#include "../../ofxVectorGraphics/src/ofxVectorGraphics.h"
 	#include "../../ofxOpenCv/src/ofxOpenCv.h"
 	#include "../../ofxAssimpModelLoader/src/ofxAssimpModelLoader.h"
-	#include "../../ofxVolumetrics/src/ofxVolumetrics.h"
-	#include "../../ofxStableDiffusion/libs/stable-diffusion/include/stable-diffusion.h"
-	#include "../../ofxImGui/src/Gui.h"
-	using namespace ofxImGui;
+	#include "../../ofxSvg/src/ofxSvg.h"
+	#include "../libs/srtparser.h"
+	#include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
+	#include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
+	#include "../libs/ofxStableDiffusion/libs/stable-diffusion/include/stable-diffusion.h"
 	using namespace ns_creeps;
 
+SWIGINTERN SubtitleItem *std_vector_Sl_SubtitleItem_Sm__Sg____getitem__(std::vector< SubtitleItem * > *self,unsigned int idx){
+				if (idx>=self->size())
+					throw std::out_of_range("in vector::__getitem__()");
+				return (*self)[idx];
+			}
+SWIGINTERN void std_vector_Sl_SubtitleItem_Sm__Sg____setitem__(std::vector< SubtitleItem * > *self,unsigned int idx,SubtitleItem *val){
+				if (idx>=self->size())
+					throw std::out_of_range("in vector::__setitem__()");
+				(*self)[idx]=val;
+			}
+SWIGINTERN glm::vec3 std_vector_Sl_glm_vec3_Sg____getitem__(std::vector< glm::vec3 > *self,unsigned int idx){
+				if (idx>=self->size())
+					throw std::out_of_range("in vector::__getitem__()");
+				return (*self)[idx];
+			}
+SWIGINTERN void std_vector_Sl_glm_vec3_Sg____setitem__(std::vector< glm::vec3 > *self,unsigned int idx,glm::vec3 val){
+				if (idx>=self->size())
+					throw std::out_of_range("in vector::__setitem__()");
+				(*self)[idx]=val;
+			}
 
 SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
   int ret = lua_isstring(L, idx);
@@ -2934,11 +2957,394 @@ SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
 }
 
 
-#include <memory>
+#include <string.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
+static int _wrap_new_SubVector__SWIG_0(lua_State* L) { { int SWIG_arg = 0; std::vector< SubtitleItem * > *result = 0 ;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::vector",0,0)
+    result = (std::vector< SubtitleItem * > *)new std::vector< SubtitleItem * >();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_new_SubVector__SWIG_1(lua_State* L) { { int SWIG_arg = 0; unsigned int arg1 ;
+    std::vector< SubtitleItem * > *result = 0 ; SWIG_check_num_args("std::vector< SubtitleItem * >::vector",1,1)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::vector",1,"unsigned int");
+    SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative"); arg1 = (unsigned int)lua_tonumber(L, 1);
+    result = (std::vector< SubtitleItem * > *)new std::vector< SubtitleItem * >(arg1);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_new_SubVector__SWIG_2(lua_State* L) { { int SWIG_arg = 0; std::vector< SubtitleItem * > *arg1 = 0 ;
+    std::vector< SubtitleItem * > *result = 0 ; SWIG_check_num_args("std::vector< SubtitleItem * >::vector",1,1)
+    if(!lua_isuserdata(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::vector",1,"std::vector< SubtitleItem * > const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("new_SubVector",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); } 
+    result = (std::vector< SubtitleItem * > *)new std::vector< SubtitleItem * >((std::vector< SubtitleItem * > const &)*arg1);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_new_SubVector__SWIG_3(lua_State* L) { { int SWIG_arg = 0; unsigned int arg1 ;
+    SubtitleItem *arg2 = (SubtitleItem *) 0 ; std::vector< SubtitleItem * > *result = 0 ;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::vector",2,2)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::vector",1,"unsigned int");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("std::vector< SubtitleItem * >::vector",2,"SubtitleItem *");
+    SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative"); arg1 = (unsigned int)lua_tonumber(L, 1);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("new_SubVector",2,SWIGTYPE_p_SubtitleItem); } 
+    result = (std::vector< SubtitleItem * > *)new std::vector< SubtitleItem * >(arg1,arg2);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_new_SubVector(lua_State* L) { int argc; int argv[3]={ 1,2,3} ; argc = lua_gettop(L); if (argc == 0) {
+    return _wrap_new_SubVector__SWIG_0(L);}  if (argc == 1) { int _v = 0; { void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__vectorT_SubtitleItem_p_t, SWIG_POINTER_NO_NULL)) {
+        _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_SubVector__SWIG_2(L);}  }  if (argc == 1) { int _v = 0; {
+      _v = lua_isnumber(L,argv[0]); }  if (_v) { return _wrap_new_SubVector__SWIG_1(L);}  }  if (argc == 2) { int _v = 0; {
+      _v = lua_isnumber(L,argv[0]); }  if (_v) { { void *ptr;
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_SubtitleItem, 0)) { _v = 0; }
+         else { _v = 1; }  }  if (_v) { return _wrap_new_SubVector__SWIG_3(L);}  }  } 
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SubVector'\n" "  Possible C/C++ prototypes are:\n"
+  "    std::vector< SubtitleItem * >::vector()\n" "    std::vector< SubtitleItem * >::vector(unsigned int)\n"
+  "    std::vector< SubtitleItem * >::vector(std::vector< SubtitleItem * > const &)\n"
+  "    std::vector< SubtitleItem * >::vector(unsigned int,SubtitleItem *)\n"); lua_error(L);return 0; }
+static int _wrap_SubVector_size(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ; unsigned int result;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::size",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::size",1,"std::vector< SubtitleItem * > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector_size",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); } 
+    result = (unsigned int)((std::vector< SubtitleItem * > const *)arg1)->size();
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubVector_max_size(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ; unsigned int result;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::max_size",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::max_size",1,"std::vector< SubtitleItem * > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector_max_size",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); } 
+    result = (unsigned int)((std::vector< SubtitleItem * > const *)arg1)->max_size();
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubVector_empty(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ; bool result;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::empty",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::empty",1,"std::vector< SubtitleItem * > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector_empty",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); } 
+    result = (bool)((std::vector< SubtitleItem * > const *)arg1)->empty(); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubVector_clear(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::clear",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::clear",1,"std::vector< SubtitleItem * > *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector_clear",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); }  (arg1)->clear(); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubVector_push_back(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ; SubtitleItem *arg2 = (SubtitleItem *) 0 ;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::push_back",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::push_back",1,"std::vector< SubtitleItem * > *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("std::vector< SubtitleItem * >::push_back",2,"SubtitleItem *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector_push_back",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubVector_push_back",2,SWIGTYPE_p_SubtitleItem); }  (arg1)->push_back(arg2); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubVector_pop_back(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::pop_back",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::pop_back",1,"std::vector< SubtitleItem * > *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector_pop_back",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); }  (arg1)->pop_back(); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubVector_front(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::front",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::front",1,"std::vector< SubtitleItem * > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector_front",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); } 
+    result = (SubtitleItem *)((std::vector< SubtitleItem * > const *)arg1)->front();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_SubVector_back(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::back",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::back",1,"std::vector< SubtitleItem * > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector_back",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); } 
+    result = (SubtitleItem *)((std::vector< SubtitleItem * > const *)arg1)->back();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_SubVector___getitem(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ; unsigned int arg2 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("std::vector< SubtitleItem * >::__getitem__",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::__getitem__",1,"std::vector< SubtitleItem * > *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("std::vector< SubtitleItem * >::__getitem__",2,"unsigned int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector___getitem",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (unsigned int)lua_tonumber(L, 2); try {
+      result = (SubtitleItem *)std_vector_Sl_SubtitleItem_Sm__Sg____getitem__(arg1,arg2);}  catch(std::out_of_range &_e) { {  }
+       }  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_SubVector___setitem(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) 0 ; unsigned int arg2 ;
+    SubtitleItem *arg3 = (SubtitleItem *) 0 ; SWIG_check_num_args("std::vector< SubtitleItem * >::__setitem__",3,3)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< SubtitleItem * >::__setitem__",1,"std::vector< SubtitleItem * > *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("std::vector< SubtitleItem * >::__setitem__",2,"unsigned int");
+    if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("std::vector< SubtitleItem * >::__setitem__",3,"SubtitleItem *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,0))){
+      SWIG_fail_ptr("SubVector___setitem",1,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (unsigned int)lua_tonumber(L, 2);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubVector___setitem",3,SWIGTYPE_p_SubtitleItem); }  try {
+      std_vector_Sl_SubtitleItem_Sm__Sg____setitem__(arg1,arg2,arg3);}  catch(std::out_of_range &_e) { {  }  }  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static void swig_delete_SubVector(void *obj) {
+std::vector< SubtitleItem * > *arg1 = (std::vector< SubtitleItem * > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SubVector(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SubVector);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SubVector_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SubVector_methods[]= {
+    { "size", _wrap_SubVector_size},
+    { "max_size", _wrap_SubVector_max_size},
+    { "empty", _wrap_SubVector_empty},
+    { "clear", _wrap_SubVector_clear},
+    { "push_back", _wrap_SubVector_push_back},
+    { "pop_back", _wrap_SubVector_pop_back},
+    { "front", _wrap_SubVector_front},
+    { "back", _wrap_SubVector_back},
+    { "__getitem", _wrap_SubVector___getitem},
+    { "__setitem", _wrap_SubVector___setitem},
+    {0,0}
+};
+static swig_lua_method swig_SubVector_meta[] = {
+    { "__getitem", _wrap_SubVector___getitem},
+    { "__setitem", _wrap_SubVector___setitem},
+    {0,0}
+};
+
+static swig_lua_attribute swig_SubVector_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SubVector_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SubVector_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SubVector_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SubVector_Sf_SwigStatic = {
+    "SubVector",
+    swig_SubVector_Sf_SwigStatic_methods,
+    swig_SubVector_Sf_SwigStatic_attributes,
+    swig_SubVector_Sf_SwigStatic_constants,
+    swig_SubVector_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SubVector_bases[] = {0};
+static const char *swig_SubVector_base_names[] = {0};
+static swig_lua_class _wrap_class_SubVector = { "SubVector", "SubVector", &SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,_proxy__wrap_new_SubVector, swig_delete_SubVector, swig_SubVector_methods, swig_SubVector_attributes, &swig_SubVector_Sf_SwigStatic, swig_SubVector_meta, swig_SubVector_bases, swig_SubVector_base_names };
+
+static int _wrap_new_GlmVector__SWIG_0(lua_State* L) { { int SWIG_arg = 0; std::vector< glm::vec3 > *result = 0 ;
+    SWIG_check_num_args("std::vector< glm::vec3 >::vector",0,0)
+    result = (std::vector< glm::vec3 > *)new std::vector< glm::vec3 >();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_glm__vec3_t,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_new_GlmVector__SWIG_1(lua_State* L) { { int SWIG_arg = 0; unsigned int arg1 ;
+    std::vector< glm::vec3 > *result = 0 ; SWIG_check_num_args("std::vector< glm::vec3 >::vector",1,1)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::vector",1,"unsigned int");
+    SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative"); arg1 = (unsigned int)lua_tonumber(L, 1);
+    result = (std::vector< glm::vec3 > *)new std::vector< glm::vec3 >(arg1);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_glm__vec3_t,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_new_GlmVector__SWIG_2(lua_State* L) { { int SWIG_arg = 0; std::vector< glm::vec3 > *arg1 = 0 ;
+    std::vector< glm::vec3 > *result = 0 ; SWIG_check_num_args("std::vector< glm::vec3 >::vector",1,1)
+    if(!lua_isuserdata(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::vector",1,"std::vector< glm::vec3 > const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("new_GlmVector",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); } 
+    result = (std::vector< glm::vec3 > *)new std::vector< glm::vec3 >((std::vector< glm::vec3 > const &)*arg1);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_glm__vec3_t,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_new_GlmVector__SWIG_3(lua_State* L) { { int SWIG_arg = 0; unsigned int arg1 ; glm::vec3 arg2 ;
+    glm::vec3 *argp2 ; std::vector< glm::vec3 > *result = 0 ; SWIG_check_num_args("std::vector< glm::vec3 >::vector",2,2)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::vector",1,"unsigned int");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("std::vector< glm::vec3 >::vector",2,"glm::vec3");
+    SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative"); arg1 = (unsigned int)lua_tonumber(L, 1);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_glm__vec3,0))){
+      SWIG_fail_ptr("new_GlmVector",2,SWIGTYPE_p_glm__vec3); }  arg2 = *argp2;
+    result = (std::vector< glm::vec3 > *)new std::vector< glm::vec3 >(arg1,arg2);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_glm__vec3_t,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_new_GlmVector(lua_State* L) { int argc; int argv[3]={ 1,2,3} ; argc = lua_gettop(L); if (argc == 0) {
+    return _wrap_new_GlmVector__SWIG_0(L);}  if (argc == 1) { int _v = 0; { void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__vectorT_glm__vec3_t, SWIG_POINTER_NO_NULL)) {
+        _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_GlmVector__SWIG_2(L);}  }  if (argc == 1) { int _v = 0; {
+      _v = lua_isnumber(L,argv[0]); }  if (_v) { return _wrap_new_GlmVector__SWIG_1(L);}  }  if (argc == 2) { int _v = 0; {
+      _v = lua_isnumber(L,argv[0]); }  if (_v) { { void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_glm__vec3, SWIG_POINTER_NO_NULL)) {
+          _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_GlmVector__SWIG_3(L);}  }  } 
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_GlmVector'\n" "  Possible C/C++ prototypes are:\n"
+  "    std::vector< glm::vec3 >::vector()\n" "    std::vector< glm::vec3 >::vector(unsigned int)\n"
+  "    std::vector< glm::vec3 >::vector(std::vector< glm::vec3 > const &)\n"
+  "    std::vector< glm::vec3 >::vector(unsigned int,glm::vec3)\n"); lua_error(L);return 0; }
+static int _wrap_GlmVector_size(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ; unsigned int result;
+    SWIG_check_num_args("std::vector< glm::vec3 >::size",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::size",1,"std::vector< glm::vec3 > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector_size",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); } 
+    result = (unsigned int)((std::vector< glm::vec3 > const *)arg1)->size(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GlmVector_max_size(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ; unsigned int result;
+    SWIG_check_num_args("std::vector< glm::vec3 >::max_size",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::max_size",1,"std::vector< glm::vec3 > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector_max_size",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); } 
+    result = (unsigned int)((std::vector< glm::vec3 > const *)arg1)->max_size();
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GlmVector_empty(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ; bool result;
+    SWIG_check_num_args("std::vector< glm::vec3 >::empty",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::empty",1,"std::vector< glm::vec3 > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector_empty",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); } 
+    result = (bool)((std::vector< glm::vec3 > const *)arg1)->empty(); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GlmVector_clear(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ; SWIG_check_num_args("std::vector< glm::vec3 >::clear",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::clear",1,"std::vector< glm::vec3 > *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector_clear",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); }  (arg1)->clear(); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GlmVector_push_back(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ; glm::vec3 arg2 ; glm::vec3 *argp2 ;
+    SWIG_check_num_args("std::vector< glm::vec3 >::push_back",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::push_back",1,"std::vector< glm::vec3 > *");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("std::vector< glm::vec3 >::push_back",2,"glm::vec3");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector_push_back",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_glm__vec3,0))){
+      SWIG_fail_ptr("GlmVector_push_back",2,SWIGTYPE_p_glm__vec3); }  arg2 = *argp2; (arg1)->push_back(arg2); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GlmVector_pop_back(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ;
+    SWIG_check_num_args("std::vector< glm::vec3 >::pop_back",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::pop_back",1,"std::vector< glm::vec3 > *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector_pop_back",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); }  (arg1)->pop_back(); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GlmVector_front(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ; glm::vec3 result;
+    SWIG_check_num_args("std::vector< glm::vec3 >::front",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::front",1,"std::vector< glm::vec3 > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector_front",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); } 
+    result = ((std::vector< glm::vec3 > const *)arg1)->front(); { glm::vec3 * resultptr = new glm::vec3(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_glm__vec3,1); SWIG_arg++; }  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_GlmVector_back(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ; glm::vec3 result;
+    SWIG_check_num_args("std::vector< glm::vec3 >::back",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::back",1,"std::vector< glm::vec3 > const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector_back",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); } 
+    result = ((std::vector< glm::vec3 > const *)arg1)->back(); { glm::vec3 * resultptr = new glm::vec3(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_glm__vec3,1); SWIG_arg++; }  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_GlmVector___getitem(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ; unsigned int arg2 ; glm::vec3 result;
+    SWIG_check_num_args("std::vector< glm::vec3 >::__getitem__",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::__getitem__",1,"std::vector< glm::vec3 > *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("std::vector< glm::vec3 >::__getitem__",2,"unsigned int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector___getitem",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (unsigned int)lua_tonumber(L, 2); try {
+      result = std_vector_Sl_glm_vec3_Sg____getitem__(arg1,arg2);}  catch(std::out_of_range &_e) { {  }  }  {
+      glm::vec3 * resultptr = new glm::vec3(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_glm__vec3,1); SWIG_arg++; }  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_GlmVector___setitem(lua_State* L) { { int SWIG_arg = 0;
+    std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) 0 ; unsigned int arg2 ; glm::vec3 arg3 ; glm::vec3 *argp3 ;
+    SWIG_check_num_args("std::vector< glm::vec3 >::__setitem__",3,3)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("std::vector< glm::vec3 >::__setitem__",1,"std::vector< glm::vec3 > *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("std::vector< glm::vec3 >::__setitem__",2,"unsigned int");
+    if(!lua_isuserdata(L,3)) SWIG_fail_arg("std::vector< glm::vec3 >::__setitem__",3,"glm::vec3");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__vectorT_glm__vec3_t,0))){
+      SWIG_fail_ptr("GlmVector___setitem",1,SWIGTYPE_p_std__vectorT_glm__vec3_t); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (unsigned int)lua_tonumber(L, 2);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_glm__vec3,0))){
+      SWIG_fail_ptr("GlmVector___setitem",3,SWIGTYPE_p_glm__vec3); }  arg3 = *argp3; try {
+      std_vector_Sl_glm_vec3_Sg____setitem__(arg1,arg2,SWIG_STD_MOVE(arg3));}  catch(std::out_of_range &_e) { {  }  } 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static void swig_delete_GlmVector(void *obj) {
+std::vector< glm::vec3 > *arg1 = (std::vector< glm::vec3 > *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_GlmVector(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_GlmVector);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_GlmVector_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_GlmVector_methods[]= {
+    { "size", _wrap_GlmVector_size},
+    { "max_size", _wrap_GlmVector_max_size},
+    { "empty", _wrap_GlmVector_empty},
+    { "clear", _wrap_GlmVector_clear},
+    { "push_back", _wrap_GlmVector_push_back},
+    { "pop_back", _wrap_GlmVector_pop_back},
+    { "front", _wrap_GlmVector_front},
+    { "back", _wrap_GlmVector_back},
+    { "__getitem", _wrap_GlmVector___getitem},
+    { "__setitem", _wrap_GlmVector___setitem},
+    {0,0}
+};
+static swig_lua_method swig_GlmVector_meta[] = {
+    { "__getitem", _wrap_GlmVector___getitem},
+    { "__setitem", _wrap_GlmVector___setitem},
+    {0,0}
+};
+
+static swig_lua_attribute swig_GlmVector_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_GlmVector_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_GlmVector_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_GlmVector_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_GlmVector_Sf_SwigStatic = {
+    "GlmVector",
+    swig_GlmVector_Sf_SwigStatic_methods,
+    swig_GlmVector_Sf_SwigStatic_attributes,
+    swig_GlmVector_Sf_SwigStatic_constants,
+    swig_GlmVector_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_GlmVector_bases[] = {0};
+static const char *swig_GlmVector_base_names[] = {0};
+static swig_lua_class _wrap_class_GlmVector = { "GlmVector", "GlmVector", &SWIGTYPE_p_std__vectorT_glm__vec3_t,_proxy__wrap_new_GlmVector, swig_delete_GlmVector, swig_GlmVector_methods, swig_GlmVector_attributes, &swig_GlmVector_Sf_SwigStatic, swig_GlmVector_meta, swig_GlmVector_bases, swig_GlmVector_base_names };
+
 static int _wrap_new_CAt__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ns_creeps::CAt *result = 0 ;
     SWIG_check_num_args("ns_creeps::CAt::CAt",0,0) result = (ns_creeps::CAt *)new ns_creeps::CAt();
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ns_creeps__CAt,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
@@ -11285,6 +11691,1062 @@ static swig_lua_class *swig_AssimpAnimation_bases[] = {0};
 static const char *swig_AssimpAnimation_base_names[] = {0};
 static swig_lua_class _wrap_class_AssimpAnimation = { "AssimpAnimation", "AssimpAnimation", &SWIGTYPE_p_ofxAssimpAnimation,_proxy__wrap_new_AssimpAnimation, swig_delete_AssimpAnimation, swig_AssimpAnimation_methods, swig_AssimpAnimation_attributes, &swig_AssimpAnimation_Sf_SwigStatic, swig_AssimpAnimation_meta, swig_AssimpAnimation_bases, swig_AssimpAnimation_base_names };
 
+static int _wrap_new_Svg__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxSvg *result = 0 ;
+    SWIG_check_num_args("ofxSvg::ofxSvg",0,0) result = (ofxSvg *)new ofxSvg();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxSvg,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_Svg__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = 0 ; ofxSvg *result = 0 ;
+    SWIG_check_num_args("ofxSvg::ofxSvg",1,1) if(!lua_isuserdata(L,1)) SWIG_fail_arg("ofxSvg::ofxSvg",1,"ofxSvg const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){ SWIG_fail_ptr("new_Svg",1,SWIGTYPE_p_ofxSvg); } 
+    result = (ofxSvg *)new ofxSvg((ofxSvg const &)*arg1); SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxSvg,1); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_new_Svg__SWIG_2(lua_State* L) { { int SWIG_arg = 0; of::filesystem::path *arg1 = 0 ;
+    of::filesystem::path temp1 ; ofxSvg *result = 0 ; SWIG_check_num_args("ofxSvg::ofxSvg",1,1)
+    if(!lua_isstring(L,1)) SWIG_fail_arg("ofxSvg::ofxSvg",1,"of::filesystem::path const &"); { size_t len = lua_rawlen(L, 1);
+      temp1 = lua_tolstring(L, 1, &len); arg1 = &temp1; }  result = (ofxSvg *)new ofxSvg((of::filesystem::path const &)*arg1);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxSvg,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_Svg(lua_State* L) { int argc; int argv[2]={ 1,2} ; argc = lua_gettop(L); if (argc == 0) {
+    return _wrap_new_Svg__SWIG_0(L);}  if (argc == 1) { int _v = 0; { void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxSvg, SWIG_POINTER_NO_NULL)) {
+        _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_Svg__SWIG_1(L);}  }  if (argc == 1) { int _v = 0; {
+      _v = lua_isstring(L, argv[0]); }  if (_v) { return _wrap_new_Svg__SWIG_2(L);}  } 
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Svg'\n" "  Possible C/C++ prototypes are:\n"
+  "    ofxSvg::ofxSvg()\n" "    ofxSvg::ofxSvg(ofxSvg const &)\n" "    ofxSvg::ofxSvg(of::filesystem::path const &)\n");
+  lua_error(L);return 0; }
+static int _wrap_Svg_getWidth(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = (ofxSvg *) 0 ; float result;
+    SWIG_check_num_args("ofxSvg::getWidth",1,1) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxSvg::getWidth",1,"ofxSvg const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){ SWIG_fail_ptr("Svg_getWidth",1,SWIGTYPE_p_ofxSvg); }
+     result = (float)((ofxSvg const *)arg1)->getWidth(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Svg_getHeight(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = (ofxSvg *) 0 ; float result;
+    SWIG_check_num_args("ofxSvg::getHeight",1,1) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxSvg::getHeight",1,"ofxSvg const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){
+      SWIG_fail_ptr("Svg_getHeight",1,SWIGTYPE_p_ofxSvg); }  result = (float)((ofxSvg const *)arg1)->getHeight();
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Svg_load(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = (ofxSvg *) 0 ; of::filesystem::path *arg2 = 0 ;
+    of::filesystem::path temp2 ; SWIG_check_num_args("ofxSvg::load",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxSvg::load",1,"ofxSvg *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxSvg::load",2,"of::filesystem::path const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){ SWIG_fail_ptr("Svg_load",1,SWIGTYPE_p_ofxSvg); }  {
+      size_t len = lua_rawlen(L, 2); temp2 = lua_tolstring(L, 2, &len); arg2 = &temp2; } 
+    (arg1)->load((of::filesystem::path const &)*arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Svg_loadFromString__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = (ofxSvg *) 0 ; std::string arg2 ;
+    std::string arg3 ; SWIG_check_num_args("ofxSvg::loadFromString",3,3)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxSvg::loadFromString",1,"ofxSvg *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxSvg::loadFromString",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("ofxSvg::loadFromString",3,"std::string");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){
+      SWIG_fail_ptr("Svg_loadFromString",1,SWIGTYPE_p_ofxSvg); }  { size_t len; const char *ptr = lua_tolstring(L, 2, &len);
+      (&arg2)->assign(ptr, len); }  { size_t len; const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); } 
+    (arg1)->loadFromString(arg2,arg3); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Svg_loadFromString__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = (ofxSvg *) 0 ; std::string arg2 ;
+    SWIG_check_num_args("ofxSvg::loadFromString",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxSvg::loadFromString",1,"ofxSvg *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxSvg::loadFromString",2,"std::string");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){
+      SWIG_fail_ptr("Svg_loadFromString",1,SWIGTYPE_p_ofxSvg); }  { size_t len; const char *ptr = lua_tolstring(L, 2, &len);
+      (&arg2)->assign(ptr, len); }  (arg1)->loadFromString(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Svg_loadFromString(lua_State* L) { int argc; int argv[4]={ 1,2,3,4} ; argc = lua_gettop(L); if (argc == 2) {
+    int _v = 0; { void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxSvg, 0)) { _v = 0; }  else {
+        _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { return _wrap_Svg_loadFromString__SWIG_1(L);}  }  } 
+  if (argc == 3) { int _v = 0; { void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxSvg, 0)) { _v = 0; }  else {
+        _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isstring(L,argv[2]); }  if (_v) {
+          return _wrap_Svg_loadFromString__SWIG_0(L);}  }  }  } 
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Svg_loadFromString'\n" "  Possible C/C++ prototypes are:\n"
+  "    ofxSvg::loadFromString(std::string,std::string)\n" "    ofxSvg::loadFromString(std::string)\n"); lua_error(L);return 0; }
+static int _wrap_Svg_draw(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = (ofxSvg *) 0 ;
+    SWIG_check_num_args("ofxSvg::draw",1,1) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxSvg::draw",1,"ofxSvg *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){ SWIG_fail_ptr("Svg_draw",1,SWIGTYPE_p_ofxSvg); } 
+    (arg1)->draw(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Svg_getNumPath(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = (ofxSvg *) 0 ; int result;
+    SWIG_check_num_args("ofxSvg::getNumPath",1,1) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxSvg::getNumPath",1,"ofxSvg *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){
+      SWIG_fail_ptr("Svg_getNumPath",1,SWIGTYPE_p_ofxSvg); }  result = (int)(arg1)->getNumPath();
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Svg_getPathAt(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = (ofxSvg *) 0 ; int arg2 ; ofPath *result = 0 ;
+    SWIG_check_num_args("ofxSvg::getPathAt",2,2) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxSvg::getPathAt",1,"ofxSvg *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxSvg::getPathAt",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){
+      SWIG_fail_ptr("Svg_getPathAt",1,SWIGTYPE_p_ofxSvg); }  arg2 = (int)lua_tonumber(L, 2);
+    result = (ofPath *) &(arg1)->getPathAt(arg2); SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofPath,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Svg_getPaths(lua_State* L) { { int SWIG_arg = 0; ofxSvg *arg1 = (ofxSvg *) 0 ;
+    std::vector< ofPath > *result = 0 ; SWIG_check_num_args("ofxSvg::getPaths",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxSvg::getPaths",1,"ofxSvg const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxSvg,0))){ SWIG_fail_ptr("Svg_getPaths",1,SWIGTYPE_p_ofxSvg); }
+     result = (std::vector< ofPath > *) &((ofxSvg const *)arg1)->getPaths();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_ofPath_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_Svg_fixSvgString(lua_State* L) { { int SWIG_arg = 0; std::string *arg1 = 0 ;
+    SWIG_check_num_args("ofxSvg::fixSvgString",1,1)
+    if(!lua_isuserdata(L,1)) SWIG_fail_arg("ofxSvg::fixSvgString",1,"std::string &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__string,0))){
+      SWIG_fail_ptr("Svg_fixSvgString",1,SWIGTYPE_p_std__string); }  ofxSvg::fixSvgString(*arg1); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static void swig_delete_Svg(void *obj) {
+ofxSvg *arg1 = (ofxSvg *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_Svg(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_Svg);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_Svg_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_Svg_methods[]= {
+    { "getWidth", _wrap_Svg_getWidth},
+    { "getHeight", _wrap_Svg_getHeight},
+    { "load", _wrap_Svg_load},
+    { "loadFromString", _wrap_Svg_loadFromString},
+    { "draw", _wrap_Svg_draw},
+    { "getNumPath", _wrap_Svg_getNumPath},
+    { "getPathAt", _wrap_Svg_getPathAt},
+    { "getPaths", _wrap_Svg_getPaths},
+    {0,0}
+};
+static swig_lua_method swig_Svg_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_Svg_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_Svg_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_Svg_Sf_SwigStatic_methods[]= {
+    { "fixSvgString", _wrap_Svg_fixSvgString},
+    {0,0}
+};
+static swig_lua_class* swig_Svg_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_Svg_Sf_SwigStatic = {
+    "Svg",
+    swig_Svg_Sf_SwigStatic_methods,
+    swig_Svg_Sf_SwigStatic_attributes,
+    swig_Svg_Sf_SwigStatic_constants,
+    swig_Svg_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_Svg_bases[] = {0};
+static const char *swig_Svg_base_names[] = {0};
+static swig_lua_class _wrap_class_Svg = { "Svg", "Svg", &SWIGTYPE_p_ofxSvg,_proxy__wrap_new_Svg, swig_delete_Svg, swig_Svg_methods, swig_Svg_attributes, &swig_Svg_Sf_SwigStatic, swig_Svg_meta, swig_Svg_bases, swig_Svg_base_names };
+
+static int _wrap_split(lua_State* L) { { int SWIG_arg = 0; std::string *arg1 = 0 ; char arg2 ;
+    std::vector< std::string > *arg3 = 0 ; std::string temp1 ; std::vector< std::string > *result = 0 ;
+    SWIG_check_num_args("split",3,3) if(!lua_isstring(L,1)) SWIG_fail_arg("split",1,"std::string const &");
+    if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("split",2,"char");
+    if(!lua_isuserdata(L,3)) SWIG_fail_arg("split",3,"std::vector< std::string > &"); { size_t len;
+      const char *ptr = lua_tolstring(L, 1, &len); temp1.assign(ptr, len); arg1=&temp1; }  arg2 = (lua_tostring(L, 2))[0];
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("split",3,SWIGTYPE_p_std__vectorT_std__string_t); } 
+    result = (std::vector< std::string > *) &split((std::string const &)*arg1,arg2,*arg3);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_std__string_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_new_SubtitleWord__SWIG_0(lua_State* L) { { int SWIG_arg = 0; SubtitleWord *result = 0 ;
+    SWIG_check_num_args("SubtitleWord::SubtitleWord",0,0) result = (SubtitleWord *)new SubtitleWord();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleWord,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleWord__SWIG_1(lua_State* L) { { int SWIG_arg = 0; std::string arg1 ; SubtitleWord *result = 0 ;
+    SWIG_check_num_args("SubtitleWord::SubtitleWord",1,1)
+    if(!lua_isstring(L,1)) SWIG_fail_arg("SubtitleWord::SubtitleWord",1,"std::string"); { size_t len;
+      const char *ptr = lua_tolstring(L, 1, &len); (&arg1)->assign(ptr, len); } 
+    result = (SubtitleWord *)new SubtitleWord(arg1); SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleWord,1); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_new_SubtitleWord(lua_State* L) { int argc; int argv[2]={ 1,2} ; argc = lua_gettop(L); if (argc == 0) {
+    return _wrap_new_SubtitleWord__SWIG_0(L);}  if (argc == 1) { int _v = 0; { _v = lua_isstring(L,argv[0]); }  if (_v) {
+      return _wrap_new_SubtitleWord__SWIG_1(L);}  } 
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SubtitleWord'\n" "  Possible C/C++ prototypes are:\n"
+  "    SubtitleWord::SubtitleWord()\n" "    SubtitleWord::SubtitleWord(std::string)\n"); lua_error(L);return 0; }
+static int _wrap_SubtitleWord_getText(lua_State* L) { { int SWIG_arg = 0; SubtitleWord *arg1 = (SubtitleWord *) 0 ;
+    std::string result; SWIG_check_num_args("SubtitleWord::getText",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleWord::getText",1,"SubtitleWord const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleWord,0))){
+      SWIG_fail_ptr("SubtitleWord_getText",1,SWIGTYPE_p_SubtitleWord); }  result = ((SubtitleWord const *)arg1)->getText();
+    lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static void swig_delete_SubtitleWord(void *obj) {
+SubtitleWord *arg1 = (SubtitleWord *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SubtitleWord(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SubtitleWord);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SubtitleWord_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SubtitleWord_methods[]= {
+    { "getText", _wrap_SubtitleWord_getText},
+    {0,0}
+};
+static swig_lua_method swig_SubtitleWord_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SubtitleWord_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SubtitleWord_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SubtitleWord_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SubtitleWord_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SubtitleWord_Sf_SwigStatic = {
+    "SubtitleWord",
+    swig_SubtitleWord_Sf_SwigStatic_methods,
+    swig_SubtitleWord_Sf_SwigStatic_attributes,
+    swig_SubtitleWord_Sf_SwigStatic_constants,
+    swig_SubtitleWord_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SubtitleWord_bases[] = {0};
+static const char *swig_SubtitleWord_base_names[] = {0};
+static swig_lua_class _wrap_class_SubtitleWord = { "SubtitleWord", "SubtitleWord", &SWIGTYPE_p_SubtitleWord,_proxy__wrap_new_SubtitleWord, swig_delete_SubtitleWord, swig_SubtitleWord_methods, swig_SubtitleWord_attributes, &swig_SubtitleWord_Sf_SwigStatic, swig_SubtitleWord_meta, swig_SubtitleWord_bases, swig_SubtitleWord_base_names };
+
+static int _wrap_SubtitleItem_getStartTime(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    long result; SWIG_check_num_args("SubtitleItem::getStartTime",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getStartTime",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getStartTime",1,SWIGTYPE_p_SubtitleItem); } 
+    result = (long)((SubtitleItem const *)arg1)->getStartTime(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getEndTime(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    long result; SWIG_check_num_args("SubtitleItem::getEndTime",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getEndTime",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getEndTime",1,SWIGTYPE_p_SubtitleItem); } 
+    result = (long)((SubtitleItem const *)arg1)->getEndTime(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getText(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    std::string result; SWIG_check_num_args("SubtitleItem::getText",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getText",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getText",1,SWIGTYPE_p_SubtitleItem); }  result = ((SubtitleItem const *)arg1)->getText();
+    lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_SubtitleItem_getSubNo(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ; int result;
+    SWIG_check_num_args("SubtitleItem::getSubNo",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getSubNo",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getSubNo",1,SWIGTYPE_p_SubtitleItem); } 
+    result = (int)((SubtitleItem const *)arg1)->getSubNo(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getStartTimeString(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    std::string result; SWIG_check_num_args("SubtitleItem::getStartTimeString",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getStartTimeString",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getStartTimeString",1,SWIGTYPE_p_SubtitleItem); } 
+    result = ((SubtitleItem const *)arg1)->getStartTimeString();
+    lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_SubtitleItem_getEndTimeString(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    std::string result; SWIG_check_num_args("SubtitleItem::getEndTimeString",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getEndTimeString",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getEndTimeString",1,SWIGTYPE_p_SubtitleItem); } 
+    result = ((SubtitleItem const *)arg1)->getEndTimeString();
+    lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_SubtitleItem_getIgnoreStatus(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    bool result; SWIG_check_num_args("SubtitleItem::getIgnoreStatus",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getIgnoreStatus",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getIgnoreStatus",1,SWIGTYPE_p_SubtitleItem); } 
+    result = (bool)((SubtitleItem const *)arg1)->getIgnoreStatus(); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getDialogue__SWIG_0(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    bool arg2 ; bool arg3 ; bool arg4 ; std::string result; SWIG_check_num_args("SubtitleItem::getDialogue",4,4)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getDialogue",1,"SubtitleItem *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("SubtitleItem::getDialogue",2,"bool");
+    if(!lua_isboolean(L,3)) SWIG_fail_arg("SubtitleItem::getDialogue",3,"bool");
+    if(!lua_isboolean(L,4)) SWIG_fail_arg("SubtitleItem::getDialogue",4,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getDialogue",1,SWIGTYPE_p_SubtitleItem); }  arg2 = (lua_toboolean(L, 2)!=0);
+    arg3 = (lua_toboolean(L, 3)!=0); arg4 = (lua_toboolean(L, 4)!=0); result = (arg1)->getDialogue(arg2,arg3,arg4);
+    lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_SubtitleItem_getDialogue__SWIG_1(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    bool arg2 ; bool arg3 ; std::string result; SWIG_check_num_args("SubtitleItem::getDialogue",3,3)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getDialogue",1,"SubtitleItem *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("SubtitleItem::getDialogue",2,"bool");
+    if(!lua_isboolean(L,3)) SWIG_fail_arg("SubtitleItem::getDialogue",3,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getDialogue",1,SWIGTYPE_p_SubtitleItem); }  arg2 = (lua_toboolean(L, 2)!=0);
+    arg3 = (lua_toboolean(L, 3)!=0); result = (arg1)->getDialogue(arg2,arg3);
+    lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_SubtitleItem_getDialogue__SWIG_2(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    bool arg2 ; std::string result; SWIG_check_num_args("SubtitleItem::getDialogue",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getDialogue",1,"SubtitleItem *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("SubtitleItem::getDialogue",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getDialogue",1,SWIGTYPE_p_SubtitleItem); }  arg2 = (lua_toboolean(L, 2)!=0);
+    result = (arg1)->getDialogue(arg2); lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getDialogue__SWIG_3(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    std::string result; SWIG_check_num_args("SubtitleItem::getDialogue",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getDialogue",1,"SubtitleItem *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getDialogue",1,SWIGTYPE_p_SubtitleItem); }  result = (arg1)->getDialogue();
+    lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_SubtitleItem_getDialogue(lua_State* L) { int argc; int argv[5]={ 1,2,3,4,5} ; argc = lua_gettop(L);
+  if (argc == 1) { int _v = 0; { void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SubtitleItem, 0)) { _v = 0; }
+       else { _v = 1; }  }  if (_v) { return _wrap_SubtitleItem_getDialogue__SWIG_3(L);}  }  if (argc == 2) { int _v = 0; {
+      void *ptr; if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SubtitleItem, 0)) {
+        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[1]); }  if (_v) {
+        return _wrap_SubtitleItem_getDialogue__SWIG_2(L);}  }  }  if (argc == 3) { int _v = 0; { void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SubtitleItem, 0)) { _v = 0; }
+       else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[1]); }  if (_v) { { _v = lua_isboolean(L,argv[2]); } 
+        if (_v) { return _wrap_SubtitleItem_getDialogue__SWIG_1(L);}  }  }  }  if (argc == 4) { int _v = 0; { void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SubtitleItem, 0)) { _v = 0; }
+       else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[1]); }  if (_v) { { _v = lua_isboolean(L,argv[2]); } 
+        if (_v) { { _v = lua_isboolean(L,argv[3]); }  if (_v) { return _wrap_SubtitleItem_getDialogue__SWIG_0(L);}  }  }  }  } 
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SubtitleItem_getDialogue'\n"
+  "  Possible C/C++ prototypes are:\n" "    SubtitleItem::getDialogue(bool,bool,bool)\n"
+  "    SubtitleItem::getDialogue(bool,bool)\n" "    SubtitleItem::getDialogue(bool)\n" "    SubtitleItem::getDialogue()\n");
+  lua_error(L);return 0; }
+static int _wrap_SubtitleItem_getSpeakerCount(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    int result; SWIG_check_num_args("SubtitleItem::getSpeakerCount",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getSpeakerCount",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getSpeakerCount",1,SWIGTYPE_p_SubtitleItem); } 
+    result = (int)((SubtitleItem const *)arg1)->getSpeakerCount(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getNonDialogueCount(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    int result; SWIG_check_num_args("SubtitleItem::getNonDialogueCount",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getNonDialogueCount",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getNonDialogueCount",1,SWIGTYPE_p_SubtitleItem); } 
+    result = (int)((SubtitleItem const *)arg1)->getNonDialogueCount(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getStyleTagCount(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    int result; SWIG_check_num_args("SubtitleItem::getStyleTagCount",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getStyleTagCount",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getStyleTagCount",1,SWIGTYPE_p_SubtitleItem); } 
+    result = (int)((SubtitleItem const *)arg1)->getStyleTagCount(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getWordCount(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    int result; SWIG_check_num_args("SubtitleItem::getWordCount",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getWordCount",1,"SubtitleItem const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getWordCount",1,SWIGTYPE_p_SubtitleItem); } 
+    result = (int)((SubtitleItem const *)arg1)->getWordCount(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getIndividualWords(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    std::vector< std::string > result; SWIG_check_num_args("SubtitleItem::getIndividualWords",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getIndividualWords",1,"SubtitleItem *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getIndividualWords",1,SWIGTYPE_p_SubtitleItem); }  result = (arg1)->getIndividualWords(); {
+      std::vector< std::string > * resultptr = new std::vector< std::string >(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__vectorT_std__string_t,1); SWIG_arg++; }  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getWordByIndex(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    int arg2 ; std::string result; SWIG_check_num_args("SubtitleItem::getWordByIndex",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getWordByIndex",1,"SubtitleItem *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("SubtitleItem::getWordByIndex",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getWordByIndex",1,SWIGTYPE_p_SubtitleItem); }  arg2 = (int)lua_tonumber(L, 2);
+    result = (arg1)->getWordByIndex(arg2); lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getWordStartTimes(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    SwigValueWrapper< std::vector< long > > result; SWIG_check_num_args("SubtitleItem::getWordStartTimes",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getWordStartTimes",1,"SubtitleItem *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getWordStartTimes",1,SWIGTYPE_p_SubtitleItem); }  result = (arg1)->getWordStartTimes(); {
+      std::vector< long > * resultptr = new std::vector< long >(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__vectorT_long_t,1); SWIG_arg++; }  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getWordEndTimes(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    SwigValueWrapper< std::vector< long > > result; SWIG_check_num_args("SubtitleItem::getWordEndTimes",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getWordEndTimes",1,"SubtitleItem *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getWordEndTimes",1,SWIGTYPE_p_SubtitleItem); }  result = (arg1)->getWordEndTimes(); {
+      std::vector< long > * resultptr = new std::vector< long >(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__vectorT_long_t,1); SWIG_arg++; }  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getWordStartTimeByIndex(lua_State* L) { { int SWIG_arg = 0;
+    SubtitleItem *arg1 = (SubtitleItem *) 0 ; int arg2 ; long result;
+    SWIG_check_num_args("SubtitleItem::getWordStartTimeByIndex",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getWordStartTimeByIndex",1,"SubtitleItem *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("SubtitleItem::getWordStartTimeByIndex",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getWordStartTimeByIndex",1,SWIGTYPE_p_SubtitleItem); }  arg2 = (int)lua_tonumber(L, 2);
+    result = (long)(arg1)->getWordStartTimeByIndex(arg2); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getWordEndTimeByIndex(lua_State* L) { { int SWIG_arg = 0;
+    SubtitleItem *arg1 = (SubtitleItem *) 0 ; int arg2 ; long result;
+    SWIG_check_num_args("SubtitleItem::getWordEndTimeByIndex",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getWordEndTimeByIndex",1,"SubtitleItem *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("SubtitleItem::getWordEndTimeByIndex",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getWordEndTimeByIndex",1,SWIGTYPE_p_SubtitleItem); }  arg2 = (int)lua_tonumber(L, 2);
+    result = (long)(arg1)->getWordEndTimeByIndex(arg2); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getSpeakerNames(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    std::vector< std::string > result; SWIG_check_num_args("SubtitleItem::getSpeakerNames",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getSpeakerNames",1,"SubtitleItem *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getSpeakerNames",1,SWIGTYPE_p_SubtitleItem); }  result = (arg1)->getSpeakerNames(); {
+      std::vector< std::string > * resultptr = new std::vector< std::string >(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__vectorT_std__string_t,1); SWIG_arg++; }  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getNonDialogueWords(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    std::vector< std::string > result; SWIG_check_num_args("SubtitleItem::getNonDialogueWords",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getNonDialogueWords",1,"SubtitleItem *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getNonDialogueWords",1,SWIGTYPE_p_SubtitleItem); }  result = (arg1)->getNonDialogueWords(); {
+      std::vector< std::string > * resultptr = new std::vector< std::string >(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__vectorT_std__string_t,1); SWIG_arg++; }  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_getStyleTags(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    std::vector< std::string > result; SWIG_check_num_args("SubtitleItem::getStyleTags",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::getStyleTags",1,"SubtitleItem *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_getStyleTags",1,SWIGTYPE_p_SubtitleItem); }  result = (arg1)->getStyleTags(); {
+      std::vector< std::string > * resultptr = new std::vector< std::string >(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__vectorT_std__string_t,1); SWIG_arg++; }  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_setStartTime(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    long arg2 ; SWIG_check_num_args("SubtitleItem::setStartTime",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::setStartTime",1,"SubtitleItem *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("SubtitleItem::setStartTime",2,"long");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_setStartTime",1,SWIGTYPE_p_SubtitleItem); }  arg2 = (long)lua_tonumber(L, 2);
+    (arg1)->setStartTime(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_setEndTime(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    long arg2 ; SWIG_check_num_args("SubtitleItem::setEndTime",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::setEndTime",1,"SubtitleItem *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("SubtitleItem::setEndTime",2,"long");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_setEndTime",1,SWIGTYPE_p_SubtitleItem); }  arg2 = (long)lua_tonumber(L, 2);
+    (arg1)->setEndTime(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_setText(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    std::string arg2 ; SWIG_check_num_args("SubtitleItem::setText",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::setText",1,"SubtitleItem *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::setText",2,"std::string");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_setText",1,SWIGTYPE_p_SubtitleItem); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  (arg1)->setText(arg2); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleItem_setWordTimes(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *arg1 = (SubtitleItem *) 0 ;
+    SwigValueWrapper< std::vector< long > > arg2 ; SwigValueWrapper< std::vector< long > > arg3 ;
+    SwigValueWrapper< std::vector< long > > arg4 ; std::vector< long > *argp2 ; std::vector< long > *argp3 ;
+    std::vector< long > *argp4 ; SWIG_check_num_args("SubtitleItem::setWordTimes",4,4)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleItem::setWordTimes",1,"SubtitleItem *");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("SubtitleItem::setWordTimes",2,"std::vector< long >");
+    if(!lua_isuserdata(L,3)) SWIG_fail_arg("SubtitleItem::setWordTimes",3,"std::vector< long >");
+    if(!lua_isuserdata(L,4)) SWIG_fail_arg("SubtitleItem::setWordTimes",4,"std::vector< long >");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleItem,0))){
+      SWIG_fail_ptr("SubtitleItem_setWordTimes",1,SWIGTYPE_p_SubtitleItem); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_std__vectorT_long_t,0))){
+      SWIG_fail_ptr("SubtitleItem_setWordTimes",2,SWIGTYPE_p_std__vectorT_long_t); }  arg2 = *argp2;
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_std__vectorT_long_t,0))){
+      SWIG_fail_ptr("SubtitleItem_setWordTimes",3,SWIGTYPE_p_std__vectorT_long_t); }  arg3 = *argp3;
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_std__vectorT_long_t,0))){
+      SWIG_fail_ptr("SubtitleItem_setWordTimes",4,SWIGTYPE_p_std__vectorT_long_t); }  arg4 = *argp4;
+    (arg1)->setWordTimes(arg2,arg3,arg4); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_new_SubtitleItem__SWIG_0(lua_State* L) { { int SWIG_arg = 0; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("SubtitleItem::SubtitleItem",0,0) result = (SubtitleItem *)new SubtitleItem();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_1(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; std::string arg6 ; int arg7 ; int arg8 ; int arg9 ; int arg10 ;
+    std::vector< std::string > arg11 ; std::vector< std::string > arg12 ; std::vector< std::string > arg13 ;
+    std::vector< std::string > arg14 ; std::vector< std::string > *argp11 ; std::vector< std::string > *argp12 ;
+    std::vector< std::string > *argp13 ; std::vector< std::string > *argp14 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("SubtitleItem::SubtitleItem",14,14)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("SubtitleItem::SubtitleItem",6,"std::string");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("SubtitleItem::SubtitleItem",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("SubtitleItem::SubtitleItem",8,"int");
+    if(!lua_isnumber(L,9)) SWIG_fail_arg("SubtitleItem::SubtitleItem",9,"int");
+    if(!lua_isnumber(L,10)) SWIG_fail_arg("SubtitleItem::SubtitleItem",10,"int");
+    if(!lua_isuserdata(L,11)) SWIG_fail_arg("SubtitleItem::SubtitleItem",11,"std::vector< std::string >");
+    if(!lua_isuserdata(L,12)) SWIG_fail_arg("SubtitleItem::SubtitleItem",12,"std::vector< std::string >");
+    if(!lua_isuserdata(L,13)) SWIG_fail_arg("SubtitleItem::SubtitleItem",13,"std::vector< std::string >");
+    if(!lua_isuserdata(L,14)) SWIG_fail_arg("SubtitleItem::SubtitleItem",14,"std::vector< std::string >");
+    arg1 = (int)lua_tonumber(L, 1); { size_t len; const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  {
+      size_t len; const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); }  arg7 = (int)lua_tonumber(L, 7);
+    arg8 = (int)lua_tonumber(L, 8); arg9 = (int)lua_tonumber(L, 9); arg10 = (int)lua_tonumber(L, 10);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,11,(void**)&argp11,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",11,SWIGTYPE_p_std__vectorT_std__string_t); }  arg11 = *argp11;
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,12,(void**)&argp12,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",12,SWIGTYPE_p_std__vectorT_std__string_t); }  arg12 = *argp12;
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,13,(void**)&argp13,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",13,SWIGTYPE_p_std__vectorT_std__string_t); }  arg13 = *argp13;
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,14,(void**)&argp14,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",14,SWIGTYPE_p_std__vectorT_std__string_t); }  arg14 = *argp14;
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_2(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; std::string arg6 ; int arg7 ; int arg8 ; int arg9 ; int arg10 ;
+    std::vector< std::string > arg11 ; std::vector< std::string > arg12 ; std::vector< std::string > arg13 ;
+    std::vector< std::string > *argp11 ; std::vector< std::string > *argp12 ; std::vector< std::string > *argp13 ;
+    SubtitleItem *result = 0 ; SWIG_check_num_args("SubtitleItem::SubtitleItem",13,13)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("SubtitleItem::SubtitleItem",6,"std::string");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("SubtitleItem::SubtitleItem",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("SubtitleItem::SubtitleItem",8,"int");
+    if(!lua_isnumber(L,9)) SWIG_fail_arg("SubtitleItem::SubtitleItem",9,"int");
+    if(!lua_isnumber(L,10)) SWIG_fail_arg("SubtitleItem::SubtitleItem",10,"int");
+    if(!lua_isuserdata(L,11)) SWIG_fail_arg("SubtitleItem::SubtitleItem",11,"std::vector< std::string >");
+    if(!lua_isuserdata(L,12)) SWIG_fail_arg("SubtitleItem::SubtitleItem",12,"std::vector< std::string >");
+    if(!lua_isuserdata(L,13)) SWIG_fail_arg("SubtitleItem::SubtitleItem",13,"std::vector< std::string >");
+    arg1 = (int)lua_tonumber(L, 1); { size_t len; const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  {
+      size_t len; const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); }  arg7 = (int)lua_tonumber(L, 7);
+    arg8 = (int)lua_tonumber(L, 8); arg9 = (int)lua_tonumber(L, 9); arg10 = (int)lua_tonumber(L, 10);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,11,(void**)&argp11,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",11,SWIGTYPE_p_std__vectorT_std__string_t); }  arg11 = *argp11;
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,12,(void**)&argp12,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",12,SWIGTYPE_p_std__vectorT_std__string_t); }  arg12 = *argp12;
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,13,(void**)&argp13,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",13,SWIGTYPE_p_std__vectorT_std__string_t); }  arg13 = *argp13;
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_3(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; std::string arg6 ; int arg7 ; int arg8 ; int arg9 ; int arg10 ;
+    std::vector< std::string > arg11 ; std::vector< std::string > arg12 ; std::vector< std::string > *argp11 ;
+    std::vector< std::string > *argp12 ; SubtitleItem *result = 0 ; SWIG_check_num_args("SubtitleItem::SubtitleItem",12,12)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("SubtitleItem::SubtitleItem",6,"std::string");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("SubtitleItem::SubtitleItem",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("SubtitleItem::SubtitleItem",8,"int");
+    if(!lua_isnumber(L,9)) SWIG_fail_arg("SubtitleItem::SubtitleItem",9,"int");
+    if(!lua_isnumber(L,10)) SWIG_fail_arg("SubtitleItem::SubtitleItem",10,"int");
+    if(!lua_isuserdata(L,11)) SWIG_fail_arg("SubtitleItem::SubtitleItem",11,"std::vector< std::string >");
+    if(!lua_isuserdata(L,12)) SWIG_fail_arg("SubtitleItem::SubtitleItem",12,"std::vector< std::string >");
+    arg1 = (int)lua_tonumber(L, 1); { size_t len; const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  {
+      size_t len; const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); }  arg7 = (int)lua_tonumber(L, 7);
+    arg8 = (int)lua_tonumber(L, 8); arg9 = (int)lua_tonumber(L, 9); arg10 = (int)lua_tonumber(L, 10);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,11,(void**)&argp11,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",11,SWIGTYPE_p_std__vectorT_std__string_t); }  arg11 = *argp11;
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,12,(void**)&argp12,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",12,SWIGTYPE_p_std__vectorT_std__string_t); }  arg12 = *argp12;
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_4(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; std::string arg6 ; int arg7 ; int arg8 ; int arg9 ; int arg10 ;
+    std::vector< std::string > arg11 ; std::vector< std::string > *argp11 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("SubtitleItem::SubtitleItem",11,11)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("SubtitleItem::SubtitleItem",6,"std::string");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("SubtitleItem::SubtitleItem",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("SubtitleItem::SubtitleItem",8,"int");
+    if(!lua_isnumber(L,9)) SWIG_fail_arg("SubtitleItem::SubtitleItem",9,"int");
+    if(!lua_isnumber(L,10)) SWIG_fail_arg("SubtitleItem::SubtitleItem",10,"int");
+    if(!lua_isuserdata(L,11)) SWIG_fail_arg("SubtitleItem::SubtitleItem",11,"std::vector< std::string >");
+    arg1 = (int)lua_tonumber(L, 1); { size_t len; const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  {
+      size_t len; const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); }  arg7 = (int)lua_tonumber(L, 7);
+    arg8 = (int)lua_tonumber(L, 8); arg9 = (int)lua_tonumber(L, 9); arg10 = (int)lua_tonumber(L, 10);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,11,(void**)&argp11,SWIGTYPE_p_std__vectorT_std__string_t,0))){
+      SWIG_fail_ptr("new_SubtitleItem",11,SWIGTYPE_p_std__vectorT_std__string_t); }  arg11 = *argp11;
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_5(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; std::string arg6 ; int arg7 ; int arg8 ; int arg9 ; int arg10 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("SubtitleItem::SubtitleItem",10,10)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("SubtitleItem::SubtitleItem",6,"std::string");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("SubtitleItem::SubtitleItem",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("SubtitleItem::SubtitleItem",8,"int");
+    if(!lua_isnumber(L,9)) SWIG_fail_arg("SubtitleItem::SubtitleItem",9,"int");
+    if(!lua_isnumber(L,10)) SWIG_fail_arg("SubtitleItem::SubtitleItem",10,"int"); arg1 = (int)lua_tonumber(L, 1); { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); }  arg7 = (int)lua_tonumber(L, 7);
+    arg8 = (int)lua_tonumber(L, 8); arg9 = (int)lua_tonumber(L, 9); arg10 = (int)lua_tonumber(L, 10);
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_6(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; std::string arg6 ; int arg7 ; int arg8 ; int arg9 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("SubtitleItem::SubtitleItem",9,9)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("SubtitleItem::SubtitleItem",6,"std::string");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("SubtitleItem::SubtitleItem",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("SubtitleItem::SubtitleItem",8,"int");
+    if(!lua_isnumber(L,9)) SWIG_fail_arg("SubtitleItem::SubtitleItem",9,"int"); arg1 = (int)lua_tonumber(L, 1); { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); }  arg7 = (int)lua_tonumber(L, 7);
+    arg8 = (int)lua_tonumber(L, 8); arg9 = (int)lua_tonumber(L, 9);
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_7(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; std::string arg6 ; int arg7 ; int arg8 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("SubtitleItem::SubtitleItem",8,8)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("SubtitleItem::SubtitleItem",6,"std::string");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("SubtitleItem::SubtitleItem",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("SubtitleItem::SubtitleItem",8,"int"); arg1 = (int)lua_tonumber(L, 1); { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); }  arg7 = (int)lua_tonumber(L, 7);
+    arg8 = (int)lua_tonumber(L, 8); result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_8(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; std::string arg6 ; int arg7 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("SubtitleItem::SubtitleItem",7,7)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("SubtitleItem::SubtitleItem",6,"std::string");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("SubtitleItem::SubtitleItem",7,"int"); arg1 = (int)lua_tonumber(L, 1); { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); }  arg7 = (int)lua_tonumber(L, 7);
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_9(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; std::string arg6 ; SubtitleItem *result = 0 ;
+    SWIG_check_num_args("SubtitleItem::SubtitleItem",6,6)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("SubtitleItem::SubtitleItem",6,"std::string"); arg1 = (int)lua_tonumber(L, 1); {
+      size_t len; const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); } 
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5,arg6);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_10(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; bool arg5 ; SubtitleItem *result = 0 ; SWIG_check_num_args("SubtitleItem::SubtitleItem",5,5)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string");
+    if(!lua_isboolean(L,5)) SWIG_fail_arg("SubtitleItem::SubtitleItem",5,"bool"); arg1 = (int)lua_tonumber(L, 1); { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (lua_toboolean(L, 5)!=0);
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4,arg5);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem__SWIG_11(lua_State* L) { { int SWIG_arg = 0; int arg1 ; std::string arg2 ; std::string arg3 ;
+    std::string arg4 ; SubtitleItem *result = 0 ; SWIG_check_num_args("SubtitleItem::SubtitleItem",4,4)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("SubtitleItem::SubtitleItem",1,"int");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("SubtitleItem::SubtitleItem",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("SubtitleItem::SubtitleItem",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("SubtitleItem::SubtitleItem",4,"std::string"); arg1 = (int)lua_tonumber(L, 1); {
+      size_t len; const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); } 
+    result = (SubtitleItem *)new SubtitleItem(arg1,arg2,arg3,arg4);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleItem,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubtitleItem(lua_State* L) { int argc; int argv[15]={ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15} ;
+  argc = lua_gettop(L); if (argc == 0) { return _wrap_new_SubtitleItem__SWIG_0(L);}  if (argc == 4) { int _v = 0; {
+      _v = lua_isnumber(L,argv[0]); }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isstring(L,argv[2]); } 
+        if (_v) { { _v = lua_isstring(L,argv[3]); }  if (_v) { return _wrap_new_SubtitleItem__SWIG_11(L);}  }  }  }  } 
+  if (argc == 5) { int _v = 0; { _v = lua_isnumber(L,argv[0]); }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { {
+          _v = lua_isstring(L,argv[2]); }  if (_v) { { _v = lua_isstring(L,argv[3]); }  if (_v) { {
+              _v = lua_isboolean(L,argv[4]); }  if (_v) { return _wrap_new_SubtitleItem__SWIG_10(L);}  }  }  }  }  } 
+  if (argc == 6) { int _v = 0; { _v = lua_isnumber(L,argv[0]); }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { {
+          _v = lua_isstring(L,argv[2]); }  if (_v) { { _v = lua_isstring(L,argv[3]); }  if (_v) { {
+              _v = lua_isboolean(L,argv[4]); }  if (_v) { { _v = lua_isstring(L,argv[5]); }  if (_v) {
+                return _wrap_new_SubtitleItem__SWIG_9(L);}  }  }  }  }  }  }  if (argc == 7) { int _v = 0; {
+      _v = lua_isnumber(L,argv[0]); }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isstring(L,argv[2]); } 
+        if (_v) { { _v = lua_isstring(L,argv[3]); }  if (_v) { { _v = lua_isboolean(L,argv[4]); }  if (_v) { {
+                _v = lua_isstring(L,argv[5]); }  if (_v) { { _v = lua_isnumber(L,argv[6]); }  if (_v) {
+                  return _wrap_new_SubtitleItem__SWIG_8(L);}  }  }  }  }  }  }  }  if (argc == 8) { int _v = 0; {
+      _v = lua_isnumber(L,argv[0]); }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isstring(L,argv[2]); } 
+        if (_v) { { _v = lua_isstring(L,argv[3]); }  if (_v) { { _v = lua_isboolean(L,argv[4]); }  if (_v) { {
+                _v = lua_isstring(L,argv[5]); }  if (_v) { { _v = lua_isnumber(L,argv[6]); }  if (_v) { {
+                    _v = lua_isnumber(L,argv[7]); }  if (_v) { return _wrap_new_SubtitleItem__SWIG_7(L);}  }  }  }  }  }  }  }  }
+   if (argc == 9) { int _v = 0; { _v = lua_isnumber(L,argv[0]); }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { {
+          _v = lua_isstring(L,argv[2]); }  if (_v) { { _v = lua_isstring(L,argv[3]); }  if (_v) { {
+              _v = lua_isboolean(L,argv[4]); }  if (_v) { { _v = lua_isstring(L,argv[5]); }  if (_v) { {
+                  _v = lua_isnumber(L,argv[6]); }  if (_v) { { _v = lua_isnumber(L,argv[7]); }  if (_v) { {
+                      _v = lua_isnumber(L,argv[8]); }  if (_v) { return _wrap_new_SubtitleItem__SWIG_6(L);}  }  }  }  }  }  }  }
+       }  }  if (argc == 10) { int _v = 0; { _v = lua_isnumber(L,argv[0]); }  if (_v) { { _v = lua_isstring(L,argv[1]); } 
+      if (_v) { { _v = lua_isstring(L,argv[2]); }  if (_v) { { _v = lua_isstring(L,argv[3]); }  if (_v) { {
+              _v = lua_isboolean(L,argv[4]); }  if (_v) { { _v = lua_isstring(L,argv[5]); }  if (_v) { {
+                  _v = lua_isnumber(L,argv[6]); }  if (_v) { { _v = lua_isnumber(L,argv[7]); }  if (_v) { {
+                      _v = lua_isnumber(L,argv[8]); }  if (_v) { { _v = lua_isnumber(L,argv[9]); }  if (_v) {
+                        return _wrap_new_SubtitleItem__SWIG_5(L);}  }  }  }  }  }  }  }  }  }  }  if (argc == 11) { int _v = 0;
+    { _v = lua_isnumber(L,argv[0]); }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isstring(L,argv[2]); } 
+        if (_v) { { _v = lua_isstring(L,argv[3]); }  if (_v) { { _v = lua_isboolean(L,argv[4]); }  if (_v) { {
+                _v = lua_isstring(L,argv[5]); }  if (_v) { { _v = lua_isnumber(L,argv[6]); }  if (_v) { {
+                    _v = lua_isnumber(L,argv[7]); }  if (_v) { { _v = lua_isnumber(L,argv[8]); }  if (_v) { {
+                        _v = lua_isnumber(L,argv[9]); }  if (_v) { { void *ptr;
+                          if (lua_isuserdata(L,argv[10])==0 || SWIG_ConvertPtr(L,argv[10], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                            _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_SubtitleItem__SWIG_4(L);}  }  }  }  }  }
+               }  }  }  }  }  }  if (argc == 12) { int _v = 0; { _v = lua_isnumber(L,argv[0]); }  if (_v) { {
+        _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isstring(L,argv[2]); }  if (_v) { { _v = lua_isstring(L,argv[3]); }
+           if (_v) { { _v = lua_isboolean(L,argv[4]); }  if (_v) { { _v = lua_isstring(L,argv[5]); }  if (_v) { {
+                  _v = lua_isnumber(L,argv[6]); }  if (_v) { { _v = lua_isnumber(L,argv[7]); }  if (_v) { {
+                      _v = lua_isnumber(L,argv[8]); }  if (_v) { { _v = lua_isnumber(L,argv[9]); }  if (_v) { { void *ptr;
+                          if (lua_isuserdata(L,argv[10])==0 || SWIG_ConvertPtr(L,argv[10], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                            _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
+                            if (lua_isuserdata(L,argv[11])==0 || SWIG_ConvertPtr(L,argv[11], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                              _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_SubtitleItem__SWIG_3(L);}  }  }  }  }  }
+                 }  }  }  }  }  }  }  if (argc == 13) { int _v = 0; { _v = lua_isnumber(L,argv[0]); }  if (_v) { {
+        _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isstring(L,argv[2]); }  if (_v) { { _v = lua_isstring(L,argv[3]); }
+           if (_v) { { _v = lua_isboolean(L,argv[4]); }  if (_v) { { _v = lua_isstring(L,argv[5]); }  if (_v) { {
+                  _v = lua_isnumber(L,argv[6]); }  if (_v) { { _v = lua_isnumber(L,argv[7]); }  if (_v) { {
+                      _v = lua_isnumber(L,argv[8]); }  if (_v) { { _v = lua_isnumber(L,argv[9]); }  if (_v) { { void *ptr;
+                          if (lua_isuserdata(L,argv[10])==0 || SWIG_ConvertPtr(L,argv[10], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                            _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
+                            if (lua_isuserdata(L,argv[11])==0 || SWIG_ConvertPtr(L,argv[11], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                              _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
+                              if (lua_isuserdata(L,argv[12])==0 || SWIG_ConvertPtr(L,argv[12], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                                _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_SubtitleItem__SWIG_2(L);}  }  }  }  }
+                     }  }  }  }  }  }  }  }  }  if (argc == 14) { int _v = 0; { _v = lua_isnumber(L,argv[0]); }  if (_v) { {
+        _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isstring(L,argv[2]); }  if (_v) { { _v = lua_isstring(L,argv[3]); }
+           if (_v) { { _v = lua_isboolean(L,argv[4]); }  if (_v) { { _v = lua_isstring(L,argv[5]); }  if (_v) { {
+                  _v = lua_isnumber(L,argv[6]); }  if (_v) { { _v = lua_isnumber(L,argv[7]); }  if (_v) { {
+                      _v = lua_isnumber(L,argv[8]); }  if (_v) { { _v = lua_isnumber(L,argv[9]); }  if (_v) { { void *ptr;
+                          if (lua_isuserdata(L,argv[10])==0 || SWIG_ConvertPtr(L,argv[10], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                            _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
+                            if (lua_isuserdata(L,argv[11])==0 || SWIG_ConvertPtr(L,argv[11], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                              _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
+                              if (lua_isuserdata(L,argv[12])==0 || SWIG_ConvertPtr(L,argv[12], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                                _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
+                                if (lua_isuserdata(L,argv[13])==0 || SWIG_ConvertPtr(L,argv[13], (void **) &ptr, SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_NO_NULL)) {
+                                  _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_SubtitleItem__SWIG_1(L);}  }  }  }
+                         }  }  }  }  }  }  }  }  }  }  } 
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SubtitleItem'\n" "  Possible C/C++ prototypes are:\n"
+  "    SubtitleItem::SubtitleItem()\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool,std::string,int,int,int,int,std::vector< std::string >,std::vector< std::string >,std::vector< std::string >,std::vector< std::string >)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool,std::string,int,int,int,int,std::vector< std::string >,std::vector< std::string >,std::vector< std::string >)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool,std::string,int,int,int,int,std::vector< std::string >,std::vector< std::string >)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool,std::string,int,int,int,int,std::vector< std::string >)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool,std::string,int,int,int,int)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool,std::string,int,int,int)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool,std::string,int,int)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool,std::string,int)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool,std::string)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string,bool)\n"
+  "    SubtitleItem::SubtitleItem(int,std::string,std::string,std::string)\n"); lua_error(L);return 0; }
+static void swig_delete_SubtitleItem(void *obj) {
+SubtitleItem *arg1 = (SubtitleItem *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SubtitleItem(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SubtitleItem);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SubtitleItem_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SubtitleItem_methods[]= {
+    { "getStartTime", _wrap_SubtitleItem_getStartTime},
+    { "getEndTime", _wrap_SubtitleItem_getEndTime},
+    { "getText", _wrap_SubtitleItem_getText},
+    { "getSubNo", _wrap_SubtitleItem_getSubNo},
+    { "getStartTimeString", _wrap_SubtitleItem_getStartTimeString},
+    { "getEndTimeString", _wrap_SubtitleItem_getEndTimeString},
+    { "getIgnoreStatus", _wrap_SubtitleItem_getIgnoreStatus},
+    { "getDialogue", _wrap_SubtitleItem_getDialogue},
+    { "getSpeakerCount", _wrap_SubtitleItem_getSpeakerCount},
+    { "getNonDialogueCount", _wrap_SubtitleItem_getNonDialogueCount},
+    { "getStyleTagCount", _wrap_SubtitleItem_getStyleTagCount},
+    { "getWordCount", _wrap_SubtitleItem_getWordCount},
+    { "getIndividualWords", _wrap_SubtitleItem_getIndividualWords},
+    { "getWordByIndex", _wrap_SubtitleItem_getWordByIndex},
+    { "getWordStartTimes", _wrap_SubtitleItem_getWordStartTimes},
+    { "getWordEndTimes", _wrap_SubtitleItem_getWordEndTimes},
+    { "getWordStartTimeByIndex", _wrap_SubtitleItem_getWordStartTimeByIndex},
+    { "getWordEndTimeByIndex", _wrap_SubtitleItem_getWordEndTimeByIndex},
+    { "getSpeakerNames", _wrap_SubtitleItem_getSpeakerNames},
+    { "getNonDialogueWords", _wrap_SubtitleItem_getNonDialogueWords},
+    { "getStyleTags", _wrap_SubtitleItem_getStyleTags},
+    { "setStartTime", _wrap_SubtitleItem_setStartTime},
+    { "setEndTime", _wrap_SubtitleItem_setEndTime},
+    { "setText", _wrap_SubtitleItem_setText},
+    { "setWordTimes", _wrap_SubtitleItem_setWordTimes},
+    {0,0}
+};
+static swig_lua_method swig_SubtitleItem_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SubtitleItem_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SubtitleItem_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SubtitleItem_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SubtitleItem_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SubtitleItem_Sf_SwigStatic = {
+    "SubtitleItem",
+    swig_SubtitleItem_Sf_SwigStatic_methods,
+    swig_SubtitleItem_Sf_SwigStatic_attributes,
+    swig_SubtitleItem_Sf_SwigStatic_constants,
+    swig_SubtitleItem_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SubtitleItem_bases[] = {0};
+static const char *swig_SubtitleItem_base_names[] = {0};
+static swig_lua_class _wrap_class_SubtitleItem = { "SubtitleItem", "SubtitleItem", &SWIGTYPE_p_SubtitleItem,_proxy__wrap_new_SubtitleItem, swig_delete_SubtitleItem, swig_SubtitleItem_methods, swig_SubtitleItem_attributes, &swig_SubtitleItem_Sf_SwigStatic, swig_SubtitleItem_meta, swig_SubtitleItem_bases, swig_SubtitleItem_base_names };
+
+static int _wrap_SubtitleParser_getSubtitles(lua_State* L) { { int SWIG_arg = 0; SubtitleParser *arg1 = (SubtitleParser *) 0 ;
+    std::vector< SubtitleItem * > result; SWIG_check_num_args("SubtitleParser::getSubtitles",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleParser::getSubtitles",1,"SubtitleParser *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleParser,0))){
+      SWIG_fail_ptr("SubtitleParser_getSubtitles",1,SWIGTYPE_p_SubtitleParser); }  result = (arg1)->getSubtitles(); {
+      std::vector< SubtitleItem * > * resultptr = new std::vector< SubtitleItem * >(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__vectorT_SubtitleItem_p_t,1); SWIG_arg++; }  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SubtitleParser_getFileData(lua_State* L) { { int SWIG_arg = 0; SubtitleParser *arg1 = (SubtitleParser *) 0 ;
+    std::string result; SWIG_check_num_args("SubtitleParser::getFileData",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleParser::getFileData",1,"SubtitleParser *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleParser,0))){
+      SWIG_fail_ptr("SubtitleParser_getFileData",1,SWIGTYPE_p_SubtitleParser); }  result = (arg1)->getFileData();
+    lua_pushlstring(L,(&result)->data(),(&result)->size()); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static void swig_delete_SubtitleParser(void *obj) {
+SubtitleParser *arg1 = (SubtitleParser *) obj;
+delete arg1;
+}
+static swig_lua_attribute swig_SubtitleParser_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SubtitleParser_methods[]= {
+    { "getSubtitles", _wrap_SubtitleParser_getSubtitles},
+    { "getFileData", _wrap_SubtitleParser_getFileData},
+    {0,0}
+};
+static swig_lua_method swig_SubtitleParser_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SubtitleParser_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SubtitleParser_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SubtitleParser_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SubtitleParser_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SubtitleParser_Sf_SwigStatic = {
+    "SubtitleParser",
+    swig_SubtitleParser_Sf_SwigStatic_methods,
+    swig_SubtitleParser_Sf_SwigStatic_attributes,
+    swig_SubtitleParser_Sf_SwigStatic_constants,
+    swig_SubtitleParser_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SubtitleParser_bases[] = {0};
+static const char *swig_SubtitleParser_base_names[] = {0};
+static swig_lua_class _wrap_class_SubtitleParser = { "SubtitleParser", "SubtitleParser", &SWIGTYPE_p_SubtitleParser,0, swig_delete_SubtitleParser, swig_SubtitleParser_methods, swig_SubtitleParser_attributes, &swig_SubtitleParser_Sf_SwigStatic, swig_SubtitleParser_meta, swig_SubtitleParser_bases, swig_SubtitleParser_base_names };
+
+static int _wrap_SubtitleParserFactory_getParser(lua_State* L) { { int SWIG_arg = 0;
+    SubtitleParserFactory *arg1 = (SubtitleParserFactory *) 0 ; SubtitleParser *result = 0 ;
+    SWIG_check_num_args("SubtitleParserFactory::getParser",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SubtitleParserFactory::getParser",1,"SubtitleParserFactory *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SubtitleParserFactory,0))){
+      SWIG_fail_ptr("SubtitleParserFactory_getParser",1,SWIGTYPE_p_SubtitleParserFactory); } 
+    result = (SubtitleParser *)(arg1)->getParser(); SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleParser,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_new_SubtitleParserFactory(lua_State* L) { { int SWIG_arg = 0; std::string arg1 ;
+    SubtitleParserFactory *result = 0 ; SWIG_check_num_args("SubtitleParserFactory::SubtitleParserFactory",1,1)
+    if(!lua_isstring(L,1)) SWIG_fail_arg("SubtitleParserFactory::SubtitleParserFactory",1,"std::string"); { size_t len;
+      const char *ptr = lua_tolstring(L, 1, &len); (&arg1)->assign(ptr, len); } 
+    result = (SubtitleParserFactory *)new SubtitleParserFactory(arg1);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubtitleParserFactory,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static void swig_delete_SubtitleParserFactory(void *obj) {
+SubtitleParserFactory *arg1 = (SubtitleParserFactory *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SubtitleParserFactory(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SubtitleParserFactory);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SubtitleParserFactory_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SubtitleParserFactory_methods[]= {
+    { "getParser", _wrap_SubtitleParserFactory_getParser},
+    {0,0}
+};
+static swig_lua_method swig_SubtitleParserFactory_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SubtitleParserFactory_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SubtitleParserFactory_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SubtitleParserFactory_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SubtitleParserFactory_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SubtitleParserFactory_Sf_SwigStatic = {
+    "SubtitleParserFactory",
+    swig_SubtitleParserFactory_Sf_SwigStatic_methods,
+    swig_SubtitleParserFactory_Sf_SwigStatic_attributes,
+    swig_SubtitleParserFactory_Sf_SwigStatic_constants,
+    swig_SubtitleParserFactory_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SubtitleParserFactory_bases[] = {0};
+static const char *swig_SubtitleParserFactory_base_names[] = {0};
+static swig_lua_class _wrap_class_SubtitleParserFactory = { "SubtitleParserFactory", "SubtitleParserFactory", &SWIGTYPE_p_SubtitleParserFactory,_proxy__wrap_new_SubtitleParserFactory, swig_delete_SubtitleParserFactory, swig_SubtitleParserFactory_methods, swig_SubtitleParserFactory_attributes, &swig_SubtitleParserFactory_Sf_SwigStatic, swig_SubtitleParserFactory_meta, swig_SubtitleParserFactory_bases, swig_SubtitleParserFactory_base_names };
+
+static int _wrap_new_SubRipParser__SWIG_0(lua_State* L) { { int SWIG_arg = 0; SubRipParser *result = 0 ;
+    SWIG_check_num_args("SubRipParser::SubRipParser",0,0) result = (SubRipParser *)new SubRipParser();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubRipParser,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_SubRipParser__SWIG_1(lua_State* L) { { int SWIG_arg = 0; std::string arg1 ; SubRipParser *result = 0 ;
+    SWIG_check_num_args("SubRipParser::SubRipParser",1,1)
+    if(!lua_isstring(L,1)) SWIG_fail_arg("SubRipParser::SubRipParser",1,"std::string"); { size_t len;
+      const char *ptr = lua_tolstring(L, 1, &len); (&arg1)->assign(ptr, len); } 
+    result = (SubRipParser *)new SubRipParser(arg1); SWIG_NewPointerObj(L,result,SWIGTYPE_p_SubRipParser,1); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_new_SubRipParser(lua_State* L) { int argc; int argv[2]={ 1,2} ; argc = lua_gettop(L); if (argc == 0) {
+    return _wrap_new_SubRipParser__SWIG_0(L);}  if (argc == 1) { int _v = 0; { _v = lua_isstring(L,argv[0]); }  if (_v) {
+      return _wrap_new_SubRipParser__SWIG_1(L);}  } 
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SubRipParser'\n" "  Possible C/C++ prototypes are:\n"
+  "    SubRipParser::SubRipParser()\n" "    SubRipParser::SubRipParser(std::string)\n"); lua_error(L);return 0; }
+static void swig_delete_SubRipParser(void *obj) {
+SubRipParser *arg1 = (SubRipParser *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_SubRipParser(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_SubRipParser);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_SubRipParser_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_SubRipParser_methods[]= {
+    {0,0}
+};
+static swig_lua_method swig_SubRipParser_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_SubRipParser_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_SubRipParser_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_SubRipParser_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_SubRipParser_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_SubRipParser_Sf_SwigStatic = {
+    "SubRipParser",
+    swig_SubRipParser_Sf_SwigStatic_methods,
+    swig_SubRipParser_Sf_SwigStatic_attributes,
+    swig_SubRipParser_Sf_SwigStatic_constants,
+    swig_SubRipParser_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_SubRipParser_bases[] = {0,0};
+static const char *swig_SubRipParser_base_names[] = {"SubtitleParser *",0};
+static swig_lua_class _wrap_class_SubRipParser = { "SubRipParser", "SubRipParser", &SWIGTYPE_p_SubRipParser,_proxy__wrap_new_SubRipParser, swig_delete_SubRipParser, swig_SubRipParser_methods, swig_SubRipParser_attributes, &swig_SubRipParser_Sf_SwigStatic, swig_SubRipParser_meta, swig_SubRipParser_bases, swig_SubRipParser_base_names };
+
 static int _wrap_new_Volumetrics(lua_State* L) { { int SWIG_arg = 0; ofxVolumetrics *result = 0 ;
     SWIG_check_num_args("ofxVolumetrics::ofxVolumetrics",0,0) result = (ofxVolumetrics *)new ofxVolumetrics();
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxVolumetrics,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
@@ -11760,6 +13222,1169 @@ static swig_lua_class *swig_ImageSequencePlayer_bases[] = {0,0};
 static const char *swig_ImageSequencePlayer_base_names[] = {"ofImage_< unsigned char > *",0};
 static swig_lua_class _wrap_class_ImageSequencePlayer = { "ImageSequencePlayer", "ImageSequencePlayer", &SWIGTYPE_p_ofxImageSequencePlayer,_proxy__wrap_new_ImageSequencePlayer, swig_delete_ImageSequencePlayer, swig_ImageSequencePlayer_methods, swig_ImageSequencePlayer_attributes, &swig_ImageSequencePlayer_Sf_SwigStatic, swig_ImageSequencePlayer_meta, swig_ImageSequencePlayer_bases, swig_ImageSequencePlayer_base_names };
 
+static int _wrap_new_StableDiffusion(lua_State* L) { { int SWIG_arg = 0; ofxStableDiffusion *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::ofxStableDiffusion",0,0) result = (ofxStableDiffusion *)new ofxStableDiffusion();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxStableDiffusion,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_loadImage(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; ofPixels arg2 ; ofPixels *argp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::loadImage",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::loadImage",1,"ofxStableDiffusion *");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxStableDiffusion::loadImage",2,"ofPixels");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_loadImage",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_ofPixels_T_unsigned_char_t,0))){
+      SWIG_fail_ptr("StableDiffusion_loadImage",2,SWIGTYPE_p_ofPixels_T_unsigned_char_t); }  arg2 = *argp2;
+    (arg1)->loadImage(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isDiffused(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result; SWIG_check_num_args("ofxStableDiffusion::isDiffused",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isDiffused",1,"ofxStableDiffusion const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isDiffused",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool)((ofxStableDiffusion const *)arg1)->isDiffused(); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_setDiffused(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ; SWIG_check_num_args("ofxStableDiffusion::setDiffused",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::setDiffused",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::setDiffused",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_setDiffused",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    (arg1)->setDiffused(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_returnImages(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_image_t *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::returnImages",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::returnImages",1,"ofxStableDiffusion const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_returnImages",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (sd_image_t *)((ofxStableDiffusion const *)arg1)->returnImages();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_sd_image_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_StableDiffusion_typeName(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; enum sd_type_t arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::typeName",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::typeName",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::typeName",2,"enum sd_type_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_typeName",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    arg2 = (enum sd_type_t)(int)lua_tonumber(L, 2); (arg1)->typeName(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_StableDiffusion_getNumPhysicalCores(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int32_t result;
+    SWIG_check_num_args("ofxStableDiffusion::getNumPhysicalCores",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::getNumPhysicalCores",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_getNumPhysicalCores",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (int32_t)(arg1)->getNumPhysicalCores(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_getSystemInfo(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; char *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::getSystemInfo",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::getSystemInfo",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_getSystemInfo",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (char *)(arg1)->getSystemInfo(); lua_pushstring(L,(const char *)result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_newSdCtx(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string arg2 ; std::string arg3 ; std::string arg4 ;
+    std::string arg5 ; std::string arg6 ; std::string arg7 ; std::string arg8 ; bool arg9 ; bool arg10 ; bool arg11 ;
+    int arg12 ; enum sd_type_t arg13 ; enum rng_type_t arg14 ; enum schedule_t arg15 ; bool arg16 ; bool arg17 ; bool arg18 ;
+    SWIG_check_num_args("ofxStableDiffusion::newSdCtx",18,18)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",4,"std::string");
+    if(!lua_isstring(L,5)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",5,"std::string");
+    if(!lua_isstring(L,6)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",6,"std::string");
+    if(!lua_isstring(L,7)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",7,"std::string");
+    if(!lua_isstring(L,8)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",8,"std::string");
+    if(!lua_isboolean(L,9)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",9,"bool");
+    if(!lua_isboolean(L,10)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",10,"bool");
+    if(!lua_isboolean(L,11)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",11,"bool");
+    if(!lua_isnumber(L,12)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",12,"int");
+    if(!lua_isnumber(L,13)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",13,"enum sd_type_t");
+    if(!lua_isnumber(L,14)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",14,"enum rng_type_t");
+    if(!lua_isnumber(L,15)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",15,"enum schedule_t");
+    if(!lua_isboolean(L,16)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",16,"bool");
+    if(!lua_isboolean(L,17)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",17,"bool");
+    if(!lua_isboolean(L,18)) SWIG_fail_arg("ofxStableDiffusion::newSdCtx",18,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_newSdCtx",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 5, &len); (&arg5)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 6, &len); (&arg6)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 7, &len); (&arg7)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 8, &len); (&arg8)->assign(ptr, len); }  arg9 = (lua_toboolean(L, 9)!=0);
+    arg10 = (lua_toboolean(L, 10)!=0); arg11 = (lua_toboolean(L, 11)!=0); arg12 = (int)lua_tonumber(L, 12);
+    arg13 = (enum sd_type_t)(int)lua_tonumber(L, 13); arg14 = (enum rng_type_t)(int)lua_tonumber(L, 14);
+    arg15 = (enum schedule_t)(int)lua_tonumber(L, 15); arg16 = (lua_toboolean(L, 16)!=0); arg17 = (lua_toboolean(L, 17)!=0);
+    arg18 = (lua_toboolean(L, 18)!=0);
+    (arg1)->newSdCtx(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18);
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_freeSdCtx(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; SWIG_check_num_args("ofxStableDiffusion::freeSdCtx",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::freeSdCtx",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_freeSdCtx",1,SWIGTYPE_p_ofxStableDiffusion); }  (arg1)->freeSdCtx(); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_txt2img(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string arg2 ; std::string arg3 ; int arg4 ; float arg5 ;
+    int arg6 ; int arg7 ; sample_method_t arg8 ; int arg9 ; int64_t arg10 ; int arg11 ; sd_image_t *arg12 = (sd_image_t *) 0 ;
+    float arg13 ; float arg14 ; bool arg15 ; std::string arg16 ; SWIG_check_num_args("ofxStableDiffusion::txt2img",16,16)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::txt2img",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::txt2img",2,"std::string");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("ofxStableDiffusion::txt2img",3,"std::string");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ofxStableDiffusion::txt2img",4,"int");
+    if(!lua_isnumber(L,5)) SWIG_fail_arg("ofxStableDiffusion::txt2img",5,"float");
+    if(!lua_isnumber(L,6)) SWIG_fail_arg("ofxStableDiffusion::txt2img",6,"int");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("ofxStableDiffusion::txt2img",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("ofxStableDiffusion::txt2img",8,"sample_method_t");
+    if(!lua_isnumber(L,9)) SWIG_fail_arg("ofxStableDiffusion::txt2img",9,"int");
+    if(!lua_isnumber(L,10)) SWIG_fail_arg("ofxStableDiffusion::txt2img",10,"int64_t");
+    if(!lua_isnumber(L,11)) SWIG_fail_arg("ofxStableDiffusion::txt2img",11,"int");
+    if(!SWIG_isptrtype(L,12)) SWIG_fail_arg("ofxStableDiffusion::txt2img",12,"sd_image_t *");
+    if(!lua_isnumber(L,13)) SWIG_fail_arg("ofxStableDiffusion::txt2img",13,"float");
+    if(!lua_isnumber(L,14)) SWIG_fail_arg("ofxStableDiffusion::txt2img",14,"float");
+    if(!lua_isboolean(L,15)) SWIG_fail_arg("ofxStableDiffusion::txt2img",15,"bool");
+    if(!lua_isstring(L,16)) SWIG_fail_arg("ofxStableDiffusion::txt2img",16,"std::string");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_txt2img",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  arg4 = (int)lua_tonumber(L, 4);
+    arg5 = (float)lua_tonumber(L, 5); arg6 = (int)lua_tonumber(L, 6); arg7 = (int)lua_tonumber(L, 7);
+    arg8 = (sample_method_t)(int)lua_tonumber(L, 8); arg9 = (int)lua_tonumber(L, 9); arg10 = (int64_t)lua_tonumber(L, 10);
+    arg11 = (int)lua_tonumber(L, 11); if (!SWIG_IsOK(SWIG_ConvertPtr(L,12,(void**)&arg12,SWIGTYPE_p_sd_image_t,0))){
+      SWIG_fail_ptr("StableDiffusion_txt2img",12,SWIGTYPE_p_sd_image_t); }  arg13 = (float)lua_tonumber(L, 13);
+    arg14 = (float)lua_tonumber(L, 14); arg15 = (lua_toboolean(L, 15)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 16, &len); (&arg16)->assign(ptr, len); } 
+    (arg1)->txt2img(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_img2img(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_image_t arg2 ; std::string arg3 ; std::string arg4 ; int arg5 ;
+    float arg6 ; int arg7 ; int arg8 ; enum sample_method_t arg9 ; int arg10 ; float arg11 ; int64_t arg12 ; int arg13 ;
+    sd_image_t *arg14 = (sd_image_t *) 0 ; float arg15 ; float arg16 ; bool arg17 ; std::string arg18 ; sd_image_t *argp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::img2img",18,18)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::img2img",1,"ofxStableDiffusion *");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxStableDiffusion::img2img",2,"sd_image_t");
+    if(!lua_isstring(L,3)) SWIG_fail_arg("ofxStableDiffusion::img2img",3,"std::string");
+    if(!lua_isstring(L,4)) SWIG_fail_arg("ofxStableDiffusion::img2img",4,"std::string");
+    if(!lua_isnumber(L,5)) SWIG_fail_arg("ofxStableDiffusion::img2img",5,"int");
+    if(!lua_isnumber(L,6)) SWIG_fail_arg("ofxStableDiffusion::img2img",6,"float");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("ofxStableDiffusion::img2img",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("ofxStableDiffusion::img2img",8,"int");
+    if(!lua_isnumber(L,9)) SWIG_fail_arg("ofxStableDiffusion::img2img",9,"enum sample_method_t");
+    if(!lua_isnumber(L,10)) SWIG_fail_arg("ofxStableDiffusion::img2img",10,"int");
+    if(!lua_isnumber(L,11)) SWIG_fail_arg("ofxStableDiffusion::img2img",11,"float");
+    if(!lua_isnumber(L,12)) SWIG_fail_arg("ofxStableDiffusion::img2img",12,"int64_t");
+    if(!lua_isnumber(L,13)) SWIG_fail_arg("ofxStableDiffusion::img2img",13,"int");
+    if(!SWIG_isptrtype(L,14)) SWIG_fail_arg("ofxStableDiffusion::img2img",14,"sd_image_t *");
+    if(!lua_isnumber(L,15)) SWIG_fail_arg("ofxStableDiffusion::img2img",15,"float");
+    if(!lua_isnumber(L,16)) SWIG_fail_arg("ofxStableDiffusion::img2img",16,"float");
+    if(!lua_isboolean(L,17)) SWIG_fail_arg("ofxStableDiffusion::img2img",17,"bool");
+    if(!lua_isstring(L,18)) SWIG_fail_arg("ofxStableDiffusion::img2img",18,"std::string");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_img2img",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_sd_image_t,0))){
+      SWIG_fail_ptr("StableDiffusion_img2img",2,SWIGTYPE_p_sd_image_t); }  arg2 = *argp2; { size_t len;
+      const char *ptr = lua_tolstring(L, 3, &len); (&arg3)->assign(ptr, len); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 4, &len); (&arg4)->assign(ptr, len); }  arg5 = (int)lua_tonumber(L, 5);
+    arg6 = (float)lua_tonumber(L, 6); arg7 = (int)lua_tonumber(L, 7); arg8 = (int)lua_tonumber(L, 8);
+    arg9 = (enum sample_method_t)(int)lua_tonumber(L, 9); arg10 = (int)lua_tonumber(L, 10); arg11 = (float)lua_tonumber(L, 11);
+    arg12 = (int64_t)lua_tonumber(L, 12); arg13 = (int)lua_tonumber(L, 13);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,14,(void**)&arg14,SWIGTYPE_p_sd_image_t,0))){
+      SWIG_fail_ptr("StableDiffusion_img2img",14,SWIGTYPE_p_sd_image_t); }  arg15 = (float)lua_tonumber(L, 15);
+    arg16 = (float)lua_tonumber(L, 16); arg17 = (lua_toboolean(L, 17)!=0); { size_t len;
+      const char *ptr = lua_tolstring(L, 18, &len); (&arg18)->assign(ptr, len); } 
+    (arg1)->img2img(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18);
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_img2vid(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_image_t arg2 ; int arg3 ; int arg4 ; int arg5 ; int arg6 ;
+    int arg7 ; float arg8 ; float arg9 ; float arg10 ; enum sample_method_t arg11 ; int arg12 ; float arg13 ; int64_t arg14 ;
+    sd_image_t *argp2 ; SWIG_check_num_args("ofxStableDiffusion::img2vid",14,14)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::img2vid",1,"ofxStableDiffusion *");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxStableDiffusion::img2vid",2,"sd_image_t");
+    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxStableDiffusion::img2vid",3,"int");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ofxStableDiffusion::img2vid",4,"int");
+    if(!lua_isnumber(L,5)) SWIG_fail_arg("ofxStableDiffusion::img2vid",5,"int");
+    if(!lua_isnumber(L,6)) SWIG_fail_arg("ofxStableDiffusion::img2vid",6,"int");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("ofxStableDiffusion::img2vid",7,"int");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("ofxStableDiffusion::img2vid",8,"float");
+    if(!lua_isnumber(L,9)) SWIG_fail_arg("ofxStableDiffusion::img2vid",9,"float");
+    if(!lua_isnumber(L,10)) SWIG_fail_arg("ofxStableDiffusion::img2vid",10,"float");
+    if(!lua_isnumber(L,11)) SWIG_fail_arg("ofxStableDiffusion::img2vid",11,"enum sample_method_t");
+    if(!lua_isnumber(L,12)) SWIG_fail_arg("ofxStableDiffusion::img2vid",12,"int");
+    if(!lua_isnumber(L,13)) SWIG_fail_arg("ofxStableDiffusion::img2vid",13,"float");
+    if(!lua_isnumber(L,14)) SWIG_fail_arg("ofxStableDiffusion::img2vid",14,"int64_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_img2vid",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_sd_image_t,0))){
+      SWIG_fail_ptr("StableDiffusion_img2vid",2,SWIGTYPE_p_sd_image_t); }  arg2 = *argp2; arg3 = (int)lua_tonumber(L, 3);
+    arg4 = (int)lua_tonumber(L, 4); arg5 = (int)lua_tonumber(L, 5); arg6 = (int)lua_tonumber(L, 6);
+    arg7 = (int)lua_tonumber(L, 7); arg8 = (float)lua_tonumber(L, 8); arg9 = (float)lua_tonumber(L, 9);
+    arg10 = (float)lua_tonumber(L, 10); arg11 = (enum sample_method_t)(int)lua_tonumber(L, 11);
+    arg12 = (int)lua_tonumber(L, 12); arg13 = (float)lua_tonumber(L, 13); arg14 = (int64_t)lua_tonumber(L, 14);
+    (arg1)->img2vid(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14); return SWIG_arg; fail: SWIGUNUSED; }
+   lua_error(L); return 0; }
+static int _wrap_StableDiffusion_newUpscalerCtx(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; char *arg2 = (char *) 0 ; int arg3 ; enum sd_type_t arg4 ;
+    SWIG_check_num_args("ofxStableDiffusion::newUpscalerCtx",4,4)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::newUpscalerCtx",1,"ofxStableDiffusion *");
+    if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::newUpscalerCtx",2,"char const *");
+    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxStableDiffusion::newUpscalerCtx",3,"int");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ofxStableDiffusion::newUpscalerCtx",4,"enum sd_type_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_newUpscalerCtx",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (char *)lua_tostring(L, 2);
+    arg3 = (int)lua_tonumber(L, 3); arg4 = (enum sd_type_t)(int)lua_tonumber(L, 4);
+    (arg1)->newUpscalerCtx((char const *)arg2,arg3,arg4); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_freeUpscalerCtx(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; SWIG_check_num_args("ofxStableDiffusion::freeUpscalerCtx",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::freeUpscalerCtx",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_freeUpscalerCtx",1,SWIGTYPE_p_ofxStableDiffusion); }  (arg1)->freeUpscalerCtx();
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_upscale(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; upscaler_ctx_t *arg2 = (upscaler_ctx_t *) 0 ; sd_image_t arg3 ;
+    uint32_t arg4 ; sd_image_t *argp3 ; SWIG_check_num_args("ofxStableDiffusion::upscale",4,4)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::upscale",1,"ofxStableDiffusion *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxStableDiffusion::upscale",2,"upscaler_ctx_t *");
+    if(!lua_isuserdata(L,3)) SWIG_fail_arg("ofxStableDiffusion::upscale",3,"sd_image_t");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ofxStableDiffusion::upscale",4,"uint32_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_upscale",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_upscaler_ctx_t,0))){
+      SWIG_fail_ptr("StableDiffusion_upscale",2,SWIGTYPE_p_upscaler_ctx_t); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_sd_image_t,0))){
+      SWIG_fail_ptr("StableDiffusion_upscale",3,SWIGTYPE_p_sd_image_t); }  arg3 = *argp3;
+    SWIG_contract_assert((lua_tonumber(L,4)>=0),"number must not be negative"); arg4 = (uint32_t)lua_tonumber(L, 4);
+    (arg1)->upscale(arg2,arg3,arg4); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_convert(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; char *arg2 = (char *) 0 ; char *arg3 = (char *) 0 ;
+    char *arg4 = (char *) 0 ; sd_type_t arg5 ; bool result; SWIG_check_num_args("ofxStableDiffusion::convert",5,5)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::convert",1,"ofxStableDiffusion *");
+    if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::convert",2,"char const *");
+    if(!SWIG_lua_isnilstring(L,3)) SWIG_fail_arg("ofxStableDiffusion::convert",3,"char const *");
+    if(!SWIG_lua_isnilstring(L,4)) SWIG_fail_arg("ofxStableDiffusion::convert",4,"char const *");
+    if(!lua_isnumber(L,5)) SWIG_fail_arg("ofxStableDiffusion::convert",5,"sd_type_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_convert",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (char *)lua_tostring(L, 2);
+    arg3 = (char *)lua_tostring(L, 3); arg4 = (char *)lua_tostring(L, 4); arg5 = (sd_type_t)(int)lua_tonumber(L, 5);
+    result = (bool)(arg1)->convert((char const *)arg2,(char const *)arg3,(char const *)arg4,arg5);
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_preprocessCanny(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; uint8_t *arg2 = (uint8_t *) 0 ; int arg3 ; int arg4 ; float arg5 ;
+    float arg6 ; float arg7 ; float arg8 ; bool arg9 ; SWIG_check_num_args("ofxStableDiffusion::preprocessCanny",9,9)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::preprocessCanny",1,"ofxStableDiffusion *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxStableDiffusion::preprocessCanny",2,"uint8_t *");
+    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxStableDiffusion::preprocessCanny",3,"int");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ofxStableDiffusion::preprocessCanny",4,"int");
+    if(!lua_isnumber(L,5)) SWIG_fail_arg("ofxStableDiffusion::preprocessCanny",5,"float");
+    if(!lua_isnumber(L,6)) SWIG_fail_arg("ofxStableDiffusion::preprocessCanny",6,"float");
+    if(!lua_isnumber(L,7)) SWIG_fail_arg("ofxStableDiffusion::preprocessCanny",7,"float");
+    if(!lua_isnumber(L,8)) SWIG_fail_arg("ofxStableDiffusion::preprocessCanny",8,"float");
+    if(!lua_isboolean(L,9)) SWIG_fail_arg("ofxStableDiffusion::preprocessCanny",9,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_preprocessCanny",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_unsigned_char,0))){
+      SWIG_fail_ptr("StableDiffusion_preprocessCanny",2,SWIGTYPE_p_unsigned_char); }  arg3 = (int)lua_tonumber(L, 3);
+    arg4 = (int)lua_tonumber(L, 4); arg5 = (float)lua_tonumber(L, 5); arg6 = (float)lua_tonumber(L, 6);
+    arg7 = (float)lua_tonumber(L, 7); arg8 = (float)lua_tonumber(L, 8); arg9 = (lua_toboolean(L, 9)!=0);
+    (arg1)->preprocessCanny(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_StableDiffusion_prompt_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::prompt",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::prompt",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::prompt",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_prompt_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; }  if (arg1) (arg1)->prompt = *arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_prompt_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::prompt",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::prompt",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_prompt_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->prompt); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_negativePrompt_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::negativePrompt",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::negativePrompt",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::negativePrompt",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_negativePrompt_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; } 
+    if (arg1) (arg1)->negativePrompt = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_negativePrompt_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::negativePrompt",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::negativePrompt",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_negativePrompt_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->negativePrompt); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_width_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ; SWIG_check_num_args("ofxStableDiffusion::width",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::width",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::width",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_width_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->width = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_width_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result; SWIG_check_num_args("ofxStableDiffusion::width",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::width",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_width_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (int) ((arg1)->width);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_height_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ; SWIG_check_num_args("ofxStableDiffusion::height",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::height",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::height",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_height_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->height = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_height_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result; SWIG_check_num_args("ofxStableDiffusion::height",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::height",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_height_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (int) ((arg1)->height);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_cfgScale_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; float arg2 ; SWIG_check_num_args("ofxStableDiffusion::cfgScale",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::cfgScale",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::cfgScale",2,"float");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_cfgScale_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (float)lua_tonumber(L, 2);
+    if (arg1) (arg1)->cfgScale = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_cfgScale_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; float result; SWIG_check_num_args("ofxStableDiffusion::cfgScale",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::cfgScale",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_cfgScale_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (float) ((arg1)->cfgScale);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_batchCount_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ; SWIG_check_num_args("ofxStableDiffusion::batchCount",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::batchCount",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::batchCount",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_batchCount_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->batchCount = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_batchCount_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result; SWIG_check_num_args("ofxStableDiffusion::batchCount",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::batchCount",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_batchCount_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (int) ((arg1)->batchCount);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_strength_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; float arg2 ; SWIG_check_num_args("ofxStableDiffusion::strength",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::strength",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::strength",2,"float");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_strength_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (float)lua_tonumber(L, 2);
+    if (arg1) (arg1)->strength = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_strength_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; float result; SWIG_check_num_args("ofxStableDiffusion::strength",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::strength",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_strength_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (float) ((arg1)->strength);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_seed_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ; SWIG_check_num_args("ofxStableDiffusion::seed",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::seed",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::seed",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_seed_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->seed = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_seed_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result; SWIG_check_num_args("ofxStableDiffusion::seed",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::seed",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_seed_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (int) ((arg1)->seed);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_clipSkip_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ; SWIG_check_num_args("ofxStableDiffusion::clipSkip",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::clipSkip",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::clipSkip",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_clipSkip_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->clipSkip = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_clipSkip_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result; SWIG_check_num_args("ofxStableDiffusion::clipSkip",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::clipSkip",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_clipSkip_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (int) ((arg1)->clipSkip);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_sampleMethod_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; char *arg2 = (char *) 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::sampleMethod",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::sampleMethod",1,"ofxStableDiffusion *");
+    if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::sampleMethod",2,"char *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_sampleMethod_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (char *)lua_tostring(L, 2); {
+      delete [] arg1->sampleMethod; if (arg2) { arg1->sampleMethod = (char *) (new char[strlen((const char *)arg2)+1]);
+        strcpy((char *)arg1->sampleMethod, (const char *)arg2); }  else { arg1->sampleMethod = 0; }  }  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_sampleMethod_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; char *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::sampleMethod",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::sampleMethod",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_sampleMethod_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (char *) ((arg1)->sampleMethod); lua_pushstring(L,(const char *)result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_modelPath_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::modelPath",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::modelPath",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::modelPath",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_modelPath_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; }  if (arg1) (arg1)->modelPath = *arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_modelPath_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::modelPath",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::modelPath",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_modelPath_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->modelPath); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_modelName_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::modelName",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::modelName",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::modelName",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_modelName_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; }  if (arg1) (arg1)->modelName = *arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_modelName_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::modelName",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::modelName",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_modelName_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->modelName); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_taesdPath_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::taesdPath",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::taesdPath",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::taesdPath",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_taesdPath_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; }  if (arg1) (arg1)->taesdPath = *arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_taesdPath_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::taesdPath",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::taesdPath",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_taesdPath_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->taesdPath); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_controlNetPathCStr_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::controlNetPathCStr",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::controlNetPathCStr",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::controlNetPathCStr",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_controlNetPathCStr_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; } 
+    if (arg1) (arg1)->controlNetPathCStr = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_controlNetPathCStr_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::controlNetPathCStr",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::controlNetPathCStr",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_controlNetPathCStr_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->controlNetPathCStr); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_embedDirCStr_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::embedDirCStr",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::embedDirCStr",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::embedDirCStr",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_embedDirCStr_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; } 
+    if (arg1) (arg1)->embedDirCStr = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_embedDirCStr_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::embedDirCStr",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::embedDirCStr",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_embedDirCStr_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->embedDirCStr); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_loraModelDir_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::loraModelDir",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::loraModelDir",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::loraModelDir",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_loraModelDir_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; } 
+    if (arg1) (arg1)->loraModelDir = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_loraModelDir_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::loraModelDir",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::loraModelDir",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_loraModelDir_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->loraModelDir); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_vaePath_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::vaePath",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::vaePath",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::vaePath",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_vaePath_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; }  if (arg1) (arg1)->vaePath = *arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_vaePath_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::vaePath",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::vaePath",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_vaePath_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->vaePath); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_esrganPath_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::esrganPath",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::esrganPath",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::esrganPath",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_esrganPath_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; }  if (arg1) (arg1)->esrganPath = *arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_esrganPath_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::esrganPath",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::esrganPath",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_esrganPath_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->esrganPath); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_stackedIdEmbedDirCStr_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::stackedIdEmbedDirCStr",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::stackedIdEmbedDirCStr",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::stackedIdEmbedDirCStr",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_stackedIdEmbedDirCStr_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; } 
+    if (arg1) (arg1)->stackedIdEmbedDirCStr = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_stackedIdEmbedDirCStr_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::stackedIdEmbedDirCStr",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::stackedIdEmbedDirCStr",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_stackedIdEmbedDirCStr_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->stackedIdEmbedDirCStr); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_inputIdImagesPath_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::inputIdImagesPath",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::inputIdImagesPath",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::inputIdImagesPath",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_inputIdImagesPath_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; } 
+    if (arg1) (arg1)->inputIdImagesPath = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_inputIdImagesPath_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::inputIdImagesPath",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::inputIdImagesPath",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_inputIdImagesPath_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->inputIdImagesPath); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_sampleMethodEnum_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sample_method_t arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::sampleMethodEnum",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::sampleMethodEnum",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::sampleMethodEnum",2,"sample_method_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_sampleMethodEnum_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    arg2 = (sample_method_t)(int)lua_tonumber(L, 2); if (arg1) (arg1)->sampleMethodEnum = arg2; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_sampleMethodEnum_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sample_method_t result;
+    SWIG_check_num_args("ofxStableDiffusion::sampleMethodEnum",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::sampleMethodEnum",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_sampleMethodEnum_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (sample_method_t) ((arg1)->sampleMethodEnum); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_sampleSteps_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ; SWIG_check_num_args("ofxStableDiffusion::sampleSteps",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::sampleSteps",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::sampleSteps",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_sampleSteps_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->sampleSteps = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_sampleSteps_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result; SWIG_check_num_args("ofxStableDiffusion::sampleSteps",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::sampleSteps",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_sampleSteps_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (int) ((arg1)->sampleSteps);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_videoFrames_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ; SWIG_check_num_args("ofxStableDiffusion::videoFrames",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::videoFrames",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::videoFrames",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_videoFrames_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->videoFrames = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_videoFrames_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result; SWIG_check_num_args("ofxStableDiffusion::videoFrames",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::videoFrames",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_videoFrames_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (int) ((arg1)->videoFrames);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_motionBucketId_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::motionBucketId",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::motionBucketId",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::motionBucketId",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_motionBucketId_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->motionBucketId = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_motionBucketId_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result;
+    SWIG_check_num_args("ofxStableDiffusion::motionBucketId",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::motionBucketId",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_motionBucketId_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (int) ((arg1)->motionBucketId); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_fps_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ; SWIG_check_num_args("ofxStableDiffusion::fps",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::fps",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::fps",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_fps_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->fps = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_fps_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result; SWIG_check_num_args("ofxStableDiffusion::fps",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::fps",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_fps_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (int) ((arg1)->fps);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_vaeDecodeOnly_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::vaeDecodeOnly",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::vaeDecodeOnly",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::vaeDecodeOnly",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_vaeDecodeOnly_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->vaeDecodeOnly = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_vaeDecodeOnly_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result;
+    SWIG_check_num_args("ofxStableDiffusion::vaeDecodeOnly",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::vaeDecodeOnly",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_vaeDecodeOnly_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool) ((arg1)->vaeDecodeOnly); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_vaeTiling_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ; SWIG_check_num_args("ofxStableDiffusion::vaeTiling",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::vaeTiling",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::vaeTiling",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_vaeTiling_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->vaeTiling = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_vaeTiling_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result; SWIG_check_num_args("ofxStableDiffusion::vaeTiling",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::vaeTiling",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_vaeTiling_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (bool) ((arg1)->vaeTiling);
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_freeParamsImmediately_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::freeParamsImmediately",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::freeParamsImmediately",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::freeParamsImmediately",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_freeParamsImmediately_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    arg2 = (lua_toboolean(L, 2)!=0); if (arg1) (arg1)->freeParamsImmediately = arg2; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_freeParamsImmediately_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result;
+    SWIG_check_num_args("ofxStableDiffusion::freeParamsImmediately",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::freeParamsImmediately",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_freeParamsImmediately_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool) ((arg1)->freeParamsImmediately); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isFullScreen_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::isFullScreen",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isFullScreen",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::isFullScreen",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isFullScreen_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->isFullScreen = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isFullScreen_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result;
+    SWIG_check_num_args("ofxStableDiffusion::isFullScreen",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isFullScreen",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isFullScreen_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool) ((arg1)->isFullScreen); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }
+   lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isTAESD_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ; SWIG_check_num_args("ofxStableDiffusion::isTAESD",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isTAESD",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::isTAESD",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isTAESD_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->isTAESD = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isTAESD_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result; SWIG_check_num_args("ofxStableDiffusion::isTAESD",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isTAESD",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isTAESD_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (bool) ((arg1)->isTAESD);
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isESRGAN_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ; SWIG_check_num_args("ofxStableDiffusion::isESRGAN",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isESRGAN",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::isESRGAN",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isESRGAN_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->isESRGAN = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isESRGAN_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result; SWIG_check_num_args("ofxStableDiffusion::isESRGAN",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isESRGAN",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isESRGAN_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (bool) ((arg1)->isESRGAN);
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_keepClipOnCpu_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::keepClipOnCpu",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::keepClipOnCpu",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::keepClipOnCpu",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_keepClipOnCpu_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->keepClipOnCpu = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_keepClipOnCpu_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result;
+    SWIG_check_num_args("ofxStableDiffusion::keepClipOnCpu",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::keepClipOnCpu",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_keepClipOnCpu_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool) ((arg1)->keepClipOnCpu); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_keepControlNetCpu_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::keepControlNetCpu",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::keepControlNetCpu",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::keepControlNetCpu",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_keepControlNetCpu_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    arg2 = (lua_toboolean(L, 2)!=0); if (arg1) (arg1)->keepControlNetCpu = arg2; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_keepControlNetCpu_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result;
+    SWIG_check_num_args("ofxStableDiffusion::keepControlNetCpu",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::keepControlNetCpu",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_keepControlNetCpu_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool) ((arg1)->keepControlNetCpu); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_keepVaeOnCpu_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::keepVaeOnCpu",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::keepVaeOnCpu",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::keepVaeOnCpu",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_keepVaeOnCpu_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->keepVaeOnCpu = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_keepVaeOnCpu_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result;
+    SWIG_check_num_args("ofxStableDiffusion::keepVaeOnCpu",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::keepVaeOnCpu",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_keepVaeOnCpu_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool) ((arg1)->keepVaeOnCpu); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }
+   lua_error(L); return 0; }
+static int _wrap_StableDiffusion_styleStrength_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; float arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::styleStrength",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::styleStrength",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::styleStrength",2,"float");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_styleStrength_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (float)lua_tonumber(L, 2);
+    if (arg1) (arg1)->styleStrength = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_styleStrength_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; float result;
+    SWIG_check_num_args("ofxStableDiffusion::styleStrength",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::styleStrength",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_styleStrength_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (float) ((arg1)->styleStrength); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_normalizeInput_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::normalizeInput",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::normalizeInput",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::normalizeInput",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_normalizeInput_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->normalizeInput = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_normalizeInput_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result;
+    SWIG_check_num_args("ofxStableDiffusion::normalizeInput",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::normalizeInput",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_normalizeInput_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool) ((arg1)->normalizeInput); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_nThreads_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ; SWIG_check_num_args("ofxStableDiffusion::nThreads",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::nThreads",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::nThreads",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_nThreads_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->nThreads = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_nThreads_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result; SWIG_check_num_args("ofxStableDiffusion::nThreads",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::nThreads",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_nThreads_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (int) ((arg1)->nThreads);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_esrganMultiplier_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::esrganMultiplier",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::esrganMultiplier",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::esrganMultiplier",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_esrganMultiplier_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->esrganMultiplier = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_esrganMultiplier_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; int result;
+    SWIG_check_num_args("ofxStableDiffusion::esrganMultiplier",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::esrganMultiplier",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_esrganMultiplier_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (int) ((arg1)->esrganMultiplier); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_wType_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_type_t arg2 ; SWIG_check_num_args("ofxStableDiffusion::wType",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::wType",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::wType",2,"sd_type_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_wType_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (sd_type_t)(int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->wType = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_wType_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_type_t result; SWIG_check_num_args("ofxStableDiffusion::wType",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::wType",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_wType_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (sd_type_t) ((arg1)->wType);
+    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_schedule_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; schedule_t arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::schedule",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::schedule",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::schedule",2,"schedule_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_schedule_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    arg2 = (schedule_t)(int)lua_tonumber(L, 2); if (arg1) (arg1)->schedule = arg2; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_schedule_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; schedule_t result;
+    SWIG_check_num_args("ofxStableDiffusion::schedule",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::schedule",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_schedule_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (schedule_t) ((arg1)->schedule); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_rngType_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; rng_type_t arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::rngType",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::rngType",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::rngType",2,"rng_type_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_rngType_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    arg2 = (rng_type_t)(int)lua_tonumber(L, 2); if (arg1) (arg1)->rngType = arg2; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_rngType_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; rng_type_t result;
+    SWIG_check_num_args("ofxStableDiffusion::rngType",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::rngType",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_rngType_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (rng_type_t) ((arg1)->rngType);
+    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_controlImagePath_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *arg2 = 0 ; std::string temp2 ;
+    SWIG_check_num_args("ofxStableDiffusion::controlImagePath",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::controlImagePath",1,"ofxStableDiffusion *");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxStableDiffusion::controlImagePath",2,"std::string const &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_controlImagePath_set",1,SWIGTYPE_p_ofxStableDiffusion); }  { size_t len;
+      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; } 
+    if (arg1) (arg1)->controlImagePath = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_controlImagePath_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; std::string *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::controlImagePath",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::controlImagePath",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_controlImagePath_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (std::string *) & ((arg1)->controlImagePath); lua_pushlstring(L,result->data(),result->size()); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_controlStrength_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; float arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::controlStrength",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::controlStrength",1,"ofxStableDiffusion *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::controlStrength",2,"float");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_controlStrength_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (float)lua_tonumber(L, 2);
+    if (arg1) (arg1)->controlStrength = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_controlStrength_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; float result;
+    SWIG_check_num_args("ofxStableDiffusion::controlStrength",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::controlStrength",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_controlStrength_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (float) ((arg1)->controlStrength); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_inputImage_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_image_t *arg2 = (sd_image_t *) 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::inputImage",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::inputImage",1,"ofxStableDiffusion *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxStableDiffusion::inputImage",2,"sd_image_t *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_inputImage_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_sd_image_t,0))){
+      SWIG_fail_ptr("StableDiffusion_inputImage_set",2,SWIGTYPE_p_sd_image_t); }  if (arg1) (arg1)->inputImage = *arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_inputImage_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_image_t *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::inputImage",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::inputImage",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_inputImage_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (sd_image_t *)& ((arg1)->inputImage); SWIG_NewPointerObj(L,result,SWIGTYPE_p_sd_image_t,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_outputImages_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_image_t *arg2 = (sd_image_t *) 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::outputImages",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::outputImages",1,"ofxStableDiffusion *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxStableDiffusion::outputImages",2,"sd_image_t *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_outputImages_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_sd_image_t,SWIG_POINTER_DISOWN))){
+      SWIG_fail_ptr("StableDiffusion_outputImages_set",2,SWIGTYPE_p_sd_image_t); }  if (arg1) (arg1)->outputImages = arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_outputImages_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_image_t *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::outputImages",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::outputImages",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_outputImages_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (sd_image_t *) ((arg1)->outputImages); SWIG_NewPointerObj(L,result,SWIGTYPE_p_sd_image_t,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_controlCond_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_image_t *arg2 = (sd_image_t *) 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::controlCond",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::controlCond",1,"ofxStableDiffusion *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxStableDiffusion::controlCond",2,"sd_image_t *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_controlCond_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_sd_image_t,SWIG_POINTER_DISOWN))){
+      SWIG_fail_ptr("StableDiffusion_controlCond_set",2,SWIGTYPE_p_sd_image_t); }  if (arg1) (arg1)->controlCond = arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_controlCond_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; sd_image_t *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::controlCond",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::controlCond",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_controlCond_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (sd_image_t *) ((arg1)->controlCond); SWIG_NewPointerObj(L,result,SWIGTYPE_p_sd_image_t,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_thread_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; stableDiffusionThread *arg2 = (stableDiffusionThread *) 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::thread",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::thread",1,"ofxStableDiffusion *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxStableDiffusion::thread",2,"stableDiffusionThread *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_thread_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_stableDiffusionThread,0))){
+      SWIG_fail_ptr("StableDiffusion_thread_set",2,SWIGTYPE_p_stableDiffusionThread); }
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_thread_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; stableDiffusionThread *result = 0 ;
+    SWIG_check_num_args("ofxStableDiffusion::thread",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::thread",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_thread_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (stableDiffusionThread *)& ((arg1)->thread);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_stableDiffusionThread,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isTextToImage_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::isTextToImage",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isTextToImage",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::isTextToImage",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isTextToImage_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->isTextToImage = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isTextToImage_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result;
+    SWIG_check_num_args("ofxStableDiffusion::isTextToImage",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isTextToImage",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isTextToImage_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool) ((arg1)->isTextToImage); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isModelLoading_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ofxStableDiffusion::isModelLoading",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isModelLoading",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::isModelLoading",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isModelLoading_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->isModelLoading = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_isModelLoading_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result;
+    SWIG_check_num_args("ofxStableDiffusion::isModelLoading",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::isModelLoading",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_isModelLoading_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    result = (bool) ((arg1)->isModelLoading); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_diffused_set(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ; SWIG_check_num_args("ofxStableDiffusion::diffused",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::diffused",1,"ofxStableDiffusion *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxStableDiffusion::diffused",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_diffused_set",1,SWIGTYPE_p_ofxStableDiffusion); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->diffused = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_diffused_get(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool result; SWIG_check_num_args("ofxStableDiffusion::diffused",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::diffused",1,"ofxStableDiffusion *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_diffused_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (bool) ((arg1)->diffused);
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static void swig_delete_StableDiffusion(void *obj) {
+ofxStableDiffusion *arg1 = (ofxStableDiffusion *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_StableDiffusion(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_StableDiffusion);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_StableDiffusion_attributes[] = {
+    { "prompt", _wrap_StableDiffusion_prompt_get, _wrap_StableDiffusion_prompt_set },
+    { "negativePrompt", _wrap_StableDiffusion_negativePrompt_get, _wrap_StableDiffusion_negativePrompt_set },
+    { "width", _wrap_StableDiffusion_width_get, _wrap_StableDiffusion_width_set },
+    { "height", _wrap_StableDiffusion_height_get, _wrap_StableDiffusion_height_set },
+    { "cfgScale", _wrap_StableDiffusion_cfgScale_get, _wrap_StableDiffusion_cfgScale_set },
+    { "batchCount", _wrap_StableDiffusion_batchCount_get, _wrap_StableDiffusion_batchCount_set },
+    { "strength", _wrap_StableDiffusion_strength_get, _wrap_StableDiffusion_strength_set },
+    { "seed", _wrap_StableDiffusion_seed_get, _wrap_StableDiffusion_seed_set },
+    { "clipSkip", _wrap_StableDiffusion_clipSkip_get, _wrap_StableDiffusion_clipSkip_set },
+    { "sampleMethod", _wrap_StableDiffusion_sampleMethod_get, _wrap_StableDiffusion_sampleMethod_set },
+    { "modelPath", _wrap_StableDiffusion_modelPath_get, _wrap_StableDiffusion_modelPath_set },
+    { "modelName", _wrap_StableDiffusion_modelName_get, _wrap_StableDiffusion_modelName_set },
+    { "taesdPath", _wrap_StableDiffusion_taesdPath_get, _wrap_StableDiffusion_taesdPath_set },
+    { "controlNetPathCStr", _wrap_StableDiffusion_controlNetPathCStr_get, _wrap_StableDiffusion_controlNetPathCStr_set },
+    { "embedDirCStr", _wrap_StableDiffusion_embedDirCStr_get, _wrap_StableDiffusion_embedDirCStr_set },
+    { "loraModelDir", _wrap_StableDiffusion_loraModelDir_get, _wrap_StableDiffusion_loraModelDir_set },
+    { "vaePath", _wrap_StableDiffusion_vaePath_get, _wrap_StableDiffusion_vaePath_set },
+    { "esrganPath", _wrap_StableDiffusion_esrganPath_get, _wrap_StableDiffusion_esrganPath_set },
+    { "stackedIdEmbedDirCStr", _wrap_StableDiffusion_stackedIdEmbedDirCStr_get, _wrap_StableDiffusion_stackedIdEmbedDirCStr_set },
+    { "inputIdImagesPath", _wrap_StableDiffusion_inputIdImagesPath_get, _wrap_StableDiffusion_inputIdImagesPath_set },
+    { "sampleMethodEnum", _wrap_StableDiffusion_sampleMethodEnum_get, _wrap_StableDiffusion_sampleMethodEnum_set },
+    { "sampleSteps", _wrap_StableDiffusion_sampleSteps_get, _wrap_StableDiffusion_sampleSteps_set },
+    { "videoFrames", _wrap_StableDiffusion_videoFrames_get, _wrap_StableDiffusion_videoFrames_set },
+    { "motionBucketId", _wrap_StableDiffusion_motionBucketId_get, _wrap_StableDiffusion_motionBucketId_set },
+    { "fps", _wrap_StableDiffusion_fps_get, _wrap_StableDiffusion_fps_set },
+    { "vaeDecodeOnly", _wrap_StableDiffusion_vaeDecodeOnly_get, _wrap_StableDiffusion_vaeDecodeOnly_set },
+    { "vaeTiling", _wrap_StableDiffusion_vaeTiling_get, _wrap_StableDiffusion_vaeTiling_set },
+    { "freeParamsImmediately", _wrap_StableDiffusion_freeParamsImmediately_get, _wrap_StableDiffusion_freeParamsImmediately_set },
+    { "isFullScreen", _wrap_StableDiffusion_isFullScreen_get, _wrap_StableDiffusion_isFullScreen_set },
+    { "isTAESD", _wrap_StableDiffusion_isTAESD_get, _wrap_StableDiffusion_isTAESD_set },
+    { "isESRGAN", _wrap_StableDiffusion_isESRGAN_get, _wrap_StableDiffusion_isESRGAN_set },
+    { "keepClipOnCpu", _wrap_StableDiffusion_keepClipOnCpu_get, _wrap_StableDiffusion_keepClipOnCpu_set },
+    { "keepControlNetCpu", _wrap_StableDiffusion_keepControlNetCpu_get, _wrap_StableDiffusion_keepControlNetCpu_set },
+    { "keepVaeOnCpu", _wrap_StableDiffusion_keepVaeOnCpu_get, _wrap_StableDiffusion_keepVaeOnCpu_set },
+    { "styleStrength", _wrap_StableDiffusion_styleStrength_get, _wrap_StableDiffusion_styleStrength_set },
+    { "normalizeInput", _wrap_StableDiffusion_normalizeInput_get, _wrap_StableDiffusion_normalizeInput_set },
+    { "nThreads", _wrap_StableDiffusion_nThreads_get, _wrap_StableDiffusion_nThreads_set },
+    { "esrganMultiplier", _wrap_StableDiffusion_esrganMultiplier_get, _wrap_StableDiffusion_esrganMultiplier_set },
+    { "wType", _wrap_StableDiffusion_wType_get, _wrap_StableDiffusion_wType_set },
+    { "schedule", _wrap_StableDiffusion_schedule_get, _wrap_StableDiffusion_schedule_set },
+    { "rngType", _wrap_StableDiffusion_rngType_get, _wrap_StableDiffusion_rngType_set },
+    { "controlImagePath", _wrap_StableDiffusion_controlImagePath_get, _wrap_StableDiffusion_controlImagePath_set },
+    { "controlStrength", _wrap_StableDiffusion_controlStrength_get, _wrap_StableDiffusion_controlStrength_set },
+    { "inputImage", _wrap_StableDiffusion_inputImage_get, _wrap_StableDiffusion_inputImage_set },
+    { "outputImages", _wrap_StableDiffusion_outputImages_get, _wrap_StableDiffusion_outputImages_set },
+    { "controlCond", _wrap_StableDiffusion_controlCond_get, _wrap_StableDiffusion_controlCond_set },
+    { "thread", _wrap_StableDiffusion_thread_get, _wrap_StableDiffusion_thread_set },
+    { "isTextToImage", _wrap_StableDiffusion_isTextToImage_get, _wrap_StableDiffusion_isTextToImage_set },
+    { "isModelLoading", _wrap_StableDiffusion_isModelLoading_get, _wrap_StableDiffusion_isModelLoading_set },
+    { "diffused", _wrap_StableDiffusion_diffused_get, _wrap_StableDiffusion_diffused_set },
+    {0,0,0}
+};
+static swig_lua_method swig_StableDiffusion_methods[]= {
+    { "loadImage", _wrap_StableDiffusion_loadImage},
+    { "isDiffused", _wrap_StableDiffusion_isDiffused},
+    { "setDiffused", _wrap_StableDiffusion_setDiffused},
+    { "returnImages", _wrap_StableDiffusion_returnImages},
+    { "typeName", _wrap_StableDiffusion_typeName},
+    { "getNumPhysicalCores", _wrap_StableDiffusion_getNumPhysicalCores},
+    { "getSystemInfo", _wrap_StableDiffusion_getSystemInfo},
+    { "newSdCtx", _wrap_StableDiffusion_newSdCtx},
+    { "freeSdCtx", _wrap_StableDiffusion_freeSdCtx},
+    { "txt2img", _wrap_StableDiffusion_txt2img},
+    { "img2img", _wrap_StableDiffusion_img2img},
+    { "img2vid", _wrap_StableDiffusion_img2vid},
+    { "newUpscalerCtx", _wrap_StableDiffusion_newUpscalerCtx},
+    { "freeUpscalerCtx", _wrap_StableDiffusion_freeUpscalerCtx},
+    { "upscale", _wrap_StableDiffusion_upscale},
+    { "convert", _wrap_StableDiffusion_convert},
+    { "preprocessCanny", _wrap_StableDiffusion_preprocessCanny},
+    {0,0}
+};
+static swig_lua_method swig_StableDiffusion_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_StableDiffusion_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_StableDiffusion_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_StableDiffusion_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_StableDiffusion_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_StableDiffusion_Sf_SwigStatic = {
+    "StableDiffusion",
+    swig_StableDiffusion_Sf_SwigStatic_methods,
+    swig_StableDiffusion_Sf_SwigStatic_attributes,
+    swig_StableDiffusion_Sf_SwigStatic_constants,
+    swig_StableDiffusion_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_StableDiffusion_bases[] = {0};
+static const char *swig_StableDiffusion_base_names[] = {0};
+static swig_lua_class _wrap_class_StableDiffusion = { "StableDiffusion", "StableDiffusion", &SWIGTYPE_p_ofxStableDiffusion,_proxy__wrap_new_StableDiffusion, swig_delete_StableDiffusion, swig_StableDiffusion_methods, swig_StableDiffusion_attributes, &swig_StableDiffusion_Sf_SwigStatic, swig_StableDiffusion_meta, swig_StableDiffusion_bases, swig_StableDiffusion_base_names };
+
 static int _wrap_sd_type_name(lua_State* L) { { int SWIG_arg = 0; enum sd_type_t arg1 ; char *result = 0 ;
     SWIG_check_num_args("sd_type_name",1,1) if(!lua_isnumber(L,1)) SWIG_fail_arg("sd_type_name",1,"enum sd_type_t");
     arg1 = (enum sd_type_t)(int)lua_tonumber(L, 1); result = (char *)sd_type_name(arg1);
@@ -11958,9 +14583,9 @@ static int _wrap_txt2img(lua_State* L) { { int SWIG_arg = 0; sd_ctx_t *arg1 = (s
   return 0; }
 static int _wrap_img2img(lua_State* L) { { int SWIG_arg = 0; sd_ctx_t *arg1 = (sd_ctx_t *) 0 ; sd_image_t arg2 ;
     char *arg3 = (char *) 0 ; char *arg4 = (char *) 0 ; int arg5 ; float arg6 ; int arg7 ; int arg8 ;
-    enum sample_method_t arg9 ; int arg10 ; float arg11 ; int64_t arg12 ; int arg13 ; sd_image_t *argp2 ;
-    sd_image_t *result = 0 ; SWIG_check_num_args("img2img",13,13)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("img2img",1,"sd_ctx_t *");
+    enum sample_method_t arg9 ; int arg10 ; float arg11 ; int64_t arg12 ; int arg13 ; sd_image_t *arg14 = (sd_image_t *) 0 ;
+    float arg15 ; float arg16 ; bool arg17 ; char *arg18 = (char *) 0 ; sd_image_t *argp2 ; sd_image_t *result = 0 ;
+    SWIG_check_num_args("img2img",18,18) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("img2img",1,"sd_ctx_t *");
     if(!lua_isuserdata(L,2)) SWIG_fail_arg("img2img",2,"sd_image_t");
     if(!SWIG_lua_isnilstring(L,3)) SWIG_fail_arg("img2img",3,"char const *");
     if(!SWIG_lua_isnilstring(L,4)) SWIG_fail_arg("img2img",4,"char const *");
@@ -11969,14 +14594,20 @@ static int _wrap_img2img(lua_State* L) { { int SWIG_arg = 0; sd_ctx_t *arg1 = (s
     if(!lua_isnumber(L,9)) SWIG_fail_arg("img2img",9,"enum sample_method_t");
     if(!lua_isnumber(L,10)) SWIG_fail_arg("img2img",10,"int"); if(!lua_isnumber(L,11)) SWIG_fail_arg("img2img",11,"float");
     if(!lua_isnumber(L,12)) SWIG_fail_arg("img2img",12,"int64_t"); if(!lua_isnumber(L,13)) SWIG_fail_arg("img2img",13,"int");
+    if(!SWIG_isptrtype(L,14)) SWIG_fail_arg("img2img",14,"sd_image_t const *");
+    if(!lua_isnumber(L,15)) SWIG_fail_arg("img2img",15,"float"); if(!lua_isnumber(L,16)) SWIG_fail_arg("img2img",16,"float");
+    if(!lua_isboolean(L,17)) SWIG_fail_arg("img2img",17,"bool");
+    if(!SWIG_lua_isnilstring(L,18)) SWIG_fail_arg("img2img",18,"char const *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_sd_ctx_t,0))){ SWIG_fail_ptr("img2img",1,SWIGTYPE_p_sd_ctx_t); }
      if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_sd_image_t,0))){
       SWIG_fail_ptr("img2img",2,SWIGTYPE_p_sd_image_t); }  arg2 = *argp2; arg3 = (char *)lua_tostring(L, 3);
     arg4 = (char *)lua_tostring(L, 4); arg5 = (int)lua_tonumber(L, 5); arg6 = (float)lua_tonumber(L, 6);
     arg7 = (int)lua_tonumber(L, 7); arg8 = (int)lua_tonumber(L, 8); arg9 = (enum sample_method_t)(int)lua_tonumber(L, 9);
     arg10 = (int)lua_tonumber(L, 10); arg11 = (float)lua_tonumber(L, 11); arg12 = (int64_t)lua_tonumber(L, 12);
-    arg13 = (int)lua_tonumber(L, 13);
-    result = (sd_image_t *)img2img(arg1,SWIG_STD_MOVE(arg2),(char const *)arg3,(char const *)arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13);
+    arg13 = (int)lua_tonumber(L, 13); if (!SWIG_IsOK(SWIG_ConvertPtr(L,14,(void**)&arg14,SWIGTYPE_p_sd_image_t,0))){
+      SWIG_fail_ptr("img2img",14,SWIGTYPE_p_sd_image_t); }  arg15 = (float)lua_tonumber(L, 15);
+    arg16 = (float)lua_tonumber(L, 16); arg17 = (lua_toboolean(L, 17)!=0); arg18 = (char *)lua_tostring(L, 18);
+    result = (sd_image_t *)img2img(arg1,SWIG_STD_MOVE(arg2),(char const *)arg3,(char const *)arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,(sd_image_t const *)arg14,arg15,arg16,arg17,(char const *)arg18);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_sd_image_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
 static int _wrap_img2vid(lua_State* L) { { int SWIG_arg = 0; sd_ctx_t *arg1 = (sd_ctx_t *) 0 ; sd_image_t arg2 ; int arg3 ;
@@ -12055,876 +14686,6 @@ static int _wrap_preprocess_canny(lua_State* L) { { int SWIG_arg = 0; uint8_t *a
     result = (uint8_t *)preprocess_canny(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_unsigned_char,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
-static int _wrap_new_ImGuiContext__SWIG_0(lua_State* L) { { int SWIG_arg = 0; std::shared_ptr< ofAppBaseWindow > *arg1 = 0 ;
-    ofxImGuiContext *result = 0 ; SWIG_check_num_args("ofxImGuiContext::ofxImGuiContext",1,1)
-    if(!lua_isuserdata(L,1)) SWIG_fail_arg("ofxImGuiContext::ofxImGuiContext",1,"std::shared_ptr< ofAppBaseWindow > &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t,0))){
-      SWIG_fail_ptr("new_ImGuiContext",1,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t); } 
-    result = (ofxImGuiContext *)new ofxImGuiContext(*arg1);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxImGuiContext,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_new_ImGuiContext__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxImGuiContext *arg1 = 0 ; void *argp1 = 0 ;
-    int res1 = 0 ; std::unique_ptr< ofxImGuiContext > rvrdeleter1 ; ofxImGuiContext *result = 0 ;
-    SWIG_check_num_args("ofxImGuiContext::ofxImGuiContext",1,1)
-    if(!lua_isuserdata(L,1)) SWIG_fail_arg("ofxImGuiContext::ofxImGuiContext",1,"ofxImGuiContext &&");
-    res1 = SWIG_ConvertPtr(L, 1, &argp1, SWIGTYPE_p_ofxImGuiContext, SWIG_POINTER_RELEASE); if (!SWIG_IsOK(res1)) {
-      if (res1 == SWIG_ERROR_RELEASE_NOT_OWNED) {
-        lua_pushfstring(L, "Cannot release ownership as memory is not owned for argument 1 of type 'ofxImGuiContext &&' in new_ImGuiContext"); SWIG_fail; }
-       else { SWIG_fail_ptr("new_ImGuiContext", 1, SWIGTYPE_p_ofxImGuiContext); }  }  arg1 = (ofxImGuiContext *)argp1;
-    rvrdeleter1.reset(arg1); result = (ofxImGuiContext *)new ofxImGuiContext((ofxImGuiContext &&)*arg1);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxImGuiContext,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_new_ImGuiContext(lua_State* L) { int argc; int argv[2]={ 1,2} ; argc = lua_gettop(L); if (argc == 1) {
-    int _v = 0; { void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t, SWIG_POINTER_NO_NULL)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_ImGuiContext__SWIG_0(L);}  }  if (argc == 1) { int _v = 0; {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGuiContext, SWIG_POINTER_NO_NULL)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_new_ImGuiContext__SWIG_1(L);}  } 
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_ImGuiContext'\n" "  Possible C/C++ prototypes are:\n"
-  "    ofxImGuiContext::ofxImGuiContext(std::shared_ptr< ofAppBaseWindow > &)\n"
-  "    ofxImGuiContext::ofxImGuiContext(ofxImGuiContext &&)\n"); lua_error(L);return 0; }
-static int _wrap_ImGuiContext_imguiContext_set(lua_State* L) { { int SWIG_arg = 0;
-    ofxImGuiContext *arg1 = (ofxImGuiContext *) 0 ; ImGuiContext *arg2 = (ImGuiContext *) 0 ;
-    SWIG_check_num_args("ofxImGuiContext::imguiContext",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGuiContext::imguiContext",1,"ofxImGuiContext *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGuiContext::imguiContext",2,"ImGuiContext *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGuiContext,0))){
-      SWIG_fail_ptr("ImGuiContext_imguiContext_set",1,SWIGTYPE_p_ofxImGuiContext); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImGuiContext,SWIG_POINTER_DISOWN))){
-      SWIG_fail_ptr("ImGuiContext_imguiContext_set",2,SWIGTYPE_p_ImGuiContext); }  if (arg1) (arg1)->imguiContext = arg2;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiContext_imguiContext_get(lua_State* L) { { int SWIG_arg = 0;
-    ofxImGuiContext *arg1 = (ofxImGuiContext *) 0 ; ImGuiContext *result = 0 ;
-    SWIG_check_num_args("ofxImGuiContext::imguiContext",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGuiContext::imguiContext",1,"ofxImGuiContext *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGuiContext,0))){
-      SWIG_fail_ptr("ImGuiContext_imguiContext_get",1,SWIGTYPE_p_ofxImGuiContext); } 
-    result = (ImGuiContext *) ((arg1)->imguiContext); SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiContext,0); SWIG_arg++; 
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiContext_ofWindow_set(lua_State* L) { { int SWIG_arg = 0; ofxImGuiContext *arg1 = (ofxImGuiContext *) 0 ;
-    std::shared_ptr< ofAppBaseWindow > *arg2 = (std::shared_ptr< ofAppBaseWindow > *) 0 ;
-    SWIG_check_num_args("ofxImGuiContext::ofWindow",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGuiContext::ofWindow",1,"ofxImGuiContext *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGuiContext::ofWindow",2,"std::shared_ptr< ofAppBaseWindow > *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGuiContext,0))){
-      SWIG_fail_ptr("ImGuiContext_ofWindow_set",1,SWIGTYPE_p_ofxImGuiContext); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t,0))){
-      SWIG_fail_ptr("ImGuiContext_ofWindow_set",2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t); } 
-    if (arg1) (arg1)->ofWindow = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiContext_ofWindow_get(lua_State* L) { { int SWIG_arg = 0; ofxImGuiContext *arg1 = (ofxImGuiContext *) 0 ;
-    std::shared_ptr< ofAppBaseWindow > *result = 0 ; SWIG_check_num_args("ofxImGuiContext::ofWindow",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGuiContext::ofWindow",1,"ofxImGuiContext *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGuiContext,0))){
-      SWIG_fail_ptr("ImGuiContext_ofWindow_get",1,SWIGTYPE_p_ofxImGuiContext); } 
-    result = (std::shared_ptr< ofAppBaseWindow > *)& ((arg1)->ofWindow);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t,0); SWIG_arg++;  return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiContext_autoDraw_set(lua_State* L) { { int SWIG_arg = 0; ofxImGuiContext *arg1 = (ofxImGuiContext *) 0 ;
-    bool arg2 ; SWIG_check_num_args("ofxImGuiContext::autoDraw",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGuiContext::autoDraw",1,"ofxImGuiContext *");
-    if(!lua_isboolean(L,2)) SWIG_fail_arg("ofxImGuiContext::autoDraw",2,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGuiContext,0))){
-      SWIG_fail_ptr("ImGuiContext_autoDraw_set",1,SWIGTYPE_p_ofxImGuiContext); }  arg2 = (lua_toboolean(L, 2)!=0);
-    if (arg1) (arg1)->autoDraw = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiContext_autoDraw_get(lua_State* L) { { int SWIG_arg = 0; ofxImGuiContext *arg1 = (ofxImGuiContext *) 0 ;
-    bool result; SWIG_check_num_args("ofxImGuiContext::autoDraw",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGuiContext::autoDraw",1,"ofxImGuiContext *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGuiContext,0))){
-      SWIG_fail_ptr("ImGuiContext_autoDraw_get",1,SWIGTYPE_p_ofxImGuiContext); }  result = (bool) ((arg1)->autoDraw);
-    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiContext_isShared(lua_State* L) { { int SWIG_arg = 0; ofxImGuiContext *arg1 = (ofxImGuiContext *) 0 ;
-    bool result; SWIG_check_num_args("ofxImGuiContext::isShared",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGuiContext::isShared",1,"ofxImGuiContext const *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGuiContext,0))){
-      SWIG_fail_ptr("ImGuiContext_isShared",1,SWIGTYPE_p_ofxImGuiContext); } 
-    result = (bool)((ofxImGuiContext const *)arg1)->isShared(); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static void swig_delete_ImGuiContext(void *obj) {
-ofxImGuiContext *arg1 = (ofxImGuiContext *) obj;
-delete arg1;
-}
-static int _proxy__wrap_new_ImGuiContext(lua_State *L) {
-    assert(lua_istable(L,1));
-    lua_pushcfunction(L,_wrap_new_ImGuiContext);
-    assert(!lua_isnil(L,-1));
-    lua_replace(L,1); /* replace our table with real constructor */
-    lua_call(L,lua_gettop(L)-1,1);
-    return 1;
-}
-static swig_lua_attribute swig_ImGuiContext_attributes[] = {
-    { "imguiContext", _wrap_ImGuiContext_imguiContext_get, _wrap_ImGuiContext_imguiContext_set },
-    { "ofWindow", _wrap_ImGuiContext_ofWindow_get, _wrap_ImGuiContext_ofWindow_set },
-    { "autoDraw", _wrap_ImGuiContext_autoDraw_get, _wrap_ImGuiContext_autoDraw_set },
-    {0,0,0}
-};
-static swig_lua_method swig_ImGuiContext_methods[]= {
-    { "isShared", _wrap_ImGuiContext_isShared},
-    {0,0}
-};
-static swig_lua_method swig_ImGuiContext_meta[] = {
-    {0,0}
-};
-
-static swig_lua_attribute swig_ImGuiContext_Sf_SwigStatic_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_const_info swig_ImGuiContext_Sf_SwigStatic_constants[]= {
-    {0,0,0,0,0,0}
-};
-static swig_lua_method swig_ImGuiContext_Sf_SwigStatic_methods[]= {
-    {0,0}
-};
-static swig_lua_class* swig_ImGuiContext_Sf_SwigStatic_classes[]= {
-    0
-};
-
-static swig_lua_namespace swig_ImGuiContext_Sf_SwigStatic = {
-    "ImGuiContext",
-    swig_ImGuiContext_Sf_SwigStatic_methods,
-    swig_ImGuiContext_Sf_SwigStatic_attributes,
-    swig_ImGuiContext_Sf_SwigStatic_constants,
-    swig_ImGuiContext_Sf_SwigStatic_classes,
-    0
-};
-static swig_lua_class *swig_ImGuiContext_bases[] = {0};
-static const char *swig_ImGuiContext_base_names[] = {0};
-static swig_lua_class _wrap_class_ImGuiContext = { "ImGuiContext", "ImGuiContext", &SWIGTYPE_p_ofxImGuiContext,_proxy__wrap_new_ImGuiContext, swig_delete_ImGuiContext, swig_ImGuiContext_methods, swig_ImGuiContext_attributes, &swig_ImGuiContext_Sf_SwigStatic, swig_ImGuiContext_meta, swig_ImGuiContext_bases, swig_ImGuiContext_base_names };
-
-static int _wrap_new_ImGui(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *result = 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::Gui",0,0) result = (ofxImGui::Gui *)new ofxImGui::Gui();
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxImGui__Gui,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_setup__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    BaseTheme *arg2 = (BaseTheme *) 0 ; bool arg3 ; ImGuiConfigFlags arg4 ; bool arg5 ; bool arg6 ; ImGuiConfigFlags *argp4 ;
-    ofxImGui::SetupState result; SWIG_check_num_args("ofxImGui::Gui::setup",6,6)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"BaseTheme *");
-    if(!lua_isboolean(L,3)) SWIG_fail_arg("ofxImGui::Gui::setup",3,"bool");
-    if(!lua_isuserdata(L,4)) SWIG_fail_arg("ofxImGui::Gui::setup",4,"ImGuiConfigFlags");
-    if(!lua_isboolean(L,5)) SWIG_fail_arg("ofxImGui::Gui::setup",5,"bool");
-    if(!lua_isboolean(L,6)) SWIG_fail_arg("ofxImGui::Gui::setup",6,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_BaseTheme); }  arg3 = (lua_toboolean(L, 3)!=0);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_ImGuiConfigFlags,0))){
-      SWIG_fail_ptr("ImGui_setup",4,SWIGTYPE_p_ImGuiConfigFlags); }  arg4 = *argp4; arg5 = (lua_toboolean(L, 5)!=0);
-    arg6 = (lua_toboolean(L, 6)!=0); result = (ofxImGui::SetupState)(arg1)->setup(arg2,arg3,arg4,arg5,arg6);
-    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    BaseTheme *arg2 = (BaseTheme *) 0 ; bool arg3 ; ImGuiConfigFlags arg4 ; bool arg5 ; ImGuiConfigFlags *argp4 ;
-    ofxImGui::SetupState result; SWIG_check_num_args("ofxImGui::Gui::setup",5,5)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"BaseTheme *");
-    if(!lua_isboolean(L,3)) SWIG_fail_arg("ofxImGui::Gui::setup",3,"bool");
-    if(!lua_isuserdata(L,4)) SWIG_fail_arg("ofxImGui::Gui::setup",4,"ImGuiConfigFlags");
-    if(!lua_isboolean(L,5)) SWIG_fail_arg("ofxImGui::Gui::setup",5,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_BaseTheme); }  arg3 = (lua_toboolean(L, 3)!=0);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_ImGuiConfigFlags,0))){
-      SWIG_fail_ptr("ImGui_setup",4,SWIGTYPE_p_ImGuiConfigFlags); }  arg4 = *argp4; arg5 = (lua_toboolean(L, 5)!=0);
-    result = (ofxImGui::SetupState)(arg1)->setup(arg2,arg3,arg4,arg5); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_2(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    BaseTheme *arg2 = (BaseTheme *) 0 ; bool arg3 ; ImGuiConfigFlags arg4 ; ImGuiConfigFlags *argp4 ;
-    ofxImGui::SetupState result; SWIG_check_num_args("ofxImGui::Gui::setup",4,4)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"BaseTheme *");
-    if(!lua_isboolean(L,3)) SWIG_fail_arg("ofxImGui::Gui::setup",3,"bool");
-    if(!lua_isuserdata(L,4)) SWIG_fail_arg("ofxImGui::Gui::setup",4,"ImGuiConfigFlags");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_BaseTheme); }  arg3 = (lua_toboolean(L, 3)!=0);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_ImGuiConfigFlags,0))){
-      SWIG_fail_ptr("ImGui_setup",4,SWIGTYPE_p_ImGuiConfigFlags); }  arg4 = *argp4;
-    result = (ofxImGui::SetupState)(arg1)->setup(arg2,arg3,arg4); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_3(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    BaseTheme *arg2 = (BaseTheme *) 0 ; bool arg3 ; ofxImGui::SetupState result; SWIG_check_num_args("ofxImGui::Gui::setup",3,3)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"BaseTheme *");
-    if(!lua_isboolean(L,3)) SWIG_fail_arg("ofxImGui::Gui::setup",3,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_BaseTheme); }  arg3 = (lua_toboolean(L, 3)!=0);
-    result = (ofxImGui::SetupState)(arg1)->setup(arg2,arg3); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_4(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    BaseTheme *arg2 = (BaseTheme *) 0 ; ofxImGui::SetupState result; SWIG_check_num_args("ofxImGui::Gui::setup",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"BaseTheme *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_BaseTheme); }  result = (ofxImGui::SetupState)(arg1)->setup(arg2);
-    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_5(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    ofxImGui::SetupState result; SWIG_check_num_args("ofxImGui::Gui::setup",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); }  result = (ofxImGui::SetupState)(arg1)->setup();
-    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_6(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::shared_ptr< ofAppBaseWindow > *arg2 = 0 ; BaseTheme *arg3 = (BaseTheme *) 0 ; bool arg4 ; ImGuiConfigFlags arg5 ;
-    bool arg6 ; bool arg7 ; ImGuiConfigFlags *argp5 ; ofxImGui::SetupState result;
-    SWIG_check_num_args("ofxImGui::Gui::setup",7,7)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"std::shared_ptr< ofAppBaseWindow > &");
-    if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ofxImGui::Gui::setup",3,"BaseTheme *");
-    if(!lua_isboolean(L,4)) SWIG_fail_arg("ofxImGui::Gui::setup",4,"bool");
-    if(!lua_isuserdata(L,5)) SWIG_fail_arg("ofxImGui::Gui::setup",5,"ImGuiConfigFlags");
-    if(!lua_isboolean(L,6)) SWIG_fail_arg("ofxImGui::Gui::setup",6,"bool");
-    if(!lua_isboolean(L,7)) SWIG_fail_arg("ofxImGui::Gui::setup",7,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",3,SWIGTYPE_p_BaseTheme); }  arg4 = (lua_toboolean(L, 4)!=0);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&argp5,SWIGTYPE_p_ImGuiConfigFlags,0))){
-      SWIG_fail_ptr("ImGui_setup",5,SWIGTYPE_p_ImGuiConfigFlags); }  arg5 = *argp5; arg6 = (lua_toboolean(L, 6)!=0);
-    arg7 = (lua_toboolean(L, 7)!=0); result = (ofxImGui::SetupState)(arg1)->setup(*arg2,arg3,arg4,arg5,arg6,arg7);
-    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_7(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::shared_ptr< ofAppBaseWindow > *arg2 = 0 ; BaseTheme *arg3 = (BaseTheme *) 0 ; bool arg4 ; ImGuiConfigFlags arg5 ;
-    bool arg6 ; ImGuiConfigFlags *argp5 ; ofxImGui::SetupState result; SWIG_check_num_args("ofxImGui::Gui::setup",6,6)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"std::shared_ptr< ofAppBaseWindow > &");
-    if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ofxImGui::Gui::setup",3,"BaseTheme *");
-    if(!lua_isboolean(L,4)) SWIG_fail_arg("ofxImGui::Gui::setup",4,"bool");
-    if(!lua_isuserdata(L,5)) SWIG_fail_arg("ofxImGui::Gui::setup",5,"ImGuiConfigFlags");
-    if(!lua_isboolean(L,6)) SWIG_fail_arg("ofxImGui::Gui::setup",6,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",3,SWIGTYPE_p_BaseTheme); }  arg4 = (lua_toboolean(L, 4)!=0);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&argp5,SWIGTYPE_p_ImGuiConfigFlags,0))){
-      SWIG_fail_ptr("ImGui_setup",5,SWIGTYPE_p_ImGuiConfigFlags); }  arg5 = *argp5; arg6 = (lua_toboolean(L, 6)!=0);
-    result = (ofxImGui::SetupState)(arg1)->setup(*arg2,arg3,arg4,arg5,arg6);
-    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_8(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::shared_ptr< ofAppBaseWindow > *arg2 = 0 ; BaseTheme *arg3 = (BaseTheme *) 0 ; bool arg4 ; ImGuiConfigFlags arg5 ;
-    ImGuiConfigFlags *argp5 ; ofxImGui::SetupState result; SWIG_check_num_args("ofxImGui::Gui::setup",5,5)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"std::shared_ptr< ofAppBaseWindow > &");
-    if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ofxImGui::Gui::setup",3,"BaseTheme *");
-    if(!lua_isboolean(L,4)) SWIG_fail_arg("ofxImGui::Gui::setup",4,"bool");
-    if(!lua_isuserdata(L,5)) SWIG_fail_arg("ofxImGui::Gui::setup",5,"ImGuiConfigFlags");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",3,SWIGTYPE_p_BaseTheme); }  arg4 = (lua_toboolean(L, 4)!=0);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&argp5,SWIGTYPE_p_ImGuiConfigFlags,0))){
-      SWIG_fail_ptr("ImGui_setup",5,SWIGTYPE_p_ImGuiConfigFlags); }  arg5 = *argp5;
-    result = (ofxImGui::SetupState)(arg1)->setup(*arg2,arg3,arg4,arg5);
-    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_9(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::shared_ptr< ofAppBaseWindow > *arg2 = 0 ; BaseTheme *arg3 = (BaseTheme *) 0 ; bool arg4 ; ofxImGui::SetupState result;
-    SWIG_check_num_args("ofxImGui::Gui::setup",4,4)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"std::shared_ptr< ofAppBaseWindow > &");
-    if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ofxImGui::Gui::setup",3,"BaseTheme *");
-    if(!lua_isboolean(L,4)) SWIG_fail_arg("ofxImGui::Gui::setup",4,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",3,SWIGTYPE_p_BaseTheme); }  arg4 = (lua_toboolean(L, 4)!=0);
-    result = (ofxImGui::SetupState)(arg1)->setup(*arg2,arg3,arg4); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_10(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::shared_ptr< ofAppBaseWindow > *arg2 = 0 ; BaseTheme *arg3 = (BaseTheme *) 0 ; ofxImGui::SetupState result;
-    SWIG_check_num_args("ofxImGui::Gui::setup",3,3)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"std::shared_ptr< ofAppBaseWindow > &");
-    if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ofxImGui::Gui::setup",3,"BaseTheme *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setup",3,SWIGTYPE_p_BaseTheme); }  result = (ofxImGui::SetupState)(arg1)->setup(*arg2,arg3);
-    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup__SWIG_11(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::shared_ptr< ofAppBaseWindow > *arg2 = 0 ; ofxImGui::SetupState result; SWIG_check_num_args("ofxImGui::Gui::setup",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setup",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::setup",2,"std::shared_ptr< ofAppBaseWindow > &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setup",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t,0))){
-      SWIG_fail_ptr("ImGui_setup",2,SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t); } 
-    result = (ofxImGui::SetupState)(arg1)->setup(*arg2); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setup(lua_State* L) { int argc; int argv[8]={ 1,2,3,4,5,6,7,8} ; argc = lua_gettop(L); if (argc == 1) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { return _wrap_ImGui_setup__SWIG_5(L);}  }  if (argc == 2) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-         else { _v = 1; }  }  if (_v) { return _wrap_ImGui_setup__SWIG_4(L);}  }  }  if (argc == 2) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImGui_setup__SWIG_11(L);}  }  }  if (argc == 3) { int _v = 0; {
-      void *ptr; if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-           else { _v = 1; }  }  if (_v) { return _wrap_ImGui_setup__SWIG_10(L);}  }  }  }  if (argc == 3) { int _v = 0; {
-      void *ptr; if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-         else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[2]); }  if (_v) { return _wrap_ImGui_setup__SWIG_3(L);}  }  }
-     }  if (argc == 4) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-         else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[2]); }  if (_v) { { void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_ImGuiConfigFlags, SWIG_POINTER_NO_NULL)) {
-              _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImGui_setup__SWIG_2(L);}  }  }  }  }  if (argc == 4) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-           else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[3]); }  if (_v) { return _wrap_ImGui_setup__SWIG_9(L);}  }
-         }  }  }  if (argc == 5) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-           else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[3]); }  if (_v) { { void *ptr;
-              if (lua_isuserdata(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_ImGuiConfigFlags, SWIG_POINTER_NO_NULL)) {
-                _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImGui_setup__SWIG_8(L);}  }  }  }  }  }  if (argc == 5) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-         else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[2]); }  if (_v) { { void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_ImGuiConfigFlags, SWIG_POINTER_NO_NULL)) {
-              _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[4]); }  if (_v) {
-              return _wrap_ImGui_setup__SWIG_1(L);}  }  }  }  }  }  if (argc == 6) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-         else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[2]); }  if (_v) { { void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_ImGuiConfigFlags, SWIG_POINTER_NO_NULL)) {
-              _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[4]); }  if (_v) { {
-                _v = lua_isboolean(L,argv[5]); }  if (_v) { return _wrap_ImGui_setup__SWIG_0(L);}  }  }  }  }  }  } 
-  if (argc == 6) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-           else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[3]); }  if (_v) { { void *ptr;
-              if (lua_isuserdata(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_ImGuiConfigFlags, SWIG_POINTER_NO_NULL)) {
-                _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[5]); }  if (_v) {
-                return _wrap_ImGui_setup__SWIG_7(L);}  }  }  }  }  }  }  if (argc == 7) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_BaseTheme, 0)) { _v = 0; }
-           else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[3]); }  if (_v) { { void *ptr;
-              if (lua_isuserdata(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_ImGuiConfigFlags, SWIG_POINTER_NO_NULL)) {
-                _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[5]); }  if (_v) { {
-                  _v = lua_isboolean(L,argv[6]); }  if (_v) { return _wrap_ImGui_setup__SWIG_6(L);}  }  }  }  }  }  }  } 
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ImGui_setup'\n" "  Possible C/C++ prototypes are:\n"
-  "    ofxImGui::Gui::setup(BaseTheme *,bool,ImGuiConfigFlags,bool,bool)\n"
-  "    ofxImGui::Gui::setup(BaseTheme *,bool,ImGuiConfigFlags,bool)\n"
-  "    ofxImGui::Gui::setup(BaseTheme *,bool,ImGuiConfigFlags)\n" "    ofxImGui::Gui::setup(BaseTheme *,bool)\n"
-  "    ofxImGui::Gui::setup(BaseTheme *)\n" "    ofxImGui::Gui::setup()\n"
-  "    ofxImGui::Gui::setup(std::shared_ptr< ofAppBaseWindow > &,BaseTheme *,bool,ImGuiConfigFlags,bool,bool)\n"
-  "    ofxImGui::Gui::setup(std::shared_ptr< ofAppBaseWindow > &,BaseTheme *,bool,ImGuiConfigFlags,bool)\n"
-  "    ofxImGui::Gui::setup(std::shared_ptr< ofAppBaseWindow > &,BaseTheme *,bool,ImGuiConfigFlags)\n"
-  "    ofxImGui::Gui::setup(std::shared_ptr< ofAppBaseWindow > &,BaseTheme *,bool)\n"
-  "    ofxImGui::Gui::setup(std::shared_ptr< ofAppBaseWindow > &,BaseTheme *)\n"
-  "    ofxImGui::Gui::setup(std::shared_ptr< ofAppBaseWindow > &)\n"); lua_error(L);return 0; }
-static int _wrap_ImGui_exit(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::exit",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::exit",1,"ofxImGui::Gui *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_exit",1,SWIGTYPE_p_ofxImGui__Gui); }  (arg1)->exit(); return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
-static int _wrap_ImGui_isInSharedMode(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    bool result; SWIG_check_num_args("ofxImGui::Gui::isInSharedMode",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::isInSharedMode",1,"ofxImGui::Gui const *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_isInSharedMode",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    result = (bool)((ofxImGui::Gui const *)arg1)->isInSharedMode(); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_beginGui(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::begin",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::begin",1,"ofxImGui::Gui *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_beginGui",1,SWIGTYPE_p_ofxImGui__Gui); }  (arg1)->begin(); return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
-static int _wrap_ImGui_endGui(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::end",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::end",1,"ofxImGui::Gui *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_endGui",1,SWIGTYPE_p_ofxImGui__Gui); }  (arg1)->end(); return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
-static int _wrap_ImGui_draw(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::draw",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::draw",1,"ofxImGui::Gui *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_draw",1,SWIGTYPE_p_ofxImGui__Gui); }  (arg1)->draw(); return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
-static int _wrap_ImGui_setDefaultFont__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    int arg2 ; bool result; SWIG_check_num_args("ofxImGui::Gui::setDefaultFont",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setDefaultFont",1,"ofxImGui::Gui *");
-    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxImGui::Gui::setDefaultFont",2,"int");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setDefaultFont",1,SWIGTYPE_p_ofxImGui__Gui); }  arg2 = (int)lua_tonumber(L, 2);
-    result = (bool)(arg1)->setDefaultFont(arg2); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setDefaultFont__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    ImFont *arg2 = (ImFont *) 0 ; bool result; SWIG_check_num_args("ofxImGui::Gui::setDefaultFont",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setDefaultFont",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::setDefaultFont",2,"ImFont *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setDefaultFont",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImFont,0))){
-      SWIG_fail_ptr("ImGui_setDefaultFont",2,SWIGTYPE_p_ImFont); }  result = (bool)(arg1)->setDefaultFont(arg2);
-    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_setDefaultFont(lua_State* L) { int argc; int argv[3]={ 1,2,3} ; argc = lua_gettop(L); if (argc == 2) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_ImFont, 0)) { _v = 0; }
-         else { _v = 1; }  }  if (_v) { return _wrap_ImGui_setDefaultFont__SWIG_1(L);}  }  }  if (argc == 2) { int _v = 0; {
-      void *ptr; if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isnumber(L,argv[1]); }  if (_v) {
-        return _wrap_ImGui_setDefaultFont__SWIG_0(L);}  }  } 
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ImGui_setDefaultFont'\n"
-  "  Possible C/C++ prototypes are:\n" "    ofxImGui::Gui::setDefaultFont(int)\n"
-  "    ofxImGui::Gui::setDefaultFont(ImFont *)\n"); lua_error(L);return 0; }
-static int _wrap_ImGui_addFont__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::string *arg2 = 0 ; float arg3 ; ImFontConfig *arg4 = (ImFontConfig *) 0 ; ImWchar *arg5 = (ImWchar *) 0 ; bool arg6 ;
-    std::string temp2 ; ImFont *result = 0 ; SWIG_check_num_args("ofxImGui::Gui::addFont",6,6)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFont",1,"ofxImGui::Gui *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFont",2,"std::string const &");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxImGui::Gui::addFont",3,"float");
-    if(!SWIG_isptrtype(L,4)) SWIG_fail_arg("ofxImGui::Gui::addFont",4,"ImFontConfig const *");
-    if(!SWIG_isptrtype(L,5)) SWIG_fail_arg("ofxImGui::Gui::addFont",5,"ImWchar const *");
-    if(!lua_isboolean(L,6)) SWIG_fail_arg("ofxImGui::Gui::addFont",6,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFont",1,SWIGTYPE_p_ofxImGui__Gui); }  { size_t len; const char *ptr = lua_tolstring(L, 2, &len);
-      temp2.assign(ptr, len); arg2=&temp2; }  arg3 = (float)lua_tonumber(L, 3);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_ImFontConfig,0))){
-      SWIG_fail_ptr("ImGui_addFont",4,SWIGTYPE_p_ImFontConfig); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&arg5,SWIGTYPE_p_ImWchar,0))){
-      SWIG_fail_ptr("ImGui_addFont",5,SWIGTYPE_p_ImWchar); }  arg6 = (lua_toboolean(L, 6)!=0);
-    result = (ImFont *)(arg1)->addFont((std::string const &)*arg2,arg3,(ImFontConfig const *)arg4,(ImWchar const *)arg5,arg6);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_addFont__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::string *arg2 = 0 ; float arg3 ; ImFontConfig *arg4 = (ImFontConfig *) 0 ; ImWchar *arg5 = (ImWchar *) 0 ;
-    std::string temp2 ; ImFont *result = 0 ; SWIG_check_num_args("ofxImGui::Gui::addFont",5,5)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFont",1,"ofxImGui::Gui *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFont",2,"std::string const &");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxImGui::Gui::addFont",3,"float");
-    if(!SWIG_isptrtype(L,4)) SWIG_fail_arg("ofxImGui::Gui::addFont",4,"ImFontConfig const *");
-    if(!SWIG_isptrtype(L,5)) SWIG_fail_arg("ofxImGui::Gui::addFont",5,"ImWchar const *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFont",1,SWIGTYPE_p_ofxImGui__Gui); }  { size_t len; const char *ptr = lua_tolstring(L, 2, &len);
-      temp2.assign(ptr, len); arg2=&temp2; }  arg3 = (float)lua_tonumber(L, 3);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_ImFontConfig,0))){
-      SWIG_fail_ptr("ImGui_addFont",4,SWIGTYPE_p_ImFontConfig); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&arg5,SWIGTYPE_p_ImWchar,0))){
-      SWIG_fail_ptr("ImGui_addFont",5,SWIGTYPE_p_ImWchar); } 
-    result = (ImFont *)(arg1)->addFont((std::string const &)*arg2,arg3,(ImFontConfig const *)arg4,(ImWchar const *)arg5);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_addFont__SWIG_2(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::string *arg2 = 0 ; float arg3 ; ImFontConfig *arg4 = (ImFontConfig *) 0 ; std::string temp2 ; ImFont *result = 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::addFont",4,4)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFont",1,"ofxImGui::Gui *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFont",2,"std::string const &");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxImGui::Gui::addFont",3,"float");
-    if(!SWIG_isptrtype(L,4)) SWIG_fail_arg("ofxImGui::Gui::addFont",4,"ImFontConfig const *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFont",1,SWIGTYPE_p_ofxImGui__Gui); }  { size_t len; const char *ptr = lua_tolstring(L, 2, &len);
-      temp2.assign(ptr, len); arg2=&temp2; }  arg3 = (float)lua_tonumber(L, 3);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_ImFontConfig,0))){
-      SWIG_fail_ptr("ImGui_addFont",4,SWIGTYPE_p_ImFontConfig); } 
-    result = (ImFont *)(arg1)->addFont((std::string const &)*arg2,arg3,(ImFontConfig const *)arg4);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_addFont__SWIG_3(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::string *arg2 = 0 ; float arg3 ; std::string temp2 ; ImFont *result = 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::addFont",3,3)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFont",1,"ofxImGui::Gui *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFont",2,"std::string const &");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxImGui::Gui::addFont",3,"float");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFont",1,SWIGTYPE_p_ofxImGui__Gui); }  { size_t len; const char *ptr = lua_tolstring(L, 2, &len);
-      temp2.assign(ptr, len); arg2=&temp2; }  arg3 = (float)lua_tonumber(L, 3);
-    result = (ImFont *)(arg1)->addFont((std::string const &)*arg2,arg3);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_addFont__SWIG_4(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::string *arg2 = 0 ; std::string temp2 ; ImFont *result = 0 ; SWIG_check_num_args("ofxImGui::Gui::addFont",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFont",1,"ofxImGui::Gui *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFont",2,"std::string const &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFont",1,SWIGTYPE_p_ofxImGui__Gui); }  { size_t len; const char *ptr = lua_tolstring(L, 2, &len);
-      temp2.assign(ptr, len); arg2=&temp2; }  result = (ImFont *)(arg1)->addFont((std::string const &)*arg2);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_addFont(lua_State* L) { int argc; int argv[7]={ 1,2,3,4,5,6,7} ; argc = lua_gettop(L); if (argc == 2) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { return _wrap_ImGui_addFont__SWIG_4(L);}  }  }
-   if (argc == 3) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) {
-          return _wrap_ImGui_addFont__SWIG_3(L);}  }  }  }  if (argc == 4) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) {
-          { void *ptr;
-            if (SWIG_isptrtype(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_ImFontConfig, 0)) {
-              _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImGui_addFont__SWIG_2(L);}  }  }  }  }  if (argc == 5) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) {
-          { void *ptr;
-            if (SWIG_isptrtype(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_ImFontConfig, 0)) {
-              _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-              if (SWIG_isptrtype(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_ImWchar, 0)) { _v = 0; }
-               else { _v = 1; }  }  if (_v) { return _wrap_ImGui_addFont__SWIG_1(L);}  }  }  }  }  }  if (argc == 6) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) {
-          { void *ptr;
-            if (SWIG_isptrtype(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_ImFontConfig, 0)) {
-              _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-              if (SWIG_isptrtype(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_ImWchar, 0)) { _v = 0; }
-               else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[5]); }  if (_v) {
-                return _wrap_ImGui_addFont__SWIG_0(L);}  }  }  }  }  }  } 
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ImGui_addFont'\n" "  Possible C/C++ prototypes are:\n"
-  "    ofxImGui::Gui::addFont(std::string const &,float,ImFontConfig const *,ImWchar const *,bool)\n"
-  "    ofxImGui::Gui::addFont(std::string const &,float,ImFontConfig const *,ImWchar const *)\n"
-  "    ofxImGui::Gui::addFont(std::string const &,float,ImFontConfig const *)\n"
-  "    ofxImGui::Gui::addFont(std::string const &,float)\n" "    ofxImGui::Gui::addFont(std::string const &)\n");
-  lua_error(L);return 0; }
-static int _wrap_ImGui_addFontFromMemory__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    void *arg2 = (void *) 0 ; int arg3 ; float arg4 ; ImFontConfig *arg5 = (ImFontConfig *) 0 ; ImWchar *arg6 = (ImWchar *) 0 ;
-    bool arg7 ; ImFont *result = 0 ; SWIG_check_num_args("ofxImGui::Gui::addFontFromMemory",7,7)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",2,"void *");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",3,"int");
-    if(!lua_isnumber(L,4)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",4,"float");
-    if(!SWIG_isptrtype(L,5)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",5,"ImFontConfig const *");
-    if(!SWIG_isptrtype(L,6)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",6,"ImWchar const *");
-    if(!lua_isboolean(L,7)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",7,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGui_addFontFromMemory"); arg3 = (int)lua_tonumber(L, 3);
-    arg4 = (float)lua_tonumber(L, 4); if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&arg5,SWIGTYPE_p_ImFontConfig,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",5,SWIGTYPE_p_ImFontConfig); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,6,(void**)&arg6,SWIGTYPE_p_ImWchar,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",6,SWIGTYPE_p_ImWchar); }  arg7 = (lua_toboolean(L, 7)!=0);
-    result = (ImFont *)(arg1)->addFontFromMemory(arg2,arg3,arg4,(ImFontConfig const *)arg5,(ImWchar const *)arg6,arg7);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_addFontFromMemory__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    void *arg2 = (void *) 0 ; int arg3 ; float arg4 ; ImFontConfig *arg5 = (ImFontConfig *) 0 ; ImWchar *arg6 = (ImWchar *) 0 ;
-    ImFont *result = 0 ; SWIG_check_num_args("ofxImGui::Gui::addFontFromMemory",6,6)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",2,"void *");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",3,"int");
-    if(!lua_isnumber(L,4)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",4,"float");
-    if(!SWIG_isptrtype(L,5)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",5,"ImFontConfig const *");
-    if(!SWIG_isptrtype(L,6)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",6,"ImWchar const *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGui_addFontFromMemory"); arg3 = (int)lua_tonumber(L, 3);
-    arg4 = (float)lua_tonumber(L, 4); if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&arg5,SWIGTYPE_p_ImFontConfig,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",5,SWIGTYPE_p_ImFontConfig); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,6,(void**)&arg6,SWIGTYPE_p_ImWchar,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",6,SWIGTYPE_p_ImWchar); } 
-    result = (ImFont *)(arg1)->addFontFromMemory(arg2,arg3,arg4,(ImFontConfig const *)arg5,(ImWchar const *)arg6);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_addFontFromMemory__SWIG_2(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    void *arg2 = (void *) 0 ; int arg3 ; float arg4 ; ImFontConfig *arg5 = (ImFontConfig *) 0 ; ImFont *result = 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::addFontFromMemory",5,5)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",2,"void *");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",3,"int");
-    if(!lua_isnumber(L,4)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",4,"float");
-    if(!SWIG_isptrtype(L,5)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",5,"ImFontConfig const *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGui_addFontFromMemory"); arg3 = (int)lua_tonumber(L, 3);
-    arg4 = (float)lua_tonumber(L, 4); if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&arg5,SWIGTYPE_p_ImFontConfig,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",5,SWIGTYPE_p_ImFontConfig); } 
-    result = (ImFont *)(arg1)->addFontFromMemory(arg2,arg3,arg4,(ImFontConfig const *)arg5);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_addFontFromMemory__SWIG_3(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    void *arg2 = (void *) 0 ; int arg3 ; float arg4 ; ImFont *result = 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::addFontFromMemory",4,4)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",2,"void *");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",3,"int");
-    if(!lua_isnumber(L,4)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",4,"float");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGui_addFontFromMemory"); arg3 = (int)lua_tonumber(L, 3);
-    arg4 = (float)lua_tonumber(L, 4); result = (ImFont *)(arg1)->addFontFromMemory(arg2,arg3,arg4);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGui_addFontFromMemory__SWIG_4(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    void *arg2 = (void *) 0 ; int arg3 ; ImFont *result = 0 ; SWIG_check_num_args("ofxImGui::Gui::addFontFromMemory",3,3)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",2,"void *");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxImGui::Gui::addFontFromMemory",3,"int");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_addFontFromMemory",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGui_addFontFromMemory"); arg3 = (int)lua_tonumber(L, 3);
-    result = (ImFont *)(arg1)->addFontFromMemory(arg2,arg3); SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++; 
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_addFontFromMemory(lua_State* L) { int argc; int argv[8]={ 1,2,3,4,5,6,7,8} ; argc = lua_gettop(L);
-  if (argc == 3) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, 0, 0)) { _v = 0; }  else { _v = 1; }  } 
-      if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) { return _wrap_ImGui_addFontFromMemory__SWIG_4(L);}  }  }  } 
-  if (argc == 4) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, 0, 0)) { _v = 0; }  else { _v = 1; }  } 
-      if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) { { _v = lua_isnumber(L,argv[3]); }  if (_v) {
-            return _wrap_ImGui_addFontFromMemory__SWIG_3(L);}  }  }  }  }  if (argc == 5) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, 0, 0)) { _v = 0; }  else { _v = 1; }  } 
-      if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) { { _v = lua_isnumber(L,argv[3]); }  if (_v) { { void *ptr;
-              if (SWIG_isptrtype(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_ImFontConfig, 0)) {
-                _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImGui_addFontFromMemory__SWIG_2(L);}  }  }  }  }  } 
-  if (argc == 6) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, 0, 0)) { _v = 0; }  else { _v = 1; }  } 
-      if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) { { _v = lua_isnumber(L,argv[3]); }  if (_v) { { void *ptr;
-              if (SWIG_isptrtype(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_ImFontConfig, 0)) {
-                _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-                if (SWIG_isptrtype(L,argv[5])==0 || SWIG_ConvertPtr(L,argv[5], (void **) &ptr, SWIGTYPE_p_ImWchar, 0)) {
-                  _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImGui_addFontFromMemory__SWIG_1(L);}  }  }  }  }  }  } 
-  if (argc == 7) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, 0, 0)) { _v = 0; }  else { _v = 1; }  } 
-      if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) { { _v = lua_isnumber(L,argv[3]); }  if (_v) { { void *ptr;
-              if (SWIG_isptrtype(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_ImFontConfig, 0)) {
-                _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
-                if (SWIG_isptrtype(L,argv[5])==0 || SWIG_ConvertPtr(L,argv[5], (void **) &ptr, SWIGTYPE_p_ImWchar, 0)) {
-                  _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[6]); }  if (_v) {
-                  return _wrap_ImGui_addFontFromMemory__SWIG_0(L);}  }  }  }  }  }  }  } 
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ImGui_addFontFromMemory'\n"
-  "  Possible C/C++ prototypes are:\n"
-  "    ofxImGui::Gui::addFontFromMemory(void *,int,float,ImFontConfig const *,ImWchar const *,bool)\n"
-  "    ofxImGui::Gui::addFontFromMemory(void *,int,float,ImFontConfig const *,ImWchar const *)\n"
-  "    ofxImGui::Gui::addFontFromMemory(void *,int,float,ImFontConfig const *)\n"
-  "    ofxImGui::Gui::addFontFromMemory(void *,int,float)\n" "    ofxImGui::Gui::addFontFromMemory(void *,int)\n");
-  lua_error(L);return 0; }
-static int _wrap_ImGui_setTheme(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    BaseTheme *arg2 = (BaseTheme *) 0 ; SWIG_check_num_args("ofxImGui::Gui::setTheme",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setTheme",1,"ofxImGui::Gui *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::setTheme",2,"BaseTheme *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_setTheme",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_BaseTheme,0))){
-      SWIG_fail_ptr("ImGui_setTheme",2,SWIGTYPE_p_BaseTheme); }  (arg1)->setTheme(arg2); return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
-static int _wrap_ImGui_loadImage__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    ofImage *arg2 = 0 ; GLuint result; SWIG_check_num_args("ofxImGui::Gui::loadImage",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::loadImage",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::loadImage",2,"ofImage &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_loadImage",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ofImage_T_unsigned_char_t,0))){
-      SWIG_fail_ptr("ImGui_loadImage",2,SWIGTYPE_p_ofImage_T_unsigned_char_t); }  result = (GLuint)(arg1)->loadImage(*arg2);
-    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_loadImage__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::string *arg2 = 0 ; std::string temp2 ; GLuint result; SWIG_check_num_args("ofxImGui::Gui::loadImage",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::loadImage",1,"ofxImGui::Gui *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxImGui::Gui::loadImage",2,"std::string const &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_loadImage",1,SWIGTYPE_p_ofxImGui__Gui); }  { size_t len; const char *ptr = lua_tolstring(L, 2, &len);
-      temp2.assign(ptr, len); arg2=&temp2; }  result = (GLuint)(arg1)->loadImage((std::string const &)*arg2);
-    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_loadImage(lua_State* L) { int argc; int argv[3]={ 1,2,3} ; argc = lua_gettop(L); if (argc == 2) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_ofImage_T_unsigned_char_t, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImGui_loadImage__SWIG_0(L);}  }  }  if (argc == 2) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { return _wrap_ImGui_loadImage__SWIG_1(L);}  }
-     }  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ImGui_loadImage'\n"
-  "  Possible C/C++ prototypes are:\n" "    ofxImGui::Gui::loadImage(ofImage &)\n"
-  "    ofxImGui::Gui::loadImage(std::string const &)\n"); lua_error(L);return 0; }
-static int _wrap_ImGui_loadPixels__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::string *arg2 = 0 ; std::string temp2 ; GLuint result; SWIG_check_num_args("ofxImGui::Gui::loadPixels",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::loadPixels",1,"ofxImGui::Gui *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxImGui::Gui::loadPixels",2,"std::string const &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_loadPixels",1,SWIGTYPE_p_ofxImGui__Gui); }  { size_t len;
-      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; } 
-    result = (GLuint)(arg1)->loadPixels((std::string const &)*arg2); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_loadPixels__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    ofPixels *arg2 = 0 ; GLuint result; SWIG_check_num_args("ofxImGui::Gui::loadPixels",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::loadPixels",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::loadPixels",2,"ofPixels &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_loadPixels",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ofPixels_T_unsigned_char_t,0))){
-      SWIG_fail_ptr("ImGui_loadPixels",2,SWIGTYPE_p_ofPixels_T_unsigned_char_t); }  result = (GLuint)(arg1)->loadPixels(*arg2);
-    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_loadPixels(lua_State* L) { int argc; int argv[3]={ 1,2,3} ; argc = lua_gettop(L); if (argc == 2) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_ofPixels_T_unsigned_char_t, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImGui_loadPixels__SWIG_1(L);}  }  }  if (argc == 2) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { return _wrap_ImGui_loadPixels__SWIG_0(L);}  }
-     }  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ImGui_loadPixels'\n"
-  "  Possible C/C++ prototypes are:\n" "    ofxImGui::Gui::loadPixels(std::string const &)\n"
-  "    ofxImGui::Gui::loadPixels(ofPixels &)\n"); lua_error(L);return 0; }
-static int _wrap_ImGui_loadTexture__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    std::string *arg2 = 0 ; std::string temp2 ; GLuint result; SWIG_check_num_args("ofxImGui::Gui::loadTexture",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::loadTexture",1,"ofxImGui::Gui *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxImGui::Gui::loadTexture",2,"std::string const &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_loadTexture",1,SWIGTYPE_p_ofxImGui__Gui); }  { size_t len;
-      const char *ptr = lua_tolstring(L, 2, &len); temp2.assign(ptr, len); arg2=&temp2; } 
-    result = (GLuint)(arg1)->loadTexture((std::string const &)*arg2); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_loadTexture__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    ofTexture *arg2 = 0 ; std::string *arg3 = 0 ; std::string temp3 ; GLuint result;
-    SWIG_check_num_args("ofxImGui::Gui::loadTexture",3,3)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::loadTexture",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::loadTexture",2,"ofTexture &");
-    if(!lua_isstring(L,3)) SWIG_fail_arg("ofxImGui::Gui::loadTexture",3,"std::string const &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_loadTexture",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ofTexture,0))){
-      SWIG_fail_ptr("ImGui_loadTexture",2,SWIGTYPE_p_ofTexture); }  { size_t len; const char *ptr = lua_tolstring(L, 3, &len);
-      temp3.assign(ptr, len); arg3=&temp3; }  result = (GLuint)(arg1)->loadTexture(*arg2,(std::string const &)*arg3);
-    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_loadTexture(lua_State* L) { int argc; int argv[4]={ 1,2,3,4} ; argc = lua_gettop(L); if (argc == 2) {
-    int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { return _wrap_ImGui_loadTexture__SWIG_0(L);}  }
-     }  if (argc == 3) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxImGui__Gui, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_ofTexture, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[2]); }  if (_v) {
-          return _wrap_ImGui_loadTexture__SWIG_1(L);}  }  }  } 
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ImGui_loadTexture'\n" "  Possible C/C++ prototypes are:\n"
-  "    ofxImGui::Gui::loadTexture(std::string const &)\n" "    ofxImGui::Gui::loadTexture(ofTexture &,std::string const &)\n");
-  lua_error(L);return 0; }
-static int _wrap_ImGui_afterDraw(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    ofEventArgs *arg2 = 0 ; SWIG_check_num_args("ofxImGui::Gui::afterDraw",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::afterDraw",1,"ofxImGui::Gui *");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ofxImGui::Gui::afterDraw",2,"ofEventArgs &");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_afterDraw",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ofEventArgs,0))){
-      SWIG_fail_ptr("ImGui_afterDraw",2,SWIGTYPE_p_ofEventArgs); }  (arg1)->afterDraw(*arg2); return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGui_drawOfxImGuiDebugWindow(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::drawOfxImGuiDebugWindow",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::drawOfxImGuiDebugWindow",1,"ofxImGui::Gui const *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("ImGui_drawOfxImGuiDebugWindow",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    ((ofxImGui::Gui const *)arg1)->drawOfxImGuiDebugWindow(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static void swig_delete_ImGui(void *obj) {
-ofxImGui::Gui *arg1 = (ofxImGui::Gui *) obj;
-delete arg1;
-}
-static int _proxy__wrap_new_ImGui(lua_State *L) {
-    assert(lua_istable(L,1));
-    lua_pushcfunction(L,_wrap_new_ImGui);
-    assert(!lua_isnil(L,-1));
-    lua_replace(L,1); /* replace our table with real constructor */
-    lua_call(L,lua_gettop(L)-1,1);
-    return 1;
-}
-static swig_lua_attribute swig_ImGui_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_ImGui_methods[]= {
-    { "setup", _wrap_ImGui_setup},
-    { "exit", _wrap_ImGui_exit},
-    { "isInSharedMode", _wrap_ImGui_isInSharedMode},
-    { "beginGui", _wrap_ImGui_beginGui},
-    { "endGui", _wrap_ImGui_endGui},
-    { "draw", _wrap_ImGui_draw},
-    { "setDefaultFont", _wrap_ImGui_setDefaultFont},
-    { "addFont", _wrap_ImGui_addFont},
-    { "addFontFromMemory", _wrap_ImGui_addFontFromMemory},
-    { "setTheme", _wrap_ImGui_setTheme},
-    { "loadImage", _wrap_ImGui_loadImage},
-    { "loadPixels", _wrap_ImGui_loadPixels},
-    { "loadTexture", _wrap_ImGui_loadTexture},
-    { "afterDraw", _wrap_ImGui_afterDraw},
-    { "drawOfxImGuiDebugWindow", _wrap_ImGui_drawOfxImGuiDebugWindow},
-    {0,0}
-};
-static swig_lua_method swig_ImGui_meta[] = {
-    {0,0}
-};
-
-static swig_lua_attribute swig_ImGui_Sf_SwigStatic_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_const_info swig_ImGui_Sf_SwigStatic_constants[]= {
-    {0,0,0,0,0,0}
-};
-static swig_lua_method swig_ImGui_Sf_SwigStatic_methods[]= {
-    {0,0}
-};
-static swig_lua_class* swig_ImGui_Sf_SwigStatic_classes[]= {
-    0
-};
-
-static swig_lua_namespace swig_ImGui_Sf_SwigStatic = {
-    "ImGui",
-    swig_ImGui_Sf_SwigStatic_methods,
-    swig_ImGui_Sf_SwigStatic_attributes,
-    swig_ImGui_Sf_SwigStatic_constants,
-    swig_ImGui_Sf_SwigStatic_classes,
-    0
-};
-static swig_lua_class *swig_ImGui_bases[] = {0};
-static const char *swig_ImGui_base_names[] = {0};
-static swig_lua_class _wrap_class_ImGui = { "ImGui", "ImGui", &SWIGTYPE_p_ofxImGui__Gui,_proxy__wrap_new_ImGui, swig_delete_ImGui, swig_ImGui_methods, swig_ImGui_attributes, &swig_ImGui_Sf_SwigStatic, swig_ImGui_meta, swig_ImGui_bases, swig_ImGui_base_names };
-
 static swig_lua_attribute swig_SwigModule_attributes[] = {
     {0,0,0}
 };
@@ -12976,6 +14737,7 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("DEFAULT", (DEFAULT))},
     {SWIG_LUA_CONSTTAB_INT("DISCRETE", (DISCRETE))},
     {SWIG_LUA_CONSTTAB_INT("KARRAS", (KARRAS))},
+    {SWIG_LUA_CONSTTAB_INT("AYS", (AYS))},
     {SWIG_LUA_CONSTTAB_INT("N_SCHEDULES", (N_SCHEDULES))},
     {SWIG_LUA_CONSTTAB_INT("SD_TYPE_F32", (SD_TYPE_F32))},
     {SWIG_LUA_CONSTTAB_INT("SD_TYPE_F16", (SD_TYPE_F16))},
@@ -13007,10 +14769,6 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("SD_LOG_INFO", (SD_LOG_INFO))},
     {SWIG_LUA_CONSTTAB_INT("SD_LOG_WARN", (SD_LOG_WARN))},
     {SWIG_LUA_CONSTTAB_INT("SD_LOG_ERROR", (SD_LOG_ERROR))},
-    {SWIG_LUA_CONSTTAB_INT("Error", (ofxImGui::Error))},
-    {SWIG_LUA_CONSTTAB_INT("Slave", (ofxImGui::Slave))},
-    {SWIG_LUA_CONSTTAB_INT("Master", (ofxImGui::Master))},
-    {SWIG_LUA_CONSTTAB_INT("Success", (ofxImGui::Success))},
     {0,0,0,0,0,0}
 };
 static swig_lua_method swig_SwigModule_methods[]= {
@@ -13020,6 +14778,8 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "CreEPS_setErrorMessageHandler", _wrap_CreEPS_setErrorMessageHandler},
     { "CreEPS_getMajorVersion", _wrap_CreEPS_getMajorVersion},
     { "CreEPS_getMinorVersion", _wrap_CreEPS_getMinorVersion},
+    { "Svg_fixSvgString", _wrap_Svg_fixSvgString},
+    { "split", _wrap_split},
     { "sd_type_name", _wrap_sd_type_name},
     { "sd_set_log_callback", _wrap_sd_set_log_callback},
     { "sd_set_progress_callback", _wrap_sd_set_progress_callback},
@@ -13038,6 +14798,8 @@ static swig_lua_method swig_SwigModule_methods[]= {
     {0,0}
 };
 static swig_lua_class* swig_SwigModule_classes[]= {
+&_wrap_class_SubVector,
+&_wrap_class_GlmVector,
 &_wrap_class_CAt,
 &_wrap_class_CAtLineThickness,
 &_wrap_class_CAtLineJoin,
@@ -13064,11 +14826,16 @@ static swig_lua_class* swig_SwigModule_classes[]= {
 &_wrap_class_CvShortImage,
 &_wrap_class_AssimpModelLoader,
 &_wrap_class_AssimpAnimation,
+&_wrap_class_Svg,
+&_wrap_class_SubtitleWord,
+&_wrap_class_SubtitleItem,
+&_wrap_class_SubtitleParser,
+&_wrap_class_SubtitleParserFactory,
+&_wrap_class_SubRipParser,
 &_wrap_class_Volumetrics,
 &_wrap_class_ImageSequencePlayer,
+&_wrap_class_StableDiffusion,
 &_wrap_class_sd_image_t,
-&_wrap_class_ImGuiContext,
-&_wrap_class_ImGui,
     0
 };
 static swig_lua_namespace* swig_SwigModule_namespaces[] = {
@@ -13089,6 +14856,9 @@ static swig_lua_namespace swig_SwigModule = {
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
+static void *_p_SubRipParserTo_p_SubtitleParser(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((SubtitleParser *)  ((SubRipParser *) x));
+}
 static void *_p_ofMouseEventArgsTo_p_glm__vec2(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((glm::vec2 *)  ((ofMouseEventArgs *) x));
 }
@@ -13179,23 +14949,8 @@ static void *_p_ofxCvShortImageTo_p_ofBaseImage_T_unsigned_char_t(void *x, int *
 static void *_p_ofxImageSequencePlayerTo_p_ofBaseImage_T_unsigned_char_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((ofBaseImage_< unsigned char > *) (ofImage_< unsigned char > *) ((ofxImageSequencePlayer *) x));
 }
-static void *_p_ofKeyEventArgsTo_p_ofEventArgs(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((ofEventArgs *)  ((ofKeyEventArgs *) x));
-}
-static void *_p_ofMessageTo_p_ofEventArgs(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((ofEventArgs *)  ((ofMessage *) x));
-}
-static void *_p_ofMouseEventArgsTo_p_ofEventArgs(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((ofEventArgs *)  ((ofMouseEventArgs *) x));
-}
-static void *_p_ofResizeEventArgsTo_p_ofEventArgs(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((ofEventArgs *)  ((ofResizeEventArgs *) x));
-}
-static void *_p_ofTouchEventArgsTo_p_ofEventArgs(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((ofEventArgs *)  ((ofTouchEventArgs *) x));
-}
-static void *_p_ofWindowPosEventArgsTo_p_ofEventArgs(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((ofEventArgs *)  ((ofWindowPosEventArgs *) x));
+static void *_p_ofGLFWWindowSettingsTo_p_ofGLWindowSettings(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((ofGLWindowSettings *)  ((ofGLFWWindowSettings *) x));
 }
 static void *_p_ofxImageSequencePlayerTo_p_ofImage_T_unsigned_char_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((ofImage_< unsigned char > *)  ((ofxImageSequencePlayer *) x));
@@ -13216,22 +14971,21 @@ static void *_p_ofxCvShortImageTo_p_ofxCvImage(void *x, int *SWIGUNUSEDPARM(newm
     return (void *)((ofxCvImage *)  ((ofxCvShortImage *) x));
 }
 static swig_type_info _swigt__p_Base = {"_p_Base", "Base *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_BaseTheme = {"_p_BaseTheme", "BaseTheme *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ColorType = {"_p_ColorType", "ColorType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_CreEPS_BOOL = {"_p_CreEPS_BOOL", "CreEPS_BOOL *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_CreEPS_CHAR = {"_p_CreEPS_CHAR", "CreEPS_CHAR *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_CreEPS_FLOAT = {"_p_CreEPS_FLOAT", "CreEPS_FLOAT *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_CreEPS_INT = {"_p_CreEPS_INT", "CreEPS_INT *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FILE = {"_p_FILE", "FILE *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ImFont = {"_p_ImFont", "ImFont *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ImFontConfig = {"_p_ImFontConfig", "ImFontConfig *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ImGuiConfigFlags = {"_p_ImGuiConfigFlags", "ImGuiConfigFlags *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ImGuiContext = {"_p_ImGuiContext", "ImGuiContext *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ImWchar = {"_p_ImWchar", "ImWchar *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_IplImage = {"_p_IplImage", "IplImage *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Node = {"_p_Node", "Node *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_NormalType = {"_p_NormalType", "NormalType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SortMode = {"_p_SortMode", "SortMode *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_SubRipParser = {"_p_SubRipParser", "SubRipParser *", 0, 0, (void*)&_wrap_class_SubRipParser, 0};
+static swig_type_info _swigt__p_SubtitleItem = {"_p_SubtitleItem", "SubtitleItem *", 0, 0, (void*)&_wrap_class_SubtitleItem, 0};
+static swig_type_info _swigt__p_SubtitleParser = {"_p_SubtitleParser", "SubtitleParser *", 0, 0, (void*)&_wrap_class_SubtitleParser, 0};
+static swig_type_info _swigt__p_SubtitleParserFactory = {"_p_SubtitleParserFactory", "SubtitleParserFactory *", 0, 0, (void*)&_wrap_class_SubtitleParserFactory, 0};
+static swig_type_info _swigt__p_SubtitleWord = {"_p_SubtitleWord", "SubtitleWord *", 0, 0, (void*)&_wrap_class_SubtitleWord, 0};
 static swig_type_info _swigt__p_TexCoordType = {"_p_TexCoordType", "TexCoordType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_VertexType = {"_p_VertexType", "VertexType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p__XDisplay = {"_p__XDisplay", "Display *|_XDisplay *", 0, 0, (void*)0, 0};
@@ -13277,11 +15031,9 @@ static swig_type_info _swigt__p_ofBuffer = {"_p_ofBuffer", "ofBuffer *", 0, 0, (
 static swig_type_info _swigt__p_ofColor_T_float_t = {"_p_ofColor_T_float_t", "ofFloatColor *|ofColor_< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofColor_T_unsigned_char_t = {"_p_ofColor_T_unsigned_char_t", "ofColor *|ofColor_< unsigned char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofColor_T_unsigned_short_t = {"_p_ofColor_T_unsigned_short_t", "ofShortColor *|ofColor_< unsigned short > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ofEventArgs = {"_p_ofEventArgs", "ofEventArgs *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ofKeyEventArgs = {"_p_ofKeyEventArgs", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_ofMessage = {"_p_ofMessage", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_ofResizeEventArgs = {"_p_ofResizeEventArgs", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_ofFbo = {"_p_ofFbo", "ofFbo *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ofGLWindowSettings = {"_p_ofGLWindowSettings", "ofSetupWindowSettings *|ofGLWindowSettings *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ofGLFWWindowSettings = {"_p_ofGLFWWindowSettings", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_ofImage_T_float_t = {"_p_ofImage_T_float_t", "ofFloatImage *|ofImage_< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofImage_T_unsigned_char_t = {"_p_ofImage_T_unsigned_char_t", "ofImage *|ofImage_< unsigned char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofImage_T_unsigned_short_t = {"_p_ofImage_T_unsigned_short_t", "ofShortImage *|ofImage_< unsigned short > *", 0, 0, (void*)0, 0};
@@ -13289,6 +15041,7 @@ static swig_type_info _swigt__p_ofMaterial = {"_p_ofMaterial", "ofMaterial *", 0
 static swig_type_info _swigt__p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t = {"_p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t", "ofMeshFace *|ofMeshFace_< ofDefaultVertexType,ofDefaultNormalType,ofDefaultColorType,ofDefaultTexCoordType > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t = {"_p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t", "ofMesh *|ofMesh_< ofDefaultVertexType,ofDefaultNormalType,ofDefaultColorType,ofDefaultTexCoordType > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofVboMesh = {"_p_ofVboMesh", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_ofPath = {"_p_ofPath", "ofPath *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofPixels_T_float_t = {"_p_ofPixels_T_float_t", "ofFloatPixels *|ofPixels_< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofPixels_T_unsigned_char_t = {"_p_ofPixels_T_unsigned_char_t", "ofPixels *|ofPixels_< unsigned char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofPixels_T_unsigned_short_t = {"_p_ofPixels_T_unsigned_short_t", "ofShortPixels *|ofPixels_< unsigned short > *", 0, 0, (void*)0, 0};
@@ -13307,9 +15060,9 @@ static swig_type_info _swigt__p_ofxCvGrayscaleImage = {"_p_ofxCvGrayscaleImage",
 static swig_type_info _swigt__p_ofxCvHaarFinder = {"_p_ofxCvHaarFinder", "ofxCvHaarFinder *", 0, 0, (void*)&_wrap_class_CvHaarFinder, 0};
 static swig_type_info _swigt__p_ofxCvImage = {"_p_ofxCvImage", "ofxCvImage *", 0, 0, (void*)&_wrap_class_CvImage, 0};
 static swig_type_info _swigt__p_ofxCvShortImage = {"_p_ofxCvShortImage", "ofxCvShortImage *", 0, 0, (void*)&_wrap_class_CvShortImage, 0};
-static swig_type_info _swigt__p_ofxImGuiContext = {"_p_ofxImGuiContext", "ofxImGuiContext *", 0, 0, (void*)&_wrap_class_ImGuiContext, 0};
-static swig_type_info _swigt__p_ofxImGui__Gui = {"_p_ofxImGui__Gui", "ofxImGui::Gui *", 0, 0, (void*)&_wrap_class_ImGui, 0};
 static swig_type_info _swigt__p_ofxImageSequencePlayer = {"_p_ofxImageSequencePlayer", "ofxImageSequencePlayer *", 0, 0, (void*)&_wrap_class_ImageSequencePlayer, 0};
+static swig_type_info _swigt__p_ofxStableDiffusion = {"_p_ofxStableDiffusion", "ofxStableDiffusion *", 0, 0, (void*)&_wrap_class_StableDiffusion, 0};
+static swig_type_info _swigt__p_ofxSvg = {"_p_ofxSvg", "ofxSVG *|ofxSvg *", 0, 0, (void*)&_wrap_class_Svg, 0};
 static swig_type_info _swigt__p_ofxTextureData3d = {"_p_ofxTextureData3d", "ofxTextureData3d *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofxVectorGraphics = {"_p_ofxVectorGraphics", "ofxVectorGraphics *", 0, 0, (void*)&_wrap_class_VectorGraphics, 0};
 static swig_type_info _swigt__p_ofxVolumetrics = {"_p_ofxVolumetrics", "ofxVolumetrics *", 0, 0, (void*)&_wrap_class_Volumetrics, 0};
@@ -13318,9 +15071,13 @@ static swig_type_info _swigt__p_sd_image_t = {"_p_sd_image_t", "sd_image_t *", 0
 static swig_type_info _swigt__p_short = {"_p_short", "int16_t *|int_least16_t *|short *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_signed_char = {"_p_signed_char", "int8_t *|int_fast8_t *|int_least8_t *|signed char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_stableDiffusionThread = {"_p_stableDiffusionThread", "stableDiffusionThread *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__shared_ptrT_aiScene_const_t = {"_p_std__shared_ptrT_aiScene_const_t", "std::shared_ptr< aiScene const > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__shared_ptrT_ofAppBaseWindow_t = {"_p_std__shared_ptrT_ofAppBaseWindow_t", "std::shared_ptr< ofAppBaseWindow > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__vectorT_glm__vec3_t = {"_p_std__vectorT_glm__vec3_t", "std::vector< ofDefaultVec3 > *|std::vector< glm::vec3 > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__string = {"_p_std__string", "std::string *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_SubtitleItem_p_t = {"_p_std__vectorT_SubtitleItem_p_t", "std::vector< SubtitleItem * > *", 0, 0, (void*)&_wrap_class_SubVector, 0};
+static swig_type_info _swigt__p_std__vectorT_glm__vec3_t = {"_p_std__vectorT_glm__vec3_t", "std::vector< ofDefaultVec3 > *|std::vector< glm::vec3 > *", 0, 0, (void*)&_wrap_class_GlmVector, 0};
+static swig_type_info _swigt__p_std__vectorT_long_t = {"_p_std__vectorT_long_t", "std::vector< long > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_ofPath_t = {"_p_std__vectorT_ofPath_t", "std::vector< ofPath > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_ofxCvBlob_t = {"_p_std__vectorT_ofxCvBlob_t", "std::vector< ofxCvBlob > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_std__string_t = {"_p_std__vectorT_std__string_t", "std::vector< std::string > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_string = {"_p_string", "string *", 0, 0, (void*)0, 0};
@@ -13334,22 +15091,21 @@ static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0
 
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_Base,
-  &_swigt__p_BaseTheme,
   &_swigt__p_ColorType,
   &_swigt__p_CreEPS_BOOL,
   &_swigt__p_CreEPS_CHAR,
   &_swigt__p_CreEPS_FLOAT,
   &_swigt__p_CreEPS_INT,
   &_swigt__p_FILE,
-  &_swigt__p_ImFont,
-  &_swigt__p_ImFontConfig,
-  &_swigt__p_ImGuiConfigFlags,
-  &_swigt__p_ImGuiContext,
-  &_swigt__p_ImWchar,
   &_swigt__p_IplImage,
   &_swigt__p_Node,
   &_swigt__p_NormalType,
   &_swigt__p_SortMode,
+  &_swigt__p_SubRipParser,
+  &_swigt__p_SubtitleItem,
+  &_swigt__p_SubtitleParser,
+  &_swigt__p_SubtitleParserFactory,
+  &_swigt__p_SubtitleWord,
   &_swigt__p_TexCoordType,
   &_swigt__p_VertexType,
   &_swigt__p__XDisplay,
@@ -13390,23 +15146,22 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ofColor_T_float_t,
   &_swigt__p_ofColor_T_unsigned_char_t,
   &_swigt__p_ofColor_T_unsigned_short_t,
-  &_swigt__p_ofEventArgs,
   &_swigt__p_ofFbo,
+  &_swigt__p_ofGLFWWindowSettings,
+  &_swigt__p_ofGLWindowSettings,
   &_swigt__p_ofImage_T_float_t,
   &_swigt__p_ofImage_T_unsigned_char_t,
   &_swigt__p_ofImage_T_unsigned_short_t,
-  &_swigt__p_ofKeyEventArgs,
   &_swigt__p_ofMaterial,
   &_swigt__p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t,
   &_swigt__p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t,
-  &_swigt__p_ofMessage,
   &_swigt__p_ofMouseEventArgs,
+  &_swigt__p_ofPath,
   &_swigt__p_ofPixels_T_float_t,
   &_swigt__p_ofPixels_T_unsigned_char_t,
   &_swigt__p_ofPixels_T_unsigned_short_t,
   &_swigt__p_ofPolyline_T_ofDefaultVertexType_t,
   &_swigt__p_ofRectangle,
-  &_swigt__p_ofResizeEventArgs,
   &_swigt__p_ofTexture,
   &_swigt__p_ofTouchEventArgs,
   &_swigt__p_ofVboMesh,
@@ -13425,9 +15180,9 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ofxCvHaarFinder,
   &_swigt__p_ofxCvImage,
   &_swigt__p_ofxCvShortImage,
-  &_swigt__p_ofxImGuiContext,
-  &_swigt__p_ofxImGui__Gui,
   &_swigt__p_ofxImageSequencePlayer,
+  &_swigt__p_ofxStableDiffusion,
+  &_swigt__p_ofxSvg,
   &_swigt__p_ofxTextureData3d,
   &_swigt__p_ofxVectorGraphics,
   &_swigt__p_ofxVolumetrics,
@@ -13436,9 +15191,13 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_short,
   &_swigt__p_signed_char,
   &_swigt__p_size_type,
+  &_swigt__p_stableDiffusionThread,
   &_swigt__p_std__shared_ptrT_aiScene_const_t,
-  &_swigt__p_std__shared_ptrT_ofAppBaseWindow_t,
+  &_swigt__p_std__string,
+  &_swigt__p_std__vectorT_SubtitleItem_p_t,
   &_swigt__p_std__vectorT_glm__vec3_t,
+  &_swigt__p_std__vectorT_long_t,
+  &_swigt__p_std__vectorT_ofPath_t,
   &_swigt__p_std__vectorT_ofxCvBlob_t,
   &_swigt__p_std__vectorT_std__string_t,
   &_swigt__p_string,
@@ -13452,22 +15211,21 @@ static swig_type_info *swig_type_initial[] = {
 };
 
 static swig_cast_info _swigc__p_Base[] = {  {&_swigt__p_Base, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_BaseTheme[] = {  {&_swigt__p_BaseTheme, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ColorType[] = {  {&_swigt__p_ColorType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_CreEPS_BOOL[] = {  {&_swigt__p_CreEPS_BOOL, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_CreEPS_CHAR[] = {  {&_swigt__p_CreEPS_CHAR, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_CreEPS_FLOAT[] = {  {&_swigt__p_CreEPS_FLOAT, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_CreEPS_INT[] = {  {&_swigt__p_CreEPS_INT, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FILE[] = {  {&_swigt__p_FILE, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ImFont[] = {  {&_swigt__p_ImFont, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ImFontConfig[] = {  {&_swigt__p_ImFontConfig, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ImGuiConfigFlags[] = {  {&_swigt__p_ImGuiConfigFlags, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ImGuiContext[] = {  {&_swigt__p_ImGuiContext, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ImWchar[] = {  {&_swigt__p_ImWchar, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_IplImage[] = {  {&_swigt__p_IplImage, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Node[] = {  {&_swigt__p_Node, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_NormalType[] = {  {&_swigt__p_NormalType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SortMode[] = {  {&_swigt__p_SortMode, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_SubRipParser[] = {  {&_swigt__p_SubRipParser, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_SubtitleItem[] = {  {&_swigt__p_SubtitleItem, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_SubtitleParser[] = {  {&_swigt__p_SubtitleParser, 0, 0, 0},  {&_swigt__p_SubRipParser, _p_SubRipParserTo_p_SubtitleParser, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_SubtitleParserFactory[] = {  {&_swigt__p_SubtitleParserFactory, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_SubtitleWord[] = {  {&_swigt__p_SubtitleWord, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_TexCoordType[] = {  {&_swigt__p_TexCoordType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_VertexType[] = {  {&_swigt__p_VertexType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p__XDisplay[] = {  {&_swigt__p__XDisplay, 0, 0, 0},{0, 0, 0, 0}};
@@ -13513,11 +15271,9 @@ static swig_cast_info _swigc__p_ofBuffer[] = {  {&_swigt__p_ofBuffer, 0, 0, 0},{
 static swig_cast_info _swigc__p_ofColor_T_float_t[] = {  {&_swigt__p_ofColor_T_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofColor_T_unsigned_char_t[] = {  {&_swigt__p_ofColor_T_unsigned_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofColor_T_unsigned_short_t[] = {  {&_swigt__p_ofColor_T_unsigned_short_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ofKeyEventArgs[] = {{&_swigt__p_ofKeyEventArgs, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ofMessage[] = {{&_swigt__p_ofMessage, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ofResizeEventArgs[] = {{&_swigt__p_ofResizeEventArgs, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ofEventArgs[] = {  {&_swigt__p_ofEventArgs, 0, 0, 0},  {&_swigt__p_ofKeyEventArgs, _p_ofKeyEventArgsTo_p_ofEventArgs, 0, 0},  {&_swigt__p_ofMessage, _p_ofMessageTo_p_ofEventArgs, 0, 0},  {&_swigt__p_ofMouseEventArgs, _p_ofMouseEventArgsTo_p_ofEventArgs, 0, 0},  {&_swigt__p_ofResizeEventArgs, _p_ofResizeEventArgsTo_p_ofEventArgs, 0, 0},  {&_swigt__p_ofTouchEventArgs, _p_ofTouchEventArgsTo_p_ofEventArgs, 0, 0},  {&_swigt__p_ofWindowPosEventArgs, _p_ofWindowPosEventArgsTo_p_ofEventArgs, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofFbo[] = {  {&_swigt__p_ofFbo, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ofGLFWWindowSettings[] = {{&_swigt__p_ofGLFWWindowSettings, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ofGLWindowSettings[] = {  {&_swigt__p_ofGLWindowSettings, 0, 0, 0},  {&_swigt__p_ofGLFWWindowSettings, _p_ofGLFWWindowSettingsTo_p_ofGLWindowSettings, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofImage_T_float_t[] = {  {&_swigt__p_ofImage_T_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofImage_T_unsigned_char_t[] = {  {&_swigt__p_ofImage_T_unsigned_char_t, 0, 0, 0},  {&_swigt__p_ofxImageSequencePlayer, _p_ofxImageSequencePlayerTo_p_ofImage_T_unsigned_char_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofImage_T_unsigned_short_t[] = {  {&_swigt__p_ofImage_T_unsigned_short_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -13525,6 +15281,7 @@ static swig_cast_info _swigc__p_ofMaterial[] = {  {&_swigt__p_ofMaterial, 0, 0, 
 static swig_cast_info _swigc__p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t[] = {  {&_swigt__p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofVboMesh[] = {{&_swigt__p_ofVboMesh, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t[] = {  {&_swigt__p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t, 0, 0, 0},  {&_swigt__p_ofVboMesh, _p_ofVboMeshTo_p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ofPath[] = {  {&_swigt__p_ofPath, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofPixels_T_float_t[] = {  {&_swigt__p_ofPixels_T_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofPixels_T_unsigned_char_t[] = {  {&_swigt__p_ofPixels_T_unsigned_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofPixels_T_unsigned_short_t[] = {  {&_swigt__p_ofPixels_T_unsigned_short_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -13543,9 +15300,9 @@ static swig_cast_info _swigc__p_ofxCvGrayscaleImage[] = {  {&_swigt__p_ofxCvGray
 static swig_cast_info _swigc__p_ofxCvHaarFinder[] = {  {&_swigt__p_ofxCvHaarFinder, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofxCvImage[] = {  {&_swigt__p_ofxCvImage, 0, 0, 0},  {&_swigt__p_ofxCvColorImage, _p_ofxCvColorImageTo_p_ofxCvImage, 0, 0},  {&_swigt__p_ofxCvFloatImage, _p_ofxCvFloatImageTo_p_ofxCvImage, 0, 0},  {&_swigt__p_ofxCvGrayscaleImage, _p_ofxCvGrayscaleImageTo_p_ofxCvImage, 0, 0},  {&_swigt__p_ofxCvShortImage, _p_ofxCvShortImageTo_p_ofxCvImage, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofxCvShortImage[] = {  {&_swigt__p_ofxCvShortImage, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ofxImGuiContext[] = {  {&_swigt__p_ofxImGuiContext, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ofxImGui__Gui[] = {  {&_swigt__p_ofxImGui__Gui, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofxImageSequencePlayer[] = {  {&_swigt__p_ofxImageSequencePlayer, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ofxStableDiffusion[] = {  {&_swigt__p_ofxStableDiffusion, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ofxSvg[] = {  {&_swigt__p_ofxSvg, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofxTextureData3d[] = {  {&_swigt__p_ofxTextureData3d, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofxVectorGraphics[] = {  {&_swigt__p_ofxVectorGraphics, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofxVolumetrics[] = {  {&_swigt__p_ofxVolumetrics, 0, 0, 0},{0, 0, 0, 0}};
@@ -13554,9 +15311,13 @@ static swig_cast_info _swigc__p_sd_image_t[] = {  {&_swigt__p_sd_image_t, 0, 0, 
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_signed_char[] = {  {&_swigt__p_signed_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_stableDiffusionThread[] = {  {&_swigt__p_stableDiffusionThread, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__shared_ptrT_aiScene_const_t[] = {  {&_swigt__p_std__shared_ptrT_aiScene_const_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__shared_ptrT_ofAppBaseWindow_t[] = {  {&_swigt__p_std__shared_ptrT_ofAppBaseWindow_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_SubtitleItem_p_t[] = {  {&_swigt__p_std__vectorT_SubtitleItem_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_glm__vec3_t[] = {  {&_swigt__p_std__vectorT_glm__vec3_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_long_t[] = {  {&_swigt__p_std__vectorT_long_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_ofPath_t[] = {  {&_swigt__p_std__vectorT_ofPath_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_ofxCvBlob_t[] = {  {&_swigt__p_std__vectorT_ofxCvBlob_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_std__string_t[] = {  {&_swigt__p_std__vectorT_std__string_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_string[] = {  {&_swigt__p_string, 0, 0, 0},{0, 0, 0, 0}};
@@ -13570,22 +15331,21 @@ static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 
 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_Base,
-  _swigc__p_BaseTheme,
   _swigc__p_ColorType,
   _swigc__p_CreEPS_BOOL,
   _swigc__p_CreEPS_CHAR,
   _swigc__p_CreEPS_FLOAT,
   _swigc__p_CreEPS_INT,
   _swigc__p_FILE,
-  _swigc__p_ImFont,
-  _swigc__p_ImFontConfig,
-  _swigc__p_ImGuiConfigFlags,
-  _swigc__p_ImGuiContext,
-  _swigc__p_ImWchar,
   _swigc__p_IplImage,
   _swigc__p_Node,
   _swigc__p_NormalType,
   _swigc__p_SortMode,
+  _swigc__p_SubRipParser,
+  _swigc__p_SubtitleItem,
+  _swigc__p_SubtitleParser,
+  _swigc__p_SubtitleParserFactory,
+  _swigc__p_SubtitleWord,
   _swigc__p_TexCoordType,
   _swigc__p_VertexType,
   _swigc__p__XDisplay,
@@ -13626,23 +15386,22 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ofColor_T_float_t,
   _swigc__p_ofColor_T_unsigned_char_t,
   _swigc__p_ofColor_T_unsigned_short_t,
-  _swigc__p_ofEventArgs,
   _swigc__p_ofFbo,
+  _swigc__p_ofGLFWWindowSettings,
+  _swigc__p_ofGLWindowSettings,
   _swigc__p_ofImage_T_float_t,
   _swigc__p_ofImage_T_unsigned_char_t,
   _swigc__p_ofImage_T_unsigned_short_t,
-  _swigc__p_ofKeyEventArgs,
   _swigc__p_ofMaterial,
   _swigc__p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t,
   _swigc__p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t,
-  _swigc__p_ofMessage,
   _swigc__p_ofMouseEventArgs,
+  _swigc__p_ofPath,
   _swigc__p_ofPixels_T_float_t,
   _swigc__p_ofPixels_T_unsigned_char_t,
   _swigc__p_ofPixels_T_unsigned_short_t,
   _swigc__p_ofPolyline_T_ofDefaultVertexType_t,
   _swigc__p_ofRectangle,
-  _swigc__p_ofResizeEventArgs,
   _swigc__p_ofTexture,
   _swigc__p_ofTouchEventArgs,
   _swigc__p_ofVboMesh,
@@ -13661,9 +15420,9 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ofxCvHaarFinder,
   _swigc__p_ofxCvImage,
   _swigc__p_ofxCvShortImage,
-  _swigc__p_ofxImGuiContext,
-  _swigc__p_ofxImGui__Gui,
   _swigc__p_ofxImageSequencePlayer,
+  _swigc__p_ofxStableDiffusion,
+  _swigc__p_ofxSvg,
   _swigc__p_ofxTextureData3d,
   _swigc__p_ofxVectorGraphics,
   _swigc__p_ofxVolumetrics,
@@ -13672,9 +15431,13 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_short,
   _swigc__p_signed_char,
   _swigc__p_size_type,
+  _swigc__p_stableDiffusionThread,
   _swigc__p_std__shared_ptrT_aiScene_const_t,
-  _swigc__p_std__shared_ptrT_ofAppBaseWindow_t,
+  _swigc__p_std__string,
+  _swigc__p_std__vectorT_SubtitleItem_p_t,
   _swigc__p_std__vectorT_glm__vec3_t,
+  _swigc__p_std__vectorT_long_t,
+  _swigc__p_std__vectorT_ofPath_t,
   _swigc__p_std__vectorT_ofxCvBlob_t,
   _swigc__p_std__vectorT_std__string_t,
   _swigc__p_string,
