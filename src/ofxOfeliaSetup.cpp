@@ -18,14 +18,6 @@
 //--------------------------------------------------------------
 void sd_log_cb(enum sd_log_level_t level, const char* log, void* data) {
     post(log);
-    if (level <= SD_LOG_INFO) {
-        fputs(log, stdout);
-        fflush(stdout);
-    }
-    else {
-        fputs(log, stderr);
-        fflush(stderr);
-    }
 }
 
 int ofeliaVersionMajor = OFELIA_MAJOR_VERSION;
