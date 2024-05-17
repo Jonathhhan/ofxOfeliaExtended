@@ -13,7 +13,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "../../ofxStableDiffusion/include/stable-diffusion.h"
+#include "../../ofxStableDiffusion/libs/stable-diffusion/include/stable-diffusion.h"
 
 //--------------------------------------------------------------
 void sd_log_cb(enum sd_log_level_t level, const char* log, void* data) {
