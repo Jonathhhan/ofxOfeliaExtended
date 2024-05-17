@@ -1,6 +1,5 @@
-local window = ofWindow()
-
 local a = ofelia
+local window = ofWindow()
 local clock = ofClock(this, "setup")
 local stableDiffusion = ofxStableDiffusion()
 local settings = ofGLFWWindowSettings()
@@ -19,142 +18,142 @@ local generate = false
 local send = ofSend("$0-goo")
 
 function a.new()
-ofWindow.addListener("setup", this)
-ofWindow.addListener("update", this)
-ofWindow.addListener("draw", this)
-ofWindow.addListener("exit", this)
-if ofWindow.exists then
-clock:delay(0)
-else
-settings:setGLVersion(4, 0)
-settings.monitor = 0
-settings:setSize(1, 1)
-settings:setPosition(ofVec2f(0, 0):vec2())
-settings.multiMonitorFullScreen = false
-settings.windowMode = OF_WINDOW
-settings.visible = false
-window:createGLFW(settings)
-end
+	ofWindow.addListener("setup", this)
+	ofWindow.addListener("update", this)
+	ofWindow.addListener("draw", this)
+	ofWindow.addListener("exit", this)
+	if ofWindow.exists then
+		clock:delay(0)
+	else
+		settings:setGLVersion(4, 0)
+		settings.monitor = 0
+		settings:setSize(1, 1)
+		settings:setPosition(ofVec2f(0, 0):vec2())
+		settings.multiMonitorFullScreen = false
+		settings.windowMode = OF_WINDOW
+		settings.visible = false
+		window:createGLFW(settings)
+	end
 end
 
 function a.free()
-window:destroy()
-ofWindow.removeListener("setup", this)
-ofWindow.removeListener("update", this)
-ofWindow.removeListener("draw", this)
-ofWindow.removeListener("exit", this)
+	window:destroy()
+	ofWindow.removeListener("setup", this)
+	ofWindow.removeListener("update", this)
+	ofWindow.removeListener("draw", this)
+	ofWindow.removeListener("exit", this)
 end
 
 function a.setup()
-ofSetWindowTitle("ofxStableDiffusion")
-ofBackground(150, 230, 255, 255)
-ofSetDataPathRoot("")
-texture:allocate(512, 512, GL_RGB)
-ImGuiBoolArray_setitem(boolArrayValue, 0, true)
-ImGuiIntArray_setitem(intArrayValue, 0, 5)
-local charTable = {"EULER_A", "EULER", "HEUN", "DPM2", "DPMPP2S_A", "DPMPP2M", "DPMPP2Mv2", "LCM"}
-for i = 1, #charTable, 1 do
-ImGuiCharPArray_setitem(charArray, i -1, charTable[i])
-end
-sampleMethod = ImGuiCharPArray_getitem(charArray, 0)
-sampleMethodEnum = 0
-print(ImGuiConfigFlags_ViewportsEnable)
-gui:setup(ofxBaseTheme, true, ImGuiConfigFlags_ViewportsEnable)
-modelName = "sd_turbo.safetensors"
-print(stableDiffusion:getSystemInfo())
-stableDiffusion:newSdCtx("sd_turbo.safetensors", "", "", "", "", "", "", true, false, false, 8, 1, 0, 0, false, false, false)
+	ofSetWindowTitle("ofxStableDiffusion")
+	ofBackground(150, 230, 255, 255)
+	ofSetDataPathRoot("")
+	texture:allocate(512, 512, GL_RGB)
+	ImGuiBoolArray_setitem(boolArrayValue, 0, true)
+	ImGuiIntArray_setitem(intArrayValue, 0, 5)
+	local charTable = {"EULER_A", "EULER", "HEUN", "DPM2", "DPMPP2S_A", "DPMPP2M", "DPMPP2Mv2", "LCM"}
+	for i = 1, #charTable, 1 do
+		ImGuiCharPArray_setitem(charArray, i -1, charTable[i])
+	end
+	sampleMethod = ImGuiCharPArray_getitem(charArray, 0)
+	sampleMethodEnum = 0
+	print(ImGuiConfigFlags_ViewportsEnable)
+	gui:setup(ofxBaseTheme, true, ImGuiConfigFlags_ViewportsEnable)
+	modelName = "sd_turbo.safetensors"
+	print(stableDiffusion:getSystemInfo())
+	stableDiffusion:newSdCtx("sd_turbo.safetensors", "", "", "", "", "", "", true, false, false, 8, 1, 0, 0, false, false, false)
 end
 
 function a.update()
-if stableDiffusion:isDiffused() then
-imgVec = stableDiffusion:returnImages()
-print("Width:", imgVec.width, "Height:", imgVec.height, "Channel:", imgVec.channel)
-texture:loadData(imgVec.data, 512, 512, GL_RGB)
-stableDiffusion:setDiffused(false)
-end
-if generate then
-stableDiffusion:txt2img(prompt, negativePrompt, 0, 1, 512, 512, sampleMethodEnum, 5, -1, 1, sd_image_t, 1, 1, false, "")
-generate = false
-end
+	if stableDiffusion:isDiffused() then
+		imgVec = stableDiffusion:returnImages()
+		print("Width:", imgVec.width, "Height:", imgVec.height, "Channel:", imgVec.channel)
+		texture:loadData(imgVec.data, 512, 512, GL_RGB)
+		stableDiffusion:setDiffused(false)
+	end
+	if generate then
+		stableDiffusion:txt2img(prompt, negativePrompt, 0, 1, 512, 512, sampleMethodEnum, 5, -1, 1, sd_image_t, 1, 1, false, "")
+		generate = false
+	end
 end
 
 function a.draw()
-gui:beginGui()
---ImGuiShowDemoWindow_0()
-ImGuiStyleColorsDark()
-ImGuiPushStyleVar(ImGuiStyleVar_WindowMinSize, ImGuiImVec2(532, 120))
-ImGuiPushStyleVar(ImGuiStyleVar_WindowPadding, ImGuiImVec2(10, 0))
-ImGuiPushStyleVar(ImGuiStyleVar_IndentSpacing, 10)
-ImGuiPushStyleVar(ImGuiStyleVar_ItemSpacing, ImGuiImVec2(0, 0))
-ImGuiPushStyleVar(ImGuiStyleVar_ItemInnerSpacing, ImGuiImVec2(5, 0))
-ImGuiSetNextWindowPos(ImGuiImVec2(200, 100), ImGuiCond_Once)
-ImGuiBegin_3("ofxStableDiffusion##" .. $0, boolArrayValue, ImGuiWindowFlags_NoResize)
-ImGuiDummy(ImGuiImVec2(0, 10))
-ImGuiImage(texture:getTextureData().textureID, ImGuiImVec2(512, 512))
-ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiButton("Save")) then
-texture:readToPixels(pixels)
-ofSaveImage(pixels, ofGetTimestampString("output/ofxStableDiffusion-%Y-%m-%d-%H-%M-%S.png"))
-end
-ImGuiDummy(ImGuiImVec2(0, 10))
-ImGuiPushItemWidth(420)
-ImGuiText("The checkbox below is checked.")
-ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiSliderInt("Test", intArrayValue, 1, 16)) then
-send:sendFloat(ImGuiIntArray_getitem(intArrayValue, 0))
-end
-ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiCheckbox("Checkbox", boolArrayValue)) then
-print("Toggle:", ImGuiBoolArray_getitem(boolArrayValue, 0))
-end
-ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiRadioButton("Checked", true)) == true then
-print("Button pressed!")
-end
-ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiBeginCombo("Sample Method", sampleMethod, ImGuiComboFlags_NoArrowButton)) then
-for i = 0, 7, 1 do
-local isSelected = ImGuiNew_BoolArray(1)
-ImGuiBoolArray_setitem(isSelected, 0, sampleMethod == ImGuiCharPArray_getitem(charArray, i))
-if (ImGuiSelectable(ImGuiCharPArray_getitem(charArray, i), isSelected)) then
-sampleMethod = ImGuiCharPArray_getitem(charArray, i)
-sampleMethodEnum = i
-end
-end
-ImGuiEndCombo()
-end
-ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiButton("Load Model")) then
-local result = ofSystemLoadDialog("Load Model", false, "")
-if (result.bSuccess) then
-local modelPath = result:getPath()
-modelName = result:getName()
-local file = ofFile(result:getPath())
-if(file:getExtension() == "safetensors") then
-stableDiffusion:newSdCtx(modelPath, "", "", "", "", "", "", true, false, false, 8, 1, 0, 0, false, false, false)
-end
-end
-end
-ImGuiSameLine(0, 5)
-ImGuiText(modelName)
-ImGuiDummy(ImGuiImVec2(0, 10))
-if (ImGuiButton("Generate")) then
-generate = true
-print("Prompt:", prompt)
-end
-ImGuiDummy(ImGuiImVec2(0, 10))
-ImGuiInputText( "Prompt", prompt, 60)
-ImGuiDummy(ImGuiImVec2(0, 10))
-ImGuiInputText( "nPrompt", negativePrompt, 60)
-ImGuiDummy(ImGuiImVec2(0, 20))
-ImGuiEnd()
-gui:endGui()
+	gui:beginGui()
+	--ImGuiShowDemoWindow_0()
+	ImGuiStyleColorsDark()
+	ImGuiPushStyleVar(ImGuiStyleVar_WindowMinSize, ImGuiImVec2(532, 120))
+	ImGuiPushStyleVar(ImGuiStyleVar_WindowPadding, ImGuiImVec2(10, 0))
+	ImGuiPushStyleVar(ImGuiStyleVar_IndentSpacing, 10)
+	ImGuiPushStyleVar(ImGuiStyleVar_ItemSpacing, ImGuiImVec2(0, 0))
+	ImGuiPushStyleVar(ImGuiStyleVar_ItemInnerSpacing, ImGuiImVec2(5, 0))
+	ImGuiSetNextWindowPos(ImGuiImVec2(200, 100), ImGuiCond_Once)
+	ImGuiBegin_3("ofxStableDiffusion##" .. $0, boolArrayValue, ImGuiWindowFlags_NoResize)
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	ImGuiImage(texture:getTextureData().textureID, ImGuiImVec2(512, 512))
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	if (ImGuiButton("Save")) then
+		texture:readToPixels(pixels)
+		ofSaveImage(pixels, ofGetTimestampString("output/ofxStableDiffusion-%Y-%m-%d-%H-%M-%S.png"))
+	end
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	ImGuiPushItemWidth(420)
+	ImGuiText("The checkbox below is checked.")
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	if (ImGuiSliderInt("Test", intArrayValue, 1, 16)) then
+		send:sendFloat(ImGuiIntArray_getitem(intArrayValue, 0))
+	end
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	if (ImGuiCheckbox("Checkbox", boolArrayValue)) then
+		print("Toggle:", ImGuiBoolArray_getitem(boolArrayValue, 0))
+	end
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	if (ImGuiRadioButton("Checked", true)) == true then
+		print("Button pressed!")
+	end
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	if (ImGuiBeginCombo("Sample Method", sampleMethod, ImGuiComboFlags_NoArrowButton)) then
+		for i = 0, 7, 1 do
+			local isSelected = ImGuiNew_BoolArray(1)
+			ImGuiBoolArray_setitem(isSelected, 0, sampleMethod == ImGuiCharPArray_getitem(charArray, i))
+			if (ImGuiSelectable(ImGuiCharPArray_getitem(charArray, i), isSelected)) then
+				sampleMethod = ImGuiCharPArray_getitem(charArray, i)
+				sampleMethodEnum = i
+			end
+		end
+	ImGuiEndCombo()
+	end
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	if (ImGuiButton("Load Model")) then
+		local result = ofSystemLoadDialog("Load Model", false, "")
+		if (result.bSuccess) then
+			local modelPath = result:getPath()
+			modelName = result:getName()
+			local file = ofFile(result:getPath())
+			if(file:getExtension() == "safetensors") then
+				stableDiffusion:newSdCtx(modelPath, "", "", "", "", "", "", true, false, false, 8, 1, 0, 0, false, false, false)
+			end
+		end
+	end
+	ImGuiSameLine(0, 5)
+	ImGuiText(modelName)
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	if (ImGuiButton("Generate")) then
+		generate = true
+		print("Prompt:", prompt)
+	end
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	ImGuiInputText( "Prompt", prompt, 60)
+	ImGuiDummy(ImGuiImVec2(0, 10))
+	ImGuiInputText( "nPrompt", negativePrompt, 60)
+	ImGuiDummy(ImGuiImVec2(0, 20))
+	ImGuiEnd()
+	gui:endGui()
 end
 
 function a.exit()
-gui:exit();
-stableDiffusion:freeSdCtx()
-ImGuiDelete_BoolArray(boolArrayValue)
-ImGuiDelete_IntArray(intArrayValue)
-ImGuiDelete_CharPArray(charArray)
+	gui:exit();
+	stableDiffusion:freeSdCtx()
+	ImGuiDelete_BoolArray(boolArrayValue)
+	ImGuiDelete_IntArray(intArrayValue)
+	ImGuiDelete_CharPArray(charArray)
 end
