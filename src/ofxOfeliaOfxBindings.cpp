@@ -2791,69 +2791,67 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 #define SWIGTYPE_p_ofColor_T_unsigned_char_t swig_types[54]
 #define SWIGTYPE_p_ofColor_T_unsigned_short_t swig_types[55]
 #define SWIGTYPE_p_ofFbo swig_types[56]
-#define SWIGTYPE_p_ofGLFWWindowSettings swig_types[57]
-#define SWIGTYPE_p_ofGLWindowSettings swig_types[58]
-#define SWIGTYPE_p_ofImage_T_float_t swig_types[59]
-#define SWIGTYPE_p_ofImage_T_unsigned_char_t swig_types[60]
-#define SWIGTYPE_p_ofImage_T_unsigned_short_t swig_types[61]
-#define SWIGTYPE_p_ofMaterial swig_types[62]
-#define SWIGTYPE_p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[63]
-#define SWIGTYPE_p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[64]
-#define SWIGTYPE_p_ofMouseEventArgs swig_types[65]
-#define SWIGTYPE_p_ofPath swig_types[66]
-#define SWIGTYPE_p_ofPixels_T_float_t swig_types[67]
-#define SWIGTYPE_p_ofPixels_T_unsigned_char_t swig_types[68]
-#define SWIGTYPE_p_ofPixels_T_unsigned_short_t swig_types[69]
-#define SWIGTYPE_p_ofPolyline_T_ofDefaultVertexType_t swig_types[70]
-#define SWIGTYPE_p_ofRectangle swig_types[71]
-#define SWIGTYPE_p_ofTexture swig_types[72]
-#define SWIGTYPE_p_ofTouchEventArgs swig_types[73]
-#define SWIGTYPE_p_ofVboMesh swig_types[74]
-#define SWIGTYPE_p_ofVec3f swig_types[75]
-#define SWIGTYPE_p_ofVideoGrabber swig_types[76]
-#define SWIGTYPE_p_ofVideoPlayer swig_types[77]
-#define SWIGTYPE_p_ofWindowPosEventArgs swig_types[78]
-#define SWIGTYPE_p_ofxAssimpAnimation swig_types[79]
-#define SWIGTYPE_p_ofxAssimpMeshHelper swig_types[80]
-#define SWIGTYPE_p_ofxAssimpModelLoader swig_types[81]
-#define SWIGTYPE_p_ofxCvBlob swig_types[82]
-#define SWIGTYPE_p_ofxCvColorImage swig_types[83]
-#define SWIGTYPE_p_ofxCvContourFinder swig_types[84]
-#define SWIGTYPE_p_ofxCvFloatImage swig_types[85]
-#define SWIGTYPE_p_ofxCvGrayscaleImage swig_types[86]
-#define SWIGTYPE_p_ofxCvHaarFinder swig_types[87]
-#define SWIGTYPE_p_ofxCvImage swig_types[88]
-#define SWIGTYPE_p_ofxCvShortImage swig_types[89]
-#define SWIGTYPE_p_ofxImageSequencePlayer swig_types[90]
-#define SWIGTYPE_p_ofxStableDiffusion swig_types[91]
-#define SWIGTYPE_p_ofxSvg swig_types[92]
-#define SWIGTYPE_p_ofxTextureData3d swig_types[93]
-#define SWIGTYPE_p_ofxVectorGraphics swig_types[94]
-#define SWIGTYPE_p_ofxVolumetrics swig_types[95]
-#define SWIGTYPE_p_sd_ctx_t swig_types[96]
-#define SWIGTYPE_p_sd_image_t swig_types[97]
-#define SWIGTYPE_p_short swig_types[98]
-#define SWIGTYPE_p_signed_char swig_types[99]
-#define SWIGTYPE_p_size_type swig_types[100]
-#define SWIGTYPE_p_stableDiffusionThread swig_types[101]
-#define SWIGTYPE_p_std__shared_ptrT_aiScene_const_t swig_types[102]
-#define SWIGTYPE_p_std__string swig_types[103]
-#define SWIGTYPE_p_std__vectorT_SubtitleItem_p_t swig_types[104]
-#define SWIGTYPE_p_std__vectorT_glm__vec3_t swig_types[105]
-#define SWIGTYPE_p_std__vectorT_long_t swig_types[106]
-#define SWIGTYPE_p_std__vectorT_ofPath_t swig_types[107]
-#define SWIGTYPE_p_std__vectorT_ofxCvBlob_t swig_types[108]
-#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[109]
-#define SWIGTYPE_p_string swig_types[110]
-#define SWIGTYPE_p_unsigned_char swig_types[111]
-#define SWIGTYPE_p_unsigned_int swig_types[112]
-#define SWIGTYPE_p_unsigned_long swig_types[113]
-#define SWIGTYPE_p_unsigned_long_long swig_types[114]
-#define SWIGTYPE_p_unsigned_short swig_types[115]
-#define SWIGTYPE_p_upscaler_ctx_t swig_types[116]
-#define SWIGTYPE_p_value_type swig_types[117]
-static swig_type_info *swig_types[119];
-static swig_module_info swig_module = {swig_types, 118, 0, 0, 0, 0};
+#define SWIGTYPE_p_ofImage_T_float_t swig_types[57]
+#define SWIGTYPE_p_ofImage_T_unsigned_char_t swig_types[58]
+#define SWIGTYPE_p_ofImage_T_unsigned_short_t swig_types[59]
+#define SWIGTYPE_p_ofMaterial swig_types[60]
+#define SWIGTYPE_p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[61]
+#define SWIGTYPE_p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[62]
+#define SWIGTYPE_p_ofMouseEventArgs swig_types[63]
+#define SWIGTYPE_p_ofPath swig_types[64]
+#define SWIGTYPE_p_ofPixels_T_float_t swig_types[65]
+#define SWIGTYPE_p_ofPixels_T_unsigned_char_t swig_types[66]
+#define SWIGTYPE_p_ofPixels_T_unsigned_short_t swig_types[67]
+#define SWIGTYPE_p_ofPolyline_T_ofDefaultVertexType_t swig_types[68]
+#define SWIGTYPE_p_ofRectangle swig_types[69]
+#define SWIGTYPE_p_ofTexture swig_types[70]
+#define SWIGTYPE_p_ofTouchEventArgs swig_types[71]
+#define SWIGTYPE_p_ofVboMesh swig_types[72]
+#define SWIGTYPE_p_ofVec3f swig_types[73]
+#define SWIGTYPE_p_ofVideoGrabber swig_types[74]
+#define SWIGTYPE_p_ofVideoPlayer swig_types[75]
+#define SWIGTYPE_p_ofWindowPosEventArgs swig_types[76]
+#define SWIGTYPE_p_ofxAssimpAnimation swig_types[77]
+#define SWIGTYPE_p_ofxAssimpMeshHelper swig_types[78]
+#define SWIGTYPE_p_ofxAssimpModelLoader swig_types[79]
+#define SWIGTYPE_p_ofxCvBlob swig_types[80]
+#define SWIGTYPE_p_ofxCvColorImage swig_types[81]
+#define SWIGTYPE_p_ofxCvContourFinder swig_types[82]
+#define SWIGTYPE_p_ofxCvFloatImage swig_types[83]
+#define SWIGTYPE_p_ofxCvGrayscaleImage swig_types[84]
+#define SWIGTYPE_p_ofxCvHaarFinder swig_types[85]
+#define SWIGTYPE_p_ofxCvImage swig_types[86]
+#define SWIGTYPE_p_ofxCvShortImage swig_types[87]
+#define SWIGTYPE_p_ofxImageSequencePlayer swig_types[88]
+#define SWIGTYPE_p_ofxStableDiffusion swig_types[89]
+#define SWIGTYPE_p_ofxSvg swig_types[90]
+#define SWIGTYPE_p_ofxTextureData3d swig_types[91]
+#define SWIGTYPE_p_ofxVectorGraphics swig_types[92]
+#define SWIGTYPE_p_ofxVolumetrics swig_types[93]
+#define SWIGTYPE_p_sd_ctx_t swig_types[94]
+#define SWIGTYPE_p_sd_image_t swig_types[95]
+#define SWIGTYPE_p_short swig_types[96]
+#define SWIGTYPE_p_signed_char swig_types[97]
+#define SWIGTYPE_p_size_type swig_types[98]
+#define SWIGTYPE_p_stableDiffusionThread swig_types[99]
+#define SWIGTYPE_p_std__shared_ptrT_aiScene_const_t swig_types[100]
+#define SWIGTYPE_p_std__string swig_types[101]
+#define SWIGTYPE_p_std__vectorT_SubtitleItem_p_t swig_types[102]
+#define SWIGTYPE_p_std__vectorT_glm__vec3_t swig_types[103]
+#define SWIGTYPE_p_std__vectorT_long_t swig_types[104]
+#define SWIGTYPE_p_std__vectorT_ofPath_t swig_types[105]
+#define SWIGTYPE_p_std__vectorT_ofxCvBlob_t swig_types[106]
+#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[107]
+#define SWIGTYPE_p_string swig_types[108]
+#define SWIGTYPE_p_unsigned_char swig_types[109]
+#define SWIGTYPE_p_unsigned_int swig_types[110]
+#define SWIGTYPE_p_unsigned_long swig_types[111]
+#define SWIGTYPE_p_unsigned_long_long swig_types[112]
+#define SWIGTYPE_p_unsigned_short swig_types[113]
+#define SWIGTYPE_p_upscaler_ctx_t swig_types[114]
+#define SWIGTYPE_p_value_type swig_types[115]
+static swig_type_info *swig_types[117];
+static swig_module_info swig_module = {swig_types, 116, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -8034,19 +8032,6 @@ static int _wrap_CvHaarFinder_blobs_get(lua_State* L) { { int SWIG_arg = 0; ofxC
     result = (std::vector< ofxCvBlob > *)& ((arg1)->blobs);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__vectorT_ofxCvBlob_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
-static int _wrap_CvHaarFinder_nBlobs_set(lua_State* L) { { int SWIG_arg = 0; ofxCvHaarFinder *arg1 = (ofxCvHaarFinder *) 0 ;
-    int arg2 ; SWIG_check_num_args("ofxCvHaarFinder::nBlobs",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxCvHaarFinder::nBlobs",1,"ofxCvHaarFinder *");
-    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxCvHaarFinder::nBlobs",2,"int");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxCvHaarFinder,0))){
-      SWIG_fail_ptr("CvHaarFinder_nBlobs_set",1,SWIGTYPE_p_ofxCvHaarFinder); }  arg2 = (int)lua_tonumber(L, 2);
-    if (arg1) (arg1)->nBlobs = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_CvHaarFinder_nBlobs_get(lua_State* L) { { int SWIG_arg = 0; ofxCvHaarFinder *arg1 = (ofxCvHaarFinder *) 0 ;
-    int result; SWIG_check_num_args("ofxCvHaarFinder::nBlobs",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxCvHaarFinder::nBlobs",1,"ofxCvHaarFinder *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxCvHaarFinder,0))){
-      SWIG_fail_ptr("CvHaarFinder_nBlobs_get",1,SWIGTYPE_p_ofxCvHaarFinder); }  result = (int) ((arg1)->nBlobs);
-    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_new_CvHaarFinder__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ofxCvHaarFinder *result = 0 ;
     SWIG_check_num_args("ofxCvHaarFinder::ofxCvHaarFinder",0,0) result = (ofxCvHaarFinder *)new ofxCvHaarFinder();
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxCvHaarFinder,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
@@ -8437,7 +8422,6 @@ static int _proxy__wrap_new_CvHaarFinder(lua_State *L) {
 }
 static swig_lua_attribute swig_CvHaarFinder_attributes[] = {
     { "blobs", _wrap_CvHaarFinder_blobs_get, _wrap_CvHaarFinder_blobs_set },
-    { "nBlobs", _wrap_CvHaarFinder_nBlobs_get, _wrap_CvHaarFinder_nBlobs_set },
     {0,0,0}
 };
 static swig_lua_method swig_CvHaarFinder_methods[]= {
@@ -10851,6 +10835,15 @@ static int _wrap_AssimpModelLoader_setPositionForAllAnimations(lua_State* L) { {
       SWIG_fail_ptr("AssimpModelLoader_setPositionForAllAnimations",1,SWIGTYPE_p_ofxAssimpModelLoader); } 
     arg2 = (float)lua_tonumber(L, 2); (arg1)->setPositionForAllAnimations(arg2); return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
+static int _wrap_AssimpModelLoader_setSpeedForAllAnimations(lua_State* L) { { int SWIG_arg = 0;
+    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; float arg2 ;
+    SWIG_check_num_args("ofxAssimpModelLoader::setSpeedForAllAnimations",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxAssimpModelLoader::setSpeedForAllAnimations",1,"ofxAssimpModelLoader *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::setSpeedForAllAnimations",2,"float");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxAssimpModelLoader,0))){
+      SWIG_fail_ptr("AssimpModelLoader_setSpeedForAllAnimations",1,SWIGTYPE_p_ofxAssimpModelLoader); } 
+    arg2 = (float)lua_tonumber(L, 2); (arg1)->setSpeedForAllAnimations(arg2); return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
 static int _wrap_AssimpModelLoader_setAnimation(lua_State* L) { { int SWIG_arg = 0;
     ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; int arg2 ;
     SWIG_check_num_args("ofxAssimpModelLoader::setAnimation",2,2)
@@ -11400,6 +11393,7 @@ static swig_lua_method swig_AssimpModelLoader_methods[]= {
     { "setPausedForAllAnimations", _wrap_AssimpModelLoader_setPausedForAllAnimations},
     { "setLoopStateForAllAnimations", _wrap_AssimpModelLoader_setLoopStateForAllAnimations},
     { "setPositionForAllAnimations", _wrap_AssimpModelLoader_setPositionForAllAnimations},
+    { "setSpeedForAllAnimations", _wrap_AssimpModelLoader_setSpeedForAllAnimations},
     { "setAnimation", _wrap_AssimpModelLoader_setAnimation},
     { "setNormalizedTime", _wrap_AssimpModelLoader_setNormalizedTime},
     { "setTime", _wrap_AssimpModelLoader_setTime},
@@ -14949,9 +14943,6 @@ static void *_p_ofxCvShortImageTo_p_ofBaseImage_T_unsigned_char_t(void *x, int *
 static void *_p_ofxImageSequencePlayerTo_p_ofBaseImage_T_unsigned_char_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((ofBaseImage_< unsigned char > *) (ofImage_< unsigned char > *) ((ofxImageSequencePlayer *) x));
 }
-static void *_p_ofGLFWWindowSettingsTo_p_ofGLWindowSettings(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((ofGLWindowSettings *)  ((ofGLFWWindowSettings *) x));
-}
 static void *_p_ofxImageSequencePlayerTo_p_ofImage_T_unsigned_char_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((ofImage_< unsigned char > *)  ((ofxImageSequencePlayer *) x));
 }
@@ -15032,8 +15023,6 @@ static swig_type_info _swigt__p_ofColor_T_float_t = {"_p_ofColor_T_float_t", "of
 static swig_type_info _swigt__p_ofColor_T_unsigned_char_t = {"_p_ofColor_T_unsigned_char_t", "ofColor *|ofColor_< unsigned char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofColor_T_unsigned_short_t = {"_p_ofColor_T_unsigned_short_t", "ofShortColor *|ofColor_< unsigned short > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofFbo = {"_p_ofFbo", "ofFbo *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ofGLWindowSettings = {"_p_ofGLWindowSettings", "ofSetupWindowSettings *|ofGLWindowSettings *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ofGLFWWindowSettings = {"_p_ofGLFWWindowSettings", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_ofImage_T_float_t = {"_p_ofImage_T_float_t", "ofFloatImage *|ofImage_< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofImage_T_unsigned_char_t = {"_p_ofImage_T_unsigned_char_t", "ofImage *|ofImage_< unsigned char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofImage_T_unsigned_short_t = {"_p_ofImage_T_unsigned_short_t", "ofShortImage *|ofImage_< unsigned short > *", 0, 0, (void*)0, 0};
@@ -15147,8 +15136,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ofColor_T_unsigned_char_t,
   &_swigt__p_ofColor_T_unsigned_short_t,
   &_swigt__p_ofFbo,
-  &_swigt__p_ofGLFWWindowSettings,
-  &_swigt__p_ofGLWindowSettings,
   &_swigt__p_ofImage_T_float_t,
   &_swigt__p_ofImage_T_unsigned_char_t,
   &_swigt__p_ofImage_T_unsigned_short_t,
@@ -15272,8 +15259,6 @@ static swig_cast_info _swigc__p_ofColor_T_float_t[] = {  {&_swigt__p_ofColor_T_f
 static swig_cast_info _swigc__p_ofColor_T_unsigned_char_t[] = {  {&_swigt__p_ofColor_T_unsigned_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofColor_T_unsigned_short_t[] = {  {&_swigt__p_ofColor_T_unsigned_short_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofFbo[] = {  {&_swigt__p_ofFbo, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ofGLFWWindowSettings[] = {{&_swigt__p_ofGLFWWindowSettings, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ofGLWindowSettings[] = {  {&_swigt__p_ofGLWindowSettings, 0, 0, 0},  {&_swigt__p_ofGLFWWindowSettings, _p_ofGLFWWindowSettingsTo_p_ofGLWindowSettings, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofImage_T_float_t[] = {  {&_swigt__p_ofImage_T_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofImage_T_unsigned_char_t[] = {  {&_swigt__p_ofImage_T_unsigned_char_t, 0, 0, 0},  {&_swigt__p_ofxImageSequencePlayer, _p_ofxImageSequencePlayerTo_p_ofImage_T_unsigned_char_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofImage_T_unsigned_short_t[] = {  {&_swigt__p_ofImage_T_unsigned_short_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -15387,8 +15372,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ofColor_T_unsigned_char_t,
   _swigc__p_ofColor_T_unsigned_short_t,
   _swigc__p_ofFbo,
-  _swigc__p_ofGLFWWindowSettings,
-  _swigc__p_ofGLWindowSettings,
   _swigc__p_ofImage_T_float_t,
   _swigc__p_ofImage_T_unsigned_char_t,
   _swigc__p_ofImage_T_unsigned_short_t,
