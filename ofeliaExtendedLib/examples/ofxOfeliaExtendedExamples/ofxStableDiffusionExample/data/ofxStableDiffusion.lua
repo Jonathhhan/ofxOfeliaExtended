@@ -22,7 +22,7 @@ local prompt = "a skater in the woods, van gogh"
 local negativePrompt = ""
 local generate = false
 local send = ofSend("$0-goo")
-local dataDir = canvas:getDir() .. "/data/model/"
+local dataDir = canvas:getDir() .. "/data/"
 
 function a.new()
 ofWindow.addListener("setup", this)
@@ -64,7 +64,7 @@ sampleMethod = ImGuiCharPArray_getitem(charArray, 0)
 sampleMethodEnum = 0
 print(ImGuiConfigFlags_ViewportsEnable)
 gui:setup(ofxBaseTheme, true, ImGuiConfigFlags_ViewportsEnable)
-modelName = "sd_turbo.safetensors"
+modelName = "model/sd_turbo.safetensors"
 modelPath = dataDir .. modelName
 print(stableDiffusion:getSystemInfo())
 stableDiffusion:newSdCtx(modelPath, "", "", "", "", "", "", true, false, false, 8, 1, 0, 0, false, false, false)
@@ -98,15 +98,15 @@ ImGuiSetNextWindowPos(ImGuiImVec2(50, 50), ImGuiCond_Once)
 ImGuiBegin_3("ofxStableDiffusion", boolArrayValue, ImGuiWindowFlags_NoResize)
 ImGuiDummy(ImGuiImVec2(0, 10))
 ImGuiImage(textureTable[1]:getTextureData().textureID, ImGuiImVec2(256, 256))
-ImGuiSameLine();
+ImGuiSameLine()
 ImGuiImage(textureTable[2]:getTextureData().textureID, ImGuiImVec2(256, 256))
 ImGuiImage(textureTable[3]:getTextureData().textureID, ImGuiImVec2(256, 256))
-ImGuiSameLine();
+ImGuiSameLine()
 ImGuiImage(textureTable[4]:getTextureData().textureID, ImGuiImVec2(256, 256))
 ImGuiDummy(ImGuiImVec2(0, 10))
 if (ImGuiButton("Save")) then
 textureTable[1]:readToPixels(pixels)
-ofSaveImage(pixels, ofGetTimestampString("output/ofxStableDiffusion-%Y-%m-%d-%H-%M-%S.png"))
+ofSaveImage(pixels, ofGetTimestampString(dataDir .. "output/ofxStableDiffusion-%Y-%m-%d-%H-%M-%S.png"))
 end
 ImGuiDummy(ImGuiImVec2(0, 10))
 ImGuiPushItemWidth(420)
