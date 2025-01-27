@@ -1443,30 +1443,33 @@ void canvas_update_dsp(void)
 }
 
 /* the "dsp" message to pd starts and stops DSP computation, and, if
-appropriate, also opens and closes the audio device.  On exclusive-access
+appropriate, also opens and closes the audio device. On exclusive-access
 APIs such as ALSA, MMIO, and ASIO (I think) it's appropriate to close the
 audio devices when not using them; but jack behaves better if audio I/O
-simply keeps running.  This is wasteful of CPU cycles but we do it anyway
+simply keeps running. Also, we want to preserve any connections made between
+Pd and other Jack clients. This is wasteful of CPU cycles but we do it anyway
 and can perhaps regard this is a design flaw in jack that we're working around
-here.  The function audio_shouldkeepopen() is provided by s_audio.c to tell
-us that we should elide the step of closing audio when DSP is turned off.*/
+here. The function audio_shouldkeepopen() is provided by s_audio.c to tell us
+that we should elide the step of closing audio when DSP is turned off.*/
 
 void glob_dsp(void *dummy, t_symbol *s, int argc, t_atom *argv)
 {
-    int newstate;
     if (argc)
     {
-        newstate = atom_getfloatarg(0, argc, argv);
+        int newstate = atom_getfloat(argv);
         if (newstate && !THISGUI->i_dspstate)
         {
-            sys_set_audio_state(1);
+                /* if audio should be kept open, we don't reopen the device,
+                unless it really has been closed (for whatever reason) */
+            if (!audio_shouldkeepopen() || !audio_isopen())
+                sys_reopen_audio();
             canvas_start_dsp();
         }
         else if (!newstate && THISGUI->i_dspstate)
         {
             canvas_stop_dsp();
             if (!audio_shouldkeepopen())
-                sys_set_audio_state(0);
+                sys_close_audio();
         }
     }
     else post("dsp state %d", THISGUI->i_dspstate);
@@ -1838,8 +1841,8 @@ typedef struct _canvasopen
 static int canvas_open_iter(const char *path, t_canvasopen *co)
 {
     int fd;
-    if ((fd = sys_trytoopenone(path, co->name, co->ext,
-        co->dirresult, co->nameresult, co->size, co->bin)) >= 0)
+    if ((fd = sys_trytoopenit(path, co->name, co->ext,
+        co->dirresult, co->nameresult, co->size, co->bin, 1)) >= 0)
     {
         co->fd = fd;
         return 0;
@@ -1866,7 +1869,7 @@ int canvas_open(const t_canvas *x, const char *name, const char *ext,
     t_canvasopen co;
 
         /* first check if "name" is absolute (and if so, try to open) */
-    if (sys_open_absolute(name, ext, dirresult, nameresult, size, bin, &fd))
+    if (sys_open_absolute(name, ext, dirresult, nameresult, size, bin, &fd, 1))
         return (fd);
 
         /* otherwise "name" is relative; iterate over all the search-paths */

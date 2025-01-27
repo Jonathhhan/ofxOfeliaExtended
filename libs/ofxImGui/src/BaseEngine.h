@@ -4,7 +4,7 @@
 #include "ofAppBaseWindow.h"
 
 // Seems needed on windows
-#include "../libs/imgui/src/imgui.h"
+#include "imgui.h"
 //struct ImGuiContext;
 
 // Fwd declaration
@@ -23,7 +23,7 @@ namespace ofxImGui
 		BaseEngine()
 			: isSetup(false)
 		{
-			std::cout << "New BaseEngine " << this << std::endl;
+			//std::cout << "New BaseEngine " << this << std::endl;
 		}
 
 		virtual ~BaseEngine()

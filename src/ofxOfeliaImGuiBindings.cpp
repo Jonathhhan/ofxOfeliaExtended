@@ -2773,99 +2773,113 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 #define SWIGTYPE_p_ImGuiInputTextCallbackData swig_types[20]
 #define SWIGTYPE_p_ImGuiKeyData swig_types[21]
 #define SWIGTYPE_p_ImGuiListClipper swig_types[22]
-#define SWIGTYPE_p_ImGuiOnceUponAFrame swig_types[23]
-#define SWIGTYPE_p_ImGuiPayload swig_types[24]
-#define SWIGTYPE_p_ImGuiPlatformIO swig_types[25]
-#define SWIGTYPE_p_ImGuiPlatformImeData swig_types[26]
-#define SWIGTYPE_p_ImGuiPlatformMonitor swig_types[27]
-#define SWIGTYPE_p_ImGuiSizeCallbackData swig_types[28]
-#define SWIGTYPE_p_ImGuiStorage swig_types[29]
-#define SWIGTYPE_p_ImGuiStyle swig_types[30]
-#define SWIGTYPE_p_ImGuiTableColumnSortSpecs swig_types[31]
-#define SWIGTYPE_p_ImGuiTableSortSpecs swig_types[32]
-#define SWIGTYPE_p_ImGuiTextBuffer swig_types[33]
-#define SWIGTYPE_p_ImGuiTextFilter swig_types[34]
-#define SWIGTYPE_p_ImGuiViewport swig_types[35]
-#define SWIGTYPE_p_ImGuiWindowClass swig_types[36]
-#define SWIGTYPE_p_ImNewWrapper swig_types[37]
-#define SWIGTYPE_p_ImVec2 swig_types[38]
-#define SWIGTYPE_p_ImVec4 swig_types[39]
-#define SWIGTYPE_p_ImVectorT_ImDrawChannel_t swig_types[40]
-#define SWIGTYPE_p_ImVectorT_ImDrawCmd_t swig_types[41]
-#define SWIGTYPE_p_ImVectorT_ImDrawList_p_t swig_types[42]
-#define SWIGTYPE_p_ImVectorT_ImDrawVert_t swig_types[43]
-#define SWIGTYPE_p_ImVectorT_ImFontAtlasCustomRect_t swig_types[44]
-#define SWIGTYPE_p_ImVectorT_ImFontConfig_t swig_types[45]
-#define SWIGTYPE_p_ImVectorT_ImFontGlyph_t swig_types[46]
-#define SWIGTYPE_p_ImVectorT_ImFont_p_t swig_types[47]
-#define SWIGTYPE_p_ImVectorT_ImGuiPlatformMonitor_t swig_types[48]
-#define SWIGTYPE_p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t swig_types[49]
-#define SWIGTYPE_p_ImVectorT_ImGuiTextFilter__ImGuiTextRange_t swig_types[50]
-#define SWIGTYPE_p_ImVectorT_ImGuiViewport_p_t swig_types[51]
-#define SWIGTYPE_p_ImVectorT_ImVec2_t swig_types[52]
-#define SWIGTYPE_p_ImVectorT_ImVec4_t swig_types[53]
-#define SWIGTYPE_p_ImVectorT_char_t swig_types[54]
-#define SWIGTYPE_p_ImVectorT_float_t swig_types[55]
-#define SWIGTYPE_p_ImVectorT_int_t swig_types[56]
-#define SWIGTYPE_p_ImVectorT_ofIndexType_t swig_types[57]
-#define SWIGTYPE_p_ImVectorT_unsigned_int_t swig_types[58]
-#define SWIGTYPE_p_ImVectorT_unsigned_short_t swig_types[59]
-#define SWIGTYPE_p_bool swig_types[60]
-#define SWIGTYPE_p_char swig_types[61]
-#define SWIGTYPE_p_double swig_types[62]
-#define SWIGTYPE_p_f_p_ImGuiInputTextCallbackData__int swig_types[63]
-#define SWIGTYPE_p_f_p_ImGuiSizeCallbackData__void swig_types[64]
-#define SWIGTYPE_p_f_p_ImGuiViewport_ImVec2__void swig_types[65]
-#define SWIGTYPE_p_f_p_ImGuiViewport__ImVec2 swig_types[66]
-#define SWIGTYPE_p_f_p_ImGuiViewport__bool swig_types[67]
-#define SWIGTYPE_p_f_p_ImGuiViewport__float swig_types[68]
-#define SWIGTYPE_p_f_p_ImGuiViewport__void swig_types[69]
-#define SWIGTYPE_p_f_p_ImGuiViewport_float__void swig_types[70]
-#define SWIGTYPE_p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void swig_types[71]
-#define SWIGTYPE_p_f_p_ImGuiViewport_p_q_const__char__void swig_types[72]
-#define SWIGTYPE_p_f_p_ImGuiViewport_p_void__void swig_types[73]
-#define SWIGTYPE_p_f_p_ImGuiViewport_unsigned_long_long_p_q_const__void_p_unsigned_long_long__int swig_types[74]
-#define SWIGTYPE_p_f_p_q_const__ImDrawList_p_q_const__ImDrawCmd__void swig_types[75]
-#define SWIGTYPE_p_f_p_void__p_char swig_types[76]
-#define SWIGTYPE_p_f_p_void_int__float swig_types[77]
-#define SWIGTYPE_p_f_p_void_int__p_char swig_types[78]
-#define SWIGTYPE_p_f_p_void_int_p_p_q_const__char__bool swig_types[79]
-#define SWIGTYPE_p_f_p_void_p_q_const__char__void swig_types[80]
-#define SWIGTYPE_p_f_p_void_p_void__void swig_types[81]
-#define SWIGTYPE_p_f_unsigned_int_p_void__p_void swig_types[82]
-#define SWIGTYPE_p_float swig_types[83]
-#define SWIGTYPE_p_glm__vec4 swig_types[84]
-#define SWIGTYPE_p_int swig_types[85]
-#define SWIGTYPE_p_long_long swig_types[86]
-#define SWIGTYPE_p_ofColor swig_types[87]
-#define SWIGTYPE_p_ofEventArgs swig_types[88]
-#define SWIGTYPE_p_ofFloatColor swig_types[89]
-#define SWIGTYPE_p_ofImage swig_types[90]
-#define SWIGTYPE_p_ofIndexType swig_types[91]
-#define SWIGTYPE_p_ofPixels swig_types[92]
-#define SWIGTYPE_p_ofTexture swig_types[93]
-#define SWIGTYPE_p_ofVec2f swig_types[94]
-#define SWIGTYPE_p_ofVec3f swig_types[95]
-#define SWIGTYPE_p_ofVec4f swig_types[96]
-#define SWIGTYPE_p_ofxImGuiContext swig_types[97]
-#define SWIGTYPE_p_ofxImGui__Gui swig_types[98]
-#define SWIGTYPE_p_p_char swig_types[99]
-#define SWIGTYPE_p_p_f_p_void_p_void__void swig_types[100]
-#define SWIGTYPE_p_p_f_unsigned_int_p_void__p_void swig_types[101]
-#define SWIGTYPE_p_p_unsigned_char swig_types[102]
-#define SWIGTYPE_p_p_void swig_types[103]
-#define SWIGTYPE_p_short swig_types[104]
-#define SWIGTYPE_p_signed_char swig_types[105]
-#define SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t swig_types[106]
-#define SWIGTYPE_p_std__string swig_types[107]
-#define SWIGTYPE_p_unsigned_char swig_types[108]
-#define SWIGTYPE_p_unsigned_int swig_types[109]
-#define SWIGTYPE_p_unsigned_long_long swig_types[110]
-#define SWIGTYPE_p_unsigned_short swig_types[111]
-#define SWIGTYPE_p_va_list swig_types[112]
-#define SWIGTYPE_p_void swig_types[113]
-static swig_type_info *swig_types[115];
-static swig_module_info swig_module = {swig_types, 114, 0, 0, 0, 0};
+#define SWIGTYPE_p_ImGuiMultiSelectIO swig_types[23]
+#define SWIGTYPE_p_ImGuiOnceUponAFrame swig_types[24]
+#define SWIGTYPE_p_ImGuiPayload swig_types[25]
+#define SWIGTYPE_p_ImGuiPlatformIO swig_types[26]
+#define SWIGTYPE_p_ImGuiPlatformImeData swig_types[27]
+#define SWIGTYPE_p_ImGuiPlatformMonitor swig_types[28]
+#define SWIGTYPE_p_ImGuiSelectionBasicStorage swig_types[29]
+#define SWIGTYPE_p_ImGuiSelectionExternalStorage swig_types[30]
+#define SWIGTYPE_p_ImGuiSelectionRequest swig_types[31]
+#define SWIGTYPE_p_ImGuiSizeCallbackData swig_types[32]
+#define SWIGTYPE_p_ImGuiStorage swig_types[33]
+#define SWIGTYPE_p_ImGuiStoragePair swig_types[34]
+#define SWIGTYPE_p_ImGuiStyle swig_types[35]
+#define SWIGTYPE_p_ImGuiTableColumnSortSpecs swig_types[36]
+#define SWIGTYPE_p_ImGuiTableSortSpecs swig_types[37]
+#define SWIGTYPE_p_ImGuiTextBuffer swig_types[38]
+#define SWIGTYPE_p_ImGuiTextFilter swig_types[39]
+#define SWIGTYPE_p_ImGuiViewport swig_types[40]
+#define SWIGTYPE_p_ImGuiWindowClass swig_types[41]
+#define SWIGTYPE_p_ImNewWrapper swig_types[42]
+#define SWIGTYPE_p_ImVec2 swig_types[43]
+#define SWIGTYPE_p_ImVec4 swig_types[44]
+#define SWIGTYPE_p_ImVectorT_ImDrawChannel_t swig_types[45]
+#define SWIGTYPE_p_ImVectorT_ImDrawCmd_t swig_types[46]
+#define SWIGTYPE_p_ImVectorT_ImDrawList_p_t swig_types[47]
+#define SWIGTYPE_p_ImVectorT_ImDrawVert_t swig_types[48]
+#define SWIGTYPE_p_ImVectorT_ImFontAtlasCustomRect_t swig_types[49]
+#define SWIGTYPE_p_ImVectorT_ImFontConfig_t swig_types[50]
+#define SWIGTYPE_p_ImVectorT_ImFontGlyph_t swig_types[51]
+#define SWIGTYPE_p_ImVectorT_ImFont_p_t swig_types[52]
+#define SWIGTYPE_p_ImVectorT_ImGuiPlatformMonitor_t swig_types[53]
+#define SWIGTYPE_p_ImVectorT_ImGuiSelectionRequest_t swig_types[54]
+#define SWIGTYPE_p_ImVectorT_ImGuiStoragePair_t swig_types[55]
+#define SWIGTYPE_p_ImVectorT_ImGuiTextFilter__ImGuiTextRange_t swig_types[56]
+#define SWIGTYPE_p_ImVectorT_ImGuiViewport_p_t swig_types[57]
+#define SWIGTYPE_p_ImVectorT_ImVec2_t swig_types[58]
+#define SWIGTYPE_p_ImVectorT_ImVec4_t swig_types[59]
+#define SWIGTYPE_p_ImVectorT_char_t swig_types[60]
+#define SWIGTYPE_p_ImVectorT_float_t swig_types[61]
+#define SWIGTYPE_p_ImVectorT_int_t swig_types[62]
+#define SWIGTYPE_p_ImVectorT_ofIndexType_t swig_types[63]
+#define SWIGTYPE_p_ImVectorT_unsigned_char_t swig_types[64]
+#define SWIGTYPE_p_ImVectorT_unsigned_int_t swig_types[65]
+#define SWIGTYPE_p_ImVectorT_unsigned_short_t swig_types[66]
+#define SWIGTYPE_p_bool swig_types[67]
+#define SWIGTYPE_p_char swig_types[68]
+#define SWIGTYPE_p_double swig_types[69]
+#define SWIGTYPE_p_f_p_ImGuiContext__p_char swig_types[70]
+#define SWIGTYPE_p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void swig_types[71]
+#define SWIGTYPE_p_f_p_ImGuiContext_p_q_const__char__bool swig_types[72]
+#define SWIGTYPE_p_f_p_ImGuiContext_p_q_const__char__void swig_types[73]
+#define SWIGTYPE_p_f_p_ImGuiInputTextCallbackData__int swig_types[74]
+#define SWIGTYPE_p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int swig_types[75]
+#define SWIGTYPE_p_f_p_ImGuiSelectionExternalStorage_int_bool__void swig_types[76]
+#define SWIGTYPE_p_f_p_ImGuiSizeCallbackData__void swig_types[77]
+#define SWIGTYPE_p_f_p_ImGuiViewport_ImVec2__void swig_types[78]
+#define SWIGTYPE_p_f_p_ImGuiViewport__ImVec2 swig_types[79]
+#define SWIGTYPE_p_f_p_ImGuiViewport__ImVec4 swig_types[80]
+#define SWIGTYPE_p_f_p_ImGuiViewport__bool swig_types[81]
+#define SWIGTYPE_p_f_p_ImGuiViewport__float swig_types[82]
+#define SWIGTYPE_p_f_p_ImGuiViewport__void swig_types[83]
+#define SWIGTYPE_p_f_p_ImGuiViewport_float__void swig_types[84]
+#define SWIGTYPE_p_f_p_ImGuiViewport_p_q_const__char__void swig_types[85]
+#define SWIGTYPE_p_f_p_ImGuiViewport_p_void__void swig_types[86]
+#define SWIGTYPE_p_f_p_ImGuiViewport_unsigned_long_long_p_q_const__void_p_unsigned_long_long__int swig_types[87]
+#define SWIGTYPE_p_f_p_q_const__ImDrawList_p_q_const__ImDrawCmd__void swig_types[88]
+#define SWIGTYPE_p_f_p_void__p_char swig_types[89]
+#define SWIGTYPE_p_f_p_void_int__float swig_types[90]
+#define SWIGTYPE_p_f_p_void_int__p_char swig_types[91]
+#define SWIGTYPE_p_f_p_void_int_p_p_q_const__char__bool swig_types[92]
+#define SWIGTYPE_p_f_p_void_p_q_const__char__void swig_types[93]
+#define SWIGTYPE_p_f_p_void_p_void__void swig_types[94]
+#define SWIGTYPE_p_f_unsigned_int_p_void__p_void swig_types[95]
+#define SWIGTYPE_p_float swig_types[96]
+#define SWIGTYPE_p_glm__vec4 swig_types[97]
+#define SWIGTYPE_p_int swig_types[98]
+#define SWIGTYPE_p_long_long swig_types[99]
+#define SWIGTYPE_p_ofColor swig_types[100]
+#define SWIGTYPE_p_ofEventArgs swig_types[101]
+#define SWIGTYPE_p_ofFloatColor swig_types[102]
+#define SWIGTYPE_p_ofImage swig_types[103]
+#define SWIGTYPE_p_ofIndexType swig_types[104]
+#define SWIGTYPE_p_ofPixels swig_types[105]
+#define SWIGTYPE_p_ofRectangle swig_types[106]
+#define SWIGTYPE_p_ofTexture swig_types[107]
+#define SWIGTYPE_p_ofVec2f swig_types[108]
+#define SWIGTYPE_p_ofVec3f swig_types[109]
+#define SWIGTYPE_p_ofVec4f swig_types[110]
+#define SWIGTYPE_p_ofxImGuiContext swig_types[111]
+#define SWIGTYPE_p_ofxImGui__Gui swig_types[112]
+#define SWIGTYPE_p_p_char swig_types[113]
+#define SWIGTYPE_p_p_f_p_void_p_void__void swig_types[114]
+#define SWIGTYPE_p_p_f_unsigned_int_p_void__p_void swig_types[115]
+#define SWIGTYPE_p_p_unsigned_char swig_types[116]
+#define SWIGTYPE_p_p_void swig_types[117]
+#define SWIGTYPE_p_short swig_types[118]
+#define SWIGTYPE_p_signed_char swig_types[119]
+#define SWIGTYPE_p_std__shared_ptrT_ofAppBaseWindow_t swig_types[120]
+#define SWIGTYPE_p_std__string swig_types[121]
+#define SWIGTYPE_p_unsigned_char swig_types[122]
+#define SWIGTYPE_p_unsigned_int swig_types[123]
+#define SWIGTYPE_p_unsigned_long_long swig_types[124]
+#define SWIGTYPE_p_unsigned_short swig_types[125]
+#define SWIGTYPE_p_va_list swig_types[126]
+#define SWIGTYPE_p_void swig_types[127]
+static swig_type_info *swig_types[129];
+static swig_module_info swig_module = {swig_types, 128, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4043,6 +4057,12 @@ static int _wrap_Gui_isInSharedMode(lua_State* L) { { int SWIG_arg = 0; ofxImGui
       SWIG_fail_ptr("Gui_isInSharedMode",1,SWIGTYPE_p_ofxImGui__Gui); } 
     result = (bool)((ofxImGui::Gui const *)arg1)->isInSharedMode(); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Gui_isMaster(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ; bool result;
+    SWIG_check_num_args("ofxImGui::Gui::isMaster",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::isMaster",1,"ofxImGui::Gui const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
+      SWIG_fail_ptr("Gui_isMaster",1,SWIGTYPE_p_ofxImGui__Gui); }  result = (bool)((ofxImGui::Gui const *)arg1)->isMaster();
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_Gui_beginGui(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
     SWIG_check_num_args("ofxImGui::Gui::begin",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::begin",1,"ofxImGui::Gui *");
@@ -4132,6 +4152,12 @@ static int _wrap_Gui_addFontFromMemory(lua_State* L) { { int SWIG_arg = 0; ofxIm
     result = (ImFont *)(arg1)->addFontFromMemory(arg2,arg3,arg4,(ImFontConfig const *)arg5,(ImWchar const *)arg6,arg7);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFont,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
+static int _wrap_Gui_rebuildFontsTexture(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
+    bool result; SWIG_check_num_args("ofxImGui::Gui::rebuildFontsTexture",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::rebuildFontsTexture",1,"ofxImGui::Gui *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
+      SWIG_fail_ptr("Gui_rebuildFontsTexture",1,SWIGTYPE_p_ofxImGui__Gui); }  result = (bool)(arg1)->rebuildFontsTexture();
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_Gui_setTheme(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
     BaseTheme *arg2 = (BaseTheme *) 0 ; SWIG_check_num_args("ofxImGui::Gui::setTheme",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::setTheme",1,"ofxImGui::Gui *");
@@ -4246,11 +4272,43 @@ static int _wrap_Gui_afterDraw(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui
       SWIG_fail_ptr("Gui_afterDraw",2,SWIGTYPE_p_ofEventArgs); }  (arg1)->afterDraw(*arg2); return SWIG_arg; fail: SWIGUNUSED; }
    lua_error(L); return 0; }
 static int _wrap_Gui_drawOfxImGuiDebugWindow(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
-    SWIG_check_num_args("ofxImGui::Gui::drawOfxImGuiDebugWindow",1,1)
+    bool *arg2 = (bool *) nullptr ; SWIG_check_num_args("ofxImGui::Gui::drawOfxImGuiDebugWindow",1,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::drawOfxImGuiDebugWindow",1,"ofxImGui::Gui const *");
+    if(lua_gettop(L)>=2 && !SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxImGui::Gui::drawOfxImGuiDebugWindow",2,"bool *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
-      SWIG_fail_ptr("Gui_drawOfxImGuiDebugWindow",1,SWIGTYPE_p_ofxImGui__Gui); } 
-    ((ofxImGui::Gui const *)arg1)->drawOfxImGuiDebugWindow(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+      SWIG_fail_ptr("Gui_drawOfxImGuiDebugWindow",1,SWIGTYPE_p_ofxImGui__Gui); }  if(lua_gettop(L)>=2){
+      if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_bool,0))){
+        SWIG_fail_ptr("Gui_drawOfxImGuiDebugWindow",2,SWIGTYPE_p_bool); }  } 
+    ((ofxImGui::Gui const *)arg1)->drawOfxImGuiDebugWindow(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Gui_getMainWindowViewportRect(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
+    bool arg2 = (bool) false ; bool arg3 = (bool) true ; bool arg4 = (bool) true ; ofRectangle result;
+    SWIG_check_num_args("ofxImGui::Gui::getMainWindowViewportRect",1,4)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::getMainWindowViewportRect",1,"ofxImGui::Gui const *");
+    if(lua_gettop(L)>=2 && !lua_isboolean(L,2)) SWIG_fail_arg("ofxImGui::Gui::getMainWindowViewportRect",2,"bool");
+    if(lua_gettop(L)>=3 && !lua_isboolean(L,3)) SWIG_fail_arg("ofxImGui::Gui::getMainWindowViewportRect",3,"bool");
+    if(lua_gettop(L)>=4 && !lua_isboolean(L,4)) SWIG_fail_arg("ofxImGui::Gui::getMainWindowViewportRect",4,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
+      SWIG_fail_ptr("Gui_getMainWindowViewportRect",1,SWIGTYPE_p_ofxImGui__Gui); }  if(lua_gettop(L)>=2){
+      arg2 = (lua_toboolean(L, 2)!=0);}  if(lua_gettop(L)>=3){ arg3 = (lua_toboolean(L, 3)!=0);}  if(lua_gettop(L)>=4){
+      arg4 = (lua_toboolean(L, 4)!=0);}  result = ((ofxImGui::Gui const *)arg1)->getMainWindowViewportRect(arg2,arg3,arg4); {
+      ofRectangle * resultptr = new ofRectangle(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ofRectangle,1); SWIG_arg++; }  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_Gui_getMenuHeight(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ; int result;
+    SWIG_check_num_args("ofxImGui::Gui::getMenuHeight",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::getMenuHeight",1,"ofxImGui::Gui const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
+      SWIG_fail_ptr("Gui_getMenuHeight",1,SWIGTYPE_p_ofxImGui__Gui); } 
+    result = (int)((ofxImGui::Gui const *)arg1)->getMenuHeight(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Gui_getDockingViewport(lua_State* L) { { int SWIG_arg = 0; ofxImGui::Gui *arg1 = (ofxImGui::Gui *) 0 ;
+    ofRectangle result; SWIG_check_num_args("ofxImGui::Gui::getDockingViewport",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxImGui::Gui::getDockingViewport",1,"ofxImGui::Gui const *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxImGui__Gui,0))){
+      SWIG_fail_ptr("Gui_getDockingViewport",1,SWIGTYPE_p_ofxImGui__Gui); } 
+    result = ((ofxImGui::Gui const *)arg1)->getDockingViewport(); { ofRectangle * resultptr = new ofRectangle(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ofRectangle,1); SWIG_arg++; }  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
 static void swig_delete_Gui(void *obj) {
 ofxImGui::Gui *arg1 = (ofxImGui::Gui *) obj;
 delete arg1;
@@ -4270,18 +4328,23 @@ static swig_lua_method swig_Gui_methods[]= {
     { "setup", _wrap_Gui_setup},
     { "exit", _wrap_Gui_exit},
     { "isInSharedMode", _wrap_Gui_isInSharedMode},
+    { "isMaster", _wrap_Gui_isMaster},
     { "beginGui", _wrap_Gui_beginGui},
     { "endGui", _wrap_Gui_endGui},
     { "draw", _wrap_Gui_draw},
     { "setDefaultFont", _wrap_Gui_setDefaultFont},
     { "addFont", _wrap_Gui_addFont},
     { "addFontFromMemory", _wrap_Gui_addFontFromMemory},
+    { "rebuildFontsTexture", _wrap_Gui_rebuildFontsTexture},
     { "setTheme", _wrap_Gui_setTheme},
     { "loadImage", _wrap_Gui_loadImage},
     { "loadPixels", _wrap_Gui_loadPixels},
     { "loadTexture", _wrap_Gui_loadTexture},
     { "afterDraw", _wrap_Gui_afterDraw},
     { "drawOfxImGuiDebugWindow", _wrap_Gui_drawOfxImGuiDebugWindow},
+    { "getMainWindowViewportRect", _wrap_Gui_getMainWindowViewportRect},
+    { "getMenuHeight", _wrap_Gui_getMenuHeight},
+    { "getDockingViewport", _wrap_Gui_getDockingViewport},
     {0,0}
 };
 static swig_lua_method swig_Gui_meta[] = {
@@ -4615,6 +4678,10 @@ static int _wrap_SetCurrentContext(lua_State* L) { { int SWIG_arg = 0; ImGuiCont
 static int _wrap_GetIO(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *result = 0 ; SWIG_check_num_args("ImGui::GetIO",0,0)
     result = (ImGuiIO *) &ImGui::GetIO(); SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiIO,0); SWIG_arg++;  return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GetPlatformIO(lua_State* L) { { int SWIG_arg = 0; ImGuiPlatformIO *result = 0 ;
+    SWIG_check_num_args("ImGui::GetPlatformIO",0,0) result = (ImGuiPlatformIO *) &ImGui::GetPlatformIO();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiPlatformIO,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
 static int _wrap_GetStyle(lua_State* L) { { int SWIG_arg = 0; ImGuiStyle *result = 0 ;
     SWIG_check_num_args("ImGui::GetStyle",0,0) result = (ImGuiStyle *) &ImGui::GetStyle();
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiStyle,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
@@ -4966,22 +5033,6 @@ static int _wrap_SetWindowFocus(lua_State* L) { int argc; int argv[2]={ 1,2} ; a
       return _wrap_SetWindowFocus__SWIG_1(L);}  } 
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SetWindowFocus'\n" "  Possible C/C++ prototypes are:\n"
   "    ImGui::SetWindowFocus()\n" "    ImGui::SetWindowFocus(char const *)\n"); lua_error(L);return 0; }
-static int _wrap_GetContentRegionAvail(lua_State* L) { { int SWIG_arg = 0; ImVec2 result;
-    SWIG_check_num_args("ImGui::GetContentRegionAvail",0,0) result = ImGui::GetContentRegionAvail(); {
-      ImVec2 * resultptr = new ImVec2(result); SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ImVec2,1); SWIG_arg++; } 
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_GetContentRegionMax(lua_State* L) { { int SWIG_arg = 0; ImVec2 result;
-    SWIG_check_num_args("ImGui::GetContentRegionMax",0,0) result = ImGui::GetContentRegionMax(); {
-      ImVec2 * resultptr = new ImVec2(result); SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ImVec2,1); SWIG_arg++; } 
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_GetWindowContentRegionMin(lua_State* L) { { int SWIG_arg = 0; ImVec2 result;
-    SWIG_check_num_args("ImGui::GetWindowContentRegionMin",0,0) result = ImGui::GetWindowContentRegionMin(); {
-      ImVec2 * resultptr = new ImVec2(result); SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ImVec2,1); SWIG_arg++; } 
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_GetWindowContentRegionMax(lua_State* L) { { int SWIG_arg = 0; ImVec2 result;
-    SWIG_check_num_args("ImGui::GetWindowContentRegionMax",0,0) result = ImGui::GetWindowContentRegionMax(); {
-      ImVec2 * resultptr = new ImVec2(result); SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ImVec2,1); SWIG_arg++; } 
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_GetScrollX(lua_State* L) { { int SWIG_arg = 0; float result; SWIG_check_num_args("ImGui::GetScrollX",0,0)
     result = (float)ImGui::GetScrollX(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }
    lua_error(L); return 0; }
@@ -5073,21 +5124,30 @@ static int _wrap_PushStyleVar(lua_State* L) { int argc; int argv[3]={ 1,2,3} ; a
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'PushStyleVar'\n" "  Possible C/C++ prototypes are:\n"
   "    ImGui::PushStyleVar(ImGuiStyleVar,float)\n" "    ImGui::PushStyleVar(ImGuiStyleVar,ImVec2 const &)\n");
   lua_error(L);return 0; }
+static int _wrap_PushStyleVarX(lua_State* L) { { int SWIG_arg = 0; ImGuiStyleVar arg1 ; float arg2 ;
+    SWIG_check_num_args("ImGui::PushStyleVarX",2,2)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::PushStyleVarX",1,"ImGuiStyleVar");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGui::PushStyleVarX",2,"float"); arg1 = (ImGuiStyleVar)lua_tonumber(L, 1);
+    arg2 = (float)lua_tonumber(L, 2); ImGui::PushStyleVarX(arg1,arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_PushStyleVarY(lua_State* L) { { int SWIG_arg = 0; ImGuiStyleVar arg1 ; float arg2 ;
+    SWIG_check_num_args("ImGui::PushStyleVarY",2,2)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::PushStyleVarY",1,"ImGuiStyleVar");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGui::PushStyleVarY",2,"float"); arg1 = (ImGuiStyleVar)lua_tonumber(L, 1);
+    arg2 = (float)lua_tonumber(L, 2); ImGui::PushStyleVarY(arg1,arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
 static int _wrap_PopStyleVar(lua_State* L) { { int SWIG_arg = 0; int arg1 = (int) 1 ;
     SWIG_check_num_args("ImGui::PopStyleVar",0,1)
     if(lua_gettop(L)>=1 && !lua_isnumber(L,1)) SWIG_fail_arg("ImGui::PopStyleVar",1,"int"); if(lua_gettop(L)>=1){
       arg1 = (int)lua_tonumber(L, 1);}  ImGui::PopStyleVar(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_PushTabStop(lua_State* L) { { int SWIG_arg = 0; bool arg1 ; SWIG_check_num_args("ImGui::PushTabStop",1,1)
-    if(!lua_isboolean(L,1)) SWIG_fail_arg("ImGui::PushTabStop",1,"bool"); arg1 = (lua_toboolean(L, 1)!=0);
-    ImGui::PushTabStop(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_PopTabStop(lua_State* L) { { int SWIG_arg = 0; SWIG_check_num_args("ImGui::PopTabStop",0,0)
-    ImGui::PopTabStop(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_PushButtonRepeat(lua_State* L) { { int SWIG_arg = 0; bool arg1 ;
-    SWIG_check_num_args("ImGui::PushButtonRepeat",1,1)
-    if(!lua_isboolean(L,1)) SWIG_fail_arg("ImGui::PushButtonRepeat",1,"bool"); arg1 = (lua_toboolean(L, 1)!=0);
-    ImGui::PushButtonRepeat(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_PopButtonRepeat(lua_State* L) { { int SWIG_arg = 0; SWIG_check_num_args("ImGui::PopButtonRepeat",0,0)
-    ImGui::PopButtonRepeat(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_PushItemFlag(lua_State* L) { { int SWIG_arg = 0; ImGuiItemFlags arg1 ; bool arg2 ;
+    SWIG_check_num_args("ImGui::PushItemFlag",2,2)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::PushItemFlag",1,"ImGuiItemFlags");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGui::PushItemFlag",2,"bool"); arg1 = (ImGuiItemFlags)lua_tonumber(L, 1);
+    arg2 = (lua_toboolean(L, 2)!=0); ImGui::PushItemFlag(arg1,arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_PopItemFlag(lua_State* L) { { int SWIG_arg = 0; SWIG_check_num_args("ImGui::PopItemFlag",0,0)
+    ImGui::PopItemFlag(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_PushItemWidth(lua_State* L) { { int SWIG_arg = 0; float arg1 ; SWIG_check_num_args("ImGui::PushItemWidth",1,1)
     if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::PushItemWidth",1,"float"); arg1 = (float)lua_tonumber(L, 1);
     ImGui::PushItemWidth(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
@@ -5138,11 +5198,6 @@ static int _wrap_GetColorU32(lua_State* L) { int argc; int argv[3]={ 1,2,3} ; ar
         _v = lua_isnumber(L,argv[1]); }  if (_v) { return _wrap_GetColorU32__SWIG_0(L);}  }  } 
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'GetColorU32'\n" "  Possible C/C++ prototypes are:\n"
   "    ImGui::GetColorU32(ImGuiCol,float)\n" "    ImGui::GetColorU32(ImVec4 const &)\n"); lua_error(L);return 0; }
-static int _wrap_GetColorU32_ImU32(lua_State* L) { { int SWIG_arg = 0; ImU32 arg1 ; ImU32 result;
-    SWIG_check_num_args("ImGui::GetColorU32",1,1) if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::GetColorU32",1,"ImU32");
-    SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative"); arg1 = (ImU32)lua_tonumber(L, 1);
-    result = (ImU32)ImGui::GetColorU32(arg1); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_GetStyleColorVec4(lua_State* L) { { int SWIG_arg = 0; ImGuiCol arg1 ; ImVec4 *result = 0 ;
     SWIG_check_num_args("ImGui::GetStyleColorVec4",1,1)
     if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::GetStyleColorVec4",1,"ImGuiCol"); arg1 = (ImGuiCol)lua_tonumber(L, 1);
@@ -5157,6 +5212,10 @@ static int _wrap_SetCursorScreenPos(lua_State* L) { { int SWIG_arg = 0; ImVec2 *
     if(!lua_isuserdata(L,1)) SWIG_fail_arg("ImGui::SetCursorScreenPos",1,"ImVec2 const &");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImVec2,0))){
       SWIG_fail_ptr("SetCursorScreenPos",1,SWIGTYPE_p_ImVec2); }  ImGui::SetCursorScreenPos((ImVec2 const &)*arg1);
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GetContentRegionAvail(lua_State* L) { { int SWIG_arg = 0; ImVec2 result;
+    SWIG_check_num_args("ImGui::GetContentRegionAvail",0,0) result = ImGui::GetContentRegionAvail(); {
+      ImVec2 * resultptr = new ImVec2(result); SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ImVec2,1); SWIG_arg++; } 
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_GetCursorPos(lua_State* L) { { int SWIG_arg = 0; ImVec2 result; SWIG_check_num_args("ImGui::GetCursorPos",0,0)
     result = ImGui::GetCursorPos(); { ImVec2 * resultptr = new ImVec2(result);
@@ -5266,14 +5325,19 @@ static int _wrap_GetID__SWIG_2(lua_State* L) { { int SWIG_arg = 0; void *arg1 = 
     SWIG_check_num_args("ImGui::GetID",1,1) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGui::GetID",1,"void const *");
     arg1=(void *)SWIG_MustGetPtr(L,1,0,0,1,"GetID"); result = (ImGuiID)ImGui::GetID((void const *)arg1);
     lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GetID__SWIG_3(lua_State* L) { { int SWIG_arg = 0; int arg1 ; ImGuiID result;
+    SWIG_check_num_args("ImGui::GetID",1,1) if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::GetID",1,"int");
+    arg1 = (int)lua_tonumber(L, 1); result = (ImGuiID)ImGui::GetID(arg1); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_GetID(lua_State* L) { int argc; int argv[3]={ 1,2,3} ; argc = lua_gettop(L); if (argc == 1) { int _v = 0; {
       void *ptr; if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, 0, 0)) { _v = 0; }  else {
         _v = 1; }  }  if (_v) { return _wrap_GetID__SWIG_2(L);}  }  if (argc == 1) { int _v = 0; {
+      _v = lua_isnumber(L,argv[0]); }  if (_v) { return _wrap_GetID__SWIG_3(L);}  }  if (argc == 1) { int _v = 0; {
       _v = SWIG_lua_isnilstring(L,argv[0]); }  if (_v) { return _wrap_GetID__SWIG_0(L);}  }  if (argc == 2) { int _v = 0; {
       _v = SWIG_lua_isnilstring(L,argv[0]); }  if (_v) { { _v = SWIG_lua_isnilstring(L,argv[1]); }  if (_v) {
         return _wrap_GetID__SWIG_1(L);}  }  }  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'GetID'\n"
   "  Possible C/C++ prototypes are:\n" "    ImGui::GetID(char const *)\n" "    ImGui::GetID(char const *,char const *)\n"
-  "    ImGui::GetID(void const *)\n"); lua_error(L);return 0; }
+  "    ImGui::GetID(void const *)\n" "    ImGui::GetID(int)\n"); lua_error(L);return 0; }
 static int _wrap_TextUnformatted(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; char *arg2 = (char *) NULL ;
     SWIG_check_num_args("ImGui::TextUnformatted",1,2)
     if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("ImGui::TextUnformatted",1,"char const *");
@@ -5387,7 +5451,7 @@ static int _wrap_ArrowButton(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (c
     SWIG_check_num_args("ImGui::ArrowButton",2,2)
     if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("ImGui::ArrowButton",1,"char const *");
     if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGui::ArrowButton",2,"ImGuiDir"); arg1 = (char *)lua_tostring(L, 1);
-    arg2 = (ImGuiDir)lua_tonumber(L, 2); result = (bool)ImGui::ArrowButton((char const *)arg1,arg2);
+    arg2 = (ImGuiDir)(int)lua_tonumber(L, 2); result = (bool)ImGui::ArrowButton((char const *)arg1,arg2);
     lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_Checkbox(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; bool *arg2 = (bool *) 0 ; bool result;
     SWIG_check_num_args("ImGui::Checkbox",2,2) if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("ImGui::Checkbox",1,"char const *");
@@ -5450,6 +5514,17 @@ static int _wrap_ProgressBar(lua_State* L) { { int SWIG_arg = 0; float arg1 ;
   return 0; }
 static int _wrap_Bullet(lua_State* L) { { int SWIG_arg = 0; SWIG_check_num_args("ImGui::Bullet",0,0) ImGui::Bullet();
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_TextLink(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; bool result;
+    SWIG_check_num_args("ImGui::TextLink",1,1) if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("ImGui::TextLink",1,"char const *");
+    arg1 = (char *)lua_tostring(L, 1); result = (bool)ImGui::TextLink((char const *)arg1);
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_TextLinkOpenURL(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; char *arg2 = (char *) NULL ;
+    SWIG_check_num_args("ImGui::TextLinkOpenURL",1,2)
+    if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("ImGui::TextLinkOpenURL",1,"char const *");
+    if(lua_gettop(L)>=2 && !SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("ImGui::TextLinkOpenURL",2,"char const *");
+    arg1 = (char *)lua_tostring(L, 1); if(lua_gettop(L)>=2){ arg2 = (char *)lua_tostring(L, 2);} 
+    ImGui::TextLinkOpenURL((char const *)arg1,(char const *)arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
 static int _wrap_Image(lua_State* L) { { int SWIG_arg = 0; int arg1 ; ImVec2 *arg2 = 0 ;
     ImVec2 const &arg3_defvalue = ImVec2(0, 0) ; ImVec2 *arg3 = (ImVec2 *) &arg3_defvalue ;
     ImVec2 const &arg4_defvalue = ImVec2(1, 1) ; ImVec2 *arg4 = (ImVec2 *) &arg4_defvalue ;
@@ -5471,7 +5546,7 @@ static int _wrap_Image(lua_State* L) { { int SWIG_arg = 0; int arg1 ; ImVec2 *ar
         SWIG_fail_ptr("Image",6,SWIGTYPE_p_ImVec4); }  } 
     ImGui::Image(arg1,(ImVec2 const &)*arg2,(ImVec2 const &)*arg3,(ImVec2 const &)*arg4,(ImVec4 const &)*arg5,(ImVec4 const &)*arg6);
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImageButton__SWIG_0(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; int arg2 ; ImVec2 *arg3 = 0 ;
+static int _wrap_ImageButton(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; int arg2 ; ImVec2 *arg3 = 0 ;
     ImVec2 const &arg4_defvalue = ImVec2(0, 0) ; ImVec2 *arg4 = (ImVec2 *) &arg4_defvalue ;
     ImVec2 const &arg5_defvalue = ImVec2(1, 1) ; ImVec2 *arg5 = (ImVec2 *) &arg5_defvalue ;
     ImVec4 const &arg6_defvalue = ImVec4(0, 0, 0, 0) ; ImVec4 *arg6 = (ImVec4 *) &arg6_defvalue ;
@@ -6425,6 +6500,11 @@ static int _wrap_SetNextItemOpen(lua_State* L) { { int SWIG_arg = 0; bool arg1 ;
     if(lua_gettop(L)>=2 && !lua_isnumber(L,2)) SWIG_fail_arg("ImGui::SetNextItemOpen",2,"ImGuiCond");
     arg1 = (lua_toboolean(L, 1)!=0); if(lua_gettop(L)>=2){ arg2 = (ImGuiCond)lua_tonumber(L, 2);} 
     ImGui::SetNextItemOpen(arg1,arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SetNextItemStorageID(lua_State* L) { { int SWIG_arg = 0; ImGuiID arg1 ;
+    SWIG_check_num_args("ImGui::SetNextItemStorageID",1,1)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::SetNextItemStorageID",1,"ImGuiID");
+    SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative"); arg1 = (ImGuiID)lua_tonumber(L, 1);
+    ImGui::SetNextItemStorageID(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_Selectable(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; bool *arg2 = (bool *) 0 ;
     ImGuiSelectableFlags arg3 = (ImGuiSelectableFlags) 0 ; ImVec2 const &arg4_defvalue = ImVec2(0, 0) ;
     ImVec2 *arg4 = (ImVec2 *) &arg4_defvalue ; bool result; SWIG_check_num_args("ImGui::Selectable",2,4)
@@ -6437,6 +6517,28 @@ static int _wrap_Selectable(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (ch
     if(lua_gettop(L)>=4){ if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_ImVec2,0))){
         SWIG_fail_ptr("Selectable",4,SWIGTYPE_p_ImVec2); }  } 
     result = (bool)ImGui::Selectable((char const *)arg1,arg2,arg3,(ImVec2 const &)*arg4);
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_BeginMultiSelect(lua_State* L) { { int SWIG_arg = 0; ImGuiMultiSelectFlags arg1 ; int arg2 = (int) -1 ;
+    int arg3 = (int) -1 ; ImGuiMultiSelectIO *result = 0 ; SWIG_check_num_args("ImGui::BeginMultiSelect",1,3)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::BeginMultiSelect",1,"ImGuiMultiSelectFlags");
+    if(lua_gettop(L)>=2 && !lua_isnumber(L,2)) SWIG_fail_arg("ImGui::BeginMultiSelect",2,"int");
+    if(lua_gettop(L)>=3 && !lua_isnumber(L,3)) SWIG_fail_arg("ImGui::BeginMultiSelect",3,"int");
+    arg1 = (ImGuiMultiSelectFlags)lua_tonumber(L, 1); if(lua_gettop(L)>=2){ arg2 = (int)lua_tonumber(L, 2);} 
+    if(lua_gettop(L)>=3){ arg3 = (int)lua_tonumber(L, 3);} 
+    result = (ImGuiMultiSelectIO *)ImGui::BeginMultiSelect(arg1,arg2,arg3);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiMultiSelectIO,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_EndMultiSelect(lua_State* L) { { int SWIG_arg = 0; ImGuiMultiSelectIO *result = 0 ;
+    SWIG_check_num_args("ImGui::EndMultiSelect",0,0) result = (ImGuiMultiSelectIO *)ImGui::EndMultiSelect();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiMultiSelectIO,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_SetNextItemSelectionUserData(lua_State* L) { { int SWIG_arg = 0; ImGuiSelectionUserData arg1 ;
+    SWIG_check_num_args("ImGui::SetNextItemSelectionUserData",1,1)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::SetNextItemSelectionUserData",1,"ImGuiSelectionUserData");
+    arg1 = (ImGuiSelectionUserData)lua_tonumber(L, 1); ImGui::SetNextItemSelectionUserData(arg1); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_IsItemToggledSelection(lua_State* L) { { int SWIG_arg = 0; bool result;
+    SWIG_check_num_args("ImGui::IsItemToggledSelection",0,0) result = (bool)ImGui::IsItemToggledSelection();
     lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_BeginListBox(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ;
     ImVec2 const &arg2_defvalue = ImVec2(0, 0) ; ImVec2 *arg2 = (ImVec2 *) &arg2_defvalue ; bool result;
@@ -6891,6 +6993,9 @@ static int _wrap_TableSetColumnEnabled(lua_State* L) { { int SWIG_arg = 0; int a
     if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGui::TableSetColumnEnabled",2,"bool"); arg1 = (int)lua_tonumber(L, 1);
     arg2 = (lua_toboolean(L, 2)!=0); ImGui::TableSetColumnEnabled(arg1,arg2); return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
+static int _wrap_TableGetHoveredColumn(lua_State* L) { { int SWIG_arg = 0; int result;
+    SWIG_check_num_args("ImGui::TableGetHoveredColumn",0,0) result = (int)ImGui::TableGetHoveredColumn();
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_TableSetBgColor(lua_State* L) { { int SWIG_arg = 0; ImGuiTableBgTarget arg1 ; ImU32 arg2 ;
     int arg3 = (int) -1 ; SWIG_check_num_args("ImGui::TableSetBgColor",2,3)
     if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::TableSetBgColor",1,"ImGuiTableBgTarget");
@@ -6992,18 +7097,21 @@ static int _wrap_DockSpace(lua_State* L) { { int SWIG_arg = 0; ImGuiID arg1 ; Im
         SWIG_fail_ptr("DockSpace",4,SWIGTYPE_p_ImGuiWindowClass); }  } 
     result = (ImGuiID)ImGui::DockSpace(arg1,(ImVec2 const &)*arg2,arg3,(ImGuiWindowClass const *)arg4);
     lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_DockSpaceOverViewport(lua_State* L) { { int SWIG_arg = 0; ImGuiViewport *arg1 = (ImGuiViewport *) NULL ;
-    ImGuiDockNodeFlags arg2 = (ImGuiDockNodeFlags) 0 ; ImGuiWindowClass *arg3 = (ImGuiWindowClass *) NULL ; ImGuiID result;
-    SWIG_check_num_args("ImGui::DockSpaceOverViewport",0,3)
-    if(lua_gettop(L)>=1 && !SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGui::DockSpaceOverViewport",1,"ImGuiViewport const *");
-    if(lua_gettop(L)>=2 && !lua_isnumber(L,2)) SWIG_fail_arg("ImGui::DockSpaceOverViewport",2,"ImGuiDockNodeFlags");
-    if(lua_gettop(L)>=3 && !SWIG_isptrtype(L,3)) SWIG_fail_arg("ImGui::DockSpaceOverViewport",3,"ImGuiWindowClass const *");
-    if(lua_gettop(L)>=1){ if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiViewport,0))){
-        SWIG_fail_ptr("DockSpaceOverViewport",1,SWIGTYPE_p_ImGuiViewport); }  }  if(lua_gettop(L)>=2){
-      arg2 = (ImGuiDockNodeFlags)lua_tonumber(L, 2);}  if(lua_gettop(L)>=3){
-      if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_ImGuiWindowClass,0))){
-        SWIG_fail_ptr("DockSpaceOverViewport",3,SWIGTYPE_p_ImGuiWindowClass); }  } 
-    result = (ImGuiID)ImGui::DockSpaceOverViewport((ImGuiViewport const *)arg1,arg2,(ImGuiWindowClass const *)arg3);
+static int _wrap_DockSpaceOverViewport(lua_State* L) { { int SWIG_arg = 0; ImGuiID arg1 = (ImGuiID) 0 ;
+    ImGuiViewport *arg2 = (ImGuiViewport *) NULL ; ImGuiDockNodeFlags arg3 = (ImGuiDockNodeFlags) 0 ;
+    ImGuiWindowClass *arg4 = (ImGuiWindowClass *) NULL ; ImGuiID result; SWIG_check_num_args("ImGui::DockSpaceOverViewport",0,4)
+    if(lua_gettop(L)>=1 && !lua_isnumber(L,1)) SWIG_fail_arg("ImGui::DockSpaceOverViewport",1,"ImGuiID");
+    if(lua_gettop(L)>=2 && !SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGui::DockSpaceOverViewport",2,"ImGuiViewport const *");
+    if(lua_gettop(L)>=3 && !lua_isnumber(L,3)) SWIG_fail_arg("ImGui::DockSpaceOverViewport",3,"ImGuiDockNodeFlags");
+    if(lua_gettop(L)>=4 && !SWIG_isptrtype(L,4)) SWIG_fail_arg("ImGui::DockSpaceOverViewport",4,"ImGuiWindowClass const *");
+    if(lua_gettop(L)>=1){ SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative");
+      arg1 = (ImGuiID)lua_tonumber(L, 1);}  if(lua_gettop(L)>=2){
+      if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImGuiViewport,0))){
+        SWIG_fail_ptr("DockSpaceOverViewport",2,SWIGTYPE_p_ImGuiViewport); }  }  if(lua_gettop(L)>=3){
+      arg3 = (ImGuiDockNodeFlags)lua_tonumber(L, 3);}  if(lua_gettop(L)>=4){
+      if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_ImGuiWindowClass,0))){
+        SWIG_fail_ptr("DockSpaceOverViewport",4,SWIGTYPE_p_ImGuiWindowClass); }  } 
+    result = (ImGuiID)ImGui::DockSpaceOverViewport(arg1,(ImGuiViewport const *)arg2,arg3,(ImGuiWindowClass const *)arg4);
     lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_SetNextWindowDockID(lua_State* L) { { int SWIG_arg = 0; ImGuiID arg1 ; ImGuiCond arg2 = (ImGuiCond) 0 ;
     SWIG_check_num_args("ImGui::SetNextWindowDockID",1,2)
@@ -7114,6 +7222,10 @@ static int _wrap_SetKeyboardFocusHere(lua_State* L) { { int SWIG_arg = 0; int ar
     if(lua_gettop(L)>=1 && !lua_isnumber(L,1)) SWIG_fail_arg("ImGui::SetKeyboardFocusHere",1,"int"); if(lua_gettop(L)>=1){
       arg1 = (int)lua_tonumber(L, 1);}  ImGui::SetKeyboardFocusHere(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
+static int _wrap_SetNavCursorVisible(lua_State* L) { { int SWIG_arg = 0; bool arg1 ;
+    SWIG_check_num_args("ImGui::SetNavCursorVisible",1,1)
+    if(!lua_isboolean(L,1)) SWIG_fail_arg("ImGui::SetNavCursorVisible",1,"bool"); arg1 = (lua_toboolean(L, 1)!=0);
+    ImGui::SetNavCursorVisible(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_SetNextItemAllowOverlap(lua_State* L) { { int SWIG_arg = 0;
     SWIG_check_num_args("ImGui::SetNextItemAllowOverlap",0,0) ImGui::SetNextItemAllowOverlap(); return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
@@ -7179,44 +7291,22 @@ static int _wrap_GetMainViewport(lua_State* L) { { int SWIG_arg = 0; ImGuiViewpo
     SWIG_check_num_args("ImGui::GetMainViewport",0,0) result = (ImGuiViewport *)ImGui::GetMainViewport();
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiViewport,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
-static int _wrap_GetBackgroundDrawList__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ImDrawList *result = 0 ;
-    SWIG_check_num_args("ImGui::GetBackgroundDrawList",0,0) result = (ImDrawList *)ImGui::GetBackgroundDrawList();
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImDrawList,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_GetForegroundDrawList__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ImDrawList *result = 0 ;
-    SWIG_check_num_args("ImGui::GetForegroundDrawList",0,0) result = (ImDrawList *)ImGui::GetForegroundDrawList();
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImDrawList,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_GetBackgroundDrawList__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ImGuiViewport *arg1 = (ImGuiViewport *) 0 ;
-    ImDrawList *result = 0 ; SWIG_check_num_args("ImGui::GetBackgroundDrawList",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGui::GetBackgroundDrawList",1,"ImGuiViewport *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiViewport,0))){
-      SWIG_fail_ptr("GetBackgroundDrawList",1,SWIGTYPE_p_ImGuiViewport); } 
+static int _wrap_GetBackgroundDrawList(lua_State* L) { { int SWIG_arg = 0; ImGuiViewport *arg1 = (ImGuiViewport *) NULL ;
+    ImDrawList *result = 0 ; SWIG_check_num_args("ImGui::GetBackgroundDrawList",0,1)
+    if(lua_gettop(L)>=1 && !SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGui::GetBackgroundDrawList",1,"ImGuiViewport *");
+    if(lua_gettop(L)>=1){ if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiViewport,0))){
+        SWIG_fail_ptr("GetBackgroundDrawList",1,SWIGTYPE_p_ImGuiViewport); }  } 
     result = (ImDrawList *)ImGui::GetBackgroundDrawList(arg1);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImDrawList,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
-static int _wrap_GetBackgroundDrawList(lua_State* L) { int argc; int argv[2]={ 1,2} ; argc = lua_gettop(L); if (argc == 0) {
-    return _wrap_GetBackgroundDrawList__SWIG_0(L);}  if (argc == 1) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ImGuiViewport, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { return _wrap_GetBackgroundDrawList__SWIG_1(L);}  } 
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'GetBackgroundDrawList'\n"
-  "  Possible C/C++ prototypes are:\n" "    ImGui::GetBackgroundDrawList()\n"
-  "    ImGui::GetBackgroundDrawList(ImGuiViewport *)\n"); lua_error(L);return 0; }
-static int _wrap_GetForegroundDrawList__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ImGuiViewport *arg1 = (ImGuiViewport *) 0 ;
-    ImDrawList *result = 0 ; SWIG_check_num_args("ImGui::GetForegroundDrawList",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGui::GetForegroundDrawList",1,"ImGuiViewport *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiViewport,0))){
-      SWIG_fail_ptr("GetForegroundDrawList",1,SWIGTYPE_p_ImGuiViewport); } 
+static int _wrap_GetForegroundDrawList(lua_State* L) { { int SWIG_arg = 0; ImGuiViewport *arg1 = (ImGuiViewport *) NULL ;
+    ImDrawList *result = 0 ; SWIG_check_num_args("ImGui::GetForegroundDrawList",0,1)
+    if(lua_gettop(L)>=1 && !SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGui::GetForegroundDrawList",1,"ImGuiViewport *");
+    if(lua_gettop(L)>=1){ if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiViewport,0))){
+        SWIG_fail_ptr("GetForegroundDrawList",1,SWIGTYPE_p_ImGuiViewport); }  } 
     result = (ImDrawList *)ImGui::GetForegroundDrawList(arg1);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImDrawList,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
-static int _wrap_GetForegroundDrawList(lua_State* L) { int argc; int argv[2]={ 1,2} ; argc = lua_gettop(L); if (argc == 0) {
-    return _wrap_GetForegroundDrawList__SWIG_0(L);}  if (argc == 1) { int _v = 0; { void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ImGuiViewport, 0)) { _v = 0; }
-       else { _v = 1; }  }  if (_v) { return _wrap_GetForegroundDrawList__SWIG_1(L);}  } 
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'GetForegroundDrawList'\n"
-  "  Possible C/C++ prototypes are:\n" "    ImGui::GetForegroundDrawList()\n"
-  "    ImGui::GetForegroundDrawList(ImGuiViewport *)\n"); lua_error(L);return 0; }
 static int _wrap_IsRectVisible__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ImVec2 *arg1 = 0 ; bool result;
     SWIG_check_num_args("ImGui::IsRectVisible",1,1)
     if(!lua_isuserdata(L,1)) SWIG_fail_arg("ImGui::IsRectVisible",1,"ImVec2 const &");
@@ -7364,6 +7454,23 @@ static int _wrap_SetNextFrameWantCaptureKeyboard(lua_State* L) { { int SWIG_arg 
     SWIG_check_num_args("ImGui::SetNextFrameWantCaptureKeyboard",1,1)
     if(!lua_isboolean(L,1)) SWIG_fail_arg("ImGui::SetNextFrameWantCaptureKeyboard",1,"bool"); arg1 = (lua_toboolean(L, 1)!=0);
     ImGui::SetNextFrameWantCaptureKeyboard(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Shortcut(lua_State* L) { { int SWIG_arg = 0; ImGuiKeyChord arg1 ; ImGuiInputFlags arg2 = (ImGuiInputFlags) 0 ;
+    bool result; SWIG_check_num_args("ImGui::Shortcut",1,2)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::Shortcut",1,"ImGuiKeyChord");
+    if(lua_gettop(L)>=2 && !lua_isnumber(L,2)) SWIG_fail_arg("ImGui::Shortcut",2,"ImGuiInputFlags");
+    arg1 = (ImGuiKeyChord)lua_tonumber(L, 1); if(lua_gettop(L)>=2){ arg2 = (ImGuiInputFlags)lua_tonumber(L, 2);} 
+    result = (bool)ImGui::Shortcut(arg1,arg2); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SetNextItemShortcut(lua_State* L) { { int SWIG_arg = 0; ImGuiKeyChord arg1 ;
+    ImGuiInputFlags arg2 = (ImGuiInputFlags) 0 ; SWIG_check_num_args("ImGui::SetNextItemShortcut",1,2)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::SetNextItemShortcut",1,"ImGuiKeyChord");
+    if(lua_gettop(L)>=2 && !lua_isnumber(L,2)) SWIG_fail_arg("ImGui::SetNextItemShortcut",2,"ImGuiInputFlags");
+    arg1 = (ImGuiKeyChord)lua_tonumber(L, 1); if(lua_gettop(L)>=2){ arg2 = (ImGuiInputFlags)lua_tonumber(L, 2);} 
+    ImGui::SetNextItemShortcut(arg1,arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_SetItemKeyOwner(lua_State* L) { { int SWIG_arg = 0; ImGuiKey arg1 ;
+    SWIG_check_num_args("ImGui::SetItemKeyOwner",1,1)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::SetItemKeyOwner",1,"ImGuiKey"); arg1 = (ImGuiKey)(int)lua_tonumber(L, 1);
+    ImGui::SetItemKeyOwner(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_IsMouseDown(lua_State* L) { { int SWIG_arg = 0; ImGuiMouseButton arg1 ; bool result;
     SWIG_check_num_args("ImGui::IsMouseDown",1,1)
     if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::IsMouseDown",1,"ImGuiMouseButton");
@@ -7491,6 +7598,8 @@ static int _wrap_DebugFlashStyleColor(lua_State* L) { { int SWIG_arg = 0; ImGuiC
     SWIG_check_num_args("ImGui::DebugFlashStyleColor",1,1)
     if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::DebugFlashStyleColor",1,"ImGuiCol"); arg1 = (ImGuiCol)lua_tonumber(L, 1);
     ImGui::DebugFlashStyleColor(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_DebugStartItemPicker(lua_State* L) { { int SWIG_arg = 0; SWIG_check_num_args("ImGui::DebugStartItemPicker",0,0)
+    ImGui::DebugStartItemPicker(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_DebugCheckVersionAndDataLayout(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; size_t arg2 ;
     size_t arg3 ; size_t arg4 ; size_t arg5 ; size_t arg6 ; size_t arg7 ; bool result;
     SWIG_check_num_args("ImGui::DebugCheckVersionAndDataLayout",7,7)
@@ -7509,6 +7618,17 @@ static int _wrap_DebugCheckVersionAndDataLayout(lua_State* L) { { int SWIG_arg =
     SWIG_contract_assert((lua_tonumber(L,7)>=0),"number must not be negative"); arg7 = (size_t)lua_tonumber(L, 7);
     result = (bool)ImGui::DebugCheckVersionAndDataLayout((char const *)arg1,arg2,arg3,arg4,arg5,arg6,arg7);
     lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_DebugLog(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; void *arg2 = 0 ;
+    SWIG_check_num_args("ImGui::DebugLog",1,1) if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("ImGui::DebugLog",1,"char const *");
+    arg1 = (char *)lua_tostring(L, 1); ImGui::DebugLog((char const *)arg1,arg2); return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_DebugLogV(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; va_list arg2 ; va_list *argp2 ;
+    SWIG_check_num_args("ImGui::DebugLogV",2,2)
+    if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("ImGui::DebugLogV",1,"char const *");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ImGui::DebugLogV",2,"va_list"); arg1 = (char *)lua_tostring(L, 1);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_va_list,0))){ SWIG_fail_ptr("DebugLogV",2,SWIGTYPE_p_va_list); }
+     arg2 = *argp2; ImGui::DebugLogV((char const *)arg1,SWIG_STD_MOVE(arg2)); return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
 static int _wrap_SetAllocatorFunctions(lua_State* L) { { int SWIG_arg = 0; ImGuiMemAllocFunc arg1 = (ImGuiMemAllocFunc) 0 ;
     ImGuiMemFreeFunc arg2 = (ImGuiMemFreeFunc) 0 ; void *arg3 = (void *) NULL ;
     SWIG_check_num_args("ImGui::SetAllocatorFunctions",2,3)
@@ -7542,10 +7662,6 @@ static int _wrap_MemAlloc(lua_State* L) { { int SWIG_arg = 0; size_t arg1 ; void
 static int _wrap_MemFree(lua_State* L) { { int SWIG_arg = 0; void *arg1 = (void *) 0 ; SWIG_check_num_args("ImGui::MemFree",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGui::MemFree",1,"void *"); arg1=(void *)SWIG_MustGetPtr(L,1,0,0,1,"MemFree");
     ImGui::MemFree(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_GetPlatformIO(lua_State* L) { { int SWIG_arg = 0; ImGuiPlatformIO *result = 0 ;
-    SWIG_check_num_args("ImGui::GetPlatformIO",0,0) result = (ImGuiPlatformIO *) &ImGui::GetPlatformIO();
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiPlatformIO,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
 static int _wrap_UpdatePlatformWindows(lua_State* L) { { int SWIG_arg = 0;
     SWIG_check_num_args("ImGui::UpdatePlatformWindows",0,0) ImGui::UpdatePlatformWindows(); return SWIG_arg; fail: SWIGUNUSED; }
    lua_error(L); return 0; }
@@ -7738,16 +7854,16 @@ static int _wrap_ImGuiTableColumnSortSpecs_SortDirection_set(lua_State* L) { { i
     if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiTableColumnSortSpecs::SortDirection",2,"ImGuiSortDirection");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiTableColumnSortSpecs,0))){
       SWIG_fail_ptr("ImGuiTableColumnSortSpecs_SortDirection_set",1,SWIGTYPE_p_ImGuiTableColumnSortSpecs); } 
-    arg2 = (ImGuiSortDirection)lua_tonumber(L, 2); if (arg1) (arg1)->SortDirection = arg2; return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
+    arg2 = (ImGuiSortDirection)(int)lua_tonumber(L, 2); if (arg1) (arg1)->SortDirection = arg2; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiTableColumnSortSpecs_SortDirection_get(lua_State* L) { { int SWIG_arg = 0;
     ImGuiTableColumnSortSpecs *arg1 = (ImGuiTableColumnSortSpecs *) 0 ; ImGuiSortDirection result;
     SWIG_check_num_args("ImGuiTableColumnSortSpecs::SortDirection",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiTableColumnSortSpecs::SortDirection",1,"ImGuiTableColumnSortSpecs *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiTableColumnSortSpecs,0))){
       SWIG_fail_ptr("ImGuiTableColumnSortSpecs_SortDirection_get",1,SWIGTYPE_p_ImGuiTableColumnSortSpecs); } 
-    result = (ImGuiSortDirection) ((arg1)->SortDirection); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+    result = (ImGuiSortDirection) ((arg1)->SortDirection); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_new_ImGuiTableColumnSortSpecs(lua_State* L) { { int SWIG_arg = 0; ImGuiTableColumnSortSpecs *result = 0 ;
     SWIG_check_num_args("ImGuiTableColumnSortSpecs::ImGuiTableColumnSortSpecs",0,0)
     result = (ImGuiTableColumnSortSpecs *)new ImGuiTableColumnSortSpecs();
@@ -7958,15 +8074,16 @@ static int _wrap_ImGuiStyle_WindowMenuButtonPosition_set(lua_State* L) { { int S
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::WindowMenuButtonPosition",1,"ImGuiStyle *");
     if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiStyle::WindowMenuButtonPosition",2,"ImGuiDir");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStyle,0))){
-      SWIG_fail_ptr("ImGuiStyle_WindowMenuButtonPosition_set",1,SWIGTYPE_p_ImGuiStyle); }  arg2 = (ImGuiDir)lua_tonumber(L, 2);
-    if (arg1) (arg1)->WindowMenuButtonPosition = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+      SWIG_fail_ptr("ImGuiStyle_WindowMenuButtonPosition_set",1,SWIGTYPE_p_ImGuiStyle); } 
+    arg2 = (ImGuiDir)(int)lua_tonumber(L, 2); if (arg1) (arg1)->WindowMenuButtonPosition = arg2; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiStyle_WindowMenuButtonPosition_get(lua_State* L) { { int SWIG_arg = 0;
     ImGuiStyle *arg1 = (ImGuiStyle *) 0 ; ImGuiDir result; SWIG_check_num_args("ImGuiStyle::WindowMenuButtonPosition",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::WindowMenuButtonPosition",1,"ImGuiStyle *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStyle,0))){
       SWIG_fail_ptr("ImGuiStyle_WindowMenuButtonPosition_get",1,SWIGTYPE_p_ImGuiStyle); } 
-    result = (ImGuiDir) ((arg1)->WindowMenuButtonPosition); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+    result = (ImGuiDir) ((arg1)->WindowMenuButtonPosition); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiStyle_ChildRounding_set(lua_State* L) { { int SWIG_arg = 0; ImGuiStyle *arg1 = (ImGuiStyle *) 0 ;
     float arg2 ; SWIG_check_num_args("ImGuiStyle::ChildRounding",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::ChildRounding",1,"ImGuiStyle *");
@@ -8272,6 +8389,20 @@ static int _wrap_ImGuiStyle_TabBarBorderSize_get(lua_State* L) { { int SWIG_arg 
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStyle,0))){
       SWIG_fail_ptr("ImGuiStyle_TabBarBorderSize_get",1,SWIGTYPE_p_ImGuiStyle); }  result = (float) ((arg1)->TabBarBorderSize);
     lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStyle_TabBarOverlineSize_set(lua_State* L) { { int SWIG_arg = 0; ImGuiStyle *arg1 = (ImGuiStyle *) 0 ;
+    float arg2 ; SWIG_check_num_args("ImGuiStyle::TabBarOverlineSize",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::TabBarOverlineSize",1,"ImGuiStyle *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiStyle::TabBarOverlineSize",2,"float");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStyle,0))){
+      SWIG_fail_ptr("ImGuiStyle_TabBarOverlineSize_set",1,SWIGTYPE_p_ImGuiStyle); }  arg2 = (float)lua_tonumber(L, 2);
+    if (arg1) (arg1)->TabBarOverlineSize = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStyle_TabBarOverlineSize_get(lua_State* L) { { int SWIG_arg = 0; ImGuiStyle *arg1 = (ImGuiStyle *) 0 ;
+    float result; SWIG_check_num_args("ImGuiStyle::TabBarOverlineSize",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::TabBarOverlineSize",1,"ImGuiStyle *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStyle,0))){
+      SWIG_fail_ptr("ImGuiStyle_TabBarOverlineSize_get",1,SWIGTYPE_p_ImGuiStyle); } 
+    result = (float) ((arg1)->TabBarOverlineSize); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiStyle_TableAngledHeadersAngle_set(lua_State* L) { { int SWIG_arg = 0;
     ImGuiStyle *arg1 = (ImGuiStyle *) 0 ; float arg2 ; SWIG_check_num_args("ImGuiStyle::TableAngledHeadersAngle",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::TableAngledHeadersAngle",1,"ImGuiStyle *");
@@ -8286,20 +8417,38 @@ static int _wrap_ImGuiStyle_TableAngledHeadersAngle_get(lua_State* L) { { int SW
       SWIG_fail_ptr("ImGuiStyle_TableAngledHeadersAngle_get",1,SWIGTYPE_p_ImGuiStyle); } 
     result = (float) ((arg1)->TableAngledHeadersAngle); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStyle_TableAngledHeadersTextAlign_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiStyle *arg1 = (ImGuiStyle *) 0 ; ImVec2 *arg2 = (ImVec2 *) 0 ;
+    SWIG_check_num_args("ImGuiStyle::TableAngledHeadersTextAlign",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::TableAngledHeadersTextAlign",1,"ImGuiStyle *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiStyle::TableAngledHeadersTextAlign",2,"ImVec2 *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStyle,0))){
+      SWIG_fail_ptr("ImGuiStyle_TableAngledHeadersTextAlign_set",1,SWIGTYPE_p_ImGuiStyle); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
+      SWIG_fail_ptr("ImGuiStyle_TableAngledHeadersTextAlign_set",2,SWIGTYPE_p_ImVec2); } 
+    if (arg1) (arg1)->TableAngledHeadersTextAlign = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStyle_TableAngledHeadersTextAlign_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiStyle *arg1 = (ImGuiStyle *) 0 ; ImVec2 *result = 0 ;
+    SWIG_check_num_args("ImGuiStyle::TableAngledHeadersTextAlign",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::TableAngledHeadersTextAlign",1,"ImGuiStyle *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStyle,0))){
+      SWIG_fail_ptr("ImGuiStyle_TableAngledHeadersTextAlign_get",1,SWIGTYPE_p_ImGuiStyle); } 
+    result = (ImVec2 *)& ((arg1)->TableAngledHeadersTextAlign); SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVec2,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiStyle_ColorButtonPosition_set(lua_State* L) { { int SWIG_arg = 0; ImGuiStyle *arg1 = (ImGuiStyle *) 0 ;
     ImGuiDir arg2 ; SWIG_check_num_args("ImGuiStyle::ColorButtonPosition",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::ColorButtonPosition",1,"ImGuiStyle *");
     if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiStyle::ColorButtonPosition",2,"ImGuiDir");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStyle,0))){
-      SWIG_fail_ptr("ImGuiStyle_ColorButtonPosition_set",1,SWIGTYPE_p_ImGuiStyle); }  arg2 = (ImGuiDir)lua_tonumber(L, 2);
+      SWIG_fail_ptr("ImGuiStyle_ColorButtonPosition_set",1,SWIGTYPE_p_ImGuiStyle); }  arg2 = (ImGuiDir)(int)lua_tonumber(L, 2);
     if (arg1) (arg1)->ColorButtonPosition = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiStyle_ColorButtonPosition_get(lua_State* L) { { int SWIG_arg = 0; ImGuiStyle *arg1 = (ImGuiStyle *) 0 ;
     ImGuiDir result; SWIG_check_num_args("ImGuiStyle::ColorButtonPosition",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::ColorButtonPosition",1,"ImGuiStyle *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStyle,0))){
       SWIG_fail_ptr("ImGuiStyle_ColorButtonPosition_get",1,SWIGTYPE_p_ImGuiStyle); } 
-    result = (ImGuiDir) ((arg1)->ColorButtonPosition); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+    result = (ImGuiDir) ((arg1)->ColorButtonPosition); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiStyle_ButtonTextAlign_set(lua_State* L) { { int SWIG_arg = 0; ImGuiStyle *arg1 = (ImGuiStyle *) 0 ;
     ImVec2 *arg2 = (ImVec2 *) 0 ; SWIG_check_num_args("ImGuiStyle::ButtonTextAlign",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStyle::ButtonTextAlign",1,"ImGuiStyle *");
@@ -8650,7 +8799,9 @@ static swig_lua_attribute swig_ImGuiStyle_attributes[] = {
     { "TabBorderSize", _wrap_ImGuiStyle_TabBorderSize_get, _wrap_ImGuiStyle_TabBorderSize_set },
     { "TabMinWidthForCloseButton", _wrap_ImGuiStyle_TabMinWidthForCloseButton_get, _wrap_ImGuiStyle_TabMinWidthForCloseButton_set },
     { "TabBarBorderSize", _wrap_ImGuiStyle_TabBarBorderSize_get, _wrap_ImGuiStyle_TabBarBorderSize_set },
+    { "TabBarOverlineSize", _wrap_ImGuiStyle_TabBarOverlineSize_get, _wrap_ImGuiStyle_TabBarOverlineSize_set },
     { "TableAngledHeadersAngle", _wrap_ImGuiStyle_TableAngledHeadersAngle_get, _wrap_ImGuiStyle_TableAngledHeadersAngle_set },
+    { "TableAngledHeadersTextAlign", _wrap_ImGuiStyle_TableAngledHeadersTextAlign_get, _wrap_ImGuiStyle_TableAngledHeadersTextAlign_set },
     { "ColorButtonPosition", _wrap_ImGuiStyle_ColorButtonPosition_get, _wrap_ImGuiStyle_ColorButtonPosition_set },
     { "ButtonTextAlign", _wrap_ImGuiStyle_ButtonTextAlign_get, _wrap_ImGuiStyle_ButtonTextAlign_set },
     { "SelectableTextAlign", _wrap_ImGuiStyle_SelectableTextAlign_get, _wrap_ImGuiStyle_SelectableTextAlign_set },
@@ -8979,6 +9130,104 @@ static int _wrap_ImGuiIO_DisplayFramebufferScale_get(lua_State* L) { { int SWIG_
       SWIG_fail_ptr("ImGuiIO_DisplayFramebufferScale_get",1,SWIGTYPE_p_ImGuiIO); } 
     result = (ImVec2 *)& ((arg1)->DisplayFramebufferScale); SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVec2,0); SWIG_arg++; 
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavSwapGamepadButtons_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigNavSwapGamepadButtons",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavSwapGamepadButtons",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigNavSwapGamepadButtons",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavSwapGamepadButtons_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigNavSwapGamepadButtons = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavSwapGamepadButtons_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigNavSwapGamepadButtons",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavSwapGamepadButtons",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavSwapGamepadButtons_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigNavSwapGamepadButtons); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavMoveSetMousePos_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigNavMoveSetMousePos",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavMoveSetMousePos",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigNavMoveSetMousePos",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavMoveSetMousePos_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigNavMoveSetMousePos = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavMoveSetMousePos_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigNavMoveSetMousePos",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavMoveSetMousePos",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavMoveSetMousePos_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigNavMoveSetMousePos); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavCaptureKeyboard_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigNavCaptureKeyboard",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavCaptureKeyboard",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigNavCaptureKeyboard",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavCaptureKeyboard_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigNavCaptureKeyboard = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavCaptureKeyboard_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigNavCaptureKeyboard",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavCaptureKeyboard",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavCaptureKeyboard_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigNavCaptureKeyboard); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavEscapeClearFocusItem_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigNavEscapeClearFocusItem",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavEscapeClearFocusItem",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigNavEscapeClearFocusItem",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavEscapeClearFocusItem_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigNavEscapeClearFocusItem = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavEscapeClearFocusItem_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigNavEscapeClearFocusItem",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavEscapeClearFocusItem",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavEscapeClearFocusItem_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigNavEscapeClearFocusItem); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavEscapeClearFocusWindow_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigNavEscapeClearFocusWindow",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavEscapeClearFocusWindow",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigNavEscapeClearFocusWindow",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavEscapeClearFocusWindow_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigNavEscapeClearFocusWindow = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavEscapeClearFocusWindow_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigNavEscapeClearFocusWindow",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavEscapeClearFocusWindow",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavEscapeClearFocusWindow_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigNavEscapeClearFocusWindow); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavCursorVisibleAuto_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigNavCursorVisibleAuto",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavCursorVisibleAuto",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigNavCursorVisibleAuto",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavCursorVisibleAuto_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigNavCursorVisibleAuto = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavCursorVisibleAuto_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigNavCursorVisibleAuto",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavCursorVisibleAuto",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavCursorVisibleAuto_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigNavCursorVisibleAuto); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavCursorVisibleAlways_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigNavCursorVisibleAlways",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavCursorVisibleAlways",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigNavCursorVisibleAlways",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavCursorVisibleAlways_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigNavCursorVisibleAlways = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigNavCursorVisibleAlways_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigNavCursorVisibleAlways",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigNavCursorVisibleAlways",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigNavCursorVisibleAlways_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigNavCursorVisibleAlways); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_ConfigDockingNoSplit_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigDockingNoSplit",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigDockingNoSplit",1,"ImGuiIO *");
@@ -9201,6 +9450,34 @@ static int _wrap_ImGuiIO_ConfigWindowsMoveFromTitleBarOnly_get(lua_State* L) { {
       SWIG_fail_ptr("ImGuiIO_ConfigWindowsMoveFromTitleBarOnly_get",1,SWIGTYPE_p_ImGuiIO); } 
     result = (bool) ((arg1)->ConfigWindowsMoveFromTitleBarOnly); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigWindowsCopyContentsWithCtrlC_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiIO *arg1 = (ImGuiIO *) 0 ; bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigWindowsCopyContentsWithCtrlC",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigWindowsCopyContentsWithCtrlC",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigWindowsCopyContentsWithCtrlC",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigWindowsCopyContentsWithCtrlC_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigWindowsCopyContentsWithCtrlC = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigWindowsCopyContentsWithCtrlC_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiIO *arg1 = (ImGuiIO *) 0 ; bool result; SWIG_check_num_args("ImGuiIO::ConfigWindowsCopyContentsWithCtrlC",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigWindowsCopyContentsWithCtrlC",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigWindowsCopyContentsWithCtrlC_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigWindowsCopyContentsWithCtrlC); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigScrollbarScrollByPage_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigScrollbarScrollByPage",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigScrollbarScrollByPage",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigScrollbarScrollByPage",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigScrollbarScrollByPage_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigScrollbarScrollByPage = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigScrollbarScrollByPage_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigScrollbarScrollByPage",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigScrollbarScrollByPage",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigScrollbarScrollByPage_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigScrollbarScrollByPage); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_ConfigMemoryCompactTimer_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     float arg2 ; SWIG_check_num_args("ImGuiIO::ConfigMemoryCompactTimer",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigMemoryCompactTimer",1,"ImGuiIO *");
@@ -9282,6 +9559,61 @@ static int _wrap_ImGuiIO_KeyRepeatRate_get(lua_State* L) { { int SWIG_arg = 0; I
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
       SWIG_fail_ptr("ImGuiIO_KeyRepeatRate_get",1,SWIGTYPE_p_ImGuiIO); }  result = (float) ((arg1)->KeyRepeatRate);
     lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigErrorRecovery_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ImGuiIO::ConfigErrorRecovery",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecovery",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecovery",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigErrorRecovery_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigErrorRecovery = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigErrorRecovery_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigErrorRecovery",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecovery",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigErrorRecovery_get",1,SWIGTYPE_p_ImGuiIO); }  result = (bool) ((arg1)->ConfigErrorRecovery);
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigErrorRecoveryEnableAssert_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigErrorRecoveryEnableAssert",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecoveryEnableAssert",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecoveryEnableAssert",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigErrorRecoveryEnableAssert_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigErrorRecoveryEnableAssert = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigErrorRecoveryEnableAssert_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigErrorRecoveryEnableAssert",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecoveryEnableAssert",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigErrorRecoveryEnableAssert_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigErrorRecoveryEnableAssert); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigErrorRecoveryEnableDebugLog_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiIO *arg1 = (ImGuiIO *) 0 ; bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigErrorRecoveryEnableDebugLog",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecoveryEnableDebugLog",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecoveryEnableDebugLog",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigErrorRecoveryEnableDebugLog_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigErrorRecoveryEnableDebugLog = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigErrorRecoveryEnableDebugLog_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiIO *arg1 = (ImGuiIO *) 0 ; bool result; SWIG_check_num_args("ImGuiIO::ConfigErrorRecoveryEnableDebugLog",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecoveryEnableDebugLog",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigErrorRecoveryEnableDebugLog_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigErrorRecoveryEnableDebugLog); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigErrorRecoveryEnableTooltip_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiIO *arg1 = (ImGuiIO *) 0 ; bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigErrorRecoveryEnableTooltip",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecoveryEnableTooltip",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecoveryEnableTooltip",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigErrorRecoveryEnableTooltip_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigErrorRecoveryEnableTooltip = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigErrorRecoveryEnableTooltip_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiIO *arg1 = (ImGuiIO *) 0 ; bool result; SWIG_check_num_args("ImGuiIO::ConfigErrorRecoveryEnableTooltip",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigErrorRecoveryEnableTooltip",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigErrorRecoveryEnableTooltip_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigErrorRecoveryEnableTooltip); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_ConfigDebugIsDebuggerPresent_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigDebugIsDebuggerPresent",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigDebugIsDebuggerPresent",1,"ImGuiIO *");
@@ -9295,6 +9627,20 @@ static int _wrap_ImGuiIO_ConfigDebugIsDebuggerPresent_get(lua_State* L) { { int 
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
       SWIG_fail_ptr("ImGuiIO_ConfigDebugIsDebuggerPresent_get",1,SWIGTYPE_p_ImGuiIO); } 
     result = (bool) ((arg1)->ConfigDebugIsDebuggerPresent); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigDebugHighlightIdConflicts_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigDebugHighlightIdConflicts",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigDebugHighlightIdConflicts",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::ConfigDebugHighlightIdConflicts",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigDebugHighlightIdConflicts_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->ConfigDebugHighlightIdConflicts = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ConfigDebugHighlightIdConflicts_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::ConfigDebugHighlightIdConflicts",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ConfigDebugHighlightIdConflicts",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ConfigDebugHighlightIdConflicts_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->ConfigDebugHighlightIdConflicts); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_ConfigDebugBeginReturnValueOnce_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     bool arg2 ; SWIG_check_num_args("ImGuiIO::ConfigDebugBeginReturnValueOnce",2,2)
@@ -9408,89 +9754,6 @@ static int _wrap_ImGuiIO_BackendLanguageUserData_get(lua_State* L) { { int SWIG_
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
       SWIG_fail_ptr("ImGuiIO_BackendLanguageUserData_get",1,SWIGTYPE_p_ImGuiIO); } 
     result = (void *) ((arg1)->BackendLanguageUserData); SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++; 
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_GetClipboardTextFn_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    char *(*arg2)(void *) = (char *(*)(void *)) 0 ; SWIG_check_num_args("ImGuiIO::GetClipboardTextFn",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::GetClipboardTextFn",1,"ImGuiIO *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::GetClipboardTextFn",2,"char const *(*)(void *)");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_GetClipboardTextFn_set",1,SWIGTYPE_p_ImGuiIO); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_void__p_char,0))){
-      SWIG_fail_ptr("ImGuiIO_GetClipboardTextFn_set",2,SWIGTYPE_p_f_p_void__p_char); } 
-    if (arg1) (arg1)->GetClipboardTextFn = (char const *(*)(void *))arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGuiIO_GetClipboardTextFn_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    char *(*result)(void *) = 0 ; SWIG_check_num_args("ImGuiIO::GetClipboardTextFn",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::GetClipboardTextFn",1,"ImGuiIO *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_GetClipboardTextFn_get",1,SWIGTYPE_p_ImGuiIO); } 
-    result = (char *(*)(void *)) ((arg1)->GetClipboardTextFn);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_void__p_char,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImGuiIO_SetClipboardTextFn_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    void (*arg2)(void *,char const *) = (void (*)(void *,char const *)) 0 ;
-    SWIG_check_num_args("ImGuiIO::SetClipboardTextFn",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::SetClipboardTextFn",1,"ImGuiIO *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::SetClipboardTextFn",2,"void (*)(void *,char const *)");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_SetClipboardTextFn_set",1,SWIGTYPE_p_ImGuiIO); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_void_p_q_const__char__void,0))){
-      SWIG_fail_ptr("ImGuiIO_SetClipboardTextFn_set",2,SWIGTYPE_p_f_p_void_p_q_const__char__void); } 
-    if (arg1) (arg1)->SetClipboardTextFn = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_SetClipboardTextFn_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    void (*result)(void *,char const *) = 0 ; SWIG_check_num_args("ImGuiIO::SetClipboardTextFn",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::SetClipboardTextFn",1,"ImGuiIO *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_SetClipboardTextFn_get",1,SWIGTYPE_p_ImGuiIO); } 
-    result = (void (*)(void *,char const *)) ((arg1)->SetClipboardTextFn);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_void_p_q_const__char__void,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_ClipboardUserData_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    void *arg2 = (void *) 0 ; SWIG_check_num_args("ImGuiIO::ClipboardUserData",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ClipboardUserData",1,"ImGuiIO *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::ClipboardUserData",2,"void *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_ClipboardUserData_set",1,SWIGTYPE_p_ImGuiIO); } 
-    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiIO_ClipboardUserData_set"); if (arg1) (arg1)->ClipboardUserData = arg2;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_ClipboardUserData_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    void *result = 0 ; SWIG_check_num_args("ImGuiIO::ClipboardUserData",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ClipboardUserData",1,"ImGuiIO *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_ClipboardUserData_get",1,SWIGTYPE_p_ImGuiIO); }  result = (void *) ((arg1)->ClipboardUserData);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_SetPlatformImeDataFn_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    void (*arg2)(ImGuiViewport *,ImGuiPlatformImeData *) = (void (*)(ImGuiViewport *,ImGuiPlatformImeData *)) 0 ;
-    SWIG_check_num_args("ImGuiIO::SetPlatformImeDataFn",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::SetPlatformImeDataFn",1,"ImGuiIO *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::SetPlatformImeDataFn",2,"void (*)(ImGuiViewport *,ImGuiPlatformImeData *)");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_SetPlatformImeDataFn_set",1,SWIGTYPE_p_ImGuiIO); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void,0))){
-      SWIG_fail_ptr("ImGuiIO_SetPlatformImeDataFn_set",2,SWIGTYPE_p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void); } 
-    if (arg1) (arg1)->SetPlatformImeDataFn = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_SetPlatformImeDataFn_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    void (*result)(ImGuiViewport *,ImGuiPlatformImeData *) = 0 ; SWIG_check_num_args("ImGuiIO::SetPlatformImeDataFn",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::SetPlatformImeDataFn",1,"ImGuiIO *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_SetPlatformImeDataFn_get",1,SWIGTYPE_p_ImGuiIO); } 
-    result = (void (*)(ImGuiViewport *,ImGuiPlatformImeData *)) ((arg1)->SetPlatformImeDataFn);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void,0); SWIG_arg++;  return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_PlatformLocaleDecimalPoint_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    ImWchar arg2 ; SWIG_check_num_args("ImGuiIO::PlatformLocaleDecimalPoint",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::PlatformLocaleDecimalPoint",1,"ImGuiIO *");
-    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiIO::PlatformLocaleDecimalPoint",2,"ImWchar");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_PlatformLocaleDecimalPoint_set",1,SWIGTYPE_p_ImGuiIO); } 
-    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImWchar)lua_tonumber(L, 2);
-    if (arg1) (arg1)->PlatformLocaleDecimalPoint = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_PlatformLocaleDecimalPoint_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    ImWchar result; SWIG_check_num_args("ImGuiIO::PlatformLocaleDecimalPoint",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::PlatformLocaleDecimalPoint",1,"ImGuiIO *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_PlatformLocaleDecimalPoint_get",1,SWIGTYPE_p_ImGuiIO); } 
-    result = (ImWchar) ((arg1)->PlatformLocaleDecimalPoint); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_AddKeyEvent(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ; ImGuiKey arg2 ;
     bool arg3 ; SWIG_check_num_args("ImGuiIO::AddKeyEvent",3,3)
@@ -9612,6 +9875,12 @@ static int _wrap_ImGuiIO_ClearInputKeys(lua_State* L) { { int SWIG_arg = 0; ImGu
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ClearInputKeys",1,"ImGuiIO *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
       SWIG_fail_ptr("ImGuiIO_ClearInputKeys",1,SWIGTYPE_p_ImGuiIO); }  (arg1)->ClearInputKeys(); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ClearInputMouse(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    SWIG_check_num_args("ImGuiIO::ClearInputMouse",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ClearInputMouse",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ClearInputMouse",1,SWIGTYPE_p_ImGuiIO); }  (arg1)->ClearInputMouse(); return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_ClearInputCharacters(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     SWIG_check_num_args("ImGuiIO::ClearInputCharacters",1,1)
@@ -9785,20 +10054,6 @@ static int _wrap_ImGuiIO_MouseDelta_get(lua_State* L) { { int SWIG_arg = 0; ImGu
       SWIG_fail_ptr("ImGuiIO_MouseDelta_get",1,SWIGTYPE_p_ImGuiIO); }  result = (ImVec2 *)& ((arg1)->MouseDelta);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVec2,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
-static int _wrap_ImGuiIO_ImeWindowHandle_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    void *arg2 = (void *) 0 ; SWIG_check_num_args("ImGuiIO::ImeWindowHandle",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ImeWindowHandle",1,"ImGuiIO *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::ImeWindowHandle",2,"void *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_ImeWindowHandle_set",1,SWIGTYPE_p_ImGuiIO); } 
-    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiIO_ImeWindowHandle_set"); if (arg1) (arg1)->ImeWindowHandle = arg2;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_ImeWindowHandle_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    void *result = 0 ; SWIG_check_num_args("ImGuiIO::ImeWindowHandle",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ImeWindowHandle",1,"ImGuiIO *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_ImeWindowHandle_get",1,SWIGTYPE_p_ImGuiIO); }  result = (void *) ((arg1)->ImeWindowHandle);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_Ctx_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     ImGuiContext *arg2 = (ImGuiContext *) 0 ; SWIG_check_num_args("ImGuiIO::Ctx",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::Ctx",1,"ImGuiIO *");
@@ -9954,13 +10209,13 @@ static int _wrap_ImGuiIO_KeyMods_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO
 static int _wrap_ImGuiIO_KeysData_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     ImGuiKeyData *arg2 = (ImGuiKeyData *) (ImGuiKeyData *)0 ; SWIG_check_num_args("ImGuiIO::KeysData",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::KeysData",1,"ImGuiIO *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::KeysData",2,"ImGuiKeyData [ImGuiKey_KeysData_SIZE]");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::KeysData",2,"ImGuiKeyData [ImGuiKey_NamedKey_COUNT]");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
       SWIG_fail_ptr("ImGuiIO_KeysData_set",1,SWIGTYPE_p_ImGuiIO); } 
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImGuiKeyData,0))){
       SWIG_fail_ptr("ImGuiIO_KeysData_set",2,SWIGTYPE_p_ImGuiKeyData); }  { size_t ii;
       ImGuiKeyData *b = (ImGuiKeyData *) arg1->KeysData;
-      for (ii = 0; ii < (size_t)ImGuiKey_KeysData_SIZE; ii++) b[ii] = *((ImGuiKeyData *) arg2 + ii); }  return SWIG_arg;
+      for (ii = 0; ii < (size_t)ImGuiKey_NamedKey_COUNT; ii++) b[ii] = *((ImGuiKeyData *) arg2 + ii); }  return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_KeysData_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     ImGuiKeyData *result = 0 ; SWIG_check_num_args("ImGuiIO::KeysData",1,1)
@@ -10167,6 +10422,20 @@ static int _wrap_ImGuiIO_MouseWheelRequestAxisSwap_get(lua_State* L) { { int SWI
       SWIG_fail_ptr("ImGuiIO_MouseWheelRequestAxisSwap_get",1,SWIGTYPE_p_ImGuiIO); } 
     result = (bool) ((arg1)->MouseWheelRequestAxisSwap); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_MouseCtrlLeftAsRightClick_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool arg2 ; SWIG_check_num_args("ImGuiIO::MouseCtrlLeftAsRightClick",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::MouseCtrlLeftAsRightClick",1,"ImGuiIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::MouseCtrlLeftAsRightClick",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_MouseCtrlLeftAsRightClick_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->MouseCtrlLeftAsRightClick = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_MouseCtrlLeftAsRightClick_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    bool result; SWIG_check_num_args("ImGuiIO::MouseCtrlLeftAsRightClick",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::MouseCtrlLeftAsRightClick",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_MouseCtrlLeftAsRightClick_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (bool) ((arg1)->MouseCtrlLeftAsRightClick); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_MouseDownDuration_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     float *arg2 = (float *) (float *)0 ; SWIG_check_num_args("ImGuiIO::MouseDownDuration",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::MouseDownDuration",1,"ImGuiIO *");
@@ -10275,34 +10544,6 @@ static int _wrap_ImGuiIO_AppAcceptingEvents_get(lua_State* L) { { int SWIG_arg =
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
       SWIG_fail_ptr("ImGuiIO_AppAcceptingEvents_get",1,SWIGTYPE_p_ImGuiIO); }  result = (bool) ((arg1)->AppAcceptingEvents);
     lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_BackendUsingLegacyKeyArrays_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    ImS8 arg2 ; SWIG_check_num_args("ImGuiIO::BackendUsingLegacyKeyArrays",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::BackendUsingLegacyKeyArrays",1,"ImGuiIO *");
-    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiIO::BackendUsingLegacyKeyArrays",2,"ImS8");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_BackendUsingLegacyKeyArrays_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (ImS8)lua_tonumber(L, 2);
-    if (arg1) (arg1)->BackendUsingLegacyKeyArrays = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_BackendUsingLegacyKeyArrays_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    ImS8 result; SWIG_check_num_args("ImGuiIO::BackendUsingLegacyKeyArrays",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::BackendUsingLegacyKeyArrays",1,"ImGuiIO *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_BackendUsingLegacyKeyArrays_get",1,SWIGTYPE_p_ImGuiIO); } 
-    result = (ImS8) ((arg1)->BackendUsingLegacyKeyArrays); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_BackendUsingLegacyNavInputArray_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    bool arg2 ; SWIG_check_num_args("ImGuiIO::BackendUsingLegacyNavInputArray",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::BackendUsingLegacyNavInputArray",1,"ImGuiIO *");
-    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiIO::BackendUsingLegacyNavInputArray",2,"bool");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_BackendUsingLegacyNavInputArray_set",1,SWIGTYPE_p_ImGuiIO); }  arg2 = (lua_toboolean(L, 2)!=0);
-    if (arg1) (arg1)->BackendUsingLegacyNavInputArray = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImGuiIO_BackendUsingLegacyNavInputArray_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
-    bool result; SWIG_check_num_args("ImGuiIO::BackendUsingLegacyNavInputArray",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::BackendUsingLegacyNavInputArray",1,"ImGuiIO *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
-      SWIG_fail_ptr("ImGuiIO_BackendUsingLegacyNavInputArray_get",1,SWIGTYPE_p_ImGuiIO); } 
-    result = (bool) ((arg1)->BackendUsingLegacyNavInputArray); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiIO_InputQueueSurrogate_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
     ImWchar16 arg2 ; SWIG_check_num_args("ImGuiIO::InputQueueSurrogate",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::InputQueueSurrogate",1,"ImGuiIO *");
@@ -10335,6 +10576,56 @@ static int _wrap_ImGuiIO_InputQueueCharacters_get(lua_State* L) { { int SWIG_arg
     result = (ImVector< ImWchar > *)& ((arg1)->InputQueueCharacters);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_unsigned_short_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
+static int _wrap_ImGuiIO_GetClipboardTextFn_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    char *(*arg2)(void *) = (char *(*)(void *)) 0 ; SWIG_check_num_args("ImGuiIO::GetClipboardTextFn",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::GetClipboardTextFn",1,"ImGuiIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::GetClipboardTextFn",2,"char const *(*)(void *)");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_GetClipboardTextFn_set",1,SWIGTYPE_p_ImGuiIO); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_void__p_char,0))){
+      SWIG_fail_ptr("ImGuiIO_GetClipboardTextFn_set",2,SWIGTYPE_p_f_p_void__p_char); } 
+    if (arg1) (arg1)->GetClipboardTextFn = (char const *(*)(void *))arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_ImGuiIO_GetClipboardTextFn_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    char *(*result)(void *) = 0 ; SWIG_check_num_args("ImGuiIO::GetClipboardTextFn",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::GetClipboardTextFn",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_GetClipboardTextFn_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (char *(*)(void *)) ((arg1)->GetClipboardTextFn);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_void__p_char,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_ImGuiIO_SetClipboardTextFn_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    void (*arg2)(void *,char const *) = (void (*)(void *,char const *)) 0 ;
+    SWIG_check_num_args("ImGuiIO::SetClipboardTextFn",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::SetClipboardTextFn",1,"ImGuiIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::SetClipboardTextFn",2,"void (*)(void *,char const *)");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_SetClipboardTextFn_set",1,SWIGTYPE_p_ImGuiIO); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_void_p_q_const__char__void,0))){
+      SWIG_fail_ptr("ImGuiIO_SetClipboardTextFn_set",2,SWIGTYPE_p_f_p_void_p_q_const__char__void); } 
+    if (arg1) (arg1)->SetClipboardTextFn = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_SetClipboardTextFn_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    void (*result)(void *,char const *) = 0 ; SWIG_check_num_args("ImGuiIO::SetClipboardTextFn",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::SetClipboardTextFn",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_SetClipboardTextFn_get",1,SWIGTYPE_p_ImGuiIO); } 
+    result = (void (*)(void *,char const *)) ((arg1)->SetClipboardTextFn);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_void_p_q_const__char__void,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ClipboardUserData_set(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    void *arg2 = (void *) 0 ; SWIG_check_num_args("ImGuiIO::ClipboardUserData",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ClipboardUserData",1,"ImGuiIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiIO::ClipboardUserData",2,"void *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ClipboardUserData_set",1,SWIGTYPE_p_ImGuiIO); } 
+    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiIO_ClipboardUserData_set"); if (arg1) (arg1)->ClipboardUserData = arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiIO_ClipboardUserData_get(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *arg1 = (ImGuiIO *) 0 ;
+    void *result = 0 ; SWIG_check_num_args("ImGuiIO::ClipboardUserData",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiIO::ClipboardUserData",1,"ImGuiIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiIO,0))){
+      SWIG_fail_ptr("ImGuiIO_ClipboardUserData_get",1,SWIGTYPE_p_ImGuiIO); }  result = (void *) ((arg1)->ClipboardUserData);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_new_ImGuiIO(lua_State* L) { { int SWIG_arg = 0; ImGuiIO *result = 0 ;
     SWIG_check_num_args("ImGuiIO::ImGuiIO",0,0) result = (ImGuiIO *)new ImGuiIO();
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiIO,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
@@ -10365,6 +10656,13 @@ static swig_lua_attribute swig_ImGuiIO_attributes[] = {
     { "FontAllowUserScaling", _wrap_ImGuiIO_FontAllowUserScaling_get, _wrap_ImGuiIO_FontAllowUserScaling_set },
     { "FontDefault", _wrap_ImGuiIO_FontDefault_get, _wrap_ImGuiIO_FontDefault_set },
     { "DisplayFramebufferScale", _wrap_ImGuiIO_DisplayFramebufferScale_get, _wrap_ImGuiIO_DisplayFramebufferScale_set },
+    { "ConfigNavSwapGamepadButtons", _wrap_ImGuiIO_ConfigNavSwapGamepadButtons_get, _wrap_ImGuiIO_ConfigNavSwapGamepadButtons_set },
+    { "ConfigNavMoveSetMousePos", _wrap_ImGuiIO_ConfigNavMoveSetMousePos_get, _wrap_ImGuiIO_ConfigNavMoveSetMousePos_set },
+    { "ConfigNavCaptureKeyboard", _wrap_ImGuiIO_ConfigNavCaptureKeyboard_get, _wrap_ImGuiIO_ConfigNavCaptureKeyboard_set },
+    { "ConfigNavEscapeClearFocusItem", _wrap_ImGuiIO_ConfigNavEscapeClearFocusItem_get, _wrap_ImGuiIO_ConfigNavEscapeClearFocusItem_set },
+    { "ConfigNavEscapeClearFocusWindow", _wrap_ImGuiIO_ConfigNavEscapeClearFocusWindow_get, _wrap_ImGuiIO_ConfigNavEscapeClearFocusWindow_set },
+    { "ConfigNavCursorVisibleAuto", _wrap_ImGuiIO_ConfigNavCursorVisibleAuto_get, _wrap_ImGuiIO_ConfigNavCursorVisibleAuto_set },
+    { "ConfigNavCursorVisibleAlways", _wrap_ImGuiIO_ConfigNavCursorVisibleAlways_get, _wrap_ImGuiIO_ConfigNavCursorVisibleAlways_set },
     { "ConfigDockingNoSplit", _wrap_ImGuiIO_ConfigDockingNoSplit_get, _wrap_ImGuiIO_ConfigDockingNoSplit_set },
     { "ConfigDockingWithShift", _wrap_ImGuiIO_ConfigDockingWithShift_get, _wrap_ImGuiIO_ConfigDockingWithShift_set },
     { "ConfigDockingAlwaysTabBar", _wrap_ImGuiIO_ConfigDockingAlwaysTabBar_get, _wrap_ImGuiIO_ConfigDockingAlwaysTabBar_set },
@@ -10381,13 +10679,20 @@ static swig_lua_attribute swig_ImGuiIO_attributes[] = {
     { "ConfigDragClickToInputText", _wrap_ImGuiIO_ConfigDragClickToInputText_get, _wrap_ImGuiIO_ConfigDragClickToInputText_set },
     { "ConfigWindowsResizeFromEdges", _wrap_ImGuiIO_ConfigWindowsResizeFromEdges_get, _wrap_ImGuiIO_ConfigWindowsResizeFromEdges_set },
     { "ConfigWindowsMoveFromTitleBarOnly", _wrap_ImGuiIO_ConfigWindowsMoveFromTitleBarOnly_get, _wrap_ImGuiIO_ConfigWindowsMoveFromTitleBarOnly_set },
+    { "ConfigWindowsCopyContentsWithCtrlC", _wrap_ImGuiIO_ConfigWindowsCopyContentsWithCtrlC_get, _wrap_ImGuiIO_ConfigWindowsCopyContentsWithCtrlC_set },
+    { "ConfigScrollbarScrollByPage", _wrap_ImGuiIO_ConfigScrollbarScrollByPage_get, _wrap_ImGuiIO_ConfigScrollbarScrollByPage_set },
     { "ConfigMemoryCompactTimer", _wrap_ImGuiIO_ConfigMemoryCompactTimer_get, _wrap_ImGuiIO_ConfigMemoryCompactTimer_set },
     { "MouseDoubleClickTime", _wrap_ImGuiIO_MouseDoubleClickTime_get, _wrap_ImGuiIO_MouseDoubleClickTime_set },
     { "MouseDoubleClickMaxDist", _wrap_ImGuiIO_MouseDoubleClickMaxDist_get, _wrap_ImGuiIO_MouseDoubleClickMaxDist_set },
     { "MouseDragThreshold", _wrap_ImGuiIO_MouseDragThreshold_get, _wrap_ImGuiIO_MouseDragThreshold_set },
     { "KeyRepeatDelay", _wrap_ImGuiIO_KeyRepeatDelay_get, _wrap_ImGuiIO_KeyRepeatDelay_set },
     { "KeyRepeatRate", _wrap_ImGuiIO_KeyRepeatRate_get, _wrap_ImGuiIO_KeyRepeatRate_set },
+    { "ConfigErrorRecovery", _wrap_ImGuiIO_ConfigErrorRecovery_get, _wrap_ImGuiIO_ConfigErrorRecovery_set },
+    { "ConfigErrorRecoveryEnableAssert", _wrap_ImGuiIO_ConfigErrorRecoveryEnableAssert_get, _wrap_ImGuiIO_ConfigErrorRecoveryEnableAssert_set },
+    { "ConfigErrorRecoveryEnableDebugLog", _wrap_ImGuiIO_ConfigErrorRecoveryEnableDebugLog_get, _wrap_ImGuiIO_ConfigErrorRecoveryEnableDebugLog_set },
+    { "ConfigErrorRecoveryEnableTooltip", _wrap_ImGuiIO_ConfigErrorRecoveryEnableTooltip_get, _wrap_ImGuiIO_ConfigErrorRecoveryEnableTooltip_set },
     { "ConfigDebugIsDebuggerPresent", _wrap_ImGuiIO_ConfigDebugIsDebuggerPresent_get, _wrap_ImGuiIO_ConfigDebugIsDebuggerPresent_set },
+    { "ConfigDebugHighlightIdConflicts", _wrap_ImGuiIO_ConfigDebugHighlightIdConflicts_get, _wrap_ImGuiIO_ConfigDebugHighlightIdConflicts_set },
     { "ConfigDebugBeginReturnValueOnce", _wrap_ImGuiIO_ConfigDebugBeginReturnValueOnce_get, _wrap_ImGuiIO_ConfigDebugBeginReturnValueOnce_set },
     { "ConfigDebugBeginReturnValueLoop", _wrap_ImGuiIO_ConfigDebugBeginReturnValueLoop_get, _wrap_ImGuiIO_ConfigDebugBeginReturnValueLoop_set },
     { "ConfigDebugIgnoreFocusLoss", _wrap_ImGuiIO_ConfigDebugIgnoreFocusLoss_get, _wrap_ImGuiIO_ConfigDebugIgnoreFocusLoss_set },
@@ -10397,11 +10702,6 @@ static swig_lua_attribute swig_ImGuiIO_attributes[] = {
     { "BackendPlatformUserData", _wrap_ImGuiIO_BackendPlatformUserData_get, _wrap_ImGuiIO_BackendPlatformUserData_set },
     { "BackendRendererUserData", _wrap_ImGuiIO_BackendRendererUserData_get, _wrap_ImGuiIO_BackendRendererUserData_set },
     { "BackendLanguageUserData", _wrap_ImGuiIO_BackendLanguageUserData_get, _wrap_ImGuiIO_BackendLanguageUserData_set },
-    { "GetClipboardTextFn", _wrap_ImGuiIO_GetClipboardTextFn_get, _wrap_ImGuiIO_GetClipboardTextFn_set },
-    { "SetClipboardTextFn", _wrap_ImGuiIO_SetClipboardTextFn_get, _wrap_ImGuiIO_SetClipboardTextFn_set },
-    { "ClipboardUserData", _wrap_ImGuiIO_ClipboardUserData_get, _wrap_ImGuiIO_ClipboardUserData_set },
-    { "SetPlatformImeDataFn", _wrap_ImGuiIO_SetPlatformImeDataFn_get, _wrap_ImGuiIO_SetPlatformImeDataFn_set },
-    { "PlatformLocaleDecimalPoint", _wrap_ImGuiIO_PlatformLocaleDecimalPoint_get, _wrap_ImGuiIO_PlatformLocaleDecimalPoint_set },
     { "WantCaptureMouse", _wrap_ImGuiIO_WantCaptureMouse_get, _wrap_ImGuiIO_WantCaptureMouse_set },
     { "WantCaptureKeyboard", _wrap_ImGuiIO_WantCaptureKeyboard_get, _wrap_ImGuiIO_WantCaptureKeyboard_set },
     { "WantTextInput", _wrap_ImGuiIO_WantTextInput_get, _wrap_ImGuiIO_WantTextInput_set },
@@ -10415,7 +10715,6 @@ static swig_lua_attribute swig_ImGuiIO_attributes[] = {
     { "MetricsRenderWindows", _wrap_ImGuiIO_MetricsRenderWindows_get, _wrap_ImGuiIO_MetricsRenderWindows_set },
     { "MetricsActiveWindows", _wrap_ImGuiIO_MetricsActiveWindows_get, _wrap_ImGuiIO_MetricsActiveWindows_set },
     { "MouseDelta", _wrap_ImGuiIO_MouseDelta_get, _wrap_ImGuiIO_MouseDelta_set },
-    { "ImeWindowHandle", _wrap_ImGuiIO_ImeWindowHandle_get, _wrap_ImGuiIO_ImeWindowHandle_set },
     { "Ctx", _wrap_ImGuiIO_Ctx_get, _wrap_ImGuiIO_Ctx_set },
     { "MousePos", _wrap_ImGuiIO_MousePos_get, _wrap_ImGuiIO_MousePos_set },
     { "MouseDown", _wrap_ImGuiIO_MouseDown_get, _wrap_ImGuiIO_MouseDown_set },
@@ -10441,6 +10740,7 @@ static swig_lua_attribute swig_ImGuiIO_attributes[] = {
     { "MouseDownOwned", _wrap_ImGuiIO_MouseDownOwned_get, _wrap_ImGuiIO_MouseDownOwned_set },
     { "MouseDownOwnedUnlessPopupClose", _wrap_ImGuiIO_MouseDownOwnedUnlessPopupClose_get, _wrap_ImGuiIO_MouseDownOwnedUnlessPopupClose_set },
     { "MouseWheelRequestAxisSwap", _wrap_ImGuiIO_MouseWheelRequestAxisSwap_get, _wrap_ImGuiIO_MouseWheelRequestAxisSwap_set },
+    { "MouseCtrlLeftAsRightClick", _wrap_ImGuiIO_MouseCtrlLeftAsRightClick_get, _wrap_ImGuiIO_MouseCtrlLeftAsRightClick_set },
     { "MouseDownDuration", _wrap_ImGuiIO_MouseDownDuration_get, _wrap_ImGuiIO_MouseDownDuration_set },
     { "MouseDownDurationPrev", _wrap_ImGuiIO_MouseDownDurationPrev_get, _wrap_ImGuiIO_MouseDownDurationPrev_set },
     { "MouseDragMaxDistanceAbs", _wrap_ImGuiIO_MouseDragMaxDistanceAbs_get, _wrap_ImGuiIO_MouseDragMaxDistanceAbs_set },
@@ -10448,10 +10748,11 @@ static swig_lua_attribute swig_ImGuiIO_attributes[] = {
     { "PenPressure", _wrap_ImGuiIO_PenPressure_get, _wrap_ImGuiIO_PenPressure_set },
     { "AppFocusLost", _wrap_ImGuiIO_AppFocusLost_get, _wrap_ImGuiIO_AppFocusLost_set },
     { "AppAcceptingEvents", _wrap_ImGuiIO_AppAcceptingEvents_get, _wrap_ImGuiIO_AppAcceptingEvents_set },
-    { "BackendUsingLegacyKeyArrays", _wrap_ImGuiIO_BackendUsingLegacyKeyArrays_get, _wrap_ImGuiIO_BackendUsingLegacyKeyArrays_set },
-    { "BackendUsingLegacyNavInputArray", _wrap_ImGuiIO_BackendUsingLegacyNavInputArray_get, _wrap_ImGuiIO_BackendUsingLegacyNavInputArray_set },
     { "InputQueueSurrogate", _wrap_ImGuiIO_InputQueueSurrogate_get, _wrap_ImGuiIO_InputQueueSurrogate_set },
     { "InputQueueCharacters", _wrap_ImGuiIO_InputQueueCharacters_get, _wrap_ImGuiIO_InputQueueCharacters_set },
+    { "GetClipboardTextFn", _wrap_ImGuiIO_GetClipboardTextFn_get, _wrap_ImGuiIO_GetClipboardTextFn_set },
+    { "SetClipboardTextFn", _wrap_ImGuiIO_SetClipboardTextFn_get, _wrap_ImGuiIO_SetClipboardTextFn_set },
+    { "ClipboardUserData", _wrap_ImGuiIO_ClipboardUserData_get, _wrap_ImGuiIO_ClipboardUserData_set },
     {0,0,0}
 };
 static swig_lua_method swig_ImGuiIO_methods[]= {
@@ -10470,6 +10771,7 @@ static swig_lua_method swig_ImGuiIO_methods[]= {
     { "SetAppAcceptingEvents", _wrap_ImGuiIO_SetAppAcceptingEvents},
     { "ClearEventsQueue", _wrap_ImGuiIO_ClearEventsQueue},
     { "ClearInputKeys", _wrap_ImGuiIO_ClearInputKeys},
+    { "ClearInputMouse", _wrap_ImGuiIO_ClearInputMouse},
     { "ClearInputCharacters", _wrap_ImGuiIO_ClearInputCharacters},
     {0,0}
 };
@@ -10997,6 +11299,23 @@ static int _wrap_ImGuiWindowClass_ParentViewportId_get(lua_State* L) { { int SWI
       SWIG_fail_ptr("ImGuiWindowClass_ParentViewportId_get",1,SWIGTYPE_p_ImGuiWindowClass); } 
     result = (ImGuiID) ((arg1)->ParentViewportId); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiWindowClass_FocusRouteParentWindowId_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiWindowClass *arg1 = (ImGuiWindowClass *) 0 ; ImGuiID arg2 ;
+    SWIG_check_num_args("ImGuiWindowClass::FocusRouteParentWindowId",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiWindowClass::FocusRouteParentWindowId",1,"ImGuiWindowClass *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiWindowClass::FocusRouteParentWindowId",2,"ImGuiID");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiWindowClass,0))){
+      SWIG_fail_ptr("ImGuiWindowClass_FocusRouteParentWindowId_set",1,SWIGTYPE_p_ImGuiWindowClass); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImGuiID)lua_tonumber(L, 2);
+    if (arg1) (arg1)->FocusRouteParentWindowId = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiWindowClass_FocusRouteParentWindowId_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiWindowClass *arg1 = (ImGuiWindowClass *) 0 ; ImGuiID result;
+    SWIG_check_num_args("ImGuiWindowClass::FocusRouteParentWindowId",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiWindowClass::FocusRouteParentWindowId",1,"ImGuiWindowClass *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiWindowClass,0))){
+      SWIG_fail_ptr("ImGuiWindowClass_FocusRouteParentWindowId_get",1,SWIGTYPE_p_ImGuiWindowClass); } 
+    result = (ImGuiID) ((arg1)->FocusRouteParentWindowId); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiWindowClass_ViewportFlagsOverrideSet_set(lua_State* L) { { int SWIG_arg = 0;
     ImGuiWindowClass *arg1 = (ImGuiWindowClass *) 0 ; ImGuiViewportFlags arg2 ;
     SWIG_check_num_args("ImGuiWindowClass::ViewportFlagsOverrideSet",2,2)
@@ -11118,6 +11437,7 @@ static int _proxy__wrap_new_ImGuiWindowClass(lua_State *L) {
 static swig_lua_attribute swig_ImGuiWindowClass_attributes[] = {
     { "ClassId", _wrap_ImGuiWindowClass_ClassId_get, _wrap_ImGuiWindowClass_ClassId_set },
     { "ParentViewportId", _wrap_ImGuiWindowClass_ParentViewportId_get, _wrap_ImGuiWindowClass_ParentViewportId_set },
+    { "FocusRouteParentWindowId", _wrap_ImGuiWindowClass_FocusRouteParentWindowId_get, _wrap_ImGuiWindowClass_FocusRouteParentWindowId_set },
     { "ViewportFlagsOverrideSet", _wrap_ImGuiWindowClass_ViewportFlagsOverrideSet_get, _wrap_ImGuiWindowClass_ViewportFlagsOverrideSet_set },
     { "ViewportFlagsOverrideClear", _wrap_ImGuiWindowClass_ViewportFlagsOverrideClear_get, _wrap_ImGuiWindowClass_ViewportFlagsOverrideClear_set },
     { "TabItemFlagsOverrideSet", _wrap_ImGuiWindowClass_TabItemFlagsOverrideSet_get, _wrap_ImGuiWindowClass_TabItemFlagsOverrideSet_set },
@@ -11744,24 +12064,155 @@ static swig_lua_class *swig_ImGuiTextBuffer_bases[] = {0};
 static const char *swig_ImGuiTextBuffer_base_names[] = {0};
 static swig_lua_class _wrap_class_ImGuiTextBuffer = { "ImGuiTextBuffer", "ImGuiTextBuffer", &SWIGTYPE_p_ImGuiTextBuffer,_proxy__wrap_new_ImGuiTextBuffer, swig_delete_ImGuiTextBuffer, swig_ImGuiTextBuffer_methods, swig_ImGuiTextBuffer_attributes, &swig_ImGuiTextBuffer_Sf_SwigStatic, swig_ImGuiTextBuffer_meta, swig_ImGuiTextBuffer_bases, swig_ImGuiTextBuffer_base_names };
 
+static int _wrap_ImGuiStoragePair_key_set(lua_State* L) { { int SWIG_arg = 0; ImGuiStoragePair *arg1 = (ImGuiStoragePair *) 0 ;
+    ImGuiID arg2 ; SWIG_check_num_args("ImGuiStoragePair::key",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStoragePair::key",1,"ImGuiStoragePair *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiStoragePair::key",2,"ImGuiID");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStoragePair,0))){
+      SWIG_fail_ptr("ImGuiStoragePair_key_set",1,SWIGTYPE_p_ImGuiStoragePair); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImGuiID)lua_tonumber(L, 2);
+    if (arg1) (arg1)->key = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStoragePair_key_get(lua_State* L) { { int SWIG_arg = 0; ImGuiStoragePair *arg1 = (ImGuiStoragePair *) 0 ;
+    ImGuiID result; SWIG_check_num_args("ImGuiStoragePair::key",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStoragePair::key",1,"ImGuiStoragePair *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStoragePair,0))){
+      SWIG_fail_ptr("ImGuiStoragePair_key_get",1,SWIGTYPE_p_ImGuiStoragePair); }  result = (ImGuiID) ((arg1)->key);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStoragePair_val_i_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiStoragePair *arg1 = (ImGuiStoragePair *) 0 ; int arg2 ; SWIG_check_num_args("ImGuiStoragePair::val_i",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStoragePair::val_i",1,"ImGuiStoragePair *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiStoragePair::val_i",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStoragePair,0))){
+      SWIG_fail_ptr("ImGuiStoragePair_val_i_set",1,SWIGTYPE_p_ImGuiStoragePair); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->val_i = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStoragePair_val_i_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiStoragePair *arg1 = (ImGuiStoragePair *) 0 ; int result; SWIG_check_num_args("ImGuiStoragePair::val_i",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStoragePair::val_i",1,"ImGuiStoragePair *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStoragePair,0))){
+      SWIG_fail_ptr("ImGuiStoragePair_val_i_get",1,SWIGTYPE_p_ImGuiStoragePair); }  result = (int) ((arg1)->val_i);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStoragePair_val_f_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiStoragePair *arg1 = (ImGuiStoragePair *) 0 ; float arg2 ; SWIG_check_num_args("ImGuiStoragePair::val_f",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStoragePair::val_f",1,"ImGuiStoragePair *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiStoragePair::val_f",2,"float");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStoragePair,0))){
+      SWIG_fail_ptr("ImGuiStoragePair_val_f_set",1,SWIGTYPE_p_ImGuiStoragePair); }  arg2 = (float)lua_tonumber(L, 2);
+    if (arg1) (arg1)->val_f = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStoragePair_val_f_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiStoragePair *arg1 = (ImGuiStoragePair *) 0 ; float result; SWIG_check_num_args("ImGuiStoragePair::val_f",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStoragePair::val_f",1,"ImGuiStoragePair *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStoragePair,0))){
+      SWIG_fail_ptr("ImGuiStoragePair_val_f_get",1,SWIGTYPE_p_ImGuiStoragePair); }  result = (float) ((arg1)->val_f);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStoragePair_val_p_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiStoragePair *arg1 = (ImGuiStoragePair *) 0 ; void *arg2 = (void *) 0 ;
+    SWIG_check_num_args("ImGuiStoragePair::val_p",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStoragePair::val_p",1,"ImGuiStoragePair *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiStoragePair::val_p",2,"void *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStoragePair,0))){
+      SWIG_fail_ptr("ImGuiStoragePair_val_p_set",1,SWIGTYPE_p_ImGuiStoragePair); } 
+    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiStoragePair_val_p_set"); if (arg1) (arg1)->val_p = arg2; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiStoragePair_val_p_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiStoragePair *arg1 = (ImGuiStoragePair *) 0 ; void *result = 0 ; SWIG_check_num_args("ImGuiStoragePair::val_p",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStoragePair::val_p",1,"ImGuiStoragePair *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStoragePair,0))){
+      SWIG_fail_ptr("ImGuiStoragePair_val_p_get",1,SWIGTYPE_p_ImGuiStoragePair); }  result = (void *) ((arg1)->val_p);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_new_ImGuiStoragePair__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ImGuiID arg1 ; int arg2 ;
+    ImGuiStoragePair *result = 0 ; SWIG_check_num_args("ImGuiStoragePair::ImGuiStoragePair",2,2)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGuiStoragePair::ImGuiStoragePair",1,"ImGuiID");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiStoragePair::ImGuiStoragePair",2,"int");
+    SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative"); arg1 = (ImGuiID)lua_tonumber(L, 1);
+    arg2 = (int)lua_tonumber(L, 2); result = (ImGuiStoragePair *)new ImGuiStoragePair(arg1,arg2);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiStoragePair,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_ImGuiStoragePair__SWIG_1(lua_State* L) { { int SWIG_arg = 0; ImGuiID arg1 ; void *arg2 = (void *) 0 ;
+    ImGuiStoragePair *result = 0 ; SWIG_check_num_args("ImGuiStoragePair::ImGuiStoragePair",2,2)
+    if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGuiStoragePair::ImGuiStoragePair",1,"ImGuiID");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiStoragePair::ImGuiStoragePair",2,"void *");
+    SWIG_contract_assert((lua_tonumber(L,1)>=0),"number must not be negative"); arg1 = (ImGuiID)lua_tonumber(L, 1);
+    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"new_ImGuiStoragePair");
+    result = (ImGuiStoragePair *)new ImGuiStoragePair(arg1,arg2);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiStoragePair,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_new_ImGuiStoragePair(lua_State* L) { int argc; int argv[3]={ 1,2,3} ; argc = lua_gettop(L); if (argc == 2) {
+    int _v = 0; { _v = lua_isnumber(L,argv[0]); }  if (_v) { { void *ptr;
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, 0, 0)) { _v = 0; }  else { _v = 1; }  } 
+      if (_v) { return _wrap_new_ImGuiStoragePair__SWIG_1(L);}  }  }  if (argc == 2) { int _v = 0; {
+      _v = lua_isnumber(L,argv[0]); }  if (_v) { { _v = lua_isnumber(L,argv[1]); }  if (_v) {
+        return _wrap_new_ImGuiStoragePair__SWIG_0(L);}  }  } 
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_ImGuiStoragePair'\n"
+  "  Possible C/C++ prototypes are:\n" "    ImGuiStoragePair::ImGuiStoragePair(ImGuiID,int)\n"
+  "    ImGuiStoragePair::ImGuiStoragePair(ImGuiID,void *)\n"); lua_error(L);return 0; }
+static void swig_delete_ImGuiStoragePair(void *obj) {
+ImGuiStoragePair *arg1 = (ImGuiStoragePair *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_ImGuiStoragePair(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_ImGuiStoragePair);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_ImGuiStoragePair_attributes[] = {
+    { "key", _wrap_ImGuiStoragePair_key_get, _wrap_ImGuiStoragePair_key_set },
+    { "val_i", _wrap_ImGuiStoragePair_val_i_get, _wrap_ImGuiStoragePair_val_i_set },
+    { "val_f", _wrap_ImGuiStoragePair_val_f_get, _wrap_ImGuiStoragePair_val_f_set },
+    { "val_p", _wrap_ImGuiStoragePair_val_p_get, _wrap_ImGuiStoragePair_val_p_set },
+    {0,0,0}
+};
+static swig_lua_method swig_ImGuiStoragePair_methods[]= {
+    {0,0}
+};
+static swig_lua_method swig_ImGuiStoragePair_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_ImGuiStoragePair_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_ImGuiStoragePair_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_ImGuiStoragePair_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_ImGuiStoragePair_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_ImGuiStoragePair_Sf_SwigStatic = {
+    "ImGuiStoragePair",
+    swig_ImGuiStoragePair_Sf_SwigStatic_methods,
+    swig_ImGuiStoragePair_Sf_SwigStatic_attributes,
+    swig_ImGuiStoragePair_Sf_SwigStatic_constants,
+    swig_ImGuiStoragePair_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_ImGuiStoragePair_bases[] = {0};
+static const char *swig_ImGuiStoragePair_base_names[] = {0};
+static swig_lua_class _wrap_class_ImGuiStoragePair = { "ImGuiStoragePair", "ImGuiStoragePair", &SWIGTYPE_p_ImGuiStoragePair,_proxy__wrap_new_ImGuiStoragePair, swig_delete_ImGuiStoragePair, swig_ImGuiStoragePair_methods, swig_ImGuiStoragePair_attributes, &swig_ImGuiStoragePair_Sf_SwigStatic, swig_ImGuiStoragePair_meta, swig_ImGuiStoragePair_bases, swig_ImGuiStoragePair_base_names };
+
 static int _wrap_ImGuiStorage_Data_set(lua_State* L) { { int SWIG_arg = 0; ImGuiStorage *arg1 = (ImGuiStorage *) 0 ;
-    ImVector< ImGuiStorage::ImGuiStoragePair > *arg2 = (ImVector< ImGuiStorage::ImGuiStoragePair > *) 0 ;
-    SWIG_check_num_args("ImGuiStorage::Data",2,2)
+    ImVector< ImGuiStoragePair > *arg2 = (ImVector< ImGuiStoragePair > *) 0 ; SWIG_check_num_args("ImGuiStorage::Data",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStorage::Data",1,"ImGuiStorage *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiStorage::Data",2,"ImVector< ImGuiStorage::ImGuiStoragePair > *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiStorage::Data",2,"ImVector< ImGuiStoragePair > *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStorage,0))){
       SWIG_fail_ptr("ImGuiStorage_Data_set",1,SWIGTYPE_p_ImGuiStorage); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t,0))){
-      SWIG_fail_ptr("ImGuiStorage_Data_set",2,SWIGTYPE_p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t); } 
-    if (arg1) (arg1)->Data = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVectorT_ImGuiStoragePair_t,0))){
+      SWIG_fail_ptr("ImGuiStorage_Data_set",2,SWIGTYPE_p_ImVectorT_ImGuiStoragePair_t); }  if (arg1) (arg1)->Data = *arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiStorage_Data_get(lua_State* L) { { int SWIG_arg = 0; ImGuiStorage *arg1 = (ImGuiStorage *) 0 ;
-    ImVector< ImGuiStorage::ImGuiStoragePair > *result = 0 ; SWIG_check_num_args("ImGuiStorage::Data",1,1)
+    ImVector< ImGuiStoragePair > *result = 0 ; SWIG_check_num_args("ImGuiStorage::Data",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStorage::Data",1,"ImGuiStorage *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiStorage,0))){
       SWIG_fail_ptr("ImGuiStorage_Data_get",1,SWIGTYPE_p_ImGuiStorage); } 
-    result = (ImVector< ImGuiStorage::ImGuiStoragePair > *)& ((arg1)->Data);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t,0); SWIG_arg++;  return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+    result = (ImVector< ImGuiStoragePair > *)& ((arg1)->Data);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_ImGuiStoragePair_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
 static int _wrap_ImGuiStorage_Clear(lua_State* L) { { int SWIG_arg = 0; ImGuiStorage *arg1 = (ImGuiStorage *) 0 ;
     SWIG_check_num_args("ImGuiStorage::Clear",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiStorage::Clear",1,"ImGuiStorage *");
@@ -12049,6 +12500,23 @@ static int _wrap_ImGuiListClipper_StartPosY_get(lua_State* L) { { int SWIG_arg =
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiListClipper,0))){
       SWIG_fail_ptr("ImGuiListClipper_StartPosY_get",1,SWIGTYPE_p_ImGuiListClipper); }  result = (float) ((arg1)->StartPosY);
     lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiListClipper_StartSeekOffsetY_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiListClipper *arg1 = (ImGuiListClipper *) 0 ; double arg2 ;
+    SWIG_check_num_args("ImGuiListClipper::StartSeekOffsetY",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiListClipper::StartSeekOffsetY",1,"ImGuiListClipper *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiListClipper::StartSeekOffsetY",2,"double");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiListClipper,0))){
+      SWIG_fail_ptr("ImGuiListClipper_StartSeekOffsetY_set",1,SWIGTYPE_p_ImGuiListClipper); } 
+    arg2 = (double)lua_tonumber(L, 2); if (arg1) (arg1)->StartSeekOffsetY = arg2; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiListClipper_StartSeekOffsetY_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiListClipper *arg1 = (ImGuiListClipper *) 0 ; double result;
+    SWIG_check_num_args("ImGuiListClipper::StartSeekOffsetY",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiListClipper::StartSeekOffsetY",1,"ImGuiListClipper *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiListClipper,0))){
+      SWIG_fail_ptr("ImGuiListClipper_StartSeekOffsetY_get",1,SWIGTYPE_p_ImGuiListClipper); } 
+    result = (double) ((arg1)->StartSeekOffsetY); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiListClipper_TempData_set(lua_State* L) { { int SWIG_arg = 0;
     ImGuiListClipper *arg1 = (ImGuiListClipper *) 0 ; void *arg2 = (void *) 0 ;
     SWIG_check_num_args("ImGuiListClipper::TempData",2,2)
@@ -12123,6 +12591,13 @@ static int _wrap_ImGuiListClipper_IncludeItemsByIndex(lua_State* L) { { int SWIG
       SWIG_fail_ptr("ImGuiListClipper_IncludeItemsByIndex",1,SWIGTYPE_p_ImGuiListClipper); }  arg2 = (int)lua_tonumber(L, 2);
     arg3 = (int)lua_tonumber(L, 3); (arg1)->IncludeItemsByIndex(arg2,arg3); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
+static int _wrap_ImGuiListClipper_SeekCursorForItem(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiListClipper *arg1 = (ImGuiListClipper *) 0 ; int arg2 ; SWIG_check_num_args("ImGuiListClipper::SeekCursorForItem",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiListClipper::SeekCursorForItem",1,"ImGuiListClipper *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiListClipper::SeekCursorForItem",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiListClipper,0))){
+      SWIG_fail_ptr("ImGuiListClipper_SeekCursorForItem",1,SWIGTYPE_p_ImGuiListClipper); }  arg2 = (int)lua_tonumber(L, 2);
+    (arg1)->SeekCursorForItem(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiListClipper_IncludeRangeByIndices(lua_State* L) { { int SWIG_arg = 0;
     ImGuiListClipper *arg1 = (ImGuiListClipper *) 0 ; int arg2 ; int arg3 ;
     SWIG_check_num_args("ImGuiListClipper::IncludeRangeByIndices",3,3)
@@ -12162,6 +12637,7 @@ static swig_lua_attribute swig_ImGuiListClipper_attributes[] = {
     { "ItemsCount", _wrap_ImGuiListClipper_ItemsCount_get, _wrap_ImGuiListClipper_ItemsCount_set },
     { "ItemsHeight", _wrap_ImGuiListClipper_ItemsHeight_get, _wrap_ImGuiListClipper_ItemsHeight_set },
     { "StartPosY", _wrap_ImGuiListClipper_StartPosY_get, _wrap_ImGuiListClipper_StartPosY_set },
+    { "StartSeekOffsetY", _wrap_ImGuiListClipper_StartSeekOffsetY_get, _wrap_ImGuiListClipper_StartSeekOffsetY_set },
     { "TempData", _wrap_ImGuiListClipper_TempData_get, _wrap_ImGuiListClipper_TempData_set },
     {0,0,0}
 };
@@ -12171,6 +12647,7 @@ static swig_lua_method swig_ImGuiListClipper_methods[]= {
     { "Step", _wrap_ImGuiListClipper_Step},
     { "IncludeItemByIndex", _wrap_ImGuiListClipper_IncludeItemByIndex},
     { "IncludeItemsByIndex", _wrap_ImGuiListClipper_IncludeItemsByIndex},
+    { "SeekCursorForItem", _wrap_ImGuiListClipper_SeekCursorForItem},
     { "IncludeRangeByIndices", _wrap_ImGuiListClipper_IncludeRangeByIndices},
     { "ForceDisplayRangeByIndices", _wrap_ImGuiListClipper_ForceDisplayRangeByIndices},
     {0,0}
@@ -12339,6 +12816,653 @@ static swig_lua_class *swig_ImColor_bases[] = {0};
 static const char *swig_ImColor_base_names[] = {0};
 static swig_lua_class _wrap_class_ImColor = { "ImColor", "ImColor", &SWIGTYPE_p_ImColor,_proxy__wrap_new_ImColor, swig_delete_ImColor, swig_ImColor_methods, swig_ImColor_attributes, &swig_ImColor_Sf_SwigStatic, swig_ImColor_meta, swig_ImColor_bases, swig_ImColor_base_names };
 
+static int _wrap_ImGuiMultiSelectIO_Requests_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ;
+    ImVector< ImGuiSelectionRequest > *arg2 = (ImVector< ImGuiSelectionRequest > *) 0 ;
+    SWIG_check_num_args("ImGuiMultiSelectIO::Requests",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::Requests",1,"ImGuiMultiSelectIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiMultiSelectIO::Requests",2,"ImVector< ImGuiSelectionRequest > *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_Requests_set",1,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVectorT_ImGuiSelectionRequest_t,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_Requests_set",2,SWIGTYPE_p_ImVectorT_ImGuiSelectionRequest_t); } 
+    if (arg1) (arg1)->Requests = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_Requests_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; ImVector< ImGuiSelectionRequest > *result = 0 ;
+    SWIG_check_num_args("ImGuiMultiSelectIO::Requests",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::Requests",1,"ImGuiMultiSelectIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_Requests_get",1,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    result = (ImVector< ImGuiSelectionRequest > *)& ((arg1)->Requests);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_ImGuiSelectionRequest_t,0); SWIG_arg++;  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_RangeSrcItem_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; ImGuiSelectionUserData arg2 ;
+    SWIG_check_num_args("ImGuiMultiSelectIO::RangeSrcItem",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::RangeSrcItem",1,"ImGuiMultiSelectIO *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiMultiSelectIO::RangeSrcItem",2,"ImGuiSelectionUserData");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_RangeSrcItem_set",1,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    arg2 = (ImGuiSelectionUserData)lua_tonumber(L, 2); if (arg1) (arg1)->RangeSrcItem = arg2; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_RangeSrcItem_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; ImGuiSelectionUserData result;
+    SWIG_check_num_args("ImGuiMultiSelectIO::RangeSrcItem",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::RangeSrcItem",1,"ImGuiMultiSelectIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_RangeSrcItem_get",1,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    result = (ImGuiSelectionUserData) ((arg1)->RangeSrcItem); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_NavIdItem_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; ImGuiSelectionUserData arg2 ;
+    SWIG_check_num_args("ImGuiMultiSelectIO::NavIdItem",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::NavIdItem",1,"ImGuiMultiSelectIO *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiMultiSelectIO::NavIdItem",2,"ImGuiSelectionUserData");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_NavIdItem_set",1,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    arg2 = (ImGuiSelectionUserData)lua_tonumber(L, 2); if (arg1) (arg1)->NavIdItem = arg2; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_NavIdItem_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; ImGuiSelectionUserData result;
+    SWIG_check_num_args("ImGuiMultiSelectIO::NavIdItem",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::NavIdItem",1,"ImGuiMultiSelectIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_NavIdItem_get",1,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    result = (ImGuiSelectionUserData) ((arg1)->NavIdItem); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_NavIdSelected_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ImGuiMultiSelectIO::NavIdSelected",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::NavIdSelected",1,"ImGuiMultiSelectIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiMultiSelectIO::NavIdSelected",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_NavIdSelected_set",1,SWIGTYPE_p_ImGuiMultiSelectIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->NavIdSelected = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_NavIdSelected_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; bool result;
+    SWIG_check_num_args("ImGuiMultiSelectIO::NavIdSelected",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::NavIdSelected",1,"ImGuiMultiSelectIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_NavIdSelected_get",1,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    result = (bool) ((arg1)->NavIdSelected); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_RangeSrcReset_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ImGuiMultiSelectIO::RangeSrcReset",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::RangeSrcReset",1,"ImGuiMultiSelectIO *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiMultiSelectIO::RangeSrcReset",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_RangeSrcReset_set",1,SWIGTYPE_p_ImGuiMultiSelectIO); }  arg2 = (lua_toboolean(L, 2)!=0);
+    if (arg1) (arg1)->RangeSrcReset = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_RangeSrcReset_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; bool result;
+    SWIG_check_num_args("ImGuiMultiSelectIO::RangeSrcReset",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::RangeSrcReset",1,"ImGuiMultiSelectIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_RangeSrcReset_get",1,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    result = (bool) ((arg1)->RangeSrcReset); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_ItemsCount_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; int arg2 ; SWIG_check_num_args("ImGuiMultiSelectIO::ItemsCount",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::ItemsCount",1,"ImGuiMultiSelectIO *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiMultiSelectIO::ItemsCount",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_ItemsCount_set",1,SWIGTYPE_p_ImGuiMultiSelectIO); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->ItemsCount = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiMultiSelectIO_ItemsCount_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) 0 ; int result; SWIG_check_num_args("ImGuiMultiSelectIO::ItemsCount",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiMultiSelectIO::ItemsCount",1,"ImGuiMultiSelectIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiMultiSelectIO_ItemsCount_get",1,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    result = (int) ((arg1)->ItemsCount); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }
+   lua_error(L); return 0; }
+static int _wrap_new_ImGuiMultiSelectIO(lua_State* L) { { int SWIG_arg = 0; ImGuiMultiSelectIO *result = 0 ;
+    SWIG_check_num_args("ImGuiMultiSelectIO::ImGuiMultiSelectIO",0,0) result = (ImGuiMultiSelectIO *)new ImGuiMultiSelectIO();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiMultiSelectIO,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static void swig_delete_ImGuiMultiSelectIO(void *obj) {
+ImGuiMultiSelectIO *arg1 = (ImGuiMultiSelectIO *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_ImGuiMultiSelectIO(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_ImGuiMultiSelectIO);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_ImGuiMultiSelectIO_attributes[] = {
+    { "Requests", _wrap_ImGuiMultiSelectIO_Requests_get, _wrap_ImGuiMultiSelectIO_Requests_set },
+    { "RangeSrcItem", _wrap_ImGuiMultiSelectIO_RangeSrcItem_get, _wrap_ImGuiMultiSelectIO_RangeSrcItem_set },
+    { "NavIdItem", _wrap_ImGuiMultiSelectIO_NavIdItem_get, _wrap_ImGuiMultiSelectIO_NavIdItem_set },
+    { "NavIdSelected", _wrap_ImGuiMultiSelectIO_NavIdSelected_get, _wrap_ImGuiMultiSelectIO_NavIdSelected_set },
+    { "RangeSrcReset", _wrap_ImGuiMultiSelectIO_RangeSrcReset_get, _wrap_ImGuiMultiSelectIO_RangeSrcReset_set },
+    { "ItemsCount", _wrap_ImGuiMultiSelectIO_ItemsCount_get, _wrap_ImGuiMultiSelectIO_ItemsCount_set },
+    {0,0,0}
+};
+static swig_lua_method swig_ImGuiMultiSelectIO_methods[]= {
+    {0,0}
+};
+static swig_lua_method swig_ImGuiMultiSelectIO_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_ImGuiMultiSelectIO_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_ImGuiMultiSelectIO_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_ImGuiMultiSelectIO_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_ImGuiMultiSelectIO_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_ImGuiMultiSelectIO_Sf_SwigStatic = {
+    "ImGuiMultiSelectIO",
+    swig_ImGuiMultiSelectIO_Sf_SwigStatic_methods,
+    swig_ImGuiMultiSelectIO_Sf_SwigStatic_attributes,
+    swig_ImGuiMultiSelectIO_Sf_SwigStatic_constants,
+    swig_ImGuiMultiSelectIO_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_ImGuiMultiSelectIO_bases[] = {0};
+static const char *swig_ImGuiMultiSelectIO_base_names[] = {0};
+static swig_lua_class _wrap_class_ImGuiMultiSelectIO = { "ImGuiMultiSelectIO", "ImGuiMultiSelectIO", &SWIGTYPE_p_ImGuiMultiSelectIO,_proxy__wrap_new_ImGuiMultiSelectIO, swig_delete_ImGuiMultiSelectIO, swig_ImGuiMultiSelectIO_methods, swig_ImGuiMultiSelectIO_attributes, &swig_ImGuiMultiSelectIO_Sf_SwigStatic, swig_ImGuiMultiSelectIO_meta, swig_ImGuiMultiSelectIO_bases, swig_ImGuiMultiSelectIO_base_names };
+
+static int _wrap_ImGuiSelectionRequest_Type_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; ImGuiSelectionRequestType arg2 ;
+    SWIG_check_num_args("ImGuiSelectionRequest::Type",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::Type",1,"ImGuiSelectionRequest *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiSelectionRequest::Type",2,"ImGuiSelectionRequestType");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_Type_set",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    arg2 = (ImGuiSelectionRequestType)(int)lua_tonumber(L, 2); if (arg1) (arg1)->Type = arg2; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionRequest_Type_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; ImGuiSelectionRequestType result;
+    SWIG_check_num_args("ImGuiSelectionRequest::Type",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::Type",1,"ImGuiSelectionRequest *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_Type_get",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    result = (ImGuiSelectionRequestType) ((arg1)->Type); lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionRequest_Selected_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ImGuiSelectionRequest::Selected",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::Selected",1,"ImGuiSelectionRequest *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiSelectionRequest::Selected",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_Selected_set",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    arg2 = (lua_toboolean(L, 2)!=0); if (arg1) (arg1)->Selected = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_ImGuiSelectionRequest_Selected_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; bool result;
+    SWIG_check_num_args("ImGuiSelectionRequest::Selected",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::Selected",1,"ImGuiSelectionRequest *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_Selected_get",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    result = (bool) ((arg1)->Selected); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionRequest_RangeDirection_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; ImS8 arg2 ;
+    SWIG_check_num_args("ImGuiSelectionRequest::RangeDirection",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::RangeDirection",1,"ImGuiSelectionRequest *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiSelectionRequest::RangeDirection",2,"ImS8");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_RangeDirection_set",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    arg2 = (ImS8)lua_tonumber(L, 2); if (arg1) (arg1)->RangeDirection = arg2; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionRequest_RangeDirection_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; ImS8 result;
+    SWIG_check_num_args("ImGuiSelectionRequest::RangeDirection",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::RangeDirection",1,"ImGuiSelectionRequest *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_RangeDirection_get",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    result = (ImS8) ((arg1)->RangeDirection); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionRequest_RangeFirstItem_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; ImGuiSelectionUserData arg2 ;
+    SWIG_check_num_args("ImGuiSelectionRequest::RangeFirstItem",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::RangeFirstItem",1,"ImGuiSelectionRequest *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiSelectionRequest::RangeFirstItem",2,"ImGuiSelectionUserData");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_RangeFirstItem_set",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    arg2 = (ImGuiSelectionUserData)lua_tonumber(L, 2); if (arg1) (arg1)->RangeFirstItem = arg2; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionRequest_RangeFirstItem_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; ImGuiSelectionUserData result;
+    SWIG_check_num_args("ImGuiSelectionRequest::RangeFirstItem",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::RangeFirstItem",1,"ImGuiSelectionRequest *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_RangeFirstItem_get",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    result = (ImGuiSelectionUserData) ((arg1)->RangeFirstItem); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionRequest_RangeLastItem_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; ImGuiSelectionUserData arg2 ;
+    SWIG_check_num_args("ImGuiSelectionRequest::RangeLastItem",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::RangeLastItem",1,"ImGuiSelectionRequest *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiSelectionRequest::RangeLastItem",2,"ImGuiSelectionUserData");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_RangeLastItem_set",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    arg2 = (ImGuiSelectionUserData)lua_tonumber(L, 2); if (arg1) (arg1)->RangeLastItem = arg2; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionRequest_RangeLastItem_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) 0 ; ImGuiSelectionUserData result;
+    SWIG_check_num_args("ImGuiSelectionRequest::RangeLastItem",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionRequest::RangeLastItem",1,"ImGuiSelectionRequest *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionRequest,0))){
+      SWIG_fail_ptr("ImGuiSelectionRequest_RangeLastItem_get",1,SWIGTYPE_p_ImGuiSelectionRequest); } 
+    result = (ImGuiSelectionUserData) ((arg1)->RangeLastItem); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_new_ImGuiSelectionRequest(lua_State* L) { { int SWIG_arg = 0; ImGuiSelectionRequest *result = 0 ;
+    SWIG_check_num_args("ImGuiSelectionRequest::ImGuiSelectionRequest",0,0)
+    result = (ImGuiSelectionRequest *)new ImGuiSelectionRequest();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiSelectionRequest,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static void swig_delete_ImGuiSelectionRequest(void *obj) {
+ImGuiSelectionRequest *arg1 = (ImGuiSelectionRequest *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_ImGuiSelectionRequest(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_ImGuiSelectionRequest);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_ImGuiSelectionRequest_attributes[] = {
+    { "Type", _wrap_ImGuiSelectionRequest_Type_get, _wrap_ImGuiSelectionRequest_Type_set },
+    { "Selected", _wrap_ImGuiSelectionRequest_Selected_get, _wrap_ImGuiSelectionRequest_Selected_set },
+    { "RangeDirection", _wrap_ImGuiSelectionRequest_RangeDirection_get, _wrap_ImGuiSelectionRequest_RangeDirection_set },
+    { "RangeFirstItem", _wrap_ImGuiSelectionRequest_RangeFirstItem_get, _wrap_ImGuiSelectionRequest_RangeFirstItem_set },
+    { "RangeLastItem", _wrap_ImGuiSelectionRequest_RangeLastItem_get, _wrap_ImGuiSelectionRequest_RangeLastItem_set },
+    {0,0,0}
+};
+static swig_lua_method swig_ImGuiSelectionRequest_methods[]= {
+    {0,0}
+};
+static swig_lua_method swig_ImGuiSelectionRequest_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_ImGuiSelectionRequest_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_ImGuiSelectionRequest_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_ImGuiSelectionRequest_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_ImGuiSelectionRequest_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_ImGuiSelectionRequest_Sf_SwigStatic = {
+    "ImGuiSelectionRequest",
+    swig_ImGuiSelectionRequest_Sf_SwigStatic_methods,
+    swig_ImGuiSelectionRequest_Sf_SwigStatic_attributes,
+    swig_ImGuiSelectionRequest_Sf_SwigStatic_constants,
+    swig_ImGuiSelectionRequest_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_ImGuiSelectionRequest_bases[] = {0};
+static const char *swig_ImGuiSelectionRequest_base_names[] = {0};
+static swig_lua_class _wrap_class_ImGuiSelectionRequest = { "ImGuiSelectionRequest", "ImGuiSelectionRequest", &SWIGTYPE_p_ImGuiSelectionRequest,_proxy__wrap_new_ImGuiSelectionRequest, swig_delete_ImGuiSelectionRequest, swig_ImGuiSelectionRequest_methods, swig_ImGuiSelectionRequest_attributes, &swig_ImGuiSelectionRequest_Sf_SwigStatic, swig_ImGuiSelectionRequest_meta, swig_ImGuiSelectionRequest_bases, swig_ImGuiSelectionRequest_base_names };
+
+static int _wrap_ImGuiSelectionBasicStorage_Size_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; int arg2 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::Size",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::Size",1,"ImGuiSelectionBasicStorage *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::Size",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_Size_set",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    arg2 = (int)lua_tonumber(L, 2); if (arg1) (arg1)->Size = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_Size_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; int result;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::Size",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::Size",1,"ImGuiSelectionBasicStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_Size_get",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    result = (int) ((arg1)->Size); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_PreserveOrder_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; bool arg2 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::PreserveOrder",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::PreserveOrder",1,"ImGuiSelectionBasicStorage *");
+    if(!lua_isboolean(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::PreserveOrder",2,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_PreserveOrder_set",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    arg2 = (lua_toboolean(L, 2)!=0); if (arg1) (arg1)->PreserveOrder = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_PreserveOrder_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; bool result;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::PreserveOrder",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::PreserveOrder",1,"ImGuiSelectionBasicStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_PreserveOrder_get",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    result = (bool) ((arg1)->PreserveOrder); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_UserData_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; void *arg2 = (void *) 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::UserData",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::UserData",1,"ImGuiSelectionBasicStorage *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::UserData",2,"void *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_UserData_set",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiSelectionBasicStorage_UserData_set"); if (arg1) (arg1)->UserData = arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_UserData_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; void *result = 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::UserData",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::UserData",1,"ImGuiSelectionBasicStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_UserData_get",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    result = (void *) ((arg1)->UserData); SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++;  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_AdapterIndexToStorageId_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ;
+    ImGuiID (*arg2)(ImGuiSelectionBasicStorage *,int) = (ImGuiID (*)(ImGuiSelectionBasicStorage *,int)) 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::AdapterIndexToStorageId",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::AdapterIndexToStorageId",1,"ImGuiSelectionBasicStorage *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::AdapterIndexToStorageId",2,"ImGuiID (*)(ImGuiSelectionBasicStorage *,int)");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_AdapterIndexToStorageId_set",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_AdapterIndexToStorageId_set",2,SWIGTYPE_p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int); }
+     if (arg1) (arg1)->AdapterIndexToStorageId = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_AdapterIndexToStorageId_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ;
+    ImGuiID (*result)(ImGuiSelectionBasicStorage *,int) = 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::AdapterIndexToStorageId",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::AdapterIndexToStorageId",1,"ImGuiSelectionBasicStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_AdapterIndexToStorageId_get",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    result = (ImGuiID (*)(ImGuiSelectionBasicStorage *,int)) ((arg1)->AdapterIndexToStorageId);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int,0); SWIG_arg++;  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage__SelectionOrder_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; int arg2 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::_SelectionOrder",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::_SelectionOrder",1,"ImGuiSelectionBasicStorage *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::_SelectionOrder",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage__SelectionOrder_set",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    arg2 = (int)lua_tonumber(L, 2); if (arg1) (arg1)->_SelectionOrder = arg2; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage__SelectionOrder_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; int result;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::_SelectionOrder",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::_SelectionOrder",1,"ImGuiSelectionBasicStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage__SelectionOrder_get",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    result = (int) ((arg1)->_SelectionOrder); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage__Storage_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; ImGuiStorage *arg2 = (ImGuiStorage *) 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::_Storage",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::_Storage",1,"ImGuiSelectionBasicStorage *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::_Storage",2,"ImGuiStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage__Storage_set",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImGuiStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage__Storage_set",2,SWIGTYPE_p_ImGuiStorage); }  if (arg1) (arg1)->_Storage = *arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage__Storage_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; ImGuiStorage *result = 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::_Storage",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::_Storage",1,"ImGuiSelectionBasicStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage__Storage_get",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    result = (ImGuiStorage *)& ((arg1)->_Storage); SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiStorage,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_new_ImGuiSelectionBasicStorage(lua_State* L) { { int SWIG_arg = 0; ImGuiSelectionBasicStorage *result = 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::ImGuiSelectionBasicStorage",0,0)
+    result = (ImGuiSelectionBasicStorage *)new ImGuiSelectionBasicStorage();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiSelectionBasicStorage,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_ApplyRequests(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; ImGuiMultiSelectIO *arg2 = (ImGuiMultiSelectIO *) 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::ApplyRequests",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::ApplyRequests",1,"ImGuiSelectionBasicStorage *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::ApplyRequests",2,"ImGuiMultiSelectIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_ApplyRequests",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_ApplyRequests",2,SWIGTYPE_p_ImGuiMultiSelectIO); }  (arg1)->ApplyRequests(arg2);
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_Contains(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; ImGuiID arg2 ; bool result;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::Contains",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::Contains",1,"ImGuiSelectionBasicStorage const *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::Contains",2,"ImGuiID");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_Contains",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImGuiID)lua_tonumber(L, 2);
+    result = (bool)((ImGuiSelectionBasicStorage const *)arg1)->Contains(arg2); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_Clear(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::Clear",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::Clear",1,"ImGuiSelectionBasicStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_Clear",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); }  (arg1)->Clear();
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_Swap(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; ImGuiSelectionBasicStorage *arg2 = 0 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::Swap",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::Swap",1,"ImGuiSelectionBasicStorage *");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::Swap",2,"ImGuiSelectionBasicStorage &");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_Swap",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_Swap",2,SWIGTYPE_p_ImGuiSelectionBasicStorage); }  (arg1)->Swap(*arg2);
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_SetItemSelected(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; ImGuiID arg2 ; bool arg3 ;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::SetItemSelected",3,3)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::SetItemSelected",1,"ImGuiSelectionBasicStorage *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::SetItemSelected",2,"ImGuiID");
+    if(!lua_isboolean(L,3)) SWIG_fail_arg("ImGuiSelectionBasicStorage::SetItemSelected",3,"bool");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_SetItemSelected",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImGuiID)lua_tonumber(L, 2);
+    arg3 = (lua_toboolean(L, 3)!=0); (arg1)->SetItemSelected(arg2,arg3); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_GetNextSelectedItem(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; void **arg2 = (void **) 0 ;
+    ImGuiID *arg3 = (ImGuiID *) 0 ; bool result; SWIG_check_num_args("ImGuiSelectionBasicStorage::GetNextSelectedItem",3,3)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::GetNextSelectedItem",1,"ImGuiSelectionBasicStorage *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::GetNextSelectedItem",2,"void **");
+    if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ImGuiSelectionBasicStorage::GetNextSelectedItem",3,"ImGuiID *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_GetNextSelectedItem",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_void,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_GetNextSelectedItem",2,SWIGTYPE_p_p_void); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_unsigned_int,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_GetNextSelectedItem",3,SWIGTYPE_p_unsigned_int); } 
+    result = (bool)(arg1)->GetNextSelectedItem(arg2,arg3); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionBasicStorage_GetStorageIdFromIndex(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) 0 ; int arg2 ; ImGuiID result;
+    SWIG_check_num_args("ImGuiSelectionBasicStorage::GetStorageIdFromIndex",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionBasicStorage::GetStorageIdFromIndex",1,"ImGuiSelectionBasicStorage *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiSelectionBasicStorage::GetStorageIdFromIndex",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionBasicStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionBasicStorage_GetStorageIdFromIndex",1,SWIGTYPE_p_ImGuiSelectionBasicStorage); } 
+    arg2 = (int)lua_tonumber(L, 2); result = (ImGuiID)(arg1)->GetStorageIdFromIndex(arg2);
+    lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static void swig_delete_ImGuiSelectionBasicStorage(void *obj) {
+ImGuiSelectionBasicStorage *arg1 = (ImGuiSelectionBasicStorage *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_ImGuiSelectionBasicStorage(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_ImGuiSelectionBasicStorage);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_ImGuiSelectionBasicStorage_attributes[] = {
+    { "Size", _wrap_ImGuiSelectionBasicStorage_Size_get, _wrap_ImGuiSelectionBasicStorage_Size_set },
+    { "PreserveOrder", _wrap_ImGuiSelectionBasicStorage_PreserveOrder_get, _wrap_ImGuiSelectionBasicStorage_PreserveOrder_set },
+    { "UserData", _wrap_ImGuiSelectionBasicStorage_UserData_get, _wrap_ImGuiSelectionBasicStorage_UserData_set },
+    { "AdapterIndexToStorageId", _wrap_ImGuiSelectionBasicStorage_AdapterIndexToStorageId_get, _wrap_ImGuiSelectionBasicStorage_AdapterIndexToStorageId_set },
+    { "_SelectionOrder", _wrap_ImGuiSelectionBasicStorage__SelectionOrder_get, _wrap_ImGuiSelectionBasicStorage__SelectionOrder_set },
+    { "_Storage", _wrap_ImGuiSelectionBasicStorage__Storage_get, _wrap_ImGuiSelectionBasicStorage__Storage_set },
+    {0,0,0}
+};
+static swig_lua_method swig_ImGuiSelectionBasicStorage_methods[]= {
+    { "ApplyRequests", _wrap_ImGuiSelectionBasicStorage_ApplyRequests},
+    { "Contains", _wrap_ImGuiSelectionBasicStorage_Contains},
+    { "Clear", _wrap_ImGuiSelectionBasicStorage_Clear},
+    { "Swap", _wrap_ImGuiSelectionBasicStorage_Swap},
+    { "SetItemSelected", _wrap_ImGuiSelectionBasicStorage_SetItemSelected},
+    { "GetNextSelectedItem", _wrap_ImGuiSelectionBasicStorage_GetNextSelectedItem},
+    { "GetStorageIdFromIndex", _wrap_ImGuiSelectionBasicStorage_GetStorageIdFromIndex},
+    {0,0}
+};
+static swig_lua_method swig_ImGuiSelectionBasicStorage_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_ImGuiSelectionBasicStorage_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_ImGuiSelectionBasicStorage_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_ImGuiSelectionBasicStorage_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_ImGuiSelectionBasicStorage_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_ImGuiSelectionBasicStorage_Sf_SwigStatic = {
+    "ImGuiSelectionBasicStorage",
+    swig_ImGuiSelectionBasicStorage_Sf_SwigStatic_methods,
+    swig_ImGuiSelectionBasicStorage_Sf_SwigStatic_attributes,
+    swig_ImGuiSelectionBasicStorage_Sf_SwigStatic_constants,
+    swig_ImGuiSelectionBasicStorage_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_ImGuiSelectionBasicStorage_bases[] = {0};
+static const char *swig_ImGuiSelectionBasicStorage_base_names[] = {0};
+static swig_lua_class _wrap_class_ImGuiSelectionBasicStorage = { "ImGuiSelectionBasicStorage", "ImGuiSelectionBasicStorage", &SWIGTYPE_p_ImGuiSelectionBasicStorage,_proxy__wrap_new_ImGuiSelectionBasicStorage, swig_delete_ImGuiSelectionBasicStorage, swig_ImGuiSelectionBasicStorage_methods, swig_ImGuiSelectionBasicStorage_attributes, &swig_ImGuiSelectionBasicStorage_Sf_SwigStatic, swig_ImGuiSelectionBasicStorage_meta, swig_ImGuiSelectionBasicStorage_bases, swig_ImGuiSelectionBasicStorage_base_names };
+
+static int _wrap_ImGuiSelectionExternalStorage_UserData_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionExternalStorage *arg1 = (ImGuiSelectionExternalStorage *) 0 ; void *arg2 = (void *) 0 ;
+    SWIG_check_num_args("ImGuiSelectionExternalStorage::UserData",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionExternalStorage::UserData",1,"ImGuiSelectionExternalStorage *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiSelectionExternalStorage::UserData",2,"void *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionExternalStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionExternalStorage_UserData_set",1,SWIGTYPE_p_ImGuiSelectionExternalStorage); } 
+    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiSelectionExternalStorage_UserData_set"); if (arg1) (arg1)->UserData = arg2;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionExternalStorage_UserData_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionExternalStorage *arg1 = (ImGuiSelectionExternalStorage *) 0 ; void *result = 0 ;
+    SWIG_check_num_args("ImGuiSelectionExternalStorage::UserData",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionExternalStorage::UserData",1,"ImGuiSelectionExternalStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionExternalStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionExternalStorage_UserData_get",1,SWIGTYPE_p_ImGuiSelectionExternalStorage); } 
+    result = (void *) ((arg1)->UserData); SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++;  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionExternalStorage_AdapterSetItemSelected_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionExternalStorage *arg1 = (ImGuiSelectionExternalStorage *) 0 ;
+    void (*arg2)(ImGuiSelectionExternalStorage *,int,bool) = (void (*)(ImGuiSelectionExternalStorage *,int,bool)) 0 ;
+    SWIG_check_num_args("ImGuiSelectionExternalStorage::AdapterSetItemSelected",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionExternalStorage::AdapterSetItemSelected",1,"ImGuiSelectionExternalStorage *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiSelectionExternalStorage::AdapterSetItemSelected",2,"void (*)(ImGuiSelectionExternalStorage *,int,bool)");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionExternalStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionExternalStorage_AdapterSetItemSelected_set",1,SWIGTYPE_p_ImGuiSelectionExternalStorage); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_ImGuiSelectionExternalStorage_int_bool__void,0))){
+      SWIG_fail_ptr("ImGuiSelectionExternalStorage_AdapterSetItemSelected_set",2,SWIGTYPE_p_f_p_ImGuiSelectionExternalStorage_int_bool__void); }
+     if (arg1) (arg1)->AdapterSetItemSelected = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionExternalStorage_AdapterSetItemSelected_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionExternalStorage *arg1 = (ImGuiSelectionExternalStorage *) 0 ;
+    void (*result)(ImGuiSelectionExternalStorage *,int,bool) = 0 ;
+    SWIG_check_num_args("ImGuiSelectionExternalStorage::AdapterSetItemSelected",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionExternalStorage::AdapterSetItemSelected",1,"ImGuiSelectionExternalStorage *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionExternalStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionExternalStorage_AdapterSetItemSelected_get",1,SWIGTYPE_p_ImGuiSelectionExternalStorage); } 
+    result = (void (*)(ImGuiSelectionExternalStorage *,int,bool)) ((arg1)->AdapterSetItemSelected);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_ImGuiSelectionExternalStorage_int_bool__void,0); SWIG_arg++;  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_new_ImGuiSelectionExternalStorage(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionExternalStorage *result = 0 ;
+    SWIG_check_num_args("ImGuiSelectionExternalStorage::ImGuiSelectionExternalStorage",0,0)
+    result = (ImGuiSelectionExternalStorage *)new ImGuiSelectionExternalStorage();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiSelectionExternalStorage,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiSelectionExternalStorage_ApplyRequests(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiSelectionExternalStorage *arg1 = (ImGuiSelectionExternalStorage *) 0 ;
+    ImGuiMultiSelectIO *arg2 = (ImGuiMultiSelectIO *) 0 ;
+    SWIG_check_num_args("ImGuiSelectionExternalStorage::ApplyRequests",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiSelectionExternalStorage::ApplyRequests",1,"ImGuiSelectionExternalStorage *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiSelectionExternalStorage::ApplyRequests",2,"ImGuiMultiSelectIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiSelectionExternalStorage,0))){
+      SWIG_fail_ptr("ImGuiSelectionExternalStorage_ApplyRequests",1,SWIGTYPE_p_ImGuiSelectionExternalStorage); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImGuiMultiSelectIO,0))){
+      SWIG_fail_ptr("ImGuiSelectionExternalStorage_ApplyRequests",2,SWIGTYPE_p_ImGuiMultiSelectIO); } 
+    (arg1)->ApplyRequests(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static void swig_delete_ImGuiSelectionExternalStorage(void *obj) {
+ImGuiSelectionExternalStorage *arg1 = (ImGuiSelectionExternalStorage *) obj;
+delete arg1;
+}
+static int _proxy__wrap_new_ImGuiSelectionExternalStorage(lua_State *L) {
+    assert(lua_istable(L,1));
+    lua_pushcfunction(L,_wrap_new_ImGuiSelectionExternalStorage);
+    assert(!lua_isnil(L,-1));
+    lua_replace(L,1); /* replace our table with real constructor */
+    lua_call(L,lua_gettop(L)-1,1);
+    return 1;
+}
+static swig_lua_attribute swig_ImGuiSelectionExternalStorage_attributes[] = {
+    { "UserData", _wrap_ImGuiSelectionExternalStorage_UserData_get, _wrap_ImGuiSelectionExternalStorage_UserData_set },
+    { "AdapterSetItemSelected", _wrap_ImGuiSelectionExternalStorage_AdapterSetItemSelected_get, _wrap_ImGuiSelectionExternalStorage_AdapterSetItemSelected_set },
+    {0,0,0}
+};
+static swig_lua_method swig_ImGuiSelectionExternalStorage_methods[]= {
+    { "ApplyRequests", _wrap_ImGuiSelectionExternalStorage_ApplyRequests},
+    {0,0}
+};
+static swig_lua_method swig_ImGuiSelectionExternalStorage_meta[] = {
+    {0,0}
+};
+
+static swig_lua_attribute swig_ImGuiSelectionExternalStorage_Sf_SwigStatic_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_const_info swig_ImGuiSelectionExternalStorage_Sf_SwigStatic_constants[]= {
+    {0,0,0,0,0,0}
+};
+static swig_lua_method swig_ImGuiSelectionExternalStorage_Sf_SwigStatic_methods[]= {
+    {0,0}
+};
+static swig_lua_class* swig_ImGuiSelectionExternalStorage_Sf_SwigStatic_classes[]= {
+    0
+};
+
+static swig_lua_namespace swig_ImGuiSelectionExternalStorage_Sf_SwigStatic = {
+    "ImGuiSelectionExternalStorage",
+    swig_ImGuiSelectionExternalStorage_Sf_SwigStatic_methods,
+    swig_ImGuiSelectionExternalStorage_Sf_SwigStatic_attributes,
+    swig_ImGuiSelectionExternalStorage_Sf_SwigStatic_constants,
+    swig_ImGuiSelectionExternalStorage_Sf_SwigStatic_classes,
+    0
+};
+static swig_lua_class *swig_ImGuiSelectionExternalStorage_bases[] = {0};
+static const char *swig_ImGuiSelectionExternalStorage_base_names[] = {0};
+static swig_lua_class _wrap_class_ImGuiSelectionExternalStorage = { "ImGuiSelectionExternalStorage", "ImGuiSelectionExternalStorage", &SWIGTYPE_p_ImGuiSelectionExternalStorage,_proxy__wrap_new_ImGuiSelectionExternalStorage, swig_delete_ImGuiSelectionExternalStorage, swig_ImGuiSelectionExternalStorage_methods, swig_ImGuiSelectionExternalStorage_attributes, &swig_ImGuiSelectionExternalStorage_Sf_SwigStatic, swig_ImGuiSelectionExternalStorage_meta, swig_ImGuiSelectionExternalStorage_bases, swig_ImGuiSelectionExternalStorage_base_names };
+
 static int _wrap_ImDrawCmd_ClipRect_set(lua_State* L) { { int SWIG_arg = 0; ImDrawCmd *arg1 = (ImDrawCmd *) 0 ;
     ImVec4 *arg2 = (ImVec4 *) 0 ; SWIG_check_num_args("ImDrawCmd::ClipRect",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawCmd::ClipRect",1,"ImDrawCmd *");
@@ -12440,6 +13564,34 @@ static int _wrap_ImDrawCmd_UserCallbackData_get(lua_State* L) { { int SWIG_arg =
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawCmd,0))){
       SWIG_fail_ptr("ImDrawCmd_UserCallbackData_get",1,SWIGTYPE_p_ImDrawCmd); }  result = (void *) ((arg1)->UserCallbackData);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawCmd_UserCallbackDataSize_set(lua_State* L) { { int SWIG_arg = 0; ImDrawCmd *arg1 = (ImDrawCmd *) 0 ;
+    int arg2 ; SWIG_check_num_args("ImDrawCmd::UserCallbackDataSize",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawCmd::UserCallbackDataSize",1,"ImDrawCmd *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImDrawCmd::UserCallbackDataSize",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawCmd,0))){
+      SWIG_fail_ptr("ImDrawCmd_UserCallbackDataSize_set",1,SWIGTYPE_p_ImDrawCmd); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->UserCallbackDataSize = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawCmd_UserCallbackDataSize_get(lua_State* L) { { int SWIG_arg = 0; ImDrawCmd *arg1 = (ImDrawCmd *) 0 ;
+    int result; SWIG_check_num_args("ImDrawCmd::UserCallbackDataSize",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawCmd::UserCallbackDataSize",1,"ImDrawCmd *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawCmd,0))){
+      SWIG_fail_ptr("ImDrawCmd_UserCallbackDataSize_get",1,SWIGTYPE_p_ImDrawCmd); } 
+    result = (int) ((arg1)->UserCallbackDataSize); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawCmd_UserCallbackDataOffset_set(lua_State* L) { { int SWIG_arg = 0; ImDrawCmd *arg1 = (ImDrawCmd *) 0 ;
+    int arg2 ; SWIG_check_num_args("ImDrawCmd::UserCallbackDataOffset",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawCmd::UserCallbackDataOffset",1,"ImDrawCmd *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImDrawCmd::UserCallbackDataOffset",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawCmd,0))){
+      SWIG_fail_ptr("ImDrawCmd_UserCallbackDataOffset_set",1,SWIGTYPE_p_ImDrawCmd); }  arg2 = (int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->UserCallbackDataOffset = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawCmd_UserCallbackDataOffset_get(lua_State* L) { { int SWIG_arg = 0; ImDrawCmd *arg1 = (ImDrawCmd *) 0 ;
+    int result; SWIG_check_num_args("ImDrawCmd::UserCallbackDataOffset",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawCmd::UserCallbackDataOffset",1,"ImDrawCmd *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawCmd,0))){
+      SWIG_fail_ptr("ImDrawCmd_UserCallbackDataOffset_get",1,SWIGTYPE_p_ImDrawCmd); } 
+    result = (int) ((arg1)->UserCallbackDataOffset); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_new_ImDrawCmd(lua_State* L) { { int SWIG_arg = 0; ImDrawCmd *result = 0 ;
     SWIG_check_num_args("ImDrawCmd::ImDrawCmd",0,0) result = (ImDrawCmd *)new ImDrawCmd();
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImDrawCmd,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
@@ -12470,6 +13622,8 @@ static swig_lua_attribute swig_ImDrawCmd_attributes[] = {
     { "ElemCount", _wrap_ImDrawCmd_ElemCount_get, _wrap_ImDrawCmd_ElemCount_set },
     { "UserCallback", _wrap_ImDrawCmd_UserCallback_get, _wrap_ImDrawCmd_UserCallback_set },
     { "UserCallbackData", _wrap_ImDrawCmd_UserCallbackData_get, _wrap_ImDrawCmd_UserCallbackData_set },
+    { "UserCallbackDataSize", _wrap_ImDrawCmd_UserCallbackDataSize_get, _wrap_ImDrawCmd_UserCallbackDataSize_set },
+    { "UserCallbackDataOffset", _wrap_ImDrawCmd_UserCallbackDataOffset_get, _wrap_ImDrawCmd_UserCallbackDataOffset_set },
     {0,0,0}
 };
 static swig_lua_method swig_ImDrawCmd_methods[]= {
@@ -13032,12 +14186,6 @@ static int _wrap_ImDrawList__Data_get(lua_State* L) { { int SWIG_arg = 0; ImDraw
       SWIG_fail_ptr("ImDrawList__Data_get",1,SWIGTYPE_p_ImDrawList); }  result = (ImDrawListSharedData *) ((arg1)->_Data);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImDrawListSharedData,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
-static int _wrap_ImDrawList__OwnerName_get(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    char *result = 0 ; SWIG_check_num_args("ImDrawList::_OwnerName",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_OwnerName",1,"ImDrawList *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
-      SWIG_fail_ptr("ImDrawList__OwnerName_get",1,SWIGTYPE_p_ImDrawList); }  result = (char *) ((arg1)->_OwnerName);
-    lua_pushstring(L,(const char *)result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList__VtxWritePtr_set(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
     ImDrawVert *arg2 = (ImDrawVert *) 0 ; SWIG_check_num_args("ImDrawList::_VtxWritePtr",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_VtxWritePtr",1,"ImDrawList *");
@@ -13069,40 +14217,6 @@ static int _wrap_ImDrawList__IdxWritePtr_get(lua_State* L) { { int SWIG_arg = 0;
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
       SWIG_fail_ptr("ImDrawList__IdxWritePtr_get",1,SWIGTYPE_p_ImDrawList); }  result = (ofIndexType *) ((arg1)->_IdxWritePtr);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofIndexType,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImDrawList__ClipRectStack_set(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImVector< ImVec4 > *arg2 = (ImVector< ImVec4 > *) 0 ; SWIG_check_num_args("ImDrawList::_ClipRectStack",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_ClipRectStack",1,"ImDrawList *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::_ClipRectStack",2,"ImVector< ImVec4 > *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
-      SWIG_fail_ptr("ImDrawList__ClipRectStack_set",1,SWIGTYPE_p_ImDrawList); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVectorT_ImVec4_t,0))){
-      SWIG_fail_ptr("ImDrawList__ClipRectStack_set",2,SWIGTYPE_p_ImVectorT_ImVec4_t); } 
-    if (arg1) (arg1)->_ClipRectStack = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImDrawList__ClipRectStack_get(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImVector< ImVec4 > *result = 0 ; SWIG_check_num_args("ImDrawList::_ClipRectStack",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_ClipRectStack",1,"ImDrawList *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
-      SWIG_fail_ptr("ImDrawList__ClipRectStack_get",1,SWIGTYPE_p_ImDrawList); } 
-    result = (ImVector< ImVec4 > *)& ((arg1)->_ClipRectStack);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_ImVec4_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
-static int _wrap_ImDrawList__TextureIdStack_set(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImVector< int > *arg2 = (ImVector< int > *) 0 ; SWIG_check_num_args("ImDrawList::_TextureIdStack",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_TextureIdStack",1,"ImDrawList *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::_TextureIdStack",2,"ImVector< int > *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
-      SWIG_fail_ptr("ImDrawList__TextureIdStack_set",1,SWIGTYPE_p_ImDrawList); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVectorT_int_t,0))){
-      SWIG_fail_ptr("ImDrawList__TextureIdStack_set",2,SWIGTYPE_p_ImVectorT_int_t); } 
-    if (arg1) (arg1)->_TextureIdStack = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImDrawList__TextureIdStack_get(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImVector< int > *result = 0 ; SWIG_check_num_args("ImDrawList::_TextureIdStack",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_TextureIdStack",1,"ImDrawList *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
-      SWIG_fail_ptr("ImDrawList__TextureIdStack_get",1,SWIGTYPE_p_ImDrawList); } 
-    result = (ImVector< int > *)& ((arg1)->_TextureIdStack);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_int_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
 static int _wrap_ImDrawList__Path_set(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
     ImVector< ImVec2 > *arg2 = (ImVector< ImVec2 > *) 0 ; SWIG_check_num_args("ImDrawList::_Path",2,2)
@@ -13153,6 +14267,57 @@ static int _wrap_ImDrawList__Splitter_get(lua_State* L) { { int SWIG_arg = 0; Im
     result = (ImDrawListSplitter *)& ((arg1)->_Splitter);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImDrawListSplitter,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
+static int _wrap_ImDrawList__ClipRectStack_set(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImVector< ImVec4 > *arg2 = (ImVector< ImVec4 > *) 0 ; SWIG_check_num_args("ImDrawList::_ClipRectStack",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_ClipRectStack",1,"ImDrawList *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::_ClipRectStack",2,"ImVector< ImVec4 > *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList__ClipRectStack_set",1,SWIGTYPE_p_ImDrawList); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVectorT_ImVec4_t,0))){
+      SWIG_fail_ptr("ImDrawList__ClipRectStack_set",2,SWIGTYPE_p_ImVectorT_ImVec4_t); } 
+    if (arg1) (arg1)->_ClipRectStack = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawList__ClipRectStack_get(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImVector< ImVec4 > *result = 0 ; SWIG_check_num_args("ImDrawList::_ClipRectStack",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_ClipRectStack",1,"ImDrawList *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList__ClipRectStack_get",1,SWIGTYPE_p_ImDrawList); } 
+    result = (ImVector< ImVec4 > *)& ((arg1)->_ClipRectStack);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_ImVec4_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImDrawList__TextureIdStack_set(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImVector< int > *arg2 = (ImVector< int > *) 0 ; SWIG_check_num_args("ImDrawList::_TextureIdStack",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_TextureIdStack",1,"ImDrawList *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::_TextureIdStack",2,"ImVector< int > *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList__TextureIdStack_set",1,SWIGTYPE_p_ImDrawList); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVectorT_int_t,0))){
+      SWIG_fail_ptr("ImDrawList__TextureIdStack_set",2,SWIGTYPE_p_ImVectorT_int_t); } 
+    if (arg1) (arg1)->_TextureIdStack = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawList__TextureIdStack_get(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImVector< int > *result = 0 ; SWIG_check_num_args("ImDrawList::_TextureIdStack",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_TextureIdStack",1,"ImDrawList *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList__TextureIdStack_get",1,SWIGTYPE_p_ImDrawList); } 
+    result = (ImVector< int > *)& ((arg1)->_TextureIdStack);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_int_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_ImDrawList__CallbacksDataBuf_set(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImVector< ImU8 > *arg2 = (ImVector< ImU8 > *) 0 ; SWIG_check_num_args("ImDrawList::_CallbacksDataBuf",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_CallbacksDataBuf",1,"ImDrawList *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::_CallbacksDataBuf",2,"ImVector< ImU8 > *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList__CallbacksDataBuf_set",1,SWIGTYPE_p_ImDrawList); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVectorT_unsigned_char_t,0))){
+      SWIG_fail_ptr("ImDrawList__CallbacksDataBuf_set",2,SWIGTYPE_p_ImVectorT_unsigned_char_t); } 
+    if (arg1) (arg1)->_CallbacksDataBuf = *arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawList__CallbacksDataBuf_get(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImVector< ImU8 > *result = 0 ; SWIG_check_num_args("ImDrawList::_CallbacksDataBuf",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_CallbacksDataBuf",1,"ImDrawList *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList__CallbacksDataBuf_get",1,SWIGTYPE_p_ImDrawList); } 
+    result = (ImVector< ImU8 > *)& ((arg1)->_CallbacksDataBuf);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_unsigned_char_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
 static int _wrap_ImDrawList__FringeScale_set(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
     float arg2 ; SWIG_check_num_args("ImDrawList::_FringeScale",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_FringeScale",1,"ImDrawList *");
@@ -13166,6 +14331,12 @@ static int _wrap_ImDrawList__FringeScale_get(lua_State* L) { { int SWIG_arg = 0;
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
       SWIG_fail_ptr("ImDrawList__FringeScale_get",1,SWIGTYPE_p_ImDrawList); }  result = (float) ((arg1)->_FringeScale);
     lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawList__OwnerName_get(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    char *result = 0 ; SWIG_check_num_args("ImDrawList::_OwnerName",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_OwnerName",1,"ImDrawList *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList__OwnerName_get",1,SWIGTYPE_p_ImDrawList); }  result = (char *) ((arg1)->_OwnerName);
+    lua_pushstring(L,(const char *)result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_new_ImDrawList(lua_State* L) { { int SWIG_arg = 0; ImDrawListSharedData *arg1 = (ImDrawListSharedData *) 0 ;
     ImDrawList *result = 0 ; SWIG_check_num_args("ImDrawList::ImDrawList",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::ImDrawList",1,"ImDrawListSharedData *");
@@ -13453,43 +14624,45 @@ static int _wrap_ImDrawList_AddNgonFilled(lua_State* L) { { int SWIG_arg = 0; Im
     arg5 = (int)lua_tonumber(L, 5); (arg1)->AddNgonFilled((ImVec2 const &)*arg2,arg3,arg4,arg5); return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList_AddEllipse(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImVec2 *arg2 = 0 ; float arg3 ; float arg4 ; ImU32 arg5 ; float arg6 = (float) 0.0 ; int arg7 = (int) 0 ;
-    float arg8 = (float) 1.0 ; SWIG_check_num_args("ImDrawList::AddEllipse",5,8)
+    ImVec2 *arg2 = 0 ; ImVec2 *arg3 = 0 ; ImU32 arg4 ; float arg5 = (float) 0.0 ; int arg6 = (int) 0 ;
+    float arg7 = (float) 1.0 ; SWIG_check_num_args("ImDrawList::AddEllipse",4,7)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddEllipse",1,"ImDrawList *");
     if(!lua_isuserdata(L,2)) SWIG_fail_arg("ImDrawList::AddEllipse",2,"ImVec2 const &");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ImDrawList::AddEllipse",3,"float");
-    if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddEllipse",4,"float");
-    if(!lua_isnumber(L,5)) SWIG_fail_arg("ImDrawList::AddEllipse",5,"ImU32");
-    if(lua_gettop(L)>=6 && !lua_isnumber(L,6)) SWIG_fail_arg("ImDrawList::AddEllipse",6,"float");
-    if(lua_gettop(L)>=7 && !lua_isnumber(L,7)) SWIG_fail_arg("ImDrawList::AddEllipse",7,"int");
-    if(lua_gettop(L)>=8 && !lua_isnumber(L,8)) SWIG_fail_arg("ImDrawList::AddEllipse",8,"float");
+    if(!lua_isuserdata(L,3)) SWIG_fail_arg("ImDrawList::AddEllipse",3,"ImVec2 const &");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddEllipse",4,"ImU32");
+    if(lua_gettop(L)>=5 && !lua_isnumber(L,5)) SWIG_fail_arg("ImDrawList::AddEllipse",5,"float");
+    if(lua_gettop(L)>=6 && !lua_isnumber(L,6)) SWIG_fail_arg("ImDrawList::AddEllipse",6,"int");
+    if(lua_gettop(L)>=7 && !lua_isnumber(L,7)) SWIG_fail_arg("ImDrawList::AddEllipse",7,"float");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
       SWIG_fail_ptr("ImDrawList_AddEllipse",1,SWIGTYPE_p_ImDrawList); } 
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
-      SWIG_fail_ptr("ImDrawList_AddEllipse",2,SWIGTYPE_p_ImVec2); }  arg3 = (float)lua_tonumber(L, 3);
-    arg4 = (float)lua_tonumber(L, 4); SWIG_contract_assert((lua_tonumber(L,5)>=0),"number must not be negative");
-    arg5 = (ImU32)lua_tonumber(L, 5); if(lua_gettop(L)>=6){ arg6 = (float)lua_tonumber(L, 6);}  if(lua_gettop(L)>=7){
-      arg7 = (int)lua_tonumber(L, 7);}  if(lua_gettop(L)>=8){ arg8 = (float)lua_tonumber(L, 8);} 
-    (arg1)->AddEllipse((ImVec2 const &)*arg2,arg3,arg4,arg5,arg6,arg7,arg8); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
+      SWIG_fail_ptr("ImDrawList_AddEllipse",2,SWIGTYPE_p_ImVec2); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_ImVec2,0))){
+      SWIG_fail_ptr("ImDrawList_AddEllipse",3,SWIGTYPE_p_ImVec2); } 
+    SWIG_contract_assert((lua_tonumber(L,4)>=0),"number must not be negative"); arg4 = (ImU32)lua_tonumber(L, 4);
+    if(lua_gettop(L)>=5){ arg5 = (float)lua_tonumber(L, 5);}  if(lua_gettop(L)>=6){ arg6 = (int)lua_tonumber(L, 6);} 
+    if(lua_gettop(L)>=7){ arg7 = (float)lua_tonumber(L, 7);} 
+    (arg1)->AddEllipse((ImVec2 const &)*arg2,(ImVec2 const &)*arg3,arg4,arg5,arg6,arg7); return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
 static int _wrap_ImDrawList_AddEllipseFilled(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImVec2 *arg2 = 0 ; float arg3 ; float arg4 ; ImU32 arg5 ; float arg6 = (float) 0.0 ; int arg7 = (int) 0 ;
-    SWIG_check_num_args("ImDrawList::AddEllipseFilled",5,7)
+    ImVec2 *arg2 = 0 ; ImVec2 *arg3 = 0 ; ImU32 arg4 ; float arg5 = (float) 0.0 ; int arg6 = (int) 0 ;
+    SWIG_check_num_args("ImDrawList::AddEllipseFilled",4,6)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",1,"ImDrawList *");
     if(!lua_isuserdata(L,2)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",2,"ImVec2 const &");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",3,"float");
-    if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",4,"float");
-    if(!lua_isnumber(L,5)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",5,"ImU32");
-    if(lua_gettop(L)>=6 && !lua_isnumber(L,6)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",6,"float");
-    if(lua_gettop(L)>=7 && !lua_isnumber(L,7)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",7,"int");
+    if(!lua_isuserdata(L,3)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",3,"ImVec2 const &");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",4,"ImU32");
+    if(lua_gettop(L)>=5 && !lua_isnumber(L,5)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",5,"float");
+    if(lua_gettop(L)>=6 && !lua_isnumber(L,6)) SWIG_fail_arg("ImDrawList::AddEllipseFilled",6,"int");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
       SWIG_fail_ptr("ImDrawList_AddEllipseFilled",1,SWIGTYPE_p_ImDrawList); } 
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
-      SWIG_fail_ptr("ImDrawList_AddEllipseFilled",2,SWIGTYPE_p_ImVec2); }  arg3 = (float)lua_tonumber(L, 3);
-    arg4 = (float)lua_tonumber(L, 4); SWIG_contract_assert((lua_tonumber(L,5)>=0),"number must not be negative");
-    arg5 = (ImU32)lua_tonumber(L, 5); if(lua_gettop(L)>=6){ arg6 = (float)lua_tonumber(L, 6);}  if(lua_gettop(L)>=7){
-      arg7 = (int)lua_tonumber(L, 7);}  (arg1)->AddEllipseFilled((ImVec2 const &)*arg2,arg3,arg4,arg5,arg6,arg7);
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+      SWIG_fail_ptr("ImDrawList_AddEllipseFilled",2,SWIGTYPE_p_ImVec2); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_ImVec2,0))){
+      SWIG_fail_ptr("ImDrawList_AddEllipseFilled",3,SWIGTYPE_p_ImVec2); } 
+    SWIG_contract_assert((lua_tonumber(L,4)>=0),"number must not be negative"); arg4 = (ImU32)lua_tonumber(L, 4);
+    if(lua_gettop(L)>=5){ arg5 = (float)lua_tonumber(L, 5);}  if(lua_gettop(L)>=6){ arg6 = (int)lua_tonumber(L, 6);} 
+    (arg1)->AddEllipseFilled((ImVec2 const &)*arg2,(ImVec2 const &)*arg3,arg4,arg5,arg6); return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
 static int _wrap_ImDrawList_AddText__SWIG_0(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
     ImVec2 *arg2 = 0 ; ImU32 arg3 ; char *arg4 = (char *) 0 ; char *arg5 = (char *) NULL ;
     SWIG_check_num_args("ImDrawList::AddText",4,5)
@@ -13511,7 +14684,7 @@ static int _wrap_ImDrawList_AddText__SWIG_1(lua_State* L) { { int SWIG_arg = 0; 
     char *arg7 = (char *) NULL ; float arg8 = (float) 0.0 ; ImVec4 *arg9 = (ImVec4 *) NULL ;
     SWIG_check_num_args("ImDrawList::AddText",6,9)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddText",1,"ImDrawList *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::AddText",2,"ImFont const *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::AddText",2,"ImFont *");
     if(!lua_isnumber(L,3)) SWIG_fail_arg("ImDrawList::AddText",3,"float");
     if(!lua_isuserdata(L,4)) SWIG_fail_arg("ImDrawList::AddText",4,"ImVec2 const &");
     if(!lua_isnumber(L,5)) SWIG_fail_arg("ImDrawList::AddText",5,"ImU32");
@@ -13530,7 +14703,7 @@ static int _wrap_ImDrawList_AddText__SWIG_1(lua_State* L) { { int SWIG_arg = 0; 
       arg8 = (float)lua_tonumber(L, 8);}  if(lua_gettop(L)>=9){
       if (!SWIG_IsOK(SWIG_ConvertPtr(L,9,(void**)&arg9,SWIGTYPE_p_ImVec4,0))){
         SWIG_fail_ptr("ImDrawList_AddText",9,SWIGTYPE_p_ImVec4); }  } 
-    (arg1)->AddText((ImFont const *)arg2,arg3,(ImVec2 const &)*arg4,arg5,(char const *)arg6,(char const *)arg7,arg8,(ImVec4 const *)arg9);
+    (arg1)->AddText(arg2,arg3,(ImVec2 const &)*arg4,arg5,(char const *)arg6,(char const *)arg7,arg8,(ImVec4 const *)arg9);
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList_AddText(lua_State* L) { int argc; int argv[10]={ 1,2,3,4,5,6,7,8,9,10} ; argc = lua_gettop(L);
   if ((argc >= 4) && (argc <= 5)) { int _v = 0; { void *ptr;
@@ -13555,37 +14728,8 @@ static int _wrap_ImDrawList_AddText(lua_State* L) { int argc; int argv[10]={ 1,2
                         _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImDrawList_AddText__SWIG_1(L);}  }  }  }  }  }  }
          }  }  }  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ImDrawList_AddText'\n"
   "  Possible C/C++ prototypes are:\n" "    ImDrawList::AddText(ImVec2 const &,ImU32,char const *,char const *)\n"
-  "    ImDrawList::AddText(ImFont const *,float,ImVec2 const &,ImU32,char const *,char const *,float,ImVec4 const *)\n");
+  "    ImDrawList::AddText(ImFont *,float,ImVec2 const &,ImU32,char const *,char const *,float,ImVec4 const *)\n");
   lua_error(L);return 0; }
-static int _wrap_ImDrawList_AddPolyline(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImVec2 *arg2 = (ImVec2 *) 0 ; int arg3 ; ImU32 arg4 ; ImDrawFlags arg5 ; float arg6 ;
-    SWIG_check_num_args("ImDrawList::AddPolyline",6,6)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddPolyline",1,"ImDrawList *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::AddPolyline",2,"ImVec2 const *");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ImDrawList::AddPolyline",3,"int");
-    if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddPolyline",4,"ImU32");
-    if(!lua_isnumber(L,5)) SWIG_fail_arg("ImDrawList::AddPolyline",5,"ImDrawFlags");
-    if(!lua_isnumber(L,6)) SWIG_fail_arg("ImDrawList::AddPolyline",6,"float");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
-      SWIG_fail_ptr("ImDrawList_AddPolyline",1,SWIGTYPE_p_ImDrawList); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
-      SWIG_fail_ptr("ImDrawList_AddPolyline",2,SWIGTYPE_p_ImVec2); }  arg3 = (int)lua_tonumber(L, 3);
-    SWIG_contract_assert((lua_tonumber(L,4)>=0),"number must not be negative"); arg4 = (ImU32)lua_tonumber(L, 4);
-    arg5 = (ImDrawFlags)lua_tonumber(L, 5); arg6 = (float)lua_tonumber(L, 6);
-    (arg1)->AddPolyline((ImVec2 const *)arg2,arg3,arg4,arg5,arg6); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
-static int _wrap_ImDrawList_AddConvexPolyFilled(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImVec2 *arg2 = (ImVec2 *) 0 ; int arg3 ; ImU32 arg4 ; SWIG_check_num_args("ImDrawList::AddConvexPolyFilled",4,4)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddConvexPolyFilled",1,"ImDrawList *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::AddConvexPolyFilled",2,"ImVec2 const *");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ImDrawList::AddConvexPolyFilled",3,"int");
-    if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddConvexPolyFilled",4,"ImU32");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
-      SWIG_fail_ptr("ImDrawList_AddConvexPolyFilled",1,SWIGTYPE_p_ImDrawList); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
-      SWIG_fail_ptr("ImDrawList_AddConvexPolyFilled",2,SWIGTYPE_p_ImVec2); }  arg3 = (int)lua_tonumber(L, 3);
-    SWIG_contract_assert((lua_tonumber(L,4)>=0),"number must not be negative"); arg4 = (ImU32)lua_tonumber(L, 4);
-    (arg1)->AddConvexPolyFilled((ImVec2 const *)arg2,arg3,arg4); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList_AddBezierCubic(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
     ImVec2 *arg2 = 0 ; ImVec2 *arg3 = 0 ; ImVec2 *arg4 = 0 ; ImVec2 *arg5 = 0 ; ImU32 arg6 ; float arg7 ; int arg8 = (int) 0 ;
     SWIG_check_num_args("ImDrawList::AddBezierCubic",7,8)
@@ -13633,6 +14777,47 @@ static int _wrap_ImDrawList_AddBezierQuadratic(lua_State* L) { { int SWIG_arg = 
     arg6 = (float)lua_tonumber(L, 6); if(lua_gettop(L)>=7){ arg7 = (int)lua_tonumber(L, 7);} 
     (arg1)->AddBezierQuadratic((ImVec2 const &)*arg2,(ImVec2 const &)*arg3,(ImVec2 const &)*arg4,arg5,arg6,arg7);
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawList_AddPolyline(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImVec2 *arg2 = (ImVec2 *) 0 ; int arg3 ; ImU32 arg4 ; ImDrawFlags arg5 ; float arg6 ;
+    SWIG_check_num_args("ImDrawList::AddPolyline",6,6)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddPolyline",1,"ImDrawList *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::AddPolyline",2,"ImVec2 const *");
+    if(!lua_isnumber(L,3)) SWIG_fail_arg("ImDrawList::AddPolyline",3,"int");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddPolyline",4,"ImU32");
+    if(!lua_isnumber(L,5)) SWIG_fail_arg("ImDrawList::AddPolyline",5,"ImDrawFlags");
+    if(!lua_isnumber(L,6)) SWIG_fail_arg("ImDrawList::AddPolyline",6,"float");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList_AddPolyline",1,SWIGTYPE_p_ImDrawList); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
+      SWIG_fail_ptr("ImDrawList_AddPolyline",2,SWIGTYPE_p_ImVec2); }  arg3 = (int)lua_tonumber(L, 3);
+    SWIG_contract_assert((lua_tonumber(L,4)>=0),"number must not be negative"); arg4 = (ImU32)lua_tonumber(L, 4);
+    arg5 = (ImDrawFlags)lua_tonumber(L, 5); arg6 = (float)lua_tonumber(L, 6);
+    (arg1)->AddPolyline((ImVec2 const *)arg2,arg3,arg4,arg5,arg6); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_ImDrawList_AddConvexPolyFilled(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImVec2 *arg2 = (ImVec2 *) 0 ; int arg3 ; ImU32 arg4 ; SWIG_check_num_args("ImDrawList::AddConvexPolyFilled",4,4)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddConvexPolyFilled",1,"ImDrawList *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::AddConvexPolyFilled",2,"ImVec2 const *");
+    if(!lua_isnumber(L,3)) SWIG_fail_arg("ImDrawList::AddConvexPolyFilled",3,"int");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddConvexPolyFilled",4,"ImU32");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList_AddConvexPolyFilled",1,SWIGTYPE_p_ImDrawList); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
+      SWIG_fail_ptr("ImDrawList_AddConvexPolyFilled",2,SWIGTYPE_p_ImVec2); }  arg3 = (int)lua_tonumber(L, 3);
+    SWIG_contract_assert((lua_tonumber(L,4)>=0),"number must not be negative"); arg4 = (ImU32)lua_tonumber(L, 4);
+    (arg1)->AddConvexPolyFilled((ImVec2 const *)arg2,arg3,arg4); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawList_AddConcavePolyFilled(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImVec2 *arg2 = (ImVec2 *) 0 ; int arg3 ; ImU32 arg4 ; SWIG_check_num_args("ImDrawList::AddConcavePolyFilled",4,4)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddConcavePolyFilled",1,"ImDrawList *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::AddConcavePolyFilled",2,"ImVec2 const *");
+    if(!lua_isnumber(L,3)) SWIG_fail_arg("ImDrawList::AddConcavePolyFilled",3,"int");
+    if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddConcavePolyFilled",4,"ImU32");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList_AddConcavePolyFilled",1,SWIGTYPE_p_ImDrawList); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
+      SWIG_fail_ptr("ImDrawList_AddConcavePolyFilled",2,SWIGTYPE_p_ImVec2); }  arg3 = (int)lua_tonumber(L, 3);
+    SWIG_contract_assert((lua_tonumber(L,4)>=0),"number must not be negative"); arg4 = (ImU32)lua_tonumber(L, 4);
+    (arg1)->AddConcavePolyFilled((ImVec2 const *)arg2,arg3,arg4); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList_AddImage(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ; int arg2 ;
     ImVec2 *arg3 = 0 ; ImVec2 *arg4 = 0 ; ImVec2 const &arg5_defvalue = ImVec2(0, 0) ;
     ImVec2 *arg5 = (ImVec2 *) &arg5_defvalue ; ImVec2 const &arg6_defvalue = ImVec2(1, 1) ;
@@ -13757,6 +14942,14 @@ static int _wrap_ImDrawList_PathFillConvex(lua_State* L) { { int SWIG_arg = 0; I
       SWIG_fail_ptr("ImDrawList_PathFillConvex",1,SWIGTYPE_p_ImDrawList); } 
     SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImU32)lua_tonumber(L, 2);
     (arg1)->PathFillConvex(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawList_PathFillConcave(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
+    ImU32 arg2 ; SWIG_check_num_args("ImDrawList::PathFillConcave",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::PathFillConcave",1,"ImDrawList *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImDrawList::PathFillConcave",2,"ImU32");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList_PathFillConcave",1,SWIGTYPE_p_ImDrawList); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImU32)lua_tonumber(L, 2);
+    (arg1)->PathFillConcave(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList_PathStroke(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ; ImU32 arg2 ;
     ImDrawFlags arg3 = (ImDrawFlags) 0 ; float arg4 = (float) 1.0 ; SWIG_check_num_args("ImDrawList::PathStroke",2,4)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::PathStroke",1,"ImDrawList *");
@@ -13797,24 +14990,24 @@ static int _wrap_ImDrawList_PathArcToFast(lua_State* L) { { int SWIG_arg = 0; Im
     arg4 = (int)lua_tonumber(L, 4); arg5 = (int)lua_tonumber(L, 5); (arg1)->PathArcToFast((ImVec2 const &)*arg2,arg3,arg4,arg5);
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList_PathEllipticalArcTo(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImVec2 *arg2 = 0 ; float arg3 ; float arg4 ; float arg5 ; float arg6 ; float arg7 ; int arg8 = (int) 0 ;
-    SWIG_check_num_args("ImDrawList::PathEllipticalArcTo",7,8)
+    ImVec2 *arg2 = 0 ; ImVec2 *arg3 = 0 ; float arg4 ; float arg5 ; float arg6 ; int arg7 = (int) 0 ;
+    SWIG_check_num_args("ImDrawList::PathEllipticalArcTo",6,7)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",1,"ImDrawList *");
     if(!lua_isuserdata(L,2)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",2,"ImVec2 const &");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",3,"float");
+    if(!lua_isuserdata(L,3)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",3,"ImVec2 const &");
     if(!lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",4,"float");
     if(!lua_isnumber(L,5)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",5,"float");
     if(!lua_isnumber(L,6)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",6,"float");
-    if(!lua_isnumber(L,7)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",7,"float");
-    if(lua_gettop(L)>=8 && !lua_isnumber(L,8)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",8,"int");
+    if(lua_gettop(L)>=7 && !lua_isnumber(L,7)) SWIG_fail_arg("ImDrawList::PathEllipticalArcTo",7,"int");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
       SWIG_fail_ptr("ImDrawList_PathEllipticalArcTo",1,SWIGTYPE_p_ImDrawList); } 
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
-      SWIG_fail_ptr("ImDrawList_PathEllipticalArcTo",2,SWIGTYPE_p_ImVec2); }  arg3 = (float)lua_tonumber(L, 3);
-    arg4 = (float)lua_tonumber(L, 4); arg5 = (float)lua_tonumber(L, 5); arg6 = (float)lua_tonumber(L, 6);
-    arg7 = (float)lua_tonumber(L, 7); if(lua_gettop(L)>=8){ arg8 = (int)lua_tonumber(L, 8);} 
-    (arg1)->PathEllipticalArcTo((ImVec2 const &)*arg2,arg3,arg4,arg5,arg6,arg7,arg8); return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
+      SWIG_fail_ptr("ImDrawList_PathEllipticalArcTo",2,SWIGTYPE_p_ImVec2); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_ImVec2,0))){
+      SWIG_fail_ptr("ImDrawList_PathEllipticalArcTo",3,SWIGTYPE_p_ImVec2); }  arg4 = (float)lua_tonumber(L, 4);
+    arg5 = (float)lua_tonumber(L, 5); arg6 = (float)lua_tonumber(L, 6); if(lua_gettop(L)>=7){ arg7 = (int)lua_tonumber(L, 7);} 
+    (arg1)->PathEllipticalArcTo((ImVec2 const &)*arg2,(ImVec2 const &)*arg3,arg4,arg5,arg6,arg7); return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList_PathBezierCubicCurveTo(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
     ImVec2 *arg2 = 0 ; ImVec2 *arg3 = 0 ; ImVec2 *arg4 = 0 ; int arg5 = (int) 0 ;
     SWIG_check_num_args("ImDrawList::PathBezierCubicCurveTo",4,5)
@@ -13866,16 +15059,19 @@ static int _wrap_ImDrawList_PathRect(lua_State* L) { { int SWIG_arg = 0; ImDrawL
     (arg1)->PathRect((ImVec2 const &)*arg2,(ImVec2 const &)*arg3,arg4,arg5); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
 static int _wrap_ImDrawList_AddCallback(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
-    ImDrawCallback arg2 = (ImDrawCallback) 0 ; void *arg3 = (void *) 0 ; SWIG_check_num_args("ImDrawList::AddCallback",3,3)
+    ImDrawCallback arg2 = (ImDrawCallback) 0 ; void *arg3 = (void *) 0 ; size_t arg4 = (size_t) 0 ;
+    SWIG_check_num_args("ImDrawList::AddCallback",3,4)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddCallback",1,"ImDrawList *");
     if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImDrawList::AddCallback",2,"ImDrawCallback");
     if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ImDrawList::AddCallback",3,"void *");
+    if(lua_gettop(L)>=4 && !lua_isnumber(L,4)) SWIG_fail_arg("ImDrawList::AddCallback",4,"size_t");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
       SWIG_fail_ptr("ImDrawList_AddCallback",1,SWIGTYPE_p_ImDrawList); } 
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_q_const__ImDrawList_p_q_const__ImDrawCmd__void,0))){
       SWIG_fail_ptr("ImDrawList_AddCallback",2,SWIGTYPE_p_f_p_q_const__ImDrawList_p_q_const__ImDrawCmd__void); } 
-    arg3=(void *)SWIG_MustGetPtr(L,3,0,0,3,"ImDrawList_AddCallback"); (arg1)->AddCallback(arg2,arg3); return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+    arg3=(void *)SWIG_MustGetPtr(L,3,0,0,3,"ImDrawList_AddCallback"); if(lua_gettop(L)>=4){
+      SWIG_contract_assert((lua_tonumber(L,4)>=0),"number must not be negative"); arg4 = (size_t)lua_tonumber(L, 4);} 
+    (arg1)->AddCallback(arg2,arg3,arg4); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList_AddDrawCmd(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ;
     SWIG_check_num_args("ImDrawList::AddDrawCmd",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::AddDrawCmd",1,"ImDrawList *");
@@ -14080,6 +15276,13 @@ static int _wrap_ImDrawList__OnChangedVtxOffset(lua_State* L) { { int SWIG_arg =
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
       SWIG_fail_ptr("ImDrawList__OnChangedVtxOffset",1,SWIGTYPE_p_ImDrawList); }  (arg1)->_OnChangedVtxOffset();
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImDrawList__SetTextureID(lua_State* L) { { int SWIG_arg = 0; ImDrawList *arg1 = (ImDrawList *) 0 ; int arg2 ;
+    SWIG_check_num_args("ImDrawList::_SetTextureID",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImDrawList::_SetTextureID",1,"ImDrawList *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImDrawList::_SetTextureID",2,"int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImDrawList,0))){
+      SWIG_fail_ptr("ImDrawList__SetTextureID",1,SWIGTYPE_p_ImDrawList); }  arg2 = (int)lua_tonumber(L, 2);
+    (arg1)->_SetTextureID(arg2); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImDrawList__CalcCircleAutoSegmentCount(lua_State* L) { { int SWIG_arg = 0;
     ImDrawList *arg1 = (ImDrawList *) 0 ; float arg2 ; int result;
     SWIG_check_num_args("ImDrawList::_CalcCircleAutoSegmentCount",2,2)
@@ -14138,15 +15341,16 @@ static swig_lua_attribute swig_ImDrawList_attributes[] = {
     { "Flags", _wrap_ImDrawList_Flags_get, _wrap_ImDrawList_Flags_set },
     { "_VtxCurrentIdx", _wrap_ImDrawList__VtxCurrentIdx_get, _wrap_ImDrawList__VtxCurrentIdx_set },
     { "_Data", _wrap_ImDrawList__Data_get, _wrap_ImDrawList__Data_set },
-    { "_OwnerName", _wrap_ImDrawList__OwnerName_get, SWIG_Lua_set_immutable },
     { "_VtxWritePtr", _wrap_ImDrawList__VtxWritePtr_get, _wrap_ImDrawList__VtxWritePtr_set },
     { "_IdxWritePtr", _wrap_ImDrawList__IdxWritePtr_get, _wrap_ImDrawList__IdxWritePtr_set },
-    { "_ClipRectStack", _wrap_ImDrawList__ClipRectStack_get, _wrap_ImDrawList__ClipRectStack_set },
-    { "_TextureIdStack", _wrap_ImDrawList__TextureIdStack_get, _wrap_ImDrawList__TextureIdStack_set },
     { "_Path", _wrap_ImDrawList__Path_get, _wrap_ImDrawList__Path_set },
     { "_CmdHeader", _wrap_ImDrawList__CmdHeader_get, _wrap_ImDrawList__CmdHeader_set },
     { "_Splitter", _wrap_ImDrawList__Splitter_get, _wrap_ImDrawList__Splitter_set },
+    { "_ClipRectStack", _wrap_ImDrawList__ClipRectStack_get, _wrap_ImDrawList__ClipRectStack_set },
+    { "_TextureIdStack", _wrap_ImDrawList__TextureIdStack_get, _wrap_ImDrawList__TextureIdStack_set },
+    { "_CallbacksDataBuf", _wrap_ImDrawList__CallbacksDataBuf_get, _wrap_ImDrawList__CallbacksDataBuf_set },
     { "_FringeScale", _wrap_ImDrawList__FringeScale_get, _wrap_ImDrawList__FringeScale_set },
+    { "_OwnerName", _wrap_ImDrawList__OwnerName_get, SWIG_Lua_set_immutable },
     {0,0,0}
 };
 static swig_lua_method swig_ImDrawList_methods[]= {
@@ -14172,10 +15376,11 @@ static swig_lua_method swig_ImDrawList_methods[]= {
     { "AddEllipse", _wrap_ImDrawList_AddEllipse},
     { "AddEllipseFilled", _wrap_ImDrawList_AddEllipseFilled},
     { "AddText", _wrap_ImDrawList_AddText},
-    { "AddPolyline", _wrap_ImDrawList_AddPolyline},
-    { "AddConvexPolyFilled", _wrap_ImDrawList_AddConvexPolyFilled},
     { "AddBezierCubic", _wrap_ImDrawList_AddBezierCubic},
     { "AddBezierQuadratic", _wrap_ImDrawList_AddBezierQuadratic},
+    { "AddPolyline", _wrap_ImDrawList_AddPolyline},
+    { "AddConvexPolyFilled", _wrap_ImDrawList_AddConvexPolyFilled},
+    { "AddConcavePolyFilled", _wrap_ImDrawList_AddConcavePolyFilled},
     { "AddImage", _wrap_ImDrawList_AddImage},
     { "AddImageQuad", _wrap_ImDrawList_AddImageQuad},
     { "AddImageRounded", _wrap_ImDrawList_AddImageRounded},
@@ -14183,6 +15388,7 @@ static swig_lua_method swig_ImDrawList_methods[]= {
     { "PathLineTo", _wrap_ImDrawList_PathLineTo},
     { "PathLineToMergeDuplicate", _wrap_ImDrawList_PathLineToMergeDuplicate},
     { "PathFillConvex", _wrap_ImDrawList_PathFillConvex},
+    { "PathFillConcave", _wrap_ImDrawList_PathFillConcave},
     { "PathStroke", _wrap_ImDrawList_PathStroke},
     { "PathArcTo", _wrap_ImDrawList_PathArcTo},
     { "PathArcToFast", _wrap_ImDrawList_PathArcToFast},
@@ -14211,6 +15417,7 @@ static swig_lua_method swig_ImDrawList_methods[]= {
     { "_OnChangedClipRect", _wrap_ImDrawList__OnChangedClipRect},
     { "_OnChangedTextureID", _wrap_ImDrawList__OnChangedTextureID},
     { "_OnChangedVtxOffset", _wrap_ImDrawList__OnChangedVtxOffset},
+    { "_SetTextureID", _wrap_ImDrawList__SetTextureID},
     { "_CalcCircleAutoSegmentCount", _wrap_ImDrawList__CalcCircleAutoSegmentCount},
     { "_PathArcToFastEx", _wrap_ImDrawList__PathArcToFastEx},
     { "_PathArcToN", _wrap_ImDrawList__PathArcToN},
@@ -15255,6 +16462,23 @@ static int _wrap_ImFontAtlasCustomRect_GlyphID_get(lua_State* L) { { int SWIG_ar
       SWIG_fail_ptr("ImFontAtlasCustomRect_GlyphID_get",1,SWIGTYPE_p_ImFontAtlasCustomRect); } 
     result = (unsigned int) ((arg1)->GlyphID); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImFontAtlasCustomRect_GlyphColored_set(lua_State* L) { { int SWIG_arg = 0;
+    ImFontAtlasCustomRect *arg1 = (ImFontAtlasCustomRect *) 0 ; unsigned int arg2 ;
+    SWIG_check_num_args("ImFontAtlasCustomRect::GlyphColored",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFontAtlasCustomRect::GlyphColored",1,"ImFontAtlasCustomRect *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImFontAtlasCustomRect::GlyphColored",2,"unsigned int");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImFontAtlasCustomRect,0))){
+      SWIG_fail_ptr("ImFontAtlasCustomRect_GlyphColored_set",1,SWIGTYPE_p_ImFontAtlasCustomRect); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (unsigned int)lua_tonumber(L, 2);
+    if (arg1) (arg1)->GlyphColored = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImFontAtlasCustomRect_GlyphColored_get(lua_State* L) { { int SWIG_arg = 0;
+    ImFontAtlasCustomRect *arg1 = (ImFontAtlasCustomRect *) 0 ; unsigned int result;
+    SWIG_check_num_args("ImFontAtlasCustomRect::GlyphColored",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFontAtlasCustomRect::GlyphColored",1,"ImFontAtlasCustomRect *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImFontAtlasCustomRect,0))){
+      SWIG_fail_ptr("ImFontAtlasCustomRect_GlyphColored_get",1,SWIGTYPE_p_ImFontAtlasCustomRect); } 
+    result = (unsigned int) ((arg1)->GlyphColored); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImFontAtlasCustomRect_GlyphAdvanceX_set(lua_State* L) { { int SWIG_arg = 0;
     ImFontAtlasCustomRect *arg1 = (ImFontAtlasCustomRect *) 0 ; float arg2 ;
     SWIG_check_num_args("ImFontAtlasCustomRect::GlyphAdvanceX",2,2)
@@ -15339,6 +16563,7 @@ static swig_lua_attribute swig_ImFontAtlasCustomRect_attributes[] = {
     { "X", _wrap_ImFontAtlasCustomRect_X_get, _wrap_ImFontAtlasCustomRect_X_set },
     { "Y", _wrap_ImFontAtlasCustomRect_Y_get, _wrap_ImFontAtlasCustomRect_Y_set },
     { "GlyphID", _wrap_ImFontAtlasCustomRect_GlyphID_get, _wrap_ImFontAtlasCustomRect_GlyphID_set },
+    { "GlyphColored", _wrap_ImFontAtlasCustomRect_GlyphColored_get, _wrap_ImFontAtlasCustomRect_GlyphColored_set },
     { "GlyphAdvanceX", _wrap_ImFontAtlasCustomRect_GlyphAdvanceX_get, _wrap_ImFontAtlasCustomRect_GlyphAdvanceX_set },
     { "GlyphOffset", _wrap_ImFontAtlasCustomRect_GlyphOffset_get, _wrap_ImFontAtlasCustomRect_GlyphOffset_set },
     { "Font", _wrap_ImFontAtlasCustomRect_Font_get, _wrap_ImFontAtlasCustomRect_Font_set },
@@ -16407,33 +17632,32 @@ static int _wrap_new_ImFont(lua_State* L) { { int SWIG_arg = 0; ImFont *result =
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImFont_FindGlyph(lua_State* L) { { int SWIG_arg = 0; ImFont *arg1 = (ImFont *) 0 ; ImWchar arg2 ;
     ImFontGlyph *result = 0 ; SWIG_check_num_args("ImFont::FindGlyph",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::FindGlyph",1,"ImFont const *");
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::FindGlyph",1,"ImFont *");
     if(!lua_isnumber(L,2)) SWIG_fail_arg("ImFont::FindGlyph",2,"ImWchar");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImFont,0))){
       SWIG_fail_ptr("ImFont_FindGlyph",1,SWIGTYPE_p_ImFont); } 
     SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImWchar)lua_tonumber(L, 2);
-    result = (ImFontGlyph *)((ImFont const *)arg1)->FindGlyph(arg2);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFontGlyph,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
+    result = (ImFontGlyph *)(arg1)->FindGlyph(arg2); SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFontGlyph,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImFont_FindGlyphNoFallback(lua_State* L) { { int SWIG_arg = 0; ImFont *arg1 = (ImFont *) 0 ; ImWchar arg2 ;
     ImFontGlyph *result = 0 ; SWIG_check_num_args("ImFont::FindGlyphNoFallback",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::FindGlyphNoFallback",1,"ImFont const *");
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::FindGlyphNoFallback",1,"ImFont *");
     if(!lua_isnumber(L,2)) SWIG_fail_arg("ImFont::FindGlyphNoFallback",2,"ImWchar");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImFont,0))){
       SWIG_fail_ptr("ImFont_FindGlyphNoFallback",1,SWIGTYPE_p_ImFont); } 
     SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImWchar)lua_tonumber(L, 2);
-    result = (ImFontGlyph *)((ImFont const *)arg1)->FindGlyphNoFallback(arg2);
+    result = (ImFontGlyph *)(arg1)->FindGlyphNoFallback(arg2);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImFontGlyph,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
 static int _wrap_ImFont_GetCharAdvance(lua_State* L) { { int SWIG_arg = 0; ImFont *arg1 = (ImFont *) 0 ; ImWchar arg2 ;
     float result; SWIG_check_num_args("ImFont::GetCharAdvance",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::GetCharAdvance",1,"ImFont const *");
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::GetCharAdvance",1,"ImFont *");
     if(!lua_isnumber(L,2)) SWIG_fail_arg("ImFont::GetCharAdvance",2,"ImWchar");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImFont,0))){
       SWIG_fail_ptr("ImFont_GetCharAdvance",1,SWIGTYPE_p_ImFont); } 
     SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImWchar)lua_tonumber(L, 2);
-    result = (float)((ImFont const *)arg1)->GetCharAdvance(arg2); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+    result = (float)(arg1)->GetCharAdvance(arg2); lua_pushnumber(L, (lua_Number) result); SWIG_arg++; return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImFont_IsLoaded(lua_State* L) { { int SWIG_arg = 0; ImFont *arg1 = (ImFont *) 0 ; bool result;
     SWIG_check_num_args("ImFont::IsLoaded",1,1) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::IsLoaded",1,"ImFont const *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImFont,0))){
@@ -16448,7 +17672,7 @@ static int _wrap_ImFont_GetDebugName(lua_State* L) { { int SWIG_arg = 0; ImFont 
 static int _wrap_ImFont_CalcTextSizeA(lua_State* L) { { int SWIG_arg = 0; ImFont *arg1 = (ImFont *) 0 ; float arg2 ;
     float arg3 ; float arg4 ; char *arg5 = (char *) 0 ; char *arg6 = (char *) NULL ; char **arg7 = (char **) NULL ;
     ImVec2 result; SWIG_check_num_args("ImFont::CalcTextSizeA",5,7)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::CalcTextSizeA",1,"ImFont const *");
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::CalcTextSizeA",1,"ImFont *");
     if(!lua_isnumber(L,2)) SWIG_fail_arg("ImFont::CalcTextSizeA",2,"float");
     if(!lua_isnumber(L,3)) SWIG_fail_arg("ImFont::CalcTextSizeA",3,"float");
     if(!lua_isnumber(L,4)) SWIG_fail_arg("ImFont::CalcTextSizeA",4,"float");
@@ -16461,13 +17685,13 @@ static int _wrap_ImFont_CalcTextSizeA(lua_State* L) { { int SWIG_arg = 0; ImFont
       arg6 = (char *)lua_tostring(L, 6);}  if(lua_gettop(L)>=7){
       if (!SWIG_IsOK(SWIG_ConvertPtr(L,7,(void**)&arg7,SWIGTYPE_p_p_char,0))){
         SWIG_fail_ptr("ImFont_CalcTextSizeA",7,SWIGTYPE_p_p_char); }  } 
-    result = ((ImFont const *)arg1)->CalcTextSizeA(arg2,arg3,arg4,(char const *)arg5,(char const *)arg6,(char const **)arg7); {
+    result = (arg1)->CalcTextSizeA(arg2,arg3,arg4,(char const *)arg5,(char const *)arg6,(char const **)arg7); {
       ImVec2 * resultptr = new ImVec2(result); SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ImVec2,1); SWIG_arg++; } 
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImFont_CalcWordWrapPositionA(lua_State* L) { { int SWIG_arg = 0; ImFont *arg1 = (ImFont *) 0 ; float arg2 ;
     char *arg3 = (char *) 0 ; char *arg4 = (char *) 0 ; float arg5 ; char *result = 0 ;
     SWIG_check_num_args("ImFont::CalcWordWrapPositionA",5,5)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::CalcWordWrapPositionA",1,"ImFont const *");
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::CalcWordWrapPositionA",1,"ImFont *");
     if(!lua_isnumber(L,2)) SWIG_fail_arg("ImFont::CalcWordWrapPositionA",2,"float");
     if(!SWIG_lua_isnilstring(L,3)) SWIG_fail_arg("ImFont::CalcWordWrapPositionA",3,"char const *");
     if(!SWIG_lua_isnilstring(L,4)) SWIG_fail_arg("ImFont::CalcWordWrapPositionA",4,"char const *");
@@ -16475,12 +17699,11 @@ static int _wrap_ImFont_CalcWordWrapPositionA(lua_State* L) { { int SWIG_arg = 0
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImFont,0))){
       SWIG_fail_ptr("ImFont_CalcWordWrapPositionA",1,SWIGTYPE_p_ImFont); }  arg2 = (float)lua_tonumber(L, 2);
     arg3 = (char *)lua_tostring(L, 3); arg4 = (char *)lua_tostring(L, 4); arg5 = (float)lua_tonumber(L, 5);
-    result = (char *)((ImFont const *)arg1)->CalcWordWrapPositionA(arg2,(char const *)arg3,(char const *)arg4,arg5);
+    result = (char *)(arg1)->CalcWordWrapPositionA(arg2,(char const *)arg3,(char const *)arg4,arg5);
     lua_pushstring(L,(const char *)result); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImFont_RenderChar(lua_State* L) { { int SWIG_arg = 0; ImFont *arg1 = (ImFont *) 0 ;
     ImDrawList *arg2 = (ImDrawList *) 0 ; float arg3 ; ImVec2 *arg4 = 0 ; ImU32 arg5 ; ImWchar arg6 ;
-    SWIG_check_num_args("ImFont::RenderChar",6,6)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::RenderChar",1,"ImFont const *");
+    SWIG_check_num_args("ImFont::RenderChar",6,6) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::RenderChar",1,"ImFont *");
     if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImFont::RenderChar",2,"ImDrawList *");
     if(!lua_isnumber(L,3)) SWIG_fail_arg("ImFont::RenderChar",3,"float");
     if(!lua_isuserdata(L,4)) SWIG_fail_arg("ImFont::RenderChar",4,"ImVec2 const &");
@@ -16494,13 +17717,12 @@ static int _wrap_ImFont_RenderChar(lua_State* L) { { int SWIG_arg = 0; ImFont *a
       SWIG_fail_ptr("ImFont_RenderChar",4,SWIGTYPE_p_ImVec2); } 
     SWIG_contract_assert((lua_tonumber(L,5)>=0),"number must not be negative"); arg5 = (ImU32)lua_tonumber(L, 5);
     SWIG_contract_assert((lua_tonumber(L,6)>=0),"number must not be negative"); arg6 = (ImWchar)lua_tonumber(L, 6);
-    ((ImFont const *)arg1)->RenderChar(arg2,arg3,(ImVec2 const &)*arg4,arg5,arg6); return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
+    (arg1)->RenderChar(arg2,arg3,(ImVec2 const &)*arg4,arg5,arg6); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
 static int _wrap_ImFont_RenderText(lua_State* L) { { int SWIG_arg = 0; ImFont *arg1 = (ImFont *) 0 ;
     ImDrawList *arg2 = (ImDrawList *) 0 ; float arg3 ; ImVec2 *arg4 = 0 ; ImU32 arg5 ; ImVec4 *arg6 = 0 ;
     char *arg7 = (char *) 0 ; char *arg8 = (char *) 0 ; float arg9 = (float) 0.0 ; bool arg10 = (bool) false ;
-    SWIG_check_num_args("ImFont::RenderText",8,10)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::RenderText",1,"ImFont const *");
+    SWIG_check_num_args("ImFont::RenderText",8,10) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImFont::RenderText",1,"ImFont *");
     if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImFont::RenderText",2,"ImDrawList *");
     if(!lua_isnumber(L,3)) SWIG_fail_arg("ImFont::RenderText",3,"float");
     if(!lua_isuserdata(L,4)) SWIG_fail_arg("ImFont::RenderText",4,"ImVec2 const &");
@@ -16521,7 +17743,7 @@ static int _wrap_ImFont_RenderText(lua_State* L) { { int SWIG_arg = 0; ImFont *a
       SWIG_fail_ptr("ImFont_RenderText",6,SWIGTYPE_p_ImVec4); }  arg7 = (char *)lua_tostring(L, 7);
     arg8 = (char *)lua_tostring(L, 8); if(lua_gettop(L)>=9){ arg9 = (float)lua_tonumber(L, 9);}  if(lua_gettop(L)>=10){
       arg10 = (lua_toboolean(L, 10)!=0);} 
-    ((ImFont const *)arg1)->RenderText(arg2,arg3,(ImVec2 const &)*arg4,arg5,(ImVec4 const &)*arg6,(char const *)arg7,(char const *)arg8,arg9,arg10);
+    (arg1)->RenderText(arg2,arg3,(ImVec2 const &)*arg4,arg5,(ImVec4 const &)*arg6,(char const *)arg7,(char const *)arg8,arg9,arg10);
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImFont_BuildLookupTable(lua_State* L) { { int SWIG_arg = 0; ImFont *arg1 = (ImFont *) 0 ;
     SWIG_check_num_args("ImFont::BuildLookupTable",1,1)
@@ -17023,6 +18245,175 @@ static swig_lua_class *swig_ImGuiViewport_bases[] = {0};
 static const char *swig_ImGuiViewport_base_names[] = {0};
 static swig_lua_class _wrap_class_ImGuiViewport = { "ImGuiViewport", "ImGuiViewport", &SWIGTYPE_p_ImGuiViewport,_proxy__wrap_new_ImGuiViewport, swig_delete_ImGuiViewport, swig_ImGuiViewport_methods, swig_ImGuiViewport_attributes, &swig_ImGuiViewport_Sf_SwigStatic, swig_ImGuiViewport_meta, swig_ImGuiViewport_bases, swig_ImGuiViewport_base_names };
 
+static int _wrap_new_ImGuiPlatformIO(lua_State* L) { { int SWIG_arg = 0; ImGuiPlatformIO *result = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::ImGuiPlatformIO",0,0) result = (ImGuiPlatformIO *)new ImGuiPlatformIO();
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiPlatformIO,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+  return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_GetClipboardTextFn_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; char *(*arg2)(ImGuiContext *) = (char *(*)(ImGuiContext *)) 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_GetClipboardTextFn",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_GetClipboardTextFn",1,"ImGuiPlatformIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Platform_GetClipboardTextFn",2,"char const *(*)(ImGuiContext *)");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_GetClipboardTextFn_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_ImGuiContext__p_char,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_GetClipboardTextFn_set",2,SWIGTYPE_p_f_p_ImGuiContext__p_char); } 
+    if (arg1) (arg1)->Platform_GetClipboardTextFn = (char const *(*)(ImGuiContext *))arg2; return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_GetClipboardTextFn_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; char *(*result)(ImGuiContext *) = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_GetClipboardTextFn",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_GetClipboardTextFn",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_GetClipboardTextFn_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (char *(*)(ImGuiContext *)) ((arg1)->Platform_GetClipboardTextFn);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_ImGuiContext__p_char,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_SetClipboardTextFn_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ;
+    void (*arg2)(ImGuiContext *,char const *) = (void (*)(ImGuiContext *,char const *)) 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_SetClipboardTextFn",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_SetClipboardTextFn",1,"ImGuiPlatformIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Platform_SetClipboardTextFn",2,"void (*)(ImGuiContext *,char const *)");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_SetClipboardTextFn_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_ImGuiContext_p_q_const__char__void,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_SetClipboardTextFn_set",2,SWIGTYPE_p_f_p_ImGuiContext_p_q_const__char__void); } 
+    if (arg1) (arg1)->Platform_SetClipboardTextFn = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_SetClipboardTextFn_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void (*result)(ImGuiContext *,char const *) = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_SetClipboardTextFn",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_SetClipboardTextFn",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_SetClipboardTextFn_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (void (*)(ImGuiContext *,char const *)) ((arg1)->Platform_SetClipboardTextFn);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_ImGuiContext_p_q_const__char__void,0); SWIG_arg++;  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_ClipboardUserData_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void *arg2 = (void *) 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_ClipboardUserData",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_ClipboardUserData",1,"ImGuiPlatformIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Platform_ClipboardUserData",2,"void *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_ClipboardUserData_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiPlatformIO_Platform_ClipboardUserData_set");
+    if (arg1) (arg1)->Platform_ClipboardUserData = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_ClipboardUserData_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void *result = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_ClipboardUserData",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_ClipboardUserData",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_ClipboardUserData_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (void *) ((arg1)->Platform_ClipboardUserData); SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_OpenInShellFn_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ;
+    bool (*arg2)(ImGuiContext *,char const *) = (bool (*)(ImGuiContext *,char const *)) 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_OpenInShellFn",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_OpenInShellFn",1,"ImGuiPlatformIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Platform_OpenInShellFn",2,"bool (*)(ImGuiContext *,char const *)");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_OpenInShellFn_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_ImGuiContext_p_q_const__char__bool,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_OpenInShellFn_set",2,SWIGTYPE_p_f_p_ImGuiContext_p_q_const__char__bool); } 
+    if (arg1) (arg1)->Platform_OpenInShellFn = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_OpenInShellFn_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; bool (*result)(ImGuiContext *,char const *) = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_OpenInShellFn",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_OpenInShellFn",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_OpenInShellFn_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (bool (*)(ImGuiContext *,char const *)) ((arg1)->Platform_OpenInShellFn);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_ImGuiContext_p_q_const__char__bool,0); SWIG_arg++;  return SWIG_arg;
+    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_OpenInShellUserData_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void *arg2 = (void *) 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_OpenInShellUserData",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_OpenInShellUserData",1,"ImGuiPlatformIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Platform_OpenInShellUserData",2,"void *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_OpenInShellUserData_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiPlatformIO_Platform_OpenInShellUserData_set");
+    if (arg1) (arg1)->Platform_OpenInShellUserData = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_OpenInShellUserData_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void *result = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_OpenInShellUserData",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_OpenInShellUserData",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_OpenInShellUserData_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (void *) ((arg1)->Platform_OpenInShellUserData); SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_SetImeDataFn_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ;
+    void (*arg2)(ImGuiContext *,ImGuiViewport *,ImGuiPlatformImeData *) = (void (*)(ImGuiContext *,ImGuiViewport *,ImGuiPlatformImeData *)) 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_SetImeDataFn",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_SetImeDataFn",1,"ImGuiPlatformIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Platform_SetImeDataFn",2,"void (*)(ImGuiContext *,ImGuiViewport *,ImGuiPlatformImeData *)");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_SetImeDataFn_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_SetImeDataFn_set",2,SWIGTYPE_p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void); }
+     if (arg1) (arg1)->Platform_SetImeDataFn = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_SetImeDataFn_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void (*result)(ImGuiContext *,ImGuiViewport *,ImGuiPlatformImeData *) = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_SetImeDataFn",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_SetImeDataFn",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_SetImeDataFn_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (void (*)(ImGuiContext *,ImGuiViewport *,ImGuiPlatformImeData *)) ((arg1)->Platform_SetImeDataFn);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_ImeUserData_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void *arg2 = (void *) 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_ImeUserData",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_ImeUserData",1,"ImGuiPlatformIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Platform_ImeUserData",2,"void *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_ImeUserData_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiPlatformIO_Platform_ImeUserData_set");
+    if (arg1) (arg1)->Platform_ImeUserData = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_ImeUserData_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void *result = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_ImeUserData",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_ImeUserData",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_ImeUserData_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (void *) ((arg1)->Platform_ImeUserData); SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_LocaleDecimalPoint_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; ImWchar arg2 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_LocaleDecimalPoint",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_LocaleDecimalPoint",1,"ImGuiPlatformIO *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Platform_LocaleDecimalPoint",2,"ImWchar");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_LocaleDecimalPoint_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (ImWchar)lua_tonumber(L, 2);
+    if (arg1) (arg1)->Platform_LocaleDecimalPoint = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_LocaleDecimalPoint_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; ImWchar result;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_LocaleDecimalPoint",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_LocaleDecimalPoint",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_LocaleDecimalPoint_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (ImWchar) ((arg1)->Platform_LocaleDecimalPoint); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Renderer_RenderState_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void *arg2 = (void *) 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Renderer_RenderState",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Renderer_RenderState",1,"ImGuiPlatformIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Renderer_RenderState",2,"void *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Renderer_RenderState_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    arg2=(void *)SWIG_MustGetPtr(L,2,0,0,2,"ImGuiPlatformIO_Renderer_RenderState_set");
+    if (arg1) (arg1)->Renderer_RenderState = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Renderer_RenderState_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void *result = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Renderer_RenderState",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Renderer_RenderState",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Renderer_RenderState_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (void *) ((arg1)->Renderer_RenderState); SWIG_NewPointerObj(L,result,SWIGTYPE_p_void,0); SWIG_arg++; 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ImGuiPlatformIO_Platform_CreateWindow_set(lua_State* L) { { int SWIG_arg = 0;
     ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; void (*arg2)(ImGuiViewport *) = (void (*)(ImGuiViewport *)) 0 ;
     SWIG_check_num_args("ImGuiPlatformIO::Platform_CreateWindow",2,2)
@@ -17351,6 +18742,25 @@ static int _wrap_ImGuiPlatformIO_Platform_OnChangedViewport_get(lua_State* L) { 
     result = (void (*)(ImGuiViewport *)) ((arg1)->Platform_OnChangedViewport);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_ImGuiViewport__void,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_GetWindowWorkAreaInsets_set(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; ImVec4 (*arg2)(ImGuiViewport *) = (ImVec4 (*)(ImGuiViewport *)) 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_GetWindowWorkAreaInsets",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_GetWindowWorkAreaInsets",1,"ImGuiPlatformIO *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGuiPlatformIO::Platform_GetWindowWorkAreaInsets",2,"ImVec4 (*)(ImGuiViewport *)");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_GetWindowWorkAreaInsets_set",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_f_p_ImGuiViewport__ImVec4,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_GetWindowWorkAreaInsets_set",2,SWIGTYPE_p_f_p_ImGuiViewport__ImVec4); } 
+    if (arg1) (arg1)->Platform_GetWindowWorkAreaInsets = arg2; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_ImGuiPlatformIO_Platform_GetWindowWorkAreaInsets_get(lua_State* L) { { int SWIG_arg = 0;
+    ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ; ImVec4 (*result)(ImGuiViewport *) = 0 ;
+    SWIG_check_num_args("ImGuiPlatformIO::Platform_GetWindowWorkAreaInsets",1,1)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ImGuiPlatformIO::Platform_GetWindowWorkAreaInsets",1,"ImGuiPlatformIO *");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ImGuiPlatformIO,0))){
+      SWIG_fail_ptr("ImGuiPlatformIO_Platform_GetWindowWorkAreaInsets_get",1,SWIGTYPE_p_ImGuiPlatformIO); } 
+    result = (ImVec4 (*)(ImGuiViewport *)) ((arg1)->Platform_GetWindowWorkAreaInsets);
+    SWIG_NewPointerObj(L,result,SWIGTYPE_p_f_p_ImGuiViewport__ImVec4,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
 static int _wrap_ImGuiPlatformIO_Platform_CreateVkSurface_set(lua_State* L) { { int SWIG_arg = 0;
     ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) 0 ;
     int (*arg2)(ImGuiViewport *,ImU64,void const *,ImU64 *) = (int (*)(ImGuiViewport *,ImU64,void const *,ImU64 *)) 0 ;
@@ -17508,10 +18918,6 @@ static int _wrap_ImGuiPlatformIO_Viewports_get(lua_State* L) { { int SWIG_arg = 
     result = (ImVector< ImGuiViewport * > *)& ((arg1)->Viewports);
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImVectorT_ImGuiViewport_p_t,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
-static int _wrap_new_ImGuiPlatformIO(lua_State* L) { { int SWIG_arg = 0; ImGuiPlatformIO *result = 0 ;
-    SWIG_check_num_args("ImGuiPlatformIO::ImGuiPlatformIO",0,0) result = (ImGuiPlatformIO *)new ImGuiPlatformIO();
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_ImGuiPlatformIO,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
 static void swig_delete_ImGuiPlatformIO(void *obj) {
 ImGuiPlatformIO *arg1 = (ImGuiPlatformIO *) obj;
 delete arg1;
@@ -17525,6 +18931,15 @@ static int _proxy__wrap_new_ImGuiPlatformIO(lua_State *L) {
     return 1;
 }
 static swig_lua_attribute swig_ImGuiPlatformIO_attributes[] = {
+    { "Platform_GetClipboardTextFn", _wrap_ImGuiPlatformIO_Platform_GetClipboardTextFn_get, _wrap_ImGuiPlatformIO_Platform_GetClipboardTextFn_set },
+    { "Platform_SetClipboardTextFn", _wrap_ImGuiPlatformIO_Platform_SetClipboardTextFn_get, _wrap_ImGuiPlatformIO_Platform_SetClipboardTextFn_set },
+    { "Platform_ClipboardUserData", _wrap_ImGuiPlatformIO_Platform_ClipboardUserData_get, _wrap_ImGuiPlatformIO_Platform_ClipboardUserData_set },
+    { "Platform_OpenInShellFn", _wrap_ImGuiPlatformIO_Platform_OpenInShellFn_get, _wrap_ImGuiPlatformIO_Platform_OpenInShellFn_set },
+    { "Platform_OpenInShellUserData", _wrap_ImGuiPlatformIO_Platform_OpenInShellUserData_get, _wrap_ImGuiPlatformIO_Platform_OpenInShellUserData_set },
+    { "Platform_SetImeDataFn", _wrap_ImGuiPlatformIO_Platform_SetImeDataFn_get, _wrap_ImGuiPlatformIO_Platform_SetImeDataFn_set },
+    { "Platform_ImeUserData", _wrap_ImGuiPlatformIO_Platform_ImeUserData_get, _wrap_ImGuiPlatformIO_Platform_ImeUserData_set },
+    { "Platform_LocaleDecimalPoint", _wrap_ImGuiPlatformIO_Platform_LocaleDecimalPoint_get, _wrap_ImGuiPlatformIO_Platform_LocaleDecimalPoint_set },
+    { "Renderer_RenderState", _wrap_ImGuiPlatformIO_Renderer_RenderState_get, _wrap_ImGuiPlatformIO_Renderer_RenderState_set },
     { "Platform_CreateWindow", _wrap_ImGuiPlatformIO_Platform_CreateWindow_get, _wrap_ImGuiPlatformIO_Platform_CreateWindow_set },
     { "Platform_DestroyWindow", _wrap_ImGuiPlatformIO_Platform_DestroyWindow_get, _wrap_ImGuiPlatformIO_Platform_DestroyWindow_set },
     { "Platform_ShowWindow", _wrap_ImGuiPlatformIO_Platform_ShowWindow_get, _wrap_ImGuiPlatformIO_Platform_ShowWindow_set },
@@ -17542,6 +18957,7 @@ static swig_lua_attribute swig_ImGuiPlatformIO_attributes[] = {
     { "Platform_SwapBuffers", _wrap_ImGuiPlatformIO_Platform_SwapBuffers_get, _wrap_ImGuiPlatformIO_Platform_SwapBuffers_set },
     { "Platform_GetWindowDpiScale", _wrap_ImGuiPlatformIO_Platform_GetWindowDpiScale_get, _wrap_ImGuiPlatformIO_Platform_GetWindowDpiScale_set },
     { "Platform_OnChangedViewport", _wrap_ImGuiPlatformIO_Platform_OnChangedViewport_get, _wrap_ImGuiPlatformIO_Platform_OnChangedViewport_set },
+    { "Platform_GetWindowWorkAreaInsets", _wrap_ImGuiPlatformIO_Platform_GetWindowWorkAreaInsets_get, _wrap_ImGuiPlatformIO_Platform_GetWindowWorkAreaInsets_set },
     { "Platform_CreateVkSurface", _wrap_ImGuiPlatformIO_Platform_CreateVkSurface_get, _wrap_ImGuiPlatformIO_Platform_CreateVkSurface_set },
     { "Renderer_CreateWindow", _wrap_ImGuiPlatformIO_Renderer_CreateWindow_get, _wrap_ImGuiPlatformIO_Renderer_CreateWindow_set },
     { "Renderer_DestroyWindow", _wrap_ImGuiPlatformIO_Renderer_DestroyWindow_get, _wrap_ImGuiPlatformIO_Renderer_DestroyWindow_set },
@@ -17854,10 +19270,29 @@ static swig_lua_class *swig_ImGuiPlatformImeData_bases[] = {0};
 static const char *swig_ImGuiPlatformImeData_base_names[] = {0};
 static swig_lua_class _wrap_class_ImGuiPlatformImeData = { "ImGuiPlatformImeData", "ImGuiPlatformImeData", &SWIGTYPE_p_ImGuiPlatformImeData,_proxy__wrap_new_ImGuiPlatformImeData, swig_delete_ImGuiPlatformImeData, swig_ImGuiPlatformImeData_methods, swig_ImGuiPlatformImeData_attributes, &swig_ImGuiPlatformImeData_Sf_SwigStatic, swig_ImGuiPlatformImeData_meta, swig_ImGuiPlatformImeData_bases, swig_ImGuiPlatformImeData_base_names };
 
-static int _wrap_GetKeyIndex(lua_State* L) { { int SWIG_arg = 0; ImGuiKey arg1 ; ImGuiKey result;
-    SWIG_check_num_args("ImGui::GetKeyIndex",1,1) if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::GetKeyIndex",1,"ImGuiKey");
-    arg1 = (ImGuiKey)(int)lua_tonumber(L, 1); result = (ImGuiKey)ImGui::GetKeyIndex(arg1);
-    lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_PushButtonRepeat(lua_State* L) { { int SWIG_arg = 0; bool arg1 ;
+    SWIG_check_num_args("ImGui::PushButtonRepeat",1,1)
+    if(!lua_isboolean(L,1)) SWIG_fail_arg("ImGui::PushButtonRepeat",1,"bool"); arg1 = (lua_toboolean(L, 1)!=0);
+    ImGui::PushButtonRepeat(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_PopButtonRepeat(lua_State* L) { { int SWIG_arg = 0; SWIG_check_num_args("ImGui::PopButtonRepeat",0,0)
+    ImGui::PopButtonRepeat(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_PushTabStop(lua_State* L) { { int SWIG_arg = 0; bool arg1 ; SWIG_check_num_args("ImGui::PushTabStop",1,1)
+    if(!lua_isboolean(L,1)) SWIG_fail_arg("ImGui::PushTabStop",1,"bool"); arg1 = (lua_toboolean(L, 1)!=0);
+    ImGui::PushTabStop(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_PopTabStop(lua_State* L) { { int SWIG_arg = 0; SWIG_check_num_args("ImGui::PopTabStop",0,0)
+    ImGui::PopTabStop(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GetContentRegionMax(lua_State* L) { { int SWIG_arg = 0; ImVec2 result;
+    SWIG_check_num_args("ImGui::GetContentRegionMax",0,0) result = ImGui::GetContentRegionMax(); {
+      ImVec2 * resultptr = new ImVec2(result); SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ImVec2,1); SWIG_arg++; } 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GetWindowContentRegionMin(lua_State* L) { { int SWIG_arg = 0; ImVec2 result;
+    SWIG_check_num_args("ImGui::GetWindowContentRegionMin",0,0) result = ImGui::GetWindowContentRegionMin(); {
+      ImVec2 * resultptr = new ImVec2(result); SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ImVec2,1); SWIG_arg++; } 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_GetWindowContentRegionMax(lua_State* L) { { int SWIG_arg = 0; ImVec2 result;
+    SWIG_check_num_args("ImGui::GetWindowContentRegionMax",0,0) result = ImGui::GetWindowContentRegionMax(); {
+      ImVec2 * resultptr = new ImVec2(result); SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_ImVec2,1); SWIG_arg++; } 
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_BeginChildFrame(lua_State* L) { { int SWIG_arg = 0; ImGuiID arg1 ; ImVec2 *arg2 = 0 ;
     ImGuiWindowFlags arg3 = (ImGuiWindowFlags) 0 ; bool result; SWIG_check_num_args("ImGui::BeginChildFrame",2,3)
     if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::BeginChildFrame",1,"ImGuiID");
@@ -17878,6 +19313,21 @@ static int _wrap_ShowStackToolWindow_1(lua_State* L) { { int SWIG_arg = 0; bool 
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ShowStackToolWindow_0(lua_State* L) { { int SWIG_arg = 0; SWIG_check_num_args("ImGui::ShowStackToolWindow",0,0)
     ImGui::ShowStackToolWindow(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Combo_itemsGetter(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; int *arg2 = (int *) 0 ;
+    bool (*arg3)(void *,int,char const **) = (bool (*)(void *,int,char const **)) 0 ; void *arg4 = (void *) 0 ; int arg5 ;
+    int arg6 = (int) -1 ; bool result; SWIG_check_num_args("ImGui::Combo",5,6)
+    if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("ImGui::Combo",1,"char const *");
+    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGui::Combo",2,"int *");
+    if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ImGui::Combo",3,"bool (*)(void *,int,char const **)");
+    if(!SWIG_isptrtype(L,4)) SWIG_fail_arg("ImGui::Combo",4,"void *");
+    if(!lua_isnumber(L,5)) SWIG_fail_arg("ImGui::Combo",5,"int");
+    if(lua_gettop(L)>=6 && !lua_isnumber(L,6)) SWIG_fail_arg("ImGui::Combo",6,"int"); arg1 = (char *)lua_tostring(L, 1);
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_int,0))){ SWIG_fail_ptr("Combo_itemsGetter",2,SWIGTYPE_p_int); }
+     if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_f_p_void_int_p_p_q_const__char__bool,0))){
+      SWIG_fail_ptr("Combo_itemsGetter",3,SWIGTYPE_p_f_p_void_int_p_p_q_const__char__bool); } 
+    arg4=(void *)SWIG_MustGetPtr(L,4,0,0,4,"Combo_itemsGetter"); arg5 = (int)lua_tonumber(L, 5); if(lua_gettop(L)>=6){
+      arg6 = (int)lua_tonumber(L, 6);}  result = (bool)ImGui::Combo((char const *)arg1,arg2,arg3,arg4,arg5,arg6);
+    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_ListBox_itemsGetter(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; int *arg2 = (int *) 0 ;
     bool (*arg3)(void *,int,char const **) = (bool (*)(void *,int,char const **)) 0 ; void *arg4 = (void *) 0 ; int arg5 ;
     int arg6 = (int) -1 ; bool result; SWIG_check_num_args("ImGui::ListBox",5,6)
@@ -17894,21 +19344,6 @@ static int _wrap_ListBox_itemsGetter(lua_State* L) { { int SWIG_arg = 0; char *a
     arg4=(void *)SWIG_MustGetPtr(L,4,0,0,4,"ListBox_itemsGetter"); arg5 = (int)lua_tonumber(L, 5); if(lua_gettop(L)>=6){
       arg6 = (int)lua_tonumber(L, 6);}  result = (bool)ImGui::ListBox((char const *)arg1,arg2,arg3,arg4,arg5,arg6);
     lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_Combo_itemsGetter(lua_State* L) { { int SWIG_arg = 0; char *arg1 = (char *) 0 ; int *arg2 = (int *) 0 ;
-    bool (*arg3)(void *,int,char const **) = (bool (*)(void *,int,char const **)) 0 ; void *arg4 = (void *) 0 ; int arg5 ;
-    int arg6 = (int) -1 ; bool result; SWIG_check_num_args("ImGui::Combo",5,6)
-    if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("ImGui::Combo",1,"char const *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ImGui::Combo",2,"int *");
-    if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ImGui::Combo",3,"bool (*)(void *,int,char const **)");
-    if(!SWIG_isptrtype(L,4)) SWIG_fail_arg("ImGui::Combo",4,"void *");
-    if(!lua_isnumber(L,5)) SWIG_fail_arg("ImGui::Combo",5,"int");
-    if(lua_gettop(L)>=6 && !lua_isnumber(L,6)) SWIG_fail_arg("ImGui::Combo",6,"int"); arg1 = (char *)lua_tostring(L, 1);
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_int,0))){ SWIG_fail_ptr("Combo_itemsGetter",2,SWIGTYPE_p_int); }
-     if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_f_p_void_int_p_p_q_const__char__bool,0))){
-      SWIG_fail_ptr("Combo_itemsGetter",3,SWIGTYPE_p_f_p_void_int_p_p_q_const__char__bool); } 
-    arg4=(void *)SWIG_MustGetPtr(L,4,0,0,4,"Combo_itemsGetter"); arg5 = (int)lua_tonumber(L, 5); if(lua_gettop(L)>=6){
-      arg6 = (int)lua_tonumber(L, 6);}  result = (bool)ImGui::Combo((char const *)arg1,arg2,arg3,arg4,arg5,arg6);
-    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_SetItemAllowOverlap(lua_State* L) { { int SWIG_arg = 0; SWIG_check_num_args("ImGui::SetItemAllowOverlap",0,0)
     ImGui::SetItemAllowOverlap(); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_PushAllowKeyboardFocus(lua_State* L) { { int SWIG_arg = 0; bool arg1 ;
@@ -17918,69 +19353,6 @@ static int _wrap_PushAllowKeyboardFocus(lua_State* L) { { int SWIG_arg = 0; bool
 static int _wrap_PopAllowKeyboardFocus(lua_State* L) { { int SWIG_arg = 0;
     SWIG_check_num_args("ImGui::PopAllowKeyboardFocus",0,0) ImGui::PopAllowKeyboardFocus(); return SWIG_arg; fail: SWIGUNUSED; }
    lua_error(L); return 0; }
-static int _wrap_ImageButton__SWIG_1(lua_State* L) { { int SWIG_arg = 0; int arg1 ; ImVec2 *arg2 = 0 ;
-    ImVec2 const &arg3_defvalue = ImVec2(0, 0) ; ImVec2 *arg3 = (ImVec2 *) &arg3_defvalue ;
-    ImVec2 const &arg4_defvalue = ImVec2(1, 1) ; ImVec2 *arg4 = (ImVec2 *) &arg4_defvalue ; int arg5 = (int) -1 ;
-    ImVec4 const &arg6_defvalue = ImVec4(0, 0, 0, 0) ; ImVec4 *arg6 = (ImVec4 *) &arg6_defvalue ;
-    ImVec4 const &arg7_defvalue = ImVec4(1, 1, 1, 1) ; ImVec4 *arg7 = (ImVec4 *) &arg7_defvalue ; bool result;
-    SWIG_check_num_args("ImGui::ImageButton",2,7) if(!lua_isnumber(L,1)) SWIG_fail_arg("ImGui::ImageButton",1,"int");
-    if(!lua_isuserdata(L,2)) SWIG_fail_arg("ImGui::ImageButton",2,"ImVec2 const &");
-    if(lua_gettop(L)>=3 && !lua_isuserdata(L,3)) SWIG_fail_arg("ImGui::ImageButton",3,"ImVec2 const &");
-    if(lua_gettop(L)>=4 && !lua_isuserdata(L,4)) SWIG_fail_arg("ImGui::ImageButton",4,"ImVec2 const &");
-    if(lua_gettop(L)>=5 && !lua_isnumber(L,5)) SWIG_fail_arg("ImGui::ImageButton",5,"int");
-    if(lua_gettop(L)>=6 && !lua_isuserdata(L,6)) SWIG_fail_arg("ImGui::ImageButton",6,"ImVec4 const &");
-    if(lua_gettop(L)>=7 && !lua_isuserdata(L,7)) SWIG_fail_arg("ImGui::ImageButton",7,"ImVec4 const &");
-    arg1 = (int)lua_tonumber(L, 1); if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ImVec2,0))){
-      SWIG_fail_ptr("ImageButton",2,SWIGTYPE_p_ImVec2); }  if(lua_gettop(L)>=3){
-      if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_ImVec2,0))){
-        SWIG_fail_ptr("ImageButton",3,SWIGTYPE_p_ImVec2); }  }  if(lua_gettop(L)>=4){
-      if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_ImVec2,0))){
-        SWIG_fail_ptr("ImageButton",4,SWIGTYPE_p_ImVec2); }  }  if(lua_gettop(L)>=5){ arg5 = (int)lua_tonumber(L, 5);} 
-    if(lua_gettop(L)>=6){ if (!SWIG_IsOK(SWIG_ConvertPtr(L,6,(void**)&arg6,SWIGTYPE_p_ImVec4,0))){
-        SWIG_fail_ptr("ImageButton",6,SWIGTYPE_p_ImVec4); }  }  if(lua_gettop(L)>=7){
-      if (!SWIG_IsOK(SWIG_ConvertPtr(L,7,(void**)&arg7,SWIGTYPE_p_ImVec4,0))){
-        SWIG_fail_ptr("ImageButton",7,SWIGTYPE_p_ImVec4); }  } 
-    result = (bool)ImGui::ImageButton(arg1,(ImVec2 const &)*arg2,(ImVec2 const &)*arg3,(ImVec2 const &)*arg4,arg5,(ImVec4 const &)*arg6,(ImVec4 const &)*arg7);
-    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_ImageButton(lua_State* L) { int argc; int argv[8]={ 1,2,3,4,5,6,7,8} ; argc = lua_gettop(L);
-  if ((argc >= 2) && (argc <= 7)) { int _v = 0; { _v = lua_isnumber(L,argv[0]); }  if (_v) { { void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_ImVec2, SWIG_POINTER_NO_NULL)) {
-          _v = 0; }  else { _v = 1; }  }  if (_v) { if (argc <= 2) { return _wrap_ImageButton__SWIG_1(L);}  { void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_ImVec2, SWIG_POINTER_NO_NULL)) {
-            _v = 0; }  else { _v = 1; }  }  if (_v) { if (argc <= 3) { return _wrap_ImageButton__SWIG_1(L);}  { void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_ImVec2, SWIG_POINTER_NO_NULL)) {
-              _v = 0; }  else { _v = 1; }  }  if (_v) { if (argc <= 4) { return _wrap_ImageButton__SWIG_1(L);}  {
-              _v = lua_isnumber(L,argv[4]); }  if (_v) { if (argc <= 5) { return _wrap_ImageButton__SWIG_1(L);}  { void *ptr;
-                if (lua_isuserdata(L,argv[5])==0 || SWIG_ConvertPtr(L,argv[5], (void **) &ptr, SWIGTYPE_p_ImVec4, SWIG_POINTER_NO_NULL)) {
-                  _v = 0; }  else { _v = 1; }  }  if (_v) { if (argc <= 6) { return _wrap_ImageButton__SWIG_1(L);}  { void *ptr;
-                  if (lua_isuserdata(L,argv[6])==0 || SWIG_ConvertPtr(L,argv[6], (void **) &ptr, SWIGTYPE_p_ImVec4, SWIG_POINTER_NO_NULL)) {
-                    _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImageButton__SWIG_1(L);}  }  }  }  }  }  }  } 
-  if ((argc >= 3) && (argc <= 7)) { int _v = 0; { _v = SWIG_lua_isnilstring(L,argv[0]); }  if (_v) { {
-        _v = lua_isnumber(L,argv[1]); }  if (_v) { { void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_ImVec2, SWIG_POINTER_NO_NULL)) {
-            _v = 0; }  else { _v = 1; }  }  if (_v) { if (argc <= 3) { return _wrap_ImageButton__SWIG_0(L);}  { void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_ImVec2, SWIG_POINTER_NO_NULL)) {
-              _v = 0; }  else { _v = 1; }  }  if (_v) { if (argc <= 4) { return _wrap_ImageButton__SWIG_0(L);}  { void *ptr;
-              if (lua_isuserdata(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_ImVec2, SWIG_POINTER_NO_NULL)) {
-                _v = 0; }  else { _v = 1; }  }  if (_v) { if (argc <= 5) { return _wrap_ImageButton__SWIG_0(L);}  { void *ptr;
-                if (lua_isuserdata(L,argv[5])==0 || SWIG_ConvertPtr(L,argv[5], (void **) &ptr, SWIGTYPE_p_ImVec4, SWIG_POINTER_NO_NULL)) {
-                  _v = 0; }  else { _v = 1; }  }  if (_v) { if (argc <= 6) { return _wrap_ImageButton__SWIG_0(L);}  { void *ptr;
-                  if (lua_isuserdata(L,argv[6])==0 || SWIG_ConvertPtr(L,argv[6], (void **) &ptr, SWIGTYPE_p_ImVec4, SWIG_POINTER_NO_NULL)) {
-                    _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_ImageButton__SWIG_0(L);}  }  }  }  }  }  }  } 
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'ImageButton'\n" "  Possible C/C++ prototypes are:\n"
-  "    ImGui::ImageButton(char const *,int,ImVec2 const &,ImVec2 const &,ImVec2 const &,ImVec4 const &,ImVec4 const &)\n"
-  "    ImGui::ImageButton(int,ImVec2 const &,ImVec2 const &,ImVec2 const &,int,ImVec4 const &,ImVec4 const &)\n");
-  lua_error(L);return 0; }
-static int _wrap_CaptureKeyboardFromApp(lua_State* L) { { int SWIG_arg = 0; bool arg1 = (bool) true ;
-    SWIG_check_num_args("ImGui::CaptureKeyboardFromApp",0,1)
-    if(lua_gettop(L)>=1 && !lua_isboolean(L,1)) SWIG_fail_arg("ImGui::CaptureKeyboardFromApp",1,"bool"); if(lua_gettop(L)>=1){
-      arg1 = (lua_toboolean(L, 1)!=0);}  ImGui::CaptureKeyboardFromApp(arg1); return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
-static int _wrap_CaptureMouseFromApp(lua_State* L) { { int SWIG_arg = 0; bool arg1 = (bool) true ;
-    SWIG_check_num_args("ImGui::CaptureMouseFromApp",0,1)
-    if(lua_gettop(L)>=1 && !lua_isboolean(L,1)) SWIG_fail_arg("ImGui::CaptureMouseFromApp",1,"bool"); if(lua_gettop(L)>=1){
-      arg1 = (lua_toboolean(L, 1)!=0);}  ImGui::CaptureMouseFromApp(arg1); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
-  return 0; }
 static swig_lua_attribute swig_SwigModule_attributes[] = {
     { "ofColorScale", _wrap_ofColorScale_get, SWIG_Lua_set_immutable },
     { "ImGuiTextBuffer_EmptyString", _wrap_ImGuiTextBuffer_EmptyString_get, _wrap_ImGuiTextBuffer_EmptyString_set },
@@ -17991,8 +19363,8 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("Slave", (ofxImGui::Slave))},
     {SWIG_LUA_CONSTTAB_INT("Master", (ofxImGui::Master))},
     {SWIG_LUA_CONSTTAB_INT("Success", (ofxImGui::Success))},
-    {SWIG_LUA_CONSTTAB_STRING("IMGUI_VERSION", "1.90.1")},
-    {SWIG_LUA_CONSTTAB_INT("IMGUI_VERSION_NUM", (19010))},
+    {SWIG_LUA_CONSTTAB_STRING("IMGUI_VERSION", "1.91.5")},
+    {SWIG_LUA_CONSTTAB_INT("IMGUI_VERSION_NUM", (19150))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_None", (ImGuiWindowFlags_None))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_NoTitleBar", (ImGuiWindowFlags_NoTitleBar))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_NoResize", (ImGuiWindowFlags_NoResize))},
@@ -18017,7 +19389,6 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_NoNav", (ImGuiWindowFlags_NoNav))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_NoDecoration", (ImGuiWindowFlags_NoDecoration))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_NoInputs", (ImGuiWindowFlags_NoInputs))},
-    {SWIG_LUA_CONSTTAB_INT("WindowFlags_NavFlattened", (ImGuiWindowFlags_NavFlattened))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_ChildWindow", (ImGuiWindowFlags_ChildWindow))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_Tooltip", (ImGuiWindowFlags_Tooltip))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_Popup", (ImGuiWindowFlags_Popup))},
@@ -18025,8 +19396,9 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_ChildMenu", (ImGuiWindowFlags_ChildMenu))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_DockNodeHost", (ImGuiWindowFlags_DockNodeHost))},
     {SWIG_LUA_CONSTTAB_INT("WindowFlags_AlwaysUseWindowPadding", (ImGuiWindowFlags_AlwaysUseWindowPadding))},
+    {SWIG_LUA_CONSTTAB_INT("WindowFlags_NavFlattened", (ImGuiWindowFlags_NavFlattened))},
     {SWIG_LUA_CONSTTAB_INT("ChildFlags_None", (ImGuiChildFlags_None))},
-    {SWIG_LUA_CONSTTAB_INT("ChildFlags_Border", (ImGuiChildFlags_Border))},
+    {SWIG_LUA_CONSTTAB_INT("ChildFlags_Borders", (ImGuiChildFlags_Borders))},
     {SWIG_LUA_CONSTTAB_INT("ChildFlags_AlwaysUseWindowPadding", (ImGuiChildFlags_AlwaysUseWindowPadding))},
     {SWIG_LUA_CONSTTAB_INT("ChildFlags_ResizeX", (ImGuiChildFlags_ResizeX))},
     {SWIG_LUA_CONSTTAB_INT("ChildFlags_ResizeY", (ImGuiChildFlags_ResizeY))},
@@ -18034,28 +19406,39 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("ChildFlags_AutoResizeY", (ImGuiChildFlags_AutoResizeY))},
     {SWIG_LUA_CONSTTAB_INT("ChildFlags_AlwaysAutoResize", (ImGuiChildFlags_AlwaysAutoResize))},
     {SWIG_LUA_CONSTTAB_INT("ChildFlags_FrameStyle", (ImGuiChildFlags_FrameStyle))},
+    {SWIG_LUA_CONSTTAB_INT("ChildFlags_NavFlattened", (ImGuiChildFlags_NavFlattened))},
+    {SWIG_LUA_CONSTTAB_INT("ChildFlags_Border", (ImGuiChildFlags_Border))},
+    {SWIG_LUA_CONSTTAB_INT("ItemFlags_None", (ImGuiItemFlags_None))},
+    {SWIG_LUA_CONSTTAB_INT("ItemFlags_NoTabStop", (ImGuiItemFlags_NoTabStop))},
+    {SWIG_LUA_CONSTTAB_INT("ItemFlags_NoNav", (ImGuiItemFlags_NoNav))},
+    {SWIG_LUA_CONSTTAB_INT("ItemFlags_NoNavDefaultFocus", (ImGuiItemFlags_NoNavDefaultFocus))},
+    {SWIG_LUA_CONSTTAB_INT("ItemFlags_ButtonRepeat", (ImGuiItemFlags_ButtonRepeat))},
+    {SWIG_LUA_CONSTTAB_INT("ItemFlags_AutoClosePopups", (ImGuiItemFlags_AutoClosePopups))},
+    {SWIG_LUA_CONSTTAB_INT("ItemFlags_AllowDuplicateId", (ImGuiItemFlags_AllowDuplicateId))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_None", (ImGuiInputTextFlags_None))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CharsDecimal", (ImGuiInputTextFlags_CharsDecimal))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CharsHexadecimal", (ImGuiInputTextFlags_CharsHexadecimal))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CharsScientific", (ImGuiInputTextFlags_CharsScientific))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CharsUppercase", (ImGuiInputTextFlags_CharsUppercase))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CharsNoBlank", (ImGuiInputTextFlags_CharsNoBlank))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_AutoSelectAll", (ImGuiInputTextFlags_AutoSelectAll))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_AllowTabInput", (ImGuiInputTextFlags_AllowTabInput))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_EnterReturnsTrue", (ImGuiInputTextFlags_EnterReturnsTrue))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_EscapeClearsAll", (ImGuiInputTextFlags_EscapeClearsAll))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CtrlEnterForNewLine", (ImGuiInputTextFlags_CtrlEnterForNewLine))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_ReadOnly", (ImGuiInputTextFlags_ReadOnly))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_Password", (ImGuiInputTextFlags_Password))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_AlwaysOverwrite", (ImGuiInputTextFlags_AlwaysOverwrite))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_AutoSelectAll", (ImGuiInputTextFlags_AutoSelectAll))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_ParseEmptyRefVal", (ImGuiInputTextFlags_ParseEmptyRefVal))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_DisplayEmptyRefVal", (ImGuiInputTextFlags_DisplayEmptyRefVal))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_NoHorizontalScroll", (ImGuiInputTextFlags_NoHorizontalScroll))},
+    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_NoUndoRedo", (ImGuiInputTextFlags_NoUndoRedo))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CallbackCompletion", (ImGuiInputTextFlags_CallbackCompletion))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CallbackHistory", (ImGuiInputTextFlags_CallbackHistory))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CallbackAlways", (ImGuiInputTextFlags_CallbackAlways))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CallbackCharFilter", (ImGuiInputTextFlags_CallbackCharFilter))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_AllowTabInput", (ImGuiInputTextFlags_AllowTabInput))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CtrlEnterForNewLine", (ImGuiInputTextFlags_CtrlEnterForNewLine))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_NoHorizontalScroll", (ImGuiInputTextFlags_NoHorizontalScroll))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_AlwaysOverwrite", (ImGuiInputTextFlags_AlwaysOverwrite))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_ReadOnly", (ImGuiInputTextFlags_ReadOnly))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_Password", (ImGuiInputTextFlags_Password))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_NoUndoRedo", (ImGuiInputTextFlags_NoUndoRedo))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CharsScientific", (ImGuiInputTextFlags_CharsScientific))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CallbackResize", (ImGuiInputTextFlags_CallbackResize))},
     {SWIG_LUA_CONSTTAB_INT("InputTextFlags_CallbackEdit", (ImGuiInputTextFlags_CallbackEdit))},
-    {SWIG_LUA_CONSTTAB_INT("InputTextFlags_EscapeClearsAll", (ImGuiInputTextFlags_EscapeClearsAll))},
     {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_None", (ImGuiTreeNodeFlags_None))},
     {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_Selected", (ImGuiTreeNodeFlags_Selected))},
     {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_Framed", (ImGuiTreeNodeFlags_Framed))},
@@ -18070,6 +19453,7 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_FramePadding", (ImGuiTreeNodeFlags_FramePadding))},
     {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_SpanAvailWidth", (ImGuiTreeNodeFlags_SpanAvailWidth))},
     {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_SpanFullWidth", (ImGuiTreeNodeFlags_SpanFullWidth))},
+    {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_SpanTextWidth", (ImGuiTreeNodeFlags_SpanTextWidth))},
     {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_SpanAllColumns", (ImGuiTreeNodeFlags_SpanAllColumns))},
     {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_NavLeftJumpsBackHere", (ImGuiTreeNodeFlags_NavLeftJumpsBackHere))},
     {SWIG_LUA_CONSTTAB_INT("TreeNodeFlags_CollapsingHeader", (ImGuiTreeNodeFlags_CollapsingHeader))},
@@ -18080,17 +19464,20 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("PopupFlags_MouseButtonMiddle", (ImGuiPopupFlags_MouseButtonMiddle))},
     {SWIG_LUA_CONSTTAB_INT("PopupFlags_MouseButtonMask_", (ImGuiPopupFlags_MouseButtonMask_))},
     {SWIG_LUA_CONSTTAB_INT("PopupFlags_MouseButtonDefault_", (ImGuiPopupFlags_MouseButtonDefault_))},
+    {SWIG_LUA_CONSTTAB_INT("PopupFlags_NoReopen", (ImGuiPopupFlags_NoReopen))},
     {SWIG_LUA_CONSTTAB_INT("PopupFlags_NoOpenOverExistingPopup", (ImGuiPopupFlags_NoOpenOverExistingPopup))},
     {SWIG_LUA_CONSTTAB_INT("PopupFlags_NoOpenOverItems", (ImGuiPopupFlags_NoOpenOverItems))},
     {SWIG_LUA_CONSTTAB_INT("PopupFlags_AnyPopupId", (ImGuiPopupFlags_AnyPopupId))},
     {SWIG_LUA_CONSTTAB_INT("PopupFlags_AnyPopupLevel", (ImGuiPopupFlags_AnyPopupLevel))},
     {SWIG_LUA_CONSTTAB_INT("PopupFlags_AnyPopup", (ImGuiPopupFlags_AnyPopup))},
     {SWIG_LUA_CONSTTAB_INT("SelectableFlags_None", (ImGuiSelectableFlags_None))},
-    {SWIG_LUA_CONSTTAB_INT("SelectableFlags_DontClosePopups", (ImGuiSelectableFlags_DontClosePopups))},
+    {SWIG_LUA_CONSTTAB_INT("SelectableFlags_NoAutoClosePopups", (ImGuiSelectableFlags_NoAutoClosePopups))},
     {SWIG_LUA_CONSTTAB_INT("SelectableFlags_SpanAllColumns", (ImGuiSelectableFlags_SpanAllColumns))},
     {SWIG_LUA_CONSTTAB_INT("SelectableFlags_AllowDoubleClick", (ImGuiSelectableFlags_AllowDoubleClick))},
     {SWIG_LUA_CONSTTAB_INT("SelectableFlags_Disabled", (ImGuiSelectableFlags_Disabled))},
     {SWIG_LUA_CONSTTAB_INT("SelectableFlags_AllowOverlap", (ImGuiSelectableFlags_AllowOverlap))},
+    {SWIG_LUA_CONSTTAB_INT("SelectableFlags_Highlight", (ImGuiSelectableFlags_Highlight))},
+    {SWIG_LUA_CONSTTAB_INT("SelectableFlags_DontClosePopups", (ImGuiSelectableFlags_DontClosePopups))},
     {SWIG_LUA_CONSTTAB_INT("SelectableFlags_AllowItemOverlap", (ImGuiSelectableFlags_AllowItemOverlap))},
     {SWIG_LUA_CONSTTAB_INT("ComboFlags_None", (ImGuiComboFlags_None))},
     {SWIG_LUA_CONSTTAB_INT("ComboFlags_PopupAlignLeft", (ImGuiComboFlags_PopupAlignLeft))},
@@ -18109,6 +19496,7 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("TabBarFlags_NoCloseWithMiddleMouseButton", (ImGuiTabBarFlags_NoCloseWithMiddleMouseButton))},
     {SWIG_LUA_CONSTTAB_INT("TabBarFlags_NoTabListScrollingButtons", (ImGuiTabBarFlags_NoTabListScrollingButtons))},
     {SWIG_LUA_CONSTTAB_INT("TabBarFlags_NoTooltip", (ImGuiTabBarFlags_NoTooltip))},
+    {SWIG_LUA_CONSTTAB_INT("TabBarFlags_DrawSelectedOverline", (ImGuiTabBarFlags_DrawSelectedOverline))},
     {SWIG_LUA_CONSTTAB_INT("TabBarFlags_FittingPolicyResizeDown", (ImGuiTabBarFlags_FittingPolicyResizeDown))},
     {SWIG_LUA_CONSTTAB_INT("TabBarFlags_FittingPolicyScroll", (ImGuiTabBarFlags_FittingPolicyScroll))},
     {SWIG_LUA_CONSTTAB_INT("TabBarFlags_FittingPolicyMask_", (ImGuiTabBarFlags_FittingPolicyMask_))},
@@ -18167,11 +19555,14 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("DragDropFlags_SourceNoHoldToOpenOthers", (ImGuiDragDropFlags_SourceNoHoldToOpenOthers))},
     {SWIG_LUA_CONSTTAB_INT("DragDropFlags_SourceAllowNullID", (ImGuiDragDropFlags_SourceAllowNullID))},
     {SWIG_LUA_CONSTTAB_INT("DragDropFlags_SourceExtern", (ImGuiDragDropFlags_SourceExtern))},
-    {SWIG_LUA_CONSTTAB_INT("DragDropFlags_SourceAutoExpirePayload", (ImGuiDragDropFlags_SourceAutoExpirePayload))},
+    {SWIG_LUA_CONSTTAB_INT("DragDropFlags_PayloadAutoExpire", (ImGuiDragDropFlags_PayloadAutoExpire))},
+    {SWIG_LUA_CONSTTAB_INT("DragDropFlags_PayloadNoCrossContext", (ImGuiDragDropFlags_PayloadNoCrossContext))},
+    {SWIG_LUA_CONSTTAB_INT("DragDropFlags_PayloadNoCrossProcess", (ImGuiDragDropFlags_PayloadNoCrossProcess))},
     {SWIG_LUA_CONSTTAB_INT("DragDropFlags_AcceptBeforeDelivery", (ImGuiDragDropFlags_AcceptBeforeDelivery))},
     {SWIG_LUA_CONSTTAB_INT("DragDropFlags_AcceptNoDrawDefaultRect", (ImGuiDragDropFlags_AcceptNoDrawDefaultRect))},
     {SWIG_LUA_CONSTTAB_INT("DragDropFlags_AcceptNoPreviewTooltip", (ImGuiDragDropFlags_AcceptNoPreviewTooltip))},
     {SWIG_LUA_CONSTTAB_INT("DragDropFlags_AcceptPeekOnly", (ImGuiDragDropFlags_AcceptPeekOnly))},
+    {SWIG_LUA_CONSTTAB_INT("DragDropFlags_SourceAutoExpirePayload", (ImGuiDragDropFlags_SourceAutoExpirePayload))},
     {SWIG_LUA_CONSTTAB_STRING("IMGUI_PAYLOAD_TYPE_COLOR_3F", "_COL3F")},
     {SWIG_LUA_CONSTTAB_STRING("IMGUI_PAYLOAD_TYPE_COLOR_4F", "_COL4F")},
     {SWIG_LUA_CONSTTAB_INT("DataType_S8", (ImGuiDataType_S8))},
@@ -18184,6 +19575,7 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("DataType_U64", (ImGuiDataType_U64))},
     {SWIG_LUA_CONSTTAB_INT("DataType_Float", (ImGuiDataType_Float))},
     {SWIG_LUA_CONSTTAB_INT("DataType_Double", (ImGuiDataType_Double))},
+    {SWIG_LUA_CONSTTAB_INT("DataType_Bool", (ImGuiDataType_Bool))},
     {SWIG_LUA_CONSTTAB_INT("DataType_COUNT", (ImGuiDataType_COUNT))},
     {SWIG_LUA_CONSTTAB_INT("Dir_None", (ImGuiDir_None))},
     {SWIG_LUA_CONSTTAB_INT("Dir_Left", (ImGuiDir_Left))},
@@ -18195,6 +19587,7 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("SortDirection_Ascending", (ImGuiSortDirection_Ascending))},
     {SWIG_LUA_CONSTTAB_INT("SortDirection_Descending", (ImGuiSortDirection_Descending))},
     {SWIG_LUA_CONSTTAB_INT("Key_None", (ImGuiKey_None))},
+    {SWIG_LUA_CONSTTAB_INT("Key_NamedKey_BEGIN", (ImGuiKey_NamedKey_BEGIN))},
     {SWIG_LUA_CONSTTAB_INT("Key_Tab", (ImGuiKey_Tab))},
     {SWIG_LUA_CONSTTAB_INT("Key_LeftArrow", (ImGuiKey_LeftArrow))},
     {SWIG_LUA_CONSTTAB_INT("Key_RightArrow", (ImGuiKey_RightArrow))},
@@ -18349,36 +19742,45 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("Key_ReservedForModShift", (ImGuiKey_ReservedForModShift))},
     {SWIG_LUA_CONSTTAB_INT("Key_ReservedForModAlt", (ImGuiKey_ReservedForModAlt))},
     {SWIG_LUA_CONSTTAB_INT("Key_ReservedForModSuper", (ImGuiKey_ReservedForModSuper))},
-    {SWIG_LUA_CONSTTAB_INT("Key_COUNT", (ImGuiKey_COUNT))},
+    {SWIG_LUA_CONSTTAB_INT("Key_NamedKey_END", (ImGuiKey_NamedKey_END))},
     {SWIG_LUA_CONSTTAB_INT("Mod_None", (ImGuiMod_None))},
     {SWIG_LUA_CONSTTAB_INT("Mod_Ctrl", (ImGuiMod_Ctrl))},
     {SWIG_LUA_CONSTTAB_INT("Mod_Shift", (ImGuiMod_Shift))},
     {SWIG_LUA_CONSTTAB_INT("Mod_Alt", (ImGuiMod_Alt))},
     {SWIG_LUA_CONSTTAB_INT("Mod_Super", (ImGuiMod_Super))},
-    {SWIG_LUA_CONSTTAB_INT("Mod_Shortcut", (ImGuiMod_Shortcut))},
     {SWIG_LUA_CONSTTAB_INT("Mod_Mask_", (ImGuiMod_Mask_))},
-    {SWIG_LUA_CONSTTAB_INT("Key_NamedKey_BEGIN", (ImGuiKey_NamedKey_BEGIN))},
-    {SWIG_LUA_CONSTTAB_INT("Key_NamedKey_END", (ImGuiKey_NamedKey_END))},
     {SWIG_LUA_CONSTTAB_INT("Key_NamedKey_COUNT", (ImGuiKey_NamedKey_COUNT))},
-    {SWIG_LUA_CONSTTAB_INT("Key_KeysData_SIZE", (ImGuiKey_KeysData_SIZE))},
-    {SWIG_LUA_CONSTTAB_INT("Key_KeysData_OFFSET", (ImGuiKey_KeysData_OFFSET))},
+    {SWIG_LUA_CONSTTAB_INT("Key_COUNT", (ImGuiKey_COUNT))},
+    {SWIG_LUA_CONSTTAB_INT("Mod_Shortcut", (ImGuiMod_Shortcut))},
     {SWIG_LUA_CONSTTAB_INT("Key_ModCtrl", (ImGuiKey_ModCtrl))},
     {SWIG_LUA_CONSTTAB_INT("Key_ModShift", (ImGuiKey_ModShift))},
     {SWIG_LUA_CONSTTAB_INT("Key_ModAlt", (ImGuiKey_ModAlt))},
     {SWIG_LUA_CONSTTAB_INT("Key_ModSuper", (ImGuiKey_ModSuper))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_None", (ImGuiInputFlags_None))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_Repeat", (ImGuiInputFlags_Repeat))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_RouteActive", (ImGuiInputFlags_RouteActive))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_RouteFocused", (ImGuiInputFlags_RouteFocused))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_RouteGlobal", (ImGuiInputFlags_RouteGlobal))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_RouteAlways", (ImGuiInputFlags_RouteAlways))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_RouteOverFocused", (ImGuiInputFlags_RouteOverFocused))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_RouteOverActive", (ImGuiInputFlags_RouteOverActive))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_RouteUnlessBgFocused", (ImGuiInputFlags_RouteUnlessBgFocused))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_RouteFromRootWindow", (ImGuiInputFlags_RouteFromRootWindow))},
+    {SWIG_LUA_CONSTTAB_INT("InputFlags_Tooltip", (ImGuiInputFlags_Tooltip))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_None", (ImGuiConfigFlags_None))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_NavEnableKeyboard", (ImGuiConfigFlags_NavEnableKeyboard))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_NavEnableGamepad", (ImGuiConfigFlags_NavEnableGamepad))},
-    {SWIG_LUA_CONSTTAB_INT("ConfigFlags_NavEnableSetMousePos", (ImGuiConfigFlags_NavEnableSetMousePos))},
-    {SWIG_LUA_CONSTTAB_INT("ConfigFlags_NavNoCaptureKeyboard", (ImGuiConfigFlags_NavNoCaptureKeyboard))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_NoMouse", (ImGuiConfigFlags_NoMouse))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_NoMouseCursorChange", (ImGuiConfigFlags_NoMouseCursorChange))},
+    {SWIG_LUA_CONSTTAB_INT("ConfigFlags_NoKeyboard", (ImGuiConfigFlags_NoKeyboard))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_DockingEnable", (ImGuiConfigFlags_DockingEnable))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_ViewportsEnable", (ImGuiConfigFlags_ViewportsEnable))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_DpiEnableScaleViewports", (ImGuiConfigFlags_DpiEnableScaleViewports))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_DpiEnableScaleFonts", (ImGuiConfigFlags_DpiEnableScaleFonts))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_IsSRGB", (ImGuiConfigFlags_IsSRGB))},
     {SWIG_LUA_CONSTTAB_INT("ConfigFlags_IsTouchScreen", (ImGuiConfigFlags_IsTouchScreen))},
+    {SWIG_LUA_CONSTTAB_INT("ConfigFlags_NavEnableSetMousePos", (ImGuiConfigFlags_NavEnableSetMousePos))},
+    {SWIG_LUA_CONSTTAB_INT("ConfigFlags_NavNoCaptureKeyboard", (ImGuiConfigFlags_NavNoCaptureKeyboard))},
     {SWIG_LUA_CONSTTAB_INT("BackendFlags_None", (ImGuiBackendFlags_None))},
     {SWIG_LUA_CONSTTAB_INT("BackendFlags_HasGamepad", (ImGuiBackendFlags_HasGamepad))},
     {SWIG_LUA_CONSTTAB_INT("BackendFlags_HasMouseCursors", (ImGuiBackendFlags_HasMouseCursors))},
@@ -18420,11 +19822,13 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("Col_ResizeGrip", (ImGuiCol_ResizeGrip))},
     {SWIG_LUA_CONSTTAB_INT("Col_ResizeGripHovered", (ImGuiCol_ResizeGripHovered))},
     {SWIG_LUA_CONSTTAB_INT("Col_ResizeGripActive", (ImGuiCol_ResizeGripActive))},
-    {SWIG_LUA_CONSTTAB_INT("Col_Tab", (ImGuiCol_Tab))},
     {SWIG_LUA_CONSTTAB_INT("Col_TabHovered", (ImGuiCol_TabHovered))},
-    {SWIG_LUA_CONSTTAB_INT("Col_TabActive", (ImGuiCol_TabActive))},
-    {SWIG_LUA_CONSTTAB_INT("Col_TabUnfocused", (ImGuiCol_TabUnfocused))},
-    {SWIG_LUA_CONSTTAB_INT("Col_TabUnfocusedActive", (ImGuiCol_TabUnfocusedActive))},
+    {SWIG_LUA_CONSTTAB_INT("Col_Tab", (ImGuiCol_Tab))},
+    {SWIG_LUA_CONSTTAB_INT("Col_TabSelected", (ImGuiCol_TabSelected))},
+    {SWIG_LUA_CONSTTAB_INT("Col_TabSelectedOverline", (ImGuiCol_TabSelectedOverline))},
+    {SWIG_LUA_CONSTTAB_INT("Col_TabDimmed", (ImGuiCol_TabDimmed))},
+    {SWIG_LUA_CONSTTAB_INT("Col_TabDimmedSelected", (ImGuiCol_TabDimmedSelected))},
+    {SWIG_LUA_CONSTTAB_INT("Col_TabDimmedSelectedOverline", (ImGuiCol_TabDimmedSelectedOverline))},
     {SWIG_LUA_CONSTTAB_INT("Col_DockingPreview", (ImGuiCol_DockingPreview))},
     {SWIG_LUA_CONSTTAB_INT("Col_DockingEmptyBg", (ImGuiCol_DockingEmptyBg))},
     {SWIG_LUA_CONSTTAB_INT("Col_PlotLines", (ImGuiCol_PlotLines))},
@@ -18436,13 +19840,18 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("Col_TableBorderLight", (ImGuiCol_TableBorderLight))},
     {SWIG_LUA_CONSTTAB_INT("Col_TableRowBg", (ImGuiCol_TableRowBg))},
     {SWIG_LUA_CONSTTAB_INT("Col_TableRowBgAlt", (ImGuiCol_TableRowBgAlt))},
+    {SWIG_LUA_CONSTTAB_INT("Col_TextLink", (ImGuiCol_TextLink))},
     {SWIG_LUA_CONSTTAB_INT("Col_TextSelectedBg", (ImGuiCol_TextSelectedBg))},
     {SWIG_LUA_CONSTTAB_INT("Col_DragDropTarget", (ImGuiCol_DragDropTarget))},
-    {SWIG_LUA_CONSTTAB_INT("Col_NavHighlight", (ImGuiCol_NavHighlight))},
+    {SWIG_LUA_CONSTTAB_INT("Col_NavCursor", (ImGuiCol_NavCursor))},
     {SWIG_LUA_CONSTTAB_INT("Col_NavWindowingHighlight", (ImGuiCol_NavWindowingHighlight))},
     {SWIG_LUA_CONSTTAB_INT("Col_NavWindowingDimBg", (ImGuiCol_NavWindowingDimBg))},
     {SWIG_LUA_CONSTTAB_INT("Col_ModalWindowDimBg", (ImGuiCol_ModalWindowDimBg))},
     {SWIG_LUA_CONSTTAB_INT("Col_COUNT", (ImGuiCol_COUNT))},
+    {SWIG_LUA_CONSTTAB_INT("Col_TabActive", (ImGuiCol_TabActive))},
+    {SWIG_LUA_CONSTTAB_INT("Col_TabUnfocused", (ImGuiCol_TabUnfocused))},
+    {SWIG_LUA_CONSTTAB_INT("Col_TabUnfocusedActive", (ImGuiCol_TabUnfocusedActive))},
+    {SWIG_LUA_CONSTTAB_INT("Col_NavHighlight", (ImGuiCol_NavHighlight))},
     {SWIG_LUA_CONSTTAB_INT("StyleVar_Alpha", (ImGuiStyleVar_Alpha))},
     {SWIG_LUA_CONSTTAB_INT("StyleVar_DisabledAlpha", (ImGuiStyleVar_DisabledAlpha))},
     {SWIG_LUA_CONSTTAB_INT("StyleVar_WindowPadding", (ImGuiStyleVar_WindowPadding))},
@@ -18466,7 +19875,11 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("StyleVar_GrabMinSize", (ImGuiStyleVar_GrabMinSize))},
     {SWIG_LUA_CONSTTAB_INT("StyleVar_GrabRounding", (ImGuiStyleVar_GrabRounding))},
     {SWIG_LUA_CONSTTAB_INT("StyleVar_TabRounding", (ImGuiStyleVar_TabRounding))},
+    {SWIG_LUA_CONSTTAB_INT("StyleVar_TabBorderSize", (ImGuiStyleVar_TabBorderSize))},
     {SWIG_LUA_CONSTTAB_INT("StyleVar_TabBarBorderSize", (ImGuiStyleVar_TabBarBorderSize))},
+    {SWIG_LUA_CONSTTAB_INT("StyleVar_TabBarOverlineSize", (ImGuiStyleVar_TabBarOverlineSize))},
+    {SWIG_LUA_CONSTTAB_INT("StyleVar_TableAngledHeadersAngle", (ImGuiStyleVar_TableAngledHeadersAngle))},
+    {SWIG_LUA_CONSTTAB_INT("StyleVar_TableAngledHeadersTextAlign", (ImGuiStyleVar_TableAngledHeadersTextAlign))},
     {SWIG_LUA_CONSTTAB_INT("StyleVar_ButtonTextAlign", (ImGuiStyleVar_ButtonTextAlign))},
     {SWIG_LUA_CONSTTAB_INT("StyleVar_SelectableTextAlign", (ImGuiStyleVar_SelectableTextAlign))},
     {SWIG_LUA_CONSTTAB_INT("StyleVar_SeparatorTextBorderSize", (ImGuiStyleVar_SeparatorTextBorderSize))},
@@ -18479,7 +19892,7 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("ButtonFlags_MouseButtonRight", (ImGuiButtonFlags_MouseButtonRight))},
     {SWIG_LUA_CONSTTAB_INT("ButtonFlags_MouseButtonMiddle", (ImGuiButtonFlags_MouseButtonMiddle))},
     {SWIG_LUA_CONSTTAB_INT("ButtonFlags_MouseButtonMask_", (ImGuiButtonFlags_MouseButtonMask_))},
-    {SWIG_LUA_CONSTTAB_INT("ButtonFlags_MouseButtonDefault_", (ImGuiButtonFlags_MouseButtonDefault_))},
+    {SWIG_LUA_CONSTTAB_INT("ButtonFlags_EnableNav", (ImGuiButtonFlags_EnableNav))},
     {SWIG_LUA_CONSTTAB_INT("ColorEditFlags_None", (ImGuiColorEditFlags_None))},
     {SWIG_LUA_CONSTTAB_INT("ColorEditFlags_NoAlpha", (ImGuiColorEditFlags_NoAlpha))},
     {SWIG_LUA_CONSTTAB_INT("ColorEditFlags_NoPicker", (ImGuiColorEditFlags_NoPicker))},
@@ -18510,10 +19923,13 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("ColorEditFlags_PickerMask_", (ImGuiColorEditFlags_PickerMask_))},
     {SWIG_LUA_CONSTTAB_INT("ColorEditFlags_InputMask_", (ImGuiColorEditFlags_InputMask_))},
     {SWIG_LUA_CONSTTAB_INT("SliderFlags_None", (ImGuiSliderFlags_None))},
-    {SWIG_LUA_CONSTTAB_INT("SliderFlags_AlwaysClamp", (ImGuiSliderFlags_AlwaysClamp))},
     {SWIG_LUA_CONSTTAB_INT("SliderFlags_Logarithmic", (ImGuiSliderFlags_Logarithmic))},
     {SWIG_LUA_CONSTTAB_INT("SliderFlags_NoRoundToFormat", (ImGuiSliderFlags_NoRoundToFormat))},
     {SWIG_LUA_CONSTTAB_INT("SliderFlags_NoInput", (ImGuiSliderFlags_NoInput))},
+    {SWIG_LUA_CONSTTAB_INT("SliderFlags_WrapAround", (ImGuiSliderFlags_WrapAround))},
+    {SWIG_LUA_CONSTTAB_INT("SliderFlags_ClampOnInput", (ImGuiSliderFlags_ClampOnInput))},
+    {SWIG_LUA_CONSTTAB_INT("SliderFlags_ClampZeroRange", (ImGuiSliderFlags_ClampZeroRange))},
+    {SWIG_LUA_CONSTTAB_INT("SliderFlags_AlwaysClamp", (ImGuiSliderFlags_AlwaysClamp))},
     {SWIG_LUA_CONSTTAB_INT("SliderFlags_InvalidMask_", (ImGuiSliderFlags_InvalidMask_))},
     {SWIG_LUA_CONSTTAB_INT("MouseButton_Left", (ImGuiMouseButton_Left))},
     {SWIG_LUA_CONSTTAB_INT("MouseButton_Right", (ImGuiMouseButton_Right))},
@@ -18617,6 +20033,26 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("IM_COL32_B_SHIFT", (16))},
     {SWIG_LUA_CONSTTAB_INT("IM_COL32_A_SHIFT", (24))},
     {SWIG_LUA_CONSTTAB_INT("IM_COL32_A_MASK", (0xFF000000))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_None", (ImGuiMultiSelectFlags_None))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_SingleSelect", (ImGuiMultiSelectFlags_SingleSelect))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_NoSelectAll", (ImGuiMultiSelectFlags_NoSelectAll))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_NoRangeSelect", (ImGuiMultiSelectFlags_NoRangeSelect))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_NoAutoSelect", (ImGuiMultiSelectFlags_NoAutoSelect))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_NoAutoClear", (ImGuiMultiSelectFlags_NoAutoClear))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_NoAutoClearOnReselect", (ImGuiMultiSelectFlags_NoAutoClearOnReselect))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_BoxSelect1d", (ImGuiMultiSelectFlags_BoxSelect1d))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_BoxSelect2d", (ImGuiMultiSelectFlags_BoxSelect2d))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_BoxSelectNoScroll", (ImGuiMultiSelectFlags_BoxSelectNoScroll))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_ClearOnEscape", (ImGuiMultiSelectFlags_ClearOnEscape))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_ClearOnClickVoid", (ImGuiMultiSelectFlags_ClearOnClickVoid))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_ScopeWindow", (ImGuiMultiSelectFlags_ScopeWindow))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_ScopeRect", (ImGuiMultiSelectFlags_ScopeRect))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_SelectOnClick", (ImGuiMultiSelectFlags_SelectOnClick))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_SelectOnClickRelease", (ImGuiMultiSelectFlags_SelectOnClickRelease))},
+    {SWIG_LUA_CONSTTAB_INT("MultiSelectFlags_NavWrapX", (ImGuiMultiSelectFlags_NavWrapX))},
+    {SWIG_LUA_CONSTTAB_INT("SelectionRequestType_None", (ImGuiSelectionRequestType_None))},
+    {SWIG_LUA_CONSTTAB_INT("SelectionRequestType_SetAll", (ImGuiSelectionRequestType_SetAll))},
+    {SWIG_LUA_CONSTTAB_INT("SelectionRequestType_SetRange", (ImGuiSelectionRequestType_SetRange))},
     {SWIG_LUA_CONSTTAB_INT("IM_DRAWLIST_TEX_LINES_WIDTH_MAX", ((63)))},
     {SWIG_LUA_CONSTTAB_INT("ImDrawFlags_None", (ImDrawFlags_None))},
     {SWIG_LUA_CONSTTAB_INT("ImDrawFlags_Closed", (ImDrawFlags_Closed))},
@@ -18656,11 +20092,6 @@ static swig_lua_const_info swig_SwigModule_constants[]= {
     {SWIG_LUA_CONSTTAB_INT("ViewportFlags_CanHostOtherWindows", (ImGuiViewportFlags_CanHostOtherWindows))},
     {SWIG_LUA_CONSTTAB_INT("ViewportFlags_IsMinimized", (ImGuiViewportFlags_IsMinimized))},
     {SWIG_LUA_CONSTTAB_INT("ViewportFlags_IsFocused", (ImGuiViewportFlags_IsFocused))},
-    {SWIG_LUA_CONSTTAB_INT("ModFlags_None", (ImGuiModFlags_None))},
-    {SWIG_LUA_CONSTTAB_INT("ModFlags_Ctrl", (ImGuiModFlags_Ctrl))},
-    {SWIG_LUA_CONSTTAB_INT("ModFlags_Shift", (ImGuiModFlags_Shift))},
-    {SWIG_LUA_CONSTTAB_INT("ModFlags_Alt", (ImGuiModFlags_Alt))},
-    {SWIG_LUA_CONSTTAB_INT("ModFlags_Super", (ImGuiModFlags_Super))},
     {0,0,0,0,0,0}
 };
 static swig_lua_method swig_SwigModule_methods[]= {
@@ -18722,6 +20153,7 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "GetCurrentContext", _wrap_GetCurrentContext},
     { "SetCurrentContext", _wrap_SetCurrentContext},
     { "GetIO", _wrap_GetIO},
+    { "GetPlatformIO", _wrap_GetPlatformIO},
     { "GetStyle", _wrap_GetStyle},
     { "NewFrame", _wrap_NewFrame},
     { "EndFrame", _wrap_EndFrame},
@@ -18774,10 +20206,6 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "SetWindowSize", _wrap_SetWindowSize},
     { "SetWindowCollapsed", _wrap_SetWindowCollapsed},
     { "SetWindowFocus", _wrap_SetWindowFocus},
-    { "GetContentRegionAvail", _wrap_GetContentRegionAvail},
-    { "GetContentRegionMax", _wrap_GetContentRegionMax},
-    { "GetWindowContentRegionMin", _wrap_GetWindowContentRegionMin},
-    { "GetWindowContentRegionMax", _wrap_GetWindowContentRegionMax},
     { "GetScrollX", _wrap_GetScrollX},
     { "GetScrollY", _wrap_GetScrollY},
     { "SetScrollX", _wrap_SetScrollX},
@@ -18793,11 +20221,11 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "PushStyleColor", _wrap_PushStyleColor},
     { "PopStyleColor", _wrap_PopStyleColor},
     { "PushStyleVar", _wrap_PushStyleVar},
+    { "PushStyleVarX", _wrap_PushStyleVarX},
+    { "PushStyleVarY", _wrap_PushStyleVarY},
     { "PopStyleVar", _wrap_PopStyleVar},
-    { "PushTabStop", _wrap_PushTabStop},
-    { "PopTabStop", _wrap_PopTabStop},
-    { "PushButtonRepeat", _wrap_PushButtonRepeat},
-    { "PopButtonRepeat", _wrap_PopButtonRepeat},
+    { "PushItemFlag", _wrap_PushItemFlag},
+    { "PopItemFlag", _wrap_PopItemFlag},
     { "PushItemWidth", _wrap_PushItemWidth},
     { "PopItemWidth", _wrap_PopItemWidth},
     { "SetNextItemWidth", _wrap_SetNextItemWidth},
@@ -18808,10 +20236,10 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "GetFontSize", _wrap_GetFontSize},
     { "GetFontTexUvWhitePixel", _wrap_GetFontTexUvWhitePixel},
     { "GetColorU32", _wrap_GetColorU32},
-    { "GetColorU32_ImU32", _wrap_GetColorU32_ImU32},
     { "GetStyleColorVec4", _wrap_GetStyleColorVec4},
     { "GetCursorScreenPos", _wrap_GetCursorScreenPos},
     { "SetCursorScreenPos", _wrap_SetCursorScreenPos},
+    { "GetContentRegionAvail", _wrap_GetContentRegionAvail},
     { "GetCursorPos", _wrap_GetCursorPos},
     { "GetCursorPosX", _wrap_GetCursorPosX},
     { "GetCursorPosY", _wrap_GetCursorPosY},
@@ -18860,7 +20288,10 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "RadioButton_shortcut", _wrap_RadioButton_shortcut},
     { "ProgressBar", _wrap_ProgressBar},
     { "Bullet", _wrap_Bullet},
+    { "TextLink", _wrap_TextLink},
+    { "TextLinkOpenURL", _wrap_TextLinkOpenURL},
     { "Image", _wrap_Image},
+    { "ImageButton", _wrap_ImageButton},
     { "BeginCombo", _wrap_BeginCombo},
     { "EndCombo", _wrap_EndCombo},
     { "Combo_itemsSeperatedByZeros", _wrap_Combo_itemsSeperatedByZeros},
@@ -18921,7 +20352,12 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "CollapsingHeader_shortcut", _wrap_CollapsingHeader_shortcut},
     { "CollapsingHeader", _wrap_CollapsingHeader},
     { "SetNextItemOpen", _wrap_SetNextItemOpen},
+    { "SetNextItemStorageID", _wrap_SetNextItemStorageID},
     { "Selectable", _wrap_Selectable},
+    { "BeginMultiSelect", _wrap_BeginMultiSelect},
+    { "EndMultiSelect", _wrap_EndMultiSelect},
+    { "SetNextItemSelectionUserData", _wrap_SetNextItemSelectionUserData},
+    { "IsItemToggledSelection", _wrap_IsItemToggledSelection},
     { "BeginListBox", _wrap_BeginListBox},
     { "EndListBox", _wrap_EndListBox},
     { "ListBox", _wrap_ListBox},
@@ -18971,6 +20407,7 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "TableGetColumnName", _wrap_TableGetColumnName},
     { "TableGetColumnFlags", _wrap_TableGetColumnFlags},
     { "TableSetColumnEnabled", _wrap_TableSetColumnEnabled},
+    { "TableGetHoveredColumn", _wrap_TableGetHoveredColumn},
     { "TableSetBgColor", _wrap_TableSetBgColor},
     { "Columns", _wrap_Columns},
     { "NextColumn", _wrap_NextColumn},
@@ -19014,6 +20451,7 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "PopClipRect", _wrap_PopClipRect},
     { "SetItemDefaultFocus", _wrap_SetItemDefaultFocus},
     { "SetKeyboardFocusHere", _wrap_SetKeyboardFocusHere},
+    { "SetNavCursorVisible", _wrap_SetNavCursorVisible},
     { "SetNextItemAllowOverlap", _wrap_SetNextItemAllowOverlap},
     { "IsItemHovered", _wrap_IsItemHovered},
     { "IsItemActive", _wrap_IsItemActive},
@@ -19054,6 +20492,9 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "GetKeyPressedAmount", _wrap_GetKeyPressedAmount},
     { "GetKeyName", _wrap_GetKeyName},
     { "SetNextFrameWantCaptureKeyboard", _wrap_SetNextFrameWantCaptureKeyboard},
+    { "Shortcut", _wrap_Shortcut},
+    { "SetNextItemShortcut", _wrap_SetNextItemShortcut},
+    { "SetItemKeyOwner", _wrap_SetItemKeyOwner},
     { "IsMouseDown", _wrap_IsMouseDown},
     { "IsMouseClicked", _wrap_IsMouseClicked},
     { "IsMouseReleased", _wrap_IsMouseReleased},
@@ -19078,31 +20519,36 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "SaveIniSettingsToMemory", _wrap_SaveIniSettingsToMemory},
     { "DebugTextEncoding", _wrap_DebugTextEncoding},
     { "DebugFlashStyleColor", _wrap_DebugFlashStyleColor},
+    { "DebugStartItemPicker", _wrap_DebugStartItemPicker},
     { "DebugCheckVersionAndDataLayout", _wrap_DebugCheckVersionAndDataLayout},
+    { "DebugLog", _wrap_DebugLog},
+    { "DebugLogV", _wrap_DebugLogV},
     { "SetAllocatorFunctions", _wrap_SetAllocatorFunctions},
     { "GetAllocatorFunctions", _wrap_GetAllocatorFunctions},
     { "MemAlloc", _wrap_MemAlloc},
     { "MemFree", _wrap_MemFree},
-    { "GetPlatformIO", _wrap_GetPlatformIO},
     { "UpdatePlatformWindows", _wrap_UpdatePlatformWindows},
     { "RenderPlatformWindowsDefault", _wrap_RenderPlatformWindowsDefault},
     { "DestroyPlatformWindows", _wrap_DestroyPlatformWindows},
     { "FindViewportByID", _wrap_FindViewportByID},
     { "FindViewportByPlatformHandle", _wrap_FindViewportByPlatformHandle},
     { "ImColor_HSV", _wrap_ImColor_HSV},
-    { "GetKeyIndex", _wrap_GetKeyIndex},
+    { "PushButtonRepeat", _wrap_PushButtonRepeat},
+    { "PopButtonRepeat", _wrap_PopButtonRepeat},
+    { "PushTabStop", _wrap_PushTabStop},
+    { "PopTabStop", _wrap_PopTabStop},
+    { "GetContentRegionMax", _wrap_GetContentRegionMax},
+    { "GetWindowContentRegionMin", _wrap_GetWindowContentRegionMin},
+    { "GetWindowContentRegionMax", _wrap_GetWindowContentRegionMax},
     { "BeginChildFrame", _wrap_BeginChildFrame},
     { "EndChildFrame", _wrap_EndChildFrame},
     { "ShowStackToolWindow_1", _wrap_ShowStackToolWindow_1},
     { "ShowStackToolWindow_0", _wrap_ShowStackToolWindow_0},
-    { "ListBox_itemsGetter", _wrap_ListBox_itemsGetter},
     { "Combo_itemsGetter", _wrap_Combo_itemsGetter},
+    { "ListBox_itemsGetter", _wrap_ListBox_itemsGetter},
     { "SetItemAllowOverlap", _wrap_SetItemAllowOverlap},
     { "PushAllowKeyboardFocus", _wrap_PushAllowKeyboardFocus},
     { "PopAllowKeyboardFocus", _wrap_PopAllowKeyboardFocus},
-    { "ImageButton", _wrap_ImageButton},
-    { "CaptureKeyboardFromApp", _wrap_CaptureKeyboardFromApp},
-    { "CaptureMouseFromApp", _wrap_CaptureMouseFromApp},
     {0,0}
 };
 static swig_lua_class* swig_SwigModule_classes[]= {
@@ -19124,9 +20570,14 @@ static swig_lua_class* swig_SwigModule_classes[]= {
 &_wrap_class_ImGuiOnceUponAFrame,
 &_wrap_class_ImGuiTextFilter,
 &_wrap_class_ImGuiTextBuffer,
+&_wrap_class_ImGuiStoragePair,
 &_wrap_class_ImGuiStorage,
 &_wrap_class_ImGuiListClipper,
 &_wrap_class_ImColor,
+&_wrap_class_ImGuiMultiSelectIO,
+&_wrap_class_ImGuiSelectionRequest,
+&_wrap_class_ImGuiSelectionBasicStorage,
+&_wrap_class_ImGuiSelectionExternalStorage,
 &_wrap_class_ImDrawCmd,
 &_wrap_class_ImDrawVert,
 &_wrap_class_ImDrawCmdHeader,
@@ -19187,13 +20638,18 @@ static swig_type_info _swigt__p_ImGuiIO = {"_p_ImGuiIO", "ImGuiIO *", 0, 0, (voi
 static swig_type_info _swigt__p_ImGuiInputTextCallbackData = {"_p_ImGuiInputTextCallbackData", "ImGuiInputTextCallbackData *", 0, 0, (void*)&_wrap_class_ImGuiInputTextCallbackData, 0};
 static swig_type_info _swigt__p_ImGuiKeyData = {"_p_ImGuiKeyData", "ImGuiKeyData *", 0, 0, (void*)&_wrap_class_ImGuiKeyData, 0};
 static swig_type_info _swigt__p_ImGuiListClipper = {"_p_ImGuiListClipper", "ImGuiListClipper *", 0, 0, (void*)&_wrap_class_ImGuiListClipper, 0};
+static swig_type_info _swigt__p_ImGuiMultiSelectIO = {"_p_ImGuiMultiSelectIO", "ImGuiMultiSelectIO *", 0, 0, (void*)&_wrap_class_ImGuiMultiSelectIO, 0};
 static swig_type_info _swigt__p_ImGuiOnceUponAFrame = {"_p_ImGuiOnceUponAFrame", "ImGuiOnceUponAFrame *", 0, 0, (void*)&_wrap_class_ImGuiOnceUponAFrame, 0};
 static swig_type_info _swigt__p_ImGuiPayload = {"_p_ImGuiPayload", "ImGuiPayload *", 0, 0, (void*)&_wrap_class_ImGuiPayload, 0};
 static swig_type_info _swigt__p_ImGuiPlatformIO = {"_p_ImGuiPlatformIO", "ImGuiPlatformIO *", 0, 0, (void*)&_wrap_class_ImGuiPlatformIO, 0};
 static swig_type_info _swigt__p_ImGuiPlatformImeData = {"_p_ImGuiPlatformImeData", "ImGuiPlatformImeData *", 0, 0, (void*)&_wrap_class_ImGuiPlatformImeData, 0};
 static swig_type_info _swigt__p_ImGuiPlatformMonitor = {"_p_ImGuiPlatformMonitor", "ImGuiPlatformMonitor *", 0, 0, (void*)&_wrap_class_ImGuiPlatformMonitor, 0};
+static swig_type_info _swigt__p_ImGuiSelectionBasicStorage = {"_p_ImGuiSelectionBasicStorage", "ImGuiSelectionBasicStorage *", 0, 0, (void*)&_wrap_class_ImGuiSelectionBasicStorage, 0};
+static swig_type_info _swigt__p_ImGuiSelectionExternalStorage = {"_p_ImGuiSelectionExternalStorage", "ImGuiSelectionExternalStorage *", 0, 0, (void*)&_wrap_class_ImGuiSelectionExternalStorage, 0};
+static swig_type_info _swigt__p_ImGuiSelectionRequest = {"_p_ImGuiSelectionRequest", "ImGuiSelectionRequest *", 0, 0, (void*)&_wrap_class_ImGuiSelectionRequest, 0};
 static swig_type_info _swigt__p_ImGuiSizeCallbackData = {"_p_ImGuiSizeCallbackData", "ImGuiSizeCallbackData *", 0, 0, (void*)&_wrap_class_ImGuiSizeCallbackData, 0};
 static swig_type_info _swigt__p_ImGuiStorage = {"_p_ImGuiStorage", "ImGuiStorage *", 0, 0, (void*)&_wrap_class_ImGuiStorage, 0};
+static swig_type_info _swigt__p_ImGuiStoragePair = {"_p_ImGuiStoragePair", "ImGuiStoragePair *", 0, 0, (void*)&_wrap_class_ImGuiStoragePair, 0};
 static swig_type_info _swigt__p_ImGuiStyle = {"_p_ImGuiStyle", "ImGuiStyle *", 0, 0, (void*)&_wrap_class_ImGuiStyle, 0};
 static swig_type_info _swigt__p_ImGuiTableColumnSortSpecs = {"_p_ImGuiTableColumnSortSpecs", "ImGuiTableColumnSortSpecs *", 0, 0, (void*)&_wrap_class_ImGuiTableColumnSortSpecs, 0};
 static swig_type_info _swigt__p_ImGuiTableSortSpecs = {"_p_ImGuiTableSortSpecs", "ImGuiTableSortSpecs *", 0, 0, (void*)&_wrap_class_ImGuiTableSortSpecs, 0};
@@ -19213,7 +20669,8 @@ static swig_type_info _swigt__p_ImVectorT_ImFontConfig_t = {"_p_ImVectorT_ImFont
 static swig_type_info _swigt__p_ImVectorT_ImFontGlyph_t = {"_p_ImVectorT_ImFontGlyph_t", "ImVector< ImFontGlyph > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ImVectorT_ImFont_p_t = {"_p_ImVectorT_ImFont_p_t", "ImVector< ImFont * > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ImVectorT_ImGuiPlatformMonitor_t = {"_p_ImVectorT_ImGuiPlatformMonitor_t", "ImVector< ImGuiPlatformMonitor > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t = {"_p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t", "ImVector< ImGuiStorage::ImGuiStoragePair > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ImVectorT_ImGuiSelectionRequest_t = {"_p_ImVectorT_ImGuiSelectionRequest_t", "ImVector< ImGuiSelectionRequest > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ImVectorT_ImGuiStoragePair_t = {"_p_ImVectorT_ImGuiStoragePair_t", "ImVector< ImGuiStoragePair > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ImVectorT_ImGuiTextFilter__ImGuiTextRange_t = {"_p_ImVectorT_ImGuiTextFilter__ImGuiTextRange_t", "ImVector< ImGuiTextFilter::ImGuiTextRange > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ImVectorT_ImGuiViewport_p_t = {"_p_ImVectorT_ImGuiViewport_p_t", "ImVector< ImGuiViewport * > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ImVectorT_ImVec2_t = {"_p_ImVectorT_ImVec2_t", "ImVector< ImVec2 > *", 0, 0, (void*)0, 0};
@@ -19222,20 +20679,27 @@ static swig_type_info _swigt__p_ImVectorT_char_t = {"_p_ImVectorT_char_t", "ImVe
 static swig_type_info _swigt__p_ImVectorT_float_t = {"_p_ImVectorT_float_t", "ImVector< float > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ImVectorT_int_t = {"_p_ImVectorT_int_t", "ImVector< int > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ImVectorT_ofIndexType_t = {"_p_ImVectorT_ofIndexType_t", "ImVector< ofIndexType > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ImVectorT_unsigned_char_t = {"_p_ImVectorT_unsigned_char_t", "ImVector< ImU8 > *|ImVector< unsigned char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ImVectorT_unsigned_int_t = {"_p_ImVectorT_unsigned_int_t", "ImVector< ImU32 > *|ImVector< unsigned int > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ImVectorT_unsigned_short_t = {"_p_ImVectorT_unsigned_short_t", "ImVector< ImWchar > *|ImVector< unsigned short > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_bool = {"_p_bool", "bool *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_double = {"_p_double", "double *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_f_p_ImGuiContext__p_char = {"_p_f_p_ImGuiContext__p_char", "char *(*)(ImGuiContext *)", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void = {"_p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void", "void (*)(ImGuiContext *,ImGuiViewport *,ImGuiPlatformImeData *)", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_f_p_ImGuiContext_p_q_const__char__bool = {"_p_f_p_ImGuiContext_p_q_const__char__bool", "bool (*)(ImGuiContext *,char const *)", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_f_p_ImGuiContext_p_q_const__char__void = {"_p_f_p_ImGuiContext_p_q_const__char__void", "void (*)(ImGuiContext *,char const *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiInputTextCallbackData__int = {"_p_f_p_ImGuiInputTextCallbackData__int", "ImGuiInputTextCallback|int (*)(ImGuiInputTextCallbackData *)", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int = {"_p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int", "ImGuiID (*)(ImGuiSelectionBasicStorage *,int)|unsigned int (*)(ImGuiSelectionBasicStorage *,int)", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_f_p_ImGuiSelectionExternalStorage_int_bool__void = {"_p_f_p_ImGuiSelectionExternalStorage_int_bool__void", "void (*)(ImGuiSelectionExternalStorage *,int,bool)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiSizeCallbackData__void = {"_p_f_p_ImGuiSizeCallbackData__void", "ImGuiSizeCallback|void (*)(ImGuiSizeCallbackData *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiViewport_ImVec2__void = {"_p_f_p_ImGuiViewport_ImVec2__void", "void (*)(ImGuiViewport *,ImVec2)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiViewport__ImVec2 = {"_p_f_p_ImGuiViewport__ImVec2", "ImVec2 (*)(ImGuiViewport *)", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_f_p_ImGuiViewport__ImVec4 = {"_p_f_p_ImGuiViewport__ImVec4", "ImVec4 (*)(ImGuiViewport *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiViewport__bool = {"_p_f_p_ImGuiViewport__bool", "bool (*)(ImGuiViewport *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiViewport__float = {"_p_f_p_ImGuiViewport__float", "float (*)(ImGuiViewport *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiViewport__void = {"_p_f_p_ImGuiViewport__void", "void (*)(ImGuiViewport *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiViewport_float__void = {"_p_f_p_ImGuiViewport_float__void", "void (*)(ImGuiViewport *,float)", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void = {"_p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void", "void (*)(ImGuiViewport *,ImGuiPlatformImeData *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiViewport_p_q_const__char__void = {"_p_f_p_ImGuiViewport_p_q_const__char__void", "void (*)(ImGuiViewport *,char const *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiViewport_p_void__void = {"_p_f_p_ImGuiViewport_p_void__void", "void (*)(ImGuiViewport *,void *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_ImGuiViewport_unsigned_long_long_p_q_const__void_p_unsigned_long_long__int = {"_p_f_p_ImGuiViewport_unsigned_long_long_p_q_const__void_p_unsigned_long_long__int", "int (*)(ImGuiViewport *,ImU64,void const *,ImU64 *)|int (*)(ImGuiViewport *,unsigned long long,void const *,unsigned long long *)", 0, 0, (void*)0, 0};
@@ -19249,14 +20713,15 @@ static swig_type_info _swigt__p_f_p_void_p_void__void = {"_p_f_p_void_p_void__vo
 static swig_type_info _swigt__p_f_unsigned_int_p_void__p_void = {"_p_f_unsigned_int_p_void__p_void", "ImGuiMemAllocFunc|void *(*)(unsigned int,void *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_float = {"_p_float", "float *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_glm__vec4 = {"_p_glm__vec4", "glm::vec4 *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_int = {"_p_int", "ImDrawFlags *|ImDrawListFlags *|ImFontAtlasFlags *|ImGuiBackendFlags *|ImGuiButtonFlags *|ImGuiChildFlags *|ImGuiCol *|ImGuiColorEditFlags *|ImGuiComboFlags *|ImGuiCond *|ImGuiConfigFlags *|ImGuiDataType *|ImGuiDir *|ImGuiDockNodeFlags *|ImGuiDragDropFlags *|ImGuiFocusedFlags *|ImGuiHoveredFlags *|ImGuiInputTextFlags *|ImGuiKeyChord *|ImGuiModFlags *|ImGuiMouseButton *|ImGuiMouseCursor *|ImGuiPopupFlags *|ImGuiSelectableFlags *|ImGuiSliderFlags *|ImGuiSortDirection *|ImGuiStyleVar *|ImGuiTabBarFlags *|ImGuiTabItemFlags *|ImGuiTableBgTarget *|ImGuiTableColumnFlags *|ImGuiTableFlags *|ImGuiTableRowFlags *|ImGuiTreeNodeFlags *|ImGuiViewportFlags *|ImGuiWindowFlags *|ImS32 *|int32_t *|int_fast16_t *|int_fast32_t *|int_least32_t *|intptr_t *|int *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_long_long = {"_p_long_long", "ImS64 *|int64_t *|int_fast64_t *|int_least64_t *|intmax_t *|long long *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_int = {"_p_int", "ImDrawFlags *|ImDrawListFlags *|ImFontAtlasFlags *|ImGuiBackendFlags *|ImGuiButtonFlags *|ImGuiChildFlags *|ImGuiCol *|ImGuiColorEditFlags *|ImGuiComboFlags *|ImGuiCond *|ImGuiConfigFlags *|ImGuiDataType *|ImGuiDockNodeFlags *|ImGuiDragDropFlags *|ImGuiFocusedFlags *|ImGuiHoveredFlags *|ImGuiInputFlags *|ImGuiInputTextFlags *|ImGuiItemFlags *|ImGuiKeyChord *|ImGuiMouseButton *|ImGuiMouseCursor *|ImGuiMultiSelectFlags *|ImGuiPopupFlags *|ImGuiSelectableFlags *|ImGuiSliderFlags *|ImGuiStyleVar *|ImGuiTabBarFlags *|ImGuiTabItemFlags *|ImGuiTableBgTarget *|ImGuiTableColumnFlags *|ImGuiTableFlags *|ImGuiTableRowFlags *|ImGuiTreeNodeFlags *|ImGuiViewportFlags *|ImGuiWindowFlags *|ImS32 *|int32_t *|int_fast16_t *|int_fast32_t *|int_least32_t *|intptr_t *|int *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_long_long = {"_p_long_long", "ImGuiSelectionUserData *|ImS64 *|int64_t *|int_fast64_t *|int_least64_t *|intmax_t *|long long *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofColor = {"_p_ofColor", "ofColor *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofEventArgs = {"_p_ofEventArgs", "ofEventArgs *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofFloatColor = {"_p_ofFloatColor", "ofFloatColor *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofImage = {"_p_ofImage", "ofImage *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofIndexType = {"_p_ofIndexType", "ofIndexType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofPixels = {"_p_ofPixels", "ofPixels *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ofRectangle = {"_p_ofRectangle", "ofRectangle *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofTexture = {"_p_ofTexture", "ofTexture *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofVec2f = {"_p_ofVec2f", "ofVec2f *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofVec3f = {"_p_ofVec3f", "ofVec3f *", 0, 0, (void*)0, 0};
@@ -19303,13 +20768,18 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ImGuiInputTextCallbackData,
   &_swigt__p_ImGuiKeyData,
   &_swigt__p_ImGuiListClipper,
+  &_swigt__p_ImGuiMultiSelectIO,
   &_swigt__p_ImGuiOnceUponAFrame,
   &_swigt__p_ImGuiPayload,
   &_swigt__p_ImGuiPlatformIO,
   &_swigt__p_ImGuiPlatformImeData,
   &_swigt__p_ImGuiPlatformMonitor,
+  &_swigt__p_ImGuiSelectionBasicStorage,
+  &_swigt__p_ImGuiSelectionExternalStorage,
+  &_swigt__p_ImGuiSelectionRequest,
   &_swigt__p_ImGuiSizeCallbackData,
   &_swigt__p_ImGuiStorage,
+  &_swigt__p_ImGuiStoragePair,
   &_swigt__p_ImGuiStyle,
   &_swigt__p_ImGuiTableColumnSortSpecs,
   &_swigt__p_ImGuiTableSortSpecs,
@@ -19329,7 +20799,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ImVectorT_ImFontGlyph_t,
   &_swigt__p_ImVectorT_ImFont_p_t,
   &_swigt__p_ImVectorT_ImGuiPlatformMonitor_t,
-  &_swigt__p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t,
+  &_swigt__p_ImVectorT_ImGuiSelectionRequest_t,
+  &_swigt__p_ImVectorT_ImGuiStoragePair_t,
   &_swigt__p_ImVectorT_ImGuiTextFilter__ImGuiTextRange_t,
   &_swigt__p_ImVectorT_ImGuiViewport_p_t,
   &_swigt__p_ImVectorT_ImVec2_t,
@@ -19338,20 +20809,27 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ImVectorT_float_t,
   &_swigt__p_ImVectorT_int_t,
   &_swigt__p_ImVectorT_ofIndexType_t,
+  &_swigt__p_ImVectorT_unsigned_char_t,
   &_swigt__p_ImVectorT_unsigned_int_t,
   &_swigt__p_ImVectorT_unsigned_short_t,
   &_swigt__p_bool,
   &_swigt__p_char,
   &_swigt__p_double,
+  &_swigt__p_f_p_ImGuiContext__p_char,
+  &_swigt__p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void,
+  &_swigt__p_f_p_ImGuiContext_p_q_const__char__bool,
+  &_swigt__p_f_p_ImGuiContext_p_q_const__char__void,
   &_swigt__p_f_p_ImGuiInputTextCallbackData__int,
+  &_swigt__p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int,
+  &_swigt__p_f_p_ImGuiSelectionExternalStorage_int_bool__void,
   &_swigt__p_f_p_ImGuiSizeCallbackData__void,
   &_swigt__p_f_p_ImGuiViewport_ImVec2__void,
   &_swigt__p_f_p_ImGuiViewport__ImVec2,
+  &_swigt__p_f_p_ImGuiViewport__ImVec4,
   &_swigt__p_f_p_ImGuiViewport__bool,
   &_swigt__p_f_p_ImGuiViewport__float,
   &_swigt__p_f_p_ImGuiViewport__void,
   &_swigt__p_f_p_ImGuiViewport_float__void,
-  &_swigt__p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void,
   &_swigt__p_f_p_ImGuiViewport_p_q_const__char__void,
   &_swigt__p_f_p_ImGuiViewport_p_void__void,
   &_swigt__p_f_p_ImGuiViewport_unsigned_long_long_p_q_const__void_p_unsigned_long_long__int,
@@ -19373,6 +20851,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ofImage,
   &_swigt__p_ofIndexType,
   &_swigt__p_ofPixels,
+  &_swigt__p_ofRectangle,
   &_swigt__p_ofTexture,
   &_swigt__p_ofVec2f,
   &_swigt__p_ofVec3f,
@@ -19419,13 +20898,18 @@ static swig_cast_info _swigc__p_ImGuiIO[] = {  {&_swigt__p_ImGuiIO, 0, 0, 0},{0,
 static swig_cast_info _swigc__p_ImGuiInputTextCallbackData[] = {  {&_swigt__p_ImGuiInputTextCallbackData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiKeyData[] = {  {&_swigt__p_ImGuiKeyData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiListClipper[] = {  {&_swigt__p_ImGuiListClipper, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ImGuiMultiSelectIO[] = {  {&_swigt__p_ImGuiMultiSelectIO, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiOnceUponAFrame[] = {  {&_swigt__p_ImGuiOnceUponAFrame, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiPayload[] = {  {&_swigt__p_ImGuiPayload, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiPlatformIO[] = {  {&_swigt__p_ImGuiPlatformIO, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiPlatformImeData[] = {  {&_swigt__p_ImGuiPlatformImeData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiPlatformMonitor[] = {  {&_swigt__p_ImGuiPlatformMonitor, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ImGuiSelectionBasicStorage[] = {  {&_swigt__p_ImGuiSelectionBasicStorage, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ImGuiSelectionExternalStorage[] = {  {&_swigt__p_ImGuiSelectionExternalStorage, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ImGuiSelectionRequest[] = {  {&_swigt__p_ImGuiSelectionRequest, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiSizeCallbackData[] = {  {&_swigt__p_ImGuiSizeCallbackData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiStorage[] = {  {&_swigt__p_ImGuiStorage, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ImGuiStoragePair[] = {  {&_swigt__p_ImGuiStoragePair, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiStyle[] = {  {&_swigt__p_ImGuiStyle, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiTableColumnSortSpecs[] = {  {&_swigt__p_ImGuiTableColumnSortSpecs, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImGuiTableSortSpecs[] = {  {&_swigt__p_ImGuiTableSortSpecs, 0, 0, 0},{0, 0, 0, 0}};
@@ -19445,7 +20929,8 @@ static swig_cast_info _swigc__p_ImVectorT_ImFontConfig_t[] = {  {&_swigt__p_ImVe
 static swig_cast_info _swigc__p_ImVectorT_ImFontGlyph_t[] = {  {&_swigt__p_ImVectorT_ImFontGlyph_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImVectorT_ImFont_p_t[] = {  {&_swigt__p_ImVectorT_ImFont_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImVectorT_ImGuiPlatformMonitor_t[] = {  {&_swigt__p_ImVectorT_ImGuiPlatformMonitor_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t[] = {  {&_swigt__p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ImVectorT_ImGuiSelectionRequest_t[] = {  {&_swigt__p_ImVectorT_ImGuiSelectionRequest_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ImVectorT_ImGuiStoragePair_t[] = {  {&_swigt__p_ImVectorT_ImGuiStoragePair_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImVectorT_ImGuiTextFilter__ImGuiTextRange_t[] = {  {&_swigt__p_ImVectorT_ImGuiTextFilter__ImGuiTextRange_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImVectorT_ImGuiViewport_p_t[] = {  {&_swigt__p_ImVectorT_ImGuiViewport_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImVectorT_ImVec2_t[] = {  {&_swigt__p_ImVectorT_ImVec2_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -19454,20 +20939,27 @@ static swig_cast_info _swigc__p_ImVectorT_char_t[] = {  {&_swigt__p_ImVectorT_ch
 static swig_cast_info _swigc__p_ImVectorT_float_t[] = {  {&_swigt__p_ImVectorT_float_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImVectorT_int_t[] = {  {&_swigt__p_ImVectorT_int_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImVectorT_ofIndexType_t[] = {  {&_swigt__p_ImVectorT_ofIndexType_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ImVectorT_unsigned_char_t[] = {  {&_swigt__p_ImVectorT_unsigned_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImVectorT_unsigned_int_t[] = {  {&_swigt__p_ImVectorT_unsigned_int_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ImVectorT_unsigned_short_t[] = {  {&_swigt__p_ImVectorT_unsigned_short_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_bool[] = {  {&_swigt__p_bool, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_double[] = {  {&_swigt__p_double, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_f_p_ImGuiContext__p_char[] = {  {&_swigt__p_f_p_ImGuiContext__p_char, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void[] = {  {&_swigt__p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_f_p_ImGuiContext_p_q_const__char__bool[] = {  {&_swigt__p_f_p_ImGuiContext_p_q_const__char__bool, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_f_p_ImGuiContext_p_q_const__char__void[] = {  {&_swigt__p_f_p_ImGuiContext_p_q_const__char__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiInputTextCallbackData__int[] = {  {&_swigt__p_f_p_ImGuiInputTextCallbackData__int, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int[] = {  {&_swigt__p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_f_p_ImGuiSelectionExternalStorage_int_bool__void[] = {  {&_swigt__p_f_p_ImGuiSelectionExternalStorage_int_bool__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiSizeCallbackData__void[] = {  {&_swigt__p_f_p_ImGuiSizeCallbackData__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiViewport_ImVec2__void[] = {  {&_swigt__p_f_p_ImGuiViewport_ImVec2__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiViewport__ImVec2[] = {  {&_swigt__p_f_p_ImGuiViewport__ImVec2, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_f_p_ImGuiViewport__ImVec4[] = {  {&_swigt__p_f_p_ImGuiViewport__ImVec4, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiViewport__bool[] = {  {&_swigt__p_f_p_ImGuiViewport__bool, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiViewport__float[] = {  {&_swigt__p_f_p_ImGuiViewport__float, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiViewport__void[] = {  {&_swigt__p_f_p_ImGuiViewport__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiViewport_float__void[] = {  {&_swigt__p_f_p_ImGuiViewport_float__void, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void[] = {  {&_swigt__p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiViewport_p_q_const__char__void[] = {  {&_swigt__p_f_p_ImGuiViewport_p_q_const__char__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiViewport_p_void__void[] = {  {&_swigt__p_f_p_ImGuiViewport_p_void__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_ImGuiViewport_unsigned_long_long_p_q_const__void_p_unsigned_long_long__int[] = {  {&_swigt__p_f_p_ImGuiViewport_unsigned_long_long_p_q_const__void_p_unsigned_long_long__int, 0, 0, 0},{0, 0, 0, 0}};
@@ -19489,6 +20981,7 @@ static swig_cast_info _swigc__p_ofFloatColor[] = {  {&_swigt__p_ofFloatColor, 0,
 static swig_cast_info _swigc__p_ofImage[] = {  {&_swigt__p_ofImage, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofIndexType[] = {  {&_swigt__p_ofIndexType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofPixels[] = {  {&_swigt__p_ofPixels, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ofRectangle[] = {  {&_swigt__p_ofRectangle, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofTexture[] = {  {&_swigt__p_ofTexture, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofVec2f[] = {  {&_swigt__p_ofVec2f, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofVec3f[] = {  {&_swigt__p_ofVec3f, 0, 0, 0},{0, 0, 0, 0}};
@@ -19535,13 +21028,18 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ImGuiInputTextCallbackData,
   _swigc__p_ImGuiKeyData,
   _swigc__p_ImGuiListClipper,
+  _swigc__p_ImGuiMultiSelectIO,
   _swigc__p_ImGuiOnceUponAFrame,
   _swigc__p_ImGuiPayload,
   _swigc__p_ImGuiPlatformIO,
   _swigc__p_ImGuiPlatformImeData,
   _swigc__p_ImGuiPlatformMonitor,
+  _swigc__p_ImGuiSelectionBasicStorage,
+  _swigc__p_ImGuiSelectionExternalStorage,
+  _swigc__p_ImGuiSelectionRequest,
   _swigc__p_ImGuiSizeCallbackData,
   _swigc__p_ImGuiStorage,
+  _swigc__p_ImGuiStoragePair,
   _swigc__p_ImGuiStyle,
   _swigc__p_ImGuiTableColumnSortSpecs,
   _swigc__p_ImGuiTableSortSpecs,
@@ -19561,7 +21059,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ImVectorT_ImFontGlyph_t,
   _swigc__p_ImVectorT_ImFont_p_t,
   _swigc__p_ImVectorT_ImGuiPlatformMonitor_t,
-  _swigc__p_ImVectorT_ImGuiStorage__ImGuiStoragePair_t,
+  _swigc__p_ImVectorT_ImGuiSelectionRequest_t,
+  _swigc__p_ImVectorT_ImGuiStoragePair_t,
   _swigc__p_ImVectorT_ImGuiTextFilter__ImGuiTextRange_t,
   _swigc__p_ImVectorT_ImGuiViewport_p_t,
   _swigc__p_ImVectorT_ImVec2_t,
@@ -19570,20 +21069,27 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ImVectorT_float_t,
   _swigc__p_ImVectorT_int_t,
   _swigc__p_ImVectorT_ofIndexType_t,
+  _swigc__p_ImVectorT_unsigned_char_t,
   _swigc__p_ImVectorT_unsigned_int_t,
   _swigc__p_ImVectorT_unsigned_short_t,
   _swigc__p_bool,
   _swigc__p_char,
   _swigc__p_double,
+  _swigc__p_f_p_ImGuiContext__p_char,
+  _swigc__p_f_p_ImGuiContext_p_ImGuiViewport_p_ImGuiPlatformImeData__void,
+  _swigc__p_f_p_ImGuiContext_p_q_const__char__bool,
+  _swigc__p_f_p_ImGuiContext_p_q_const__char__void,
   _swigc__p_f_p_ImGuiInputTextCallbackData__int,
+  _swigc__p_f_p_ImGuiSelectionBasicStorage_int__unsigned_int,
+  _swigc__p_f_p_ImGuiSelectionExternalStorage_int_bool__void,
   _swigc__p_f_p_ImGuiSizeCallbackData__void,
   _swigc__p_f_p_ImGuiViewport_ImVec2__void,
   _swigc__p_f_p_ImGuiViewport__ImVec2,
+  _swigc__p_f_p_ImGuiViewport__ImVec4,
   _swigc__p_f_p_ImGuiViewport__bool,
   _swigc__p_f_p_ImGuiViewport__float,
   _swigc__p_f_p_ImGuiViewport__void,
   _swigc__p_f_p_ImGuiViewport_float__void,
-  _swigc__p_f_p_ImGuiViewport_p_ImGuiPlatformImeData__void,
   _swigc__p_f_p_ImGuiViewport_p_q_const__char__void,
   _swigc__p_f_p_ImGuiViewport_p_void__void,
   _swigc__p_f_p_ImGuiViewport_unsigned_long_long_p_q_const__void_p_unsigned_long_long__int,
@@ -19605,6 +21111,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ofImage,
   _swigc__p_ofIndexType,
   _swigc__p_ofPixels,
+  _swigc__p_ofRectangle,
   _swigc__p_ofTexture,
   _swigc__p_ofVec2f,
   _swigc__p_ofVec3f,

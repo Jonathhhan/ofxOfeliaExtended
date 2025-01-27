@@ -137,7 +137,7 @@ static ImTextureID GetImTextureID(const ofTexture& texture)
 #endif
 	{
 		
-		ofLogWarning("Warning, ImGui only supports drawing textures of type GL_TEXTURE_RECTANGLE.");
+        ofLogWarning("Warning, ImGui only supports drawing textures of type GL_TEXTURE_2D.");
 	}
     return (ImTextureID)(uintptr_t)texture.texData.textureID;
 }

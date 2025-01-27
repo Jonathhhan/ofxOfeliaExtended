@@ -3,6 +3,7 @@
 
 // main MODULE
 %module ImGui
+%feature("flatnested", "1");
 
 
 %{
@@ -34,7 +35,7 @@
 // Custom changes
 //------
 
-%ignore operator bool;
+%ignore ofxImGuiContext::operator bool;
 %rename(beginGui) begin();
 %rename(endGui) end();
 
@@ -42,6 +43,8 @@
 %ignore operator ofVec2f;
 %ignore operator ofVec4f;
 %ignore operator ofColor;
+%ignore ImGuiStoragePair(ImGuiID,float);
+%ignore ImGui::GetColorU32(ImU32,float);
 
 
 //------
@@ -51,7 +54,6 @@
 %ignore operator new(size_t, ImNewWrapper, void*);   // Ignored because SWIG doesn't support this operator
 %ignore operator delete(void*, ImNewWrapper, void*); // Ignored because SWIG doesn't support this operator
 %ignore ImGuiTextFilter::ImGuiTextRange; // Ignored because SWIG doesn't support nested structs
-%ignore ImGuiStorage::ImGuiStoragePair;  // Ignored because SWIG doesn't support nested structs
 #ifdef SWIGLUA
 %ignore Value(const char*, int);          // Always use float version instead
 %ignore Value(const char*, unsigned int); // Always use float version instead

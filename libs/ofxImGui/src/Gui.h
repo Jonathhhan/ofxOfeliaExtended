@@ -5,6 +5,7 @@
 #include "ofTexture.h"
 #include "ofEvents.h"
 #include "ofAppBaseWindow.h"
+#include "ofRectangle.h"
 
 #include <map>
 #include <bitset>
@@ -13,7 +14,7 @@
 #include "DefaultTheme.h"
 //#include "LinkedList.hpp"
 #include <unordered_map>
-#include "../libs/imgui/src/imgui.h" // for ImFont*
+#include "imgui.h" // for ImFont*
 
 #if defined(OFXIMGUI_BACKEND_OPENFRAMEWORKS)
 	#include "EngineOpenFrameworks.h"
@@ -145,6 +146,7 @@ namespace ofxImGui
         // Todo: remove these ? Adapt them ?
 		//void setSharedMode(bool _sharedMode=true);
         bool isInSharedMode() const;
+        bool isMaster() const;
 
 		void begin();
 		void end();
@@ -155,6 +157,7 @@ namespace ofxImGui
         bool setDefaultFont(ImFont* _atlasFont);
         ImFont* addFont(const std::string & fontPath, float fontSize = 13.0f, const ImFontConfig* _fontConfig = nullptr, const ImWchar* _glyphRanges = nullptr, bool _setAsDefaultFont=false );
         ImFont* addFontFromMemory(void* fontData, int fontDataSize, float fontSize = 13.0f, const ImFontConfig* _fontConfig = nullptr, const ImWchar* _glyphRanges = nullptr, bool _setAsDefaultFont=false );
+        bool rebuildFontsTexture();
 
 		void setTheme(BaseTheme* theme);
 
@@ -171,7 +174,13 @@ namespace ofxImGui
         void afterDraw(ofEventArgs& _args); // Listener
 
 		// Helper window to debug ofxImGui specific stuff, and provide some hints on your setup.
-		void drawOfxImGuiDebugWindow() const;
+		void drawOfxImGuiDebugWindow(bool* open=nullptr) const;
+
+		// Helper to retrieve the current gui-free zone within the ofAppWindow.
+		// Basically returns windowRect - MenuBarSpace - SideDocks
+		ofRectangle getMainWindowViewportRect(bool returnScreenCoords=false, bool removeMenuBar=true, bool removeDockingAreas=true) const;
+		int getMenuHeight() const;
+		ofRectangle getDockingViewport() const;
 
     private:
         void render();
@@ -191,6 +200,11 @@ namespace ofxImGui
 		BaseTheme* theme=nullptr; // Todo: move this into ofxImguiContext ?
 
 		std::vector<ofTexture*> loadedTextures;
+
+		ofRectangle dockingViewport;
+		int menuHeight;
+
+		void updateDockingVp();
 
         // Static context instance. All Gui instances share the same context.
         // If you're dealing with dynamic libraries, you might need to pass this over to another ImGui instance.

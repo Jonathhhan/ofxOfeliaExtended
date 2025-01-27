@@ -38,10 +38,12 @@ char pd_compiletime[] = __TIME__;
 char pd_compiledate[] = __DATE__;
 
 void pd_init(void);
+void pd_term(void);
 int sys_argparse(int argc, const char **argv);
 void sys_findprogdir(const char *progname);
 void sys_setsignalhandlers(void);
 int sys_startgui(const char *guipath);
+void sys_stopgui(void);
 void sys_setrealtime(const char *guipath);
 int m_mainloop(void);
 int m_batchmain(void);
@@ -95,8 +97,7 @@ static int sys_listplease;
 int sys_externalschedlib;
 char sys_externalschedlibname[MAXPDSTRING];
 static int sys_batch;
-int sys_extraflags;
-char sys_extraflagsstring[MAXPDSTRING];
+const char *pd_extraflags = 0;
 int sys_run_scheduler(const char *externalschedlibname,
     const char *sys_extraflagsstring);
 int sys_noautopatch;    /* temporary hack to defeat new 0.42 editing */
@@ -318,18 +319,22 @@ void glob_initfromgui(void *dummy, t_symbol *s, int argc, t_atom *argv)
         we think we know the actual font metrics the GUI will use. */
 }
 
-static void sys_afterargparse(void);
+static void sys_init_midi(void);
+static void sys_init_paths(void);
 static void sys_printusage(void);
+void sys_init_audio(void);  /* bad that init_midi is here but init_audio not */
+
+
 
 /* this is called from main() in s_entry.c */
 int sys_main(int argc, const char **argv)
 {
-    int i, noprefs;
+    int i, noprefs, ret;
     const char *prefsfile = "";
+    char cwd[MAXPDSTRING];
     t_namelist *nl;
     t_patchlist *pl;
     sys_externalschedlib = 0;
-    sys_extraflags = 0;
 #ifdef PD_DEBUG
     fprintf(stderr, "Pd: COMPILED FOR DEBUGGING\n");
 #endif
@@ -373,6 +378,14 @@ int sys_main(int argc, const char **argv)
         sys_sockerror("socket_init()");
     pd_init();                                  /* start the message system */
     sys_findprogdir(argv[0]);                   /* set sys_progname, guipath */
+        /* get current working directory */
+#ifdef _WIN32
+    if (GetCurrentDirectory(MAXPDSTRING, cwd) == 0)
+        strcpy(cwd, ".");
+#else
+    if (!getcwd(cwd, MAXPDSTRING))
+        strcpy(cwd, ".");
+#endif
     for (i = noprefs = 0; i < argc; i++)    /* prescan ... */
     {
         /* for prefs override */
@@ -403,8 +416,15 @@ int sys_main(int argc, const char **argv)
         return (0);
     }
     sys_setsignalhandlers();
-    sys_afterargparse();                    /* post-argparse settings */
-        /* load dynamic libraries specified with "-lib" args */
+    sys_init_paths();   /* set paths before starting GUI which wants them */
+    if (!sys_dontstartgui &&
+        sys_startgui(sys_libdir->s_name))  /* start the gui */
+            return (1);
+    if (sys_listplease)
+        sys_listdevs();
+    sys_init_midi();
+    sys_init_audio();
+         /* load dynamic libraries specified with "-lib" args */
     if (sys_oktoloadfiles(0))
     {
         for  (nl = STUFF->st_externlist; nl; nl = nl->nl_next)
@@ -414,7 +434,7 @@ int sys_main(int argc, const char **argv)
     }
         /* open patches specifies with "-open" args */
     for (pl = sys_openlist; pl; pl = pl->pl_next)
-        openit(".", pl->pl_file, pl->pl_args);
+        openit(cwd, pl->pl_file, pl->pl_args);
     patchlist_free(sys_openlist);
     sys_openlist = 0;
         /* send messages specified with "-send" args */
@@ -427,25 +447,17 @@ int sys_main(int argc, const char **argv)
     }
     namelist_free(sys_messagelist);
     sys_messagelist = 0;
-    if (!sys_dontstartgui && 
-        sys_startgui(sys_libdir->s_name))  /* start the gui */
-            return (1);
-    if (sys_hipriority)
+   if (sys_hipriority)
         sys_setrealtime(sys_libdir->s_name); /* set desired process priority */
     if (sys_externalschedlib)
-        return (sys_run_scheduler(sys_externalschedlibname,
-            sys_extraflagsstring));
+        ret = (sys_run_scheduler(sys_externalschedlibname, pd_extraflags));
     else if (sys_batch)
-        return (m_batchmain());
+        ret = m_batchmain();
     else
-    {
-            /* open audio and MIDI */
-        sys_reopen_midi();
-        if (audio_shouldkeepopen())
-            sys_reopen_audio();
-            /* run scheduler until it quits */
-        return (m_mainloop());
-    }
+        ret = m_mainloop();
+    sys_stopgui();
+    pd_term();
+    return (ret);
 }
 
 static char *(usagemessage[]) = {
@@ -712,6 +724,8 @@ void sys_findprogdir(const char *progname)
 #endif
 }
 
+    /* Parse command line arguments.  This may be called twice, from
+    "preferences (s_file.c), then from command-line arguments. */
 int sys_argparse(int argc, const char **argv)
 {
     t_audiosettings as;
@@ -1340,9 +1354,7 @@ int sys_argparse(int argc, const char **argv)
             if (argc < 2)
                 goto usage;
 
-            sys_extraflags = 1;
-            strncpy(sys_extraflagsstring, argv[1],
-                sizeof(sys_extraflagsstring) - 1);
+            pd_extraflags = argv[1];
             argv += 2;
             argc -= 2;
         }
@@ -1443,18 +1455,10 @@ int sys_getblksize(void)
     return (DEFDACBLKSIZE);
 }
 
-void sys_init_audio(void);
-
-    /* stuff to do, once, after calling sys_argparse() -- which may itself
-    be called more than once (first from "settings, second from .pdrc, then
-    from command-line arguments */
-static void sys_afterargparse(void)
+    /* initialize paths after parsing arguments and loading preferences */
+static void sys_init_paths(void)
 {
     char sbuf[MAXPDSTRING];
-    int i;
-    t_audiosettings as;
-    int nmidiindev = 0, midiindev[MAXMIDIINDEV];
-    int nmidioutdev = 0, midioutdev[MAXMIDIOUTDEV];
             /* add "extra" library to path */
     strncpy(sbuf, sys_libdir->s_name, MAXPDSTRING-30);
     sbuf[MAXPDSTRING-30] = 0;
@@ -1465,14 +1469,21 @@ static void sys_afterargparse(void)
     sbuf[MAXPDSTRING-30] = 0;
     strcat(sbuf, "/doc/5.reference");
     STUFF->st_helppath = namelist_append_files(STUFF->st_helppath, sbuf);
+}
+
+    /* initialize MIDI after parsing arguments and loading preferences */
+static void sys_init_midi(void)
+{
+    int i;
+    t_audiosettings as;
+    int nmidiindev = 0, midiindev[MAXMIDIINDEV];
+    int nmidioutdev = 0, midioutdev[MAXMIDIOUTDEV];
 
     for (i = 0; i < sys_nmidiin; i++)
         sys_midiindevlist[i]--;
     for (i = 0; i < sys_nmidiout; i++)
         sys_midioutdevlist[i]--;
 
-    if (sys_listplease)
-        sys_listdevs();
 
     sys_get_midi_params(&nmidiindev, midiindev, &nmidioutdev, midioutdev);
     if (sys_nmidiin >= 0)
@@ -1488,16 +1499,8 @@ static void sys_afterargparse(void)
             midioutdev[i] = sys_midioutdevlist[i];
     }
     sys_open_midi(nmidiindev, midiindev, nmidioutdev, midioutdev, 0);
-
-    sys_init_audio();
 }
 
-static void sys_addreferencepath(void)
-{
-    char sbuf[MAXPDSTRING];
-}
-
-int sys_argparse(int argc, const char **argv);
 static int string2args(const char * cmd, int * retArgc, const char *** retArgv);
 
 void sys_doflags(void)

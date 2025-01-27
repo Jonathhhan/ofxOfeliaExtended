@@ -1,434 +1,1175 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64EC">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64EC</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64EC">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64EC</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup Condition="'$(Platform)'=='x64' or '$(Platform)'=='ARM64'">
+    <LatestTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '10.0'))</LatestTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' == ''">$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+    <TargetPlatformVersion>$(WindowsTargetPlatformVersion)</TargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='ARM64EC'">
+    <LatestTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '11.0'))</LatestTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' == ''">$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+    <TargetPlatformVersion>$(WindowsTargetPlatformVersion)</TargetPlatformVersion>
+  </PropertyGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>WindowsExample</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64' or '$(Configuration)|$(Platform)'=='Debug|ARM64' or '$(Configuration)|$(Platform)'=='Debug|ARM64EC'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64' or '$(Configuration)|$(Platform)'=='Release|ARM64' or '$(Configuration)|$(Platform)'=='Release|ARM64EC'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <CharacterSet>Unicode</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64' or '$(Configuration)|$(Platform)'=='Release|ARM64' or '$(Configuration)|$(Platform)'=='Release|ARM64EC'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64' or '$(Configuration)|$(Platform)'=='Debug|ARM64' or '$(Configuration)|$(Platform)'=='Debug|ARM64EC'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64' or '$(Configuration)|$(Platform)'=='Debug|ARM64' or '$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
     <OutDir>bin\</OutDir>
-    <IntDir>obj\$(Configuration)\</IntDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)_debug</TargetName>
     <LinkIncremental>true</LinkIncremental>
     <GenerateManifest>true</GenerateManifest>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64' or '$(Configuration)|$(Platform)'=='Release|ARM64' or '$(Configuration)|$(Platform)'=='Release|ARM64EC'">
     <OutDir>bin\</OutDir>
-    <IntDir>obj\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_debug</TargetName>
-    <LinkIncremental>true</LinkIncremental>
-    <GenerateManifest>true</GenerateManifest>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>bin\</OutDir>
-    <IntDir>obj\$(Configuration)\</IntDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>bin\</OutDir>
-    <IntDir>obj\$(Configuration)\</IntDir>
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64' or '$(Configuration)|$(Platform)'=='Debug|ARM64' or '$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <PreprocessorDefinitions>PD;PD_INTERNAL;HAVE_STRUCT_TIMESPEC;TARGET_STANDALONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxOfelia\src;..\..\..\addons\ofxOfelia\libs\ofxLua\libs;..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua;..\..\..\addons\ofxOfelia\libs\ofxLua\src;..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings;..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings\desktop;..\..\..\addons\ofxOfelia\libs\ofxMidi\libs;..\..\..\addons\ofxOfelia\libs\ofxMidi\libs\rtmidi;..\..\..\addons\ofxOfelia\libs\ofxMidi\src;..\..\..\addons\ofxOfelia\libs\ofxMidi\src\desktop;..\..\..\addons\ofxOfelia\libs\ofxPd\libs;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\cpp;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bob~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bonk~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\choice;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\fiddle~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\loop~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\lrshift~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pd~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pique;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\sigmund~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src;..\..\..\addons\ofxOfelia\libs\ofxPd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <CompileAs>Default</CompileAs>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\ofxAssimpModelLoader\libs;..\..\ofxAssimpModelLoader\libs\assimp;..\..\ofxAssimpModelLoader\libs\assimp\include;..\..\ofxAssimpModelLoader\libs\assimp\include\assimp;..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\port;..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\port\AndroidJNI;..\..\ofxAssimpModelLoader\src;..\libs;..\libs\ofxImGui;..\libs\ofxImGui\libs;..\libs\ofxImGui\libs\imgui;..\libs\ofxImGui\libs\imgui\backends;..\libs\ofxImGui\libs\imgui\extras;..\libs\ofxImGui\libs\imgui\src;..\libs\ofxImGui\src;..\libs\ofxLua;..\libs\ofxLua\libs;..\libs\ofxLua\libs\lua;..\libs\ofxLua\src;..\libs\ofxLua\src\bindings;..\libs\ofxLua\src\bindings\desktop;..\libs\ofxLua\src\bindings\ios;..\libs\ofxLua\src\bindings\linuxarm;..\libs\ofxLua\swig;..\libs\ofxMidi;..\libs\ofxMidi\libs;..\libs\ofxMidi\libs\pgmidi;..\libs\ofxMidi\libs\rtmidi;..\libs\ofxMidi\src;..\libs\ofxMidi\src\desktop;..\libs\ofxMidi\src\ios;..\libs\ofxPd;..\libs\ofxPd\libs;..\libs\ofxPd\libs\libpd;..\libs\ofxPd\libs\libpd\cpp;..\libs\ofxPd\libs\libpd\libpd_wrapper;..\libs\ofxPd\libs\libpd\libpd_wrapper\util;..\libs\ofxPd\libs\libpd\pure-data;..\libs\ofxPd\libs\libpd\pure-data\extra;..\libs\ofxPd\libs\libpd\pure-data\extra\bob~;..\libs\ofxPd\libs\libpd\pure-data\extra\bonk~;..\libs\ofxPd\libs\libpd\pure-data\extra\choice;..\libs\ofxPd\libs\libpd\pure-data\extra\fiddle~;..\libs\ofxPd\libs\libpd\pure-data\extra\loop~;..\libs\ofxPd\libs\libpd\pure-data\extra\lrshift~;..\libs\ofxPd\libs\libpd\pure-data\extra\pd~;..\libs\ofxPd\libs\libpd\pure-data\extra\pique;..\libs\ofxPd\libs\libpd\pure-data\extra\sigmund~;..\libs\ofxPd\libs\libpd\pure-data\extra\stdout;..\libs\ofxPd\libs\libpd\pure-data\src;..\libs\ofxPd\src;..\libs\ofxStableDiffusion;..\libs\ofxStableDiffusion\libs;..\libs\ofxStableDiffusion\libs\stable-diffusion;..\libs\ofxStableDiffusion\libs\stable-diffusion\include;..\libs\ofxStableDiffusion\src;..\libs\ofxVolumetrics;..\libs\ofxVolumetrics\src;..\src;..\..\ofxOpenCv\libs;..\..\ofxOpenCv\libs\opencv;..\..\ofxOpenCv\libs\opencv\include;..\..\ofxOpenCv\libs\opencv\include\opencv2;..\..\ofxOpenCv\libs\opencv\include\opencv2\aruco;..\..\ofxOpenCv\libs\opencv\include\opencv2\bioinspired;..\..\ofxOpenCv\libs\opencv\include\opencv2\calib3d;..\..\ofxOpenCv\libs\opencv\include\opencv2\core;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\parallel;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\parallel\backend;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils;..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets;..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn;..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\utils;..\..\ofxOpenCv\libs\opencv\include\opencv2\face;..\..\ofxOpenCv\libs\opencv\include\opencv2\features2d;..\..\ofxOpenCv\libs\opencv\include\opencv2\features2d\hal;..\..\ofxOpenCv\libs\opencv\include\opencv2\flann;..\..\ofxOpenCv\libs\opencv\include\opencv2\fuzzy;..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs\legacy;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\hal;..\..\ofxOpenCv\libs\opencv\include\opencv2\line_descriptor;..\..\ofxOpenCv\libs\opencv\include\opencv2\mcc;..\..\ofxOpenCv\libs\opencv\include\opencv2\ml;..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect;..\..\ofxOpenCv\libs\opencv\include\opencv2\optflow;..\..\ofxOpenCv\libs\opencv\include\opencv2\phase_unwrapping;..\..\ofxOpenCv\libs\opencv\include\opencv2\photo;..\..\ofxOpenCv\libs\opencv\include\opencv2\photo\legacy;..\..\ofxOpenCv\libs\opencv\include\opencv2\quality;..\..\ofxOpenCv\libs\opencv\include\opencv2\reg;..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd;..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\saliency;..\..\ofxOpenCv\libs\opencv\include\opencv2\shape;..\..\ofxOpenCv\libs\opencv\include\opencv2\signal;..\..\ofxOpenCv\libs\opencv\include\opencv2\stereo;..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching;..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\structured_light;..\..\ofxOpenCv\libs\opencv\include\opencv2\superres;..\..\ofxOpenCv\libs\opencv\include\opencv2\surface_matching;..\..\ofxOpenCv\libs\opencv\include\opencv2\text;..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking;..\..\ofxOpenCv\libs\opencv\include\opencv2\video;..\..\ofxOpenCv\libs\opencv\include\opencv2\video\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\video\legacy;..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio;..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio\legacy;..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab;..\..\ofxOpenCv\libs\opencv\include\opencv2\xfeatures2d;..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc;..\..\ofxOpenCv\libs\opencv\include\opencv2\xphoto;..\..\ofxOpenCv\src;..\..\ofxSvg\libs;..\..\ofxSvg\libs\libxml2;..\..\ofxSvg\libs\libxml2\include;..\..\ofxSvg\libs\libxml2\include\libxml;..\..\ofxSvg\libs\svgtiny;..\..\ofxSvg\libs\svgtiny\include;..\..\ofxSvg\src;..\..\ofxVectorGraphics\libs;..\..\ofxVectorGraphics\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions) -DTARGET_STANDALONE -DHAVE_STRUCT_TIMESPEC -DGLM_ENABLE_EXPERIMENTAL -DLUA_USE_WINDOWS -experimental:c11atomics -DPD -DUSEAPI_DUMMY -DPD_INTERNAL -DLIBPD_EXTRA -DPDINSTANCE -DPDTHREADS</AdditionalOptions>
     </ClCompile>
-    <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <SubSystem>Console</SubSystem>
-      <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\lib\Win32\libpd.lib;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\lib\Win32\pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-    </Link>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <Optimization>Disabled</Optimization>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <PreprocessorDefinitions>PD;PD_INTERNAL;HAVE_STRUCT_TIMESPEC;TARGET_STANDALONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxOfelia\src;..\..\..\addons\ofxOfelia\libs\ofxLua\libs;..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua;..\..\..\addons\ofxOfelia\libs\ofxLua\src;..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings;..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings\desktop;..\..\..\addons\ofxOfelia\libs\ofxMidi\libs;..\..\..\addons\ofxOfelia\libs\ofxMidi\libs\rtmidi;..\..\..\addons\ofxOfelia\libs\ofxMidi\src;..\..\..\addons\ofxOfelia\libs\ofxMidi\src\desktop;..\..\..\addons\ofxOfelia\libs\ofxPd\libs;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\cpp;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bob~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bonk~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\choice;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\fiddle~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\loop~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\lrshift~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pd~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pique;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\sigmund~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src;..\..\..\addons\ofxOfelia\libs\ofxPd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <CompileAs>Default</CompileAs>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-    </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\lib\Win64\libpd.lib;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\lib\Win64\pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libassimpD.lib;libpd.lib;stable-diffusion.lib;ittnotifyd.lib;libopenjp2d.lib;libprotobufd.lib;opencv_aruco4100d.lib;opencv_bgsegm4100d.lib;opencv_bioinspired4100d.lib;opencv_calib3d4100d.lib;opencv_core4100d.lib;opencv_datasets4100d.lib;opencv_dnn4100d.lib;opencv_dnn_objdetect4100d.lib;opencv_dnn_superres4100d.lib;opencv_dpm4100d.lib;opencv_face4100d.lib;opencv_features2d4100d.lib;opencv_flann4100d.lib;opencv_fuzzy4100d.lib;opencv_hfs4100d.lib;opencv_imgcodecs4100d.lib;opencv_imgproc4100d.lib;opencv_img_hash4100d.lib;opencv_intensity_transform4100d.lib;opencv_line_descriptor4100d.lib;opencv_mcc4100d.lib;opencv_ml4100d.lib;opencv_objdetect4100d.lib;opencv_optflow4100d.lib;opencv_phase_unwrapping4100d.lib;opencv_photo4100d.lib;opencv_plot4100d.lib;opencv_quality4100d.lib;opencv_rapid4100d.lib;opencv_reg4100d.lib;opencv_rgbd4100d.lib;opencv_saliency4100d.lib;opencv_shape4100d.lib;opencv_signal4100d.lib;opencv_stereo4100d.lib;opencv_stitching4100d.lib;opencv_structured_light4100d.lib;opencv_superres4100d.lib;opencv_surface_matching4100d.lib;opencv_text4100d.lib;opencv_tracking4100d.lib;opencv_video4100d.lib;opencv_videoio4100d.lib;opencv_videostab4100d.lib;opencv_wechat_qrcode4100d.lib;opencv_xfeatures2d4100d.lib;opencv_ximgproc4100d.lib;opencv_xobjdetect4100d.lib;opencv_xphoto4100d.lib;libxml2.lib;svgtiny.lib;svgtinyD.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\Debug;..\libs\libpd\lib\vs;..\libs\ofxStableDiffusion\libs\stable-diffusion\lib\vs;..\..\ofxOpenCv\libs\opencv\lib\vs\x64\Debug;..\..\ofxSvg\libs\libxml2\lib\vs\x64;..\..\ofxSvg\libs\svgtiny\lib\vs\x64</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
     </Link>
-    <PostBuildEvent>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libpd.lib;stable-diffusion.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\libs\libpd\lib\vs;..\libs\ofxStableDiffusion\libs\stable-diffusion\lib\vs</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libpd.lib;stable-diffusion.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\libs\libpd\lib\vs;..\libs\ofxStableDiffusion\libs\stable-diffusion\lib\vs</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64' or '$(Configuration)|$(Platform)'=='Release|ARM64' or '$(Configuration)|$(Platform)'=='Release|ARM64EC'">
     <ClCompile>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <PreprocessorDefinitions>PD;PD_INTERNAL;HAVE_STRUCT_TIMESPEC;TARGET_STANDALONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxOfelia\src;..\..\..\addons\ofxOfelia\libs\ofxLua\libs;..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua;..\..\..\addons\ofxOfelia\libs\ofxLua\src;..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings;..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings\desktop;..\..\..\addons\ofxOfelia\libs\ofxMidi\libs;..\..\..\addons\ofxOfelia\libs\ofxMidi\libs\rtmidi;..\..\..\addons\ofxOfelia\libs\ofxMidi\src;..\..\..\addons\ofxOfelia\libs\ofxMidi\src\desktop;..\..\..\addons\ofxOfelia\libs\ofxPd\libs;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\cpp;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bob~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bonk~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\choice;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\fiddle~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\loop~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\lrshift~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pd~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pique;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\sigmund~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src;..\..\..\addons\ofxOfelia\libs\ofxPd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\ofxAssimpModelLoader\libs;..\..\ofxAssimpModelLoader\libs\assimp;..\..\ofxAssimpModelLoader\libs\assimp\include;..\..\ofxAssimpModelLoader\libs\assimp\include\assimp;..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\port;..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\port\AndroidJNI;..\..\ofxAssimpModelLoader\src;..\libs;..\libs\ofxImGui;..\libs\ofxImGui\libs;..\libs\ofxImGui\libs\imgui;..\libs\ofxImGui\libs\imgui\backends;..\libs\ofxImGui\libs\imgui\extras;..\libs\ofxImGui\libs\imgui\src;..\libs\ofxImGui\src;..\libs\ofxLua;..\libs\ofxLua\libs;..\libs\ofxLua\libs\lua;..\libs\ofxLua\src;..\libs\ofxLua\src\bindings;..\libs\ofxLua\src\bindings\desktop;..\libs\ofxLua\src\bindings\ios;..\libs\ofxLua\src\bindings\linuxarm;..\libs\ofxLua\swig;..\libs\ofxMidi;..\libs\ofxMidi\libs;..\libs\ofxMidi\libs\pgmidi;..\libs\ofxMidi\libs\rtmidi;..\libs\ofxMidi\src;..\libs\ofxMidi\src\desktop;..\libs\ofxMidi\src\ios;..\libs\ofxPd;..\libs\ofxPd\libs;..\libs\ofxPd\libs\libpd;..\libs\ofxPd\libs\libpd\cpp;..\libs\ofxPd\libs\libpd\libpd_wrapper;..\libs\ofxPd\libs\libpd\libpd_wrapper\util;..\libs\ofxPd\libs\libpd\pure-data;..\libs\ofxPd\libs\libpd\pure-data\extra;..\libs\ofxPd\libs\libpd\pure-data\extra\bob~;..\libs\ofxPd\libs\libpd\pure-data\extra\bonk~;..\libs\ofxPd\libs\libpd\pure-data\extra\choice;..\libs\ofxPd\libs\libpd\pure-data\extra\fiddle~;..\libs\ofxPd\libs\libpd\pure-data\extra\loop~;..\libs\ofxPd\libs\libpd\pure-data\extra\lrshift~;..\libs\ofxPd\libs\libpd\pure-data\extra\pd~;..\libs\ofxPd\libs\libpd\pure-data\extra\pique;..\libs\ofxPd\libs\libpd\pure-data\extra\sigmund~;..\libs\ofxPd\libs\libpd\pure-data\extra\stdout;..\libs\ofxPd\libs\libpd\pure-data\src;..\libs\ofxPd\src;..\libs\ofxStableDiffusion;..\libs\ofxStableDiffusion\libs;..\libs\ofxStableDiffusion\libs\stable-diffusion;..\libs\ofxStableDiffusion\libs\stable-diffusion\include;..\libs\ofxStableDiffusion\src;..\libs\ofxVolumetrics;..\libs\ofxVolumetrics\src;..\src;..\..\ofxOpenCv\libs;..\..\ofxOpenCv\libs\opencv;..\..\ofxOpenCv\libs\opencv\include;..\..\ofxOpenCv\libs\opencv\include\opencv2;..\..\ofxOpenCv\libs\opencv\include\opencv2\aruco;..\..\ofxOpenCv\libs\opencv\include\opencv2\bioinspired;..\..\ofxOpenCv\libs\opencv\include\opencv2\calib3d;..\..\ofxOpenCv\libs\opencv\include\opencv2\core;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\parallel;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\parallel\backend;..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils;..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets;..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn;..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\utils;..\..\ofxOpenCv\libs\opencv\include\opencv2\face;..\..\ofxOpenCv\libs\opencv\include\opencv2\features2d;..\..\ofxOpenCv\libs\opencv\include\opencv2\features2d\hal;..\..\ofxOpenCv\libs\opencv\include\opencv2\flann;..\..\ofxOpenCv\libs\opencv\include\opencv2\fuzzy;..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs\legacy;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\hal;..\..\ofxOpenCv\libs\opencv\include\opencv2\line_descriptor;..\..\ofxOpenCv\libs\opencv\include\opencv2\mcc;..\..\ofxOpenCv\libs\opencv\include\opencv2\ml;..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect;..\..\ofxOpenCv\libs\opencv\include\opencv2\optflow;..\..\ofxOpenCv\libs\opencv\include\opencv2\phase_unwrapping;..\..\ofxOpenCv\libs\opencv\include\opencv2\photo;..\..\ofxOpenCv\libs\opencv\include\opencv2\photo\legacy;..\..\ofxOpenCv\libs\opencv\include\opencv2\quality;..\..\ofxOpenCv\libs\opencv\include\opencv2\reg;..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd;..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\saliency;..\..\ofxOpenCv\libs\opencv\include\opencv2\shape;..\..\ofxOpenCv\libs\opencv\include\opencv2\signal;..\..\ofxOpenCv\libs\opencv\include\opencv2\stereo;..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching;..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\structured_light;..\..\ofxOpenCv\libs\opencv\include\opencv2\superres;..\..\ofxOpenCv\libs\opencv\include\opencv2\surface_matching;..\..\ofxOpenCv\libs\opencv\include\opencv2\text;..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking;..\..\ofxOpenCv\libs\opencv\include\opencv2\video;..\..\ofxOpenCv\libs\opencv\include\opencv2\video\detail;..\..\ofxOpenCv\libs\opencv\include\opencv2\video\legacy;..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio;..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio\legacy;..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab;..\..\ofxOpenCv\libs\opencv\include\opencv2\xfeatures2d;..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc;..\..\ofxOpenCv\libs\opencv\include\opencv2\xphoto;..\..\ofxOpenCv\src;..\..\ofxSvg\libs;..\..\ofxSvg\libs\libxml2;..\..\ofxSvg\libs\libxml2\include;..\..\ofxSvg\libs\libxml2\include\libxml;..\..\ofxSvg\libs\svgtiny;..\..\ofxSvg\libs\svgtiny\include;..\..\ofxSvg\src;..\..\ofxVectorGraphics\libs;..\..\ofxVectorGraphics\src</AdditionalIncludeDirectories>
       <CompileAs>Default</CompileAs>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <Optimization>Full</Optimization>
+      <ObjectFileName>$(IntDir)\Build\%(RelativeDir)\$(Configuration)\</ObjectFileName>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions) -DTARGET_STANDALONE -DHAVE_STRUCT_TIMESPEC -DGLM_ENABLE_EXPERIMENTAL -DLUA_USE_WINDOWS -experimental:c11atomics -DPD -DUSEAPI_DUMMY -DPD_INTERNAL -DLIBPD_EXTRA -DPDINSTANCE -DPDTHREADS</AdditionalOptions>
     </ClCompile>
-    <Link>
-      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <SubSystem>Windows</SubSystem>
-      <OptimizeReferences>true</OptimizeReferences>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\lib\Win32\libpd.lib;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\lib\Win32\pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
-    </Link>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <WholeProgramOptimization>false</WholeProgramOptimization>
-      <PreprocessorDefinitions>PD;PD_INTERNAL;HAVE_STRUCT_TIMESPEC;TARGET_STANDALONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxOfelia\src;..\..\..\addons\ofxOfelia\libs\ofxLua\libs;..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua;..\..\..\addons\ofxOfelia\libs\ofxLua\src;..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings;..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings\desktop;..\..\..\addons\ofxOfelia\libs\ofxMidi\libs;..\..\..\addons\ofxOfelia\libs\ofxMidi\libs\rtmidi;..\..\..\addons\ofxOfelia\libs\ofxMidi\src;..\..\..\addons\ofxOfelia\libs\ofxMidi\src\desktop;..\..\..\addons\ofxOfelia\libs\ofxPd\libs;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\cpp;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bob~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bonk~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\choice;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\fiddle~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\loop~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\lrshift~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pd~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pique;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\sigmund~;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src;..\..\..\addons\ofxOfelia\libs\ofxPd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <CompileAs>Default</CompileAs>
-      <Optimization>Full</Optimization>
-      <OmitFramePointers>false</OmitFramePointers>
-      <AdditionalOptions>-DPD_LONGINTTYPE=__int64 %(AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
     <Link>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\lib\Win64\libpd.lib;..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\lib\Win64\pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
-      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libassimp.lib;libpd.lib;stable-diffusion.lib;ittnotify.lib;libopenjp2.lib;libprotobuf.lib;opencv_aruco4100.lib;opencv_bgsegm4100.lib;opencv_bioinspired4100.lib;opencv_calib3d4100.lib;opencv_core4100.lib;opencv_datasets4100.lib;opencv_dnn4100.lib;opencv_dnn_objdetect4100.lib;opencv_dnn_superres4100.lib;opencv_dpm4100.lib;opencv_face4100.lib;opencv_features2d4100.lib;opencv_flann4100.lib;opencv_fuzzy4100.lib;opencv_hfs4100.lib;opencv_imgcodecs4100.lib;opencv_imgproc4100.lib;opencv_img_hash4100.lib;opencv_intensity_transform4100.lib;opencv_line_descriptor4100.lib;opencv_mcc4100.lib;opencv_ml4100.lib;opencv_objdetect4100.lib;opencv_optflow4100.lib;opencv_phase_unwrapping4100.lib;opencv_photo4100.lib;opencv_plot4100.lib;opencv_quality4100.lib;opencv_rapid4100.lib;opencv_reg4100.lib;opencv_rgbd4100.lib;opencv_saliency4100.lib;opencv_shape4100.lib;opencv_signal4100.lib;opencv_stereo4100.lib;opencv_stitching4100.lib;opencv_structured_light4100.lib;opencv_superres4100.lib;opencv_surface_matching4100.lib;opencv_text4100.lib;opencv_tracking4100.lib;opencv_video4100.lib;opencv_videoio4100.lib;opencv_videostab4100.lib;opencv_wechat_qrcode4100.lib;opencv_xfeatures2d4100.lib;opencv_ximgproc4100.lib;opencv_xobjdetect4100.lib;opencv_xphoto4100.lib;libxml2.lib;svgtiny.lib;svgtinyD.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\ofxAssimpModelLoader\libs\assimp\lib\vs\x64\Release;..\libs\libpd\lib\vs;..\libs\ofxStableDiffusion\libs\stable-diffusion\lib\vs;..\..\ofxOpenCv\libs\opencv\lib\vs\x64\Release;..\..\ofxSvg\libs\libxml2\lib\vs\x64;..\..\ofxSvg\libs\svgtiny\lib\vs\x64</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
     </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libpd.lib;stable-diffusion.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\libs\libpd\lib\vs;..\libs\ofxStableDiffusion\libs\stable-diffusion\lib\vs</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'">
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);libpd.lib;stable-diffusion.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\libs\libpd\lib\vs;..\libs\ofxStableDiffusion\libs\stable-diffusion\lib\vs</AdditionalLibraryDirectories>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='x64'">
     <PostBuildEvent>
+      <Command>
+            xcopy /Y /E "$(ProjectDir)dll\x64\*.dll" "$(TargetDir)"
+        </Command>
     </PostBuildEvent>
+    <ClCompile>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdc17</LanguageStandard_C>
+      <BuildStlModules Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildStlModules>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdc17</LanguageStandard_C>
+      <BuildStlModules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildStlModules>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OldStyle</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='ARM64'">
+    <PostBuildEvent>
+      <Command>
+            xcopy /Y /E "$(ProjectDir)dll\ARM64\*.dll" "$(TargetDir)"
+        </Command>
+    </PostBuildEvent>
+    <ClCompile>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">stdc17</LanguageStandard_C>
+      <BuildStlModules Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</BuildStlModules>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">stdc17</LanguageStandard_C>
+      <BuildStlModules Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</BuildStlModules>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">OldStyle</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='ARM64EC'">
+    <PostBuildEvent>
+      <Command>
+            xcopy /Y /E "$(ProjectDir)dll\ARM64EC\*.dll" "$(TargetDir)"
+        </Command>
+    </PostBuildEvent>
+    <ClCompile>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'">stdc17</LanguageStandard_C>
+      <BuildStlModules Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'">true</BuildStlModules>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'">OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <ClCompile>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'">stdc17</LanguageStandard_C>
+      <BuildStlModules Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'">true</BuildStlModules>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'">OldStyle</DebugInformationFormat>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lapi.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
-    </ClCompile>
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lauxlib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lbaselib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lbitlib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lcode.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lcorolib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lctype.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ldblib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ldebug.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ldo.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ldump.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lfunc.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lgc.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\linit.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\liolib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\llex.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lmathlib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lmem.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\loadlib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lobject.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lopcodes.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\loslib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lparser.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lstate.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lstring.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lstrlib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ltable.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ltablib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ltm.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lundump.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lutf8lib.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lvm.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lzio.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings\desktop\ofBindings.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings\glmBindings.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\src\ofxLua.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxLua\src\ofxLuaFileWriter.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\libs\rtmidi\RtMidi.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\desktop\ofxRtMidiIn.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\desktop\ofxRtMidiOut.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxBaseMidi.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidi.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiClock.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiIn.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiMessage.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiOut.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiTimecode.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\s_libpdmidi.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util\ringbuffer.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_print_util.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_queued.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\x_libpdreceive.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\z_hooks.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\z_libpd.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bob\bob~.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\bonk\bonk~.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\choice\choice.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\fiddle\fiddle~.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\loop\loop~.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\lrshift\lrshift~.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pd\binarymsg.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pd\pdsched.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pd\pd~.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\pique\pique.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\sigmund\sigmund~.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\extra\stdout\stdout.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_arithmetic.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_array.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_ctl.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_dac.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_delay.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_fft.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_fft_fftsg.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_filter.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_global.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_math.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_misc.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_osc.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_resample.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_soundfile.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\d_ugen.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_all_guis.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_array.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_bang.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_canvas.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_clone.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_editor.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_editor_extras.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_graph.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_guiconnect.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_hdial.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_hslider.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_io.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_mycanvas.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_numbox.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_readwrite.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_rtext.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_scalar.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_template.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_text.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_toggle.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_traversal.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_undo.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_vdial.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_vslider.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_vumeter.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_atom.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_binbuf.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_class.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_conf.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_glob.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_memory.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_obj.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_pd.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_sched.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_audio.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_audio_dummy.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_inter.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_loader.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_main.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_net.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_path.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_print.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_utf8.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_acoustics.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_arithmetic.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_array.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_connective.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_gui.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_interface.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_list.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_midi.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_misc.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_net.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_scalar.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_text.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_time.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_vexp.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_vexp_fun.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_vexp_if.c" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\libs\ofxPd\src\ofxPd.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfelia.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaClient.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaCreator.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaData.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaDefine.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaEvents.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaExists.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaFunction.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaGet.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaGL.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaIO.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaLog.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaLua.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaPdBindings.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaSet.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaSetup.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaSignal.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaTextBuf.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="..\..\ofxAssimpModelLoader\src\ofxAssimpAnimation.cpp" />
+    <ClCompile Include="..\..\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.cpp" />
+    <ClCompile Include="..\..\ofxAssimpModelLoader\src\ofxAssimpModelLoader.cpp" />
+    <ClCompile Include="..\..\ofxAssimpModelLoader\src\ofxAssimpTexture.cpp" />
+    <ClCompile Include="..\src\ofxOfelia.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaClient.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaCreator.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaData.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaDefine.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaEvents.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaExists.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaFunction.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaGet.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaGL.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaImGuiBindings.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaIO.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaLog.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaLua.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaOfxBindings.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaPdBindings.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaSet.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaSetup.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaSignal.cpp" />
+    <ClCompile Include="..\src\ofxOfeliaTextBuf.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw_context_support.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\extras\imgui_stdlib.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\src\imgui.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\src\imgui_demo.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\src\imgui_draw.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\src\imgui_tables.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\libs\imgui\src\imgui_widgets.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\src\BaseEngine.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\src\DefaultTheme.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\src\EngineGLFW.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\src\EngineOpenFrameworks.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\src\EngineOpenGLES.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\src\EngineVk.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\src\Gui.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\src\ImHelpers.cpp" />
+    <ClCompile Include="..\libs\ofxImGui\src\ofxImGuiLoggerChannel.cpp" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lapi.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lauxlib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lbaselib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lbitlib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lcode.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lcorolib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lctype.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\ldblib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\ldebug.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\ldo.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\ldump.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lfunc.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lgc.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\linit.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\liolib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\llex.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lmathlib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lmem.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\loadlib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lobject.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lopcodes.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\loslib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lparser.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lstate.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lstring.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lstrlib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\ltable.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\ltablib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\ltm.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lundump.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lutf8lib.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lvm.c" />
+    <ClCompile Include="..\libs\ofxLua\libs\lua\lzio.c" />
+    <ClCompile Include="..\libs\ofxLua\src\bindings\desktop\ofBindings.cpp" />
+    <ClCompile Include="..\libs\ofxLua\src\bindings\glmBindings.cpp" />
+    <ClCompile Include="..\libs\ofxLua\src\ofxLua.cpp" />
+    <ClCompile Include="..\libs\ofxLua\src\ofxLuaFileWriter.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\libs\rtmidi\RtMidi.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\src\desktop\ofxRtMidiIn.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\src\desktop\ofxRtMidiOut.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\src\ofxBaseMidi.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\src\ofxMidi.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\src\ofxMidiClock.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\src\ofxMidiIn.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\src\ofxMidiMessage.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\src\ofxMidiOut.cpp" />
+    <ClCompile Include="..\libs\ofxMidi\src\ofxMidiTimecode.cpp" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\s_libpdmidi.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\util\ringbuffer.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_print_util.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_queued.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_ringbuffer.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\x_libpdreceive.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\z_hooks.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\z_libpd.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\bob~\bob~.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\bonk~\bonk~.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\choice\choice.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\fiddle~\fiddle~.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\loop~\loop~.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\lrshift~\lrshift~.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\pd~\pdsched.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\pd~\pd~.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\pique\pique.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\sigmund~\sigmund~.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\extra\stdout\stdout.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_arithmetic.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_array.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_ctl.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_dac.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_delay.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_fft.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_fft_fftsg.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_filter.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_global.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_math.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_misc.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_osc.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_resample.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_soundfile.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_soundfile_aiff.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_soundfile_caf.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_soundfile_next.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_soundfile_wave.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_ugen.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_all_guis.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_array.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_bang.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_canvas.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_clone.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_editor.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_editor_extras.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_graph.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_guiconnect.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_io.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_mycanvas.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_numbox.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_radio.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_readwrite.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_rtext.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_scalar.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_slider.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_template.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_text.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_toggle.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_traversal.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_undo.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_vumeter.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_atom.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_binbuf.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_class.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_conf.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_dispatch_gen.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_glob.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_memory.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_obj.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_pd.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_sched.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_audio.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_audio_dummy.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_inter.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_inter_gui.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_loader.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_main.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_net.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_path.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_print.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_utf8.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_acoustics.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_arithmetic.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_array.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_connective.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_file.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_gui.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_interface.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_list.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_midi.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_misc.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_net.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_scalar.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_text.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_time.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_vexp.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_vexp_fun.c" />
+    <ClCompile Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_vexp_if.c" />
+    <ClCompile Include="..\libs\ofxPd\src\ofxPd.cpp" />
+    <ClCompile Include="..\libs\ofxStableDiffusion\src\ofxStableDiffusion.cpp" />
+    <ClCompile Include="..\libs\ofxStableDiffusion\src\ofxStableDiffusionThread.cpp" />
+    <ClCompile Include="..\libs\ofxVolumetrics\src\ofxTexture3d.cpp" />
+    <ClCompile Include="..\libs\ofxVolumetrics\src\ofxVolumetrics.cpp" />
+    <ClCompile Include="..\..\ofxOpenCv\src\ofxCvColorImage.cpp" />
+    <ClCompile Include="..\..\ofxOpenCv\src\ofxCvContourFinder.cpp" />
+    <ClCompile Include="..\..\ofxOpenCv\src\ofxCvFloatImage.cpp" />
+    <ClCompile Include="..\..\ofxOpenCv\src\ofxCvGrayscaleImage.cpp" />
+    <ClCompile Include="..\..\ofxOpenCv\src\ofxCvHaarFinder.cpp" />
+    <ClCompile Include="..\..\ofxOpenCv\src\ofxCvImage.cpp" />
+    <ClCompile Include="..\..\ofxOpenCv\src\ofxCvShortImage.cpp" />
+    <ClCompile Include="..\..\ofxSvg\src\ofxSvg.cpp" />
+    <ClCompile Include="..\..\ofxVectorGraphics\src\ofxVectorGraphics.cpp" />
+    <ClCompile Include="..\..\ofxVectorGraphics\libs\CreEPS.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lapi.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lauxlib.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lcode.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lctype.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ldebug.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ldo.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lfunc.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lgc.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\llex.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\llimits.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lmem.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lobject.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lopcodes.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lparser.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lprefix.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lstate.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lstring.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ltable.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\ltm.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lua.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lua.hpp" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\luaconf.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lualib.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lundump.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lvm.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\libs\lua\lzio.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\src\bindings\ofBindings.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\src\ofxLua.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxLua\src\ofxLuaFileWriter.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\libs\rtmidi\RtMidi.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\desktop\ofxRtMidiIn.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\desktop\ofxRtMidiOut.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxBaseMidi.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidi.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiClock.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiConstants.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiIn.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiMessage.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiOut.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiTimecode.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxMidi\src\ofxMidiTypes.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\cpp\PdBase.hpp" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\cpp\PdMidiReceiver.hpp" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\cpp\PdReceiver.hpp" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\cpp\PdTypes.hpp" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util\ringbuffer.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_print_util.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_queued.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\x_libpdreceive.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\z_hooks.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\libpd_wrapper\z_libpd.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_all_guis.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_canvas.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\g_undo.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_imp.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\m_pd.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_net.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_stuff.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\s_utf8.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\libs\libpd\pure-data\src\x_vexp.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\libs\ofxPd\src\ofxPd.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfelia.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaClient.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaCreator.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaData.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaDefine.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaEvents.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaExists.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaFunction.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaGet.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaGL.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaIO.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaLog.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaLua.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaPdBindings.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaSet.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaSetup.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaSignal.h" />
-    <ClInclude Include="..\..\..\addons\ofxOfelia\src\ofxOfeliaTextBuf.h" />
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\src\ofxAssimpAnimation.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\src\ofxAssimpModelLoader.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\src\ofxAssimpTexture.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\src\ofxAssimpUtils.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\aabb.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\ai_assert.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\anim.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\AssertHandler.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Base64.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\BaseImporter.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Bitmap.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\BlobIOSystem.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\ByteSwapper.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\camera.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\cexport.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\cfileio.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\cimport.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\ColladaMetaData.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\color4.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\commonMetaData.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler\pstdint.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\config.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\CreateAnimMesh.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\DefaultIOStream.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\DefaultIOSystem.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\defs.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Exceptional.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Exporter.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\fast_atof.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\GenericProperty.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\GltfMaterial.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Hash.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Importer.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\importerdesc.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\IOStream.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\IOStreamBuffer.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\IOSystem.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\light.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\LineSplitter.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\LogAux.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Logger.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\LogStream.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\material.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\MathFunctions.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\matrix3x3.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\matrix4x4.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\MemoryIOWrapper.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\mesh.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\metadata.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\NullLogger.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\ObjMaterial.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\ParsingUtils.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\pbrmaterial.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\port\AndroidJNI\AndroidJNIIOSystem.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\port\AndroidJNI\BundledAssetIOSystem.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\postprocess.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Profiler.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\qnan.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\quaternion.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\RemoveComments.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\scene.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\SceneCombiner.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\SGSpatialSort.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\SkeletonMeshBuilder.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\SmallVector.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\SmoothingGroups.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\SpatialSort.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\StandardShapes.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\StreamReader.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\StreamWriter.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\StringComparison.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\StringUtils.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Subdivision.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\texture.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\TinyFormatter.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\types.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\vector2.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\vector3.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\version.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\Vertex.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\XmlParser.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\XMLTools.h" />
+    <ClInclude Include="..\..\ofxAssimpModelLoader\libs\assimp\include\assimp\ZipArchiveIOSystem.h" />
+    <ClInclude Include="..\src\ofxOfelia.h" />
+    <ClInclude Include="..\src\ofxOfeliaClient.h" />
+    <ClInclude Include="..\src\ofxOfeliaCreator.h" />
+    <ClInclude Include="..\src\ofxOfeliaData.h" />
+    <ClInclude Include="..\src\ofxOfeliaDefine.h" />
+    <ClInclude Include="..\src\ofxOfeliaEvents.h" />
+    <ClInclude Include="..\src\ofxOfeliaExists.h" />
+    <ClInclude Include="..\src\ofxOfeliaFunction.h" />
+    <ClInclude Include="..\src\ofxOfeliaGet.h" />
+    <ClInclude Include="..\src\ofxOfeliaGL.h" />
+    <ClInclude Include="..\src\ofxOfeliaIO.h" />
+    <ClInclude Include="..\src\ofxOfeliaLog.h" />
+    <ClInclude Include="..\src\ofxOfeliaLua.h" />
+    <ClInclude Include="..\src\ofxOfeliaPdBindings.h" />
+    <ClInclude Include="..\src\ofxOfeliaSet.h" />
+    <ClInclude Include="..\src\ofxOfeliaSetup.h" />
+    <ClInclude Include="..\src\ofxOfeliaSignal.h" />
+    <ClInclude Include="..\src\ofxOfeliaTextBuf.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw_arc_support.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_glfw_context_support.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl2.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\extras\imgui_stdlib.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\src\imgui.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\src\imgui_internal.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\src\imstb_rectpack.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\src\imstb_textedit.h" />
+    <ClInclude Include="..\libs\ofxImGui\libs\imgui\src\imstb_truetype.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\BaseEngine.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\BaseTheme.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\DefaultTheme.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\EngineGLFW.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\EngineOpenFrameworks.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\EngineOpenGLES.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\EngineVk.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\gles1CompatibilityHacks.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\glfwCompatibilityHacks.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\Gui.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\imconfig.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\ImHelpers.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\LinkedList.hpp" />
+    <ClInclude Include="..\libs\ofxImGui\src\ofxImGui.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\ofxImGuiConstants.h" />
+    <ClInclude Include="..\libs\ofxImGui\src\ofxImGuiLoggerChannel.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lapi.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lauxlib.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lcode.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lctype.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\ldebug.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\ldo.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lfunc.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lgc.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\ljumptab.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\llex.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\llimits.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lmem.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lobject.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lopcodes.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lopnames.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lparser.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lprefix.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lstate.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lstring.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\ltable.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\ltm.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lua.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lua.hpp" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\luaconf.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lualib.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lundump.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lvm.h" />
+    <ClInclude Include="..\libs\ofxLua\libs\lua\lzio.h" />
+    <ClInclude Include="..\libs\ofxLua\src\bindings\ofBindings.h" />
+    <ClInclude Include="..\libs\ofxLua\src\ofxLua.h" />
+    <ClInclude Include="..\libs\ofxLua\src\ofxLuaFileWriter.h" />
+    <ClInclude Include="..\libs\ofxLua\swig\custom\ofMathConstants.h" />
+    <ClInclude Include="..\libs\ofxMidi\libs\rtmidi\RtMidi.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\desktop\ofxRtMidiIn.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\desktop\ofxRtMidiOut.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\ofxBaseMidi.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\ofxMidi.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\ofxMidiClock.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\ofxMidiConstants.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\ofxMidiIn.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\ofxMidiMessage.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\ofxMidiOut.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\ofxMidiTimecode.h" />
+    <ClInclude Include="..\libs\ofxMidi\src\ofxMidiTypes.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\cpp\PdBase.hpp" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\cpp\PdMidiReceiver.hpp" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\cpp\PdReceiver.hpp" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\cpp\PdTypes.hpp" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\util\ringbuffer.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_print_util.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_queued.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\util\z_ringbuffer.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\x_libpdreceive.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\z_hooks.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\libpd_wrapper\z_libpd.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_osc.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\d_soundfile.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_all_guis.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_canvas.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\g_undo.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_dispatch.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_imp.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_pd.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\m_private_utils.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_net.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_stuff.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\s_utf8.h" />
+    <ClInclude Include="..\libs\ofxPd\libs\libpd\pure-data\src\x_vexp.h" />
+    <ClInclude Include="..\libs\ofxPd\src\ofxPd.h" />
+    <ClInclude Include="..\libs\ofxStableDiffusion\libs\stable-diffusion\include\stable-diffusion.h" />
+    <ClInclude Include="..\libs\ofxStableDiffusion\src\ofxStableDiffusion.h" />
+    <ClInclude Include="..\libs\ofxStableDiffusion\src\ofxStableDiffusionThread.h" />
+    <ClInclude Include="..\libs\ofxVolumetrics\src\ofxImageSequencePlayer.h" />
+    <ClInclude Include="..\libs\ofxVolumetrics\src\ofxTexture3d.h" />
+    <ClInclude Include="..\libs\ofxVolumetrics\src\ofxVolumetrics.h" />
+    <ClInclude Include="..\libs\srtparser.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxCvBlob.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxCvColorImage.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxCvConstants.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxCvContourFinder.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxCvFloatImage.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxCvGrayscaleImage.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxCvHaarFinder.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxCvImage.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxCvShortImage.h" />
+    <ClInclude Include="..\..\ofxOpenCv\src\ofxOpenCv.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\aruco\aruco_calib.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\aruco\charuco.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\aruco.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\bgsegm.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\bioinspired\bioinspired.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\bioinspired\retina.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\bioinspired\retinafasttonemapping.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\bioinspired\transientareassegmentationmodule.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\bioinspired.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\calib3d\calib3d.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\calib3d\calib3d_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\calib3d.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\affine.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\async.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\base.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\bindings_utils.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\bufferpool.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\check.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\core.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\core_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\block.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\border_interpolate.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\color.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\common.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\datamov_utils.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail\color_detail.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail\reduce.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail\reduce_key_val.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail\transform_detail.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail\type_traits_detail.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\detail\vec_distance_detail.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\dynamic_smem.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\emulation.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\filters.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\funcattrib.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\functional.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\limits.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\reduce.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\saturate_cast.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\scan.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\simd_functions.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\transform.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\type_traits.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\utility.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\vec_distance.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\vec_math.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\vec_traits.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\warp.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\warp_reduce.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda\warp_shuffle.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda.inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda_stream_accessor.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cuda_types.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cvdef.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cvstd.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cvstd.inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cvstd_wrapper.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cv_cpu_dispatch.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\cv_cpu_helper.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\detail\async_promise.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\detail\dispatch_helper.impl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\detail\exception_ptr.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\directx.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\dualquaternion.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\dualquaternion.inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\eigen.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\fast_math.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\hal.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\interface.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_avx.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_avx512.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_cpp.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_forward.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_lasx.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_lsx.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_msa.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_neon.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_rvv.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_rvv071.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_rvv_010_compat_non-policy.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_rvv_010_compat_overloaded-non-policy.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_rvv_011_compat.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_rvv_compat_overloaded.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_rvv_scalable.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_sse.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_sse_em.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_vsx.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\intrin_wasm.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\msa_macros.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\hal\simd_utils.impl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\mat.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\mat.inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\matx.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\matx.inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\neon_utils.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\ocl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\ocl_genbase.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\ocl_defs.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\opencl_info.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\opencl_svm.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated\opencl_clblas.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated\opencl_clfft.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated\opencl_core.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated\opencl_core_wrappers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\opencl_clblas.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\opencl_clfft.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\opencl_core.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\opencl_core_wrappers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\opencl_gl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\opencl_svm_20.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\opencl_svm_definitions.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opencl\runtime\opencl_svm_hsa_extension.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\opengl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\operations.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\optim.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\ovx.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\parallel\backend\parallel_for.openmp.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\parallel\backend\parallel_for.tbb.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\parallel\parallel_backend.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\persistence.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\quaternion.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\quaternion.inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\saturate.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\simd_intrinsics.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\softfloat.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\sse_utils.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\traits.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\types.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\types_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utility.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\allocator_stats.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\allocator_stats.impl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\filesystem.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\fp_control_utils.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\instrumentation.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\logger.defines.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\logger.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\logtag.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\tls.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\utils\trace.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\va_intel.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\version.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core\vsx_utils.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\core_detect.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\cvconfig.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\ar_hmdb.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\ar_sports.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\dataset.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\fr_adience.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\fr_lfw.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\gr_chalearn.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\gr_skig.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\hpe_humaneva.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\hpe_parse.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\ir_affine.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\ir_robot.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\is_bsds.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\is_weizmann.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\msm_epfl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\msm_middlebury.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\or_imagenet.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\or_mnist.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\or_pascal.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\or_sun.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\pd_caltech.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\pd_inria.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\slam_kitti.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\slam_tumindoor.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\sr_bsds.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\sr_div2k.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\sr_general100.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\track_alov.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\track_vot.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\tr_chars.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\tr_icdar.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\tr_svt.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\datasets\util.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\all_layers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\dict.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\dnn.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\dnn.inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\layer.details.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\layer.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\shape_utils.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\utils\debug_utils.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\utils\inference_engine.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn\version.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dnn_superres.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\dpm.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face\bif.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face\facemark.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face\facemarkAAM.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face\facemarkLBF.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face\facemark_train.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face\facerec.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face\face_alignment.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face\mace.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face\predict_collector.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\face.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\features2d\features2d.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\features2d\hal\interface.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\features2d.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\allocator.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\all_indices.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\any.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\autotuned_index.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\composite_index.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\config.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\defines.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\dist.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\dummy.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\dynamic_bitset.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\flann.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\flann_base.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\general.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\ground_truth.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\hdf5.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\heap.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\hierarchical_clustering_index.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\index_testing.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\kdtree_index.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\kdtree_single_index.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\kmeans_index.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\linear_index.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\logger.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\lsh_index.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\lsh_table.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\matrix.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\miniflann.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\nn_index.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\object_factory.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\params.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\random.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\result_set.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\sampling.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\saving.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\simplex_downhill.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann\timer.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\flann.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\fuzzy\fuzzy_F0_math.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\fuzzy\fuzzy_F1_math.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\fuzzy\fuzzy_image.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\fuzzy\types.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\fuzzy.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\hfs.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs\imgcodecs.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs\imgcodecs_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs\ios.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs\legacy\constants_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs\macosx.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgcodecs.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\bindings.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\detail\gcgraph.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\detail\legacy.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\hal\hal.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\hal\interface.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\imgproc.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\imgproc_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\segmentation.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc\types_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\imgproc.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash\average_hash.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash\block_mean_hash.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash\color_moment_hash.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash\img_hash_base.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash\marr_hildreth_hash.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash\phash.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash\radial_variance_hash.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\img_hash.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\intensity_transform.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\line_descriptor\descriptor.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\line_descriptor.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\mcc\ccm.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\mcc\checker_detector.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\mcc\checker_model.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\mcc.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ml\ml.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ml\ml.inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ml.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect\aruco_board.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect\aruco_detector.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect\aruco_dictionary.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect\barcode.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect\charuco_detector.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect\detection_based_tracker.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect\face.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect\graphical_code_detector.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect\objdetect.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\objdetect.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\opencv.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\opencv_modules.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\optflow\motempl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\optflow\pcaflow.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\optflow\rlofflow.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\optflow\sparse_matching_gpc.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\optflow.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\phase_unwrapping\histogramphaseunwrapping.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\phase_unwrapping\phase_unwrapping.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\phase_unwrapping.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\photo\cuda.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\photo\legacy\constants_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\photo\photo.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\photo.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\plot.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\quality\qualitybase.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\quality\qualitybrisque.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\quality\qualitygmsd.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\quality\qualitymse.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\quality\qualitypsnr.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\quality\qualityssim.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\quality\quality_utils.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\quality.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rapid.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\map.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mapaffine.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mapper.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mappergradaffine.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mappergradeuclid.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mappergradproj.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mappergradshift.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mappergradsimilar.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mapperpyramid.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mapprojec.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\reg\mapshift.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\colored_kinfu.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\depth.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\detail\pose_graph.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\dynafu.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\intrinsics.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\kinfu.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\large_kinfu.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\linemod.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd\volume.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\rgbd.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\saliency\saliencyBaseClasses.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\saliency\saliencySpecializedClasses.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\saliency.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\shape\emdL1.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\shape\hist_cost.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\shape\shape.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\shape\shape_distance.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\shape\shape_transformer.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\shape.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\signal\signal_resample.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\signal.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stereo\descriptor.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stereo\quasi_dense_stereo.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stereo\stereo.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stereo.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\autocalib.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\blenders.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\camera.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\exposure_compensate.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\matchers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\motion_estimators.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\seam_finders.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\timelapsers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\util.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\util_inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\warpers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\warpers_inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching\warpers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\stitching.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\structured_light\graycodepattern.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\structured_light\sinusoidalpattern.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\structured_light\structured_light.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\structured_light.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\superres\optical_flow.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\superres.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\surface_matching\icp.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\surface_matching\pose_3d.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\surface_matching\ppf_helpers.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\surface_matching\ppf_match_3d.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\surface_matching\t_hash_int.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\surface_matching.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\text\erfilter.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\text\ocr.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\text\swt_text_detection.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\text\textDetector.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\text.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking\feature.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking\kalman_filters.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking\onlineBoosting.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking\tldDataset.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking\tracking.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking\tracking_by_matching.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking\tracking_internals.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking\tracking_legacy.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking\twist.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\tracking.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\video\background_segm.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\video\detail\tracking.detail.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\video\legacy\constants_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\video\tracking.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\video\video.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\video.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio\cap_ios.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio\legacy\constants_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio\registry.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio\videoio.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio\videoio_c.h" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videoio.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\deblurring.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\fast_marching.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\fast_marching_inl.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\frame_source.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\global_motion.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\inpainting.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\log.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\motion_core.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\motion_stabilizing.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\optical_flow.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\outlier_rejection.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\ring_buffer.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\stabilizer.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab\wobble_suppression.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\videostab.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\wechat_qrcode.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xfeatures2d\cuda.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xfeatures2d\nonfree.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xfeatures2d.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\brightedges.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\color_match.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\deriche_filter.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\disparity_filter.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\edgeboxes.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\edgepreserving_filter.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\edge_drawing.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\edge_filter.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\estimated_covariance.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\fast_hough_transform.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\fast_line_detector.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\find_ellipses.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\fourier_descriptors.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\lsc.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\paillou_filter.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\peilin.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\radon_transform.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\ridgefilter.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\run_length_morphology.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\scansegment.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\seeds.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\segmentation.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\slic.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\sparse_match_interpolator.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\structured_edge_detection.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc\weighted_median_filter.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\ximgproc.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xobjdetect.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xphoto\bm3d_image_denoising.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xphoto\dct_image_denoising.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xphoto\inpainting.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xphoto\oilpainting.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xphoto\tonemap.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xphoto\white_balance.hpp" />
+    <ClInclude Include="..\..\ofxOpenCv\libs\opencv\include\opencv2\xphoto.hpp" />
+    <ClInclude Include="..\..\ofxSvg\src\ofxSvg.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\c14n.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\catalog.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\chvalid.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\debugXML.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\dict.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\encoding.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\entities.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\globals.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\hash.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\HTMLparser.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\HTMLtree.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\list.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\nanoftp.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\nanohttp.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\parser.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\parserInternals.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\pattern.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\relaxng.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\SAX.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\SAX2.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\schemasInternals.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\schematron.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\threads.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\tree.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\uri.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\valid.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xinclude.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xlink.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlautomata.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlerror.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlexports.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlIO.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlmemory.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlmodule.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlreader.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlregexp.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlsave.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlschemas.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlschemastypes.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlstring.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlunicode.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlversion.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xmlwriter.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xpath.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xpathInternals.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\libxml2\include\libxml\xpointer.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\svgtiny\include\svgtiny.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\svgtiny\include\xmlerror.h" />
+    <ClInclude Include="..\..\ofxSvg\libs\svgtiny\include\xmlparser.h" />
+    <ClInclude Include="..\..\ofxVectorGraphics\src\ofxVectorGraphics.h" />
+    <ClInclude Include="..\..\ofxVectorGraphics\libs\CreEPS.hpp" />
+    <ClInclude Include="..\..\ofxVectorGraphics\libs\CreEPS_Types.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
@@ -437,13 +1178,9 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64' or '$(Configuration)|$(Platform)'=='Debug|ARM64' or '$(Configuration)|$(Platform)'=='Debug|ARM64EC'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ProjectExtensions>
@@ -451,13 +1188,4 @@
       <UserProperties RESOURCE_FILE="icon.rc" />
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="packages\pthreads.redist.2.9.1.4\build\native\pthreads.redist.targets" Condition="Exists('packages\pthreads.redist.2.9.1.4\build\native\pthreads.redist.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('packages\pthreads.redist.2.9.1.4\build\native\pthreads.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\pthreads.redist.2.9.1.4\build\native\pthreads.redist.targets'))" />
-    <Error Condition="!Exists('packages\pthreads.2.9.1.4\build\native\pthreads.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\pthreads.2.9.1.4\build\native\pthreads.targets'))" />
-  </Target>
-  <Import Project="packages\pthreads.2.9.1.4\build\native\pthreads.targets" Condition="Exists('packages\pthreads.2.9.1.4\build\native\pthreads.targets')" />
 </Project>

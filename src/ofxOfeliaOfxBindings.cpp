@@ -2762,96 +2762,97 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 #define SWIGTYPE_p_f_int_int_float_p_void__void swig_types[25]
 #define SWIGTYPE_p_f_q_const__p_q_const__CreEPS_CHAR_v_______void swig_types[26]
 #define SWIGTYPE_p_float swig_types[27]
-#define SWIGTYPE_p_glm__mat4 swig_types[28]
-#define SWIGTYPE_p_glm__vec2 swig_types[29]
-#define SWIGTYPE_p_glm__vec3 swig_types[30]
-#define SWIGTYPE_p_int swig_types[31]
-#define SWIGTYPE_p_long_long swig_types[32]
-#define SWIGTYPE_p_ns_creeps__CAt swig_types[33]
-#define SWIGTYPE_p_ns_creeps__CAtBackgroundColor swig_types[34]
-#define SWIGTYPE_p_ns_creeps__CAtCheckerboardFilling swig_types[35]
-#define SWIGTYPE_p_ns_creeps__CAtColor swig_types[36]
-#define SWIGTYPE_p_ns_creeps__CAtFont swig_types[37]
-#define SWIGTYPE_p_ns_creeps__CAtGrayScale swig_types[38]
-#define SWIGTYPE_p_ns_creeps__CAtHexDotFilling swig_types[39]
-#define SWIGTYPE_p_ns_creeps__CAtLineCap swig_types[40]
-#define SWIGTYPE_p_ns_creeps__CAtLineDash swig_types[41]
-#define SWIGTYPE_p_ns_creeps__CAtLineJoin swig_types[42]
-#define SWIGTYPE_p_ns_creeps__CAtLineThickness swig_types[43]
-#define SWIGTYPE_p_ns_creeps__CAtStripeFilling swig_types[44]
-#define SWIGTYPE_p_ns_creeps__CAtTextAlignment swig_types[45]
-#define SWIGTYPE_p_ns_creeps__CAtTransparentBackground swig_types[46]
-#define SWIGTYPE_p_ns_creeps__CreEPS swig_types[47]
-#define SWIGTYPE_p_ofAbstractImage swig_types[48]
-#define SWIGTYPE_p_ofBaseDraws swig_types[49]
-#define SWIGTYPE_p_ofBaseImage_T_unsigned_char_t swig_types[50]
-#define SWIGTYPE_p_ofBaseVideoDraws swig_types[51]
-#define SWIGTYPE_p_ofBuffer swig_types[52]
-#define SWIGTYPE_p_ofColor_T_float_t swig_types[53]
-#define SWIGTYPE_p_ofColor_T_unsigned_char_t swig_types[54]
-#define SWIGTYPE_p_ofColor_T_unsigned_short_t swig_types[55]
-#define SWIGTYPE_p_ofFbo swig_types[56]
-#define SWIGTYPE_p_ofImage_T_float_t swig_types[57]
-#define SWIGTYPE_p_ofImage_T_unsigned_char_t swig_types[58]
-#define SWIGTYPE_p_ofImage_T_unsigned_short_t swig_types[59]
-#define SWIGTYPE_p_ofMaterial swig_types[60]
-#define SWIGTYPE_p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[61]
-#define SWIGTYPE_p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[62]
-#define SWIGTYPE_p_ofMouseEventArgs swig_types[63]
-#define SWIGTYPE_p_ofPath swig_types[64]
-#define SWIGTYPE_p_ofPixels_T_float_t swig_types[65]
-#define SWIGTYPE_p_ofPixels_T_unsigned_char_t swig_types[66]
-#define SWIGTYPE_p_ofPixels_T_unsigned_short_t swig_types[67]
-#define SWIGTYPE_p_ofPolyline_T_ofDefaultVertexType_t swig_types[68]
-#define SWIGTYPE_p_ofRectangle swig_types[69]
-#define SWIGTYPE_p_ofTexture swig_types[70]
-#define SWIGTYPE_p_ofTouchEventArgs swig_types[71]
-#define SWIGTYPE_p_ofVboMesh swig_types[72]
-#define SWIGTYPE_p_ofVec3f swig_types[73]
-#define SWIGTYPE_p_ofVideoGrabber swig_types[74]
-#define SWIGTYPE_p_ofVideoPlayer swig_types[75]
-#define SWIGTYPE_p_ofWindowPosEventArgs swig_types[76]
-#define SWIGTYPE_p_ofxAssimpAnimation swig_types[77]
-#define SWIGTYPE_p_ofxAssimpMeshHelper swig_types[78]
-#define SWIGTYPE_p_ofxAssimpModelLoader swig_types[79]
-#define SWIGTYPE_p_ofxCvBlob swig_types[80]
-#define SWIGTYPE_p_ofxCvColorImage swig_types[81]
-#define SWIGTYPE_p_ofxCvContourFinder swig_types[82]
-#define SWIGTYPE_p_ofxCvFloatImage swig_types[83]
-#define SWIGTYPE_p_ofxCvGrayscaleImage swig_types[84]
-#define SWIGTYPE_p_ofxCvHaarFinder swig_types[85]
-#define SWIGTYPE_p_ofxCvImage swig_types[86]
-#define SWIGTYPE_p_ofxCvShortImage swig_types[87]
-#define SWIGTYPE_p_ofxImageSequencePlayer swig_types[88]
-#define SWIGTYPE_p_ofxStableDiffusion swig_types[89]
-#define SWIGTYPE_p_ofxSvg swig_types[90]
-#define SWIGTYPE_p_ofxTextureData3d swig_types[91]
-#define SWIGTYPE_p_ofxVectorGraphics swig_types[92]
-#define SWIGTYPE_p_ofxVolumetrics swig_types[93]
-#define SWIGTYPE_p_sd_ctx_t swig_types[94]
-#define SWIGTYPE_p_sd_image_t swig_types[95]
-#define SWIGTYPE_p_short swig_types[96]
-#define SWIGTYPE_p_signed_char swig_types[97]
-#define SWIGTYPE_p_size_type swig_types[98]
-#define SWIGTYPE_p_stableDiffusionThread swig_types[99]
-#define SWIGTYPE_p_std__shared_ptrT_aiScene_const_t swig_types[100]
-#define SWIGTYPE_p_std__string swig_types[101]
-#define SWIGTYPE_p_std__vectorT_SubtitleItem_p_t swig_types[102]
-#define SWIGTYPE_p_std__vectorT_glm__vec3_t swig_types[103]
-#define SWIGTYPE_p_std__vectorT_long_t swig_types[104]
-#define SWIGTYPE_p_std__vectorT_ofPath_t swig_types[105]
-#define SWIGTYPE_p_std__vectorT_ofxCvBlob_t swig_types[106]
-#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[107]
-#define SWIGTYPE_p_string swig_types[108]
-#define SWIGTYPE_p_unsigned_char swig_types[109]
-#define SWIGTYPE_p_unsigned_int swig_types[110]
-#define SWIGTYPE_p_unsigned_long swig_types[111]
-#define SWIGTYPE_p_unsigned_long_long swig_types[112]
-#define SWIGTYPE_p_unsigned_short swig_types[113]
-#define SWIGTYPE_p_upscaler_ctx_t swig_types[114]
-#define SWIGTYPE_p_value_type swig_types[115]
-static swig_type_info *swig_types[117];
-static swig_module_info swig_module = {swig_types, 116, 0, 0, 0, 0};
+#define SWIGTYPE_p_glm__mat3 swig_types[28]
+#define SWIGTYPE_p_glm__mat4 swig_types[29]
+#define SWIGTYPE_p_glm__vec2 swig_types[30]
+#define SWIGTYPE_p_glm__vec3 swig_types[31]
+#define SWIGTYPE_p_glm__vec4 swig_types[32]
+#define SWIGTYPE_p_int swig_types[33]
+#define SWIGTYPE_p_long_long swig_types[34]
+#define SWIGTYPE_p_ns_creeps__CAt swig_types[35]
+#define SWIGTYPE_p_ns_creeps__CAtBackgroundColor swig_types[36]
+#define SWIGTYPE_p_ns_creeps__CAtCheckerboardFilling swig_types[37]
+#define SWIGTYPE_p_ns_creeps__CAtColor swig_types[38]
+#define SWIGTYPE_p_ns_creeps__CAtFont swig_types[39]
+#define SWIGTYPE_p_ns_creeps__CAtGrayScale swig_types[40]
+#define SWIGTYPE_p_ns_creeps__CAtHexDotFilling swig_types[41]
+#define SWIGTYPE_p_ns_creeps__CAtLineCap swig_types[42]
+#define SWIGTYPE_p_ns_creeps__CAtLineDash swig_types[43]
+#define SWIGTYPE_p_ns_creeps__CAtLineJoin swig_types[44]
+#define SWIGTYPE_p_ns_creeps__CAtLineThickness swig_types[45]
+#define SWIGTYPE_p_ns_creeps__CAtStripeFilling swig_types[46]
+#define SWIGTYPE_p_ns_creeps__CAtTextAlignment swig_types[47]
+#define SWIGTYPE_p_ns_creeps__CAtTransparentBackground swig_types[48]
+#define SWIGTYPE_p_ns_creeps__CreEPS swig_types[49]
+#define SWIGTYPE_p_ofAbstractImage swig_types[50]
+#define SWIGTYPE_p_ofBaseDraws swig_types[51]
+#define SWIGTYPE_p_ofBaseImage_T_unsigned_char_t swig_types[52]
+#define SWIGTYPE_p_ofBaseVideoDraws swig_types[53]
+#define SWIGTYPE_p_ofBuffer swig_types[54]
+#define SWIGTYPE_p_ofColor_T_float_t swig_types[55]
+#define SWIGTYPE_p_ofColor_T_unsigned_char_t swig_types[56]
+#define SWIGTYPE_p_ofColor_T_unsigned_short_t swig_types[57]
+#define SWIGTYPE_p_ofFbo swig_types[58]
+#define SWIGTYPE_p_ofImage_T_float_t swig_types[59]
+#define SWIGTYPE_p_ofImage_T_unsigned_char_t swig_types[60]
+#define SWIGTYPE_p_ofImage_T_unsigned_short_t swig_types[61]
+#define SWIGTYPE_p_ofMaterial swig_types[62]
+#define SWIGTYPE_p_ofMeshFace_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[63]
+#define SWIGTYPE_p_ofMesh_T_ofDefaultVertexType_ofDefaultNormalType_ofDefaultColorType_ofDefaultTexCoordType_t swig_types[64]
+#define SWIGTYPE_p_ofMouseEventArgs swig_types[65]
+#define SWIGTYPE_p_ofPath swig_types[66]
+#define SWIGTYPE_p_ofPixels_T_float_t swig_types[67]
+#define SWIGTYPE_p_ofPixels_T_unsigned_char_t swig_types[68]
+#define SWIGTYPE_p_ofPixels_T_unsigned_short_t swig_types[69]
+#define SWIGTYPE_p_ofPolyline_T_ofDefaultVertexType_t swig_types[70]
+#define SWIGTYPE_p_ofRectangle swig_types[71]
+#define SWIGTYPE_p_ofTexture swig_types[72]
+#define SWIGTYPE_p_ofTouchEventArgs swig_types[73]
+#define SWIGTYPE_p_ofVboMesh swig_types[74]
+#define SWIGTYPE_p_ofVec3f swig_types[75]
+#define SWIGTYPE_p_ofVideoGrabber swig_types[76]
+#define SWIGTYPE_p_ofVideoPlayer swig_types[77]
+#define SWIGTYPE_p_ofWindowPosEventArgs swig_types[78]
+#define SWIGTYPE_p_ofxAssimpAnimation swig_types[79]
+#define SWIGTYPE_p_ofxAssimpMeshHelper swig_types[80]
+#define SWIGTYPE_p_ofxAssimpModelLoader swig_types[81]
+#define SWIGTYPE_p_ofxCvBlob swig_types[82]
+#define SWIGTYPE_p_ofxCvColorImage swig_types[83]
+#define SWIGTYPE_p_ofxCvContourFinder swig_types[84]
+#define SWIGTYPE_p_ofxCvFloatImage swig_types[85]
+#define SWIGTYPE_p_ofxCvGrayscaleImage swig_types[86]
+#define SWIGTYPE_p_ofxCvHaarFinder swig_types[87]
+#define SWIGTYPE_p_ofxCvImage swig_types[88]
+#define SWIGTYPE_p_ofxCvShortImage swig_types[89]
+#define SWIGTYPE_p_ofxImageSequencePlayer swig_types[90]
+#define SWIGTYPE_p_ofxStableDiffusion swig_types[91]
+#define SWIGTYPE_p_ofxSvg swig_types[92]
+#define SWIGTYPE_p_ofxTextureData3d swig_types[93]
+#define SWIGTYPE_p_ofxVectorGraphics swig_types[94]
+#define SWIGTYPE_p_ofxVolumetrics swig_types[95]
+#define SWIGTYPE_p_sd_ctx_t swig_types[96]
+#define SWIGTYPE_p_sd_image_t swig_types[97]
+#define SWIGTYPE_p_short swig_types[98]
+#define SWIGTYPE_p_signed_char swig_types[99]
+#define SWIGTYPE_p_size_type swig_types[100]
+#define SWIGTYPE_p_std__shared_ptrT_aiScene_const_t swig_types[101]
+#define SWIGTYPE_p_std__string swig_types[102]
+#define SWIGTYPE_p_std__vectorT_SubtitleItem_p_t swig_types[103]
+#define SWIGTYPE_p_std__vectorT_glm__vec3_t swig_types[104]
+#define SWIGTYPE_p_std__vectorT_long_t swig_types[105]
+#define SWIGTYPE_p_std__vectorT_ofPath_t swig_types[106]
+#define SWIGTYPE_p_std__vectorT_ofxCvBlob_t swig_types[107]
+#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[108]
+#define SWIGTYPE_p_string swig_types[109]
+#define SWIGTYPE_p_unsigned_char swig_types[110]
+#define SWIGTYPE_p_unsigned_int swig_types[111]
+#define SWIGTYPE_p_unsigned_long swig_types[112]
+#define SWIGTYPE_p_unsigned_long_long swig_types[113]
+#define SWIGTYPE_p_unsigned_short swig_types[114]
+#define SWIGTYPE_p_upscaler_ctx_t swig_types[115]
+#define SWIGTYPE_p_value_type swig_types[116]
+static swig_type_info *swig_types[118];
+static swig_module_info swig_module = {swig_types, 117, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2957,6 +2958,9 @@ SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
 
 #include <string.h>
 
+SWIGINTERN sd_image_t ofxStableDiffusion_getImageAt(ofxStableDiffusion const *self,size_t index){
+        return self->returnImages()[index];
+    }
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -8052,12 +8056,12 @@ static int _wrap_new_CvHaarFinder(lua_State* L) { int argc; int argv[2]={ 1,2} ;
   "    ofxCvHaarFinder::ofxCvHaarFinder()\n" "    ofxCvHaarFinder::ofxCvHaarFinder(ofxCvHaarFinder const &)\n");
   lua_error(L);return 0; }
 static int _wrap_CvHaarFinder_setup(lua_State* L) { { int SWIG_arg = 0; ofxCvHaarFinder *arg1 = (ofxCvHaarFinder *) 0 ;
-    std::string arg2 ; SWIG_check_num_args("ofxCvHaarFinder::setup",2,2)
+    of::filesystem::path *arg2 = 0 ; of::filesystem::path temp2 ; SWIG_check_num_args("ofxCvHaarFinder::setup",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxCvHaarFinder::setup",1,"ofxCvHaarFinder *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxCvHaarFinder::setup",2,"std::string");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxCvHaarFinder::setup",2,"of::filesystem::path const &");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxCvHaarFinder,0))){
-      SWIG_fail_ptr("CvHaarFinder_setup",1,SWIGTYPE_p_ofxCvHaarFinder); }  { size_t len;
-      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  (arg1)->setup(arg2); return SWIG_arg;
+      SWIG_fail_ptr("CvHaarFinder_setup",1,SWIGTYPE_p_ofxCvHaarFinder); }  { size_t len = lua_rawlen(L, 2);
+      temp2 = lua_tolstring(L, 2, &len); arg2 = &temp2; }  (arg1)->setup((of::filesystem::path const &)*arg2); return SWIG_arg;
     fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_CvHaarFinder_setScaleHaar(lua_State* L) { { int SWIG_arg = 0; ofxCvHaarFinder *arg1 = (ofxCvHaarFinder *) 0 ;
     float arg2 ; SWIG_check_num_args("ofxCvHaarFinder::setScaleHaar",2,2)
@@ -8654,14 +8658,14 @@ static int _wrap_CvContourFinder_setAnchorPercent(lua_State* L) { { int SWIG_arg
     arg3 = (float)lua_tonumber(L, 3); (arg1)->setAnchorPercent(arg2,arg3); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
 static int _wrap_CvContourFinder_setAnchorPoint(lua_State* L) { { int SWIG_arg = 0;
-    ofxCvContourFinder *arg1 = (ofxCvContourFinder *) 0 ; int arg2 ; int arg3 ;
+    ofxCvContourFinder *arg1 = (ofxCvContourFinder *) 0 ; float arg2 ; float arg3 ;
     SWIG_check_num_args("ofxCvContourFinder::setAnchorPoint",3,3)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxCvContourFinder::setAnchorPoint",1,"ofxCvContourFinder *");
-    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxCvContourFinder::setAnchorPoint",2,"int");
-    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxCvContourFinder::setAnchorPoint",3,"int");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxCvContourFinder::setAnchorPoint",2,"float");
+    if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxCvContourFinder::setAnchorPoint",3,"float");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxCvContourFinder,0))){
-      SWIG_fail_ptr("CvContourFinder_setAnchorPoint",1,SWIGTYPE_p_ofxCvContourFinder); }  arg2 = (int)lua_tonumber(L, 2);
-    arg3 = (int)lua_tonumber(L, 3); (arg1)->setAnchorPoint(arg2,arg3); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
+      SWIG_fail_ptr("CvContourFinder_setAnchorPoint",1,SWIGTYPE_p_ofxCvContourFinder); }  arg2 = (float)lua_tonumber(L, 2);
+    arg3 = (float)lua_tonumber(L, 3); (arg1)->setAnchorPoint(arg2,arg3); return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L);
   return 0; }
 static int _wrap_CvContourFinder_resetAnchor(lua_State* L) { { int SWIG_arg = 0;
     ofxCvContourFinder *arg1 = (ofxCvContourFinder *) 0 ; SWIG_check_num_args("ofxCvContourFinder::resetAnchor",1,1)
@@ -10525,24 +10529,24 @@ static int _wrap_new_AssimpModelLoader(lua_State* L) { { int SWIG_arg = 0; ofxAs
     SWIG_NewPointerObj(L,result,SWIGTYPE_p_ofxAssimpModelLoader,1); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
 static int _wrap_AssimpModelLoader_load__SWIG_0(lua_State* L) { { int SWIG_arg = 0;
-    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; std::string arg2 ; int arg3 ; bool result;
-    SWIG_check_num_args("ofxAssimpModelLoader::load",3,3)
+    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; of::filesystem::path *arg2 = 0 ; int arg3 ;
+    of::filesystem::path temp2 ; bool result; SWIG_check_num_args("ofxAssimpModelLoader::load",3,3)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxAssimpModelLoader::load",1,"ofxAssimpModelLoader *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::load",2,"std::string");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::load",2,"of::filesystem::path const &");
     if(!lua_isnumber(L,3)) SWIG_fail_arg("ofxAssimpModelLoader::load",3,"int");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxAssimpModelLoader,0))){
-      SWIG_fail_ptr("AssimpModelLoader_load",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len;
-      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  arg3 = (int)lua_tonumber(L, 3);
-    result = (bool)(arg1)->load(arg2,arg3); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }
-   lua_error(L); return 0; }
+      SWIG_fail_ptr("AssimpModelLoader_load",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len = lua_rawlen(L, 2);
+      temp2 = lua_tolstring(L, 2, &len); arg2 = &temp2; }  arg3 = (int)lua_tonumber(L, 3);
+    result = (bool)(arg1)->load((of::filesystem::path const &)*arg2,arg3); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_AssimpModelLoader_load__SWIG_1(lua_State* L) { { int SWIG_arg = 0;
-    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; std::string arg2 ; bool result;
-    SWIG_check_num_args("ofxAssimpModelLoader::load",2,2)
+    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; of::filesystem::path *arg2 = 0 ; of::filesystem::path temp2 ;
+    bool result; SWIG_check_num_args("ofxAssimpModelLoader::load",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxAssimpModelLoader::load",1,"ofxAssimpModelLoader *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::load",2,"std::string");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::load",2,"of::filesystem::path const &");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxAssimpModelLoader,0))){
-      SWIG_fail_ptr("AssimpModelLoader_load",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len;
-      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  result = (bool)(arg1)->load(arg2);
+      SWIG_fail_ptr("AssimpModelLoader_load",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len = lua_rawlen(L, 2);
+      temp2 = lua_tolstring(L, 2, &len); arg2 = &temp2; }  result = (bool)(arg1)->load((of::filesystem::path const &)*arg2);
     lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_AssimpModelLoader_load__SWIG_2(lua_State* L) { { int SWIG_arg = 0;
     ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; ofBuffer *arg2 = 0 ; int arg3 ; char *arg4 = (char *) 0 ;
@@ -10580,16 +10584,16 @@ static int _wrap_AssimpModelLoader_load__SWIG_4(lua_State* L) { { int SWIG_arg =
       SWIG_fail_ptr("AssimpModelLoader_load",2,SWIGTYPE_p_ofBuffer); }  result = (bool)(arg1)->load(*arg2);
     lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_AssimpModelLoader_load__SWIG_5(lua_State* L) { { int SWIG_arg = 0;
-    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; std::string arg2 ; bool arg3 ; bool result;
-    SWIG_check_num_args("ofxAssimpModelLoader::load",3,3)
+    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; of::filesystem::path *arg2 = 0 ; bool arg3 ;
+    of::filesystem::path temp2 ; bool result; SWIG_check_num_args("ofxAssimpModelLoader::load",3,3)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxAssimpModelLoader::load",1,"ofxAssimpModelLoader *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::load",2,"std::string");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::load",2,"of::filesystem::path const &");
     if(!lua_isboolean(L,3)) SWIG_fail_arg("ofxAssimpModelLoader::load",3,"bool");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxAssimpModelLoader,0))){
-      SWIG_fail_ptr("AssimpModelLoader_load",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len;
-      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  arg3 = (lua_toboolean(L, 3)!=0);
-    result = (bool)(arg1)->load(arg2,arg3); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }
-   lua_error(L); return 0; }
+      SWIG_fail_ptr("AssimpModelLoader_load",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len = lua_rawlen(L, 2);
+      temp2 = lua_tolstring(L, 2, &len); arg2 = &temp2; }  arg3 = (lua_toboolean(L, 3)!=0);
+    result = (bool)(arg1)->load((of::filesystem::path const &)*arg2,arg3); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_AssimpModelLoader_load__SWIG_6(lua_State* L) { { int SWIG_arg = 0;
     ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; ofBuffer *arg2 = 0 ; bool arg3 ; char *arg4 = (char *) 0 ;
     bool result; SWIG_check_num_args("ofxAssimpModelLoader::load",4,4)
@@ -10611,7 +10615,7 @@ static int _wrap_AssimpModelLoader_load(lua_State* L) { int argc; int argv[5]={ 
           _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_AssimpModelLoader_load__SWIG_4(L);}  }  }  if (argc == 2) {
     int _v = 0; { void *ptr;
       if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxAssimpModelLoader, 0)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) {
+        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L, argv[1]); }  if (_v) {
         return _wrap_AssimpModelLoader_load__SWIG_1(L);}  }  }  if (argc == 3) { int _v = 0; { void *ptr;
       if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxAssimpModelLoader, 0)) {
         _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
@@ -10619,10 +10623,11 @@ static int _wrap_AssimpModelLoader_load(lua_State* L) { int argc; int argv[5]={ 
           _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) {
           return _wrap_AssimpModelLoader_load__SWIG_3(L);}  }  }  }  if (argc == 3) { int _v = 0; { void *ptr;
       if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxAssimpModelLoader, 0)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isboolean(L,argv[2]); }
-         if (_v) { return _wrap_AssimpModelLoader_load__SWIG_5(L);}  }  }  }  if (argc == 3) { int _v = 0; { void *ptr;
+        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L, argv[1]); }  if (_v) { {
+          _v = lua_isboolean(L,argv[2]); }  if (_v) { return _wrap_AssimpModelLoader_load__SWIG_5(L);}  }  }  } 
+  if (argc == 3) { int _v = 0; { void *ptr;
       if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxAssimpModelLoader, 0)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isnumber(L,argv[2]); }
+        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L, argv[1]); }  if (_v) { { _v = lua_isnumber(L,argv[2]); }
          if (_v) { return _wrap_AssimpModelLoader_load__SWIG_0(L);}  }  }  }  if (argc == 4) { int _v = 0; { void *ptr;
       if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxAssimpModelLoader, 0)) {
         _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
@@ -10636,31 +10641,32 @@ static int _wrap_AssimpModelLoader_load(lua_State* L) { int argc; int argv[5]={ 
           _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isnumber(L,argv[2]); }  if (_v) { {
             _v = SWIG_lua_isnilstring(L,argv[3]); }  if (_v) { return _wrap_AssimpModelLoader_load__SWIG_2(L);}  }  }  }  } 
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AssimpModelLoader_load'\n"
-  "  Possible C/C++ prototypes are:\n" "    ofxAssimpModelLoader::load(std::string,int)\n"
-  "    ofxAssimpModelLoader::load(std::string)\n" "    ofxAssimpModelLoader::load(ofBuffer &,int,char const *)\n"
-  "    ofxAssimpModelLoader::load(ofBuffer &,int)\n" "    ofxAssimpModelLoader::load(ofBuffer &)\n"
-  "    ofxAssimpModelLoader::load(std::string,bool)\n" "    ofxAssimpModelLoader::load(ofBuffer &,bool,char const *)\n");
-  lua_error(L);return 0; }
+  "  Possible C/C++ prototypes are:\n" "    ofxAssimpModelLoader::load(of::filesystem::path const &,int)\n"
+  "    ofxAssimpModelLoader::load(of::filesystem::path const &)\n"
+  "    ofxAssimpModelLoader::load(ofBuffer &,int,char const *)\n" "    ofxAssimpModelLoader::load(ofBuffer &,int)\n"
+  "    ofxAssimpModelLoader::load(ofBuffer &)\n" "    ofxAssimpModelLoader::load(of::filesystem::path const &,bool)\n"
+  "    ofxAssimpModelLoader::load(ofBuffer &,bool,char const *)\n"); lua_error(L);return 0; }
 static int _wrap_AssimpModelLoader_loadModel__SWIG_0(lua_State* L) { { int SWIG_arg = 0;
-    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; std::string arg2 ; bool arg3 ; bool result;
-    SWIG_check_num_args("ofxAssimpModelLoader::loadModel",3,3)
+    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; of::filesystem::path *arg2 = 0 ; bool arg3 ;
+    of::filesystem::path temp2 ; bool result; SWIG_check_num_args("ofxAssimpModelLoader::loadModel",3,3)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxAssimpModelLoader::loadModel",1,"ofxAssimpModelLoader *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::loadModel",2,"std::string");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::loadModel",2,"of::filesystem::path const &");
     if(!lua_isboolean(L,3)) SWIG_fail_arg("ofxAssimpModelLoader::loadModel",3,"bool");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxAssimpModelLoader,0))){
-      SWIG_fail_ptr("AssimpModelLoader_loadModel",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len;
-      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  arg3 = (lua_toboolean(L, 3)!=0);
-    result = (bool)(arg1)->loadModel(arg2,arg3); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg;
-    fail: SWIGUNUSED; }  lua_error(L); return 0; }
+      SWIG_fail_ptr("AssimpModelLoader_loadModel",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len = lua_rawlen(L, 2);
+      temp2 = lua_tolstring(L, 2, &len); arg2 = &temp2; }  arg3 = (lua_toboolean(L, 3)!=0);
+    result = (bool)(arg1)->loadModel((of::filesystem::path const &)*arg2,arg3); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_AssimpModelLoader_loadModel__SWIG_1(lua_State* L) { { int SWIG_arg = 0;
-    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; std::string arg2 ; bool result;
-    SWIG_check_num_args("ofxAssimpModelLoader::loadModel",2,2)
+    ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; of::filesystem::path *arg2 = 0 ; of::filesystem::path temp2 ;
+    bool result; SWIG_check_num_args("ofxAssimpModelLoader::loadModel",2,2)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxAssimpModelLoader::loadModel",1,"ofxAssimpModelLoader *");
-    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::loadModel",2,"std::string");
+    if(!lua_isstring(L,2)) SWIG_fail_arg("ofxAssimpModelLoader::loadModel",2,"of::filesystem::path const &");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxAssimpModelLoader,0))){
-      SWIG_fail_ptr("AssimpModelLoader_loadModel",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len;
-      const char *ptr = lua_tolstring(L, 2, &len); (&arg2)->assign(ptr, len); }  result = (bool)(arg1)->loadModel(arg2);
-    lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+      SWIG_fail_ptr("AssimpModelLoader_loadModel",1,SWIGTYPE_p_ofxAssimpModelLoader); }  { size_t len = lua_rawlen(L, 2);
+      temp2 = lua_tolstring(L, 2, &len); arg2 = &temp2; } 
+    result = (bool)(arg1)->loadModel((of::filesystem::path const &)*arg2); lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_AssimpModelLoader_loadModel__SWIG_2(lua_State* L) { { int SWIG_arg = 0;
     ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; ofBuffer *arg2 = 0 ; bool arg3 ; char *arg4 = (char *) 0 ;
     bool result; SWIG_check_num_args("ofxAssimpModelLoader::loadModel",4,4)
@@ -10704,7 +10710,7 @@ static int _wrap_AssimpModelLoader_loadModel(lua_State* L) { int argc; int argv[
           _v = 0; }  else { _v = 1; }  }  if (_v) { return _wrap_AssimpModelLoader_loadModel__SWIG_4(L);}  }  } 
   if (argc == 2) { int _v = 0; { void *ptr;
       if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxAssimpModelLoader, 0)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) {
+        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L, argv[1]); }  if (_v) {
         return _wrap_AssimpModelLoader_loadModel__SWIG_1(L);}  }  }  if (argc == 3) { int _v = 0; { void *ptr;
       if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxAssimpModelLoader, 0)) {
         _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
@@ -10712,18 +10718,19 @@ static int _wrap_AssimpModelLoader_loadModel(lua_State* L) { int argc; int argv[
           _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[2]); }  if (_v) {
           return _wrap_AssimpModelLoader_loadModel__SWIG_3(L);}  }  }  }  if (argc == 3) { int _v = 0; { void *ptr;
       if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxAssimpModelLoader, 0)) {
-        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L,argv[1]); }  if (_v) { { _v = lua_isboolean(L,argv[2]); }
-         if (_v) { return _wrap_AssimpModelLoader_loadModel__SWIG_0(L);}  }  }  }  if (argc == 4) { int _v = 0; { void *ptr;
+        _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isstring(L, argv[1]); }  if (_v) { {
+          _v = lua_isboolean(L,argv[2]); }  if (_v) { return _wrap_AssimpModelLoader_loadModel__SWIG_0(L);}  }  }  } 
+  if (argc == 4) { int _v = 0; { void *ptr;
       if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ofxAssimpModelLoader, 0)) {
         _v = 0; }  else { _v = 1; }  }  if (_v) { { void *ptr;
         if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_ofBuffer, SWIG_POINTER_NO_NULL)) {
           _v = 0; }  else { _v = 1; }  }  if (_v) { { _v = lua_isboolean(L,argv[2]); }  if (_v) { {
             _v = SWIG_lua_isnilstring(L,argv[3]); }  if (_v) { return _wrap_AssimpModelLoader_loadModel__SWIG_2(L);}  }  }  }  }
    SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AssimpModelLoader_loadModel'\n"
-  "  Possible C/C++ prototypes are:\n" "    ofxAssimpModelLoader::loadModel(std::string,bool)\n"
-  "    ofxAssimpModelLoader::loadModel(std::string)\n" "    ofxAssimpModelLoader::loadModel(ofBuffer &,bool,char const *)\n"
-  "    ofxAssimpModelLoader::loadModel(ofBuffer &,bool)\n" "    ofxAssimpModelLoader::loadModel(ofBuffer &)\n");
-  lua_error(L);return 0; }
+  "  Possible C/C++ prototypes are:\n" "    ofxAssimpModelLoader::loadModel(of::filesystem::path const &,bool)\n"
+  "    ofxAssimpModelLoader::loadModel(of::filesystem::path const &)\n"
+  "    ofxAssimpModelLoader::loadModel(ofBuffer &,bool,char const *)\n" "    ofxAssimpModelLoader::loadModel(ofBuffer &,bool)\n"
+  "    ofxAssimpModelLoader::loadModel(ofBuffer &)\n"); lua_error(L);return 0; }
 static int _wrap_AssimpModelLoader_createEmptyModel(lua_State* L) { { int SWIG_arg = 0;
     ofxAssimpModelLoader *arg1 = (ofxAssimpModelLoader *) 0 ; SWIG_check_num_args("ofxAssimpModelLoader::createEmptyModel",1,1)
     if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxAssimpModelLoader::createEmptyModel",1,"ofxAssimpModelLoader *");
@@ -14201,25 +14208,6 @@ static int _wrap_StableDiffusion_controlCond_get(lua_State* L) { { int SWIG_arg 
       SWIG_fail_ptr("StableDiffusion_controlCond_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
     result = (sd_image_t *) ((arg1)->controlCond); SWIG_NewPointerObj(L,result,SWIGTYPE_p_sd_image_t,0); SWIG_arg++; 
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_StableDiffusion_thread_set(lua_State* L) { { int SWIG_arg = 0;
-    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; stableDiffusionThread *arg2 = (stableDiffusionThread *) 0 ;
-    SWIG_check_num_args("ofxStableDiffusion::thread",2,2)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::thread",1,"ofxStableDiffusion *");
-    if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ofxStableDiffusion::thread",2,"stableDiffusionThread *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
-      SWIG_fail_ptr("StableDiffusion_thread_set",1,SWIGTYPE_p_ofxStableDiffusion); } 
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_stableDiffusionThread,0))){
-      SWIG_fail_ptr("StableDiffusion_thread_set",2,SWIGTYPE_p_stableDiffusionThread); }
-    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
-static int _wrap_StableDiffusion_thread_get(lua_State* L) { { int SWIG_arg = 0;
-    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; stableDiffusionThread *result = 0 ;
-    SWIG_check_num_args("ofxStableDiffusion::thread",1,1)
-    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::thread",1,"ofxStableDiffusion *");
-    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
-      SWIG_fail_ptr("StableDiffusion_thread_get",1,SWIGTYPE_p_ofxStableDiffusion); } 
-    result = (stableDiffusionThread *)& ((arg1)->thread);
-    SWIG_NewPointerObj(L,result,SWIGTYPE_p_stableDiffusionThread,0); SWIG_arg++;  return SWIG_arg; fail: SWIGUNUSED; } 
-  lua_error(L); return 0; }
 static int _wrap_StableDiffusion_isTextToImage_set(lua_State* L) { { int SWIG_arg = 0;
     ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; bool arg2 ;
     SWIG_check_num_args("ofxStableDiffusion::isTextToImage",2,2)
@@ -14265,6 +14253,18 @@ static int _wrap_StableDiffusion_diffused_get(lua_State* L) { { int SWIG_arg = 0
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
       SWIG_fail_ptr("StableDiffusion_diffused_get",1,SWIGTYPE_p_ofxStableDiffusion); }  result = (bool) ((arg1)->diffused);
     lua_pushboolean(L,(int)(result!=0)); SWIG_arg++; return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_StableDiffusion_getImageAt(lua_State* L) { { int SWIG_arg = 0;
+    ofxStableDiffusion *arg1 = (ofxStableDiffusion *) 0 ; size_t arg2 ; sd_image_t result;
+    SWIG_check_num_args("ofxStableDiffusion::getImageAt",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ofxStableDiffusion::getImageAt",1,"ofxStableDiffusion const *");
+    if(!lua_isnumber(L,2)) SWIG_fail_arg("ofxStableDiffusion::getImageAt",2,"size_t");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ofxStableDiffusion,0))){
+      SWIG_fail_ptr("StableDiffusion_getImageAt",1,SWIGTYPE_p_ofxStableDiffusion); } 
+    SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative"); arg2 = (size_t)lua_tonumber(L, 2);
+    result = ofxStableDiffusion_getImageAt((ofxStableDiffusion const *)arg1,arg2); {
+      sd_image_t * resultptr = new sd_image_t(result);
+      SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_sd_image_t,1); SWIG_arg++; }  return SWIG_arg; fail: SWIGUNUSED; } 
+  lua_error(L); return 0; }
 static void swig_delete_StableDiffusion(void *obj) {
 ofxStableDiffusion *arg1 = (ofxStableDiffusion *) obj;
 delete arg1;
@@ -14324,7 +14324,6 @@ static swig_lua_attribute swig_StableDiffusion_attributes[] = {
     { "inputImage", _wrap_StableDiffusion_inputImage_get, _wrap_StableDiffusion_inputImage_set },
     { "outputImages", _wrap_StableDiffusion_outputImages_get, _wrap_StableDiffusion_outputImages_set },
     { "controlCond", _wrap_StableDiffusion_controlCond_get, _wrap_StableDiffusion_controlCond_set },
-    { "thread", _wrap_StableDiffusion_thread_get, _wrap_StableDiffusion_thread_set },
     { "isTextToImage", _wrap_StableDiffusion_isTextToImage_get, _wrap_StableDiffusion_isTextToImage_set },
     { "isModelLoading", _wrap_StableDiffusion_isModelLoading_get, _wrap_StableDiffusion_isModelLoading_set },
     { "diffused", _wrap_StableDiffusion_diffused_get, _wrap_StableDiffusion_diffused_set },
@@ -14348,6 +14347,7 @@ static swig_lua_method swig_StableDiffusion_methods[]= {
     { "upscale", _wrap_StableDiffusion_upscale},
     { "convert", _wrap_StableDiffusion_convert},
     { "preprocessCanny", _wrap_StableDiffusion_preprocessCanny},
+    { "getImageAt", _wrap_StableDiffusion_getImageAt},
     {0,0}
 };
 static swig_lua_method swig_StableDiffusion_meta[] = {
@@ -14988,13 +14988,15 @@ static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "differ
 static swig_type_info _swigt__p_f_enum_sd_log_level_t_p_q_const__char_p_void__void = {"_p_f_enum_sd_log_level_t_p_q_const__char_p_void__void", "sd_log_cb_t|void (*)(enum sd_log_level_t,char const *,void *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_int_int_float_p_void__void = {"_p_f_int_int_float_p_void__void", "sd_progress_cb_t|void (*)(int,int,float,void *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_q_const__p_q_const__CreEPS_CHAR_v_______void = {"_p_f_q_const__p_q_const__CreEPS_CHAR_v_______void", "ns_creeps::CreEPS::MessageHandler|void (*)(CreEPS_CHAR const *const,...)", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_float = {"_p_float", "GLfloat *|float *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_float = {"_p_float", "GLfloat *|glm::f32 *|float *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_glm__mat3 = {"_p_glm__mat3", "glm::mat3 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_glm__mat4 = {"_p_glm__mat4", "glm::mat4 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_glm__vec2 = {"_p_glm__vec2", "glm::vec2 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ofMouseEventArgs = {"_p_ofMouseEventArgs", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_ofTouchEventArgs = {"_p_ofTouchEventArgs", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_ofWindowPosEventArgs = {"_p_ofWindowPosEventArgs", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_glm__vec3 = {"_p_glm__vec3", "ofDefaultVec3 *|glm::vec3 *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_glm__vec4 = {"_p_glm__vec4", "glm::vec4 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int = {"_p_int", "GLint *|glm::length_t *|int32_t *|int_fast16_t *|int_fast32_t *|int_least32_t *|intptr_t *|int *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_long_long = {"_p_long_long", "int64_t *|int_fast64_t *|int_least64_t *|intmax_t *|long long *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ns_creeps__CAt = {"_p_ns_creeps__CAt", "ns_creeps::CAt *", 0, 0, (void*)&_wrap_class_CAt, 0};
@@ -15060,7 +15062,6 @@ static swig_type_info _swigt__p_sd_image_t = {"_p_sd_image_t", "sd_image_t *", 0
 static swig_type_info _swigt__p_short = {"_p_short", "int16_t *|int_least16_t *|short *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_signed_char = {"_p_signed_char", "int8_t *|int_fast8_t *|int_least8_t *|signed char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_stableDiffusionThread = {"_p_stableDiffusionThread", "stableDiffusionThread *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__shared_ptrT_aiScene_const_t = {"_p_std__shared_ptrT_aiScene_const_t", "std::shared_ptr< aiScene const > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__string = {"_p_std__string", "std::string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_SubtitleItem_p_t = {"_p_std__vectorT_SubtitleItem_p_t", "std::vector< SubtitleItem * > *", 0, 0, (void*)&_wrap_class_SubVector, 0};
@@ -15107,9 +15108,11 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_f_int_int_float_p_void__void,
   &_swigt__p_f_q_const__p_q_const__CreEPS_CHAR_v_______void,
   &_swigt__p_float,
+  &_swigt__p_glm__mat3,
   &_swigt__p_glm__mat4,
   &_swigt__p_glm__vec2,
   &_swigt__p_glm__vec3,
+  &_swigt__p_glm__vec4,
   &_swigt__p_int,
   &_swigt__p_long_long,
   &_swigt__p_ns_creeps__CAt,
@@ -15178,7 +15181,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_short,
   &_swigt__p_signed_char,
   &_swigt__p_size_type,
-  &_swigt__p_stableDiffusionThread,
   &_swigt__p_std__shared_ptrT_aiScene_const_t,
   &_swigt__p_std__string,
   &_swigt__p_std__vectorT_SubtitleItem_p_t,
@@ -15225,12 +15227,14 @@ static swig_cast_info _swigc__p_f_enum_sd_log_level_t_p_q_const__char_p_void__vo
 static swig_cast_info _swigc__p_f_int_int_float_p_void__void[] = {  {&_swigt__p_f_int_int_float_p_void__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_q_const__p_q_const__CreEPS_CHAR_v_______void[] = {  {&_swigt__p_f_q_const__p_q_const__CreEPS_CHAR_v_______void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_float[] = {  {&_swigt__p_float, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_glm__mat3[] = {  {&_swigt__p_glm__mat3, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_glm__mat4[] = {  {&_swigt__p_glm__mat4, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofMouseEventArgs[] = {{&_swigt__p_ofMouseEventArgs, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofTouchEventArgs[] = {{&_swigt__p_ofTouchEventArgs, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ofWindowPosEventArgs[] = {{&_swigt__p_ofWindowPosEventArgs, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_glm__vec2[] = {  {&_swigt__p_glm__vec2, 0, 0, 0},  {&_swigt__p_ofMouseEventArgs, _p_ofMouseEventArgsTo_p_glm__vec2, 0, 0},  {&_swigt__p_ofTouchEventArgs, _p_ofTouchEventArgsTo_p_glm__vec2, 0, 0},  {&_swigt__p_ofWindowPosEventArgs, _p_ofWindowPosEventArgsTo_p_glm__vec2, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_glm__vec3[] = {  {&_swigt__p_glm__vec3, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_glm__vec4[] = {  {&_swigt__p_glm__vec4, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ns_creeps__CAt[] = {  {&_swigt__p_ns_creeps__CAt, 0, 0, 0},  {&_swigt__p_ns_creeps__CAtBackgroundColor, _p_ns_creeps__CAtBackgroundColorTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtCheckerboardFilling, _p_ns_creeps__CAtCheckerboardFillingTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtColor, _p_ns_creeps__CAtColorTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtFont, _p_ns_creeps__CAtFontTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtGrayScale, _p_ns_creeps__CAtGrayScaleTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtHexDotFilling, _p_ns_creeps__CAtHexDotFillingTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtLineCap, _p_ns_creeps__CAtLineCapTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtLineDash, _p_ns_creeps__CAtLineDashTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtLineJoin, _p_ns_creeps__CAtLineJoinTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtLineThickness, _p_ns_creeps__CAtLineThicknessTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtStripeFilling, _p_ns_creeps__CAtStripeFillingTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtTextAlignment, _p_ns_creeps__CAtTextAlignmentTo_p_ns_creeps__CAt, 0, 0},  {&_swigt__p_ns_creeps__CAtTransparentBackground, _p_ns_creeps__CAtTransparentBackgroundTo_p_ns_creeps__CAt, 0, 0},{0, 0, 0, 0}};
@@ -15296,7 +15300,6 @@ static swig_cast_info _swigc__p_sd_image_t[] = {  {&_swigt__p_sd_image_t, 0, 0, 
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_signed_char[] = {  {&_swigt__p_signed_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_stableDiffusionThread[] = {  {&_swigt__p_stableDiffusionThread, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__shared_ptrT_aiScene_const_t[] = {  {&_swigt__p_std__shared_ptrT_aiScene_const_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_SubtitleItem_p_t[] = {  {&_swigt__p_std__vectorT_SubtitleItem_p_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -15343,9 +15346,11 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_f_int_int_float_p_void__void,
   _swigc__p_f_q_const__p_q_const__CreEPS_CHAR_v_______void,
   _swigc__p_float,
+  _swigc__p_glm__mat3,
   _swigc__p_glm__mat4,
   _swigc__p_glm__vec2,
   _swigc__p_glm__vec3,
+  _swigc__p_glm__vec4,
   _swigc__p_int,
   _swigc__p_long_long,
   _swigc__p_ns_creeps__CAt,
@@ -15414,7 +15419,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_short,
   _swigc__p_signed_char,
   _swigc__p_size_type,
-  _swigc__p_stableDiffusionThread,
   _swigc__p_std__shared_ptrT_aiScene_const_t,
   _swigc__p_std__string,
   _swigc__p_std__vectorT_SubtitleItem_p_t,

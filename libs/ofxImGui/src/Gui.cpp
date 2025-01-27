@@ -4,6 +4,7 @@
 #include "ofAppGLFWWindow.h"
 
 #include "ofxImGuiConstants.h"
+#include "imgui_internal.h" // <-- advanced docking features from imgui internals...
 
 //#include "imgui.h"
 //#include "backends/imgui_impl_glfw.h"
@@ -172,8 +173,29 @@ namespace ofxImGui
 		if(_restoreGuiState == false)
 			io.IniFilename = nullptr;
 
+		// Start engines
 		this->context->engine.setup( _ofWindow.get(), context->imguiContext, context->autoDraw);
 
+		// Load a default font
+		// Fixme: make this optional ? (= less GPU memory).
+		// For now we ensure a default font is always available, for the ease of use.
+		ImFont* defaultFont = nullptr;
+		if(io.Fonts->Fonts.size()==0){
+		   defaultFont = io.Fonts->AddFontDefault();
+
+            // Set as default
+            if(defaultFont){
+                rebuildFontsTexture(); // Fixme: could be an optional call to improve loading speeds (only needs to be called once after loading all fonts).
+
+                // Ensure the default font is marked default (can be user-overridden later)
+                if(!io.FontDefault){
+                    //io.FontDefault = defaultFont;
+                    setDefaultFont(defaultFont);
+                }
+            }
+        }
+
+		// Load a theme
 		if (theme_)
 		{
 			setTheme(theme_);
@@ -271,10 +293,14 @@ namespace ofxImGui
 		return context->isShared();
     }
 
+    bool Gui::isMaster() const {
+        return isContextOwned;
+    }
+
     //--------------------------------------------------------------
     bool Gui::setDefaultFont(int indexAtlasFont) {
         if(context==nullptr){
-            ofLogWarning() << "You must load fonts after gui.setup() ! (ignoring this call)";
+            ofLogWarning("Gui::setDefaultFont()") << "You must load fonts after gui.setup() ! (ignoring this call)";
             return false;
         }
 
@@ -295,7 +321,7 @@ namespace ofxImGui
 
     bool Gui::setDefaultFont(ImFont* _atlasFont){
         if(context==nullptr){
-            ofLogWarning() << "You must load fonts after gui.setup() ! (ignoring this call)";
+            ofLogWarning("Gui::setDefaultFont") << "You must load fonts after gui.setup() ! (ignoring this call)";
             return false;
         }
 
@@ -304,6 +330,7 @@ namespace ofxImGui
 
 		// Don't override default font with nullptr
 		if( _atlasFont != nullptr ){
+			// Loop existing fonts to ensure setting an available font
             for(int i=0; i<io.Fonts->Fonts.size(); ++i){
                 if(io.Fonts->Fonts[i] == _atlasFont){
                     // Set font
@@ -319,65 +346,77 @@ namespace ofxImGui
 	ImFont* Gui::addFont(const std::string & fontPath, float fontSize, const ImFontConfig* _fontConfig, const ImWchar* _glyphRanges, bool _setAsDefaultFont ) {
 
 		if(context==nullptr){
-			ofLogWarning() << "You must load fonts after gui.setup() ! (ignoring this call)";
+			ofLogWarning("Gui::addFont()") << "You must load fonts after gui.setup() ! (ignoring this call)";
 			return nullptr;
 		}
 
-		//ImFontConfig structure allows you to configure oversampling.
-		//By default OversampleH = 3 and OversampleV = 1 which will make your font texture data 3 times larger
-		//than necessary, so you may reduce that to 1.
+		// ImFontConfig structure allows you to configure oversampling.
+		// By default OversampleH = 3 and OversampleV = 1 which will make your font texture data 3 times larger
+		// than necessary, so you may reduce that to 1.
 
 		ImGui::SetCurrentContext(context->imguiContext);
 		ImGuiIO& io = ImGui::GetIO();
         std::string filePath = ofFilePath::getAbsolutePath(fontPath);
 
-        // ensure default font gets loaded once
-        if(io.Fonts->Fonts.size()==0) io.Fonts->AddFontDefault();
 
         ImFont* font = io.Fonts->AddFontFromFileTTF(filePath.c_str(), fontSize, _fontConfig, _glyphRanges);
 
-		if (io.Fonts->Fonts.size() > 0) {
-            io.Fonts->Build();
-			if( context->engine.updateFontsTexture() ){
-                // Set default font when there's none yet, or as requested
-                if(_setAsDefaultFont || io.FontDefault == nullptr) setDefaultFont(font);
-                return font;
-            }
-            else return nullptr;
+		if (font != nullptr){
+			 // Fixme: could be an optional call to improve loading speeds (only needs to be called once after loading all fonts).
+			 rebuildFontsTexture();
+
+			if(_setAsDefaultFont) setDefaultFont(font);
+
+			return font;
 		}
-		return nullptr;
+		else {
+			return nullptr;
+		}
 	}
 	//--------------------------------------------------------------
 	ImFont* Gui::addFontFromMemory(void* fontData, int fontDataSize, float fontSize, const ImFontConfig* _fontConfig, const ImWchar* _glyphRanges, bool _setAsDefaultFont ) {
 
 		if(context==nullptr){
-		  ofLogWarning() << "You must load fonts after gui.setup() ! (ignoring this call)";
+		  ofLogWarning("Gui::addFontFromMemory()") << "You must load fonts after gui.setup() ! (ignoring this call)";
 		  return nullptr;
 		}
 
-		//ImFontConfig structure allows you to configure oversampling.
-		//By default OversampleH = 3 and OversampleV = 1 which will make your font texture data 3 times larger
-		//than necessary, so you may reduce that to 1.
+		// ImFontConfig structure allows you to configure oversampling.
+		// By default OversampleH = 3 and OversampleV = 1 which will make your font texture data 3 times larger
+		// than necessary, so you may reduce that to 1.
 
 		ImGui::SetCurrentContext(context->imguiContext);
 		ImGuiIO& io = ImGui::GetIO();
 
-		// ensure default font gets loaded once
-		if(io.Fonts->Fonts.size()==0) io.Fonts->AddFontDefault();
 
 		ImFont* font = io.Fonts->AddFontFromMemoryTTF( fontData, fontDataSize, fontSize, _fontConfig, _glyphRanges);
 
-		if (io.Fonts->Fonts.size() > 0) {
-			io.Fonts->Build();
-			if( context->engine.updateFontsTexture() ){
-				if(_setAsDefaultFont) setDefaultFont(font);
-				return font;
-			}
-			else return nullptr;
+		if (font != nullptr){
+			// Fixme: could be an optional call to improve loading speeds (only needs to be called once after loading all fonts).
+			rebuildFontsTexture();
+			if(_setAsDefaultFont) setDefaultFont(font);
+			return font;
 		}
 		else {
 			return nullptr;
 		}
+	}
+
+	//--------------------------------------------------------------
+	bool Gui::rebuildFontsTexture(){
+		if(context==nullptr){
+		  ofLogWarning("Gui::rebuildFontsTexture()") << "You must build fonts after gui.setup() ! (ignoring this call)";
+		  return false;
+		}
+
+		ImGui::SetCurrentContext(context->imguiContext);
+		ImGuiIO& io = ImGui::GetIO();
+
+		if (io.Fonts->Fonts.size() > 0) {
+			io.Fonts->Build();
+			return context->engine.updateFontsTexture();
+		}
+		return false;
 	}
 
 	//--------------------------------------------------------------
@@ -522,6 +561,11 @@ namespace ofxImGui
             return;
         }
 
+        // Update cached variables
+        updateDockingVp();
+        // Update height
+        ImGuiWindow* menuWin = ImGui::FindWindowByID(ImGui::GetIDWithSeed("##MainMenuBar", nullptr, 0));
+        menuHeight = (menuWin && !menuWin->Hidden && menuWin->Active) ? ImGui::GetFrameHeight() : 0;
 
         // Only render in autodraw mode.
 		if(context->autoDraw){
@@ -590,10 +634,10 @@ namespace ofxImGui
     }
 
 	//--------------------------------------------------------------
-	void Gui::drawOfxImGuiDebugWindow() const {
+	void Gui::drawOfxImGuiDebugWindow(bool* open) const {
 		// Only provide this functions with debug flags on
 #ifdef OFXIMGUI_DEBUG
-		if( ImGui::Begin("ofxImGui Debug Window") ){
+		if( ImGui::Begin("ofxImGui Debug Window", open) ){
 
 			if(ImGui::BeginTabBar("DebugTabs")){
 
@@ -1021,6 +1065,10 @@ namespace ofxImGui
 						ImGui::Text("Loaded Fonts : %i", io.Fonts->Fonts.size());
 						for(auto& font : io.Fonts->Fonts){
 							ImGui::BulletText("%s", font->ConfigData->Name);
+                            if(font == io.FontDefault){
+                                ImGui::SameLine();
+                                ImGui::TextDisabled("Default");
+                            }
 						}
 						ImGui::TextWrapped("");
 
@@ -1048,7 +1096,9 @@ namespace ofxImGui
 						ImGui::PopStyleColor();
 						ImGui::CheckboxFlags("NavEnableKeyboard",    &io.ConfigFlags, ImGuiConfigFlags_NavEnableKeyboard);
 						ImGui::CheckboxFlags("NavEnableGamepad",     &io.ConfigFlags, ImGuiConfigFlags_NavEnableGamepad);
+#ifndef IMGUI_DISABLE_OBSOLETE_FUNCTIONS // soon to be depreciated ! Safe to remove when reade. See io.ConfigNavMoveSetMousePos
 						ImGui::CheckboxFlags("NavEnableSetMousePos", &io.ConfigFlags, ImGuiConfigFlags_NavEnableSetMousePos);
+#endif
 						ImGui::CheckboxFlags("NoMouse",              &io.ConfigFlags, ImGuiConfigFlags_NoMouse);
 						ImGui::CheckboxFlags("DockingEnable",        &io.ConfigFlags, ImGuiConfigFlags_DockingEnable);
 						ImGui::CheckboxFlags("ViewportsEnable",      &io.ConfigFlags, ImGuiConfigFlags_ViewportsEnable);
@@ -1062,12 +1112,13 @@ namespace ofxImGui
 						ImGui::Checkbox("io.MouseDrawCursor", &io.MouseDrawCursor);
 						ImGui::Checkbox("io.ConfigInputTextCursorBlink", &io.ConfigInputTextCursorBlink);
 						ImGui::Checkbox("io.ConfigWindowsResizeFromEdges", &io.ConfigWindowsResizeFromEdges);
+						ImGui::Checkbox("io.ConfigNavMoveSetMousePos", &io.ConfigNavMoveSetMousePos);
 
 						// User Input
 						ImGui::Dummy({10,10});
 						ImGui::SeparatorText("ImGui Input");
 						ImGui::Text("Keys down  :");
-						for (ImGuiKey key = ImGuiKey_KeysData_OFFSET; key < ImGuiKey_COUNT; key = (ImGuiKey)(key + 1)) {
+						for (ImGuiKey key = ImGuiKey_NamedKey_BEGIN; key < ImGuiKey_NamedKey_END; key = (ImGuiKey)(key + 1)) {
 							if(!ImGui::IsKeyDown(key)) continue;
 							ImGui::SameLine();
 							ImGui::Text((key < ImGuiKey_NamedKey_BEGIN) ? "\"%s\"" : "\"%s\" %d", ImGui::GetKeyName(key), key);
@@ -1265,6 +1316,103 @@ namespace ofxImGui
 		ImGui::End();
 
 #endif // OFXIMGUI_DEBUG
+	}
+
+	void Gui::updateDockingVp(){
+		static ofRectangle dockingVpCached = ofGetWindowRect();
+
+        // Only when docking is enabled
+        if(bool(ImGui::GetIO().ConfigFlags & ImGuiConfigFlags_DockingEnable)){
+            // Note: same as defalut ID returned by ImGui::DockSpaceOverViewport(0, NULL, dockingFlags);
+            // A bit complicated to reverse, we have to grab the hardcoded IDs
+
+            // Like ImGui::DockSpaceOverViewport
+            char label[32];
+            ImFormatString(label, IM_ARRAYSIZE(label), "WindowOverViewport_%08X", ImGui::GetMainViewport()->ID);
+
+            // Get docking host window
+            ImGuiWindow* window = ImGui::FindWindowByName(label);
+            if(window){
+                // Like ImGui::DockSpaceOverViewport
+                static const std::string dockSpaceId = "DockSpace";
+                ImGuiID dockNodeID = ImGui::GetIDWithSeed(&*dockSpaceId.cbegin(), &*dockSpaceId.cend(), window->ID);
+
+                ImGuiDockNode* dockNode = ImGui::DockBuilderGetNode(dockNodeID);
+
+                // Only use dockspace if currently visible
+                if(dockNode && dockNode->IsVisible){
+                    ImGuiDockNode* centralNode = ImGui::DockBuilderGetCentralNode(dockNodeID);
+
+                    // Verifies if the central node is empty (visible empty space for oF)
+                    if( centralNode && centralNode->IsEmpty() ){
+                        ImRect availableSpace = centralNode->Rect();
+
+                        // Detect change ?
+                        if(
+                            dockingVpCached.x != availableSpace.Min.x ||
+                            dockingVpCached.y != availableSpace.Min.y ||
+                            dockingVpCached.width != availableSpace.GetWidth() ||
+                            dockingVpCached.height != availableSpace.GetHeight()
+                        ){
+                            // Update viewport
+                            dockingVpCached.x = availableSpace.Min.x;
+                            dockingVpCached.y = availableSpace.Min.y;
+                            dockingVpCached.width = availableSpace.GetWidth();
+                            dockingVpCached.height = availableSpace.GetHeight();
+                        }
+
+                        dockingViewport = dockingVpCached;
+
+                        // Normalise data according to the different ImGui coordinate spaces
+                        // Depending on the viewports flag, the XY is either absolute or relative to the oF window.
+                        if(ImGui::GetIO().ConfigFlags & ImGuiConfigFlags_ViewportsEnable ){
+                            dockingViewport.position.x -= ofGetWindowPositionX();
+                            dockingViewport.position.y -= ofGetWindowPositionY();
+                        }
+
+                        // Success (don't set default below)
+                        return;
+                    }
+                }
+            }
+        }
+
+		// Set dockingVP to ofWindow when docking unactive
+		dockingViewport = ofGetWindowRect();
+	}
+
+
+	ofRectangle Gui::getMainWindowViewportRect(bool returnScreenCoords, bool removeMenuBar, bool removeDockingAreas) const {
+
+		// Handle menubar
+		ofRectangle rect = ofGetWindowRect();
+
+		// Subtract menubar
+		if(removeMenuBar){
+			rect.y += menuHeight;
+			rect.height -= menuHeight;
+		}
+
+		// When docking is active, it already excludes the menubar
+		if(removeDockingAreas && ImGui::GetIO().ConfigFlags & ImGuiConfigFlags_DockingEnable){
+			rect = dockingViewport;
+		}
+
+		// Make them absolute ?
+		if(returnScreenCoords){
+			rect.position.x += ofGetWindowPositionX();
+			rect.position.y += ofGetWindowPositionY();
+		}
+
+		return rect;
+	};
+
+	int Gui::getMenuHeight() const {
+		return menuHeight;
+	}
+
+	ofRectangle Gui::getDockingViewport() const {
+		return dockingViewport;
 	}
 
     // Initialise statics

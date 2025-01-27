@@ -102,9 +102,9 @@ namespace ofxImGui
         style->Colors[ImGuiCol_ResizeGripActive]        = ImVec4(col_main_head, 1.00f);
         style->Colors[ImGuiCol_Tab]                     = ImVec4(col_main_area, 0.9f); // ImLerp(colors[ImGuiCol_Header],       colors[ImGuiCol_TitleBgActive], 0.80f)
 		style->Colors[ImGuiCol_TabHovered]              = ImVec4(col_main_head, 0.5f);
-		style->Colors[ImGuiCol_TabActive]               = ImVec4(col_main_head, 0.7f);
-        style->Colors[ImGuiCol_TabUnfocused]            = ImLerp(style->Colors[ImGuiCol_Tab],       style->Colors[ImGuiCol_TitleBg], 0.80f);
-        style->Colors[ImGuiCol_TabUnfocusedActive]      = ImLerp(style->Colors[ImGuiCol_TabActive], style->Colors[ImGuiCol_TitleBg], 0.40f);
+		style->Colors[ImGuiCol_TabSelected]             = ImVec4(col_main_head, 0.7f);
+        style->Colors[ImGuiCol_TabDimmed]               = ImLerp(style->Colors[ImGuiCol_Tab],       style->Colors[ImGuiCol_TitleBg], 0.80f);
+        style->Colors[ImGuiCol_TabDimmedSelected]       = ImLerp(style->Colors[ImGuiCol_TabSelected], style->Colors[ImGuiCol_TitleBg], 0.40f);
         style->Colors[ImGuiCol_DockingPreview]          = style->Colors[ImGuiCol_HeaderActive] * ImVec4(1.0f, 1.0f, 1.0f, 0.7f);
         style->Colors[ImGuiCol_DockingEmptyBg]          = ImVec4(col_win_backg, 0.8f);
         style->Colors[ImGuiCol_PlotLines]               = ImVec4(col_main_text, 0.63f);
@@ -118,7 +118,7 @@ namespace ofxImGui
         style->Colors[ImGuiCol_TableRowBgAlt]           = ImVec4(col_main_area, 0.06f);
         style->Colors[ImGuiCol_TextSelectedBg]          = ImVec4(col_main_head, 0.43f);
         style->Colors[ImGuiCol_DragDropTarget]          = ImVec4(col_main_head, 0.8f);
-        style->Colors[ImGuiCol_NavHighlight]            = ImVec4(col_main_head, 1.f);
+        style->Colors[ImGuiCol_NavCursor]               = ImVec4(col_main_head, 1.f);
         style->Colors[ImGuiCol_NavWindowingHighlight]   = ImVec4(col_main_head, 0.f);
         style->Colors[ImGuiCol_NavWindowingDimBg]       = ImVec4(col_main_area, 0.73f);
         style->Colors[ImGuiCol_ModalWindowDimBg]        = ImVec4(col_main_area, 0.73f);

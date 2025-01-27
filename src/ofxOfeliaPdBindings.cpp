@@ -2751,25 +2751,27 @@ SWIG_Lua_dostring(lua_State *L, const char *str) {
 /* -------- TYPES TABLE (BEGIN) -------- */
 
 #define SWIGTYPE_p_int swig_types[0]
-#define SWIGTYPE_p_p_int swig_types[1]
-#define SWIGTYPE_p_p_t_atom swig_types[2]
-#define SWIGTYPE_p_p_t_canvas swig_types[3]
-#define SWIGTYPE_p_p_t_word swig_types[4]
-#define SWIGTYPE_p_pdArray swig_types[5]
-#define SWIGTYPE_p_pdCanvas swig_types[6]
-#define SWIGTYPE_p_pdClock swig_types[7]
-#define SWIGTYPE_p_pdInlet swig_types[8]
-#define SWIGTYPE_p_pdLog swig_types[9]
-#define SWIGTYPE_p_pdOutlet swig_types[10]
-#define SWIGTYPE_p_pdSend swig_types[11]
-#define SWIGTYPE_p_pdValue swig_types[12]
-#define SWIGTYPE_p_pdWindow swig_types[13]
-#define SWIGTYPE_p_std__dequeT_int_t swig_types[14]
-#define SWIGTYPE_p_std__string swig_types[15]
-#define SWIGTYPE_p_t_atom swig_types[16]
-#define SWIGTYPE_p_t_floatarg swig_types[17]
-static swig_type_info *swig_types[19];
-static swig_module_info swig_module = {swig_types, 18, 0, 0, 0, 0};
+#define SWIGTYPE_p_ofGLESWindowSettings swig_types[1]
+#define SWIGTYPE_p_ofGLFWWindowSettings swig_types[2]
+#define SWIGTYPE_p_p_int swig_types[3]
+#define SWIGTYPE_p_p_t_atom swig_types[4]
+#define SWIGTYPE_p_p_t_canvas swig_types[5]
+#define SWIGTYPE_p_p_t_word swig_types[6]
+#define SWIGTYPE_p_pdArray swig_types[7]
+#define SWIGTYPE_p_pdCanvas swig_types[8]
+#define SWIGTYPE_p_pdClock swig_types[9]
+#define SWIGTYPE_p_pdInlet swig_types[10]
+#define SWIGTYPE_p_pdLog swig_types[11]
+#define SWIGTYPE_p_pdOutlet swig_types[12]
+#define SWIGTYPE_p_pdSend swig_types[13]
+#define SWIGTYPE_p_pdValue swig_types[14]
+#define SWIGTYPE_p_pdWindow swig_types[15]
+#define SWIGTYPE_p_std__dequeT_int_t swig_types[16]
+#define SWIGTYPE_p_std__string swig_types[17]
+#define SWIGTYPE_p_t_atom swig_types[18]
+#define SWIGTYPE_p_t_floatarg swig_types[19]
+static swig_type_info *swig_types[21];
+static swig_module_info swig_module = {swig_types, 20, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3228,6 +3230,24 @@ static int _wrap_Window_create(lua_State* L) { { int SWIG_arg = 0; pdWindow *arg
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_pdWindow,0))){
       SWIG_fail_ptr("Window_create",1,SWIGTYPE_p_pdWindow); }  (arg1)->create(); return SWIG_arg; fail: SWIGUNUSED; } 
   lua_error(L); return 0; }
+static int _wrap_Window_createGLFW(lua_State* L) { { int SWIG_arg = 0; pdWindow *arg1 = (pdWindow *) 0 ;
+    ofGLFWWindowSettings arg2 ; ofGLFWWindowSettings *argp2 ; SWIG_check_num_args("pdWindow::createGLFW",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("pdWindow::createGLFW",1,"pdWindow *");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("pdWindow::createGLFW",2,"ofGLFWWindowSettings");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_pdWindow,0))){
+      SWIG_fail_ptr("Window_createGLFW",1,SWIGTYPE_p_pdWindow); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_ofGLFWWindowSettings,0))){
+      SWIG_fail_ptr("Window_createGLFW",2,SWIGTYPE_p_ofGLFWWindowSettings); }  arg2 = *argp2; (arg1)->createGLFW(arg2);
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_Window_createGLES(lua_State* L) { { int SWIG_arg = 0; pdWindow *arg1 = (pdWindow *) 0 ;
+    ofGLESWindowSettings arg2 ; ofGLESWindowSettings *argp2 ; SWIG_check_num_args("pdWindow::createGLES",2,2)
+    if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("pdWindow::createGLES",1,"pdWindow *");
+    if(!lua_isuserdata(L,2)) SWIG_fail_arg("pdWindow::createGLES",2,"ofGLESWindowSettings");
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_pdWindow,0))){
+      SWIG_fail_ptr("Window_createGLES",1,SWIGTYPE_p_pdWindow); } 
+    if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_ofGLESWindowSettings,0))){
+      SWIG_fail_ptr("Window_createGLES",2,SWIGTYPE_p_ofGLESWindowSettings); }  arg2 = *argp2; (arg1)->createGLES(arg2);
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_Window_destroy(lua_State* L) { { int SWIG_arg = 0; pdWindow *arg1 = (pdWindow *) 0 ;
     SWIG_check_num_args("pdWindow::destroy",1,1) if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("pdWindow::destroy",1,"pdWindow *");
     if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_pdWindow,0))){
@@ -3361,6 +3381,8 @@ static swig_lua_method swig_Window_methods[]= {
     { "setSize", _wrap_Window_setSize},
     { "isSizeSet", _wrap_Window_isSizeSet},
     { "create", _wrap_Window_create},
+    { "createGLFW", _wrap_Window_createGLFW},
+    { "createGLES", _wrap_Window_createGLES},
     { "destroy", _wrap_Window_destroy},
     {0,0}
 };
@@ -4375,6 +4397,8 @@ static swig_lua_namespace swig_SwigModule = {
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
 static swig_type_info _swigt__p_int = {"_p_int", "int *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ofGLESWindowSettings = {"_p_ofGLESWindowSettings", "ofGLESWindowSettings *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_ofGLFWWindowSettings = {"_p_ofGLFWWindowSettings", "ofGLFWWindowSettings *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_int = {"_p_p_int", "int **", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_t_atom = {"_p_p_t_atom", "t_atom **", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_t_canvas = {"_p_p_t_canvas", "t_canvas **", 0, 0, (void*)0, 0};
@@ -4395,6 +4419,8 @@ static swig_type_info _swigt__p_t_floatarg = {"_p_t_floatarg", "t_floatarg *", 0
 
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_int,
+  &_swigt__p_ofGLESWindowSettings,
+  &_swigt__p_ofGLFWWindowSettings,
   &_swigt__p_p_int,
   &_swigt__p_p_t_atom,
   &_swigt__p_p_t_canvas,
@@ -4415,6 +4441,8 @@ static swig_type_info *swig_type_initial[] = {
 };
 
 static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ofGLESWindowSettings[] = {  {&_swigt__p_ofGLESWindowSettings, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ofGLFWWindowSettings[] = {  {&_swigt__p_ofGLFWWindowSettings, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_int[] = {  {&_swigt__p_p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_t_atom[] = {  {&_swigt__p_p_t_atom, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_t_canvas[] = {  {&_swigt__p_p_t_canvas, 0, 0, 0},{0, 0, 0, 0}};
@@ -4435,6 +4463,8 @@ static swig_cast_info _swigc__p_t_floatarg[] = {  {&_swigt__p_t_floatarg, 0, 0, 
 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_int,
+  _swigc__p_ofGLESWindowSettings,
+  _swigc__p_ofGLFWWindowSettings,
   _swigc__p_p_int,
   _swigc__p_p_t_atom,
   _swigc__p_p_t_canvas,

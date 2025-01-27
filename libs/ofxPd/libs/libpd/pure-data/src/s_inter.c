@@ -127,7 +127,6 @@ typedef struct _guiqueue
 
 struct _instanceinter
 {
-    int i_havegui;
     int i_nfdpoll;
     t_fdpoll *i_fdpoll;
     int i_maxfd;
@@ -139,9 +138,11 @@ struct _instanceinter
     int i_guihead;
     int i_guitail;
     int i_guisize;
-    int i_waitingforping;
     int i_bytessincelastping;
-    int i_fdschanged;   /* flag to break fdpoll loop if fd list changes */
+    unsigned int i_havetkproc:1;    /* TK process started  */
+    unsigned int i_havegui:1;       /* have TK proc and font metrics too */
+    unsigned int i_fdschanged:1;    /* need to break fdpoll loop */
+    unsigned int i_waitingforping:1;/* sent a ping out and should get answer */
 
 #ifdef _WIN32
     LARGE_INTEGER i_inittime;
@@ -268,6 +269,9 @@ void sys_microsleep( void)
 }
 
 #if !defined(_WIN32) && !defined(__CYGWIN__)
+#if DONT_HAVE_SIG_T
+typedef void (*sig_t)(int);
+#endif
 static void sys_signal(int signo, sig_t sigfun)
 {
     struct sigaction action;
@@ -798,13 +802,23 @@ int sys_havegui(void)
     return (INTER->i_havegui);
 }
 
+int sys_havetkproc(void)
+{
+    return (INTER->i_havetkproc);
+}
+
 void sys_vgui(const char *fmt, ...)
 {
     int msglen, bytesleft, headwas, nwrote;
     va_list ap;
 
-    if (!sys_havegui())
+    if (!INTER->i_havetkproc)
+    {       /* if there's no TK process just throw it to stderr */
+        va_start(ap, fmt);
+        vfprintf(stderr, fmt, ap);
+        va_end(ap);
         return;
+    }
     if (!INTER->i_guibuf)
     {
         if (!(INTER->i_guibuf = malloc(GUI_ALLOCCHUNK)))
@@ -872,6 +886,18 @@ void sys_vgui(const char *fmt, ...)
     INTER->i_guihead += msglen;
     INTER->i_bytessincelastping += msglen;
 }
+
+
+/* sys_vgui() and sys_gui() are deprecated for externals
+   and shouldn't be used directly within Pd.
+   however, the we do use them for implementing the high-level
+   communication, so we do not want the compiler to shout out loud.
+ */
+#ifdef __GNUC__
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+#elif defined _MSC_VER
+#pragma warning( disable : 4996 )
+#endif
 
 void sys_gui(const char *s)
 {
@@ -951,7 +977,7 @@ static int sys_flushqueue(void)
     {
         if (INTER->i_bytessincelastping >= GUI_BYTESPERPING)
         {
-            sys_gui("pdtk_ping\n");
+            pdgui_vmess("pdtk_ping", "");
             INTER->i_bytessincelastping = 0;
             INTER->i_waitingforping = 1;
             return (1);
@@ -974,7 +1000,7 @@ static int sys_flushqueue(void)
     /* flush output buffer and update queue to gui in small time slices */
 static int sys_poll_togui(void) /* returns 1 if did anything */
 {
-    if (!sys_havegui())
+    if (!INTER->i_havetkproc)
         return (0);
         /* in case there is stuff still in the buffer, try to flush it. */
     sys_flushtogui();
@@ -1210,7 +1236,7 @@ static void init_deken_arch(void)
     {
         int arm_cpu = __ARM_ARCH;
         int cpu_v;
-        int n;
+        int n = 0;
         const char endianness =
 #  if defined(__BYTE_ORDER__) && defined(__ORDER_BIG_ENDIAN__) && (__BYTE_ORDER__ == __ORDER_BIG_ENDIAN__)
             'b';
@@ -1429,7 +1455,10 @@ static int sys_do_startgui(const char *libdir)
 
 #ifndef _WIN32
         if (sys_guicmd)
-            guicmd = sys_guicmd;
+        {
+            sprintf(cmdbuf, "\"%s\" %d\n", sys_guicmd, portno);
+            guicmd = cmdbuf;
+        }
         else
         {
 #ifdef __APPLE__
@@ -1597,7 +1626,7 @@ static int sys_do_startgui(const char *libdir)
             /* here is where we start the pinging. */
 #if PD_WATCHDOG
     if (sys_hipriority)
-        sys_gui("pdtk_watchdog\n");
+        pdgui_vmess("pdtk_watchdog", "");
 #endif
     sys_get_audio_apis(apibuf);
     sys_get_midi_apis(apibuf2);
@@ -1614,11 +1643,15 @@ static int sys_do_startgui(const char *libdir)
 
     sys_init_deken();
 
-    do {
+    {
         t_audiosettings as;
         sys_get_audio_settings(&as);
         sys_vgui("set pd_whichapi %d\n", as.a_api);
-    } while(0);
+
+        pdgui_vmess("pdtk_pd_dsp", "s",
+            THISGUI->i_dspstate ? "ON" : "OFF");
+    }
+
     return (0);
 }
 
@@ -1728,8 +1761,10 @@ void sys_setrealtime(const char *libdir)
 #endif /* __APPLE__ */
 }
 
+void sys_do_close_audio(void);
+
 /* This is called when something bad has happened, like a segfault.
-Call glob_quit() below to exit cleanly.
+Call glob_exit() below to exit cleanly.
 LATER try to save dirty documents even in the bad case. */
 void sys_bail(int n)
 {
@@ -1741,7 +1776,7 @@ void sys_bail(int n)
             /* sys_close_audio() hangs if you're in a signal? */
         fprintf(stderr ,"gui socket %d - \n", INTER->i_guisock);
         fprintf(stderr, "closing audio...\n");
-        sys_close_audio();
+        sys_do_close_audio();
         fprintf(stderr, "closing MIDI...\n");
         sys_close_midi();
         fprintf(stderr, "... done.\n");
@@ -1751,24 +1786,18 @@ void sys_bail(int n)
     else _exit(1);
 }
 
-extern void sys_exit(void);
+void sys_exit(int status);
 
-void glob_exit(void *dummy, t_float status)
+    /* exit scheduler and shut down gracefully */
+void glob_exit(void *dummy, t_floatarg status)
 {
-        /* sys_exit() sets the sys_quit flag, so all loops end */
-    sys_exit();
-    sys_close_audio();
-    sys_close_midi();
-    if (sys_havegui())
-    {
-        sys_closesocket(INTER->i_guisock);
-        sys_rmpollfn(INTER->i_guisock);
-    }
-    exit((int)status);
+    sys_exit(status);
 }
-void glob_quit(void *dummy)
+
+    /* force-quit */
+void glob_quit(void *dummy, t_floatarg status)
 {
-    glob_exit(dummy, 0);
+    exit(status);
 }
 
     /* recursively descend to all canvases and send them "vis" messages
@@ -1786,12 +1815,13 @@ static void glist_maybevis(t_glist *gl)
     }
 }
 
-    /* this is called from main when GUI has given us out font metrics,
+    /* this is called from main when GUI has given us our font metrics,
     so that we can now draw all "visible" canvases.  These include all
     root canvases and all subcanvases that already believe they're visible. */
 void sys_doneglobinit( void)
 {
     t_canvas *x;
+    INTER->i_havegui = 1;
     for (x = pd_getcanvaslist(); x; x = x->gl_next)
         if (strcmp(x->gl_name->s_name, "_float_template") &&
             strcmp(x->gl_name->s_name, "_float_array_template") &&
@@ -1803,18 +1833,19 @@ void sys_doneglobinit( void)
 }
 
     /* start the GUI up.  Before we actually draw our "visible" windows
-    we have to wait for the GUI to give us our font metrics.  LATER
-    it would be cool to figure out what metrics we really need and tell
-    the GUI - that way we can support arbitrary zoom with appropriate font
-    sizes.   And/or: if we ever move definitively to a vector-based GUI
-    lib we might be able to skip this step altogether. */
+    we have to wait for the GUI to give us our font metrics, see
+    glob_initfromgui().  LATER it would be cool to figure out what metrics
+    we really need and tell the GUI - that way we can support arbitrary
+    zoom with appropriate font sizes.   And/or: if we ever move definitively
+    to a vector-based GUI lib we might be able to skip this step altogether. */
 int sys_startgui(const char *libdir)
 {
     t_canvas *x;
     stderr_isatty = isatty(2);
     for (x = pd_getcanvaslist(); x; x = x->gl_next)
         canvas_vis(x, 0);
-    INTER->i_havegui = 1;
+    INTER->i_havegui = 0;
+    INTER->i_havetkproc = 1;
     INTER->i_guihead = INTER->i_guitail = 0;
     INTER->i_waitingforping = 0;
     if (sys_do_startgui(libdir))
@@ -1822,15 +1853,13 @@ int sys_startgui(const char *libdir)
     return (0);
 }
 
- /* more work needed here - for some reason we can't restart the gui after
- shutting it down this way.  I think the second 'init' message never makes
- it because the to-gui buffer isn't re-initialized. */
+    /* Shut the GUI down. */
 void sys_stopgui(void)
 {
     t_canvas *x;
     for (x = pd_getcanvaslist(); x; x = x->gl_next)
         canvas_vis(x, 0);
-    sys_vgui("%s", "exit\n");
+
     if (INTER->i_guisock >= 0)
     {
         sys_closesocket(INTER->i_guisock);
@@ -1838,6 +1867,7 @@ void sys_stopgui(void)
         INTER->i_guisock = -1;
     }
     INTER->i_havegui = 0;
+    INTER->i_havetkproc = 0;
 }
 
 /* ----------- mutexes for thread safety --------------- */
@@ -1853,6 +1883,8 @@ void s_inter_newpdinstance(void)
     INTER->i_freq = 0;
 #endif
     INTER->i_havegui = 0;
+    INTER->i_havetkproc = 0;
+    INTER->i_guisock = -1;
 }
 
 void s_inter_free(t_instanceinter *inter)
@@ -1866,7 +1898,7 @@ void s_inter_free(t_instanceinter *inter)
         inter->i_nfdpoll = 0;
     }
 #if PDTHREADS
-    pthread_mutex_destroy(&INTER->i_mutex);
+    pthread_mutex_destroy(&inter->i_mutex);
 #endif
     freebytes(inter, sizeof(*inter));
 }

@@ -2,7 +2,7 @@
 %module ofx
 
 
-%import "../../ofxLua/swig/openFrameworks.i"
+%import "../libs/ofxLua/swig/openFrameworks.i"
 %import "../../../libs/openFrameworks/gl/ofGLBaseTypes.h"
 %import "../../../libs/openFrameworks/utils/ofThread.h"
 %import "../../../libs/openFrameworks/utils/ofThreadChannel.h"
@@ -21,10 +21,18 @@
 
 
 // ofxOpenCv
-%ignore operator &=;
+%ignore ofxCvImage::operator &=;
+
+// ofxStableDiffusion
+%ignore ofxStableDiffusion::thread;
+%extend ofxStableDiffusion {
+    sd_image_t getImageAt(size_t index) const {
+        return self->returnImages()[index];
+    }
+}
 
 // ofxVectorGraphics
-%ignore operator |;
+%ignore ns_creeps::CAt::operator |;
 
 // srtparser
 %typemap(throws) std::out_of_range {

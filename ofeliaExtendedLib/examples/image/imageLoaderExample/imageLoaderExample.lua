@@ -1,6 +1,4 @@
-if type(window) ~= "userdata" then
-  window = ofWindow()
-end
+local window = ofWindow()
 
 local canvas = ofCanvas(this)
 local clock = ofClock(this, "setup")

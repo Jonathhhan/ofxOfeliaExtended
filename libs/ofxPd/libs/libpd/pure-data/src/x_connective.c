@@ -762,6 +762,7 @@ static void pack_bang(t_pack *x)
     int i;
     t_atom *outvec = (t_atom *)alloca(x->x_n * sizeof(t_atom));
     t_gpointer *gpvec, *gp;
+    gp = gpvec = 0;
     if (x->x_nptr > 0)
     {
         gp = gpvec = (t_gpointer *)alloca(x->x_nptr * sizeof(t_gpointer));
@@ -1351,7 +1352,7 @@ static void makefilename_float(t_makefilename *x, t_floatarg f)
 {
     char buf[MAXPDSTRING];
     if(!x->x_format) {
-        pd_error(x, "makefilename: no format specifier given");
+        pd_error(x, "makefilename: invalid format string");
         return;
     }
     switch(x->x_accept) {
@@ -1381,7 +1382,7 @@ static void makefilename_symbol(t_makefilename *x, t_symbol *s)
 {
     char buf[MAXPDSTRING];
     if(!x->x_format) {
-        pd_error(x, "makefilename: no format specifier given");
+        pd_error(x, "makefilename: invalid format string");
         return;
     }
     switch(x->x_accept) {
@@ -1408,7 +1409,7 @@ static void makefilename_bang(t_makefilename *x)
 {
     char buf[MAXPDSTRING];
     if(!x->x_format) {
-        pd_error(x, "makefilename: no format specifier given");
+        pd_error(x, "makefilename: invalid format string");
         return;
     }
     switch(x->x_accept) {

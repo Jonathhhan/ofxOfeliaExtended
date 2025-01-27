@@ -2,6 +2,7 @@
 #!/usr/bin/gsed -f
 
 # Run this script to easily update ImGui
+# Note: Only tested on Macos, should run on Linux.
 # Copyright 2023 Daan de Lange
 
 # ------------------
@@ -10,7 +11,7 @@
 # How to find it : Omar publishes a version commit, for example "Version 1.89.3" which is the non-docking version
 # Right after that, in the docking branch, there's a commit "Merge branch 'master' into docking ".
 # That's the one you wish. The docs/CHANGELOG.txt should NOT state "In Progress" (ie: "VERSION 1.89.3 (In Progress)"")
-# Update 2024 : Docking branch versions are now tagged, just grab the commit you with from https://github.com/ocornut/imgui/tags
+# Update 2024 : Docking branch versions are now tagged, just grab the commit you wish from https://github.com/ocornut/imgui/tags
 
 VERSION_1_89_2=d822c65 # 1.89.2
 VERSION_1_89_3=1921967 # 1.89.3
@@ -20,7 +21,10 @@ VERSION_1_89_8=f8704cd0 # 1.89.8
 VERSION_1_89_9=1d8e48c1 # 1.89.9
 VERSION_1_90_0=ce0d0ac8 # 1.90.0
 VERSION_1_90_1=2dc85e6e # 1.90.1
-VERSION_SHA=$VERSION_1_90_1
+VERSION_1_90_9=3369cbd2 # 1.90.9
+VERSION_1_91_0=139e99ca # 1.91.0
+VERSION_1_91_5=368123a # 1.91.5
+VERSION_SHA=$VERSION_1_91_5
 # ------------------
 
 echo "\nHello,"
@@ -37,13 +41,15 @@ else
 	echo "Found ImGui repo in /libs/imgui_git"
 fi;
 
-# Pick the right
+# Pick the right version commit
 echo "Checking out latest commit"
 if [[ -d ./imgui_git ]]; then
 	cd ./imgui_git
-	git checkout -b docking
+	git fetch
+	#git checkout -b docking
 	# Alternative restoring all missing files AND reverings any change
 	git reset --hard $VERSION_SHA --
+
 	cd ../
 else
 	echo "Problem finding the imgui directory, exiting now."
@@ -95,8 +101,8 @@ cp ./imgui_git/misc/cpp/imgui_stdlib.cpp ./imgui/extras/imgui_stdlib.cpp
 cp ./imgui_git/misc/cpp/imgui_stdlib.h ./imgui/extras/imgui_stdlib.h
 
 # Remove git repo // cleanup
-echo "Cleaning up git repo..."
-rm -rf ./imgui_git
+#echo "Cleaning up git repo..."
+#rm -rf ./imgui_git
 
 # Apply patches
 echo "\nApplying patches..."
@@ -106,10 +112,12 @@ if [ `uname -s` = "Darwin" ] ; then
 	if ! [ -x "$(command -v gsed)" ] ; then
 		echo "GSED is not installed, installing..."
 		brew install gnu-sed
+
+		# Todo: Brew might not be installed. Ask user to install gnu-sed and abort.
 	fi;
 fi;
 
-echo "\nApplying GLFW multi context patch..."
+echo "\nApplying GLFW multi context patch with obj-c ARC support..."
 # Option 1 : Patch file ?
 #git apply --check Glfw_MultiContext_Support.diff
 patch --dry-run -s ./imgui/backends/imgui_impl_glfw.cpp ./Glfw_MultiContext_Support.diff > /dev/null 2>&1
@@ -124,9 +132,12 @@ else
 	echo "This has only been tested on OSX."
 
 	# todo: On linux use sed instead of gsed ? Tested on OSX only.
-	
+
+	echo "Injecting warning..."
 	# Inform about changes
-	gsed -i '1s/^/\/\/ Warning!\n\/\/ This file has been modified for ofxImGui to support context switching.\n\/\/ This is not the original one. Changes are indicated.\n\n/' ./imgui/backends/imgui_impl_glfw.cpp
+	gsed -i '1s/^/\/\/ Warning!\n\/\/ This file has been modified for ofxImGui to support context switching.\n\/\/ This is not the original one. Changes are indicated.\n\/\/----\n\n/' ./imgui/backends/imgui_impl_glfw.cpp
+	
+	echo "Applying multi-context patch..."
 	# Add include
 	gsed -i '/^#include "imgui_impl_glfw\.h"$/a #include "backends\/imgui_impl_glfw_context_support.h" \/\/ CUSTOM OFXIMGUI ADDED LINE' ./imgui/backends/imgui_impl_glfw.cpp
 	# Add scoped context on glfw window callbacks
@@ -145,6 +156,12 @@ else
 	gsed -i '/^#define GLFW_HAS_MONITOR_WORK_AREA      (GLFW_VERSION_COMBINED >= 3300) \/\/ 3.3+ glfwGetMonitorWorkarea$/i #if defined(TARGET_OSX) || defined(TARGET_WIN32) \/\/ BEGIN CUSTOM OFXIMGUI LINES\n#define GLFW_HAS_MONITOR_WORK_AREA      (GLFW_VERSION_COMBINED >= 3301) \/\/ 3.3+ glfwGetMonitorWorkarea\n#else' ./imgui/backends/imgui_impl_glfw.cpp
 	gsed -i '/^#define GLFW_HAS_MONITOR_WORK_AREA      (GLFW_VERSION_COMBINED >= 3300) \/\/ 3.3+ glfwGetMonitorWorkarea$/a #endif \/\/ END CUSTOM OFXIMGUI LINES' ./imgui/backends/imgui_impl_glfw.cpp
 
+	# Obj-c ARC fixes // of_v0.12.0+
+	# Inject the hack by adding this include below the GLFW `GLFW_HAS_GETERROR` define.
+	# `#include "backends/imgui_impl_glfw_arc_support.h" // CUSTOM OFXIMGUI ADDED LINE`
+	echo "Applying ARC patch..."
+	gsed -i '/^#define GLFW_HAS_GETERROR/{n; s/$/\n#include "backends\/imgui_impl_glfw_arc_support.h" \/\/ CUSTOM OFXIMGUI ADDED LINE\n/}' ./imgui/backends/imgui_impl_glfw.cpp
+	
 	# Generate a new diff :
 	# With timestamps included
 	# diff -u ./imgui_git/backends/imgui_impl_glfw.cpp ./imgui/backends/imgui_impl_glfw.cpp > ./Glfw_MultiContext_Support_New.diff
@@ -165,8 +182,14 @@ else
 	echo "The Git diff is not compatible anymore, trying to apply a custom GNU sed patch that might be less vulnerable to breaking changes."
 	echo "This has only been tested on OSX."
 
+	echo "Injecting warning..."
+	# Inform about changes
+	gsed -i '1s/^/\/\/ Warning!\n\/\/ This file has been modified for ofxImGui to support GLES1.\n\/\/ This is not the original one. Changes are indicated.\n\/\/----\n\n/' ./imgui/backends/imgui_impl_opengl2.cpp
+
+	echo "Applying GLES1 patches..."
 	# Include GLES1 compatibility hack in imgui_implopengl2
-	gsed -i '/^\/\/ Include OpenGL header/i \ \/\/ --- BEGIN CUSTOM MODIFICATION\n#include "ofxImGuiConstants\.h"\n#if defined(OFXIMGUI_RENDERER_GLES)\n#include "gles1CompatibilityHacks\.h"\n#else// --- END CUSTOM MODIFICATION\n' ./imgui/backends/imgui_impl_opengl2.cpp
+	gsed -i '/^\/\/ Include OpenGL header/i \\/\/ --- BEGIN CUSTOM MODIFICATION\n#include "ofxImGuiConstants\.h"\n#if defined(OFXIMGUI_RENDERER_GLES)\n#include "gles1CompatibilityHacks\.h"\n#else// --- END CUSTOM MODIFICATION\n' ./imgui/backends/imgui_impl_opengl2.cpp
+
 	# Modify the OpenGL loader condition
 	gsed -i '/^#include <GL\/gl\.h>$/{n; s/$/\n#endif \/\/ CUSTOM OFXIMGUI ADDED LINE/}' ./imgui/backends/imgui_impl_opengl2.cpp
 	#gsed -i '/^\/\/ Include OpenGL header/{n; s/^#if/#elif/; s/$/ \/\/ CUSTOM OFXIMGUI MODIFIED LINE/}' ./imgui/backends/imgui_impl_opengl2.cpp

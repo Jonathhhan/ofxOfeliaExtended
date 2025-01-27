@@ -874,8 +874,13 @@ void ofxImGui::AddImage(const ofBaseHasTexture& hasTexture, const ofVec2f& size)
 //--------------------------------------------------------------
 void ofxImGui::AddImage(const ofTexture& texture, const ofVec2f& size)
 {
-	ImTextureID textureID = GetImTextureID(texture);
-	ImGui::Image(textureID, size);
+    if (texture.getTextureData().textureTarget == GL_TEXTURE_2D){
+        ImTextureID textureID = GetImTextureID(texture);
+        ImGui::Image(textureID, size);
+    }
+    else {
+        ImGui::TextDisabled("Error: can't display GL_TEXTURE_RECTANGLE textures.\nPlease use GL_TEXTURE_2D.");
+    }
 }
 
 #if OF_VERSION_MINOR >= 10
@@ -889,21 +894,23 @@ void ofxImGui::AddImage(const ofBaseHasTexture& hasTexture, const glm::vec2& siz
 //--------------------------------------------------------------
 void ofxImGui::AddImage(const ofTexture& texture, const glm::vec2& size)
 {
-	ImTextureID textureID = GetImTextureID(texture);
-	ImGui::Image(textureID, size);
+    if (texture.getTextureData().textureTarget == GL_TEXTURE_2D){
+        ImTextureID textureID = GetImTextureID(texture);
+        ImGui::Image(textureID, size);
+    }
+    else {
+        ImGui::TextDisabled("Error: can't display GL_TEXTURE_RECTANGLE textures.\nPlease use GL_TEXTURE_2D.");
+    }
 }
 
 #endif
 
-static auto vector_getter = [](void* vec, int idx) { return ((const char**)vec)[idx]; };
-// Below: the original function (broken since 1.90) which includes a type check, so the new (above) might crash if the offset doesn't exist.
-//static auto vector_getter = [](void* vec, int idx, const char** out_text)
-//{
-//	auto& vector = *static_cast<std::vector<std::string>*>(vec);
-//	if (idx < 0 || idx >= static_cast<int>(vector.size())) { return false; }
-//	return (const char**) vector.at(idx).c_str();
-//	//return true;
-//};
+static auto vector_getter = [](void* vec, int idx)
+{
+	auto& vector = *static_cast<std::vector<std::string>*>(vec);
+	if (idx < 0 || idx >= static_cast<int>(vector.size())) { return ""; }
+	return (const char*) vector.at(idx).c_str();
+};
 
 bool ofxImGui::VectorCombo(const char* label, int* currIndex, std::vector<std::string>& values)
 {

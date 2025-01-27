@@ -6382,6 +6382,9 @@ static int _wrap_one(lua_State* L) { { int SWIG_arg = 0; float result; SWIG_chec
 static int _wrap_pi(lua_State* L) { { int SWIG_arg = 0; float result; SWIG_check_num_args("glm::pi< float >",0,0)
     result = (float)glm::SWIGTEMPLATEDISAMBIGUATOR pi< float >(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
+static int _wrap_two_pi(lua_State* L) { { int SWIG_arg = 0; float result; SWIG_check_num_args("glm::two_pi< float >",0,0)
+    result = (float)glm::SWIGTEMPLATEDISAMBIGUATOR two_pi< float >(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+    return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
 static int _wrap_root_pi(lua_State* L) { { int SWIG_arg = 0; float result; SWIG_check_num_args("glm::root_pi< float >",0,0)
     result = (float)glm::SWIGTEMPLATEDISAMBIGUATOR root_pi< float >(); lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
     return SWIG_arg; fail: SWIGUNUSED; }  lua_error(L); return 0; }
@@ -10230,6 +10233,7 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "zero", _wrap_zero},
     { "one", _wrap_one},
     { "pi", _wrap_pi},
+    { "two_pi", _wrap_two_pi},
     { "root_pi", _wrap_root_pi},
     { "half_pi", _wrap_half_pi},
     { "quarter_pi", _wrap_quarter_pi},
