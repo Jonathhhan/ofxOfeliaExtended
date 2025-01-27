@@ -1,1 +1,5 @@
-../../../addons/ofxOfelia/libs/ofxLua
+ofxAssimpModelLoader
+ofxOfeliaExtended
+ofxOpenCv
+ofxSvg
+ofxVectorGraphics
