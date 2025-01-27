@@ -3,6 +3,7 @@ window = ofWindow()
 end
 
 local a = ofelia
+local canvas = ofCanvas(this)
 local clock = ofClock(this, "setup")
 local stableDiffusion = ofxStableDiffusion()
 local settings = ofGLFWWindowSettings()
@@ -11,7 +12,7 @@ local modelName
 local imgVec
 local sampleMethod
 local sampleMethodEnum
-local textureTable = {};
+local textureTable = {}
 local pixels = ofPixels()
 local gui = ImGuiGui()
 local boolArrayValue = ImGuiNew_BoolArray(1)
@@ -21,6 +22,7 @@ local prompt = "a skater in the woods, van gogh"
 local negativePrompt = ""
 local generate = false
 local send = ofSend("$0-goo")
+local dataDir = canvas:getDir() .. "/data/model/"
 
 function a.new()
 ofWindow.addListener("setup", this)
@@ -47,7 +49,6 @@ end
 function a.setup()
 ofSetWindowTitle("ofxStableDiffusion")
 ofBackground(150, 230, 255, 255)
-ofSetDataPathRoot("")
 for i = 1, 4 do
 local texture = ofTexture()
 texture:allocate(512, 512, GL_RGB)
@@ -64,8 +65,9 @@ sampleMethodEnum = 0
 print(ImGuiConfigFlags_ViewportsEnable)
 gui:setup(ofxBaseTheme, true, ImGuiConfigFlags_ViewportsEnable)
 modelName = "sd_turbo.safetensors"
+modelPath = dataDir .. modelName
 print(stableDiffusion:getSystemInfo())
-stableDiffusion:newSdCtx("sd_turbo.safetensors", "", "", "", "", "", "", true, false, false, 8, 1, 0, 0, false, false, false)
+stableDiffusion:newSdCtx(modelPath, "", "", "", "", "", "", true, false, false, 8, 1, 0, 0, false, false, false)
 end
 
 function a.update()
