@@ -158,7 +158,7 @@
 %include IMGUI_USER_CONFIG
 #endif
 #if !defined(IMGUI_DISABLE_INCLUDE_IMCONFIG_H) || defined(IMGUI_INCLUDE_IMCONFIG_H)
-%include "../../ofxImGui/src/imconfig.h"
+%include "../libs/ofxImGui/src/imconfig.h"
 #endif
 
 %clear bool* p_open, bool* p_visible, bool* p_selected;
