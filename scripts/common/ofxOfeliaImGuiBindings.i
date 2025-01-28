@@ -45,11 +45,25 @@
 %ignore operator ofColor;
 %ignore ImGuiStoragePair(ImGuiID,float);
 %ignore ImGui::GetColorU32(ImU32,float);
+%ignore SetItemTooltipV;
+%ignore DebugLogV;
 
 
 //------
 // General tags
 //------
+
+%ignore TextV;
+%ignore TextColoredV;
+%ignore TextDisabledV;
+%ignore TextWrappedV;
+%ignore LabelTextV;
+%ignore BulletTextV;
+%ignore TreeNodeV;
+%ignore TreeNodeExV;
+%ignore SetTooltipV;
+%ignore LogTextV;
+%ignore ImGuiTextBuffer::appendfv;
 
 %ignore operator new(size_t, ImNewWrapper, void*);   // Ignored because SWIG doesn't support this operator
 %ignore operator delete(void*, ImNewWrapper, void*); // Ignored because SWIG doesn't support this operator
