@@ -101,7 +101,7 @@ namespace std {
 #endif
 
 // include early for ofToString template declaration
-%include "utils/ofUtils.h"
+%include "custom/ofUtils.h"
 
 // ignore further redefinitions
 %ignore ofToString(const T &);
