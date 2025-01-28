@@ -22,14 +22,15 @@ meta:
 	ADDON_URL = http://github.com/cuinjune/ofxOfelia
 
 common:
-	#ADDON_CFLAGS = -DTARGET_STANDALONE
-	ADDON_CFLAGS = -DTARGET_EXTERNAL
+	#ADDON_CFLAGS += -DTARGET_STANDALONE
+	ADDON_CFLAGS += -DTARGET_EXTERNAL
+ 	ADDON_CFLAGS += -DGLM_ENABLE_EXPERIMENTAL
 	ADDON_SOURCES_EXCLUDE += libs/ofxLua/swig/%
 	ADDON_INCLUDES_EXCLUDE += libs/ofxLua/swig/%
-	ADDON_SOURCES_EXCLUDE = libs/libpd/pure-data/extra/pd~/binarymsg.c
+	ADDON_SOURCES_EXCLUDE += libs/libpd/pure-data/extra/pd~/binarymsg.c
 	
 linux64:
-	ADDON_PKG_CONFIG_LIBRARIES = alsa
+	ADDON_PKG_CONFIG_LIBRARIES += alsa
 	ADDON_PKG_CONFIG_LIBRARIES += jack
 	ADDON_SOURCES_EXCLUDE += libs/ofxLua/src/bindings/ios/%
 	ADDON_SOURCES_EXCLUDE += libs/ofxLua/src/bindings/linuxarm/%
@@ -95,7 +96,7 @@ msys2:
 	ADDON_INCLUDES_EXCLUDE += libs/ofxLua/src/bindings/linuxarm/%
 	ADDON_INCLUDES_EXCLUDE += libs/ofxMidi/libs/pgmidi/%
 	ADDON_INCLUDES_EXCLUDE += libs/ofxMidi/src/ios/%
-	ADDON_CFLAGS += -DHAVE_STRUCT_TIMESPEC -DGLM_ENABLE_EXPERIMENTAL -DLUA_USE_WINDOWS
+	ADDON_CFLAGS += -DHAVE_STRUCT_TIMESPEC -DLUA_USE_WINDOWS
 	# required for TARGET_EXTERNAL
 	ADDON_SOURCES_EXCLUDE += libs/ofxPd/%
 	# required for TARGET_STANDALONE
@@ -110,7 +111,7 @@ vs:
 	ADDON_INCLUDES_EXCLUDE += libs/ofxLua/src/bindings/linuxarm/%
 	ADDON_INCLUDES_EXCLUDE += libs/ofxMidi/libs/pgmidi/%
 	ADDON_INCLUDES_EXCLUDE += libs/ofxMidi/src/ios/%
-	ADDON_CFLAGS += -DHAVE_STRUCT_TIMESPEC -DGLM_ENABLE_EXPERIMENTAL -DLUA_USE_WINDOWS
+	ADDON_CFLAGS += -DHAVE_STRUCT_TIMESPEC -DLUA_USE_WINDOWS
 	# required for TARGET_EXTERNAL
 	ADDON_SOURCES_EXCLUDE += libs/ofxPd/%
 	# required for TARGET_STANDALONE
