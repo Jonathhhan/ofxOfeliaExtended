@@ -13,6 +13,7 @@
 	#include "../../ofxAssimpModelLoader/src/ofxAssimpModelLoader.h"
 	#include "../../ofxSvg/src/ofxSvg.h"
 	#include "../libs/srtparser.h"
+	#include "../libs/ofxProjectM/src/ofxProjectM.h"
 	#include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 	#include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
 	#include "../libs/ofxStableDiffusion/libs/stable-diffusion/include/stable-diffusion.h"
