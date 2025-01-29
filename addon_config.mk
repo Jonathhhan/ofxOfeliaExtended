@@ -28,6 +28,7 @@ common:
 	ADDON_SOURCES_EXCLUDE += libs/ofxLua/swig/%
 	ADDON_INCLUDES_EXCLUDE += libs/ofxLua/swig/%
 	ADDON_SOURCES_EXCLUDE += libs/libpd/pure-data/extra/pd~/binarymsg.c
+	ADDON_DEPENDENCIES = ofxAssimpModelLoader ofxOpenCv ofxSvg ofxVectorGraphics
 	
 linux64:
 	ADDON_PKG_CONFIG_LIBRARIES += alsa
