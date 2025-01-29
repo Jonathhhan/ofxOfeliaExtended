@@ -1,5 +1,1 @@
-ofxAssimpModelLoader
 ofxOfeliaExtended
-ofxOpenCv
-ofxSvg
-ofxVectorGraphics
