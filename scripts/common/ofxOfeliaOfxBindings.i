@@ -73,6 +73,7 @@
 %include "../../ofxAssimpModelLoader/src/ofxAssimpAnimation.h"
 %include "../../ofxSvg/src/ofxSvg.h"
 %include "../libs/srtparser.h"
+%include "../libs/ofxProjectM/src/ofxProjectM.h"
 %include "../libs/ofxVolumetrics/src/ofxVolumetrics.h"
 %include "../libs/ofxVolumetrics/src/ofxImageSequencePlayer.h"
 %include "../libs/ofxStableDiffusion/src/ofxStableDiffusion.h"
