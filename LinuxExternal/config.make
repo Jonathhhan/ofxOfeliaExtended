@@ -18,7 +18,7 @@ ifeq ($(PLATFORM_OS),Linux)
         APPNAME = ofelia.pd_linux
     endif
     PROJECT_CFLAGS = -Wall -Wno-sign-compare -Wno-unused-variable -Wno-maybe-uninitialized -fPIC -I../../../addons/ofxOfelia/libs/ofxPd/libs/libpd/pure-data/src
-    PROJECT_LDFLAGS = -rdynamic -shared -Wl,-rpath=./libs
+    PROJECT_LDFLAGS = -rdynamic -shared -Wl,-rpath,./libs
     PROJECT_EXTERNAL_SOURCE_PATHS = ../../../addons/ofxOfelia/src
     PROJECT_DEFINES = LUA_USE_LINUX HAVE_LIBDL TARGET_EXTERNAL
     PROJECT_OPTIMIZATION_CFLAGS_RELEASE = -O3 -DNDEBUG
