@@ -44,6 +44,10 @@
 // ofxSvg
 %template(GlmVector) std::vector<glm::vec3>;
 
+// ofxProjectM
+%include "carrays.i"
+%array_functions(float, floatArray);
+
 
 // ----- Renaming -----
 
