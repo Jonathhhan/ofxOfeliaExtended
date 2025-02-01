@@ -19,7 +19,7 @@
 
 // ----- ofSoundBuffer.h -----
 
-%include "sound/ofSoundBuffer.h"
+// not needed
 
 // ----- ofSoundStream.h -----
 
